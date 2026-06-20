@@ -1,0 +1,63 @@
+name: CI
+
+# 呼应cicd-architecture-v1.md：本配置仅覆盖Lint+Build+Test阶段，
+# 不包含Staging/Production部署步骤——部署流水线（含人工审批门）
+# 留待真正具备Staging环境时再补充，Sprint 1阶段写一个会自动部署到
+# 任何环境的CI配置没有实际意义，反而可能造成"看起来已经能部署"的误解。
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint-build-test:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: mateyou
+          POSTGRES_PASSWORD: mateyou_dev_password
+          POSTGRES_DB: mateyou
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+      redis:
+        image: redis:7
+        ports: ['6379:6379']
+
+    env:
+      DATABASE_URL: postgresql://mateyou:mateyou_dev_password@localhost:5432/mateyou?schema=public
+      REDIS_URL: redis://localhost:6379
+      JWT_ACCESS_SECRET: ci-only-placeholder-secret
+      JWT_REFRESH_SECRET: ci-only-placeholder-secret-2
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Generate Prisma Client
+        run: npm run db:generate
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Build
+        run: npm run build
+
+      # Sprint 1后端/前端均尚无单元测试用例（业务逻辑本身就是后续Sprint才实现），
+      # 测试步骤先占位，待有实际测试用例后取消跳过
+      - name: Test (占位，暂无测试用例)
+        run: echo "Sprint 1暂无测试用例，待业务模块实现后补充"

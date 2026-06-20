@@ -1,0 +1,823 @@
+// MATEYOU Platform — Prisma Schema
+// 唯一权威依据：/docs/engineering/database/logical-erd-v1.md (v1.1) + /docs/database/physical-database-freeze-v1.md
+// 注意事项（实现阶段必读）：
+// 1. Prisma 无法原生表达 CHECK 约束 / RLS / 表分区，这三类规则由
+//    packages/database/prisma/migrations/00000000000000_init/migration.sql 中的补充 SQL 实现。
+//    本文件中以注释标注每个字段对应的合法取值（与 physical-database-freeze-v1.md 一致），
+//    供开发者对照，应用层校验也必须遵循同一份取值。
+// 2. 全表主键使用 UUIDv7（dbgenerated("uuidv7()")），需要数据库中存在 uuidv7() 函数，
+//    由 migration.sql 通过 pg_uuidv7 扩展或自定义函数提供（详见 physical-database-design-v1.md 第2部分）。
+// 3. multiSchema 预览特性用于落地四个 schema：public / health / audit / analytics_pii。
+
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["multiSchema"]
+  output          = "../generated/client"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+  schemas  = ["public", "health", "audit", "analytics_pii"]
+}
+
+// ============================================================
+// 1. User Domain
+// ============================================================
+
+model Role {
+  id          String   @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  name        String   @unique
+  permissions Json
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  users User[]
+
+  @@map("roles")
+  @@schema("public")
+}
+
+model User {
+  id           String    @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  username     String    @unique
+  email        String    @unique
+  passwordHash String    @map("password_hash")
+  roleId       String    @map("role_id") @db.Uuid
+  // status 合法取值: active | suspended | disabled
+  status       String    @default("active")
+  lastLoginAt  DateTime? @map("last_login_at")
+  createdAt    DateTime  @default(now()) @map("created_at")
+  updatedAt    DateTime  @updatedAt @map("updated_at")
+  deletedAt    DateTime? @map("deleted_at")
+
+  role    Role     @relation(fields: [roleId], references: [id], onDelete: Restrict)
+  authors Author[]
+  auditLogs AuditLog[]
+  assignedLeads Lead[]
+  leadNotes LeadNote[]
+
+  @@map("users")
+  @@schema("public")
+}
+
+model Customer {
+  id            String    @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  phone         String?   @unique
+  email         String?   @unique
+  nickname      String?
+  avatar        String?
+  deviceId      String?   @map("device_id")
+  sourceChannel String?   @map("source_channel")
+  registeredAt  DateTime  @default(now()) @map("registered_at")
+  updatedAt     DateTime  @updatedAt @map("updated_at")
+  deletedAt     DateTime? @map("deleted_at")
+
+  memberships         Membership[]
+  subscriptions       Subscription[]
+  orders              Order[]
+  leads               Lead[]
+  conversations       Conversation[]
+  assessmentResults   AssessmentResult[]
+  events              Event[]
+  customerProfile     CustomerProfile?
+  healthMetrics       HealthMetric[]
+  healthRiskProfiles  HealthRiskProfile[]
+  notificationLogs    NotificationLog[]
+
+  @@map("customers")
+  @@schema("public")
+}
+
+// ============================================================
+// 2. Membership Domain
+// ============================================================
+
+model Membership {
+  id          String    @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  customerId  String    @map("customer_id") @db.Uuid
+  // tier 投影字段，权威来源是 Subscription 最新状态，合法取值: free | premium | pro | enterprise
+  tier        String    @default("free")
+  startedAt   DateTime  @map("started_at")
+  expiresAt   DateTime? @map("expires_at")
+  // payment_status 合法取值: current | past_due | none
+  paymentStatus String  @default("none") @map("payment_status")
+  autoRenew   Boolean   @default(false) @map("auto_renew")
+  createdAt   DateTime  @default(now()) @map("created_at")
+  updatedAt   DateTime  @updatedAt @map("updated_at")
+
+  customer      Customer       @relation(fields: [customerId], references: [id], onDelete: Restrict)
+  subscriptions Subscription[]
+
+  @@index([customerId])
+  @@map("memberships")
+  @@schema("public")
+}
+
+model Subscription {
+  id                 String    @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  customerId         String    @map("customer_id") @db.Uuid
+  membershipId       String    @map("membership_id") @db.Uuid
+  planTier           String    @map("plan_tier")
+  // billing_cycle 合法取值: monthly | yearly
+  billingCycle       String    @map("billing_cycle")
+  amount             Decimal   @db.Decimal(12, 2)
+  currency           String    @default("CNY")
+  // status 合法取值: active | past_due | canceled | expired
+  status             String    @default("active")
+  currentPeriodStart DateTime  @map("current_period_start")
+  currentPeriodEnd   DateTime  @map("current_period_end")
+  paymentGatewayRef  String?   @map("payment_gateway_ref")
+  createdAt          DateTime  @default(now()) @map("created_at")
+  updatedAt          DateTime  @updatedAt @map("updated_at")
+
+  customer   Customer   @relation(fields: [customerId], references: [id], onDelete: Restrict)
+  membership Membership @relation(fields: [membershipId], references: [id], onDelete: Restrict)
+
+  @@index([customerId, status])
+  @@index([currentPeriodEnd])
+  @@map("subscriptions")
+  @@schema("public")
+}
+
+model Order {
+  id              String    @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  customerId      String    @map("customer_id") @db.Uuid
+  orderNo         String    @unique @map("order_no")
+  productId       String    @map("product_id") @db.Uuid
+  quantity        Int       @default(1)
+  unitPrice       Decimal   @map("unit_price") @db.Decimal(12, 2)
+  currency        String    @default("CNY")
+  totalAmount     Decimal   @map("total_amount") @db.Decimal(12, 2)
+  // payment_status 合法取值: pending | paid | refunded | canceled
+  paymentStatus   String    @default("pending") @map("payment_status")
+  paymentMethod   String?   @map("payment_method")
+  shippingAddress Json?     @map("shipping_address")
+  placedAt        DateTime  @default(now()) @map("placed_at")
+  fulfilledAt     DateTime? @map("fulfilled_at")
+  createdAt       DateTime  @default(now()) @map("created_at")
+  updatedAt       DateTime  @updatedAt @map("updated_at")
+
+  customer Customer @relation(fields: [customerId], references: [id], onDelete: Restrict)
+  product  Product  @relation(fields: [productId], references: [id], onDelete: Restrict)
+
+  @@map("orders")
+  @@schema("public")
+}
+
+// ============================================================
+// 3. CRM Domain
+// ============================================================
+
+model Lead {
+  id                  String    @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  companyName         String?   @map("company_name")
+  contactName         String    @map("contact_name")
+  phone               String
+  email               String?
+  position            String?
+  // cooperation_type 合法取值: hospital | pharmacy | oem | odm | distributor | enterprise
+  // （TASK-104裁定：distributor替代此前的agent以与partner-conversion-ux-v1.md术语统一；
+  // 新增enterprise对应企业批量采购场景；移除consumer——该字段语义是B2B合作类型，
+  // 不适合承载C端咨询场景；保留odm即使本Sprint未建独立Landing Page，因其是
+  // business-architecture-v1.md确立的合作类型，未来仍可通过/partner通用页或人工录入产生此类Lead）
+  cooperationType     String    @map("cooperation_type")
+  remark              String?
+  sourcePage          String?   @map("source_page")
+  sourceKeyword       String?   @map("source_keyword")
+  utmSource           String?   @map("utm_source")
+  utmMedium           String?   @map("utm_medium")
+  utmCampaign         String?   @map("utm_campaign")
+  // status 合法取值: new | contacted | qualified | converted | lost
+  status              String    @default("new")
+  assignedTo          String?   @map("assigned_to") @db.Uuid
+  conversationId      String?   @map("conversation_id") @db.Uuid
+  assessmentResultId  String?   @map("assessment_result_id") @db.Uuid
+  customerId          String?   @map("customer_id") @db.Uuid
+  createdAt           DateTime  @default(now()) @map("created_at")
+  updatedAt           DateTime  @updatedAt @map("updated_at")
+  deletedAt           DateTime? @map("deleted_at")
+
+  customer Customer? @relation(fields: [customerId], references: [id], onDelete: Restrict)
+  assignedUser User? @relation(fields: [assignedTo], references: [id], onDelete: Restrict)
+  partner  Partner?
+  notes    LeadNote[]
+
+  @@index([status, createdAt])
+  @@index([assignedTo])
+  @@map("leads")
+  @@schema("public")
+}
+
+// LeadNote：TASK-104新增实体（CRM Domain，第39个实体）。
+// Lead原有的remark字段是单一文本，无法承载"多位CRM Operator在不同时间点
+// 留下各自的跟进记录"这一真实的CRM Notes场景（呼应TASK-104E的Lead Notes要求），
+// 因此新增一张独立的、仅追加写入（不可编辑/不可删除）的记录表，
+// 这与AuditLogs/SecurityEvents的"只追加"设计哲学一致。
+model LeadNote {
+  id        String   @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  leadId    String   @map("lead_id") @db.Uuid
+  authorId  String   @map("author_id") @db.Uuid
+  content   String
+  createdAt DateTime @default(now()) @map("created_at")
+
+  lead   Lead @relation(fields: [leadId], references: [id], onDelete: Restrict)
+  author User @relation(fields: [authorId], references: [id], onDelete: Restrict)
+
+  @@index([leadId, createdAt])
+  @@map("lead_notes")
+  @@schema("public")
+}
+
+// ============================================================
+// 4. Partner Domain
+// ============================================================
+
+model Partner {
+  id                  String   @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  companyName         String   @map("company_name")
+  // type 合法取值: hospital | pharmacy | oem | odm | distributor | enterprise（与Lead.cooperationType同步，TASK-104裁定）
+  type                String
+  contactInfo         Json     @map("contact_info")
+  region               String?
+  // contract_status 合法取值: pending | active | terminated
+  contractStatus      String   @default("pending") @map("contract_status")
+  convertedFromLeadId String?  @unique @map("converted_from_lead_id") @db.Uuid
+  createdAt           DateTime @default(now()) @map("created_at")
+  updatedAt           DateTime @updatedAt @map("updated_at")
+
+  convertedFromLead Lead? @relation(fields: [convertedFromLeadId], references: [id], onDelete: Restrict)
+
+  @@map("partners")
+  @@schema("public")
+}
+
+// ============================================================
+// 5. Knowledge Domain
+// ============================================================
+
+model Category {
+  id          String  @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  name        String
+  slug        String  @unique
+  parentId    String? @map("parent_id") @db.Uuid
+  description String?
+  sortOrder   Int     @default(0) @map("sort_order")
+
+  parent   Category?  @relation("CategoryToParent", fields: [parentId], references: [id], onDelete: Restrict)
+  children Category[] @relation("CategoryToParent")
+  articles Article[]
+
+  @@map("categories")
+  @@schema("public")
+}
+
+model Tag {
+  id   String @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  name String
+  slug String @unique
+
+  articleTags ArticleTag[]
+
+  @@map("tags")
+  @@schema("public")
+}
+
+model ArticleTag {
+  articleId String @map("article_id") @db.Uuid
+  tagId     String @map("tag_id") @db.Uuid
+
+  article Article @relation(fields: [articleId], references: [id], onDelete: Restrict)
+  tag     Tag     @relation(fields: [tagId], references: [id], onDelete: Restrict)
+
+  @@id([articleId, tagId])
+  @@map("article_tags")
+  @@schema("public")
+}
+
+model Topic {
+  id          String  @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  name        String
+  slug        String  @unique
+  description String?
+  coverImage  String? @map("cover_image")
+
+  topicArticles  TopicArticle[]
+  keywordClusters KeywordCluster[]
+
+  @@map("topics")
+  @@schema("public")
+}
+
+model TopicArticle {
+  topicId   String @map("topic_id") @db.Uuid
+  articleId String @map("article_id") @db.Uuid
+  sortOrder Int    @default(0) @map("sort_order")
+
+  topic   Topic   @relation(fields: [topicId], references: [id], onDelete: Restrict)
+  article Article @relation(fields: [articleId], references: [id], onDelete: Restrict)
+
+  @@id([topicId, articleId])
+  @@map("topic_articles")
+  @@schema("public")
+}
+
+model Author {
+  id     String  @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  name   String
+  bio    String?
+  avatar String?
+  title  String?
+  userId String? @map("user_id") @db.Uuid
+
+  user     User?     @relation(fields: [userId], references: [id], onDelete: Restrict)
+  articles Article[]
+
+  @@map("authors")
+  @@schema("public")
+}
+
+model MedicalReviewer {
+  id          String  @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  name        String
+  credentials String
+  licenseNo   String? @map("license_no")
+  bio         String?
+  avatar      String?
+
+  reviewedArticles Article[]
+  reviewedAssessments Assessment[]
+
+  @@map("medical_reviewers")
+  @@schema("public")
+}
+
+model Article {
+  id                 String    @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  title              String
+  slug               String    @unique
+  categoryId         String?   @map("category_id") @db.Uuid
+  summary            String?
+  content            String
+  coverImage         String?   @map("cover_image")
+  seoTitle           String?   @map("seo_title")
+  seoKeywords        String?   @map("seo_keywords")
+  seoDescription     String?   @map("seo_description")
+  references         Json?
+  // status 合法取值: draft | pending_review | published | archived
+  status             String    @default("draft")
+  authorId           String?   @map("author_id") @db.Uuid
+  reviewerId         String?   @map("reviewer_id") @db.Uuid
+  reviewedAt         DateTime? @map("reviewed_at")
+  publishedAt        DateTime? @map("published_at")
+  viewCount          Int       @default(0) @map("view_count")
+  sourceAgentTaskId  String?   @map("source_agent_task_id") @db.Uuid
+  createdAt          DateTime  @default(now()) @map("created_at")
+  updatedAt          DateTime  @updatedAt @map("updated_at")
+  deletedAt          DateTime? @map("deleted_at")
+
+  category        Category?         @relation(fields: [categoryId], references: [id], onDelete: Restrict)
+  author          Author?           @relation(fields: [authorId], references: [id], onDelete: Restrict)
+  reviewer        MedicalReviewer?  @relation(fields: [reviewerId], references: [id], onDelete: Restrict)
+  sourceAgentTask AgentTask?        @relation(fields: [sourceAgentTaskId], references: [id], onDelete: Restrict)
+  articleTags     ArticleTag[]
+  topicArticles   TopicArticle[]
+  knowledgeChunks KnowledgeChunk[]
+  seoKeywords     SeoKeyword[]
+
+  @@index([status, publishedAt])
+  @@index([categoryId])
+  @@map("articles")
+  @@schema("public")
+}
+
+model News {
+  id          String    @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  title       String
+  slug        String    @unique
+  summary     String?
+  content     String
+  coverImage  String?   @map("cover_image")
+  publishedAt DateTime? @map("published_at")
+  // status 合法取值: draft | published
+  status      String    @default("draft")
+
+  @@map("news")
+  @@schema("public")
+}
+
+model KnowledgeChunk {
+  id              String   @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  sourceArticleId String?  @map("source_article_id") @db.Uuid
+  sourceType      String   @map("source_type")
+  contentChunk    String   @map("content_chunk")
+  // embedding 向量字段，需 pgvector 扩展，维度待Embedding模型最终选型确认（暂定1536）
+  embedding       Unsupported("vector(1536)")?
+  createdAt       DateTime @default(now()) @map("created_at")
+
+  sourceArticle Article? @relation(fields: [sourceArticleId], references: [id], onDelete: Restrict)
+
+  @@map("knowledge_chunks")
+  @@schema("public")
+}
+
+model KnowledgeGraphNode {
+  id              String  @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  // type 合法取值: topic | symptom | risk_factor | product | assessment
+  type            String
+  name            String
+  relatedClusterId String? @map("related_cluster_id") @db.Uuid
+
+  relatedCluster KeywordCluster?      @relation(fields: [relatedClusterId], references: [id], onDelete: Restrict)
+  sourceEdges    KnowledgeGraphEdge[] @relation("EdgeSource")
+  targetEdges    KnowledgeGraphEdge[] @relation("EdgeTarget")
+
+  @@map("knowledge_graph_nodes")
+  @@schema("public")
+}
+
+model KnowledgeGraphEdge {
+  id           String @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  sourceNodeId String @map("source_node_id") @db.Uuid
+  targetNodeId String @map("target_node_id") @db.Uuid
+  // relation_type 合法取值: part_of | risk_factor_for | overlaps_with | related_to
+  relationType String @map("relation_type")
+  weight       Decimal @default(1.0) @db.Decimal(5, 2)
+
+  sourceNode KnowledgeGraphNode @relation("EdgeSource", fields: [sourceNodeId], references: [id], onDelete: Restrict)
+  targetNode KnowledgeGraphNode @relation("EdgeTarget", fields: [targetNodeId], references: [id], onDelete: Restrict)
+
+  @@index([sourceNodeId])
+  @@index([targetNodeId])
+  @@map("knowledge_graph_edges")
+  @@schema("public")
+}
+
+// ============================================================
+// 6. SEO Domain
+// ============================================================
+
+model KeywordCluster {
+  id          String  @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  rootKeyword String  @map("root_keyword")
+  hubTopicId  String? @map("hub_topic_id") @db.Uuid
+  description String?
+
+  hubTopic            Topic?               @relation(fields: [hubTopicId], references: [id], onDelete: Restrict)
+  seoKeywords         SeoKeyword[]
+  knowledgeGraphNodes KnowledgeGraphNode[]
+
+  @@map("keyword_clusters")
+  @@schema("public")
+}
+
+model SeoKeyword {
+  id                  String   @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  keyword             String
+  searchVolume        Int?     @map("search_volume")
+  competitionScore    Decimal? @map("competition_score") @db.Decimal(5, 2)
+  // trend 合法取值: rising | stable | declining
+  trend               String?
+  // recommendation_level 合法取值: high | medium | low
+  recommendationLevel String?  @map("recommendation_level")
+  // status 合法取值: discovered | in_use | rejected
+  status              String   @default("discovered")
+  linkedArticleId     String?  @map("linked_article_id") @db.Uuid
+  clusterId           String?  @map("cluster_id") @db.Uuid
+  discoveredByTaskId  String?  @map("discovered_by_task_id") @db.Uuid
+  createdAt           DateTime @default(now()) @map("created_at")
+
+  linkedArticle    Article?        @relation(fields: [linkedArticleId], references: [id], onDelete: Restrict)
+  cluster          KeywordCluster? @relation(fields: [clusterId], references: [id], onDelete: Restrict)
+  discoveredByTask AgentTask?      @relation(fields: [discoveredByTaskId], references: [id], onDelete: Restrict)
+
+  @@index([recommendationLevel, status])
+  @@index([clusterId])
+  @@map("seo_keywords")
+  @@schema("public")
+}
+
+// ============================================================
+// 7. AI Domain
+// ============================================================
+
+model Conversation {
+  id               String    @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  customerId       String?   @map("customer_id") @db.Uuid
+  // 匿名访客会话标识，customer_id为空时必填（TASK-030F补充，支撑RLS匿名会话规则）
+  guestSessionId   String?   @map("guest_session_id") @db.Uuid
+  channel          String
+  startedAt        DateTime  @default(now()) @map("started_at")
+  endedAt          DateTime? @map("ended_at")
+  resolvedIntent   String?   @map("resolved_intent")
+  convertedLeadId  String?   @unique @map("converted_lead_id") @db.Uuid
+  deletedAt        DateTime? @map("deleted_at")
+
+  customer Customer? @relation(fields: [customerId], references: [id], onDelete: Restrict)
+  messages ConversationMessage[]
+  feedback ConversationFeedback?
+
+  @@index([customerId, startedAt])
+  @@index([guestSessionId])
+  @@map("conversations")
+  @@schema("public")
+}
+
+model ConversationMessage {
+  id                String   @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  conversationId    String   @map("conversation_id") @db.Uuid
+  // role 合法取值: user | assistant | system
+  role              String
+  content           String
+  retrievedChunkIds Json?    @map("retrieved_chunk_ids")
+  createdAt         DateTime @default(now()) @map("created_at")
+
+  conversation Conversation @relation(fields: [conversationId], references: [id], onDelete: Restrict)
+
+  @@index([conversationId, createdAt])
+  @@map("conversation_messages")
+  @@schema("public")
+}
+
+model ConversationFeedback {
+  id             String   @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  conversationId String   @unique @map("conversation_id") @db.Uuid
+  rating         Int
+  comment        String?
+  createdAt      DateTime @default(now()) @map("created_at")
+
+  conversation Conversation @relation(fields: [conversationId], references: [id], onDelete: Restrict)
+
+  @@map("conversation_feedback")
+  @@schema("public")
+}
+
+model AgentTask {
+  id               String    @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  // agent_type 合法取值: seo_research | content_writer | medical_review | growth_analyst
+  agentType        String    @map("agent_type")
+  inputParams      Json      @map("input_params")
+  outputResult     Json?     @map("output_result")
+  // status 合法取值: pending | running | completed | failed
+  status           String    @default("pending")
+  relatedEntityType String?  @map("related_entity_type")
+  relatedEntityId  String?   @map("related_entity_id") @db.Uuid
+  errorLog         String?   @map("error_log")
+  startedAt        DateTime? @map("started_at")
+  finishedAt       DateTime? @map("finished_at")
+
+  articles    Article[]
+  seoKeywords SeoKeyword[]
+
+  @@map("agent_tasks")
+  @@schema("public")
+}
+
+// ============================================================
+// 8. Assessment Domain
+// ============================================================
+
+model Assessment {
+  id                  String    @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  // type 合法取值: osa | sleep | stress | weight_loss | diabetes | altitude
+  type                String
+  questionnaireSchema Json      @map("questionnaire_schema")
+  scoringRule         Json      @map("scoring_rule")
+  resultTemplate      Json      @map("result_template")
+  version             String
+  reviewedBy          String?   @map("reviewed_by") @db.Uuid
+  reviewedAt          DateTime? @map("reviewed_at")
+
+  reviewer MedicalReviewer? @relation(fields: [reviewedBy], references: [id], onDelete: Restrict)
+
+  @@map("assessments")
+  @@schema("public")
+}
+
+model AssessmentResult {
+  id                 String    @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  customerId         String    @map("customer_id") @db.Uuid
+  // assessment_type 合法取值: osa | sleep | stress | weight_loss | diabetes | altitude
+  assessmentType     String    @map("assessment_type")
+  // channel 合法取值: web | app | ai_chat
+  channel            String
+  answers            Json
+  score              Decimal?  @db.Decimal(6, 2)
+  // risk_level 四档，冻结依据 /docs/governance/risk-level-freeze-v1.md：low | moderate | high | very_high
+  riskLevel          String?   @map("risk_level")
+  // status 合法取值: in_progress | completed（TASK-030B补充字段，支撑Save Progress断点续答）
+  status             String    @default("in_progress")
+  definitionVersion  String?   @map("definition_version")
+  recommendations    Json?
+  createdAt          DateTime  @default(now()) @map("created_at")
+  updatedAt          DateTime  @updatedAt @map("updated_at")
+
+  customer           Customer            @relation(fields: [customerId], references: [id], onDelete: Restrict)
+  healthRiskProfiles HealthRiskProfile[]
+
+  @@index([customerId, assessmentType, createdAt])
+  @@map("assessment_results")
+  @@schema("public")
+}
+
+// ============================================================
+// 9. Analytics Domain（读模型，均为派生数据）
+// ============================================================
+
+model Event {
+  id            String   @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  customerId    String?  @map("customer_id") @db.Uuid
+  sessionId     String?  @map("session_id")
+  eventType     String   @map("event_type")
+  // event_category 合法取值: website | ai | membership | commerce | assessment
+  // （TASK-105新增assessment类别，支撑Assessment Started/Completed/Abandoned埋点）
+  eventCategory String?  @map("event_category")
+  channel       String?
+  properties    Json?
+  occurredAt    DateTime @map("occurred_at")
+
+  customer Customer? @relation(fields: [customerId], references: [id], onDelete: Restrict)
+
+  @@index([customerId, occurredAt])
+  @@index([eventType, occurredAt])
+  @@map("events")
+  @@schema("public")
+}
+
+model Analytics {
+  id                   String   @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  date                 DateTime @db.Date
+  pagePath             String   @map("page_path")
+  pv                   Int      @default(0)
+  uv                   Int      @default(0)
+  trafficSource        String?  @map("traffic_source")
+  matchedKeyword       String?  @map("matched_keyword")
+  baiduRankingPosition Int?     @map("baidu_ranking_position")
+  baiduIndexStatus     String?  @map("baidu_index_status")
+  conversionCount      Int      @default(0) @map("conversion_count")
+  createdAt            DateTime @default(now()) @map("created_at")
+
+  @@index([date, pagePath])
+  @@map("analytics")
+  @@schema("public")
+}
+
+model CustomerProfile {
+  customerId        String   @id @map("customer_id") @db.Uuid
+  deviceId          String?  @map("device_id")
+  membershipLevel   String?  @map("membership_level")
+  riskProfile       Json?    @map("risk_profile")
+  assessmentHistory Json?    @map("assessment_history")
+  chatHistory       Json?    @map("chat_history")
+  crmStatus         String?  @map("crm_status")
+  lifetimeValue     Decimal? @map("lifetime_value") @db.Decimal(12, 2)
+  updatedAt         DateTime @updatedAt @map("updated_at")
+
+  customer Customer @relation(fields: [customerId], references: [id], onDelete: Restrict)
+
+  @@map("customer_profiles")
+  @@schema("analytics_pii")
+}
+
+model DataSourceConnection {
+  id           String    @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  // source_type 合法取值: baidu_tongji | baidu_ziyuan | baidu_push
+  // 已移除 ga4/gsc（Google生态）——Phase F中国市场策略明确要求只使用百度生态，
+  // 不接入GA4/Google Search Console/Google Analytics
+  sourceType   String    @map("source_type")
+  credentials  Json
+  // status 合法取值: active | error | disabled
+  status       String    @default("active")
+  lastSyncedAt DateTime? @map("last_synced_at")
+
+  @@map("data_source_connections")
+  @@schema("public")
+}
+
+// ============================================================
+// 10. Health Domain（独立schema物理隔离）
+// ============================================================
+
+model HealthMetric {
+  id          String   @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  customerId  String   @map("customer_id") @db.Uuid
+  deviceId    String?  @map("device_id")
+  // metric_type 不加CHECK约束，应用层白名单校验，预留未来设备扩展（CGM/毫米波雷达等）
+  metricType  String   @map("metric_type")
+  // value 列要求pgcrypto列级加密（冻结裁定，见physical-database-freeze-v1.md），由migration.sql补充加密相关DDL
+  value       Decimal  @db.Decimal(12, 4)
+  unit        String?
+  recordedAt  DateTime @map("recorded_at")
+  syncBatchId String?  @map("sync_batch_id") @db.Uuid
+
+  customer Customer @relation(fields: [customerId], references: [id], onDelete: Restrict)
+
+  @@index([customerId, metricType, recordedAt])
+  @@map("health_metrics")
+  @@schema("health")
+}
+
+model HealthRiskProfile {
+  id                       String   @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  customerId               String   @map("customer_id") @db.Uuid
+  riskType                 String   @map("risk_type")
+  // risk_level 四档：low | moderate | high | very_high
+  riskLevel                String   @map("risk_level")
+  basis                    String?
+  computedAt               DateTime @map("computed_at")
+  relatedAssessmentResultId String? @map("related_assessment_result_id") @db.Uuid
+
+  customer               Customer          @relation(fields: [customerId], references: [id], onDelete: Restrict)
+  relatedAssessmentResult AssessmentResult? @relation(fields: [relatedAssessmentResultId], references: [id], onDelete: Restrict)
+
+  @@index([customerId, riskType, computedAt])
+  @@map("health_risk_profiles")
+  @@schema("health")
+}
+
+// ============================================================
+// 11. Notification Domain（TASK-030B新增）
+// ============================================================
+
+model NotificationLog {
+  id                String    @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  customerId        String    @map("customer_id") @db.Uuid
+  // channel 合法取值: email | sms | push | in_app
+  channel           String
+  templateCode      String    @map("template_code")
+  // status 合法取值: queued | sent | failed | read
+  status            String    @default("queued")
+  relatedEntityType String?   @map("related_entity_type")
+  relatedEntityId   String?   @map("related_entity_id") @db.Uuid
+  sentAt            DateTime? @map("sent_at")
+  readAt            DateTime? @map("read_at")
+  createdAt         DateTime  @default(now()) @map("created_at")
+  updatedAt         DateTime  @updatedAt @map("updated_at")
+
+  customer Customer @relation(fields: [customerId], references: [id], onDelete: Restrict)
+
+  @@index([customerId, createdAt])
+  @@index([status])
+  @@map("notification_logs")
+  @@schema("public")
+}
+
+// ============================================================
+// 12. 安全/审计（跨领域横切，独立schema）
+// ============================================================
+
+model AuditLog {
+  id         String   @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  userId     String?  @map("user_id") @db.Uuid
+  action     String
+  targetType String?  @map("target_type")
+  targetId   String?  @map("target_id") @db.Uuid
+  ipAddress  String?  @map("ip_address")
+  createdAt  DateTime @default(now()) @map("created_at")
+
+  user User? @relation(fields: [userId], references: [id], onDelete: Restrict)
+
+  @@map("audit_logs")
+  @@schema("audit")
+}
+
+model SecurityEvent {
+  id         String   @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  eventType  String   @map("event_type")
+  // severity 合法取值: low | medium | high
+  severity   String
+  // actor_type 合法取值: customer | user | ai_service | system
+  actorType  String   @map("actor_type")
+  actorId    String?  @map("actor_id") @db.Uuid
+  targetType String?  @map("target_type")
+  targetId   String?  @map("target_id") @db.Uuid
+  ipAddress  String?  @map("ip_address")
+  metadata   Json?
+  occurredAt DateTime @map("occurred_at")
+
+  @@index([severity, occurredAt])
+  @@index([actorId, occurredAt])
+  @@index([eventType, occurredAt])
+  @@map("security_events")
+  @@schema("audit")
+}
+
+// ============================================================
+// 13. 共享参考数据
+// ============================================================
+
+model Product {
+  id          String  @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  name        String
+  slug        String  @unique
+  model       String?
+  description String?
+  spec        Json?
+  images      Json?
+  // status 合法取值: active | discontinued
+  status      String  @default("active")
+
+  orders Order[]
+
+  @@map("products")
+  @@schema("public")
+}

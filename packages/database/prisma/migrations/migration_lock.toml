@@ -1,0 +1,2 @@
+# 由Prisma自动管理，标识迁移历史使用的数据库provider，请勿手动修改
+provider = "postgresql"

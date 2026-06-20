@@ -1,0 +1,21 @@
+node_modules/
+dist/
+build/
+.next/
+.turbo/
+*.log
+.env
+.env.local
+.DS_Store
+coverage/
+packages/database/generated/
+
+# 生产环境变量（绝不提交）
+.env.production
+.env.local
+.env.*.local
+
+# 部署产物
+apps/web/.next/
+apps/api/dist/
+packages/database/generated/

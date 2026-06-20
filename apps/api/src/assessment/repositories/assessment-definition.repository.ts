@@ -37,7 +37,7 @@ export class AssessmentDefinitionRepository {
   }
 
   create(data: AssessmentDefinitionData) {
-    return this.prisma.assessment.create({ data });
+    return this.prisma.assessment.create({ data: data as any });
   }
 
   markReviewed(id: string, reviewerId: string) {

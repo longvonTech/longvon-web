@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 import type { Metadata } from 'next';
 import { PartnerLandingLayout } from '../../../components/PartnerLandingLayout';
 import { getSiteUrl } from '../../../lib/site';

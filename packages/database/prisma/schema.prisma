@@ -382,7 +382,7 @@ model Article {
   articleTags     ArticleTag[]
   topicArticles   TopicArticle[]
   knowledgeChunks KnowledgeChunk[]
-  seoKeywords     SeoKeyword[]
+  linkedSeoKeywords SeoKeyword[]
 
   @@index([status, publishedAt])
   @@index([categoryId])

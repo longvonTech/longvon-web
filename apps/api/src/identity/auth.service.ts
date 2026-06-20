@@ -10,7 +10,7 @@ import { PrismaService } from '../database/prisma.service';
 import { RedisService } from '../redis/redis.service';
 import { AdminJwtPayload, CustomerJwtPayload } from './jwt-payload.types';
 
-interface TokenPair {
+export interface TokenPair {
   accessToken: string;
   refreshToken: string;
 }

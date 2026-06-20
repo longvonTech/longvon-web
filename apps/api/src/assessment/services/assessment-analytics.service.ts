@@ -41,7 +41,7 @@ export class AssessmentAnalyticsService {
           eventType,
           eventCategory: 'assessment',
           channel: 'web',
-          properties,
+          properties: properties as any,
           occurredAt: new Date(),
         },
       })

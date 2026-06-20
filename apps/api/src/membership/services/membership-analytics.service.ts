@@ -62,7 +62,7 @@ export class MembershipAnalyticsService {
           eventType,
           eventCategory: 'membership',
           channel: 'web',
-          properties,
+          properties: properties as any,
           occurredAt: new Date(),
         },
       })

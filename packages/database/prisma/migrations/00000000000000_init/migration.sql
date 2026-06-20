@@ -173,7 +173,7 @@ CREATE TABLE public.articles (
   seo_title            text,
   seo_keywords         text,
   seo_description      text,
-  references           jsonb,
+  "references"           jsonb,
   status               text NOT NULL DEFAULT 'draft' CHECK (status IN ('draft','pending_review','published','archived')),
   author_id            uuid REFERENCES public.authors(id) ON DELETE RESTRICT,
   reviewer_id          uuid REFERENCES public.medical_reviewers(id) ON DELETE RESTRICT,

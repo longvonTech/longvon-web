@@ -33,7 +33,7 @@ export class PartnerRepository {
   ) {
     return this.prisma.$transaction(async (tx) => {
       const partner = await tx.partner.create({
-        data: { ...data, convertedFromLeadId: leadId },
+        data: { companyName: data.companyName, type: data.type, contactInfo: data.contactInfo as any, region: data.region, convertedFromLeadId: leadId },
       });
       await tx.lead.update({ where: { id: leadId }, data: { status: 'converted' } });
       return partner;

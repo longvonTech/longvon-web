@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 import type { Metadata } from 'next';
 import { BenefitsMatrix } from '../../components/membership/BenefitsMatrix';
 import { getSiteUrl } from '../../lib/site';

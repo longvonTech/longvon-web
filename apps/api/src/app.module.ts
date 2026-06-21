@@ -10,6 +10,8 @@ import { SeoModule } from './seo/seo.module';
 import { PartnerModule } from './partner/partner.module';
 import { AssessmentModule } from './assessment/assessment.module';
 import { MembershipModule } from './membership/membership.module';
+import { ImageAdminModule } from './image-admin/image-admin.module';
+import { GrowthModule } from './growth/growth.module';
 
 // Sprint范围声明：
 // Sprint 1  = 基础框架 + 基础数据层 + 基础认证体系（Identity+Customer）
@@ -32,6 +34,8 @@ import { MembershipModule } from './membership/membership.module';
     PartnerModule,
     AssessmentModule,
     MembershipModule,
+    ImageAdminModule,
+    GrowthModule,
   ],
   controllers: [HealthController],
 })

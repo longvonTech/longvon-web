@@ -18,7 +18,7 @@ generator client {
 datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
-  schemas  = ["public", "health", "audit", "analytics_pii"]
+  schemas  = ["public", "health", "audit", "analytics_pii", "growth"]
 }
 
 // ============================================================
@@ -820,4 +820,201 @@ model Product {
 
   @@map("products")
   @@schema("public")
+}
+
+// ── Phase F Growth Domain ────────────────────────────────────
+model IndustryEvent {
+  id          String    @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  title       String
+  summary     String?
+  sourceUrl   String?   @map("source_url")
+  sourceName  String?   @map("source_name")
+  topic       String
+  relevance   String    @default("medium")
+  publishedAt DateTime? @map("published_at")
+  crawledAt   DateTime  @default(now()) @map("crawled_at")
+  rawContent  String?   @map("raw_content")
+  aiSummary   String?   @map("ai_summary")
+  status      String    @default("raw")
+  createdAt   DateTime  @default(now()) @map("created_at")
+  @@map("industry_events")
+  @@schema("growth")
+}
+
+model IndustryReport {
+  id            String    @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  reportType    String    @map("report_type")
+  periodStart   DateTime  @map("period_start")
+  periodEnd     DateTime  @map("period_end")
+  title         String
+  content       String
+  highlights    Json?
+  eventCount    Int       @default(0) @map("event_count")
+  status        String    @default("draft")
+  generatedAt   DateTime  @default(now()) @map("generated_at")
+  publishedAt   DateTime? @map("published_at")
+  wecomPushed   Boolean   @default(false) @map("wecom_pushed")
+  wecomPushedAt DateTime? @map("wecom_pushed_at")
+  createdAt     DateTime  @default(now()) @map("created_at")
+  @@map("industry_reports")
+  @@schema("growth")
+}
+
+model CompetitorEvent {
+  id          String    @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  competitor  String
+  eventType   String    @map("event_type")
+  title       String
+  summary     String?
+  sourceUrl   String?   @map("source_url")
+  sourceName  String?   @map("source_name")
+  publishedAt DateTime? @map("published_at")
+  crawledAt   DateTime  @default(now()) @map("crawled_at")
+  rawContent  String?   @map("raw_content")
+  aiSummary   String?   @map("ai_summary")
+  impact      String    @default("medium")
+  status      String    @default("raw")
+  createdAt   DateTime  @default(now()) @map("created_at")
+  @@map("competitor_events")
+  @@schema("growth")
+}
+
+model CompetitorReport {
+  id           String    @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  competitor   String
+  reportType   String    @map("report_type")
+  periodStart  DateTime  @map("period_start")
+  periodEnd    DateTime  @map("period_end")
+  title        String
+  content      String
+  insights     Json?
+  eventCount   Int       @default(0) @map("event_count")
+  status       String    @default("draft")
+  generatedAt  DateTime  @default(now()) @map("generated_at")
+  wecomPushed  Boolean   @default(false) @map("wecom_pushed")
+  createdAt    DateTime  @default(now()) @map("created_at")
+  @@map("competitor_reports")
+  @@schema("growth")
+}
+
+model ResearchPaper {
+  id          String    @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  title       String
+  authors     String?
+  journal     String?
+  abstract    String?
+  doi         String?   @unique
+  sourceUrl   String?   @map("source_url")
+  topic       String
+  publishedAt DateTime? @map("published_at")
+  crawledAt   DateTime  @default(now()) @map("crawled_at")
+  aiSummary   String?   @map("ai_summary")
+  relevance   String    @default("medium")
+  status      String    @default("raw")
+  createdAt   DateTime  @default(now()) @map("created_at")
+  @@map("research_papers")
+  @@schema("growth")
+}
+
+model ResearchReport {
+  id           String    @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  topic        String
+  reportType   String    @map("report_type")
+  periodStart  DateTime  @map("period_start")
+  periodEnd    DateTime  @map("period_end")
+  title        String
+  content      String
+  keyFindings  Json?     @map("key_findings")
+  paperCount   Int       @default(0) @map("paper_count")
+  status       String    @default("draft")
+  generatedAt  DateTime  @default(now()) @map("generated_at")
+  wecomPushed  Boolean   @default(false) @map("wecom_pushed")
+  createdAt    DateTime  @default(now()) @map("created_at")
+  @@map("research_reports")
+  @@schema("growth")
+}
+
+model KeywordOpportunity {
+  id                 String    @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  keyword            String
+  intent             String    @default("informational")
+  cluster            String?
+  topic              String?
+  searchVolume       Int?      @map("search_volume")
+  difficulty         Int?
+  priority           String    @default("medium")
+  contentGap         Boolean   @default(false) @map("content_gap")
+  existingArticleId  String?   @map("existing_article_id") @db.Uuid
+  notes              String?
+  status             String    @default("discovered")
+  discoveredAt       DateTime  @default(now()) @map("discovered_at")
+  createdAt          DateTime  @default(now()) @map("created_at")
+  updatedAt          DateTime  @updatedAt @map("updated_at")
+  contentBriefs      ContentBrief[]
+  @@map("keyword_opportunities")
+  @@schema("growth")
+}
+
+model KeywordReport {
+  id             String    @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  reportType     String    @map("report_type")
+  periodStart    DateTime  @map("period_start")
+  periodEnd      DateTime  @map("period_end")
+  title          String
+  content        String
+  newKeywords    Int       @default(0) @map("new_keywords")
+  opportunities  Json?
+  trends         Json?
+  status         String    @default("draft")
+  generatedAt    DateTime  @default(now()) @map("generated_at")
+  createdAt      DateTime  @default(now()) @map("created_at")
+  @@map("keyword_reports")
+  @@schema("growth")
+}
+
+model ContentBrief {
+  id                   String    @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  title                String
+  targetKeyword        String    @map("target_keyword")
+  secondaryKeywords    Json?     @map("secondary_keywords")
+  contentType          String    @map("content_type")
+  outline              Json?
+  referenceUrls        Json?     @map("reference_urls")
+  wordCountTarget      Int       @default(1500) @map("word_count_target")
+  source               String    @default("manual")
+  sourceId             String?   @map("source_id") @db.Uuid
+  keywordOpportunityId String?   @map("keyword_opportunity_id") @db.Uuid
+  priority             String    @default("medium")
+  status               String    @default("pending")
+  assignedAt           DateTime? @map("assigned_at")
+  draftReadyAt         DateTime? @map("draft_ready_at")
+  publishedArticleId   String?   @map("published_article_id") @db.Uuid
+  notes                String?
+  createdAt            DateTime  @default(now()) @map("created_at")
+  updatedAt            DateTime  @updatedAt @map("updated_at")
+  keywordOpportunity   KeywordOpportunity? @relation(fields: [keywordOpportunityId], references: [id], onDelete: Restrict)
+  @@map("content_briefs")
+  @@schema("growth")
+}
+
+model ExecutiveReport {
+  id                 String    @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  reportType         String    @map("report_type")
+  reportDate         DateTime  @map("report_date")
+  title              String
+  industrySection    String?   @map("industry_section")
+  competitorSection  String?   @map("competitor_section")
+  researchSection    String?   @map("research_section")
+  seoSection         String?   @map("seo_section")
+  contentSection     String?   @map("content_section")
+  alertSection       String?   @map("alert_section")
+  highlights         Json?
+  status             String    @default("draft")
+  generatedAt        DateTime  @default(now()) @map("generated_at")
+  wecomPushed        Boolean   @default(false) @map("wecom_pushed")
+  wecomPushedAt      DateTime? @map("wecom_pushed_at")
+  wecomMsgId         String?   @map("wecom_msg_id")
+  createdAt          DateTime  @default(now()) @map("created_at")
+  @@map("executive_reports")
+  @@schema("growth")
 }

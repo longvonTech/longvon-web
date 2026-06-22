@@ -90,7 +90,7 @@ export default function AssessmentPage() {
               <span style={{ fontSize: 12, color: 'var(--color-text-muted)', background: '#fff', padding: '2px 8px', borderRadius: 4 }}>{a.questions}</span>
             </div>
             {/* 评估交互需要登录态，本Sprint先跳转到会员页引导注册 */}
-            <Link href="/membership" style={{
+            <Link href={a.type === 'osa' ? '/assessment/osa' : a.type === 'sleep' ? '/assessment/sleep' : '/membership'} style={{
               display: 'block', textAlign: 'center',
               padding: '10px', background: 'var(--color-brand)', color: '#fff',
               borderRadius: 8, fontSize: 14, fontWeight: 600,

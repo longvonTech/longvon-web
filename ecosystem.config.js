@@ -24,9 +24,10 @@ module.exports = {
       env: {
         NODE_ENV: 'production',
         PORT: 3000,
-        NEXT_PUBLIC_SITE_URL: 'http://www.longvon.com',
+        NEXT_PUBLIC_SITE_URL: 'https://www.longvon.com',
+        WECOM_WEBHOOK_URL: 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=37f63a1c-3b99-49c3-8485-fecbbcc4c966',
         NEXT_PUBLIC_BAIDU_VERIFICATION: 'codeva-Ex4BRZLx09',
-        NEXT_PUBLIC_API_BASE_URL: 'http://www.longvon.com/api',
+        NEXT_PUBLIC_API_BASE_URL: 'https://www.longvon.com/api',
       }
     }
   ]

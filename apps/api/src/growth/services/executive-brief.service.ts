@@ -63,7 +63,14 @@ JSON数组格式返回。`;
     try {
       const h = await this.qwen.complete(highlightsPrompt);
       const match = h.match(/\[[\s\S]*\]/);
-      if (match) highlights = JSON.parse(match[0]);
+      if (match) {
+        const parsed = JSON.parse(match[0]);
+        highlights = parsed.map((item: any) => {
+          if (typeof item === 'string') return item;
+          // 处理对象格式 {text: '...'} 或 {content: '...'} 或 {'1': '...'}
+          return item.text || item.content || item.insight || Object.values(item)[0] || String(item);
+        });
+      }
     } catch {}
 
     // 保存到数据库
@@ -117,7 +124,8 @@ ${report.researchSection || '暂无数据'}
 ${report.contentSection || '暂无数据'}
 
 ---
-> 由 MATEYOU AI增长中台自动生成 · ${new Date().toLocaleTimeString('zh-CN')}`;
+> 由 MATEYOU AI增长中台自动生成 · ${new Date().toLocaleTimeString('zh-CN')}
+[📊 查看AI增长驾驶舱](https://www.longvon.com/admin/growth)`;
 
     try {
       await axios.post(this.wecomWebhook, {

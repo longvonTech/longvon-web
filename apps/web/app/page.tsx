@@ -38,25 +38,25 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section style={{ display:'grid', gridTemplateColumns:'1fr 1fr', minHeight:'80vh' }}>
+      <section style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit, minmax(300px, 1fr))', minHeight:'auto' }}>
         <div style={{ position:'relative', minHeight:500 }}>
           <img src="/images/ring1c/White-45-Right.jpg" alt="睡眠监测" style={{ position:'absolute', inset:0, width:'100%', height:'100%', objectFit:'cover' }} />
         </div>
-        <div style={{ background:'#fff', display:'flex', alignItems:'center', padding:'80px 64px' }}>
+        <div style={{ background:'#fff', display:'flex', alignItems:'center', padding:'clamp(32px,6vw,80px) clamp(20px,5vw,64px)' }}>
           <div>
             <p style={{ fontSize:12, fontWeight:600, letterSpacing:'0.1em', textTransform:'uppercase', color:'#9CA3AF', marginBottom:20 }}>Sleep Intelligence</p>
-            <h2 style={{ fontSize:'clamp(36px,4vw,52px)', fontWeight:800, letterSpacing:'-0.02em', lineHeight:1.1, color:'#1D1D1F', marginBottom:24 }}>睡眠，<br />是身体愈合的时刻</h2>
+            <h2 style={{ fontSize:'clamp(26px,4vw,52px)', fontWeight:800, letterSpacing:'-0.02em', lineHeight:1.1, color:'#1D1D1F', marginBottom:24 }}>睡眠，<br />是身体愈合的时刻</h2>
             <p style={{ fontSize:18, color:'#6B7280', lineHeight:1.7, marginBottom:36 }}>Ring1C 持续追踪深睡、浅睡、REM 睡眠分期，生成个性化睡眠质量参考评分。每天早晨，给你一个清晰的睡眠洞察。</p>
             <Link href="/assessment" style={{ fontSize:16, color:'#2563EB', fontWeight:600 }}>免费做睡眠风险自评 →</Link>
           </div>
         </div>
       </section>
 
-      <section style={{ display:'grid', gridTemplateColumns:'1fr 1fr', minHeight:'80vh' }}>
-        <div style={{ background:'#0F172A', display:'flex', alignItems:'center', padding:'80px 64px' }}>
+      <section style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit, minmax(300px, 1fr))', minHeight:'auto' }}>
+        <div style={{ background:'#0F172A', display:'flex', alignItems:'center', padding:'clamp(32px,6vw,80px) clamp(20px,5vw,64px)' }}>
           <div>
             <p style={{ fontSize:12, fontWeight:600, letterSpacing:'0.1em', textTransform:'uppercase', color:'#3B82F6', marginBottom:20 }}>Sleep Apnea Screening</p>
-            <h2 style={{ fontSize:'clamp(36px,4vw,52px)', fontWeight:800, letterSpacing:'-0.02em', lineHeight:1.1, color:'#fff', marginBottom:24 }}>数百万人在睡眠中<br />停止呼吸，却浑然不觉</h2>
+            <h2 style={{ fontSize:'clamp(26px,4vw,52px)', fontWeight:800, letterSpacing:'-0.02em', lineHeight:1.1, color:'#fff', marginBottom:24 }}>数百万人在睡眠中<br />停止呼吸，却浑然不觉</h2>
             <p style={{ fontSize:18, color:'#94A3B8', lineHeight:1.7, marginBottom:12 }}>Ring1C 内置基于 STOP-BANG 量表的 OSA 风险评估，结合夜间血氧与心率数据，提供睡眠呼吸暂停风险参考评分。</p>
             <p style={{ fontSize:12, color:'#475569', marginBottom:36 }}>*结果仅供参考，不构成医学诊断</p>
             <Link href="/assessment" style={{ fontSize:16, color:'#60A5FA', fontWeight:600 }}>做 OSA 风险自评 →</Link>
@@ -67,7 +67,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section style={{ display:'grid', gridTemplateColumns:'1fr 1fr', minHeight:'70vh' }}>
+      <section style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit, minmax(300px, 1fr))', minHeight:'auto' }}>
         <div style={{ position:'relative', overflow:'hidden' }}>
           <img src="/images/ring1c/Pink-45-Left.jpg" alt="心率" style={{ position:'absolute', inset:0, width:'100%', height:'100%', objectFit:'cover' }} />
           <div style={{ position:'absolute', inset:0, background:'linear-gradient(to top,rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.2) 50%,transparent 100%)' }} />
@@ -88,11 +88,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section style={{ background:'#0A0A0A', padding:'120px 24px' }}>
-        <div style={{ maxWidth:1100, margin:'0 auto', display:'grid', gridTemplateColumns:'1fr 1fr', gap:80, alignItems:'center' }}>
+      <section style={{ background:'#0A0A0A', padding:'clamp(60px,8vw,120px) 24px' }}>
+        <div style={{ maxWidth:1100, margin:'0 auto', display:'grid', gridTemplateColumns:'repeat(auto-fit, minmax(280px, 1fr))', gap:'clamp(32px,5vw,80px)', alignItems:'center' }}>
           <div>
             <p style={{ fontSize:12, fontWeight:600, letterSpacing:'0.1em', textTransform:'uppercase', color:'#4B5563', marginBottom:20 }}>Product Design</p>
-            <h2 style={{ fontSize:'clamp(36px,4vw,52px)', fontWeight:800, letterSpacing:'-0.02em', lineHeight:1.1, color:'#fff', marginBottom:48 }}>极致轻薄，<br />高端工艺</h2>
+            <h2 style={{ fontSize:'clamp(26px,4vw,52px)', fontWeight:800, letterSpacing:'-0.02em', lineHeight:1.1, color:'#fff', marginBottom:48 }}>极致轻薄，<br />高端工艺</h2>
             {[['约 4g','超轻设计，佩戴忘我'],['氧化锆陶瓷','高端外壳，触感温润'],['IP68','游泳洗澡全程无忧'],['7天续航','单次充电持续一周'],['多波长PPG','高精度生理数据采集']].map(([v,d]) => (
               <div key={v} style={{ display:'flex', justifyContent:'space-between', padding:'16px 0', borderBottom:'1px solid rgba(255,255,255,0.06)' }}>
                 <span style={{ fontSize:16, fontWeight:600, color:'#fff' }}>{v}</span>
@@ -106,7 +106,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section style={{ background:'#fff', padding:'120px 24px' }}>
+      <section style={{ background:'#fff', padding:'clamp(60px,8vw,120px) 24px' }}>
         <div style={{ maxWidth:980, margin:'0 auto', textAlign:'center' }}>
           <p style={{ fontSize:12, fontWeight:600, letterSpacing:'0.1em', textTransform:'uppercase', color:'#9CA3AF', marginBottom:20 }}>Business Partnership</p>
           <h2 style={{ fontSize:'clamp(40px,5vw,64px)', fontWeight:800, letterSpacing:'-0.03em', color:'#1D1D1F', marginBottom:20 }}>共建数字健康生态</h2>

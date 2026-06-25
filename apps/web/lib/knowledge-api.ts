@@ -10,6 +10,7 @@ export interface ArticleSummary {
   summary: string | null;
   coverImage: string | null;
   publishedAt: string | null;
+  viewCount: number;
   category: { name: string; slug: string } | null;
   author: { name: string } | null;
 }

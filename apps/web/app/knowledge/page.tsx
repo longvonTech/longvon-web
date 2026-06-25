@@ -8,54 +8,102 @@ export const metadata: Metadata = {
   title: '健康知识库 | MATEYOU',
   description: '经医学审核的健康知识文章，覆盖睡眠、压力、体重管理等主题。',
   alternates: { canonical: `${getSiteUrl()}/knowledge` },
-  openGraph: {
-    title: '健康知识库 | MATEYOU',
-    description: '经医学审核的健康知识文章，覆盖睡眠、压力、体重管理等主题。',
-    url: `${getSiteUrl()}/knowledge`,
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary',
-    title: '健康知识库 | MATEYOU',
-    description: '经医学审核的健康知识文章，覆盖睡眠、压力、体重管理等主题。',
-  },
 };
 
-// 呼应seo-content-ux-v1.md：本页面对应Knowledge Center的列表模板。
-// Sprint 2A暂不实现分类/标签的前端筛选交互（按categoryId/tagId筛选的API已就位，
-// 但筛选UI属于后续视觉设计落地的范畴，本Sprint聚焦"数据能否端到端跑通"）。
+function formatDate(dateStr: string | null): string {
+  if (!dateStr) return '';
+  const d = new Date(dateStr);
+  return d.toLocaleDateString('zh-CN', { year:'numeric', month:'long', day:'numeric' });
+}
+
+function formatViews(count: number): string {
+  if (count >= 10000) return `${(count / 10000).toFixed(1)}万次阅读`;
+  if (count >= 1000) return `${(count / 1000).toFixed(1)}k次阅读`;
+  return `${count}次阅读`;
+}
+
 export default async function KnowledgeListPage() {
   const { items } = await listArticles();
-
   return (
-    <main style={{ maxWidth: 760, margin: '60px auto', padding: '0 24px' }}>
-      <h1 style={{ fontSize: 28, fontWeight: 600 }}>健康知识库</h1>
-      <p style={{ color: '#666', marginTop: 8 }}>
-        全部内容经医学审核专家审核后发布。
-      </p>
+    <main style={{ maxWidth:800, margin:'0 auto', padding:'60px 24px 80px' }}>
+      {/* 标题区 */}
+      <div style={{ marginBottom:48 }}>
+        <h1 style={{ fontSize:'clamp(28px,4vw,40px)', fontWeight:700, letterSpacing:'-0.02em', color:'#1D1D1F', marginBottom:12 }}>
+          健康知识库
+        </h1>
+        <p style={{ fontSize:17, color:'#6B7280', lineHeight:1.6 }}>
+          全部内容经医学专家审核后发布，为你提供科学可信的健康参考。
+        </p>
+      </div>
 
       {items.length === 0 ? (
-        <p style={{ marginTop: 40, color: '#888' }}>
-          暂无已发布文章。
-        </p>
+        <p style={{ color:'#9CA3AF', fontSize:16 }}>暂无已发布文章。</p>
       ) : (
-        <ul style={{ marginTop: 32, listStyle: 'none', padding: 0 }}>
-          {items.map((article) => (
-            <li key={article.id} style={{ padding: '20px 0', borderBottom: '1px solid #eee' }}>
-              <Link href={`/knowledge/${article.slug}`} style={{ fontSize: 18, fontWeight: 500 }}>
-                {article.title}
+        <div style={{ display:'flex', flexDirection:'column', gap:0 }}>
+          {items.map((article, idx) => (
+            <article key={article.id} style={{
+              padding:'28px 0',
+              borderBottom:'1px solid #F3F4F6',
+              borderTop: idx === 0 ? '1px solid #F3F4F6' : 'none',
+            }}>
+              <Link href={`/knowledge/${article.slug}`} style={{ textDecoration:'none' }}>
+                <div style={{ display:'flex', justifyContent:'space-between', alignItems:'flex-start', gap:20 }}>
+                  <div style={{ flex:1, minWidth:0 }}>
+                    {/* 分类标签 */}
+                    {article.category?.name && (
+                      <span style={{ fontSize:12, fontWeight:600, color:'#2563EB', letterSpacing:'0.05em', textTransform:'uppercase', marginBottom:8, display:'block' }}>
+                        {article.category.name}
+                      </span>
+                    )}
+                    {/* 标题 */}
+                    <h2 style={{ fontSize:'clamp(16px,2vw,19px)', fontWeight:600, color:'#1D1D1F', lineHeight:1.4, marginBottom:8 }}>
+                      {article.title}
+                    </h2>
+                    {/* 摘要 */}
+                    {article.summary && (
+                      <p style={{ fontSize:15, color:'#6B7280', lineHeight:1.6, marginBottom:12,
+                        overflow:'hidden', display:'-webkit-box', WebkitLineClamp:2, WebkitBoxOrient:'vertical' as any }}>
+                        {article.summary}
+                      </p>
+                    )}
+                    {/* 元信息：日期 + 阅读数 */}
+                    <div style={{ display:'flex', alignItems:'center', gap:16, flexWrap:'wrap' }}>
+                      {article.publishedAt && (
+                        <span style={{ fontSize:13, color:'#9CA3AF', display:'flex', alignItems:'center', gap:4 }}>
+                          📅 {formatDate(article.publishedAt)}
+                        </span>
+                      )}
+                      <span style={{ fontSize:13, color:'#9CA3AF', display:'flex', alignItems:'center', gap:4 }}>
+                        👁 {formatViews(article.viewCount || 0)}
+                      </span>
+                      {article.author?.name && (
+                        <span style={{ fontSize:13, color:'#9CA3AF' }}>
+                          ✍️ {article.author.name}
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                  {/* 封面图（如有） */}
+                  {article.coverImage && (
+                    <div style={{ width:100, height:72, borderRadius:10, overflow:'hidden', flexShrink:0 }}>
+                      <img src={article.coverImage} alt={article.title}
+                        style={{ width:'100%', height:'100%', objectFit:'cover' }} />
+                    </div>
+                  )}
+                </div>
               </Link>
-              {article.summary && (
-                <p style={{ color: '#555', marginTop: 6 }}>{article.summary}</p>
-              )}
-              <div style={{ color: '#999', fontSize: 13, marginTop: 6 }}>
-                {article.category?.name ?? '未分类'}
-                {article.author?.name ? ` · ${article.author.name}` : ''}
-              </div>
-            </li>
+            </article>
           ))}
-        </ul>
+        </div>
       )}
+
+      {/* 免责声明 */}
+      <div style={{ marginTop:48, padding:'16px 20px', background:'#F9FAFB', borderRadius:12, border:'1px solid #E5E7EB' }}>
+        <p style={{ fontSize:13, color:'#9CA3AF', lineHeight:1.7 }}>
+          <strong style={{ color:'#6B7280' }}>免责声明：</strong>
+          本知识库内容仅供健康参考，不构成医学诊断或治疗建议。如有健康疑虑，请及时就医。
+        </p>
+      </div>
     </main>
   );
 }

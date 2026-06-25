@@ -1,5 +1,29 @@
 export interface ImageSlot { id:string; name:string; page:string; section:string; path:string; description:string; recommendedSize:string; }
 export const IMAGE_REGISTRY: ImageSlot[] = [
+
+  // Ring1C 产品页功能配图
+  {id:'ring1c-hero-main', name:'Ring1C产品主图', page:'Ring1C产品页', section:'Hero', path:'images/ring1c/hero-main.jpg', description:'Ring1C正面产品主图', recommendedSize:'1600×900px'},
+  {id:'ring1c-feature-sleep',    name:'睡眠引擎配图',       page:'Ring1C产品页', section:'7大功能', path:'images/ring1c/features/sleep.jpg',    description:'睡眠智能引擎功能展示',       recommendedSize:'800×600px'},
+  {id:'ring1c-feature-heart',    name:'心脏引擎配图',       page:'Ring1C产品页', section:'7大功能', path:'images/ring1c/features/heart.jpg',    description:'心脏智能引擎功能展示',       recommendedSize:'800×600px'},
+  {id:'ring1c-feature-osa',      name:'OSA筛查配图',        page:'Ring1C产品页', section:'7大功能', path:'images/ring1c/features/osa.jpg',      description:'OSA睡眠呼吸暂停筛查展示',   recommendedSize:'800×600px'},
+  {id:'ring1c-feature-stress',   name:'压力引擎配图',       page:'Ring1C产品页', section:'7大功能', path:'images/ring1c/features/stress.jpg',   description:'压力智能引擎功能展示',       recommendedSize:'800×600px'},
+  {id:'ring1c-feature-spo2',     name:'血氧监测配图',       page:'Ring1C产品页', section:'7大功能', path:'images/ring1c/features/spo2.jpg',     description:'血氧与呼吸监测展示',         recommendedSize:'800×600px'},
+  {id:'ring1c-feature-activity', name:'运动引擎配图',       page:'Ring1C产品页', section:'7大功能', path:'images/ring1c/features/activity.jpg', description:'运动与体能引擎展示',         recommendedSize:'800×600px'},
+  {id:'ring1c-feature-ai',       name:'AI健康教练配图',     page:'Ring1C产品页', section:'7大功能', path:'images/ring1c/features/ai.jpg',       description:'AI健康教练功能展示',         recommendedSize:'800×600px'},
+  // App界面截图
+  {id:'app-screen-home',         name:'App首页截图',        page:'Ring1C产品页', section:'App展示', path:'images/app/screen-home.jpg',          description:'MATEYOU App健康首页',        recommendedSize:'390×844px'},
+  {id:'app-screen-sleep',        name:'App睡眠页截图',      page:'Ring1C产品页', section:'App展示', path:'images/app/screen-sleep.jpg',         description:'MATEYOU App睡眠详情页',      recommendedSize:'390×844px'},
+  {id:'app-screen-heart',        name:'App心脏页截图',      page:'Ring1C产品页', section:'App展示', path:'images/app/screen-heart.jpg',         description:'MATEYOU App心脏健康页',      recommendedSize:'390×844px'},
+  {id:'app-screen-osa',          name:'App OSA页截图',      page:'Ring1C产品页', section:'App展示', path:'images/app/screen-osa.jpg',           description:'MATEYOU App OSA筛查页',      recommendedSize:'390×844px'},
+  {id:'app-screen-stress',       name:'App压力页截图',      page:'Ring1C产品页', section:'App展示', path:'images/app/screen-stress.jpg',        description:'MATEYOU App压力管理页',      recommendedSize:'390×844px'},
+  {id:'app-screen-activity',     name:'App运动页截图',      page:'Ring1C产品页', section:'App展示', path:'images/app/screen-activity.jpg',      description:'MATEYOU App运动记录页',      recommendedSize:'390×844px'},
+  {id:'app-mockup-main',         name:'App主界面展示',      page:'Ring1C产品页', section:'App展示', path:'images/app/mockup-main.jpg',          description:'App主界面完整Mockup展示',    recommendedSize:'1200×800px'},
+  // 工艺展示
+  {id:'ring1c-craft-ceramic',    name:'陶瓷工艺展示',       page:'Ring1C产品页', section:'工艺展示', path:'images/ring1c/craft/ceramic.jpg',    description:'氧化锆陶瓷工艺特写',         recommendedSize:'800×600px'},
+  {id:'ring1c-craft-sensor',     name:'传感器展示',         page:'Ring1C产品页', section:'工艺展示', path:'images/ring1c/craft/sensor.jpg',     description:'多波长PPG传感器排布',         recommendedSize:'800×600px'},
+  {id:'ring1c-craft-charging',   name:'磁吸充电展示',       page:'Ring1C产品页', section:'工艺展示', path:'images/ring1c/craft/charging.jpg',   description:'无线磁吸充电盒展示',          recommendedSize:'800×600px'},
+  {id:'ring1c-size-guide',       name:'尺寸测量指南',       page:'Ring1C产品页', section:'规格',     path:'images/ring1c/size-guide.jpg',       description:'戒指尺寸测量方法指南',        recommendedSize:'800×400px'},
+  {id:'miniprogram-qrcode', name:'小程序商城二维码', page:'全局', section:'购买', path:'images/miniprogram-qrcode.png', description:'MATEYOU小程序商城微信二维码', recommendedSize:'400x400px'},
   {id:'site-logo',name:'网站Logo',page:'全局',section:'导航栏',path:'images/longvon-logo.png',description:'左上角LONGVON品牌Logo',recommendedSize:'320×64px'},
   {id:'homepage-hero-white',name:'Hero主图·白色',page:'首页',section:'Hero区域',path:'images/ring1c/White-45-Left.jpg',description:'首页全屏Hero',recommendedSize:'1600×1200px'},
   {id:'homepage-hero-pink',name:'Hero主图·粉色',page:'首页',section:'配色切换',path:'images/ring1c/Pink-45-Left.jpg',description:'粉色配色',recommendedSize:'1200×1200px'},

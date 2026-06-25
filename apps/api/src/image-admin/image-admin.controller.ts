@@ -75,3 +75,4 @@ export class ImageAdminController {
     return { valid: true };
   }
 }
+// 已在文件末尾，不需要添加

@@ -67,7 +67,11 @@ export class AssessmentController {
   }
 
   @Post(':id/submit')
-  submit(@CurrentUser() user: AppJwtPayload, @Param('id') id: string, @Body() dto: SubmitAssessmentDto) {
+  submit(
+    @CurrentUser() user: AppJwtPayload,
+    @Param('id') id: string,
+    @Body() dto: SubmitAssessmentDto,
+  ) {
     const customerId = this.assertCustomer(user);
     return this.sessionService.submit(id, customerId, dto.answers as unknown as Answers);
   }

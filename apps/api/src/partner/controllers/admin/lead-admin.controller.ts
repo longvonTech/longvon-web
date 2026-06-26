@@ -16,11 +16,7 @@ import { CurrentUser } from '../../../identity/decorators/current-user.decorator
 import { AppJwtPayload } from '../../../identity/jwt-payload.types';
 import { LeadService } from '../../services/lead.service';
 import { LeadAnalyticsService } from '../../services/lead-analytics.service';
-import {
-  AddLeadNoteDto,
-  AssignLeadDto,
-  UpdateLeadStatusDto,
-} from '../../dto/lead-management.dto';
+import { AddLeadNoteDto, AssignLeadDto, UpdateLeadStatusDto } from '../../dto/lead-management.dto';
 
 /**
  * Lead后台管理——呼应TASK-104E"CRM Basic Module"。

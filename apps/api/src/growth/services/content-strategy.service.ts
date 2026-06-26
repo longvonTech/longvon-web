@@ -23,7 +23,9 @@ export class ContentStrategyService {
   async generateContentBriefs() {
     // 获取高优先级关键词机会
     const keywords = await this.repo.listKeywordOpportunities({
-      status: 'analyzed', priority: 'high', limit: 10,
+      status: 'analyzed',
+      priority: 'high',
+      limit: 10,
     });
 
     // 获取最新行业事件
@@ -32,7 +34,9 @@ export class ContentStrategyService {
     // 获取最新医学研究
     const papers = await this.repo.listResearchPapers({ status: 'summarized', limit: 5 });
 
-    this.logger.log(`生成内容简报：${keywords.length}个关键词 + ${industryEvents.length}个行业事件 + ${papers.length}篇论文`);
+    this.logger.log(
+      `生成内容简报：${keywords.length}个关键词 + ${industryEvents.length}个行业事件 + ${papers.length}篇论文`,
+    );
 
     // 基于关键词生成内容简报
     for (const kw of keywords.slice(0, 5)) {
@@ -100,12 +104,22 @@ export class ContentStrategyService {
 
   private async createBriefFromEvent(event: any) {
     // 过滤与Ring1C用户不相关的内容（医院管理、行政、财务等）
-    const irrelevantKeywords = ['医院财务', '行政', '采购', '招聘', '股价', '融资', '医保政策', 'NHS', '保险'];
-    const isIrrelevant = irrelevantKeywords.some(kw => 
-      (event.title + (event.aiSummary || '')).includes(kw)
+    const irrelevantKeywords = [
+      '医院财务',
+      '行政',
+      '采购',
+      '招聘',
+      '股价',
+      '融资',
+      '医保政策',
+      'NHS',
+      '保险',
+    ];
+    const isIrrelevant = irrelevantKeywords.some((kw) =>
+      (event.title + (event.aiSummary || '')).includes(kw),
     );
     if (isIrrelevant) {
-      this.logger.log(`跳过不相关行业事件: ${event.title.slice(0,40)}`);
+      this.logger.log(`跳过不相关行业事件: ${event.title.slice(0, 40)}`);
       return;
     }
 
@@ -196,5 +210,7 @@ JSON格式：
     return this.generateContentBriefs();
   }
 
-  private sleep(ms: number) { return new Promise(r => setTimeout(r, ms)); }
+  private sleep(ms: number) {
+    return new Promise((r) => setTimeout(r, ms));
+  }
 }

@@ -40,5 +40,3 @@ import { GrowthModule } from './growth/growth.module';
   controllers: [HealthController],
 })
 export class AppModule {}
-
-

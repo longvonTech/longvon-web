@@ -7,7 +7,12 @@ export interface SubmittedResultData {
   score: number;
   riskLevel: string;
   definitionVersion: string;
-  resultBundle: { recommendations: string[]; nextActions: string[]; riskFactors: string[]; disclaimer: string };
+  resultBundle: {
+    recommendations: string[];
+    nextActions: string[];
+    riskFactors: string[];
+    disclaimer: string;
+  };
 }
 
 /**
@@ -49,7 +54,12 @@ export interface AssessmentResultRecord {
 export class AssessmentResultRepository {
   constructor(private readonly prisma: PrismaService) {}
 
-  createInProgress(customerId: string, assessmentType: string, channel: string, definitionVersion: string) {
+  createInProgress(
+    customerId: string,
+    assessmentType: string,
+    channel: string,
+    definitionVersion: string,
+  ) {
     return this.prisma.withRlsContext({ customerId }, (tx) =>
       tx.assessmentResult.create({
         data: {

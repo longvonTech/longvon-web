@@ -1,15 +1,15 @@
-import {
-  IsEmail,
-  IsIn,
-  IsOptional,
-  IsPhoneNumber,
-  IsString,
-  MaxLength,
-} from 'class-validator';
+import { IsEmail, IsIn, IsOptional, IsPhoneNumber, IsString, MaxLength } from 'class-validator';
 
 // 与schema.prisma的Lead.cooperationType CHECK约束保持完全一致（TASK-104裁定的六值枚举），
 // 这是唯一权威定义，QualificationForm的前端选项与本DTO都必须以此为准，不在别处重复定义
-export const COOPERATION_TYPES = ['hospital', 'pharmacy', 'oem', 'odm', 'distributor', 'enterprise'] as const;
+export const COOPERATION_TYPES = [
+  'hospital',
+  'pharmacy',
+  'oem',
+  'odm',
+  'distributor',
+  'enterprise',
+] as const;
 export type CooperationType = (typeof COOPERATION_TYPES)[number];
 
 /**

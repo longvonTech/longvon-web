@@ -54,13 +54,17 @@ export class MembershipCustomerController {
    * 支付成功后再调用MembershipService.startSubscription()。
    */
   @Post('subscriptions')
-  startSubscription(@CurrentUser() user: AppJwtPayload, @Body() body: {
-    planTier: string;
-    billingCycle: 'monthly' | 'yearly';
-    amount: number;
-    currentPeriodStart: string;
-    currentPeriodEnd: string;
-  }) {
+  startSubscription(
+    @CurrentUser() user: AppJwtPayload,
+    @Body()
+    body: {
+      planTier: string;
+      billingCycle: 'monthly' | 'yearly';
+      amount: number;
+      currentPeriodStart: string;
+      currentPeriodEnd: string;
+    },
+  ) {
     const customerId = this.assertCustomer(user);
     return this.service.startSubscription(customerId, {
       planTier: body.planTier,

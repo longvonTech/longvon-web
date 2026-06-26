@@ -20,7 +20,12 @@ export class SeoPublicController {
       // 与knowledge-public.controller.ts一致的"不存在/未发布"语义，
       // 不单独区分"slug不存在"与"slug存在但未发布"两种情况，
       // 避免向未鉴权的公开端点泄露"这个slug其实存在，只是还没发布"这类信息
-      return { articleId: null, derivedFrom: { clusterRootKeyword: null, topicSlug: null }, links: [], compliance: null };
+      return {
+        articleId: null,
+        derivedFrom: { clusterRootKeyword: null, topicSlug: null },
+        links: [],
+        compliance: null,
+      };
     }
     return this.internalLinking.getSuggestionsForArticle(article.id);
   }

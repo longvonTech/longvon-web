@@ -28,14 +28,22 @@ export class GrowthController {
   ) {}
 
   @Get('dashboard/stats')
-  getDashboardStats() { return this.repo.getDashboardStats(); }
+  getDashboardStats() {
+    return this.repo.getDashboardStats();
+  }
 
   @Post('industry/events')
-  createIndustryEvent(@Body() dto: any) { return this.repo.createIndustryEvent(dto); }
+  createIndustryEvent(@Body() dto: any) {
+    return this.repo.createIndustryEvent(dto);
+  }
 
   @Get('industry/events')
-  listIndustryEvents(@Query('topic') topic?: string, @Query('status') status?: string, @Query('limit') limit?: string) {
-    return this.repo.listIndustryEvents({ topic, status, limit: limit?parseInt(limit):50 });
+  listIndustryEvents(
+    @Query('topic') topic?: string,
+    @Query('status') status?: string,
+    @Query('limit') limit?: string,
+  ) {
+    return this.repo.listIndustryEvents({ topic, status, limit: limit ? parseInt(limit) : 50 });
   }
 
   @Put('industry/events/:id/status')
@@ -45,52 +53,94 @@ export class GrowthController {
 
   @Get('industry/reports')
   listIndustryReports(@Query('type') type?: string, @Query('limit') limit?: string) {
-    return this.repo.listIndustryReports(type, limit?parseInt(limit):20);
+    return this.repo.listIndustryReports(type, limit ? parseInt(limit) : 20);
   }
 
   @Put('industry/reports/:id/publish')
-  publishIndustryReport(@Param('id') id: string) { return this.repo.publishIndustryReport(id); }
+  publishIndustryReport(@Param('id') id: string) {
+    return this.repo.publishIndustryReport(id);
+  }
 
   @Post('competitor/events')
-  createCompetitorEvent(@Body() dto: any) { return this.repo.createCompetitorEvent(dto); }
+  createCompetitorEvent(@Body() dto: any) {
+    return this.repo.createCompetitorEvent(dto);
+  }
 
   @Get('competitor/events')
-  listCompetitorEvents(@Query('competitor') competitor?: string, @Query('eventType') eventType?: string, @Query('limit') limit?: string) {
-    return this.repo.listCompetitorEvents({ competitor, eventType, limit: limit?parseInt(limit):50 });
+  listCompetitorEvents(
+    @Query('competitor') competitor?: string,
+    @Query('eventType') eventType?: string,
+    @Query('limit') limit?: string,
+  ) {
+    return this.repo.listCompetitorEvents({
+      competitor,
+      eventType,
+      limit: limit ? parseInt(limit) : 50,
+    });
   }
 
   @Get('competitor/reports')
   listCompetitorReports(@Query('competitor') competitor?: string, @Query('limit') limit?: string) {
-    return this.repo.listCompetitorReports(competitor, limit?parseInt(limit):20);
+    return this.repo.listCompetitorReports(competitor, limit ? parseInt(limit) : 20);
   }
 
   @Post('research/papers')
-  createResearchPaper(@Body() dto: any) { return this.repo.createResearchPaper(dto); }
+  createResearchPaper(@Body() dto: any) {
+    return this.repo.createResearchPaper(dto);
+  }
 
   @Get('research/papers')
-  listResearchPapers(@Query('topic') topic?: string, @Query('status') status?: string, @Query('limit') limit?: string) {
-    return this.repo.listResearchPapers({ topic, status, limit: limit?parseInt(limit):50 });
+  listResearchPapers(
+    @Query('topic') topic?: string,
+    @Query('status') status?: string,
+    @Query('limit') limit?: string,
+  ) {
+    return this.repo.listResearchPapers({ topic, status, limit: limit ? parseInt(limit) : 50 });
   }
 
   @Get('research/reports')
   listResearchReports(@Query('topic') topic?: string, @Query('limit') limit?: string) {
-    return this.repo.listResearchReports(topic, limit?parseInt(limit):20);
+    return this.repo.listResearchReports(topic, limit ? parseInt(limit) : 20);
   }
 
   @Post('keywords/opportunities')
-  createKeywordOpportunity(@Body() dto: any) { return this.repo.createKeywordOpportunity(dto); }
+  createKeywordOpportunity(@Body() dto: any) {
+    return this.repo.createKeywordOpportunity(dto);
+  }
 
   @Get('keywords/opportunities')
-  listKeywordOpportunities(@Query('priority') priority?: string, @Query('status') status?: string, @Query('cluster') cluster?: string, @Query('limit') limit?: string) {
-    return this.repo.listKeywordOpportunities({ priority, status, cluster, limit: limit?parseInt(limit):100 });
+  listKeywordOpportunities(
+    @Query('priority') priority?: string,
+    @Query('status') status?: string,
+    @Query('cluster') cluster?: string,
+    @Query('limit') limit?: string,
+  ) {
+    return this.repo.listKeywordOpportunities({
+      priority,
+      status,
+      cluster,
+      limit: limit ? parseInt(limit) : 100,
+    });
   }
 
   @Post('content/briefs')
-  createContentBrief(@Body() dto: any) { return this.repo.createContentBrief(dto); }
+  createContentBrief(@Body() dto: any) {
+    return this.repo.createContentBrief(dto);
+  }
 
   @Get('content/briefs')
-  listContentBriefs(@Query('status') status?: string, @Query('priority') priority?: string, @Query('contentType') contentType?: string, @Query('limit') limit?: string) {
-    return this.repo.listContentBriefs({ status, priority, contentType, limit: limit?parseInt(limit):50 });
+  listContentBriefs(
+    @Query('status') status?: string,
+    @Query('priority') priority?: string,
+    @Query('contentType') contentType?: string,
+    @Query('limit') limit?: string,
+  ) {
+    return this.repo.listContentBriefs({
+      status,
+      priority,
+      contentType,
+      limit: limit ? parseInt(limit) : 50,
+    });
   }
 
   @Put('content/briefs/:id/status')
@@ -100,7 +150,7 @@ export class GrowthController {
 
   @Get('executive/reports')
   listExecutiveReports(@Query('type') type?: string, @Query('limit') limit?: string) {
-    return this.repo.listExecutiveReports(type, limit?parseInt(limit):30);
+    return this.repo.listExecutiveReports(type, limit ? parseInt(limit) : 30);
   }
 
   @Get('executive/reports/latest/:type')
@@ -114,7 +164,6 @@ export class GrowthController {
     return this.intelligence.triggerManual(engine).then(() => ({ ok: true, engine }));
   }
 
-
   // ── F5 关键词发现 ──────────────────────────────────────
   @Post('keywords/discover')
   discoverKeywords() {
@@ -127,7 +176,6 @@ export class GrowthController {
     return this.contentStrategy.triggerManual().then(() => ({ ok: true }));
   }
 
-
   // ── F7 AI内容工厂 ─────────────────────────────────────
   @Post('content/factory/run')
   runContentFactory() {
@@ -136,7 +184,7 @@ export class GrowthController {
 
   @Post('content/factory/brief/:id')
   generateFromBrief(@Param('id') id: string) {
-    return this.contentFactory.triggerManual(id).then(articleId => ({ ok: true, articleId }));
+    return this.contentFactory.triggerManual(id).then((articleId) => ({ ok: true, articleId }));
   }
 
   @Get('content/drafts')
@@ -157,10 +205,14 @@ export class GrowthController {
 
   // ── F9 发布中心 ────────────────────────────────────────
   @Get('publishing/queue')
-  getPublishingQueue() { return this.publishing.getPublishingQueue(); }
+  getPublishingQueue() {
+    return this.publishing.getPublishingQueue();
+  }
 
   @Get('publishing/stats')
-  getPublishingStats() { return this.publishing.getPublishingStats(); }
+  getPublishingStats() {
+    return this.publishing.getPublishingStats();
+  }
 
   @Post('publishing/publish/:articleId')
   publishArticle(@Param('articleId') articleId: string) {
@@ -176,7 +228,6 @@ export class GrowthController {
   unpublishArticle(@Param('articleId') articleId: string) {
     return this.publishing.unpublishArticle(articleId);
   }
-
 
   // ── F10 SEO智能分析 ───────────────────────────────────
   @Post('seo/report/run')
@@ -200,18 +251,15 @@ export class GrowthController {
     return this.executiveBrief.getRecentBriefs(limit ? parseInt(limit) : 7);
   }
 
-
   // ── SEO自动优化 ────────────────────────────────────────
   @Post('seo/optimizer/run')
   runSeoOptimizer(@Query('type') type?: string) {
     return this.seoOptimizer.triggerManual((type as any) || 'all');
   }
 
-
   // ── 系统健康监控 ──────────────────────────────────────
   @Post('system/health/check')
   runHealthCheck() {
     return this.healthMonitor.triggerManual().then(() => ({ ok: true }));
   }
-
 }

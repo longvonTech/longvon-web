@@ -27,16 +27,24 @@
  */
 
 export type SubscriptionStatus = 'active' | 'past_due' | 'canceled' | 'expired';
-export const SUBSCRIPTION_STATUSES: SubscriptionStatus[] = ['active', 'past_due', 'canceled', 'expired'];
+export const SUBSCRIPTION_STATUSES: SubscriptionStatus[] = [
+  'active',
+  'past_due',
+  'canceled',
+  'expired',
+];
 
 const ALLOWED_TRANSITIONS: Record<SubscriptionStatus, SubscriptionStatus[]> = {
   active: ['past_due', 'canceled'],
-  past_due: ['active', 'expired'],  // active: 逾期后补缴成功; expired: 逾期超时
-  canceled: [],  // 终态
-  expired: [],   // 终态
+  past_due: ['active', 'expired'], // active: 逾期后补缴成功; expired: 逾期超时
+  canceled: [], // 终态
+  expired: [], // 终态
 };
 
-export function isValidSubscriptionTransition(from: SubscriptionStatus, to: SubscriptionStatus): boolean {
+export function isValidSubscriptionTransition(
+  from: SubscriptionStatus,
+  to: SubscriptionStatus,
+): boolean {
   return ALLOWED_TRANSITIONS[from]?.includes(to) ?? false;
 }
 

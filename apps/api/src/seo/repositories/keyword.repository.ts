@@ -32,7 +32,10 @@ export class KeywordClusterRepository {
     return this.prisma.keywordCluster.create({ data });
   }
 
-  update(id: string, data: Partial<{ rootKeyword: string; hubTopicId: string; description: string }>) {
+  update(
+    id: string,
+    data: Partial<{ rootKeyword: string; hubTopicId: string; description: string }>,
+  ) {
     return this.prisma.keywordCluster.update({ where: { id }, data });
   }
 }

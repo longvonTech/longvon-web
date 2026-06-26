@@ -39,7 +39,12 @@ export class ArticleService {
     return article;
   }
 
-  async findPublishedList(params: { categoryId?: string; tagId?: string; page: number; pageSize: number }) {
+  async findPublishedList(params: {
+    categoryId?: string;
+    tagId?: string;
+    page: number;
+    pageSize: number;
+  }) {
     return this.repo.findPublishedList(params);
   }
 

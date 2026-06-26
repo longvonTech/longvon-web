@@ -3,7 +3,10 @@ import { JwtAuthGuard } from '../../../identity/guards/jwt-auth.guard';
 import { RolesGuard } from '../../../identity/guards/roles.guard';
 import { Roles } from '../../../identity/decorators/roles.decorator';
 import { AssessmentDefinitionService } from '../../services/assessment-definition.service';
-import { CreateAssessmentDefinitionDto, MarkReviewedDto } from '../../dto/assessment-definition.dto';
+import {
+  CreateAssessmentDefinitionDto,
+  MarkReviewedDto,
+} from '../../dto/assessment-definition.dto';
 
 /**
  * 评估定义的创建/审核——呼应TASK-105B"评估定义数据驱动"。

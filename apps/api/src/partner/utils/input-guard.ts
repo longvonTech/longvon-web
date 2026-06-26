@@ -9,33 +9,47 @@
 const INJECTION_PATTERNS = [
   /<script[\s\S]*?>/i,
   /javascript:/i,
-  /on\w+\s*=/i,           // onerror= onclick=
+  /on\w+\s*=/i, // onerror= onclick=
   /SELECT\s+.*FROM/i,
   /INSERT\s+INTO/i,
   /DROP\s+TABLE/i,
   /UNION\s+SELECT/i,
-  /--\s/,                  // SQL注释
+  /--\s/, // SQL注释
   /;\s*(DROP|DELETE|UPDATE|INSERT)/i,
-  /\{\{.*\}\}/,            // 模板注入
-  /\$\{.*\}/,              // JS模板字符串注入
+  /\{\{.*\}\}/, // 模板注入
+  /\$\{.*\}/, // JS模板字符串注入
 ];
 
 // 明显垃圾手机号
 const FAKE_PHONE_PATTERNS = [
-  /^1{7,}/,                // 1111111111
-  /^(\d)\1{7,}/,           // 重复数字 00000000
+  /^1{7,}/, // 1111111111
+  /^(\d)\1{7,}/, // 重复数字 00000000
   /^1234567/,
   /^0000000/,
-  /^\d{4,6}$/,             // 太短
-  /^\d{12,}$/,             // 太长
+  /^\d{4,6}$/, // 太短
+  /^\d{12,}$/, // 太长
 ];
 
 // 垃圾姓名关键词
 const FAKE_NAME_KEYWORDS = [
-  '测试', 'test', 'TEST', 'demo', 'DEMO',
-  'aaa', 'bbb', 'xxx', 'yyy', 'zzz',
-  '123', '111', 'null', 'undefined',
-  'admin', 'root', 'user', '用户',
+  '测试',
+  'test',
+  'TEST',
+  'demo',
+  'DEMO',
+  'aaa',
+  'bbb',
+  'xxx',
+  'yyy',
+  'zzz',
+  '123',
+  '111',
+  'null',
+  'undefined',
+  'admin',
+  'root',
+  'user',
+  '用户',
 ];
 
 export interface GuardResult {
@@ -50,7 +64,6 @@ export function checkInput(data: {
   remark?: string;
   companyName?: string;
 }): GuardResult {
-
   const fields = [
     data.contactName ?? '',
     data.phone ?? '',
@@ -71,7 +84,7 @@ export function checkInput(data: {
   const phone = data.phone ?? '';
   if (!/^1[3-9]\d{9}$/.test(phone)) {
     // 检查是否是明显垃圾号码
-    const isFake = FAKE_PHONE_PATTERNS.some(p => p.test(phone));
+    const isFake = FAKE_PHONE_PATTERNS.some((p) => p.test(phone));
     if (isFake) {
       return { blocked: true, reason: '无效手机号', silent: true };
     }

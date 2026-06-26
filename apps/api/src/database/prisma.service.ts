@@ -1,9 +1,4 @@
-import {
-  Injectable,
-  OnModuleInit,
-  OnModuleDestroy,
-  Logger,
-} from '@nestjs/common';
+import { Injectable, OnModuleInit, OnModuleDestroy, Logger } from '@nestjs/common';
 import { PrismaClient, Prisma } from '@mateyou/database';
 
 export interface RlsContext {
@@ -25,10 +20,7 @@ export interface RlsContext {
 // 此时RLS策略会按"无任何匹配条件"处理（即默认拒绝访问受RLS保护的行），
 // 这是刻意的"显式优于隐式"设计，避免开发者忘记设置上下文却误以为查询已被保护。
 @Injectable()
-export class PrismaService
-  extends PrismaClient
-  implements OnModuleInit, OnModuleDestroy
-{
+export class PrismaService extends PrismaClient implements OnModuleInit, OnModuleDestroy {
   private readonly logger = new Logger(PrismaService.name);
 
   async onModuleInit() {

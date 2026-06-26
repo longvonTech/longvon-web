@@ -37,10 +37,10 @@ export class TierGuard implements CanActivate {
   ) {}
 
   async canActivate(context: ExecutionContext): Promise<boolean> {
-    const capability = this.reflector.getAllAndOverride<CapabilityKey>(
-      REQUIRES_CAPABILITY_KEY,
-      [context.getHandler(), context.getClass()],
-    );
+    const capability = this.reflector.getAllAndOverride<CapabilityKey>(REQUIRES_CAPABILITY_KEY, [
+      context.getHandler(),
+      context.getClass(),
+    ]);
 
     // 未标注@RequiresCapability的端点不做Tier检查
     if (!capability) return true;

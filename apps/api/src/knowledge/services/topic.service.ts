@@ -20,9 +20,7 @@ export class TopicService {
     // 两种场景共用Repository的同一个查询方法，只在面向公开页面的Service方法里做状态过滤。
     return {
       ...topic,
-      topicArticles: topic.topicArticles.filter(
-        (ta) => ta.article.status === 'published',
-      ),
+      topicArticles: topic.topicArticles.filter((ta) => ta.article.status === 'published'),
     };
   }
 

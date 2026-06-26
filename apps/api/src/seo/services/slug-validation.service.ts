@@ -1,7 +1,10 @@
 import { Injectable } from '@nestjs/common';
 import { ArticleRepository } from '../../knowledge/repositories/article.repository';
 import { TopicRepository } from '../../knowledge/repositories/topic.repository';
-import { CategoryRepository, TagRepository } from '../../knowledge/repositories/reference-data.repository';
+import {
+  CategoryRepository,
+  TagRepository,
+} from '../../knowledge/repositories/reference-data.repository';
 import { isValidSlugFormat } from '../../knowledge/utils/slug.util';
 
 export type SlugEntityType = 'article' | 'topic' | 'category' | 'tag';

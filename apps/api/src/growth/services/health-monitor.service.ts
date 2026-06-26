@@ -58,7 +58,9 @@ export class HealthMonitorService {
 
     // 检查5: API健康
     try {
-      const apiHealth = await axios.get('http://localhost:4000/growth/dashboard/stats', { timeout: 5000 });
+      const apiHealth = await axios.get('http://localhost:4000/growth/dashboard/stats', {
+        timeout: 5000,
+      });
       if (apiHealth.status !== 200) alerts.push('🔴 【严重】Growth API响应异常');
     } catch {
       alerts.push('🔴 【严重】Growth API无响应，请立即检查mateyou-api进程');
@@ -77,30 +79,44 @@ export class HealthMonitorService {
   }
 
   private async sendAlert(alerts: string[]) {
-    const msg = `## ⚠️ MATEYOU运营系统健康预警\n\n${alerts.map(a => `- ${a}`).join('\n')}\n\n> ${new Date().toLocaleString('zh-CN')} 自动检测`;
+    const msg = `## ⚠️ MATEYOU运营系统健康预警\n\n${alerts.map((a) => `- ${a}`).join('\n')}\n\n> ${new Date().toLocaleString('zh-CN')} 自动检测`;
     this.logger.warn(`健康预警: ${alerts.join('; ')}`);
     if (this.wecomWebhook) {
-      await axios.post(this.wecomWebhook, {
-        msgtype: 'markdown',
-        markdown: { content: msg },
-      }, { timeout: 10000 }).catch(e => this.logger.error(`WeCom推送失败: ${e.message}`));
+      await axios
+        .post(
+          this.wecomWebhook,
+          {
+            msgtype: 'markdown',
+            markdown: { content: msg },
+          },
+          { timeout: 10000 },
+        )
+        .catch((e) => this.logger.error(`WeCom推送失败: ${e.message}`));
     }
   }
 
   private async sendWeeklyHealthReport() {
     const since7d = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000);
     const [published, keywords, events] = await Promise.all([
-      this.prisma.article.count({ where: { status: 'published', publishedAt: { gte: since7d } } as any }),
+      this.prisma.article.count({
+        where: { status: 'published', publishedAt: { gte: since7d } } as any,
+      }),
       this.repo.countKeywordOpportunities(),
       this.repo.countIndustryEvents(since7d),
     ]);
 
     const msg = `## 📊 MATEYOU运营周报\n\n- 本周新发布文章：**${published}篇**\n- 关键词库总量：**${keywords}个**\n- 本周情报采集：**${events}条**\n\n> 系统运行正常 ✅`;
     if (this.wecomWebhook) {
-      await axios.post(this.wecomWebhook, {
-        msgtype: 'markdown',
-        markdown: { content: msg },
-      }, { timeout: 10000 }).catch(() => {});
+      await axios
+        .post(
+          this.wecomWebhook,
+          {
+            msgtype: 'markdown',
+            markdown: { content: msg },
+          },
+          { timeout: 10000 },
+        )
+        .catch(() => {});
     }
   }
 

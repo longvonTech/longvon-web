@@ -1,8 +1,4 @@
-import {
-  Injectable,
-  Logger,
-  UnauthorizedException,
-} from '@nestjs/common';
+import { Injectable, Logger, UnauthorizedException } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
 import * as bcrypt from 'bcrypt';
 import { randomUUID } from 'crypto';
@@ -151,6 +147,9 @@ export class AuthService {
     // 直接从已知类型解构，去掉此前版本不安全的"先转Record<string,unknown>再转回"双重断言写法
     // （那种写法在runtime-validation-report-v1.md记录的tsc检查中被实际报出类型错误，此处为修复）
     const { jti: _jti, iat: _iat, exp: _exp, ...rest } = decoded;
+    void _jti;
+    void _iat;
+    void _exp;
 
     return this.issueTokenPair(rest);
   }
@@ -159,9 +158,7 @@ export class AuthService {
   // 私有：签发Access+Refresh Token对，并将Refresh Token的jti写入Redis用于轮换检测
   // ---------------------------------------------------------
 
-  private async issueTokenPair(
-    payload: CustomerJwtPayload | AdminJwtPayload,
-  ): Promise<TokenPair> {
+  private async issueTokenPair(payload: CustomerJwtPayload | AdminJwtPayload): Promise<TokenPair> {
     const accessSecret = process.env.JWT_ACCESS_SECRET;
     const refreshSecret = process.env.JWT_REFRESH_SECRET;
     if (!accessSecret || !refreshSecret) {
@@ -175,9 +172,7 @@ export class AuthService {
 
     const jti = randomUUID();
     const refreshExpiresIn =
-      payload.kind === 'customer'
-        ? process.env.JWT_REFRESH_EXPIRES_IN ?? '30d'
-        : '12h'; // 后台账号Refresh Token有效期更短，降低被盗用风险窗口
+      payload.kind === 'customer' ? (process.env.JWT_REFRESH_EXPIRES_IN ?? '30d') : '12h'; // 后台账号Refresh Token有效期更短，降低被盗用风险窗口
 
     const refreshToken = this.jwt.sign(
       { ...payload, jti },

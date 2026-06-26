@@ -32,10 +32,7 @@ export class MembershipAdminController {
 
   // 手动推进订阅状态机（用于测试/客服处理/本Sprint无支付网关时的模拟操作）
   @Patch('subscriptions/:id/status')
-  updateSubscriptionStatus(
-    @Param('id') id: string,
-    @Body() dto: UpdateSubscriptionStatusDto,
-  ) {
+  updateSubscriptionStatus(@Param('id') id: string, @Body() dto: UpdateSubscriptionStatusDto) {
     return this.service.adminUpdateSubscriptionStatus(id, dto.status as SubscriptionStatus);
   }
 }

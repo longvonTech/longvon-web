@@ -96,5 +96,7 @@ export class ImagePromptService {
     return results;
   }
 
-  private sleep(ms: number) { return new Promise(r => setTimeout(r, ms)); }
+  private sleep(ms: number) {
+    return new Promise((r) => setTimeout(r, ms));
+  }
 }

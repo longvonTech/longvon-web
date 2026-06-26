@@ -8,14 +8,16 @@
 const SLUG_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
 export function slugify(input: string): string {
-  return input
-    .trim()
-    .toLowerCase()
-    // 中文标题没有天然的拉丁字母分词依据，简单替换非字母数字字符为短横线；
-    // 如果派生结果为空（纯中文标题且未提供英文slug候选），调用方需自行兜底
-    // 用uuid片段等方式生成slug，本函数不做"中文转拼音"这类需要额外依赖的转换
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-+|-+$/g, '');
+  return (
+    input
+      .trim()
+      .toLowerCase()
+      // 中文标题没有天然的拉丁字母分词依据，简单替换非字母数字字符为短横线；
+      // 如果派生结果为空（纯中文标题且未提供英文slug候选），调用方需自行兜底
+      // 用uuid片段等方式生成slug，本函数不做"中文转拼音"这类需要额外依赖的转换
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/^-+|-+$/g, '')
+  );
 }
 
 export function isValidSlugFormat(slug: string): boolean {

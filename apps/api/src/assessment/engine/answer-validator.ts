@@ -31,7 +31,9 @@ export function validateAnswers(schema: QuestionnaireSchema, answers: Answers): 
         const allowed = new Set(question.options?.map((o) => o.value) ?? []);
         const invalidValues = value.filter((v) => !allowed.has(v));
         if (invalidValues.length > 0) {
-          throw new BadRequestException(`问题"${question.label}"包含不在允许范围内的选项：${invalidValues.join(',')}`);
+          throw new BadRequestException(
+            `问题"${question.label}"包含不在允许范围内的选项：${invalidValues.join(',')}`,
+          );
         }
         break;
       }

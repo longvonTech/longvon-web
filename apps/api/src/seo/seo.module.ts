@@ -5,7 +5,10 @@ import { KeywordClusterService, SeoKeywordService } from './services/keyword.ser
 import { InternalLinkingService } from './services/internal-linking.service';
 import { SlugValidationService } from './services/slug-validation.service';
 import { BaiduPushService } from './services/baidu-push.service';
-import { KeywordClusterAdminController, SeoKeywordAdminController } from './controllers/admin/keyword-admin.controller';
+import {
+  KeywordClusterAdminController,
+  SeoKeywordAdminController,
+} from './controllers/admin/keyword-admin.controller';
 import { SeoToolsAdminController } from './controllers/admin/seo-tools-admin.controller';
 import { SeoPublicController } from './controllers/public/seo-public.controller';
 

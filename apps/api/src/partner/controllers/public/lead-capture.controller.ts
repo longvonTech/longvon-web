@@ -16,7 +16,9 @@ export class LeadCaptureController {
 
   @Post('osa-assessment')
   @RateLimit({ windowSeconds: 3600, maxRequests: 10 })
-  submitOsa(@Body() body: { contactName: string; phone: string; score: number; riskLevel: string }) {
+  submitOsa(
+    @Body() body: { contactName: string; phone: string; score: number; riskLevel: string },
+  ) {
     return this.leadService.createFromOsaAssessment(body);
   }
 }

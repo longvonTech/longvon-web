@@ -33,7 +33,9 @@ export class ContentFactoryService {
       await this.repo.updateContentBriefStatus(brief.id, 'in_progress');
 
       const outline = Array.isArray(brief.outline) ? brief.outline.join('\n') : '按逻辑组织内容';
-      const secondaryKws = Array.isArray(brief.secondaryKeywords) ? brief.secondaryKeywords.join('、') : '';
+      const secondaryKws = Array.isArray(brief.secondaryKeywords)
+        ? brief.secondaryKeywords.join('、')
+        : '';
 
       const systemPrompt = `你是MATEYOU AI健康平台的专业健康内容创作者。你的文章面向关注个人健康的中国用户，风格专业但易读，结合科学依据与实用建议。重要提示：所有健康相关内容必须在适当位置注明"以上内容仅供健康参考，不构成医学诊断或治疗建议"。`;
 
@@ -76,13 +78,21 @@ ${outline}
       // 生成语义化英文slug（让Qwen翻译）
       const slugPrompt = `将以下中文关键词翻译为SEO友好的英文slug（小写，单词间用连字符，5个单词以内，不要数字）：${brief.targetKeyword}\n只返回slug，不要其他内容。`;
       const slugRaw = await this.qwen.complete(slugPrompt);
-      const slugBase = slugRaw.trim().toLowerCase()
+      const slugBase = slugRaw
+        .trim()
+        .toLowerCase()
         .replace(/[^a-z0-9-]/g, '-')
         .replace(/-+/g, '-')
         .replace(/^-|-$/g, '')
         .slice(0, 60);
       const uniqueSuffix = Math.random().toString(36).slice(2, 6);
-      const slug = `${slugBase || brief.targetKeyword.replace(/[^a-zA-Z0-9]/g, '-').toLowerCase().slice(0, 40)}-${uniqueSuffix}`;
+      const slug = `${
+        slugBase ||
+        brief.targetKeyword
+          .replace(/[^a-zA-Z0-9]/g, '-')
+          .toLowerCase()
+          .slice(0, 40)
+      }-${uniqueSuffix}`;
 
       // 查找或创建默认作者
       let author = await this.prisma.author.findFirst({
@@ -144,11 +154,13 @@ ${outline}
   async triggerManual(briefId?: string) {
     if (briefId) {
       const brief = await this.repo.listContentBriefs({ status: 'pending', limit: 100 });
-      const target = brief.find(b => b.id === briefId);
+      const target = brief.find((b) => b.id === briefId);
       if (target) return this.generateArticleFromBrief(target);
     }
     return this.runContentFactory();
   }
 
-  private sleep(ms: number) { return new Promise(r => setTimeout(r, ms)); }
+  private sleep(ms: number) {
+    return new Promise((r) => setTimeout(r, ms));
+  }
 }

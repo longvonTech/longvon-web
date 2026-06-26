@@ -1,10 +1,4 @@
-import {
-  Controller,
-  ForbiddenException,
-  Get,
-  Param,
-  UseGuards,
-} from '@nestjs/common';
+import { Controller, ForbiddenException, Get, Param, UseGuards } from '@nestjs/common';
 import { JwtAuthGuard } from '../../../identity/guards/jwt-auth.guard';
 import { CurrentUser } from '../../../identity/decorators/current-user.decorator';
 import { AppJwtPayload } from '../../../identity/jwt-payload.types';
@@ -73,10 +67,12 @@ export class AssessmentMembershipController {
       riskFactors: canTrend ? (recommendations['riskFactors'] ?? null) : null,
       nextActions: canTrend ? (recommendations['nextActions'] ?? null) : null,
       // Paywall提示——前端据此决定是否显示升级CTA
-      upgradeRequired: !canFullResult ? {
-        forFullResult: 'premium',
-        forTrendAnalysis: 'pro',
-      } : null,
+      upgradeRequired: !canFullResult
+        ? {
+            forFullResult: 'premium',
+            forTrendAnalysis: 'pro',
+          }
+        : null,
     };
   }
 

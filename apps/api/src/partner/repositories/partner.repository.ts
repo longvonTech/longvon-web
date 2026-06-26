@@ -29,11 +29,22 @@ export class PartnerRepository {
    */
   convertFromLead(
     leadId: string,
-    data: { companyName: string; type: string; contactInfo: Record<string, unknown>; region?: string },
+    data: {
+      companyName: string;
+      type: string;
+      contactInfo: Record<string, unknown>;
+      region?: string;
+    },
   ) {
     return this.prisma.$transaction(async (tx) => {
       const partner = await tx.partner.create({
-        data: { companyName: data.companyName, type: data.type, contactInfo: data.contactInfo as any, region: data.region, convertedFromLeadId: leadId },
+        data: {
+          companyName: data.companyName,
+          type: data.type,
+          contactInfo: data.contactInfo as any,
+          region: data.region,
+          convertedFromLeadId: leadId,
+        },
       });
       await tx.lead.update({ where: { id: leadId }, data: { status: 'converted' } });
       return partner;

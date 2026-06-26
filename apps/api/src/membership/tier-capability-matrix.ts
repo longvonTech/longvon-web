@@ -24,19 +24,19 @@ export type MembershipTier = (typeof TIERS)[number];
  */
 export type CapabilityKey =
   // Assessment能力
-  | 'assessment.basicResult'       // 查看基础评估结果（风险等级+基础建议）
-  | 'assessment.fullResult'        // 查看完整建议（含nextActions）
-  | 'assessment.trendAnalysis'     // 查看历史趋势分析
-  | 'assessment.enterpriseReport'  // 企业服务入口（预留）
+  | 'assessment.basicResult' // 查看基础评估结果（风险等级+基础建议）
+  | 'assessment.fullResult' // 查看完整建议（含nextActions）
+  | 'assessment.trendAnalysis' // 查看历史趋势分析
+  | 'assessment.enterpriseReport' // 企业服务入口（预留）
   // AI Assistant能力（预留，本Sprint不实现AI模块，但权限位预先占好）
-  | 'ai.basicChat'                 // 基础AI健康问答
-  | 'ai.deepAnalysis'              // 深度分析对话
+  | 'ai.basicChat' // 基础AI健康问答
+  | 'ai.deepAnalysis' // 深度分析对话
   // 报告能力
-  | 'report.pdf'                   // 导出PDF报告
-  | 'report.share'                 // 分享报告
+  | 'report.pdf' // 导出PDF报告
+  | 'report.share' // 分享报告
   // CRM/企业能力
-  | 'enterprise.teamManagement'    // 企业团队管理（预留）
-  | 'enterprise.bulkReport';       // 批量报告（预留）
+  | 'enterprise.teamManagement' // 企业团队管理（预留）
+  | 'enterprise.bulkReport'; // 批量报告（预留）
 
 export const CAPABILITY_MATRIX: Record<MembershipTier, Record<CapabilityKey, boolean>> = {
   free: {

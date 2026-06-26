@@ -19,7 +19,11 @@ export class CrawlerService {
 
   async fetchPage(url: string): Promise<string> {
     try {
-      const res = await axios.get(url, { headers: this.headers, timeout: 15000, responseType: 'text' });
+      const res = await axios.get(url, {
+        headers: this.headers,
+        timeout: 15000,
+        responseType: 'text',
+      });
       return res.data;
     } catch (err: any) {
       this.logger.warn(`Fetch failed: ${url} - ${err.message}`);
@@ -45,16 +49,18 @@ export class CrawlerService {
 
       // 解析多篇文章
       const articles: CrawledArticle[] = [];
-      const blocks = text.split(/\n\d+\. /).filter(b => b.trim().length > 50);
+      const blocks = text.split(/\n\d+\. /).filter((b) => b.trim().length > 50);
 
       for (let i = 0; i < Math.min(blocks.length, ids.length); i++) {
         const block = blocks[i];
-        const lines = block.split('\n').filter(l => l.trim());
+        const lines = block.split('\n').filter((l) => l.trim());
         const title = lines[0]?.trim();
         if (!title || title.length < 10) continue;
 
         const abstractMatch = block.match(/Abstract\n([\s\S]{50,1000}?)(?:\n\n|\nAuthor|$)/);
-        const summary = abstractMatch ? abstractMatch[1].replace(/\n/g, ' ').trim() : lines.slice(1, 4).join(' ');
+        const summary = abstractMatch
+          ? abstractMatch[1].replace(/\n/g, ' ').trim()
+          : lines.slice(1, 4).join(' ');
 
         articles.push({
           title: title.slice(0, 300),
@@ -83,12 +89,19 @@ export class CrawlerService {
       const item = m[1];
       const titleMatch = item.match(/<title>(?:<!\[CDATA\[)?([\s\S]{10,200}?)(?:\]\]>)?<\/title>/);
       const linkMatch = item.match(/<link>([^<]+)<\/link>/);
-      const descMatch = item.match(/<description>(?:<!\[CDATA\[)?([\s\S]{0,500}?)(?:\]\]>)?<\/description>/);
+      const descMatch = item.match(
+        /<description>(?:<!\[CDATA\[)?([\s\S]{0,500}?)(?:\]\]>)?<\/description>/,
+      );
       const dateMatch = item.match(/<pubDate>([^<]+)<\/pubDate>/);
 
       const title = titleMatch ? titleMatch[1].replace(/<[^>]+>/g, '').trim() : '';
       const url = linkMatch ? linkMatch[1].trim() : '';
-      const summary = descMatch ? descMatch[1].replace(/<[^>]+>/g, '').trim().slice(0, 400) : '';
+      const summary = descMatch
+        ? descMatch[1]
+            .replace(/<[^>]+>/g, '')
+            .trim()
+            .slice(0, 400)
+        : '';
       const publishedAt = dateMatch ? new Date(dateMatch[1]) : undefined;
 
       if (title && title.length > 10) {
@@ -110,29 +123,39 @@ export class CrawlerService {
     for (const feed of rssFeeds) {
       const articles = await this.crawlHealthRss(feed.url, feed.name);
       // 关键词过滤
-      const filtered = articles.filter(a => {
+      const filtered = articles.filter((a) => {
         const text = (a.title + ' ' + (a.summary ?? '')).toLowerCase();
-        return keywords.some(kw => text.includes(kw.toLowerCase().split(' ')[0]));
+        return keywords.some((kw) => text.includes(kw.toLowerCase().split(' ')[0]));
       });
       all.push(...(filtered.length > 0 ? filtered : articles.slice(0, 3)));
       await this.sleep(1000);
     }
 
     const seen = new Set<string>();
-    return all.filter(a => {
-      if (seen.has(a.title)) return false;
-      seen.add(a.title);
-      return true;
-    }).slice(0, 15);
+    return all
+      .filter((a) => {
+        if (seen.has(a.title)) return false;
+        seen.add(a.title);
+        return true;
+      })
+      .slice(0, 15);
   }
 
   // ── 竞品官网监控 ────────────────────────────────────────
   async crawlCompetitorSite(competitor: string): Promise<CrawledArticle[]> {
-    const feeds: Record<string, {url: string; name: string; isRss: boolean}> = {
-      oura:                { url: 'https://ouraring.com/blog/feed/', name: 'Oura Blog', isRss: true },
-      ringconn:            { url: 'https://www.ringconn.com/blogs/news.atom', name: 'RingConn News', isRss: true },
-      ultrahuman:          { url: 'https://www.ultrahuman.com/blog', name: 'Ultrahuman Blog', isRss: false },
-      samsung_galaxy_ring: { url: 'https://news.samsung.com/global/tag/galaxy-ring', name: 'Samsung News', isRss: false },
+    const feeds: Record<string, { url: string; name: string; isRss: boolean }> = {
+      oura: { url: 'https://ouraring.com/blog/feed/', name: 'Oura Blog', isRss: true },
+      ringconn: {
+        url: 'https://www.ringconn.com/blogs/news.atom',
+        name: 'RingConn News',
+        isRss: true,
+      },
+      ultrahuman: { url: 'https://www.ultrahuman.com/blog', name: 'Ultrahuman Blog', isRss: false },
+      samsung_galaxy_ring: {
+        url: 'https://news.samsung.com/global/tag/galaxy-ring',
+        name: 'Samsung News',
+        isRss: false,
+      },
     };
 
     const feed = feeds[competitor];
@@ -147,19 +170,24 @@ export class CrawlerService {
     if (!html) return [];
 
     const articles: CrawledArticle[] = [];
-    const linkRegex = /<a[^>]+href="(https?:\/\/[^"]+(?:blog|news|article)[^"]*)"[^>]*>([^<]{20,200})<\/a>/gi;
+    const linkRegex =
+      /<a[^>]+href="(https?:\/\/[^"]+(?:blog|news|article)[^"]*)"[^>]*>([^<]{20,200})<\/a>/gi;
     let m;
     while ((m = linkRegex.exec(html)) !== null) {
       articles.push({ title: m[2].trim(), url: m[1], source: feed.name });
     }
 
     const seen = new Set<string>();
-    return articles.filter(a => {
-      if (seen.has(a.title)) return false;
-      seen.add(a.title);
-      return true;
-    }).slice(0, 8);
+    return articles
+      .filter((a) => {
+        if (seen.has(a.title)) return false;
+        seen.add(a.title);
+        return true;
+      })
+      .slice(0, 8);
   }
 
-  private sleep(ms: number) { return new Promise(r => setTimeout(r, ms)); }
+  private sleep(ms: number) {
+    return new Promise((r) => setTimeout(r, ms));
+  }
 }

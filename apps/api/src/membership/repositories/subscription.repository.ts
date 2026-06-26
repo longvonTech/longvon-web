@@ -51,7 +51,9 @@ export class SubscriptionRepository {
   }
 
   findById(id: string): Promise<SubscriptionRecord | null> {
-    return this.prisma.subscription.findUnique({ where: { id } }) as Promise<SubscriptionRecord | null>;
+    return this.prisma.subscription.findUnique({
+      where: { id },
+    }) as Promise<SubscriptionRecord | null>;
   }
 
   create(data: CreateSubscriptionData): Promise<SubscriptionRecord> {

@@ -1,4 +1,5 @@
 import { checkInput } from '../utils/input-guard';
+import axios from 'axios';
 import {
   BadRequestException,
   ForbiddenException,
@@ -28,7 +29,9 @@ export class LeadService {
    * 统一返回成功响应——这是防刷的标准做法：让机器人脚本无法通过响应差异分辨出
    * 自己是否被识别，否则脚本会针对性调整绕过检测）。
    */
-  async createFromPublicForm(data: CreateLeadData & { website?: string }): Promise<{ submitted: boolean }> {
+  async createFromPublicForm(
+    data: CreateLeadData & { website?: string },
+  ): Promise<{ submitted: boolean }> {
     const { website: honeypot, ...leadData } = data;
     if (honeypot) {
       return { submitted: true }; // 静默丢弃，不写库，不暴露判定逻辑
@@ -56,7 +59,12 @@ export class LeadService {
       if (guard.silent) return { ok: true };
       throw new BadRequestException(guard.reason);
     }
-    const riskLabel = data.riskLevel === 'high' ? '🔴 高风险' : data.riskLevel === 'moderate' ? '🟡 中风险' : '🟢 低风险';
+    const riskLabel =
+      data.riskLevel === 'high'
+        ? '🔴 高风险'
+        : data.riskLevel === 'moderate'
+          ? '🟡 中风险'
+          : '🟢 低风险';
     await this.repo.create({
       contactName: data.contactName,
       phone: data.phone,
@@ -75,8 +83,9 @@ export class LeadService {
         '',
         `> ${new Date().toLocaleString('zh-CN')} 来自 www.longvon.com/assessment/osa`,
       ].join('\n');
-      const axios = require('axios');
-      await axios.post(webhook, { msgtype: 'markdown', markdown: { content: msg } }, { timeout: 8000 }).catch(() => {});
+      await axios
+        .post(webhook, { msgtype: 'markdown', markdown: { content: msg } }, { timeout: 8000 })
+        .catch(() => {});
     }
     return { ok: true };
   }
@@ -86,9 +95,7 @@ export class LeadService {
     const currentStatus = lead.status as LeadStatus;
 
     if (!isValidTransition(currentStatus, newStatus)) {
-      throw new BadRequestException(
-        `不允许从状态 "${currentStatus}" 直接跳转到 "${newStatus}"`,
-      );
+      throw new BadRequestException(`不允许从状态 "${currentStatus}" 直接跳转到 "${newStatus}"`);
     }
 
     return this.repo.updateStatus(id, newStatus);
@@ -121,9 +128,12 @@ export class LeadService {
     const webhook = process.env.WECOM_WEBHOOK_URL;
     if (!webhook) return;
     const typeMap: Record<string, string> = {
-      hospital: '🏥 医院合作', pharmacy: '💊 药房渠道',
-      oem: '🏭 OEM代工', odm: 'ODM定制',
-      distributor: '🗺️ 区域代理', enterprise: '🏢 企业采购',
+      hospital: '🏥 医院合作',
+      pharmacy: '💊 药房渠道',
+      oem: '🏭 OEM代工',
+      odm: 'ODM定制',
+      distributor: '🗺️ 区域代理',
+      enterprise: '🏢 企业采购',
     };
     const lines = [
       '## 🔔 新合作意向线索',
@@ -138,14 +148,15 @@ export class LeadService {
       `> ${new Date().toLocaleString('zh-CN')} 来自 www.longvon.com`,
     ];
     try {
-      const axios = require('axios');
-      await axios.post(webhook, { msgtype: 'markdown', markdown: { content: lines.join('\n') } }, { timeout: 8000 });
+      await axios.post(
+        webhook,
+        { msgtype: 'markdown', markdown: { content: lines.join('\n') } },
+        { timeout: 8000 },
+      );
     } catch (err: any) {
       console.error('WeCom线索通知失败:', err.message);
     }
   }
-
-
 
   async assertConvertible(leadId: string) {
     const lead = await this.findByIdForAdmin(leadId);

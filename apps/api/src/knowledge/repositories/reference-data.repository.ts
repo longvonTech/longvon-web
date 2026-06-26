@@ -27,11 +27,25 @@ export class CategoryRepository {
     return this.prisma.category.findUnique({ where: { id } });
   }
 
-  create(data: { name: string; slug: string; parentId?: string; description?: string; sortOrder?: number }) {
+  create(data: {
+    name: string;
+    slug: string;
+    parentId?: string;
+    description?: string;
+    sortOrder?: number;
+  }) {
     return this.prisma.category.create({ data });
   }
 
-  update(id: string, data: Partial<{ name: string; description: string; sortOrder: number; parentId: string | null }>) {
+  update(
+    id: string,
+    data: Partial<{
+      name: string;
+      description: string;
+      sortOrder: number;
+      parentId: string | null;
+    }>,
+  ) {
     return this.prisma.category.update({ where: { id }, data });
   }
 
@@ -101,11 +115,26 @@ export class MedicalReviewerRepository {
     return this.prisma.medicalReviewer.findUnique({ where: { id } });
   }
 
-  create(data: { name: string; credentials: string; licenseNo?: string; bio?: string; avatar?: string }) {
+  create(data: {
+    name: string;
+    credentials: string;
+    licenseNo?: string;
+    bio?: string;
+    avatar?: string;
+  }) {
     return this.prisma.medicalReviewer.create({ data });
   }
 
-  update(id: string, data: Partial<{ name: string; credentials: string; licenseNo: string; bio: string; avatar: string }>) {
+  update(
+    id: string,
+    data: Partial<{
+      name: string;
+      credentials: string;
+      licenseNo: string;
+      bio: string;
+      avatar: string;
+    }>,
+  ) {
     return this.prisma.medicalReviewer.update({ where: { id }, data });
   }
 }

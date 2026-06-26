@@ -1,5 +1,8 @@
 import { BadRequestException, Injectable, NotFoundException } from '@nestjs/common';
-import { AssessmentDefinitionRepository, AssessmentDefinitionData } from '../repositories/assessment-definition.repository';
+import {
+  AssessmentDefinitionRepository,
+  AssessmentDefinitionData,
+} from '../repositories/assessment-definition.repository';
 import { assertAllValidRiskLevels } from '../../common/risk-level.util';
 
 /**

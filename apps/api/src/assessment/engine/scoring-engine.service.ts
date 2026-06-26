@@ -34,7 +34,11 @@ export interface ScoringResult {
  */
 @Injectable()
 export class ScoringEngineService {
-  compute(scoringRule: ScoringRule, resultTemplate: ResultTemplate, answers: Answers): ScoringResult {
+  compute(
+    scoringRule: ScoringRule,
+    resultTemplate: ResultTemplate,
+    answers: Answers,
+  ): ScoringResult {
     // 防御性校验：即使是已存在于数据库中的评估定义，计算前依然再校验一次
     // riskBands的风险等级取值，防止后台管理端的Validation被绕过（如直接改库）
     // 而产生未冻结的风险等级字符串流入实际计算结果

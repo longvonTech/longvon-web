@@ -1,11 +1,4 @@
-import {
-  ArrayUnique,
-  IsArray,
-  IsOptional,
-  IsString,
-  IsUUID,
-  MaxLength,
-} from 'class-validator';
+import { ArrayUnique, IsArray, IsOptional, IsString, IsUUID, MaxLength } from 'class-validator';
 
 export class CreateArticleDto {
   @IsString() @MaxLength(200) title!: string;

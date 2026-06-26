@@ -42,12 +42,17 @@ export class SeoIntelligenceService {
 
     // 获取内容缺口
     const contentGaps = await this.repo.listKeywordOpportunities({
-      status: 'discovered', limit: 10,
+      status: 'discovered',
+      limit: 10,
     });
 
     return {
-      publishedCount, draftCount, totalKeywords,
-      recentArticles, highPriorityKws, contentGaps,
+      publishedCount,
+      draftCount,
+      totalKeywords,
+      recentArticles,
+      highPriorityKws,
+      contentGaps,
     };
   }
 
@@ -84,7 +89,9 @@ SEO描述：${article.seoDescription || '未设置'}
       const result = await this.qwen.complete(prompt, 'SEO优化专家', 1500);
       const match = result.match(/\{[\s\S]*\}/);
       return match ? JSON.parse(match[0]) : null;
-    } catch { return null; }
+    } catch {
+      return null;
+    }
   }
 
   private async saveSeoReport(data: any, reportType: string) {
@@ -96,20 +103,29 @@ SEO描述：${article.seoDescription || '未设置'}
 已发布文章：${data.publishedCount}篇
 草稿文章：${data.draftCount}篇
 关键词库：${data.totalKeywords}个
-高优先级未覆盖关键词：${data.highPriorityKws.slice(0,5).map((k: any) => k.keyword).join('、')}
-最新发布：${data.recentArticles.slice(0,3).map((a: any) => a.title).join('、')}
+高优先级未覆盖关键词：${data.highPriorityKws
+      .slice(0, 5)
+      .map((k: any) => k.keyword)
+      .join('、')}
+最新发布：${data.recentArticles
+      .slice(0, 3)
+      .map((a: any) => a.title)
+      .join('、')}
 
 请生成包含：数据摘要、内容缺口分析、本周SEO重点建议的报告。`;
 
     const content = await this.qwen.complete(prompt, 'SEO分析师', 2000);
 
     await this.repo.createKeywordReport({
-      reportType, periodStart: yesterday, periodEnd: now,
+      reportType,
+      periodStart: yesterday,
+      periodEnd: now,
       title: `SEO智能日报 ${now.toLocaleDateString('zh-CN')}`,
       content,
       newKeywords: data.totalKeywords,
       opportunities: data.highPriorityKws.slice(0, 10).map((k: any) => ({
-        keyword: k.keyword, cluster: k.cluster,
+        keyword: k.keyword,
+        cluster: k.cluster,
       })),
       trends: { publishedCount: data.publishedCount, draftCount: data.draftCount },
     });

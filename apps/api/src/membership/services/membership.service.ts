@@ -1,6 +1,9 @@
 import { BadRequestException, Injectable, NotFoundException } from '@nestjs/common';
 import { MembershipRepository } from '../repositories/membership.repository';
-import { SubscriptionRepository, CreateSubscriptionData } from '../repositories/subscription.repository';
+import {
+  SubscriptionRepository,
+  CreateSubscriptionData,
+} from '../repositories/subscription.repository';
 import { MembershipAnalyticsService } from './membership-analytics.service';
 import {
   MembershipTier,
@@ -9,10 +12,7 @@ import {
   listCapabilities,
   CapabilityKey,
 } from '../tier-capability-matrix';
-import {
-  isValidSubscriptionTransition,
-  SubscriptionStatus,
-} from '../subscription-status.util';
+import { isValidSubscriptionTransition, SubscriptionStatus } from '../subscription-status.util';
 
 @Injectable()
 export class MembershipService {
@@ -46,7 +46,9 @@ export class MembershipService {
     return checkCapability(membership.tier as MembershipTier, capability);
   }
 
-  async getCapabilityList(customerId: string): Promise<{ tier: string; capabilities: CapabilityKey[] }> {
+  async getCapabilityList(
+    customerId: string,
+  ): Promise<{ tier: string; capabilities: CapabilityKey[] }> {
     const membership = await this.getCurrentOrInit(customerId);
     return {
       tier: membership.tier,
@@ -106,7 +108,12 @@ export class MembershipService {
     });
 
     // 升级Membership的tier投影字段
-    await this.membershipRepo.updateTier(membership.id, customerId, data.planTier as MembershipTier, data.currentPeriodEnd);
+    await this.membershipRepo.updateTier(
+      membership.id,
+      customerId,
+      data.planTier as MembershipTier,
+      data.currentPeriodEnd,
+    );
 
     // 同步到CustomerProfile
     void this.analytics.syncTierToProfile(customerId, data.planTier);
@@ -152,9 +159,7 @@ export class MembershipService {
     if (!sub) throw new NotFoundException('订阅记录不存在');
 
     if (!isValidSubscriptionTransition(sub.status as SubscriptionStatus, newStatus)) {
-      throw new BadRequestException(
-        `不允许从状态"${sub.status}"跳转到"${newStatus}"`,
-      );
+      throw new BadRequestException(`不允许从状态"${sub.status}"跳转到"${newStatus}"`);
     }
 
     await this.subscriptionRepo.updateStatus(subscriptionId, newStatus);

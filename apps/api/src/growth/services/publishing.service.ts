@@ -8,7 +8,9 @@ export class PublishingService {
   constructor(private readonly prisma: PrismaService) {}
 
   // 立即发布文章
-  async publishArticle(articleId: string): Promise<{ ok: boolean; slug?: string; message: string }> {
+  async publishArticle(
+    articleId: string,
+  ): Promise<{ ok: boolean; slug?: string; message: string }> {
     try {
       const article = await this.prisma.article.findUnique({
         where: { id: articleId },

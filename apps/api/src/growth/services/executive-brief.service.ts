@@ -29,12 +29,15 @@ export class ExecutiveBriefService {
 
   async generateDailyBrief(): Promise<any> {
     const today = new Date();
-    const yesterday = new Date(Date.now() - 24 * 60 * 60 * 1000);
 
     // 收集各模块数据
     const [
-      industryEvents, competitorEvents, researchPapers,
-      publishedArticles, contentBriefs, keywordCount,
+      industryEvents,
+      competitorEvents,
+      researchPapers,
+      publishedArticles,
+      contentBriefs,
+      keywordCount,
     ] = await Promise.all([
       this.repo.listIndustryEvents({ status: 'processed', limit: 5 }),
       this.repo.listCompetitorEvents({ limit: 5 }),
@@ -45,17 +48,41 @@ export class ExecutiveBriefService {
     ]);
 
     // 用Qwen生成各板块
-    const [industrySection, competitorSection, researchSection, contentSection] = await Promise.all([
-      this.generateSection('行业动态', industryEvents.map(e => `• ${e.title}${e.aiSummary ? '：' + e.aiSummary.slice(0, 80) : ''}`).join('\n')),
-      this.generateSection('竞品动态', competitorEvents.map(e => `• [${e.competitor}] ${e.title}`).join('\n')),
-      this.generateSection('医学研究', researchPapers.map(p => `• ${p.title}${p.aiSummary ? '：' + p.aiSummary.slice(0, 60) : ''}`).join('\n')),
-      this.generateSection('内容产出', `已发布文章：${publishedArticles}篇\n待处理简报：${contentBriefs}条\n关键词库：${keywordCount}个`),
-    ]);
+    const [industrySection, competitorSection, researchSection, contentSection] = await Promise.all(
+      [
+        this.generateSection(
+          '行业动态',
+          industryEvents
+            .map((e) => `• ${e.title}${e.aiSummary ? '：' + e.aiSummary.slice(0, 80) : ''}`)
+            .join('\n'),
+        ),
+        this.generateSection(
+          '竞品动态',
+          competitorEvents.map((e) => `• [${e.competitor}] ${e.title}`).join('\n'),
+        ),
+        this.generateSection(
+          '医学研究',
+          researchPapers
+            .map((p) => `• ${p.title}${p.aiSummary ? '：' + p.aiSummary.slice(0, 60) : ''}`)
+            .join('\n'),
+        ),
+        this.generateSection(
+          '内容产出',
+          `已发布文章：${publishedArticles}篇\n待处理简报：${contentBriefs}条\n关键词库：${keywordCount}个`,
+        ),
+      ],
+    );
 
     // 生成执行摘要
     const highlightsPrompt = `基于以下MATEYOU平台今日数据，生成3条最重要的CEO关注点（每条50字以内）：
-行业：${industryEvents.slice(0,2).map(e => e.title).join('；')}
-竞品：${competitorEvents.slice(0,2).map(e => `${e.competitor}: ${e.title}`).join('；')}
+行业：${industryEvents
+      .slice(0, 2)
+      .map((e) => e.title)
+      .join('；')}
+竞品：${competitorEvents
+      .slice(0, 2)
+      .map((e) => `${e.competitor}: ${e.title}`)
+      .join('；')}
 内容：已发布${publishedArticles}篇文章
 JSON数组格式返回。`;
 
@@ -68,7 +95,9 @@ JSON数组格式返回。`;
         highlights = parsed.map((item: any) => {
           if (typeof item === 'string') return item;
           // 处理对象格式 {text: '...'} 或 {content: '...'} 或 {'1': '...'}
-          return item.text || item.content || item.insight || Object.values(item)[0] || String(item);
+          return (
+            item.text || item.content || item.insight || Object.values(item)[0] || String(item)
+          );
         });
       }
     } catch {}
@@ -85,7 +114,14 @@ JSON数组格式返回。`;
       highlights,
     });
 
-    return { ...report, highlights, industrySection, competitorSection, researchSection, contentSection };
+    return {
+      ...report,
+      highlights,
+      industrySection,
+      competitorSection,
+      researchSection,
+      contentSection,
+    };
   }
 
   private async generateSection(title: string, data: string): Promise<string> {
@@ -128,10 +164,14 @@ ${report.contentSection || '暂无数据'}
 [📊 查看AI增长驾驶舱](https://www.longvon.com/admin/growth)`;
 
     try {
-      await axios.post(this.wecomWebhook, {
-        msgtype: 'markdown',
-        markdown: { content: markdown },
-      }, { timeout: 10000 });
+      await axios.post(
+        this.wecomWebhook,
+        {
+          msgtype: 'markdown',
+          markdown: { content: markdown },
+        },
+        { timeout: 10000 },
+      );
 
       // 标记已推送
       if (report.id) {

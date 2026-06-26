@@ -52,7 +52,10 @@ export class LeadRepository {
       where: { id, deletedAt: null },
       include: {
         assignedUser: { select: { id: true, username: true } },
-        notes: { orderBy: { createdAt: 'desc' }, include: { author: { select: { id: true, username: true } } } },
+        notes: {
+          orderBy: { createdAt: 'desc' },
+          include: { author: { select: { id: true, username: true } } },
+        },
         partner: true,
       },
     });

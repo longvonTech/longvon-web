@@ -39,7 +39,7 @@ export class SeoOptimizerService {
 
     for (const article of articles) {
       try {
-        const otherArticles = articles.filter(a => a.id !== article.id);
+        const otherArticles = articles.filter((a) => a.id !== article.id);
         let content = article.content;
         let linkCount = 0;
 
@@ -53,7 +53,7 @@ export class SeoOptimizerService {
             const link = `[${keyword}](/knowledge/${other.slug})`;
             content = content.replace(
               new RegExp(`(?<!\\[)(?<![/"])${keyword}(?!\\])(?![/"])`, ''),
-              link
+              link,
             );
             linkCount++;
           }
@@ -83,7 +83,14 @@ export class SeoOptimizerService {
         status: 'published',
         publishedAt: { gte: since7d } as any,
       },
-      select: { id: true, title: true, content: true, seoTitle: true, seoDescription: true, seoKeywords: true } as any,
+      select: {
+        id: true,
+        title: true,
+        content: true,
+        seoTitle: true,
+        seoDescription: true,
+        seoKeywords: true,
+      } as any,
       take: 10,
     });
 
@@ -146,7 +153,7 @@ export class SeoOptimizerService {
 
     for (const article of articles) {
       try {
-        // 找所有没有alt的图片标签 ![](...) 
+        // 找所有没有alt的图片标签 ![](...)
         const emptyAltRegex = /!\[\]\(([^)]+)\)/g;
         let content = String(article.content || '');
         let updated = false;
@@ -179,5 +186,7 @@ export class SeoOptimizerService {
     return { ok: true, type };
   }
 
-  private sleep(ms: number) { return new Promise(r => setTimeout(r, ms)); }
+  private sleep(ms: number) {
+    return new Promise((r) => setTimeout(r, ms));
+  }
 }

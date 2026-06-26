@@ -53,7 +53,7 @@ export class BaiduPushService {
         signal: AbortSignal.timeout(10000), // 10秒超时
       });
 
-      const result = await response.json() as Record<string, unknown>;
+      const result = (await response.json()) as Record<string, unknown>;
 
       if (response.ok && result['success']) {
         this.logger.log(`百度推送成功：${urls.length} 个URL，成功=${result['success']}`);
@@ -78,7 +78,7 @@ export class BaiduPushService {
       select: { slug: true },
     });
 
-    const urls = articles.map(a => `${this.siteUrl}/knowledge/${a.slug}`);
+    const urls = articles.map((a) => `${this.siteUrl}/knowledge/${a.slug}`);
 
     // 百度 API 每次最多 2000 个，分批处理
     const batchSize = 2000;

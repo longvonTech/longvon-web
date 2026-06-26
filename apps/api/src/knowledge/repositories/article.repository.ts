@@ -44,7 +44,12 @@ export class ArticleRepository {
    * 就让草稿内容对外可见——把"只看已发布"这条规则锁在Repository方法本身里，而不是
    * 依赖每个调用方都记得传对参数。
    */
-  async findPublishedList(params: { categoryId?: string; tagId?: string; page: number; pageSize: number }) {
+  async findPublishedList(params: {
+    categoryId?: string;
+    tagId?: string;
+    page: number;
+    pageSize: number;
+  }) {
     const where: Record<string, unknown> = { status: 'published', deletedAt: null };
     if (params.categoryId) where.categoryId = params.categoryId;
     if (params.tagId) where.articleTags = { some: { tagId: params.tagId } };
@@ -77,7 +82,12 @@ export class ArticleRepository {
   findByIdForAdmin(id: string) {
     return this.prisma.article.findFirst({
       where: { id, deletedAt: null },
-      include: { category: true, author: true, reviewer: true, articleTags: { include: { tag: true } } },
+      include: {
+        category: true,
+        author: true,
+        reviewer: true,
+        articleTags: { include: { tag: true } },
+      },
     });
   }
 

@@ -1,7 +1,9 @@
-export const dynamic = 'force-dynamic';
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getSiteUrl } from '../../lib/site';
+import { AssessmentCard } from '@/components/AssessmentCard';
+import { getSiteUrl } from '@/lib/site';
+
+export const dynamic = 'force-dynamic';
 
 export const metadata: Metadata = {
   title: '六大健康风险自评 · 免费健康评估',
@@ -77,28 +79,50 @@ export default function AssessmentPage() {
       </div>
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 20 }}>
-        {ASSESSMENTS.map(a => (
-          <div key={a.type} style={{
-            padding: 28, borderRadius: 14, background: a.color,
-            border: '1px solid transparent', display: 'flex', flexDirection: 'column',
-          }}>
-            <div style={{ fontSize: 36, marginBottom: 12 }}>{a.icon}</div>
-            <div style={{ fontWeight: 700, fontSize: 17, marginBottom: 8 }}>{a.title}</div>
-            <div style={{ color: 'var(--color-text-secondary)', fontSize: 14, lineHeight: 1.6, flex: 1 }}>{a.desc}</div>
-            <div style={{ display: 'flex', gap: 12, marginTop: 16, marginBottom: 16 }}>
-              <span style={{ fontSize: 12, color: 'var(--color-text-muted)', background: '#fff', padding: '2px 8px', borderRadius: 4 }}>{a.duration}</span>
-              <span style={{ fontSize: 12, color: 'var(--color-text-muted)', background: '#fff', padding: '2px 8px', borderRadius: 4 }}>{a.questions}</span>
-            </div>
-            {/* 评估交互需要登录态，本Sprint先跳转到会员页引导注册 */}
-            <Link href={a.type === 'osa' ? '/assessment/osa' : a.type === 'sleep' ? '/assessment/sleep' : '/membership'} style={{
-              display: 'block', textAlign: 'center',
-              padding: '10px', background: 'var(--color-brand)', color: '#fff',
-              borderRadius: 8, fontSize: 14, fontWeight: 600,
+        {ASSESSMENTS.map(a => {
+          if (a.type === 'weight_loss') {
+            return (
+              <AssessmentCard
+                key={a.type}
+                badge="assessment-weight"
+                title={a.title}
+                description={a.desc}
+                duration={a.duration}
+                questions={a.questions}
+                href="/assessment/weight-loss"
+                headerColor="#F3F0FA"
+                accentColor="#7B3FE4"
+              />
+            );
+          }
+
+          const href =
+            a.type === 'osa' ? '/assessment/osa'
+            : a.type === 'sleep' ? '/assessment/sleep'
+            : '/membership';
+
+          return (
+            <div key={a.type} style={{
+              padding: 28, borderRadius: 14, background: a.color,
+              border: '1px solid transparent', display: 'flex', flexDirection: 'column',
             }}>
-              开始自评
-            </Link>
-          </div>
-        ))}
+              <div style={{ fontSize: 36, marginBottom: 12 }}>{a.icon}</div>
+              <div style={{ fontWeight: 700, fontSize: 17, marginBottom: 8 }}>{a.title}</div>
+              <div style={{ color: 'var(--color-text-secondary)', fontSize: 14, lineHeight: 1.6, flex: 1 }}>{a.desc}</div>
+              <div style={{ display: 'flex', gap: 12, marginTop: 16, marginBottom: 16 }}>
+                <span style={{ fontSize: 12, color: 'var(--color-text-muted)', background: '#fff', padding: '2px 8px', borderRadius: 4 }}>{a.duration}</span>
+                <span style={{ fontSize: 12, color: 'var(--color-text-muted)', background: '#fff', padding: '2px 8px', borderRadius: 4 }}>{a.questions}</span>
+              </div>
+              <Link href={href} style={{
+                display: 'block', textAlign: 'center',
+                padding: '10px', background: 'var(--color-brand)', color: '#fff',
+                borderRadius: 8, fontSize: 14, fontWeight: 600,
+              }}>
+                开始自评
+              </Link>
+            </div>
+          );
+        })}
       </div>
 
       <div style={{

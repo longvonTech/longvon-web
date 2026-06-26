@@ -23,6 +23,14 @@ export const IMAGE_REGISTRY: ImageSlot[] = [
   {id:'ring1c-craft-sensor',     name:'传感器展示',         page:'Ring1C产品页', section:'工艺展示', path:'images/ring1c/craft/sensor.jpg',     description:'多波长PPG传感器排布',         recommendedSize:'800×600px'},
   {id:'ring1c-craft-charging',   name:'磁吸充电展示',       page:'Ring1C产品页', section:'工艺展示', path:'images/ring1c/craft/charging.jpg',   description:'无线磁吸充电盒展示',          recommendedSize:'800×600px'},
   {id:'ring1c-size-guide',       name:'尺寸测量指南',       page:'Ring1C产品页', section:'规格',     path:'images/ring1c/size-guide.jpg',       description:'戒指尺寸测量方法指南',        recommendedSize:'800×400px'},
+
+  // 健康评估页配图
+  {id:'assessment-osa',      name:'OSA风险筛查配图',   page:'健康评估', section:'评估卡片', path:'images/assessment/osa.jpg',      description:'OSA风险筛查封面图',   recommendedSize:'600×400px'},
+  {id:'assessment-sleep',    name:'睡眠质量自评配图',   page:'健康评估', section:'评估卡片', path:'images/assessment/sleep.jpg',    description:'睡眠质量自评封面图',   recommendedSize:'600×400px'},
+  {id:'assessment-stress',   name:'压力水平自评配图',   page:'健康评估', section:'评估卡片', path:'images/assessment/stress.jpg',   description:'压力水平自评封面图',   recommendedSize:'600×400px'},
+  {id:'assessment-weight',   name:'减重风险评估配图',   page:'健康评估', section:'评估卡片', path:'images/assessment/weight.jpg',   description:'减重风险评估封面图',   recommendedSize:'600×400px'},
+  {id:'assessment-diabetes', name:'糖尿病风险自评配图', page:'健康评估', section:'评估卡片', path:'images/assessment/diabetes.jpg', description:'糖尿病风险自评封面图', recommendedSize:'600×400px'},
+  {id:'assessment-altitude', name:'高原健康评估配图',   page:'健康评估', section:'评估卡片', path:'images/assessment/altitude.jpg', description:'高原健康评估封面图',   recommendedSize:'600×400px'},
   {id:'miniprogram-qrcode', name:'小程序商城二维码', page:'全局', section:'购买', path:'images/miniprogram-qrcode.png', description:'MATEYOU小程序商城微信二维码', recommendedSize:'400x400px'},
   {id:'site-logo',name:'网站Logo',page:'全局',section:'导航栏',path:'images/longvon-logo.png',description:'左上角LONGVON品牌Logo',recommendedSize:'320×64px'},
   {id:'homepage-hero-white',name:'Hero主图·白色',page:'首页',section:'Hero区域',path:'images/ring1c/White-45-Left.jpg',description:'首页全屏Hero',recommendedSize:'1600×1200px'},
@@ -42,6 +50,11 @@ export const IMAGE_REGISTRY: ImageSlot[] = [
   {id:'ring1c-pink-front',name:'产品正面·粉色',page:'Ring1C产品页',section:'工艺区',path:'images/ring1c/Pink.jpg',description:'粉色正面',recommendedSize:'600×600px'},
   {id:'ring1c-blue-front',name:'产品正面·蓝色',page:'Ring1C产品页',section:'工艺区',path:'images/ring1c/Blue.jpg',description:'蓝色正面',recommendedSize:'600×600px'},
   {id:'ring1c-black-front',name:'产品正面·黑色',page:'Ring1C产品页',section:'工艺区',path:'images/ring1c/Black.jpg',description:'黑色正面',recommendedSize:'600×600px'},
+  {id:'ring1c-size-step-1', name:'量测步骤1·准备纸条',   page:'Ring1C产品页', section:'尺寸量测', path:'images/ring1c/size/step-1.jpg', description:'准备纸条示意图', recommendedSize:'600x400px'},
+  {id:'ring1c-size-step-2', name:'量测步骤2·绕住手指',   page:'Ring1C产品页', section:'尺寸量测', path:'images/ring1c/size/step-2.jpg', description:'纸条绕手指示意图', recommendedSize:'600x400px'},
+  {id:'ring1c-size-step-3', name:'量测步骤3·标记重叠点', page:'Ring1C产品页', section:'尺寸量测', path:'images/ring1c/size/step-3.jpg', description:'标记重叠处示意图', recommendedSize:'600x400px'},
+  {id:'ring1c-size-step-4', name:'量测步骤4·量出长度',   page:'Ring1C产品页', section:'尺寸量测', path:'images/ring1c/size/step-4.jpg', description:'量测长度示意图', recommendedSize:'600x400px'},
+  {id:'ring1c-size-step-5', name:'量测步骤5·对照尺寸表', page:'Ring1C产品页', section:'尺寸量测', path:'images/ring1c/size/step-5.jpg', description:'对照尺寸表示意图', recommendedSize:'600x400px'},
 ];
 export function getImagesByPage():Record<string,ImageSlot[]>{return IMAGE_REGISTRY.reduce((acc,s)=>{if(!acc[s.page])acc[s.page]=[];acc[s.page].push(s);return acc;},{} as Record<string,ImageSlot[]>);}
 export function getImageSlotById(id:string):ImageSlot|undefined{return IMAGE_REGISTRY.find(s=>s.id===id);}

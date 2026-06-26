@@ -78,14 +78,21 @@ export function SizeGuide() {
               )}
               <p style={{ fontSize:13, color:'#555', marginTop:16 }}>💡 建议下午量测，若在两个尺码之间请选大一号</p>
             </div>
-            <div style={{ background:'rgba(255,255,255,0.04)', borderRadius:20, height:200, display:'flex', alignItems:'center', justifyContent:'center', border:'1px solid rgba(255,255,255,0.06)' }}>
-              <div style={{ textAlign:'center' }}>
+            <div style={{ background:'rgba(255,255,255,0.04)', borderRadius:20, height:200, overflow:'hidden', border:'1px solid rgba(255,255,255,0.06)', position:'relative', display:'flex', alignItems:'center', justifyContent:'center' }}>
+              {/* 占位内容 */}
+              <div style={{ textAlign:'center', position:'absolute', zIndex:1 }}>
                 <div style={{ fontSize:40, marginBottom:8 }}>
                   {['📄','🫱','✏️','📏','📊'][activeStep]}
                 </div>
-                <div style={{ fontSize:12, color:'#444' }}>步骤{activeStep+1}示意图</div>
-                <div style={{ fontSize:11, color:'#333', marginTop:4, fontFamily:'monospace' }}>ring1c-size-step-{activeStep+1}</div>
+                <div style={{ fontSize:12, color:'rgba(255,255,255,0.3)' }}>步骤{activeStep+1}示意图</div>
+                <div style={{ fontSize:11, color:'rgba(255,255,255,0.2)', marginTop:4, fontFamily:'monospace' }}>ring1c-size-step-{activeStep+1}</div>
               </div>
+              {/* 实际图片，加载成功后覆盖占位 */}
+              <img
+                src={`/images/ring1c/size/step-${activeStep+1}.jpg`}
+                alt={`步骤${activeStep+1}示意图`}
+                style={{ position:'absolute', inset:0, width:'100%', height:'100%', objectFit:'cover', zIndex:2 }}
+              />
             </div>
           </div>
         </div>

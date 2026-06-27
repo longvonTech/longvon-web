@@ -42,6 +42,9 @@ fi
 echo "加载生产环境变量..."
 load_production_env
 
+echo "生成 Prisma Client..."
+npm run db:generate
+
 echo "数据库迁移..."
 npm run db:migrate:deploy
 

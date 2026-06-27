@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { SizeGuide } from './SizeGuide';
 import { getSiteUrl } from '../../../lib/site';
+import { HEALTH_METRIC_CATEGORIES, TOTAL_HEALTH_METRICS } from '../../../lib/health-metrics';
 
 export const metadata: Metadata = {
   title: 'Ring1C · 个人健康智能系统 · MATEYOU',
@@ -21,28 +22,23 @@ function Img({ slot, alt, style }: { slot: string; alt: string; style?: React.CS
   );
 }
 
-const ENGINES = [
-  { emoji:'🫁', en:'OSA',          zh:'睡眠呼吸暂停',  color:'#BF5AF2', count:20 },
-  { emoji:'😴', en:'Sleep',         zh:'睡眠质量监测',  color:'#0A84FF', count:22 },
-  { emoji:'⚡', en:'Quick Check',   zh:'60秒快速检测',  color:'#FFD60A', count:6  },
-  { emoji:'💓', en:'Heart Rate',    zh:'心率监测',      color:'#FF375F', count:6  },
-  { emoji:'🩸', en:'SpO₂',          zh:'血氧监测',      color:'#30D158', count:6  },
-  { emoji:'🧠', en:'Stress',        zh:'抗压能力监测',  color:'#FF9F0A', count:4  },
-  { emoji:'🏃', en:'Activity',      zh:'运动监测',      color:'#64D2FF', count:7  },
-];
+const ENGINES = HEALTH_METRIC_CATEGORIES;
 
 const FEATURES = [
   {
+    slug: 'sleep-apnea',
     tag:'OSA Screening', title:'9亿人不知道\n自己停止过呼吸。', desc:'Ring1C 提供20项睡眠呼吸暂停专项监测，包含AHI、ODI、血氧跌落分析等专业参数，结合AI智能评估，帮你第一时间发现潜在风险。',
-    slot:'ring1c-feature-osa', color:'#BF5AF2', metrics:['血氧跌落≥4%次数和时长','血氧跌落≥3%次数和时长','血氧范围','最低血氧','平均血氧','血氧区间占比及时长','心率范围','平均心率','心率过速时长','心率过缓时长','心率范围占比及时长','呼吸率范围','平均呼吸率','呼吸率区间及占比','体动量趋势','AHI','OSA初筛结果','ODI','ODI评分','AI睡眠呼吸健康评估及建议'],
+    slot:'ring1c-feature-osa', color:'#BF5AF2',
   },
   {
+    slug: 'sleep-quality',
     tag:'Sleep Intelligence', title:'睡眠的22个维度\n全都看见。', desc:'Ring1C 对你整夜的睡眠进行22项深度监测，从入睡到起床，从心率到体温，从睡眠效率到AI建议，帮你真正读懂自己的睡眠。',
-    slot:'ring1c-feature-sleep', color:'#0A84FF', metrics:['睡眠得分','上床时间','入睡时间','出睡时间','起床时间','总睡眠时长','在床时长','睡眠效率','静息心率','清醒时长及比例','REM时长及比例','浅睡时长及比例','深睡时长及比例','入睡潜伏期时长','清醒次数','睡眠期间恢复度变化趋势','恢复度时长及比例','睡眠期间心率变化趋势','最高心率','平均心率','睡眠期间体温变化','AI睡眠评估及建议'],
+    slot:'ring1c-feature-sleep', color:'#0A84FF',
   },
   {
+    slug: 'stress',
     tag:'Stress Intelligence', title:'压力不是敌人。\n读懂它才是。', desc:'24小时压力趋势监测，全天压力与恢复度量化分析，帮你识别高压时刻与最佳恢复窗口。',
-    slot:'ring1c-feature-stress', color:'#FF9F0A', metrics:['24小时压力趋势化监测','全天压力时长及占比','全天恢复度时长及占比','压力得分及变化'],
+    slot:'ring1c-feature-stress', color:'#FF9F0A',
   },
 ];
 
@@ -114,23 +110,25 @@ export default function Ring1CPage() {
             71+
           </h2>
           <p style={{ fontSize:'clamp(24px,4vw,48px)', fontWeight:600, color:'rgba(255,255,255,0.9)', marginTop:8, marginBottom:24 }}>健康监测指标</p>
-          <p style={{ fontSize:19, color:'#86868B', lineHeight:1.6, marginBottom:72 }}>覆盖睡眠、心脏、呼吸、压力、运动、血氧六大健康维度</p>
+          <p style={{ fontSize:19, color:'#86868B', lineHeight:1.6, marginBottom:72 }}>覆盖 {TOTAL_HEALTH_METRICS} 项监测参数，七大功能模块完整对照规格书</p>
           <div style={{ display:'flex', flexWrap:'wrap', gap:12, justifyContent:'center' }}>
             {ENGINES.map(e => (
-              <div key={e.en} style={{ background:'rgba(255,255,255,0.05)', border:'1px solid rgba(255,255,255,0.08)', borderRadius:16, padding:'16px 24px', display:'flex', alignItems:'center', gap:12, backdropFilter:'blur(10px)' }}>
+              <Link key={e.slug} href={`/metrics/${e.slug}`} style={{ background:'rgba(255,255,255,0.05)', border:'1px solid rgba(255,255,255,0.08)', borderRadius:16, padding:'16px 24px', display:'flex', alignItems:'center', gap:12, backdropFilter:'blur(10px)' }}>
                 <span style={{ fontSize:24 }}>{e.emoji}</span>
                 <div style={{ textAlign:'left' }}>
-                  <div style={{ fontSize:15, fontWeight:600, color:'#fff' }}>{e.zh}</div>
-                  <div style={{ fontSize:12, color:e.color, marginTop:2 }}>{e.count}项指标</div>
+                  <div style={{ fontSize:15, fontWeight:600, color:'#fff' }}>{e.title}</div>
+                  <div style={{ fontSize:12, color:e.color, marginTop:2 }}>{e.count}项参数 →</div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
       </section>
 
       {/* ── 7大功能详解 ───────────────────────────── */}
-      {FEATURES.map((f, idx) => (
+      {FEATURES.map((f, idx) => {
+        const metrics = HEALTH_METRIC_CATEGORIES.find(c => c.slug === f.slug)?.parameters ?? [];
+        return (
         <section key={f.tag} style={{ background: idx % 2 === 0 ? '#000' : '#0A0A0A', padding:'0 24px 160px' }}>
           <div style={{ maxWidth:1200, margin:'0 auto' }}>
             <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(320px,1fr))', gap:80, alignItems:'center' }}>
@@ -139,15 +137,23 @@ export default function Ring1CPage() {
                 <h2 style={{ fontSize:'clamp(32px,4vw,52px)', fontWeight:700, letterSpacing:'-0.025em', lineHeight:1.1, marginBottom:24, whiteSpace:'pre-line' }}>{f.title}</h2>
                 <p style={{ fontSize:17, color:'#86868B', lineHeight:1.7, marginBottom:36 }}>{f.desc}</p>
                 <div style={{ display:'flex', flexWrap:'wrap', gap:8, marginBottom:36 }}>
-                  {f.metrics.map(m => (
+                  {metrics.slice(0, 8).map(m => (
                     <span key={m} style={{ fontSize:13, padding:'6px 14px', background:'rgba(255,255,255,0.06)', color:'rgba(255,255,255,0.7)', borderRadius:20, border:'1px solid rgba(255,255,255,0.08)' }}>{m}</span>
                   ))}
+                  {metrics.length > 8 && (
+                    <span style={{ fontSize:13, padding:'6px 14px', color:f.color }}>+{metrics.length - 8} 项…</span>
+                  )}
                 </div>
-                {f.tag === 'OSA Screening' && (
-                  <Link href="/assessment/osa" style={{ display:'inline-flex', alignItems:'center', gap:6, fontSize:17, color:f.color, fontWeight:600 }}>
-                    立即免费筛查 →
+                <div style={{ display:'flex', flexWrap:'wrap', gap:16 }}>
+                  <Link href={`/metrics/${f.slug}`} style={{ display:'inline-flex', alignItems:'center', gap:6, fontSize:17, color:f.color, fontWeight:600 }}>
+                    查看全部 {metrics.length} 项参数 →
                   </Link>
-                )}
+                  {f.tag === 'OSA Screening' && (
+                    <Link href="/assessment/osa" style={{ display:'inline-flex', alignItems:'center', gap:6, fontSize:17, color:'rgba(255,255,255,0.6)', fontWeight:600 }}>
+                      免费 OSA 筛查 →
+                    </Link>
+                  )}
+                </div>
               </div>
               <div style={{ order: idx % 2 === 1 ? 1 : 2 }}>
                 <Img slot={f.slot} alt={f.tag} style={{ height:'clamp(300px,40vw,480px)' }} />
@@ -155,7 +161,7 @@ export default function Ring1CPage() {
             </div>
           </div>
         </section>
-      ))}
+      );})}
 
       {/* ── App展示 ───────────────────────────────── */}
       <section style={{ background:'#000', padding:'0 24px 160px' }}>

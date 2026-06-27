@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { RingColorSwitcher } from '../components/RingColorSwitcher';
 import { HeroSection } from '../components/HeroSection';
 import { OrganizationSchema } from '../components/StructuredData';
+import { HealthMetricsSection } from '../components/HealthMetricsSection';
 import { getSiteUrl } from '../lib/site';
 
 export const metadata: Metadata = {
@@ -25,18 +26,7 @@ export default function HomePage() {
 
       <HeroSection />
 
-      <section style={{ background:'#0A0A0A', padding:'120px 24px', textAlign:'center' }}>
-        <div style={{ maxWidth:800, margin:'0 auto' }}>
-          <p style={{ fontSize:13, fontWeight:600, letterSpacing:'0.1em', textTransform:'uppercase', color:'#4B5563', marginBottom:16 }}>Health Intelligence Platform</p>
-          <p style={{ fontSize:'clamp(100px,16vw,160px)', fontWeight:800, letterSpacing:'-0.05em', color:'#fff', lineHeight:1, margin:'0 0 8px' }}>71<span style={{ color:'#3B82F6' }}>+</span></p>
-          <p style={{ fontSize:24, color:'#9CA3AF', marginBottom:48 }}>健康监测指标，持续追踪</p>
-          <div style={{ display:'flex', gap:12, justifyContent:'center', flexWrap:'wrap' }}>
-            {['睡眠智能','心脏智能','血氧监测','压力指数','运动追踪','OSA风险筛查'].map(f => (
-              <span key={f} style={{ padding:'8px 20px', border:'1px solid rgba(255,255,255,0.1)', borderRadius:980, fontSize:14, color:'#9CA3AF', background:'rgba(255,255,255,0.04)' }}>{f}</span>
-            ))}
-          </div>
-        </div>
-      </section>
+      <HealthMetricsSection />
 
       <section style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit, minmax(300px, 1fr))', minHeight:'auto' }}>
         <div style={{ position:'relative', minHeight:500 }}>

@@ -46,10 +46,26 @@ jobs:
           git pull origin main
           echo "==> Run deploy script"
           ./scripts/deploy.sh
-          echo "==> Health check"
-          curl -sf -o /dev/null http://localhost:3000/assessment
-          curl -sf -o /dev/null http://localhost:3000/assessment/diabetes
-          curl -sf -o /dev/null http://localhost:3000/assessment/altitude
+          echo "==> Health check (wait for Next.js)"
+          wait_for() {
+            local url="$1"
+            local label="$2"
+            for i in $(seq 1 36); do
+              if curl -sf -o /dev/null "$url"; then
+                echo "OK $label"
+                return 0
+              fi
+              echo "waiting $label ($i/36)..."
+              sleep 5
+            done
+            echo "FAIL $label"
+            pm2 status || true
+            pm2 logs mateyou-web --lines 40 --nostream || true
+            return 1
+          }
+          wait_for http://localhost:3000/assessment "assessment"
+          wait_for http://localhost:3000/assessment/diabetes "diabetes"
+          wait_for http://localhost:3000/assessment/altitude "altitude"
           pm2 status
           echo "✅ GitHub Actions deploy finished"
           ENDSSH

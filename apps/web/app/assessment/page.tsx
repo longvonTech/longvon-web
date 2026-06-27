@@ -64,7 +64,7 @@ const ASSESSMENTS = [
   },
   {
     type: 'diabetes',
-    href: '/membership',
+    href: '/assessment/diabetes',
     imgSlot: 'assessment-diabetes',
     imgPath: '/images/assessment/diabetes.jpg',
     icon: '🩸',
@@ -77,7 +77,7 @@ const ASSESSMENTS = [
   },
   {
     type: 'altitude',
-    href: '/membership',
+    href: '/assessment/altitude',
     imgSlot: 'assessment-altitude',
     imgPath: '/images/assessment/altitude.jpg',
     icon: '⛰️',

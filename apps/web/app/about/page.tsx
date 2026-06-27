@@ -117,7 +117,7 @@ export default function AboutPage() {
             <p style={{ fontSize:13, fontWeight:600, letterSpacing:'0.1em', textTransform:'uppercase', color:'#9CA3AF', marginBottom:20 }}>What We Do</p>
             <h2 style={{ fontSize:'clamp(28px,4vw,44px)', fontWeight:700, letterSpacing:'-0.02em' }}>我们在做什么</h2>
           </div>
-          <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(280px,1fr))', gap:24 }}>
+          <div className="about-what-grid">
             {[
               {
                 imgSlot: 'about-what-ai-platform',
@@ -148,8 +148,8 @@ export default function AboutPage() {
                 desc:'连接个人、家庭成员、医生及健康管理师，让健康管理从单一用户延伸至家庭关爱和长期健康陪伴。',
               },
             ].map(item => (
-              <div key={item.title} style={{ background:'#fff', borderRadius:20, overflow:'hidden', border:'1px solid #E5E7EB', boxShadow:'0 1px 3px rgba(0,0,0,0.06)' }}>
-                <div style={{ position:'relative', height:200, background:item.bg, overflow:'hidden' }}>
+              <div key={item.title} className="about-what-card">
+                <div style={{ position:'relative', height:180, background:item.bg, overflow:'hidden', flexShrink:0 }}>
                   <img
                     src={item.imgPath}
                     alt={item.title}
@@ -159,14 +159,31 @@ export default function AboutPage() {
                     {item.imgSlot}
                   </div>
                 </div>
-                <div style={{ padding:'28px 24px 32px' }}>
-                  <h3 style={{ fontSize:18, fontWeight:700, color:'#1D1D1F', marginBottom:12 }}>{item.title}</h3>
-                  <p style={{ fontSize:15, color:'#6B7280', lineHeight:1.75, margin:0 }}>{item.desc}</p>
+                <div style={{ padding:'24px 20px 28px', flex:1, display:'flex', flexDirection:'column' }}>
+                  <h3 style={{ fontSize:17, fontWeight:700, color:'#1D1D1F', marginBottom:10 }}>{item.title}</h3>
+                  <p style={{ fontSize:14, color:'#6B7280', lineHeight:1.75, margin:0 }}>{item.desc}</p>
                 </div>
               </div>
             ))}
           </div>
         </div>
+        <style>{`
+          .about-what-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+          }
+          .about-what-card {
+            display: flex;
+            flex-direction: column;
+            background: #fff;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid #E5E7EB;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+            height: 100%;
+          }
+        `}</style>
       </section>
 
       {/* ── 我们的愿景 ────────────────────────────── */}

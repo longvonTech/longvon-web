@@ -117,35 +117,52 @@ export default function AboutPage() {
             <p style={{ fontSize:13, fontWeight:600, letterSpacing:'0.1em', textTransform:'uppercase', color:'#9CA3AF', marginBottom:20 }}>What We Do</p>
             <h2 style={{ fontSize:'clamp(28px,4vw,44px)', fontWeight:700, letterSpacing:'-0.02em' }}>我们在做什么</h2>
           </div>
-          <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(220px,1fr))', gap:20 }}>
+          <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(280px,1fr))', gap:24 }}>
             {[
               {
-                icon:'🤖', color:'#2563EB', bg:'#EFF6FF',
+                imgSlot: 'about-what-ai-platform',
+                imgPath: '/images/about/what-ai-platform.jpg',
+                bg: '#EFF6FF',
                 title:'AI健康管理平台',
                 desc:'通过多维健康数据与医疗知识模型，为用户提供持续的健康评估、风险预警、趋势分析及健康管理服务。',
               },
               {
-                icon:'💍', color:'#7C3AED', bg:'#F5F3FF',
+                imgSlot: 'about-what-terminal',
+                imgPath: '/images/about/what-terminal.jpg',
+                bg: '#F5F3FF',
                 title:'智能健康终端',
                 desc:'以MATEYOU Ring1C AI智能戒指为核心入口，持续采集睡眠、血氧、心率、HRV、压力、活动等关键健康指标，建立个人健康数字画像。',
               },
               {
-                icon:'🏥', color:'#059669', bg:'#ECFDF5',
+                imgSlot: 'about-what-medical',
+                imgPath: '/images/about/what-medical.jpg',
+                bg: '#ECFDF5',
                 title:'医疗级健康服务',
                 desc:'围绕睡眠健康、呼吸健康、慢病管理及老龄化健康需求，打造覆盖筛查、监测、评估、干预及随访的全周期服务体系。',
               },
               {
-                icon:'👨‍👩‍👧', color:'#D97706', bg:'#FFFBEB',
+                imgSlot: 'about-what-family',
+                imgPath: '/images/about/what-family.jpg',
+                bg: '#FFFBEB',
                 title:'家庭健康管理网络',
                 desc:'连接个人、家庭成员、医生及健康管理师，让健康管理从单一用户延伸至家庭关爱和长期健康陪伴。',
               },
             ].map(item => (
-              <div key={item.title} style={{ background:'#F9FAFB', borderRadius:20, padding:'32px 28px', border:'1px solid #E5E7EB' }}>
-                <div style={{ width:52, height:52, borderRadius:14, background:item.bg, display:'flex', alignItems:'center', justifyContent:'center', fontSize:28, marginBottom:20 }}>
-                  {item.icon}
+              <div key={item.title} style={{ background:'#fff', borderRadius:20, overflow:'hidden', border:'1px solid #E5E7EB', boxShadow:'0 1px 3px rgba(0,0,0,0.06)' }}>
+                <div style={{ position:'relative', height:200, background:item.bg, overflow:'hidden' }}>
+                  <img
+                    src={item.imgPath}
+                    alt={item.title}
+                    style={{ position:'absolute', inset:0, width:'100%', height:'100%', objectFit:'cover' }}
+                  />
+                  <div style={{ position:'absolute', bottom:8, right:8, background:'rgba(0,0,0,0.35)', borderRadius:6, padding:'2px 8px', fontSize:10, color:'rgba(255,255,255,0.75)', fontFamily:'monospace' }}>
+                    {item.imgSlot}
+                  </div>
                 </div>
-                <h3 style={{ fontSize:18, fontWeight:700, color:'#1D1D1F', marginBottom:12 }}>{item.title}</h3>
-                <p style={{ fontSize:15, color:'#6B7280', lineHeight:1.75 }}>{item.desc}</p>
+                <div style={{ padding:'28px 24px 32px' }}>
+                  <h3 style={{ fontSize:18, fontWeight:700, color:'#1D1D1F', marginBottom:12 }}>{item.title}</h3>
+                  <p style={{ fontSize:15, color:'#6B7280', lineHeight:1.75, margin:0 }}>{item.desc}</p>
+                </div>
               </div>
             ))}
           </div>

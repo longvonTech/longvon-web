@@ -1,7 +1,12 @@
 #!/bin/bash
 cd /root/mateyou
-echo "拉取最新代码..."
-git pull origin main
+
+if [ "${DEPLOY_SKIP_GIT_PULL:-0}" != "1" ]; then
+  echo "拉取最新代码..."
+  git pull origin main
+else
+  echo "跳过 git pull（代码已由 CI 同步）"
+fi
 
 echo "构建前端..."
 export $(grep -v '^#' .env.production | xargs)

@@ -1,6 +1,7 @@
 name: Deploy to ECS
 
 # CI 在 main 分支 push 且通过后自动部署；也可在 Actions 页手动触发。
+# 代码在 GitHub Actions 拉取后 rsync 到 ECS，避免 ECS 直连 GitHub 的 TLS 问题。
 
 on:
   workflow_run:
@@ -27,7 +28,12 @@ jobs:
       )
 
     steps:
-      - name: Deploy via SSH
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+
+      - name: Sync code to ECS and deploy
         env:
           ECS_HOST: ${{ secrets.ECS_HOST }}
           ECS_USER: ${{ secrets.ECS_USER }}
@@ -38,14 +44,25 @@ jobs:
           echo "$ECS_SSH_KEY_B64" | base64 -d > "$KEY_FILE"
           chmod 600 "$KEY_FILE"
           ssh-keygen -y -f "$KEY_FILE" > /dev/null
+          SSH_OPTS=(-i "$KEY_FILE" -o StrictHostKeyChecking=accept-new)
           ssh-keyscan -H "$ECS_HOST" >> "$HOME/.ssh/known_hosts" 2>/dev/null || true
-          ssh -i "$KEY_FILE" -o StrictHostKeyChecking=accept-new "${ECS_USER}@${ECS_HOST}" << 'ENDSSH'
+
+          RSYNC_SSH="ssh -i ${KEY_FILE} -o StrictHostKeyChecking=accept-new"
+          echo "==> Rsync source to ECS (skip git pull on server)"
+          rsync -az \
+            --exclude node_modules \
+            --exclude apps/web/.next \
+            --exclude apps/api/dist \
+            --exclude .git \
+            --exclude .env.production \
+            -e "$RSYNC_SSH" \
+            ./ "${ECS_USER}@${ECS_HOST}:/root/mateyou/"
+
+          echo "==> Run deploy on ECS"
+          ssh "${SSH_OPTS[@]}" "${ECS_USER}@${ECS_HOST}" << 'ENDSSH'
           set -e
           cd /root/mateyou
-          echo "==> Pull latest main"
-          git pull origin main
-          echo "==> Run deploy script"
-          ./scripts/deploy.sh
+          DEPLOY_SKIP_GIT_PULL=1 ./scripts/deploy.sh
           echo "==> Health check (wait for Next.js)"
           wait_for() {
             local url="$1"

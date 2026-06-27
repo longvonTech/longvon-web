@@ -62,8 +62,6 @@ jobs:
           ssh "${SSH_OPTS[@]}" "${ECS_USER}@${ECS_HOST}" << 'ENDSSH'
           set -e
           cd /root/mateyou
-          echo "==> Database migration"
-          npm run db:migrate:deploy
           DEPLOY_SKIP_GIT_PULL=1 ./scripts/deploy.sh
           echo "==> Health check (wait for Next.js)"
           wait_for() {

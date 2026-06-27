@@ -10,6 +10,10 @@ fi
 
 echo "构建前端..."
 export $(grep -v '^#' .env.production | xargs)
+
+echo "数据库迁移..."
+npm run db:migrate:deploy
+
 npm run build --workspace=apps/web
 
 echo "构建API..."

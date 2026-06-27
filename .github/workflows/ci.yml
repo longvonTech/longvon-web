@@ -1,9 +1,6 @@
 name: CI
 
-# 呼应cicd-architecture-v1.md：本配置仅覆盖Lint+Build+Test阶段，
-# 不包含Staging/Production部署步骤——部署流水线（含人工审批门）
-# 留待真正具备Staging环境时再补充，Sprint 1阶段写一个会自动部署到
-# 任何环境的CI配置没有实际意义，反而可能造成"看起来已经能部署"的误解。
+# Lint + Build + Test；main 分支 push 通过后由 deploy.yml 部署到 ECS production。
 
 on:
   push:

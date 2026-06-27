@@ -1,0 +1,50 @@
+name: Deploy to ECS
+
+# CI 在 main 分支 push 且通过后自动部署；也可在 Actions 页手动触发。
+# 建议在 GitHub Settings → Environments → production 开启 Required reviewers 作为人工审批门。
+
+on:
+  workflow_run:
+    workflows: [CI]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: Deploy to production ECS
+    runs-on: ubuntu-latest
+    environment: production
+    if: >
+      github.event_name == 'workflow_dispatch' ||
+      (
+        github.event.workflow_run.conclusion == 'success' &&
+        github.event.workflow_run.event == 'push' &&
+        github.event.workflow_run.head_branch == 'main'
+      )
+
+    steps:
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.ECS_HOST }}
+          username: ${{ secrets.ECS_USER }}
+          key: ${{ secrets.ECS_SSH_KEY }}
+          command_timeout: 30m
+          script: |
+            set -e
+            cd /root/mateyou
+            echo "==> Pull latest main"
+            git pull origin main
+            echo "==> Run deploy script"
+            ./scripts/deploy.sh
+            echo "==> Health check"
+            curl -sf -o /dev/null http://localhost:3000/assessment
+            curl -sf -o /dev/null http://localhost:3000/assessment/diabetes
+            curl -sf -o /dev/null http://localhost:3000/assessment/altitude
+            pm2 status
+            echo "✅ GitHub Actions deploy finished"

@@ -1,7 +1,6 @@
 name: Deploy to ECS
 
 # CI 在 main 分支 push 且通过后自动部署；也可在 Actions 页手动触发。
-# 建议在 GitHub Settings → Environments → production 开启 Required reviewers 作为人工审批门。
 
 on:
   workflow_run:
@@ -28,32 +27,30 @@ jobs:
       )
 
     steps:
-      - name: Prepare SSH key
+      - name: Deploy via SSH
         env:
+          ECS_HOST: ${{ secrets.ECS_HOST }}
+          ECS_USER: ${{ secrets.ECS_USER }}
           ECS_SSH_KEY_B64: ${{ secrets.ECS_SSH_KEY_B64 }}
         run: |
-          install -m 700 -d ~/.ssh
-          echo "$ECS_SSH_KEY_B64" | base64 -d > ~/.ssh/ecs_key
-          chmod 600 ~/.ssh/ecs_key
-          ssh-keygen -y -f ~/.ssh/ecs_key > /dev/null
-
-      - name: Deploy via SSH
-        uses: appleboy/ssh-action@v1.2.0
-        with:
-          host: ${{ secrets.ECS_HOST }}
-          username: ${{ secrets.ECS_USER }}
-          key_path: ~/.ssh/ecs_key
-          command_timeout: 30m
-          script: |
-            set -e
-            cd /root/mateyou
-            echo "==> Pull latest main"
-            git pull origin main
-            echo "==> Run deploy script"
-            ./scripts/deploy.sh
-            echo "==> Health check"
-            curl -sf -o /dev/null http://localhost:3000/assessment
-            curl -sf -o /dev/null http://localhost:3000/assessment/diabetes
-            curl -sf -o /dev/null http://localhost:3000/assessment/altitude
-            pm2 status
-            echo "✅ GitHub Actions deploy finished"
+          set -euo pipefail
+          KEY_FILE="${RUNNER_TEMP}/ecs_deploy_key"
+          echo "$ECS_SSH_KEY_B64" | base64 -d > "$KEY_FILE"
+          chmod 600 "$KEY_FILE"
+          ssh-keygen -y -f "$KEY_FILE" > /dev/null
+          ssh-keyscan -H "$ECS_HOST" >> "$HOME/.ssh/known_hosts" 2>/dev/null || true
+          ssh -i "$KEY_FILE" -o StrictHostKeyChecking=accept-new "${ECS_USER}@${ECS_HOST}" << 'ENDSSH'
+          set -e
+          cd /root/mateyou
+          echo "==> Pull latest main"
+          git pull origin main
+          echo "==> Run deploy script"
+          ./scripts/deploy.sh
+          echo "==> Health check"
+          curl -sf -o /dev/null http://localhost:3000/assessment
+          curl -sf -o /dev/null http://localhost:3000/assessment/diabetes
+          curl -sf -o /dev/null http://localhost:3000/assessment/altitude
+          pm2 status
+          echo "✅ GitHub Actions deploy finished"
+          ENDSSH
+          rm -f "$KEY_FILE"

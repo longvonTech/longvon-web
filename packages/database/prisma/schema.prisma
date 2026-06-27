@@ -397,10 +397,15 @@ model News {
   summary     String?
   content     String
   coverImage  String?   @map("cover_image")
+  videoUrl    String?   @map("video_url")
+  media       Json      @default("[]")
   publishedAt DateTime? @map("published_at")
   // status 合法取值: draft | published
   status      String    @default("draft")
+  createdAt   DateTime  @default(now()) @map("created_at")
+  updatedAt   DateTime  @updatedAt @map("updated_at")
 
+  @@index([status, publishedAt])
   @@map("news")
   @@schema("public")
 }

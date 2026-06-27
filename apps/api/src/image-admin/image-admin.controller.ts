@@ -2,25 +2,20 @@ import {
   BadRequestException,
   Controller,
   Get,
+  Headers,
   Param,
   Post,
-  UnauthorizedException,
   UploadedFile,
   UseInterceptors,
-  Headers,
 } from '@nestjs/common';
 import { FileInterceptor } from '@nestjs/platform-express';
 import { diskStorage } from 'multer';
 import * as path from 'path';
 import * as fs from 'fs';
+import { verifyAdminToken } from '../common/admin-auth.util';
 import { IMAGE_REGISTRY, getImagesByPage, getImageSlotById } from './image-registry';
 
 const IMAGES_BASE_DIR = process.env.IMAGES_BASE_DIR ?? '/var/www/mateyou';
-
-function verifyAdminToken(token: string | undefined): void {
-  const p = process.env.ADMIN_IMAGE_PASSWORD ?? 'mateyou-admin-2024';
-  if (!token || token !== p) throw new UnauthorizedException('密码错误');
-}
 
 @Controller('admin/images')
 export class ImageAdminController {

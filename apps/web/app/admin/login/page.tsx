@@ -33,8 +33,8 @@ export default function AdminLoginPage() {
       <div style={{ background:'#fff', borderRadius:20, padding:'48px 40px', width:360, boxShadow:'0 4px 40px rgba(0,0,0,0.08)' }}>
         <div style={{ textAlign:'center', marginBottom:36 }}>
           <div style={{ fontSize:40, marginBottom:12 }}>🔐</div>
-          <h1 style={{ fontSize:22, fontWeight:700, color:'#1D1D1F', margin:0 }}>图片管理后台</h1>
-          <p style={{ fontSize:14, color:'#6E6E73', marginTop:8 }}>MATEYOU · 管理员入口</p>
+          <h1 style={{ fontSize:22, fontWeight:700, color:'#1D1D1F', margin:0 }}>内容管理后台</h1>
+          <p style={{ fontSize:14, color:'#6E6E73', marginTop:8 }}>MATEYOU · 页面图片与企业动态</p>
         </div>
         <div style={{ marginBottom:16 }}>
           <label style={{ fontSize:13, fontWeight:500, color:'#1D1D1F', display:'block', marginBottom:8 }}>管理员密码</label>

@@ -7,6 +7,7 @@ const NAV_LINKS = [
   { href: '/products/ring1c', label: '产品介绍' },
   { href: '/assessment', label: '健康评估' },
   { href: '/knowledge', label: '健康知识库' },
+  { href: '/news', label: '企业动态' },
   { href: '/partner', label: '商业合作' },
   { href: '/about', label: '关于我们' },
 ];
@@ -56,22 +57,14 @@ export function GlobalNav() {
           ))}
         </ul>
 
-        <div style={{ display: 'flex', gap: 12, alignItems: 'center' }}>
-          <Link
-            href="/assessment"
-            className={`nav-cta${isActive(pathname, '/assessment') ? ' nav-cta-active' : ''}`}
-          >
-            健康评估
-          </Link>
-          <button className="mobile-menu-btn nav-icon-btn" onClick={() => setMenuOpen(!menuOpen)}
-            type="button"
-            aria-label="打开菜单"
-            style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 4 }}>
-            <div style={{ width: 22, height: 2, background: '#374151', marginBottom: 5 }} />
-            <div style={{ width: 22, height: 2, background: '#374151', marginBottom: 5 }} />
-            <div style={{ width: 22, height: 2, background: '#374151' }} />
-          </button>
-        </div>
+        <button className="mobile-menu-btn nav-icon-btn" onClick={() => setMenuOpen(!menuOpen)}
+          type="button"
+          aria-label="打开菜单"
+          style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 4 }}>
+          <div style={{ width: 22, height: 2, background: '#374151', marginBottom: 5 }} />
+          <div style={{ width: 22, height: 2, background: '#374151', marginBottom: 5 }} />
+          <div style={{ width: 22, height: 2, background: '#374151' }} />
+        </button>
       </nav>
 
       {menuOpen && (
@@ -114,32 +107,6 @@ export function GlobalNav() {
         .nav-link-active {
           color: #2563EB;
           font-weight: 600;
-        }
-        .nav-cta {
-          display: inline-block;
-          padding: 8px 18px;
-          background: #2563EB;
-          color: #fff;
-          border-radius: 8px;
-          font-size: 14px;
-          font-weight: 600;
-          white-space: nowrap;
-          transition: transform 0.12s ease, background 0.12s ease, box-shadow 0.12s ease;
-          box-shadow: 0 1px 2px rgba(37, 99, 235, 0.2);
-          -webkit-tap-highlight-color: transparent;
-          user-select: none;
-        }
-        .nav-cta:hover {
-          background: #1D4ED8;
-          box-shadow: 0 2px 8px rgba(37, 99, 235, 0.35);
-        }
-        .nav-cta:active {
-          transform: scale(0.94);
-          background: #1E40AF;
-          box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);
-        }
-        .nav-cta-active {
-          box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.25);
         }
         .nav-logo {
           border-radius: 8px;

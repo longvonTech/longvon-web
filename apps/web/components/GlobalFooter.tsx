@@ -41,9 +41,29 @@ export function GlobalFooter() {
             </ul>
           </div>
         </div>
-        <div style={{ borderTop: '1px solid #333', paddingTop: 24, display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: 12, fontSize: 12 }}>
-          <span>© 2024 龙汾科技（LONGVON）保留所有权利</span>
-          <span>本平台内容仅供健康参考，不构成医学诊断或治疗建议</span>
+        <div style={{ borderTop: '1px solid #333', paddingTop: 24, display: 'flex', flexDirection: 'column', gap: 12, fontSize: 12 }}>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px 20px' }}>
+            <a
+              href="https://beian.miit.gov.cn/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: '#AAB0C6' }}
+            >
+              www.longvon.com 粤ICP备2022138739号-1
+            </a>
+            <a
+              href="https://beian.miit.gov.cn/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: '#AAB0C6' }}
+            >
+              www.mateyou.net 粤ICP备2022138739号-4
+            </a>
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: 12 }}>
+            <span>© 2024 龙汾科技（LONGVON）保留所有权利</span>
+            <span>本平台内容仅供健康参考，不构成医学诊断或治疗建议</span>
+          </div>
         </div>
       </div>
     </footer>

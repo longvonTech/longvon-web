@@ -3,6 +3,19 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState, useEffect } from 'react';
 
+const NAV_LINKS = [
+  { href: '/products/ring1c', label: '产品介绍' },
+  { href: '/assessment', label: '健康评估' },
+  { href: '/knowledge', label: '健康知识库' },
+  { href: '/partner', label: '商业合作' },
+  { href: '/about', label: '关于我们' },
+];
+
+function isActive(pathname: string, href: string) {
+  if (href === '/') return pathname === '/';
+  return pathname === href || pathname.startsWith(`${href}/`);
+}
+
 export function GlobalNav() {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
@@ -18,56 +31,58 @@ export function GlobalNav() {
 
   return (
     <header style={{
-      position:'sticky', top:0, zIndex:100,
+      position: 'sticky', top: 0, zIndex: 100,
       background: scrolled ? 'rgba(255,255,255,0.97)' : 'rgba(255,255,255,0.97)',
-      backdropFilter:'blur(12px)',
-      borderBottom:'1px solid #E5E7EB',
-      transition:'all 0.3s ease',
+      backdropFilter: 'blur(12px)',
+      borderBottom: '1px solid #E5E7EB',
+      transition: 'all 0.3s ease',
     }}>
-      <nav style={{ maxWidth:1100, margin:'0 auto', padding:'0 20px', height:60, display:'flex', alignItems:'center', justifyContent:'space-between' }}>
-        <Link href="/" style={{ display:'flex', alignItems:'center', flexShrink:0 }}>
+      <nav style={{ maxWidth: 1100, margin: '0 auto', padding: '0 20px', height: 60, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+        <Link href="/" className="nav-logo" style={{ display: 'flex', alignItems: 'center', flexShrink: 0 }}>
           <img src="/images/longvon-logo.png" alt="LONGVON"
-            style={{ height:40, width:'auto', objectFit:'contain', display:'block' }} />
+            style={{ height: 40, width: 'auto', objectFit: 'contain', display: 'block' }} />
         </Link>
 
-        <ul className="desktop-nav" style={{ display:'flex', gap:28, listStyle:'none', margin:0, padding:0 }}>
-          {[
-            { href:'/products/ring1c', label:'产品介绍' },
-            { href:'/assessment', label:'健康评估' },
-            { href:'/knowledge', label:'健康知识库' },
-            { href:'/partner', label:'商业合作' },
-          ].map(item => (
+        <ul className="desktop-nav" style={{ display: 'flex', gap: 20, listStyle: 'none', margin: 0, padding: 0 }}>
+          {NAV_LINKS.map(item => (
             <li key={item.href}>
-              <Link style={{ fontSize:15, color:'#6B7280', fontWeight:500, whiteSpace:'nowrap' }} href={item.href}>
+              <Link
+                href={item.href}
+                className={`nav-link${isActive(pathname, item.href) ? ' nav-link-active' : ''}`}
+              >
                 {item.label}
               </Link>
             </li>
           ))}
         </ul>
 
-        <div style={{ display:'flex', gap:12, alignItems:'center' }}>
-          <Link href="/assessment" style={{ padding:'8px 18px', background:'#2563EB', color:'#fff', borderRadius:8, fontSize:14, fontWeight:600, whiteSpace:'nowrap' }}>
+        <div style={{ display: 'flex', gap: 12, alignItems: 'center' }}>
+          <Link
+            href="/assessment"
+            className={`nav-cta${isActive(pathname, '/assessment') ? ' nav-cta-active' : ''}`}
+          >
             健康评估
           </Link>
-          <button className="mobile-menu-btn" onClick={() => setMenuOpen(!menuOpen)}
-            style={{ background:'none', border:'none', cursor:'pointer', padding:4 }}>
-            <div style={{ width:22, height:2, background:'#374151', marginBottom:5 }} />
-            <div style={{ width:22, height:2, background:'#374151', marginBottom:5 }} />
-            <div style={{ width:22, height:2, background:'#374151' }} />
+          <button className="mobile-menu-btn nav-icon-btn" onClick={() => setMenuOpen(!menuOpen)}
+            type="button"
+            aria-label="打开菜单"
+            style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 4 }}>
+            <div style={{ width: 22, height: 2, background: '#374151', marginBottom: 5 }} />
+            <div style={{ width: 22, height: 2, background: '#374151', marginBottom: 5 }} />
+            <div style={{ width: 22, height: 2, background: '#374151' }} />
           </button>
         </div>
       </nav>
 
       {menuOpen && (
-        <div style={{ background:'#fff', borderTop:'1px solid #E5E7EB', padding:'12px 20px 20px' }}>
-          {[
-            { href:'/products/ring1c', label:'产品介绍' },
-            { href:'/assessment', label:'健康评估' },
-            { href:'/knowledge', label:'健康知识库' },
-            { href:'/partner', label:'商业合作' },
-          ].map(item => (
-            <Link key={item.href} href={item.href} onClick={() => setMenuOpen(false)}
-              style={{ display:'block', padding:'12px 0', fontSize:16, color:'#374151', fontWeight:500, borderBottom:'1px solid #F3F4F6' }}>
+        <div style={{ background: '#fff', borderTop: '1px solid #E5E7EB', padding: '12px 20px 20px' }}>
+          {NAV_LINKS.map(item => (
+            <Link
+              key={item.href}
+              href={item.href}
+              onClick={() => setMenuOpen(false)}
+              className={`nav-mobile-link${isActive(pathname, item.href) ? ' nav-mobile-link-active' : ''}`}
+            >
               {item.label}
             </Link>
           ))}
@@ -75,6 +90,89 @@ export function GlobalNav() {
       )}
 
       <style>{`
+        .nav-link {
+          display: inline-block;
+          padding: 8px 6px;
+          font-size: 15px;
+          color: #6B7280;
+          font-weight: 500;
+          white-space: nowrap;
+          border-radius: 8px;
+          transition: transform 0.12s ease, background 0.12s ease, color 0.12s ease, box-shadow 0.12s ease;
+          -webkit-tap-highlight-color: transparent;
+          user-select: none;
+        }
+        .nav-link:hover {
+          color: #374151;
+          background: #F9FAFB;
+        }
+        .nav-link:active {
+          transform: scale(0.94);
+          background: #E5E7EB;
+          color: #111827;
+        }
+        .nav-link-active {
+          color: #2563EB;
+          font-weight: 600;
+        }
+        .nav-cta {
+          display: inline-block;
+          padding: 8px 18px;
+          background: #2563EB;
+          color: #fff;
+          border-radius: 8px;
+          font-size: 14px;
+          font-weight: 600;
+          white-space: nowrap;
+          transition: transform 0.12s ease, background 0.12s ease, box-shadow 0.12s ease;
+          box-shadow: 0 1px 2px rgba(37, 99, 235, 0.2);
+          -webkit-tap-highlight-color: transparent;
+          user-select: none;
+        }
+        .nav-cta:hover {
+          background: #1D4ED8;
+          box-shadow: 0 2px 8px rgba(37, 99, 235, 0.35);
+        }
+        .nav-cta:active {
+          transform: scale(0.94);
+          background: #1E40AF;
+          box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);
+        }
+        .nav-cta-active {
+          box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.25);
+        }
+        .nav-logo {
+          border-radius: 8px;
+          transition: transform 0.12s ease, opacity 0.12s ease;
+          -webkit-tap-highlight-color: transparent;
+        }
+        .nav-logo:active {
+          transform: scale(0.96);
+          opacity: 0.85;
+        }
+        .nav-icon-btn:active {
+          transform: scale(0.92);
+          opacity: 0.7;
+        }
+        .nav-mobile-link {
+          display: block;
+          padding: 12px 8px;
+          font-size: 16px;
+          color: #374151;
+          font-weight: 500;
+          border-bottom: 1px solid #F3F4F6;
+          border-radius: 8px;
+          transition: transform 0.12s ease, background 0.12s ease;
+          -webkit-tap-highlight-color: transparent;
+        }
+        .nav-mobile-link:active {
+          transform: scale(0.98);
+          background: #F3F4F6;
+        }
+        .nav-mobile-link-active {
+          color: #2563EB;
+          font-weight: 600;
+        }
         @media (max-width: 768px) {
           .desktop-nav { display: none !important; }
           .mobile-menu-btn { display: block !important; }

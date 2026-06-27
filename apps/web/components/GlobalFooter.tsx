@@ -35,7 +35,7 @@ export function GlobalFooter() {
           <div>
             <div style={{ color: '#fff', fontWeight: 600, marginBottom: 12 }}>关于</div>
             <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: 8, fontSize: 13 }}>
-              {[['健康知识库', '/knowledge'], ['产品介绍', '/products/ring1c'], ['加入我们', '/about']].map(([t, h]) => (
+              {[['健康知识库', '/knowledge'], ['产品介绍', '/products/ring1c'], ['关于我们', '/about']].map(([t, h]) => (
                 <li key={t}><Link href={h} style={{ color: '#AAB0C6' }}>{t}</Link></li>
               ))}
             </ul>

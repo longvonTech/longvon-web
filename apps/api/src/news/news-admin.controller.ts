@@ -1,13 +1,4 @@
-import {
-  Body,
-  Controller,
-  Delete,
-  Get,
-  Headers,
-  Param,
-  Patch,
-  Post,
-} from '@nestjs/common';
+import { Body, Controller, Delete, Get, Headers, Param, Patch, Post } from '@nestjs/common';
 import { verifyAdminToken } from '../common/admin-auth.util';
 import { CreateNewsDto, UpdateNewsDto } from './dto/news.dto';
 import { NewsService } from './news.service';

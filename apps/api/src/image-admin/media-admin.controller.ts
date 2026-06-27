@@ -48,20 +48,14 @@ export class MediaAdminController {
       }),
       fileFilter: (_req, file, cb) => {
         if (!ALLOWED_TYPES.includes(file.mimetype)) {
-          return cb(
-            new BadRequestException('只支持 JPG/PNG/WebP 图片或 MP4/WebM 视频'),
-            false,
-          );
+          return cb(new BadRequestException('只支持 JPG/PNG/WebP 图片或 MP4/WebM 视频'), false);
         }
         cb(null, true);
       },
       limits: { fileSize: 100 * 1024 * 1024 },
     }),
   )
-  upload(
-    @Headers('x-admin-token') token: string,
-    @UploadedFile() file: any,
-  ) {
+  upload(@Headers('x-admin-token') token: string, @UploadedFile() file: any) {
     verifyAdminToken(token);
     if (!file) throw new BadRequestException('请选择文件');
 
@@ -69,9 +63,7 @@ export class MediaAdminController {
     const maxSize = isVideo ? 100 * 1024 * 1024 : 10 * 1024 * 1024;
     if (file.size > maxSize) {
       fs.unlinkSync(file.path);
-      throw new BadRequestException(
-        isVideo ? '视频最大 100MB' : '图片最大 10MB',
-      );
+      throw new BadRequestException(isVideo ? '视频最大 100MB' : '图片最大 10MB');
     }
 
     const url = `/${MEDIA_DIR}/${file.filename}`;

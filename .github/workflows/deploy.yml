@@ -30,10 +30,10 @@ jobs:
     steps:
       - name: Prepare SSH key
         env:
-          ECS_SSH_KEY: ${{ secrets.ECS_SSH_KEY }}
+          ECS_SSH_KEY_B64: ${{ secrets.ECS_SSH_KEY_B64 }}
         run: |
           install -m 700 -d ~/.ssh
-          printf '%s\n' "$ECS_SSH_KEY" > ~/.ssh/ecs_key
+          echo "$ECS_SSH_KEY_B64" | base64 -d > ~/.ssh/ecs_key
           chmod 600 ~/.ssh/ecs_key
           ssh-keygen -y -f ~/.ssh/ecs_key > /dev/null
 

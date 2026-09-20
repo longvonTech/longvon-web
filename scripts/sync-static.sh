@@ -4,6 +4,10 @@ mkdir -p /var/www/mateyou/static
 if [ -d /root/mateyou/apps/web/public/images ]; then
   cp -r /root/mateyou/apps/web/public/images /var/www/mateyou/
 fi
+# llms.txt 等根路径静态文件（Nginx 也可直接命中，作双保险）
+if [ -f /root/mateyou/apps/web/public/llms.txt ]; then
+  cp /root/mateyou/apps/web/public/llms.txt /var/www/mateyou/llms.txt
+fi
 if [ -d /root/mateyou/apps/web/.next/static ]; then
   cp -r /root/mateyou/apps/web/.next/static/* /var/www/mateyou/static/
 fi

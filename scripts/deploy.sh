@@ -51,6 +51,17 @@ npm run db:migrate:deploy
 echo "构建前端..."
 npm run build --workspace=apps/web
 
+# standalone 模式不会自动带上 public/，需拷贝否则 /llms.txt 等静态文件 404
+WEB_DIR="/root/mateyou/apps/web"
+STANDALONE_WEB="$WEB_DIR/.next/standalone/apps/web"
+if [ -d "$STANDALONE_WEB" ]; then
+  echo "同步 public → standalone..."
+  mkdir -p "$STANDALONE_WEB/public"
+  cp -a "$WEB_DIR/public/." "$STANDALONE_WEB/public/"
+  mkdir -p "$STANDALONE_WEB/.next"
+  cp -a "$WEB_DIR/.next/static" "$STANDALONE_WEB/.next/static"
+fi
+
 echo "构建API..."
 npm run build --workspace=apps/api
 

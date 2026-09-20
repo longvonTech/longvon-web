@@ -11,9 +11,9 @@ export function GlobalFooter() {
       <div style={{ maxWidth: 1100, margin: '0 auto' }}>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 40, marginBottom: 40 }}>
           <div>
-            <div style={{ color: '#fff', fontWeight: 700, fontSize: 18, marginBottom: 12 }}>MATEYOU</div>
+            <div style={{ color: '#fff', fontWeight: 700, fontSize: 18, marginBottom: 12 }}>LONGVON</div>
             <p style={{ fontSize: 13, lineHeight: 1.7 }}>
-              龙汾科技旗下AI数字健康平台，通过Ring1C智能戒指与AI评估引擎，为用户提供个性化健康风险自评服务。
+              龙汾科技（LONGVON）是智能戒指技术制造商及 OEM/ODM 提供商，专注睡眠监测、呼吸健康监测与 OSA 相关监测。MATEYOU 是龙汾科技旗下智能戒指及 AI 健康品牌。公开口径：71 项健康监测参数，其中包含 22 项睡眠监测参数。
             </p>
           </div>
           <div>
@@ -33,9 +33,21 @@ export function GlobalFooter() {
             </ul>
           </div>
           <div>
-            <div style={{ color: '#fff', fontWeight: 600, marginBottom: 12 }}>关于</div>
+            <div style={{ color: '#fff', fontWeight: 600, marginBottom: 12 }}>Technology</div>
             <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: 8, fontSize: 13 }}>
-              {[['健康知识库', '/knowledge'], ['产品介绍', '/products/ring1c'], ['关于我们', '/about']].map(([t, h]) => (
+              {[
+                ['龙汾科技 LONGVON', '/company/longvon'],
+                ['Manufacturer', '/smart-ring-manufacturer'],
+                ['OEM & ODM', '/smart-ring-oem-odm'],
+                ['Technology', '/smart-ring-technology'],
+                ['Sleep Monitoring', '/smart-ring-sleep-monitoring'],
+                ['Respiratory Health', '/smart-ring-sleep-respiratory'],
+                ['OSA Technology', '/smart-ring-osa'],
+                ['健康知识库', '/knowledge'],
+                ['产品介绍', '/products/ring1c'],
+                ['企业动态', '/news'],
+                ['关于我们', '/about'],
+              ].map(([t, h]) => (
                 <li key={t}><Link href={h} style={{ color: '#AAB0C6' }}>{t}</Link></li>
               ))}
             </ul>

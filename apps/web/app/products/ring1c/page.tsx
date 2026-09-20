@@ -4,10 +4,11 @@ import Link from 'next/link';
 import { SizeGuide } from './SizeGuide';
 import { getSiteUrl } from '../../../lib/site';
 import { HEALTH_METRIC_CATEGORIES, TOTAL_HEALTH_METRICS } from '../../../lib/health-metrics';
+import { ProductSchema } from '../../../components/StructuredData';
 
 export const metadata: Metadata = {
   title: 'Ring1C · 个人健康智能系统 · MATEYOU',
-  description: 'MATEYOU Ring1C 智能健康戒指，7大AI健康引擎，71+健康监测指标，睡眠呼吸暂停筛查。',
+  description: 'MATEYOU Ring1C 智能健康戒指，7大AI健康引擎，71+健康监测指标，睡眠呼吸暂停筛查。由龙汾科技（LONGVON）研发制造。',
   alternates: { canonical: `${getSiteUrl()}/products/ring1c` },
 };
 
@@ -45,6 +46,12 @@ const FEATURES = [
 export default function Ring1CPage() {
   return (
     <div style={{ background:'#000', color:'#fff', fontFamily:'-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica Neue",sans-serif' }}>
+      <ProductSchema
+        name="MATEYOU Ring1C"
+        description="MATEYOU Ring1C by LONGVON: 71 total health monitoring parameters, including 22 sleep-related parameters. Sleep monitoring, respiratory health monitoring, and OSA-related metrics (AHI, ODI, SpO2) for health reference. Manufactured by LONGVON; MATEYOU is the brand."
+        url={`${getSiteUrl()}/products/ring1c`}
+        brand="MATEYOU"
+      />
 
       {/* ── HERO ─────────────────────────────────── */}
       <section style={{ minHeight:'100vh', display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', textAlign:'center', padding:'120px 24px 80px', position:'relative', overflow:'hidden' }}>
@@ -57,6 +64,12 @@ export default function Ring1CPage() {
           </h1>
           <p style={{ fontSize:'clamp(18px,2.5vw,24px)', color:'#86868B', lineHeight:1.6, maxWidth:560, margin:'0 auto 48px', fontWeight:300 }}>
             7大AI健康引擎。71+监测指标。<br />专为守护你和家人的健康而生。
+          </p>
+          <p style={{ fontSize:14, color:'#6B7280', marginBottom:32, maxWidth:480, marginLeft:'auto', marginRight:'auto', lineHeight:1.6 }}>
+            MATEYOU Ring1C 由龙汾科技（LONGVON）研发制造。了解{' '}
+            <Link href="/smart-ring-manufacturer" style={{ color:'#60A5FA' }}>Smart Ring Manufacturer</Link>
+            {' · '}
+            <Link href="/smart-ring-technology" style={{ color:'#60A5FA' }}>Technology</Link>
           </p>
           <div style={{ display:'flex', gap:16, justifyContent:'center', flexWrap:'wrap' }}>
             <Link href="/assessment" style={{ padding:'16px 40px', background:'#0A84FF', color:'#fff', borderRadius:980, fontSize:17, fontWeight:600, letterSpacing:'-0.01em' }}>

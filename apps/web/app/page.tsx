@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { RingColorSwitcher } from '../components/RingColorSwitcher';
 import { HeroSection } from '../components/HeroSection';
-import { OrganizationSchema } from '../components/StructuredData';
+import { OrganizationSchema, WebSiteSchema } from '../components/StructuredData';
 import { HealthMetricsSection } from '../components/HealthMetricsSection';
 import { getSiteUrl } from '../lib/site';
 
@@ -17,6 +17,7 @@ export default function HomePage() {
   return (
     <>
       <OrganizationSchema />
+      <WebSiteSchema />
       <style>{`
         @keyframes fadeUp { from{opacity:0;transform:translateY(30px)} to{opacity:1;transform:translateY(0)} }
         .h1{animation:fadeUp 1s ease forwards}
@@ -93,6 +94,20 @@ export default function HomePage() {
           <div style={{ display:'flex', justifyContent:'center' }}>
             <img src="/images/ring1c/Black.jpg" alt="Ring1C 曜石黑" style={{ width:'100%', maxWidth:420, objectFit:'contain' }} />
           </div>
+        </div>
+      </section>
+
+      <section style={{ background:'#F8FAFC', padding:'48px 24px', borderTop:'1px solid #F3F4F6' }}>
+        <div style={{ maxWidth:800, margin:'0 auto', textAlign:'center' }}>
+          <p style={{ fontSize:15, color:'#374151', lineHeight:1.8, margin:0 }}>
+            <Link href="/company/longvon" style={{ color:'#2563EB', fontWeight:600 }}>龙汾科技（LONGVON）</Link>
+            {' '}是智能戒指技术厂商与 OEM/ODM 提供商；
+            <Link href="/products/ring1c" style={{ color:'#2563EB' }}>MATEYOU</Link>
+            {' '}是 LONGVON 打造的智能戒指及 AI 健康品牌。
+            {' '}<Link href="/smart-ring-oem-odm" style={{ color:'#6B7280' }}>OEM/ODM</Link>
+            {' · '}<Link href="/smart-ring-sleep-respiratory" style={{ color:'#6B7280' }}>睡眠呼吸健康</Link>
+            {' · '}<Link href="/smart-ring-osa" style={{ color:'#6B7280' }}>OSA 相关监测</Link>
+          </p>
         </div>
       </section>
 

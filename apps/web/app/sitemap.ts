@@ -2,6 +2,7 @@ import type { MetadataRoute } from 'next';
 import { listArticles } from '../lib/knowledge-api';
 import { apiFetch } from '../lib/api-client';
 import { getSiteUrl } from '../lib/site';
+import { getAllHealthMetricSlugs } from '../lib/health-metrics';
 
 const MAX_PAGES = 20;
 const PAGE_SIZE = 50;
@@ -17,24 +18,43 @@ interface TopicListItem { id: string; slug: string }
  */
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const siteUrl = getSiteUrl();
+  const GEO_PAGES = [
+    'company/longvon',
+    'smart-ring-manufacturer',
+    'smart-ring-oem-odm',
+    'smart-ring-technology',
+    'smart-ring-sleep-monitoring',
+    'smart-ring-sleep-respiratory',
+    'smart-ring-osa',
+  ];
+
   const entries: MetadataRoute.Sitemap = [
-    // 核心固定页
     { url: siteUrl, changeFrequency: 'weekly', priority: 1.0 },
     { url: `${siteUrl}/products/ring1c`, changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${siteUrl}/about`, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${siteUrl}/news`, changeFrequency: 'weekly', priority: 0.7 },
+    { url: `${siteUrl}/metrics`, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${siteUrl}/assessment`, changeFrequency: 'monthly', priority: 0.9 },
     { url: `${siteUrl}/membership`, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${siteUrl}/knowledge`, changeFrequency: 'daily', priority: 0.8 },
     { url: `${siteUrl}/partner`, changeFrequency: 'monthly', priority: 0.8 },
   ];
 
-  // Partner Landing Pages
+  for (const slug of GEO_PAGES) {
+    entries.push({ url: `${siteUrl}/${slug}`, changeFrequency: 'monthly', priority: 0.95 });
+  }
+
   for (const slug of PARTNER_SLUGS) {
     entries.push({ url: `${siteUrl}/partner/${slug}`, changeFrequency: 'monthly', priority: 0.7 });
   }
 
-  // 评估入口（每个类型独立URL——Sprint 7 Content Factory实现各类型独立页面时更新）
   for (const type of ASSESSMENT_TYPES) {
-    entries.push({ url: `${siteUrl}/assessment?type=${type}`, changeFrequency: 'monthly', priority: 0.7 });
+    const path = type === 'weight_loss' ? 'weight-loss' : type;
+    entries.push({ url: `${siteUrl}/assessment/${path}`, changeFrequency: 'monthly', priority: 0.7 });
+  }
+
+  for (const slug of getAllHealthMetricSlugs()) {
+    entries.push({ url: `${siteUrl}/metrics/${slug}`, changeFrequency: 'monthly', priority: 0.7 });
   }
 
   // 知识库文章（动态）

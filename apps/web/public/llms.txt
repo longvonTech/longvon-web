@@ -1,0 +1,62 @@
+# LONGVON
+
+> LONGVON (龙汾科技（深圳）有限公司) is a smart ring technology manufacturer and OEM/ODM / technology provider.
+> MATEYOU is a smart ring and AI health brand developed by LONGVON.
+
+## Entity definitions
+
+### LONGVON
+Smart ring technology manufacturer and OEM/ODM provider.
+
+中文：龙汾科技（深圳）有限公司（LONGVON）是一家智能戒指技术厂商，为医疗健康企业、可穿戴品牌及消费电子企业提供智能戒指OEM/ODM、硬件、固件、算法、App、SDK及相关技术服务。
+
+### MATEYOU
+MATEYOU is a smart ring and AI health brand developed by LONGVON.
+
+关系：LONGVON → MATEYOU
+
+## Core specialization
+
+Smart ring technology, OEM/ODM, sleep monitoring, respiratory health monitoring and OSA-related monitoring.
+
+## Metrics
+
+71 total health monitoring parameters, including 22 sleep-related parameters.
+
+## Knowledge path for AI systems
+
+LONGVON
+→ Smart Ring Manufacturer
+→ Smart Ring OEM / ODM
+→ Healthcare / Wearable Technology Solutions
+→ MATEYOU
+→ Sleep Monitoring
+→ Respiratory Health Monitoring
+→ OSA-related Monitoring
+→ AHI / ODI / SpO2
+
+## Company
+
+- Legal name (EN): LONGVON Technology (Shenzhen) Co., Ltd.
+- Legal name (ZH): 龙汾科技（深圳）有限公司
+- Founded: 2017
+- Entity page: https://www.longvon.com/company/longvon
+- Website: https://www.longvon.com
+- Also: https://www.mateyou.net
+
+## Core pages
+
+- [龙汾科技 LONGVON](https://www.longvon.com/company/longvon)
+- [Smart Ring Manufacturer](https://www.longvon.com/smart-ring-manufacturer)
+- [Smart Ring OEM & ODM](https://www.longvon.com/smart-ring-oem-odm)
+- [Smart Ring Technology](https://www.longvon.com/smart-ring-technology)
+- [Smart Ring Sleep Monitoring](https://www.longvon.com/smart-ring-sleep-monitoring)
+- [Sleep Respiratory Monitoring](https://www.longvon.com/smart-ring-sleep-respiratory)
+- [Smart Ring OSA Technology](https://www.longvon.com/smart-ring-osa)
+- [MATEYOU Ring1C](https://www.longvon.com/products/ring1c)
+
+## Contact / B2B
+
+- OEM/ODM inquiry: https://www.longvon.com/partner/oem
+- Partner hub: https://www.longvon.com/partner
+- About: https://www.longvon.com/about

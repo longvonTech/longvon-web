@@ -15,13 +15,13 @@ export const metadata: Metadata = {
   authors: [{ name: '龙汾科技', url: 'https://www.longvon.com' }],
   openGraph: {
     type: 'website',
-    siteName: 'MATEYOU',
+    siteName: 'LONGVON',
     locale: 'zh_CN',
   },
   robots: {
     index: true,
     follow: true,
-    googleBot: { index: false }, // 不面向Google，面向百度
+    googleBot: { index: true, follow: true },
   },
   other: {
     // 百度站点验证（实际值在部署时填入）

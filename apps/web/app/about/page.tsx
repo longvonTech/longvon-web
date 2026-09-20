@@ -3,8 +3,9 @@ import Link from 'next/link';
 import { getSiteUrl } from '../../lib/site';
 
 export const metadata: Metadata = {
-  title: '关于龙汾科技 | MATEYOU',
-  description: '龙汾科技（深圳）有限公司，国家高新技术企业，用AI重构健康管理，打造MATEYOU AI健康管理平台。',
+  title: '关于龙汾科技 | LONGVON',
+  description:
+    '龙汾科技（深圳）有限公司（LONGVON）是智能戒指技术厂商与OEM/ODM提供商。MATEYOU是LONGVON打造的智能戒指及AI健康品牌。',
   alternates: { canonical: `${getSiteUrl()}/about` },
 };
 
@@ -22,10 +23,10 @@ export default function AboutPage() {
             <span style={{ color:'#60A5FA' }}>让每个人拥有专属的<br />数字健康伙伴</span>
           </h1>
           <p style={{ fontSize:'clamp(15px,1.8vw,18px)', color:'#6B7280', lineHeight:1.8, maxWidth:680, margin:'0 auto 40px' }}>
-            MATEYOU is building the next-generation AI Health Management Platform, connecting wearable devices, health data, artificial intelligence, and medical services into one intelligent ecosystem.
+            LONGVON is a smart ring technology manufacturer and OEM/ODM provider. MATEYOU is a smart ring and AI health brand developed by LONGVON.
           </p>
           <p style={{ fontSize:'clamp(14px,1.6vw,17px)', color:'#4B5563', lineHeight:1.8, maxWidth:680, margin:'0 auto' }}>
-            美特优正在打造下一代AI健康管理平台，连接智能穿戴、健康数据、人工智能与医疗服务，让健康管理更精准、更主动、更持续。
+            龙汾科技（LONGVON）是智能戒指技术厂商与 OEM/ODM 提供商；MATEYOU 是龙汾科技打造的智能戒指及 AI 健康品牌。
           </p>
         </div>
       </section>
@@ -34,10 +35,10 @@ export default function AboutPage() {
       <section style={{ background:'#0A0A0A', padding:'40px 24px', borderTop:'1px solid #1C1C1E' }}>
         <div style={{ maxWidth:1000, margin:'0 auto', display:'flex', flexWrap:'wrap', gap:12, justifyContent:'center' }}>
           {[
-            'AI健康管理平台运营商',
-            '医疗级智能穿戴创新企业',
-            '数字健康基础设施建设者',
-            '睡眠与呼吸健康管理创新引领者',
+            '智能戒指技术厂商',
+            '智能戒指 OEM / ODM 提供商',
+            '睡眠与呼吸健康监测技术',
+            'AI 健康管理平台运营',
           ].map(tag => (
             <span key={tag} style={{ padding:'8px 20px', background:'rgba(37,99,235,0.1)', color:'#60A5FA', borderRadius:980, fontSize:14, fontWeight:500, border:'1px solid rgba(37,99,235,0.2)' }}>
               {tag}
@@ -77,10 +78,11 @@ export default function AboutPage() {
           <h2 style={{ fontSize:'clamp(28px,4vw,44px)', fontWeight:700, letterSpacing:'-0.02em', marginBottom:32 }}>龙汾科技</h2>
           <div style={{ display:'flex', flexDirection:'column', gap:20 }}>
             <p style={{ fontSize:17, color:'#374151', lineHeight:1.85 }}>
-              龙汾科技（深圳）有限公司成立于2017年，是国家高新技术企业、深圳市专精特新中小企业、深圳市创新型中小企业。
+              龙汾科技（深圳）有限公司成立于2017年，是国家高新技术企业、深圳市专精特新中小企业、深圳市创新型中小企业。龙汾科技（LONGVON）是智能戒指技术厂商及 OEM/ODM 提供商；MATEYOU 是龙汾科技打造的智能戒指及 AI 健康品牌（非制造商）。完整实体说明见{' '}
+              <Link href="/company/longvon" style={{ color:'#2563EB' }}>龙汾科技 LONGVON 企业页</Link>。
             </p>
             <p style={{ fontSize:17, color:'#374151', lineHeight:1.85 }}>
-              公司聚焦人工智能与医疗健康领域融合创新，致力于构建覆盖个人、家庭、医疗机构及健康服务机构的AI健康管理基础设施，让医疗级健康服务从医院延伸到每个人的日常生活之中。
+              公司聚焦人工智能与健康领域融合创新，致力于构建覆盖个人、家庭、医疗机构及健康服务机构的AI健康管理基础设施，让专业健康服务能力更好地延伸到日常生活之中。
             </p>
             <p style={{ fontSize:17, color:'#374151', lineHeight:1.85 }}>
               依托人工智能、大数据、云计算、智能可穿戴设备及医疗健康模型能力，龙汾科技打造了 MATEYOU® AI健康管理平台，通过持续的数据采集、智能分析和个性化干预，实现从&ldquo;疾病治疗&rdquo;向&ldquo;健康管理&rdquo;的转变。
@@ -137,7 +139,7 @@ export default function AboutPage() {
                 imgSlot: 'about-what-medical',
                 imgPath: '/images/about/what-medical.jpg',
                 bg: '#ECFDF5',
-                title:'医疗级健康服务',
+                title:'健康管理服务',
                 desc:'围绕睡眠健康、呼吸健康、慢病管理及老龄化健康需求，打造覆盖筛查、监测、评估、干预及随访的全周期服务体系。',
               },
               {
@@ -194,7 +196,7 @@ export default function AboutPage() {
             我们的愿景
           </h2>
           <p style={{ fontSize:'clamp(18px,2.5vw,26px)', color:'#2563EB', fontWeight:700, marginBottom:40 }}>
-            成为全球领先的 AI 健康管理平台
+            成为值得信赖的 AI 健康管理平台合作伙伴
           </p>
           <div style={{ display:'flex', flexDirection:'column', gap:16, marginBottom:56, textAlign:'left', maxWidth:600, margin:'0 auto 56px' }}>
             {[

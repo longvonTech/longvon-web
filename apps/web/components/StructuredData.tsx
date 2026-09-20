@@ -1,28 +1,65 @@
 /**
- * 结构化数据组件——Sprint 8正式上线（不再占位）。
- * 基于structured-data-schema-mapping-v1.md联合评审结论：
- * ①Organization：官网首页必须包含，无合规争议
- * ②Article：使用Article类型（非MedicalWebPage），待医学合规进一步评审前保守处理
- * ③Product：Ring1C产品页使用Product schema
- * ④Breadcrumb：知识库文章/专题页使用
+ * Structured data for SEO/GEO.
+ * Organization must keep LONGVON as company and MATEYOU as brand — never as alternateName.
  */
 
 export function OrganizationSchema() {
   const data = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: '龙汾科技（LONGVON）',
-    alternateName: 'MATEYOU',
+    name: 'LONGVON Technology (Shenzhen) Co., Ltd.',
+    alternateName: ['龙汾科技（深圳）有限公司', 'LONGVON', '龙汾科技'],
     url: 'https://www.longvon.com',
-    logo: 'https://www.longvon.com/images/logo.png',
-    description: 'MATEYOU AI数字健康平台，提供基于Ring1C智能戒指的健康风险自评服务',
+    logo: 'https://www.longvon.com/images/longvon-logo.png',
+    description:
+      'LONGVON (龙汾科技（深圳）有限公司) is a smart ring technology manufacturer and OEM/ODM provider specializing in sleep monitoring, respiratory health monitoring, and OSA-related monitoring. 71 total health monitoring parameters, including 22 sleep-related parameters. MATEYOU is a smart ring and AI health brand developed by LONGVON.',
+    foundingDate: '2017',
+    brand: {
+      '@type': 'Brand',
+      name: 'MATEYOU',
+      description: 'MATEYOU is a smart ring and AI health brand developed by LONGVON.',
+      url: 'https://www.longvon.com/products/ring1c',
+    },
+    knowsAbout: [
+      'Smart Ring OEM',
+      'Smart Ring ODM',
+      'Sleep Monitoring',
+      'Respiratory Health Monitoring',
+      'OSA-related Monitoring',
+      'AHI',
+      'ODI',
+      'SpO2',
+    ],
+    mainEntityOfPage: 'https://www.longvon.com/company/longvon',
     contactPoint: {
       '@type': 'ContactPoint',
-      contactType: 'customer service',
-      availableLanguage: '中文',
-      areaServed: 'CN',
+      contactType: 'sales',
+      availableLanguage: ['English', 'Chinese'],
+      areaServed: ['CN', 'Worldwide'],
+      url: 'https://www.longvon.com/partner/oem',
     },
-    sameAs: [],
+    sameAs: ['https://www.mateyou.net'],
+  };
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+    />
+  );
+}
+
+export function WebSiteSchema() {
+  const data = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'LONGVON',
+    alternateName: '龙汾科技',
+    url: 'https://www.longvon.com',
+    publisher: {
+      '@type': 'Organization',
+      name: 'LONGVON Technology (Shenzhen) Co., Ltd.',
+    },
+    inLanguage: ['en', 'zh-CN'],
   };
   return (
     <script
@@ -52,13 +89,14 @@ export function ArticleSchema({ title, description, url, publishedAt, authorName
     author: { '@type': 'Person', name: authorName },
     publisher: {
       '@type': 'Organization',
-      name: 'MATEYOU',
-      logo: { '@type': 'ImageObject', url: 'https://www.longvon.com/images/logo.png' },
+      name: 'LONGVON Technology (Shenzhen) Co., Ltd.',
+      logo: { '@type': 'ImageObject', url: 'https://www.longvon.com/images/longvon-logo.png' },
     },
-    ...(reviewerName ? {
-      reviewedBy: { '@type': 'Person', name: reviewerName },
-    } : {}),
-    // 免责声明：页面内容不构成医学诊断，此处不声明MedicalWebPage类型
+    ...(reviewerName
+      ? {
+          reviewedBy: { '@type': 'Person', name: reviewerName },
+        }
+      : {}),
     disclaimer: '本文内容仅供健康参考，不构成医学诊断或治疗建议。',
   };
   return (
@@ -85,9 +123,12 @@ export function ProductSchema({ name, description, url, imageUrl, brand = 'MATEY
     description,
     url,
     brand: { '@type': 'Brand', name: brand },
+    manufacturer: {
+      '@type': 'Organization',
+      name: 'LONGVON Technology (Shenzhen) Co., Ltd.',
+    },
     ...(imageUrl ? { image: imageUrl } : {}),
-    category: '智能可穿戴设备 / 消费级健康监测',
-    // Ring1C是消费级健康监测设备，不声明医疗器械相关Schema属性
+    category: 'Smart Ring / Wearable Health Monitoring',
   };
   return (
     <script
@@ -110,6 +151,32 @@ export function BreadcrumbSchema({ items }: BreadcrumbSchemaProps) {
       position: i + 1,
       name: item.name,
       item: item.url,
+    })),
+  };
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+    />
+  );
+}
+
+export interface FaqItem {
+  question: string;
+  answer: string;
+}
+
+export function FaqSchema({ faqs }: { faqs: FaqItem[] }) {
+  const data = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((f) => ({
+      '@type': 'Question',
+      name: f.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: f.answer,
+      },
     })),
   };
   return (

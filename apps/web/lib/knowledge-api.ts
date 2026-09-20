@@ -19,6 +19,7 @@ export interface ArticleDetail extends ArticleSummary {
   content: string;
   seoTitle: string | null;
   seoDescription: string | null;
+  seoKeywords: string | null;
   reviewer: { name: string; credentials: string } | null;
   reviewedAt: string | null;
   articleTags: { tag: { name: string; slug: string } }[];
@@ -46,11 +47,23 @@ interface PaginatedResult<T> {
   total: number;
 }
 
-export function listArticles(params?: { categoryId?: string; tagId?: string; page?: number }) {
+export async function listArticles(params?: {
+  categoryId?: string;
+  categorySlug?: string;
+  tagId?: string;
+  page?: number;
+  pageSize?: number;
+}) {
+  let categoryId = params?.categoryId;
+  if (!categoryId && params?.categorySlug) {
+    const categories = await apiFetch<{ id: string; slug: string }[]>('/knowledge/categories').catch(() => []);
+    categoryId = categories.find((c) => c.slug === params.categorySlug)?.id;
+  }
   const query = new URLSearchParams();
-  if (params?.categoryId) query.set('categoryId', params.categoryId);
+  if (categoryId) query.set('categoryId', categoryId);
   if (params?.tagId) query.set('tagId', params.tagId);
   if (params?.page) query.set('page', String(params.page));
+  if (params?.pageSize) query.set('pageSize', String(params.pageSize));
   const qs = query.toString();
   return apiFetch<PaginatedResult<ArticleSummary>>(`/knowledge/articles${qs ? `?${qs}` : ''}`);
 }

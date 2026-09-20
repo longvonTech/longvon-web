@@ -56,8 +56,16 @@ jobs:
             --exclude apps/api/dist \
             --exclude .git \
             --exclude .env.production \
+            --exclude _orphans \
+            --exclude _rollback \
             -e "$RSYNC_SSH" \
             ./ "${ECS_USER}@${ECS_HOST}:/root/mateyou/"
+
+          # Keep API src identical to repo (remove ECS-only orphans that break nest build)
+          echo "==> Reconcile apps/api/src with --delete"
+          rsync -az --delete \
+            -e "$RSYNC_SSH" \
+            ./apps/api/src/ "${ECS_USER}@${ECS_HOST}:/root/mateyou/apps/api/src/"
 
           echo "==> Run deploy on ECS"
           ssh "${SSH_OPTS[@]}" "${ECS_USER}@${ECS_HOST}" << 'ENDSSH'

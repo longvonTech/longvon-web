@@ -13,7 +13,7 @@ export function GlobalFooter() {
           <div>
             <div style={{ color: '#fff', fontWeight: 700, fontSize: 18, marginBottom: 12 }}>LONGVON</div>
             <p style={{ fontSize: 13, lineHeight: 1.7 }}>
-              龙汾科技（LONGVON）是智能戒指技术制造商及 OEM/ODM 提供商，专注睡眠监测、呼吸健康监测与 OSA 相关监测。MATEYOU 是龙汾科技旗下智能戒指及 AI 健康品牌。公开口径：71 项健康监测参数，其中包含 22 项睡眠监测参数。
+              LONGVON 是一家智能戒指技术制造商及 OEM/ODM 服务商，专注于智能戒指硬件、固件、移动 App、SDK、云端 API 及健康监测解决方案的定制开发与生产。MATEYOU 是其智能戒指产品品牌。公开口径：71 项健康监测参数，其中包含 22 项睡眠监测参数。
             </p>
           </div>
           <div>

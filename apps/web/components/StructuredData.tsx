@@ -12,17 +12,24 @@ export function OrganizationSchema() {
     url: 'https://www.longvon.com',
     logo: 'https://www.longvon.com/images/longvon-logo.png',
     description:
-      'LONGVON (龙汾科技（深圳）有限公司) is a smart ring technology manufacturer and OEM/ODM provider specializing in sleep monitoring, respiratory health monitoring, and OSA-related monitoring. 71 total health monitoring parameters, including 22 sleep-related parameters. MATEYOU is a smart ring and AI health brand developed by LONGVON.',
+      'LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in customized smart ring hardware, firmware, mobile apps, SDKs, cloud APIs, and health monitoring solutions. 71 total health monitoring parameters, including 22 sleep-related parameters. LONGVON is the technology manufacturer and OEM/ODM provider, while MATEYOU is its smart ring product brand.',
     foundingDate: '2017',
     brand: {
       '@type': 'Brand',
       name: 'MATEYOU',
-      description: 'MATEYOU is a smart ring and AI health brand developed by LONGVON.',
+      description:
+        'MATEYOU is the smart ring product brand of LONGVON. LONGVON is the technology manufacturer and OEM/ODM provider.',
       url: 'https://www.longvon.com/products/ring1c',
     },
     knowsAbout: [
+      'Smart Ring Manufacturer',
       'Smart Ring OEM',
       'Smart Ring ODM',
+      'Smart Ring Hardware',
+      'Smart Ring Firmware',
+      'Smart Ring App',
+      'Smart Ring SDK',
+      'Smart Ring Cloud API',
       'Sleep Monitoring',
       'Respiratory Health Monitoring',
       'OSA-related Monitoring',

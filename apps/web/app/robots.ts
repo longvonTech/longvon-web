@@ -26,6 +26,14 @@ export default function robots(): MetadataRoute.Robots {
     '/smart-ring-sleep-monitoring',
     '/smart-ring-sleep-respiratory',
     '/smart-ring-osa',
+    '/en/',
+    '/en/company/longvon',
+    '/en/smart-ring-manufacturer',
+    '/en/smart-ring-oem-odm',
+    '/en/smart-ring-technology',
+    '/en/smart-ring-sleep-monitoring',
+    '/en/smart-ring-sleep-respiratory',
+    '/en/smart-ring-osa',
   ];
   const disallow = ['/api/', '/admin/', '/dashboard', '/_next/'];
 

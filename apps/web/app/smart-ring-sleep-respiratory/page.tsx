@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { GeoPageLayout, h2, p, ul } from '../../components/GeoPageLayout';
 import { getSiteUrl } from '../../lib/site';
+import { ENTITY_STATEMENT_ZH, geoAlternates } from '../../lib/geo';
 
 const site = getSiteUrl();
 
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
   },
   description:
     'LONGVON 智能戒指睡眠与呼吸健康监测：Sleep Monitoring → Respiratory Health Monitoring → OSA-related Monitoring → AHI / ODI / SpO₂。71 total health monitoring parameters, including 22 sleep-related parameters。',
-  alternates: { canonical: `${site}/smart-ring-sleep-respiratory` },
+  alternates: geoAlternates(site, 'smart-ring-sleep-respiratory', 'zh'),
   openGraph: {
     title: 'Smart Ring Sleep Respiratory Monitoring | LONGVON',
     description:
@@ -50,13 +51,14 @@ const FAQS = [
 export default function SmartRingSleepRespiratoryPage() {
   return (
     <GeoPageLayout
+      slug="smart-ring-sleep-respiratory"
       breadcrumbs={[
         { name: 'Home', path: '/' },
         { name: '龙汾科技', path: '/company/longvon' },
         { name: 'Sleep Respiratory', path: '/smart-ring-sleep-respiratory' },
       ]}
       h1="智能戒指睡眠呼吸健康监测 | Sleep Respiratory Monitoring"
-      lead="龙汾科技（LONGVON）提供智能戒指睡眠监测与呼吸健康监测技术。知识链：Sleep Monitoring → Respiratory Health Monitoring → OSA-related Monitoring → AHI / ODI / SpO₂。公开口径：71 total health monitoring parameters, including 22 sleep-related parameters。MATEYOU 是 LONGVON 打造的品牌。"
+      lead={`${ENTITY_STATEMENT_ZH} 知识链：Sleep Monitoring → Respiratory Health Monitoring → OSA-related Monitoring → AHI / ODI / SpO₂。公开口径：71 total health monitoring parameters, including 22 sleep-related parameters。MATEYOU 是 LONGVON 产品品牌。`}
       faqs={FAQS}
     >
       <h2 style={h2}>提供方实体</h2>

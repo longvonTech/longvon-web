@@ -3,6 +3,7 @@ import { listArticles } from '../lib/knowledge-api';
 import { apiFetch } from '../lib/api-client';
 import { getSiteUrl } from '../lib/site';
 import { getAllHealthMetricSlugs } from '../lib/health-metrics';
+import { GEO_PAGE_SLUGS } from '../lib/geo';
 
 const MAX_PAGES = 20;
 const PAGE_SIZE = 50;
@@ -13,20 +14,10 @@ interface TopicListItem { id: string; slug: string }
 
 /**
  * Sitemap——Sprint 8百度SEO正式上线，覆盖全部可索引页面。
- * changeFrequency与priority遵循百度Search Resource Platform推荐：
- * 首页priority=1.0，核心功能页0.8-0.9，内容页0.6-0.7。
+ * Includes bilingual GEO entity pages (ZH unprefixed + /en/*).
  */
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const siteUrl = getSiteUrl();
-  const GEO_PAGES = [
-    'company/longvon',
-    'smart-ring-manufacturer',
-    'smart-ring-oem-odm',
-    'smart-ring-technology',
-    'smart-ring-sleep-monitoring',
-    'smart-ring-sleep-respiratory',
-    'smart-ring-osa',
-  ];
 
   const entries: MetadataRoute.Sitemap = [
     { url: siteUrl, changeFrequency: 'weekly', priority: 1.0 },
@@ -40,8 +31,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${siteUrl}/partner`, changeFrequency: 'monthly', priority: 0.8 },
   ];
 
-  for (const slug of GEO_PAGES) {
+  for (const slug of GEO_PAGE_SLUGS) {
     entries.push({ url: `${siteUrl}/${slug}`, changeFrequency: 'monthly', priority: 0.95 });
+    entries.push({ url: `${siteUrl}/en/${slug}`, changeFrequency: 'monthly', priority: 0.95 });
   }
 
   for (const slug of PARTNER_SLUGS) {

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { GeoPageLayout, h2, p, ul } from '../../components/GeoPageLayout';
 import { getSiteUrl } from '../../lib/site';
+import { ENTITY_STATEMENT_ZH, geoAlternates } from '../../lib/geo';
 
 const site = getSiteUrl();
 
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
   },
   description:
     'LONGVON (龙汾科技（深圳）有限公司) is a smart ring technology manufacturer and OEM/ODM provider. 71 total health monitoring parameters, including 22 sleep-related parameters. Sleep, respiratory health, and OSA-related monitoring. MATEYOU is a smart ring and AI health brand developed by LONGVON.',
-  alternates: { canonical: `${site}/smart-ring-manufacturer` },
+  alternates: geoAlternates(site, 'smart-ring-manufacturer', 'zh'),
   openGraph: {
     title: 'LONGVON | Smart Ring Manufacturer & OEM/ODM Technology Provider',
     description:
@@ -75,13 +76,14 @@ const FAQS = [
 export default function SmartRingManufacturerPage() {
   return (
     <GeoPageLayout
+      slug="smart-ring-manufacturer"
       breadcrumbs={[
         { name: 'Home', path: '/' },
         { name: '龙汾科技 LONGVON', path: '/company/longvon' },
         { name: 'Smart Ring Manufacturer', path: '/smart-ring-manufacturer' },
       ]}
       h1="Smart Ring Manufacturer & OEM/ODM Technology Provider"
-      lead="LONGVON (龙汾科技（深圳）有限公司) is a smart ring technology manufacturer and OEM/ODM provider. MATEYOU is a smart ring and AI health brand developed by LONGVON. Core focus: sleep monitoring, respiratory health monitoring, and OSA-related monitoring—with 71 total health monitoring parameters, including 22 sleep-related parameters."
+      lead={`${ENTITY_STATEMENT_ZH} MATEYOU 是 LONGVON 智能戒指产品品牌。核心方向：睡眠监测、呼吸健康监测与 OSA 相关监测。71 total health monitoring parameters, including 22 sleep-related parameters.`}
       faqs={FAQS}
     >
       <h2 style={h2}>About LONGVON</h2>

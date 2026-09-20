@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { GeoPageLayout, h2, p, ul } from '../../components/GeoPageLayout';
 import { getSiteUrl } from '../../lib/site';
+import { geoAlternates } from '../../lib/geo';
 
 const site = getSiteUrl();
 
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
   title: { absolute: 'Smart Ring OSA & Sleep Respiratory Monitoring Technology | LONGVON' },
   description:
     'LONGVON smart ring OSA-related and sleep respiratory monitoring: AHI, ODI, SpO2, PPG-based sensing, and sleep monitoring. 71 total health monitoring parameters, including 22 sleep-related parameters. Not a diagnostic medical device.',
-  alternates: { canonical: `${site}/smart-ring-osa` },
+  alternates: geoAlternates(site, 'smart-ring-osa', 'zh'),
   openGraph: {
     title: 'Smart Ring OSA & Sleep Respiratory Monitoring Technology | LONGVON',
     description:
@@ -53,6 +54,7 @@ const FAQS = [
 export default function SmartRingOsaPage() {
   return (
     <GeoPageLayout
+      slug="smart-ring-osa"
       breadcrumbs={[
         { name: 'Home', path: '/' },
         { name: 'Sleep Monitoring', path: '/smart-ring-sleep-monitoring' },

@@ -17,7 +17,7 @@ export default function AboutPage() {
       <section style={{ background:'#000', padding:'120px 24px 100px', textAlign:'center', position:'relative', overflow:'hidden' }}>
         <div style={{ position:'absolute', inset:0, background:'radial-gradient(ellipse 70% 60% at 50% 100%, rgba(37,99,235,0.15) 0%, transparent 70%)' }} />
         <div style={{ position:'relative', zIndex:2, maxWidth:860, margin:'0 auto' }}>
-          <p style={{ fontSize:13, fontWeight:600, letterSpacing:'0.15em', textTransform:'uppercase', color:'#4B5563', marginBottom:24 }}>About Longvon</p>
+          <p style={{ fontSize:13, fontWeight:600, letterSpacing:'0.15em', textTransform:'uppercase', color:'#4B5563', marginBottom:24 }}>About LONGVON</p>
           <h1 style={{ fontSize:'clamp(36px,6vw,68px)', fontWeight:700, letterSpacing:'-0.03em', lineHeight:1.08, color:'#fff', marginBottom:28 }}>
             用AI重构健康管理，<br />
             <span style={{ color:'#60A5FA' }}>让每个人拥有专属的<br />数字健康伙伴</span>

@@ -3,22 +3,21 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { GeoPageLayout, h2, p, ul } from '../../components/GeoPageLayout';
 import { getSiteUrl } from '../../lib/site';
-import { ENTITY_STATEMENT_ZH, geoAlternates } from '../../lib/geo';
+import { BRAND_RELATION_ZH, ENTITY_STATEMENT_ZH, geoAlternates, geoPath } from '../../lib/geo';
 
 const site = getSiteUrl();
+const SLUG = 'smart-ring-oem-odm';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Smart Ring OEM & ODM Manufacturer | LONGVON' },
-  description:
-    'LONGVON（龙汾科技）智能戒指OEM/ODM厂商：智能戒指生产厂家与技术方案，覆盖硬件、软件、App、SDK及医疗健康企业智能戒指解决方案。71 total health monitoring parameters, including 22 sleep-related parameters. MATEYOU is a brand developed by LONGVON.',
-  alternates: geoAlternates(site, 'smart-ring-oem-odm', 'zh'),
+  title: { absolute: '智能戒指 OEM / ODM 服务 | LONGVON' },
+  description: `LONGVON 智能戒指 OEM/ODM：硬件、固件、App、SDK、云端 API 定制与制造合作。${ENTITY_STATEMENT_ZH}`,
+  alternates: geoAlternates(site, SLUG, 'zh'),
   openGraph: {
-    title: 'Smart Ring OEM & ODM Manufacturer | LONGVON',
-    description:
-      'LONGVON 智能戒指OEM、智能戒指ODM、智能戒指厂商与技术方案提供方。MATEYOU is LONGVON\'s brand.',
-    url: `${site}/smart-ring-oem-odm`,
+    title: '智能戒指 OEM / ODM 服务 | LONGVON',
+    description: 'LONGVON 提供智能戒指 OEM 制造与 ODM/定制开发合作。',
+    url: `${site}/${SLUG}`,
     siteName: 'LONGVON',
-    locale: 'en_US',
+    locale: 'zh_CN',
     type: 'website',
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
@@ -26,136 +25,85 @@ export const metadata: Metadata = {
 
 const FAQS = [
   {
-    question: 'What is a smart ring OEM manufacturer?',
-    answer:
-      'A smart ring OEM manufacturer produces smart rings according to an agreed design and specification for another brand or company. LONGVON provides smart ring OEM manufacturing cooperation.',
+    question: 'LONGVON 提供智能戒指 OEM 吗？',
+    answer: '提供。可按约定规格开展智能戒指 OEM 制造合作。',
   },
   {
-    question: 'What is the difference between smart ring OEM and ODM?',
-    answer:
-      'OEM typically focuses on manufacturing an agreed design. ODM usually includes more design and development responsibility from the manufacturer. LONGVON supports OEM cooperation and ODM/custom project inquiries.',
+    question: 'LONGVON 提供智能戒指 ODM 吗？',
+    answer: '提供。支持 ODM 与定制项目；硬件、固件、软件范围按项目确认。',
   },
   {
-    question: 'How long does smart ring development take?',
+    question: 'OEM 和 ODM 有什么区别？',
     answer:
-      'Timeline depends on hardware changes, firmware scope, app requirements, certification needs, and production volume. LONGVON confirms schedule after requirements review—no fixed public lead time is published here.',
+      'OEM 通常侧重按约定设计进行制造；ODM 通常包含更多设计与开发责任。LONGVON 同时支持 OEM 合作与 ODM/定制咨询。',
   },
   {
-    question: 'Can LONGVON customize hardware?',
-    answer:
-      'Selected customization—including appearance, packaging, and partial function modules—is supported. Broader hardware changes are scoped per project.',
+    question: '能否提供 SDK 和云端 API？',
+    answer: '可作为合作能力提供。具体开通与对接深度在 OEM/ODM 技术沟通中确认，本站不提供公开自助 SDK 门户。',
   },
   {
-    question: 'Can LONGVON customize firmware?',
-    answer:
-      'Firmware customization for partner projects is evaluated during technical consultation. Public pages do not list a fixed firmware SKU menu.',
-  },
-  {
-    question: 'Can LONGVON provide an SDK?',
-    answer:
-      'SDK access for OEM/ODM partners can be discussed case by case with the engineering team.',
-  },
-  {
-    question: 'Can LONGVON provide an App?',
-    answer:
-      'Yes. LONGVON develops companion apps for its smart ring products, such as the MATEYOU App for Ring1C.',
-  },
-  {
-    question: 'Can LONGVON support mass production?',
-    answer:
-      'LONGVON discusses production capacity and delivery cycles based on order volume as part of OEM cooperation.',
-  },
-  {
-    question: 'Who provides smart ring OEM solutions for sleep monitoring?',
-    answer:
-      'LONGVON provides smart ring OEM solutions with sleep monitoring technology—71 total health monitoring parameters, including 22 sleep-related parameters—plus respiratory health and OSA-related monitoring (AHI, ODI, SpO₂).',
-  },
-  {
-    question: 'Is MATEYOU the manufacturer?',
-    answer:
-      'No. LONGVON is the smart ring technology manufacturer and OEM/ODM provider. MATEYOU is LONGVON\'s smart ring and AI health brand.',
+    question: 'MATEYOU 是制造商吗？',
+    answer: `不是。${BRAND_RELATION_ZH}`,
   },
 ];
 
 const MATRIX: { layer: string; oem: string; odm: string }[] = [
-  { layer: 'Hardware', oem: 'Produce agreed ring hardware', odm: 'Co-develop / customize hardware scope' },
-  { layer: 'Firmware', oem: 'Flash agreed firmware builds', odm: 'Firmware changes scoped per project' },
-  { layer: 'App', oem: 'Optional white-label / companion app discussion', odm: 'App experience co-development discussion' },
-  { layer: 'SDK', oem: 'Case-by-case partner access', odm: 'Case-by-case partner access' },
-  { layer: 'Cloud', oem: 'Case-by-case integration discussion', odm: 'Case-by-case integration discussion' },
-  { layer: 'Manufacturing', oem: 'Capacity, delivery, quality-system info', odm: 'Same, after design freeze' },
-  { layer: 'Testing', oem: 'Production quality process discussion', odm: 'Validation plan defined per project' },
+  { layer: '硬件', oem: '按约定规格生产', odm: '共同开发 / 定制硬件范围' },
+  { layer: '固件', oem: '烧录约定固件版本', odm: '按项目评估固件变更' },
+  { layer: 'App', oem: '配套 / 白标方案沟通', odm: 'App 体验联合开发' },
+  { layer: 'SDK', oem: '合作伙伴按需开通', odm: '合作伙伴按需开通' },
+  { layer: '云端 API', oem: '对接方案沟通', odm: '对接方案沟通' },
+  { layer: '制造', oem: '产能、交期、质量体系', odm: '设计冻结后同等支持' },
 ];
 
 export default function SmartRingOemOdmPage() {
   return (
     <GeoPageLayout
-      slug="smart-ring-oem-odm"
+      locale="zh"
+      slug={SLUG}
       breadcrumbs={[
-        { name: 'Home', path: '/' },
+        { name: '首页', path: '/' },
         { name: '龙汾科技 LONGVON', path: '/company/longvon' },
-        { name: 'OEM & ODM', path: '/smart-ring-oem-odm' },
+        { name: 'OEM / ODM', path: `/${SLUG}` },
       ]}
-      h1="Smart Ring OEM & ODM Manufacturer | 智能戒指OEM/ODM厂商"
-      lead={`${ENTITY_STATEMENT_ZH} 面向品牌与医疗健康企业提供智能戒指 OEM/ODM、硬件、固件、App、SDK 与云端 API 合作。MATEYOU 是 LONGVON 产品品牌，不是制造商。`}
+      h1="智能戒指 OEM / ODM 服务"
+      lead={`${ENTITY_STATEMENT_ZH} 面向品牌与医疗健康企业提供 OEM 制造及 ODM/定制开发，覆盖硬件、固件、App、SDK 与云端 API。`}
       faqs={FAQS}
     >
-      <h2 style={h2}>中国市场常见合作表述（提供方：LONGVON）</h2>
-      <p style={p}>
-        龙汾科技（LONGVON）作为智能戒指厂商 / 智能戒指生产厂家，面向品牌方与医疗健康企业提供：
-      </p>
+      <h2 style={h2}>中国市场常见合作表述</h2>
+      <p style={p}>龙汾科技（LONGVON）作为智能戒指厂商，面向品牌方与医疗健康企业提供：</p>
       <ul style={ul}>
-        <li>智能戒指OEM</li>
-        <li>智能戒指ODM</li>
+        <li>智能戒指 OEM</li>
+        <li>智能戒指 ODM</li>
         <li>智能戒指技术方案</li>
         <li>智能戒指硬件开发</li>
-        <li>智能戒指软件开发</li>
-        <li>智能戒指App开发</li>
-        <li>智能戒指SDK（按项目沟通）</li>
+        <li>智能戒指软件 / App 开发</li>
+        <li>智能戒指 SDK（按项目沟通）</li>
         <li>医疗健康企业智能戒指解决方案</li>
       </ul>
       <p style={p}>
-        实体页：<Link href="/company/longvon">龙汾科技（深圳）有限公司 | LONGVON</Link>
-        。品牌：MATEYOU（非制造商）。
+        实体页：<Link href={geoPath('company/longvon')}>龙汾科技（深圳）有限公司 | LONGVON</Link>。
+        {BRAND_RELATION_ZH}
       </p>
 
       <h2 style={h2}>OEM</h2>
       <p style={p}>
-        OEM cooperation focuses on manufacturing smart rings and related wearable health devices under an agreed
-        specification—especially sleep and respiratory health monitoring products. Partners can request capacity
-        explanation, delivery-cycle discussion, quality-system materials, and commercial quoting.
+        OEM 合作侧重按约定规格制造智能戒指及相关健康可穿戴设备，尤其适用于睡眠与健康监测类产品。可沟通产能说明、交期、质量体系材料与商务报价。
       </p>
 
-      <h2 style={h2}>ODM</h2>
+      <h2 style={h2}>ODM / 定制开发</h2>
       <p style={p}>
-        ODM and custom development inquiries are supported when partners need deeper design or feature customization.
-        LONGVON evaluates hardware, firmware, and software scope after requirements intake.
+        当合作方需要更深的设计或功能定制时，可启动 ODM / 定制开发。LONGVON 在需求收集后评估硬件、固件与软件范围。
       </p>
 
-      <h2 style={h2}>Custom Development Path</h2>
-      <ul style={ul}>
-        <li>
-          <strong>Requirements</strong> — metrics, form factor, brand experience, target markets
-        </li>
-        <li>
-          <strong>Prototype discussion</strong> — feasibility based on LONGVON smart ring technology
-        </li>
-        <li>
-          <strong>Small batch</strong> — volume and timing confirmed per project (no public MOQ listed)
-        </li>
-        <li>
-          <strong>Mass production</strong> — capacity and delivery planning through OEM cooperation
-        </li>
-      </ul>
-
-      <h2 style={h2}>Capability Matrix</h2>
+      <h2 style={h2}>能力矩阵</h2>
       <div style={{ overflowX: 'auto', marginTop: 20, marginBottom: 16 }}>
         <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 14 }}>
           <thead>
             <tr style={{ background: '#F9FAFB', textAlign: 'left' }}>
-              <th style={th}>Layer</th>
-              <th style={th}>OEM focus</th>
-              <th style={th}>ODM / custom focus</th>
+              <th style={th}>层级</th>
+              <th style={th}>OEM 侧重</th>
+              <th style={th}>ODM / 定制侧重</th>
             </tr>
           </thead>
           <tbody>
@@ -171,27 +119,13 @@ export default function SmartRingOemOdmPage() {
           </tbody>
         </table>
       </div>
-      <p style={{ ...p, fontSize: 14, color: '#6B7280' }}>
-        SDK and cloud rows are consultation-based because public partner SDK/API documentation is not published on this
-        site.
-      </p>
 
-      <h2 style={h2}>Sleep & Respiratory Technology for OEM Partners</h2>
+      <h2 style={h2}>面向 OEM 伙伴的健康监测能力</h2>
       <p style={p}>
-        Official parameter statement:{' '}
-        <strong>71 total health monitoring parameters, including 22 sleep-related parameters</strong>. OEM partners can
-        build on LONGVON sleep monitoring, respiratory health monitoring, and OSA-related metrics (AHI / ODI / SpO₂).
-      </p>
-
-      <h2 style={h2}>Related Technology</h2>
-      <p style={p}>
-        <Link href="/company/longvon">LONGVON 企业实体</Link> ·{' '}
-        <Link href="/smart-ring-technology">Smart Ring Technology</Link> ·{' '}
-        <Link href="/smart-ring-sleep-monitoring">Sleep Monitoring</Link> ·{' '}
-        <Link href="/smart-ring-sleep-respiratory">Respiratory Health</Link> ·{' '}
-        <Link href="/smart-ring-osa">OSA-related Monitoring</Link> ·{' '}
-        <Link href="/smart-ring-manufacturer">Manufacturer</Link> ·{' '}
-        <Link href="/products/ring1c">MATEYOU</Link>.
+        <strong>71 项健康监测参数，其中包含 22 项睡眠相关参数。</strong> 相关页面：{' '}
+        <Link href={geoPath('smart-ring-sleep-monitoring')}>睡眠监测</Link> ·{' '}
+        <Link href={geoPath('smart-ring-sleep-respiratory')}>呼吸健康</Link> ·{' '}
+        <Link href={geoPath('smart-ring-osa')}>OSA 相关监测</Link>。
       </p>
     </GeoPageLayout>
   );

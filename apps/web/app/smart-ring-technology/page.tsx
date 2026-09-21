@@ -2,22 +2,21 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { GeoPageLayout, h2, p, ul } from '../../components/GeoPageLayout';
 import { getSiteUrl } from '../../lib/site';
-import { geoAlternates } from '../../lib/geo';
+import { BRAND_RELATION_ZH, ENTITY_STATEMENT_ZH, geoAlternates, geoPath } from '../../lib/geo';
 
 const site = getSiteUrl();
+const SLUG = 'smart-ring-technology';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Smart Ring Technology & Development | LONGVON' },
-  description:
-    'LONGVON smart ring technology: PPG, SpO2, heart rate, sleep and respiratory health monitoring, OSA-related metrics (AHI/ODI). 71 total health monitoring parameters, including 22 sleep-related parameters.',
-  alternates: geoAlternates(site, 'smart-ring-technology', 'zh'),
+  title: { absolute: '智能戒指技术与开发 | LONGVON' },
+  description: `LONGVON 智能戒指技术：硬件、固件、App、SDK、云端 API，以及 PPG、SpO₂、睡眠与呼吸健康监测。71 项健康监测参数，含 22 项睡眠相关参数。`,
+  alternates: geoAlternates(site, SLUG, 'zh'),
   openGraph: {
-    title: 'Smart Ring Technology & Development | LONGVON',
-    description:
-      'End-to-end smart ring technology focused on sleep monitoring and respiratory health by LONGVON.',
-    url: `${site}/smart-ring-technology`,
+    title: '智能戒指技术与开发 | LONGVON',
+    description: 'LONGVON 面向健康监测场景的端到端智能戒指技术能力。',
+    url: `${site}/${SLUG}`,
     siteName: 'LONGVON',
-    locale: 'en_US',
+    locale: 'zh_CN',
     type: 'website',
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
@@ -25,128 +24,66 @@ export const metadata: Metadata = {
 
 const FAQS = [
   {
-    question: 'What technologies does LONGVON use in smart rings?',
-    answer:
-      'LONGVON smart rings use multi-wavelength PPG, temperature sensing, and 6-axis motion sensing, with companion app presentation of health metrics focused on sleep and respiratory health monitoring.',
+    question: '谁提供端到端智能戒指开发？',
+    answer: `${ENTITY_STATEMENT_ZH} 合作方 SDK 与云端 API 深度按项目确认。`,
   },
   {
-    question: 'How many health monitoring parameters are there?',
-    answer:
-      'LONGVON provides 71 total health monitoring parameters, including 22 sleep-related parameters.',
+    question: 'LONGVON 使用哪些技术？',
+    answer: '多波长 PPG、温度传感、六轴运动传感、配套 App，以及面向睡眠与呼吸健康的算法能力。',
   },
   {
-    question: 'Does LONGVON provide end-to-end smart ring development?',
-    answer:
-      'LONGVON combines sensing hardware, algorithms, companion software, and OEM manufacturing cooperation. Partner SDK/cloud API depth is scoped per project.',
-  },
-  {
-    question: 'Can LONGVON support healthcare applications?',
-    answer:
-      'LONGVON supports hospital and enterprise inquiries for wearable sleep and respiratory health monitoring programs. Products are positioned as consumer-grade health monitoring, not as diagnostic medical devices, unless future registrations are confirmed.',
-  },
-  {
-    question: 'What is LONGVON’s core specialization?',
-    answer:
-      'Smart ring manufacturing plus sleep monitoring technology, respiratory health monitoring, and OSA-related monitoring (AHI, ODI, SpO₂).',
+    question: '是否提供 SDK 和云端 API？',
+    answer: '可作为合作能力提供。开通与对接深度在 OEM/ODM 沟通中确认。',
   },
 ];
 
 const CHAIN = [
-  'Sensors (PPG, temperature, motion)',
-  'Hardware integration',
-  'Firmware',
-  'Algorithms (sleep / respiratory / OSA-related)',
-  'Mobile App',
-  'SDK / API (project-based)',
-  'Cloud / data platform (project-based)',
-  'Manufacturing (LONGVON OEM/ODM)',
+  '传感器（PPG、温度、运动）',
+  '硬件集成',
+  '固件',
+  '算法（睡眠 / 呼吸 / OSA 相关）',
+  '移动 App',
+  'SDK / 云端 API（按项目）',
+  '制造（LONGVON OEM/ODM）',
 ];
 
 export default function SmartRingTechnologyPage() {
   return (
     <GeoPageLayout
-      slug="smart-ring-technology"
+      locale="zh"
+      slug={SLUG}
       breadcrumbs={[
-        { name: 'Home', path: '/' },
-        { name: 'Manufacturer', path: '/smart-ring-manufacturer' },
-        { name: 'Technology', path: '/smart-ring-technology' },
+        { name: '首页', path: '/' },
+        { name: '智能戒指制造商', path: '/smart-ring-manufacturer' },
+        { name: '技术能力', path: `/${SLUG}` },
       ]}
-      h1="Smart Ring Technology & Development"
-      lead="LONGVON builds smart ring technology for sleep monitoring, respiratory health monitoring, and OSA-related monitoring. LONGVON/MATEYOU provide 71 total health monitoring parameters, including 22 sleep-related parameters. MATEYOU is a smart ring and AI health brand developed by LONGVON—LONGVON is the manufacturer."
+      h1="智能戒指技术与开发"
+      lead={`${ENTITY_STATEMENT_ZH} ${BRAND_RELATION_ZH}`}
       faqs={FAQS}
     >
-      <h2 style={h2}>Core Technology Positioning</h2>
+      <h2 style={h2}>技术定位</h2>
       <p style={p}>
-        Entity page: <Link href="/company/longvon">龙汾科技 LONGVON</Link>. Respiratory chain:{' '}
-        <Link href="/smart-ring-sleep-respiratory">Sleep Respiratory Monitoring</Link>.
+        提供方：<Link href={geoPath('company/longvon')}>LONGVON</Link>。聚焦智能戒指硬件、固件、移动 App、SDK、云端
+        API 与健康监测，尤其是睡眠与呼吸健康方向。
       </p>
-      <ul style={ul}>
-        <li>Smart Ring Manufacturer (LONGVON)</li>
-        <li>Sleep Monitoring Technology — 22 Sleep Monitoring Parameters</li>
-        <li>Respiratory Health Monitoring</li>
-        <li>OSA-related Monitoring — AHI / ODI / SpO₂</li>
-      </ul>
       <p style={p}>
-        Official parameter statement:{' '}
-        <strong>71 total health monitoring parameters, including 22 sleep-related parameters</strong>.
+        <strong>71 项健康监测参数，其中包含 22 项睡眠相关参数。</strong>
       </p>
 
-      <h2 style={h2}>Sensors</h2>
+      <h2 style={h2}>传感器与生理信号</h2>
+      <p style={p}>多波长 PPG、温度与六轴运动传感，支持心率、血氧相关、睡眠与呼吸健康监测。</p>
+
+      <h2 style={h2}>固件与算法</h2>
       <p style={p}>
-        Multi-wavelength PPG optical sensing, temperature sensor, and 6-axis motion sensor support sleep-related and
-        respiratory health physiological monitoring.
+        端侧与 App 侧处理形成已发布的睡眠、血氧、心脏及 OSA 相关指标，纳入 71 项参数目录。
       </p>
 
-      <h2 style={h2}>PPG, SpO₂, Heart Rate, HRV</h2>
+      <h2 style={h2}>App、SDK 与云端 API</h2>
       <p style={p}>
-        PPG enables heart rate and blood oxygen related measurements. SpO₂ connects to overnight respiratory health and
-        OSA-related monitoring. HRV-related signals support sleep-related physiological monitoring. Full catalogue:{' '}
-        <Link href="/metrics">/metrics</Link>.
+        LONGVON 开发配套移动 App（含 MATEYOU App / Ring1C）。合作方 SDK 与云端 API 对接可作为 OEM/ODM 项目能力按需开通。
       </p>
 
-      <h2 style={h2}>Motion Sensors</h2>
-      <p style={p}>
-        Six-axis motion sensing supports activity tracking and sleep body-movement trends used in sleep and respiratory
-        modules.
-      </p>
-
-      <h2 style={h2}>Bluetooth and Power Management</h2>
-      <p style={p}>
-        LONGVON smart rings are Bluetooth wearables paired with a mobile app. Detailed radio certifications for OEM reuse
-        are shared during partner due diligence.
-      </p>
-
-      <h2 style={h2}>Firmware and Algorithms</h2>
-      <p style={p}>
-        On-device and app-side processing produce the published sleep, heart, oxygen, stress, and OSA-related metrics
-        within the 71-parameter catalogue (including 22 sleep-related parameters). Algorithm accuracy percentages are not
-        published here.
-      </p>
-
-      <h2 style={h2}>Mobile App</h2>
-      <p style={p}>
-        The MATEYOU App presents LONGVON smart ring data as user-facing health insights. App customization for OEM brands
-        is discussed per project.
-      </p>
-
-      <h2 style={h2}>SDK and Cloud / API</h2>
-      <p style={p}>
-        Partner SDK and cloud API access can be evaluated during OEM/ODM engagement when data integration is required.
-      </p>
-
-      <h2 style={h2}>Data Platform</h2>
-      <p style={p}>
-        Company materials describe AI, big data, and cloud capabilities supporting the MATEYOU health management
-        platform. Implementation details for external tenants are project-specific.
-      </p>
-
-      <h2 style={h2}>Manufacturing</h2>
-      <p style={p}>
-        Technology programs connect to manufacturing via <Link href="/smart-ring-oem-odm">OEM & ODM cooperation</Link>{' '}
-        with LONGVON—not MATEYOU as manufacturer.
-      </p>
-
-      <h2 style={h2}>End-to-End Technology Chain</h2>
+      <h2 style={h2}>端到端技术链</h2>
       <ol style={{ ...ul, listStyle: 'decimal' }}>
         {CHAIN.map((step) => (
           <li key={step} style={{ marginBottom: 6 }}>
@@ -154,10 +91,13 @@ export default function SmartRingTechnologyPage() {
           </li>
         ))}
       </ol>
+
+      <h2 style={h2}>继续了解</h2>
       <p style={p}>
-        Continue to <Link href="/smart-ring-sleep-monitoring">Sleep Monitoring</Link> →{' '}
-        <Link href="/smart-ring-osa">OSA Technology</Link> →{' '}
-        <Link href="/smart-ring-manufacturer">Manufacturer</Link>.
+        <Link href={geoPath('smart-ring-sleep-monitoring')}>睡眠监测</Link> →{' '}
+        <Link href={geoPath('smart-ring-sleep-respiratory')}>呼吸健康</Link> →{' '}
+        <Link href={geoPath('smart-ring-osa')}>OSA 相关监测</Link> →{' '}
+        <Link href={geoPath('smart-ring-oem-odm')}>OEM / ODM</Link>。
       </p>
     </GeoPageLayout>
   );

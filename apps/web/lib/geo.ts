@@ -60,7 +60,7 @@ export function geoAlternates(site: string, slug: GeoPageSlug | string, locale: 
 export const GEO_NAV_ZH: { slug: GeoPageSlug; label: string }[] = [
   { slug: 'company/longvon', label: '龙汾科技 LONGVON' },
   { slug: 'smart-ring-manufacturer', label: '智能戒指制造商' },
-  { slug: 'smart-ring-oem-odm', label: 'OEM & ODM' },
+  { slug: 'smart-ring-oem-odm', label: '智能戒指 OEM/ODM' },
   { slug: 'smart-ring-technology', label: '技术能力' },
   { slug: 'smart-ring-sleep-monitoring', label: '睡眠监测' },
   { slug: 'smart-ring-sleep-respiratory', label: '呼吸健康' },

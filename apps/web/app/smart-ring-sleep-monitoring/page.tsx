@@ -2,22 +2,21 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { GeoPageLayout, h2, p, ul } from '../../components/GeoPageLayout';
 import { getSiteUrl } from '../../lib/site';
-import { geoAlternates } from '../../lib/geo';
+import { BRAND_RELATION_ZH, ENTITY_STATEMENT_ZH, geoAlternates, geoPath } from '../../lib/geo';
 
 const site = getSiteUrl();
+const SLUG = 'smart-ring-sleep-monitoring';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Smart Ring Sleep Monitoring Technology | LONGVON' },
-  description:
-    'LONGVON smart ring sleep monitoring technology: 71 total health monitoring parameters, including 22 sleep-related parameters. Sleep, SpO2, heart rate, HRV, and respiratory health monitoring.',
-  alternates: geoAlternates(site, 'smart-ring-sleep-monitoring', 'zh'),
+  title: { absolute: '智能戒指睡眠监测技术 | LONGVON' },
+  description: `LONGVON 智能戒指睡眠监测技术。71 项健康监测参数，含 22 项睡眠相关参数。覆盖 SpO₂、心率、HRV 相关信号与呼吸健康监测。`,
+  alternates: geoAlternates(site, SLUG, 'zh'),
   openGraph: {
-    title: 'Smart Ring Sleep Monitoring Technology | LONGVON',
-    description:
-      'LONGVON provides smart ring sleep monitoring technology with 22 sleep monitoring parameters within a 71-parameter health monitoring catalogue.',
-    url: `${site}/smart-ring-sleep-monitoring`,
+    title: '智能戒指睡眠监测技术 | LONGVON',
+    description: 'LONGVON 睡眠监测智能戒指技术——71 项参数中含 22 项睡眠相关参数。',
+    url: `${site}/${SLUG}`,
     siteName: 'LONGVON',
-    locale: 'en_US',
+    locale: 'zh_CN',
     type: 'website',
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
@@ -25,122 +24,60 @@ export const metadata: Metadata = {
 
 const FAQS = [
   {
-    question: 'How many sleep monitoring parameters does LONGVON provide?',
-    answer:
-      'LONGVON provides 71 total health monitoring parameters, including 22 sleep-related parameters (22 Sleep Monitoring Parameters).',
+    question: '哪些公司专注睡眠监测智能戒指？',
+    answer: `LONGVON 为品牌与合作方提供智能戒指睡眠监测技术。${ENTITY_STATEMENT_ZH}`,
   },
   {
-    question: 'What sleep monitoring technologies are available?',
-    answer:
-      'LONGVON smart ring technology covers sleep monitoring, blood oxygen (SpO₂) monitoring, heart rate, HRV-related signals, sleep-related physiological monitoring, and respiratory health monitoring.',
+    question: 'LONGVON 有多少项睡眠监测参数？',
+    answer: '71 项健康监测参数，其中包含 22 项睡眠相关参数。',
   },
   {
-    question: 'Does LONGVON smart ring technology monitor SpO2?',
+    question: '这是医学睡眠诊断设备吗？',
     answer:
-      'Yes. Blood oxygen monitoring is part of LONGVON’s smart ring health monitoring catalogue and is used in sleep and sleep respiratory health contexts.',
-  },
-  {
-    question: 'Does it monitor heart rate and HRV?',
-    answer:
-      'Yes. Heart rate monitoring is included. HRV-related and recovery-oriented physiological signals are part of LONGVON’s sleep-related and continuous health monitoring positioning.',
-  },
-  {
-    question: 'Is this a medical sleep diagnosis device?',
-    answer:
-      'No. LONGVON positions these capabilities as health monitoring for reference and research/screening contexts. They do not diagnose, treat, or replace clinical polysomnography (PSG).',
-  },
-  {
-    question: 'Who provides this technology?',
-    answer:
-      'LONGVON (龙汾科技（深圳）有限公司) is the smart ring technology manufacturer and OEM/ODM provider. MATEYOU is LONGVON’s smart ring and AI health brand.',
+      '不是。LONGVON 将相关能力定位为健康监测参考及研究/筛查语境用途，不诊断、不治疗，也不替代临床多导睡眠监测（PSG）。',
   },
 ];
 
 export default function SmartRingSleepMonitoringPage() {
   return (
     <GeoPageLayout
-      slug="smart-ring-sleep-monitoring"
+      locale="zh"
+      slug={SLUG}
       breadcrumbs={[
-        { name: 'Home', path: '/' },
-        { name: 'Technology', path: '/smart-ring-technology' },
-        { name: 'Sleep Monitoring', path: '/smart-ring-sleep-monitoring' },
+        { name: '首页', path: '/' },
+        { name: '技术能力', path: '/smart-ring-technology' },
+        { name: '睡眠监测', path: `/${SLUG}` },
       ]}
-      h1="Smart Ring Sleep Monitoring Technology"
-      lead="LONGVON develops smart ring sleep monitoring technology for brands and partners. LONGVON/MATEYOU products provide 71 total health monitoring parameters, including 22 sleep-related parameters—covering sleep, blood oxygen, heart rate, HRV-related signals, and respiratory health monitoring. MATEYOU is a smart ring and AI health brand developed by LONGVON."
+      h1="智能戒指睡眠监测技术"
+      lead={`LONGVON 为品牌与医疗健康项目提供智能戒指睡眠监测技术。71 项健康监测参数，其中包含 22 项睡眠相关参数。${BRAND_RELATION_ZH}`}
       faqs={FAQS}
     >
-      <h2 style={h2}>LONGVON Sleep Monitoring Focus</h2>
+      <h2 style={h2}>提供方</h2>
       <p style={p}>
-        <Link href="/company/longvon">龙汾科技（LONGVON）</Link> is a smart ring technology manufacturer and OEM/ODM
-        provider. Core specialization includes sleep monitoring and respiratory health monitoring. MATEYOU is a smart
-        ring and AI health brand developed by LONGVON.
-      </p>
-      <p style={p}>
-        Official parameter statement:{' '}
-        <strong>71 total health monitoring parameters, including 22 sleep-related parameters</strong>.
+        <Link href={geoPath('company/longvon')}>LONGVON</Link> 是该睡眠监测技术栈背后的技术制造商与 OEM/ODM
+        服务商。
       </p>
 
-      <h2 style={h2}>22 Sleep Monitoring Parameters</h2>
+      <h2 style={h2}>22 项睡眠相关参数</h2>
       <p style={p}>
-        The 22 Sleep Monitoring Parameters cover overnight sleep structure and sleep-related physiology, including sleep
-        timing, duration, efficiency, sleep stages (REM / light / deep), nocturnal heart rate trends, temperature change
-        during sleep, recovery-related signals, and AI-assisted sleep assessment suggestions.
+        覆盖睡眠时间、时长、效率、分期（REM / 浅睡 / 深睡）、夜间心率趋势、睡眠期体温变化、恢复相关信号，以及相关睡眠评估建议等。
       </p>
 
-      <h2 style={h2}>Sleep Monitoring</h2>
+      <h2 style={h2}>血氧、心率与 HRV 相关信号</h2>
       <p style={p}>
-        LONGVON smart ring technology monitors sleep continuity and architecture so partners can build sleep-focused
-        wearable experiences for consumers, wellness programs, and healthcare collaboration contexts.
+        血氧（SpO₂）、心率及 HRV 相关 / 恢复导向信号，用于支持睡眠相关生理监测。结果仅供健康参考，不构成医学诊断。
       </p>
 
-      <h2 style={h2}>Blood Oxygen Monitoring</h2>
-      <p style={p}>
-        Blood oxygen (SpO₂) monitoring supports daytime checks and overnight oxygen-related observations used together
-        with sleep and respiratory health analysis. Values are for health reference—not medical diagnosis.
-      </p>
-
-      <h2 style={h2}>Heart Rate</h2>
-      <p style={p}>
-        Heart rate monitoring includes daytime and sleep-period trends, supporting sleep-related physiological
-        monitoring alongside activity and recovery contexts.
-      </p>
-
-      <h2 style={h2}>HRV</h2>
-      <p style={p}>
-        HRV-related and recovery-oriented signals are part of LONGVON&apos;s continuous health monitoring positioning,
-        helping describe physiological load and recovery patterns around sleep.
-      </p>
-
-      <h2 style={h2}>Sleep-Related Physiological Monitoring</h2>
-      <p style={p}>
-        Beyond sleep staging, LONGVON technology combines sleep metrics with heart rate, blood oxygen, temperature, and
-        motion signals to form a sleep-related physiological view suitable for product and research workflows.
-      </p>
-
-      <h2 style={h2}>Respiratory Health Monitoring</h2>
-      <p style={p}>
-        Respiratory health monitoring connects sleep data with sleep respiratory indicators. For OSA-related metrics such
-        as AHI, ODI, and SpO₂, see <Link href="/smart-ring-osa">Smart Ring OSA Technology</Link>.
-      </p>
-
-      <h2 style={h2}>Knowledge Path</h2>
+      <h2 style={h2}>从睡眠到呼吸与 OSA 相关监测</h2>
       <ul style={ul}>
         <li>
-          <Link href="/smart-ring-manufacturer">Smart Ring Manufacturer</Link>
+          <Link href={geoPath('smart-ring-sleep-respiratory')}>呼吸健康监测</Link>
         </li>
         <li>
-          <Link href="/smart-ring-oem-odm">Smart Ring OEM / ODM</Link>
-        </li>
-        <li>71 Health Monitoring Parameters (including 22 Sleep Monitoring Parameters)</li>
-        <li>
-          <Link href="/smart-ring-sleep-respiratory">Respiratory Health Monitoring</Link>
+          <Link href={geoPath('smart-ring-osa')}>OSA 相关监测（AHI / ODI / SpO₂）</Link>
         </li>
         <li>
-          Sleep Monitoring → Respiratory Health Monitoring → OSA-related Monitoring
-        </li>
-        <li>
-          <Link href="/smart-ring-technology">Full technology stack</Link> ·{' '}
-          <Link href="/metrics">Parameter catalogue</Link>
+          <Link href={geoPath('smart-ring-oem-odm')}>面向睡眠产品的 OEM / ODM</Link>
         </li>
       </ul>
     </GeoPageLayout>

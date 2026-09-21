@@ -33,16 +33,17 @@ export function GlobalFooter() {
             </ul>
           </div>
           <div>
-            <div style={{ color: '#fff', fontWeight: 600, marginBottom: 12 }}>Technology</div>
+            <div style={{ color: '#fff', fontWeight: 600, marginBottom: 12 }}>技术与合作</div>
             <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: 8, fontSize: 13 }}>
               {[
                 ['龙汾科技 LONGVON', '/company/longvon'],
-                ['Manufacturer', '/smart-ring-manufacturer'],
-                ['OEM & ODM', '/smart-ring-oem-odm'],
-                ['Technology', '/smart-ring-technology'],
-                ['Sleep Monitoring', '/smart-ring-sleep-monitoring'],
-                ['Respiratory Health', '/smart-ring-sleep-respiratory'],
-                ['OSA Technology', '/smart-ring-osa'],
+                ['智能戒指制造商', '/smart-ring-manufacturer'],
+                ['智能戒指 OEM/ODM', '/smart-ring-oem-odm'],
+                ['智能戒指技术', '/smart-ring-technology'],
+                ['睡眠监测技术', '/smart-ring-sleep-monitoring'],
+                ['睡眠呼吸健康监测', '/smart-ring-sleep-respiratory'],
+                ['OSA 相关监测', '/smart-ring-osa'],
+                ['英文官网', '/en/company/longvon'],
                 ['健康知识库', '/knowledge'],
                 ['产品介绍', '/products/ring1c'],
                 ['企业动态', '/news'],

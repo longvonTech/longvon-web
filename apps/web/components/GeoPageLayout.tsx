@@ -58,7 +58,7 @@ export function GeoPageLayout({
       : '与 LONGVON 洽谈 OEM、ODM 或定制智能戒指开发，适用于品牌方与医疗健康项目。';
   const ctaPrimary = locale === 'en' ? 'Request OEM/ODM Consultation' : '申请 OEM/ODM 咨询';
   const ctaSecondary = locale === 'en' ? 'Partner Hub' : '合作中心';
-  const relatedTitle = locale === 'en' ? 'Related LONGVON Technology' : '相关 LONGVON 技术页面';
+  const relatedTitle = locale === 'en' ? 'Related LONGVON Technology' : '相关技术页面';
   const aboutLabel = locale === 'en' ? 'About LONGVON' : '关于龙汾科技';
   const aboutHref = locale === 'en' ? '/en/company/longvon' : '/about';
   const switchHref = slug
@@ -66,7 +66,8 @@ export function GeoPageLayout({
     : locale === 'en'
       ? '/company/longvon'
       : '/en/company/longvon';
-  const switchLabel = locale === 'en' ? '中文' : 'English';
+  const switchLabel = locale === 'en' ? '中文' : '英文';
+  const breadcrumbAria = locale === 'en' ? 'Breadcrumb' : '面包屑导航';
 
   return (
     <div
@@ -81,7 +82,7 @@ export function GeoPageLayout({
 
       <div style={{ maxWidth: 880, margin: '0 auto', padding: '28px 24px 0' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 16, marginBottom: 16 }}>
-          <nav aria-label="Breadcrumb" style={{ fontSize: 13, color: '#6B7280' }}>
+          <nav aria-label={breadcrumbAria} style={{ fontSize: 13, color: '#6B7280' }}>
             {breadcrumbs.map((b, i) => (
               <span key={b.path}>
                 {i > 0 && <span style={{ margin: '0 8px', color: '#D1D5DB' }}>/</span>}

@@ -22,8 +22,8 @@ export default function EnglishPartnerOemPage() {
         <Link href="/en/smart-ring-oem-odm" style={{ color: '#2563EB' }}>
           OEM &amp; ODM technology page
         </Link>
-        , then submit an inquiry. The detailed intake form is currently available on the Chinese partner page and is
-        reviewed by the LONGVON team for both Chinese and international requests.
+        . The detailed intake form is currently in Chinese; LONGVON reviews submissions for both Chinese and
+        international requests.
       </p>
       <div style={{ marginTop: 32, display: 'flex', flexWrap: 'wrap', gap: 12 }}>
         <Link
@@ -36,7 +36,7 @@ export default function EnglishPartnerOemPage() {
             fontWeight: 600,
           }}
         >
-          Open inquiry form
+          Open Chinese inquiry form
         </Link>
         <Link href="/en/company/longvon" style={{ padding: '14px 24px', color: '#2563EB', fontWeight: 600 }}>
           About LONGVON →

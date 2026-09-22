@@ -81,6 +81,8 @@ for p in \
   /company/longvon \
   /smart-ring-manufacturer \
   /smart-ring-oem-odm \
+  /smart-ring-solution-provider \
+  /smart-ring-healthcare-solutions \
   /smart-ring-technology \
   /smart-ring-sleep-monitoring \
   /smart-ring-sleep-respiratory \
@@ -88,6 +90,8 @@ for p in \
   /en/company/longvon \
   /en/smart-ring-manufacturer \
   /en/smart-ring-oem-odm \
+  /en/smart-ring-solution-provider \
+  /en/smart-ring-healthcare-solutions \
   /en/smart-ring-technology \
   /en/smart-ring-sleep-monitoring \
   /en/smart-ring-sleep-respiratory \
@@ -103,16 +107,23 @@ check_contains "/en/company/longvon" "OEM/ODM"
 check_contains "/en/smart-ring-manufacturer" "Smart Ring Manufacturer"
 check_contains "/smart-ring-manufacturer" "智能戒指制造商"
 check_contains "/smart-ring-oem-odm" "ODM"
+check_contains "/smart-ring-solution-provider" "解决方案提供商"
+check_contains "/smart-ring-healthcare-solutions" "医疗健康"
+check_contains "/en/smart-ring-solution-provider" "Solution Provider"
+check_contains "/en/smart-ring-healthcare-solutions" "Healthcare"
 check_contains "/smart-ring-sleep-monitoring" "睡眠监测"
 check_contains "/smart-ring-sleep-respiratory" "呼吸健康"
 check_contains "/smart-ring-osa" "OSA"
 check_contains "/llms.txt" "71 total health monitoring parameters"
 check_contains "/llms.txt" "en/company/longvon"
 check_contains "/llms.txt" "smart ring product brand"
+check_contains "/llms.txt" "smart-ring-solution-provider"
 check_contains "/robots.txt" "Sitemap:"
 check_contains "/robots.txt" "/en/company/longvon"
 check_contains "/sitemap.xml" "smart-ring-manufacturer"
 check_contains "/sitemap.xml" "en/smart-ring-manufacturer"
+check_contains "/sitemap.xml" "smart-ring-solution-provider"
+check_contains "/sitemap.xml" "smart-ring-healthcare-solutions"
 check_contains "/sitemap.xml" "company/longvon"
 check_contains "/sitemap.xml" "smart-ring-sleep-respiratory"
 

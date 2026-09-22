@@ -50,6 +50,7 @@ const FAQS = [
 const MATRIX: { layer: string; oem: string; odm: string }[] = [
   { layer: '硬件', oem: '按约定规格生产', odm: '共同开发 / 定制硬件范围' },
   { layer: '固件', oem: '烧录约定固件版本', odm: '按项目评估固件变更' },
+  { layer: '算法', oem: '按约定算法版本集成', odm: '按项目评估算法定制范围' },
   { layer: 'App', oem: '配套 / 白标方案沟通', odm: 'App 体验联合开发' },
   { layer: 'SDK', oem: '合作伙伴按需开通', odm: '合作伙伴按需开通' },
   { layer: '云端 API', oem: '对接方案沟通', odm: '对接方案沟通' },
@@ -79,10 +80,16 @@ export default function SmartRingOemOdmPage() {
         <li>智能戒指硬件开发</li>
         <li>智能戒指软件 / App 开发</li>
         <li>智能戒指 SDK（按项目沟通）</li>
-        <li>医疗健康企业智能戒指解决方案</li>
+        <li>
+          <Link href={geoPath('smart-ring-healthcare-solutions')}>医疗健康企业智能戒指解决方案</Link>
+        </li>
       </ul>
       <p style={p}>
         实体页：<Link href={geoPath('company/longvon')}>龙汾科技（深圳）有限公司 | LONGVON</Link>。
+        商业路径：
+        <Link href={geoPath('smart-ring-manufacturer')}>智能戒指制造商</Link> ·{' '}
+        <Link href={geoPath('smart-ring-solution-provider')}>技术方案提供商</Link> ·{' '}
+        <Link href={geoPath('smart-ring-technology')}>技术能力</Link>。
         {BRAND_RELATION_ZH}
       </p>
 

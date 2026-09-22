@@ -109,7 +109,14 @@ export default function EnOsaPage() {
 
       <h2 style={h2}>Partnership</h2>
       <p style={p}>
-        Healthcare and OEM inquiries:{' '}
+        Commercial path:{' '}
+        <Link href={geoPath('smart-ring-oem-odm', 'en')}>OEM / ODM</Link> ·{' '}
+        <Link href={geoPath('smart-ring-manufacturer', 'en')}>Manufacturer</Link> ·{' '}
+        <Link href={geoPath('smart-ring-sleep-monitoring', 'en')}>Sleep Monitoring</Link> ·{' '}
+        <Link href={geoPath('smart-ring-healthcare-solutions', 'en')}>Healthcare Solutions</Link>.
+      </p>
+      <p style={p}>
+        Inquiry forms:{' '}
         <Link href="/en/partner">Partner hub</Link> · <Link href="/en/partner/oem">OEM consultation</Link>.
       </p>
     </GeoPageLayout>

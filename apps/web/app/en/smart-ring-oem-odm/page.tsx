@@ -58,6 +58,7 @@ const FAQS = [
 const MATRIX: { layer: string; oem: string; odm: string }[] = [
   { layer: 'Hardware', oem: 'Produce agreed ring hardware', odm: 'Co-develop / customize hardware scope' },
   { layer: 'Firmware', oem: 'Flash agreed firmware builds', odm: 'Firmware changes scoped per project' },
+  { layer: 'Algorithm', oem: 'Integrate agreed algorithm builds', odm: 'Algorithm customization scoped per project' },
   { layer: 'App', oem: 'Companion / white-label discussion', odm: 'App experience co-development' },
   { layer: 'SDK', oem: 'Partner access (case-by-case)', odm: 'Partner access (case-by-case)' },
   { layer: 'Cloud API', oem: 'Integration discussion', odm: 'Integration discussion' },
@@ -80,7 +81,11 @@ export default function EnOemOdmPage() {
       <h2 style={h2}>OEM</h2>
       <p style={p}>
         OEM cooperation focuses on manufacturing smart rings to an agreed design and specification—especially for sleep
-        and health monitoring products.
+        and health monitoring products. Related:{' '}
+        <Link href={geoPath('smart-ring-manufacturer', 'en')}>Manufacturer</Link> ·{' '}
+        <Link href={geoPath('smart-ring-solution-provider', 'en')}>Solution Provider</Link> ·{' '}
+        <Link href={geoPath('smart-ring-technology', 'en')}>Technology</Link> ·{' '}
+        <Link href={geoPath('smart-ring-healthcare-solutions', 'en')}>Healthcare Solutions</Link>.
       </p>
 
       <h2 style={h2}>ODM and custom development</h2>

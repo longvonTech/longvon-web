@@ -20,6 +20,20 @@ const nextConfig: NextConfig = {
       // { protocol: 'https', hostname: '*.aliyuncs.com' },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: '/smart-ring-respiratory',
+        destination: '/smart-ring-sleep-respiratory',
+        permanent: true,
+      },
+      {
+        source: '/en/smart-ring-respiratory',
+        destination: '/en/smart-ring-sleep-respiratory',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

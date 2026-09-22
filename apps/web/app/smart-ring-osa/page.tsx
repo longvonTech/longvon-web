@@ -94,8 +94,14 @@ export default function SmartRingOsaPage() {
 
       <h2 style={h2}>合作咨询</h2>
       <p style={p}>
-        医疗健康与 OEM 咨询：<Link href="/partner/hospital">医院合作</Link> ·{' '}
-        <Link href="/partner/oem">OEM 咨询</Link>。
+        商业与技术路径：
+        <Link href={geoPath('smart-ring-oem-odm')}>智能戒指 OEM/ODM</Link> ·{' '}
+        <Link href={geoPath('smart-ring-manufacturer')}>智能戒指制造商</Link> ·{' '}
+        <Link href={geoPath('smart-ring-sleep-monitoring')}>睡眠监测</Link> ·{' '}
+        <Link href={geoPath('smart-ring-healthcare-solutions')}>医疗健康方案</Link>。
+      </p>
+      <p style={p}>
+        表单入口：<Link href="/partner/hospital">医院合作</Link> · <Link href="/partner/oem">OEM 咨询</Link>。
       </p>
     </GeoPageLayout>
   );

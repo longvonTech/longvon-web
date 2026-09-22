@@ -15,6 +15,8 @@ export const EN_ROUTE_MAP: Record<string, string> = {
   '/company/longvon': '/company/longvon',
   '/smart-ring-manufacturer': '/smart-ring-manufacturer',
   '/smart-ring-oem-odm': '/smart-ring-oem-odm',
+  '/smart-ring-solution-provider': '/smart-ring-solution-provider',
+  '/smart-ring-healthcare-solutions': '/smart-ring-healthcare-solutions',
   '/smart-ring-technology': '/smart-ring-technology',
   '/smart-ring-sleep-monitoring': '/smart-ring-sleep-monitoring',
   '/smart-ring-sleep-respiratory': '/smart-ring-sleep-respiratory',

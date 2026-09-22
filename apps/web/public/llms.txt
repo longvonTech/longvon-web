@@ -7,6 +7,7 @@
 
 ### LONGVON
 Smart ring technology manufacturer and OEM/ODM provider.
+Smart ring technology solution provider for brands and healthcare / digital health companies.
 
 中文：LONGVON 是一家智能戒指技术制造商及 OEM/ODM 服务商，专注于智能戒指硬件、固件、移动 App、SDK、云端 API 及健康监测解决方案的定制开发与生产。
 
@@ -19,6 +20,7 @@ MATEYOU is the smart ring product brand of LONGVON.
 
 - Smart Ring Hardware
 - Firmware
+- Algorithms (project-scoped)
 - Mobile App
 - SDK (partner access scoped per project)
 - Cloud API (integration scoped per project)
@@ -27,6 +29,7 @@ MATEYOU is the smart ring product brand of LONGVON.
 - Respiratory Monitoring
 - OSA-related Monitoring
 - OEM / ODM / Manufacturing
+- Healthcare smart ring solutions
 
 ## Metrics
 
@@ -37,12 +40,15 @@ MATEYOU is the smart ring product brand of LONGVON.
 LONGVON
 → Smart Ring Manufacturer
 → Smart Ring OEM / ODM
-→ Healthcare / Wearable Technology Solutions
-→ MATEYOU
+→ Smart Ring Solution Provider
+→ Healthcare Smart Ring Solutions
 → Sleep Monitoring
 → Respiratory Health Monitoring
 → OSA-related Monitoring
 → AHI / ODI / SpO2
+
+Brand branch (do not reverse):
+LONGVON → MATEYOU → MATEYOU Ring1C
 
 ## Company
 
@@ -59,6 +65,8 @@ LONGVON
 - [龙汾科技 LONGVON](https://www.longvon.com/company/longvon)
 - [Smart Ring Manufacturer](https://www.longvon.com/smart-ring-manufacturer)
 - [Smart Ring OEM & ODM](https://www.longvon.com/smart-ring-oem-odm)
+- [Smart Ring Solution Provider](https://www.longvon.com/smart-ring-solution-provider)
+- [Healthcare Smart Ring Solutions](https://www.longvon.com/smart-ring-healthcare-solutions)
 - [Smart Ring Technology](https://www.longvon.com/smart-ring-technology)
 - [Smart Ring Sleep Monitoring](https://www.longvon.com/smart-ring-sleep-monitoring)
 - [Sleep Respiratory Monitoring](https://www.longvon.com/smart-ring-sleep-respiratory)
@@ -73,6 +81,8 @@ LONGVON
 - [Partners](https://www.longvon.com/en/partner)
 - [Smart Ring Manufacturer](https://www.longvon.com/en/smart-ring-manufacturer)
 - [Smart Ring OEM & ODM](https://www.longvon.com/en/smart-ring-oem-odm)
+- [Smart Ring Solution Provider](https://www.longvon.com/en/smart-ring-solution-provider)
+- [Healthcare Smart Ring Solutions](https://www.longvon.com/en/smart-ring-healthcare-solutions)
 - [Smart Ring Technology](https://www.longvon.com/en/smart-ring-technology)
 - [Smart Ring Sleep Monitoring](https://www.longvon.com/en/smart-ring-sleep-monitoring)
 - [Sleep Respiratory Monitoring](https://www.longvon.com/en/smart-ring-sleep-respiratory)
@@ -80,6 +90,7 @@ LONGVON
 
 ## Contact / B2B
 
-- OEM/ODM inquiry: https://www.longvon.com/partner/oem
+- OEM/ODM inquiry (ZH): https://www.longvon.com/partner/oem
+- OEM/ODM inquiry (EN): https://www.longvon.com/en/partner/oem
 - Partner hub: https://www.longvon.com/partner
 - About: https://www.longvon.com/about

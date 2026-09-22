@@ -110,7 +110,7 @@ export default function EnOsaPage() {
       <h2 style={h2}>Partnership</h2>
       <p style={p}>
         Healthcare and OEM inquiries:{' '}
-        <Link href="/partner/hospital">Hospital cooperation</Link> · <Link href="/partner/oem">OEM consultation</Link>.
+        <Link href="/en/partner">Partner hub</Link> · <Link href="/en/partner/oem">OEM consultation</Link>.
       </p>
     </GeoPageLayout>
   );

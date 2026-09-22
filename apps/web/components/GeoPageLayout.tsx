@@ -9,6 +9,7 @@ import {
   type GeoLocale,
   type GeoPageSlug,
 } from '../lib/geo';
+import { localePath } from '../lib/i18n-routes';
 
 interface BreadcrumbItem {
   name: string;
@@ -61,6 +62,9 @@ export function GeoPageLayout({
   const relatedTitle = locale === 'en' ? 'Related LONGVON Technology' : '相关技术页面';
   const aboutLabel = locale === 'en' ? 'About LONGVON' : '关于龙汾科技';
   const aboutHref = locale === 'en' ? '/en/company/longvon' : '/about';
+  const oemHref = localePath('/partner/oem', locale);
+  const partnerHref = localePath('/partner', locale);
+  const ringHref = localePath('/products/ring1c', locale);
   const switchHref = slug
     ? geoPath(slug, locale === 'en' ? 'zh' : 'en')
     : locale === 'en'
@@ -166,7 +170,7 @@ export function GeoPageLayout({
         </p>
         <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
           <Link
-            href="/partner/oem"
+            href={oemHref}
             style={{
               padding: '14px 28px',
               background: '#2563EB',
@@ -179,7 +183,7 @@ export function GeoPageLayout({
             {ctaPrimary}
           </Link>
           <Link
-            href="/partner"
+            href={partnerHref}
             style={{
               padding: '14px 28px',
               background: 'rgba(255,255,255,0.08)',
@@ -227,7 +231,7 @@ export function GeoPageLayout({
           ))}
           <li>
             <Link
-              href="/products/ring1c"
+              href={ringHref}
               style={{
                 display: 'block',
                 padding: '14px 16px',

@@ -25,6 +25,13 @@ export function getLocaleFromPath(pathname: string): SiteLocale {
   return pathname === '/en' || pathname.startsWith('/en/') ? 'en' : 'zh';
 }
 
+/** Prefix a bare path for the given locale (`/` → `/en` when en). */
+export function localePath(barePath: string, locale: SiteLocale): string {
+  const bare = !barePath || barePath === '/' ? '/' : barePath.startsWith('/') ? barePath : `/${barePath}`;
+  if (locale === 'zh') return bare;
+  return bare === '/' ? '/en' : `/en${bare}`;
+}
+
 /** Strip /en prefix for matching. */
 export function stripLocalePrefix(pathname: string): string {
   if (pathname === '/en') return '/';

@@ -109,8 +109,8 @@ export default function EnManufacturerPage() {
 
       <h2 style={h2}>Next step</h2>
       <p style={p}>
-        Explore <Link href={geoPath('smart-ring-oem-odm', 'en')}>OEM & ODM services</Link> or submit an inquiry via{' '}
-        <Link href="/partner/oem">the OEM consultation form</Link>.
+        Explore <Link href={geoPath('smart-ring-oem-odm', 'en')}>OEM & ODM services</Link> or{' '}
+        <Link href="/en/partner/oem">request an OEM consultation</Link>.
       </p>
     </GeoPageLayout>
   );

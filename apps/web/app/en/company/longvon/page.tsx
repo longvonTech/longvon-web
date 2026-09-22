@@ -124,13 +124,13 @@ export default function EnLongvonCompanyPage() {
         <h2 style={h2}>Work with LONGVON</h2>
         <ul style={ul}>
           <li>
-            <Link href="/partner/oem">OEM / ODM inquiry form</Link>
+            <Link href="/en/partner/oem">OEM / ODM inquiry</Link>
           </li>
           <li>
-            <Link href="/partner">Partner hub</Link>
+            <Link href="/en/partner">Partner hub</Link>
           </li>
           <li>
-            <Link href="/products/ring1c">MATEYOU Ring1C (brand product)</Link>
+            <Link href="/en/products/ring1c">MATEYOU Ring1C (brand product)</Link>
           </li>
         </ul>
       </GeoPageLayout>

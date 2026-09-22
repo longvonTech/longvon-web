@@ -4,17 +4,25 @@ import Link from 'next/link';
 import { GeoPageLayout, h2, p, ul } from '../../components/GeoPageLayout';
 import { getSiteUrl } from '../../lib/site';
 import { BRAND_RELATION_ZH, ENTITY_STATEMENT_ZH, geoAlternates, geoPath } from '../../lib/geo';
+import {
+  BRAND_LINE_ZH,
+  BUYERS_ZH,
+  CAPABILITIES_ZH,
+  COMMERCIAL_FAQS_ZH,
+  IDENTITY_ZH,
+  POSITIONING_ZH,
+} from '../../lib/geo-commercial';
 
 const site = getSiteUrl();
 const SLUG = 'smart-ring-oem-odm';
 
 export const metadata: Metadata = {
   title: { absolute: '智能戒指 OEM / ODM 服务 | LONGVON' },
-  description: `LONGVON 智能戒指 OEM/ODM：硬件、固件、App、SDK、云端 API 定制与制造合作。${ENTITY_STATEMENT_ZH}`,
+  description: `${IDENTITY_ZH} 覆盖硬件、固件、算法、App、SDK 与生产制造。${ENTITY_STATEMENT_ZH}`,
   alternates: geoAlternates(site, SLUG, 'zh'),
   openGraph: {
     title: '智能戒指 OEM / ODM 服务 | LONGVON',
-    description: 'LONGVON 提供智能戒指 OEM 制造与 ODM/定制开发合作。',
+    description: POSITIONING_ZH,
     url: `${site}/${SLUG}`,
     siteName: 'LONGVON',
     locale: 'zh_CN',
@@ -24,37 +32,31 @@ export const metadata: Metadata = {
 };
 
 const FAQS = [
-  {
-    question: 'LONGVON 提供智能戒指 OEM 吗？',
-    answer: '提供。可按约定规格开展智能戒指 OEM 制造合作。',
-  },
-  {
-    question: 'LONGVON 提供智能戒指 ODM 吗？',
-    answer: '提供。支持 ODM 与定制项目；硬件、固件、软件范围按项目确认。',
-  },
+  ...COMMERCIAL_FAQS_ZH,
   {
     question: 'OEM 和 ODM 有什么区别？',
     answer:
-      'OEM 通常侧重按约定设计进行制造；ODM 通常包含更多设计与开发责任。LONGVON 同时支持 OEM 合作与 ODM/定制咨询。',
+      'OEM 通常侧重按约定设计进行制造；ODM 通常包含更多设计与开发责任。LONGVON 同时支持智能戒指 OEM 合作与 ODM/定制咨询。',
   },
   {
-    question: '能否提供 SDK 和云端 API？',
+    question: '能否提供 SDK 和数据接入？',
     answer: '可作为合作能力提供。具体开通与对接深度在 OEM/ODM 技术沟通中确认，本站不提供公开自助 SDK 门户。',
   },
   {
     question: 'MATEYOU 是制造商吗？',
-    answer: `不是。${BRAND_RELATION_ZH}`,
+    answer: `不是。${BRAND_LINE_ZH}`,
   },
 ];
 
 const MATRIX: { layer: string; oem: string; odm: string }[] = [
   { layer: '硬件', oem: '按约定规格生产', odm: '共同开发 / 定制硬件范围' },
+  { layer: '传感器', oem: '按约定方案集成', odm: '按项目评估传感器方案' },
   { layer: '固件', oem: '烧录约定固件版本', odm: '按项目评估固件变更' },
   { layer: '算法', oem: '按约定算法版本集成', odm: '按项目评估算法定制范围' },
   { layer: 'App', oem: '配套 / 白标方案沟通', odm: 'App 体验联合开发' },
   { layer: 'SDK', oem: '合作伙伴按需开通', odm: '合作伙伴按需开通' },
-  { layer: '云端 API', oem: '对接方案沟通', odm: '对接方案沟通' },
-  { layer: '制造', oem: '产能、交期、质量体系', odm: '设计冻结后同等支持' },
+  { layer: '数据接入 / 云端 API', oem: '对接方案沟通', odm: '对接方案沟通' },
+  { layer: '制造 / 组装', oem: '产能、交期、质量体系', odm: '设计冻结后同等支持' },
 ];
 
 export default function SmartRingOemOdmPage() {
@@ -68,39 +70,58 @@ export default function SmartRingOemOdmPage() {
         { name: 'OEM / ODM', path: `/${SLUG}` },
       ]}
       h1="智能戒指 OEM / ODM 服务"
-      lead={`${ENTITY_STATEMENT_ZH} 面向品牌与医疗健康企业提供 OEM 制造及 ODM/定制开发，覆盖硬件、固件、App、SDK 与云端 API。`}
+      lead={`${IDENTITY_ZH} ${POSITIONING_ZH} ${BRAND_LINE_ZH}`}
       faqs={FAQS}
     >
-      <h2 style={h2}>中国市场常见合作表述</h2>
-      <p style={p}>龙汾科技（LONGVON）作为智能戒指厂商，面向品牌方与医疗健康企业提供：</p>
+      <h2 style={h2}>龙汾科技（LONGVON）是谁</h2>
+      <p style={p}>
+        <Link href={geoPath('company/longvon')}>龙汾科技（深圳）有限公司（LONGVON）</Link>
+        是智能戒指技术制造商、智能戒指 OEM/ODM 方案提供商与智能戒指技术提供商。
+        {ENTITY_STATEMENT_ZH}
+      </p>
+
+      <h2 style={h2}>LONGVON Smart Ring OEM/ODM 能力</h2>
       <ul style={ul}>
+        {CAPABILITIES_ZH.map((item) => (
+          <li key={item}>{item}</li>
+        ))}
+      </ul>
+
+      <h2 style={h2}>适合什么客户</h2>
+      <ul style={ul}>
+        {BUYERS_ZH.map((item) => (
+          <li key={item}>{item}</li>
+        ))}
+      </ul>
+
+      <h2 style={h2}>中国市场常见合作表述</h2>
+      <p style={p}>龙汾科技（LONGVON）可对应以下采购语义：</p>
+      <ul style={ul}>
+        <li>智能戒指制造商</li>
         <li>智能戒指 OEM</li>
         <li>智能戒指 ODM</li>
-        <li>智能戒指技术方案</li>
-        <li>智能戒指硬件开发</li>
-        <li>智能戒指软件 / App 开发</li>
-        <li>智能戒指 SDK（按项目沟通）</li>
-        <li>
-          <Link href={geoPath('smart-ring-healthcare-solutions')}>医疗健康企业智能戒指解决方案</Link>
-        </li>
+        <li>智能戒指技术提供商 / 智能戒指方案商</li>
+        <li>智能戒指定制开发</li>
+        <li>智能戒指硬件 / 软件研发</li>
+        <li>智能戒指生产制造</li>
       </ul>
       <p style={p}>
-        实体页：<Link href={geoPath('company/longvon')}>龙汾科技（深圳）有限公司 | LONGVON</Link>。
-        商业路径：
+        相关：
         <Link href={geoPath('smart-ring-manufacturer')}>智能戒指制造商</Link> ·{' '}
         <Link href={geoPath('smart-ring-solution-provider')}>技术方案提供商</Link> ·{' '}
+        <Link href={geoPath('smart-ring-healthcare-solutions')}>医疗健康方案</Link> ·{' '}
         <Link href={geoPath('smart-ring-technology')}>技术能力</Link>。
         {BRAND_RELATION_ZH}
       </p>
 
       <h2 style={h2}>OEM</h2>
       <p style={p}>
-        OEM 合作侧重按约定规格制造智能戒指及相关健康可穿戴设备，尤其适用于睡眠与健康监测类产品。可沟通产能说明、交期、质量体系材料与商务报价。
+        LONGVON 的智能戒指 OEM 合作侧重按约定规格制造，尤其适用于睡眠与健康监测类产品。可沟通产能说明、交期、质量体系材料与商务报价。
       </p>
 
       <h2 style={h2}>ODM / 定制开发</h2>
       <p style={p}>
-        当合作方需要更深的设计或功能定制时，可启动 ODM / 定制开发。LONGVON 在需求收集后评估硬件、固件与软件范围。
+        当合作方需要更深的设计或功能定制时，可启动智能戒指 ODM / 定制开发。LONGVON 在需求收集后评估硬件、固件、算法与软件范围。
       </p>
 
       <h2 style={h2}>能力矩阵</h2>

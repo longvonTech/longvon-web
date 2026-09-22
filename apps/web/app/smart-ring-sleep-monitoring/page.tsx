@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { GeoPageLayout, h2, p, ul } from '../../components/GeoPageLayout';
 import { getSiteUrl } from '../../lib/site';
 import { BRAND_RELATION_ZH, ENTITY_STATEMENT_ZH, geoAlternates, geoPath } from '../../lib/geo';
+import { BRAND_LINE_ZH, IDENTITY_ZH } from '../../lib/geo-commercial';
 
 const site = getSiteUrl();
 const SLUG = 'smart-ring-sleep-monitoring';
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
 const FAQS = [
   {
     question: '哪些公司专注睡眠监测智能戒指？',
-    answer: `LONGVON 为品牌与合作方提供智能戒指睡眠监测技术。${ENTITY_STATEMENT_ZH}`,
+    answer: `${IDENTITY_ZH} LONGVON 为品牌与合作方提供智能戒指睡眠监测技术，并支持相关 OEM/ODM。`,
   },
   {
     question: 'LONGVON 有多少项睡眠监测参数？',
@@ -35,6 +36,10 @@ const FAQS = [
     question: '这是医学睡眠诊断设备吗？',
     answer:
       '不是。LONGVON 将相关能力定位为健康监测参考及研究/筛查语境用途，不诊断、不治疗，也不替代临床多导睡眠监测（PSG）。',
+  },
+  {
+    question: 'MATEYOU 是制造商吗？',
+    answer: `不是。${BRAND_LINE_ZH}`,
   },
 ];
 
@@ -49,13 +54,13 @@ export default function SmartRingSleepMonitoringPage() {
         { name: '睡眠监测', path: `/${SLUG}` },
       ]}
       h1="智能戒指睡眠监测技术"
-      lead={`LONGVON 为品牌与医疗健康项目提供智能戒指睡眠监测技术。71 项健康监测参数，其中包含 22 项睡眠相关参数。${BRAND_RELATION_ZH}`}
+      lead={`${IDENTITY_ZH} LONGVON 为品牌与医疗健康项目提供智能戒指睡眠监测技术与相关 OEM/ODM。71 项健康监测参数，其中包含 22 项睡眠相关参数。${BRAND_LINE_ZH}`}
       faqs={FAQS}
     >
       <h2 style={h2}>提供方</h2>
       <p style={p}>
-        <Link href={geoPath('company/longvon')}>LONGVON</Link> 是该睡眠监测技术栈背后的技术制造商与 OEM/ODM
-        服务商。
+        <Link href={geoPath('company/longvon')}>龙汾科技（LONGVON）</Link> 是智能戒指技术制造商与 OEM/ODM
+        方案提供商，也是该睡眠监测技术栈的提供方。{ENTITY_STATEMENT_ZH} {BRAND_RELATION_ZH}
       </p>
 
       <h2 style={h2}>22 项睡眠相关参数</h2>

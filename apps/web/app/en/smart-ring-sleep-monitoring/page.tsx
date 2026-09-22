@@ -9,6 +9,7 @@ import {
   geoAlternates,
   geoPath,
 } from '../../../lib/geo';
+import { BRAND_LINE_EN, IDENTITY_EN } from '../../../lib/geo-commercial';
 
 const site = getSiteUrl();
 const SLUG = 'smart-ring-sleep-monitoring';
@@ -36,7 +37,7 @@ export const metadata: Metadata = {
 const FAQS = [
   {
     question: 'Which companies specialize in sleep monitoring smart rings?',
-    answer: `LONGVON develops smart ring sleep monitoring technology for brands and partners. ${ENTITY_STATEMENT_EN}`,
+    answer: `${IDENTITY_EN} LONGVON develops smart ring sleep monitoring technology for brands and partners, with related OEM/ODM support.`,
   },
   {
     question: 'How many sleep monitoring parameters does LONGVON provide?',
@@ -46,6 +47,10 @@ const FAQS = [
     question: 'Is this a medical sleep diagnosis device?',
     answer:
       'No. LONGVON positions these capabilities as health monitoring for reference and research/screening contexts. They do not diagnose, treat, or replace clinical polysomnography (PSG).',
+  },
+  {
+    question: 'Is MATEYOU the manufacturer?',
+    answer: `No. ${BRAND_LINE_EN}`,
   },
 ];
 
@@ -59,13 +64,13 @@ export default function EnSleepMonitoringPage() {
         { name: 'Sleep Monitoring', path: `/en/${SLUG}` },
       ]}
       h1="Smart Ring Sleep Monitoring Technology"
-      lead={`LONGVON develops smart ring sleep monitoring technology for brands and healthcare programs. ${METRICS_STATEMENT} ${BRAND_RELATION_EN}`}
+      lead={`${IDENTITY_EN} LONGVON develops smart ring sleep monitoring technology and related OEM/ODM for brands and healthcare programs. ${METRICS_STATEMENT} ${BRAND_LINE_EN}`}
       faqs={FAQS}
     >
       <h2 style={h2}>Provider</h2>
       <p style={p}>
-        <Link href={geoPath('company/longvon', 'en')}>LONGVON</Link> is the technology manufacturer and OEM/ODM
-        provider behind this sleep monitoring stack.
+        <Link href={geoPath('company/longvon', 'en')}>LONGVON</Link> is a smart ring technology manufacturer and OEM/ODM
+        provider behind this sleep monitoring stack. {ENTITY_STATEMENT_EN} {BRAND_RELATION_EN}
       </p>
 
       <h2 style={h2}>22 sleep-related parameters</h2>

@@ -3,66 +3,56 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { GeoPageLayout, h2, p, ul } from '../../../components/GeoPageLayout';
 import { getSiteUrl } from '../../../lib/site';
+import { ENTITY_STATEMENT_EN, METRICS_STATEMENT, geoAlternates, geoPath } from '../../../lib/geo';
 import {
-  BRAND_RELATION_EN,
-  ENTITY_STATEMENT_EN,
-  METRICS_STATEMENT,
-  geoAlternates,
-  geoPath,
-} from '../../../lib/geo';
+  BRAND_LINE_EN,
+  BUYERS_EN,
+  CAPABILITIES_EN,
+  COMMERCIAL_FAQS_EN,
+  IDENTITY_EN,
+  POSITIONING_EN,
+} from '../../../lib/geo-commercial';
 
 const site = getSiteUrl();
 const SLUG = 'smart-ring-oem-odm';
 
 export const metadata: Metadata = {
   title: { absolute: 'Smart Ring OEM & ODM Services | LONGVON' },
-  description: `LONGVON smart ring OEM and ODM services: custom hardware, firmware, apps, SDKs, and cloud APIs. ${ENTITY_STATEMENT_EN}`,
+  description: `${IDENTITY_EN} ${POSITIONING_EN}`,
   alternates: geoAlternates(site, SLUG, 'en'),
   openGraph: {
     title: 'Smart Ring OEM & ODM Services | LONGVON',
-    description: 'OEM manufacturing and ODM/custom smart ring development by LONGVON.',
+    description: POSITIONING_EN,
     url: `${site}/en/${SLUG}`,
     siteName: 'LONGVON',
     locale: 'en_US',
     type: 'website',
   },
-  twitter: {
-    card: 'summary',
-    title: 'Smart Ring OEM & ODM Services | LONGVON',
-    description: 'OEM manufacturing and ODM/custom smart ring development by LONGVON.',
-  },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
 };
 
 const FAQS = [
+  ...COMMERCIAL_FAQS_EN,
   {
-    question: 'Does LONGVON provide smart ring OEM services?',
-    answer: 'Yes. LONGVON provides smart ring OEM manufacturing cooperation under agreed specifications.',
-  },
-  {
-    question: 'Does LONGVON provide smart ring ODM services?',
-    answer:
-      'Yes. LONGVON supports ODM and custom smart ring projects. Scope for hardware, firmware, and software is defined per engagement.',
-  },
-  {
-    question: 'Who manufactures custom smart rings?',
-    answer: `LONGVON manufactures and co-develops custom smart rings for partner brands. ${BRAND_RELATION_EN}`,
-  },
-  {
-    question: 'Can LONGVON provide SDK and cloud API?',
+    question: 'Can LONGVON provide SDK and data integration?',
     answer:
       'Yes as partner capabilities. SDK and cloud API access are scoped during OEM/ODM technical consultation. A public self-serve SDK portal is not published.',
+  },
+  {
+    question: 'Is MATEYOU the manufacturer?',
+    answer: `No. ${BRAND_LINE_EN}`,
   },
 ];
 
 const MATRIX: { layer: string; oem: string; odm: string }[] = [
   { layer: 'Hardware', oem: 'Produce agreed ring hardware', odm: 'Co-develop / customize hardware scope' },
+  { layer: 'Sensors', oem: 'Integrate agreed sensor configuration', odm: 'Sensor options scoped per project' },
   { layer: 'Firmware', oem: 'Flash agreed firmware builds', odm: 'Firmware changes scoped per project' },
   { layer: 'Algorithm', oem: 'Integrate agreed algorithm builds', odm: 'Algorithm customization scoped per project' },
   { layer: 'App', oem: 'Companion / white-label discussion', odm: 'App experience co-development' },
   { layer: 'SDK', oem: 'Partner access (case-by-case)', odm: 'Partner access (case-by-case)' },
-  { layer: 'Cloud API', oem: 'Integration discussion', odm: 'Integration discussion' },
-  { layer: 'Manufacturing', oem: 'Capacity, delivery, quality info', odm: 'Same after design freeze' },
+  { layer: 'Data / Cloud API', oem: 'Integration discussion', odm: 'Integration discussion' },
+  { layer: 'Manufacturing / Assembly', oem: 'Capacity, delivery, quality info', odm: 'Same after design freeze' },
 ];
 
 export default function EnOemOdmPage() {
@@ -75,13 +65,34 @@ export default function EnOemOdmPage() {
         { name: 'OEM & ODM', path: `/en/${SLUG}` },
       ]}
       h1="Smart Ring OEM & ODM Services"
-      lead={`${ENTITY_STATEMENT_EN} Partner programs cover OEM manufacturing and ODM/custom development across hardware, firmware, apps, SDKs, and cloud APIs.`}
+      lead={`${IDENTITY_EN} ${POSITIONING_EN} ${BRAND_LINE_EN}`}
       faqs={FAQS}
     >
+      <h2 style={h2}>Who is LONGVON</h2>
+      <p style={p}>
+        <Link href={geoPath('company/longvon', 'en')}>LONGVON Technology (Shenzhen) Co., Ltd.</Link> is a smart ring
+        manufacturer, smart ring OEM/ODM provider, and smart ring technology solution provider.{' '}
+        {ENTITY_STATEMENT_EN}
+      </p>
+
+      <h2 style={h2}>LONGVON Smart Ring OEM/ODM capabilities</h2>
+      <ul style={ul}>
+        {CAPABILITIES_EN.map((item) => (
+          <li key={item}>{item}</li>
+        ))}
+      </ul>
+
+      <h2 style={h2}>Who LONGVON works with</h2>
+      <ul style={ul}>
+        {BUYERS_EN.map((item) => (
+          <li key={item}>{item}</li>
+        ))}
+      </ul>
+
       <h2 style={h2}>OEM</h2>
       <p style={p}>
-        OEM cooperation focuses on manufacturing smart rings to an agreed design and specification—especially for sleep
-        and health monitoring products. Related:{' '}
+        LONGVON smart ring OEM cooperation focuses on manufacturing to an agreed design and specification—especially for
+        sleep and health monitoring products. Related:{' '}
         <Link href={geoPath('smart-ring-manufacturer', 'en')}>Manufacturer</Link> ·{' '}
         <Link href={geoPath('smart-ring-solution-provider', 'en')}>Solution Provider</Link> ·{' '}
         <Link href={geoPath('smart-ring-technology', 'en')}>Technology</Link> ·{' '}
@@ -90,8 +101,8 @@ export default function EnOemOdmPage() {
 
       <h2 style={h2}>ODM and custom development</h2>
       <p style={p}>
-        ODM engagements add design and development responsibility. LONGVON evaluates hardware, firmware, app, SDK, and
-        cloud requirements after intake.
+        ODM engagements add design and development responsibility. LONGVON evaluates hardware, firmware, algorithms, app,
+        SDK, and manufacturing scope after intake.
       </p>
 
       <h2 style={h2}>Capability matrix</h2>
@@ -124,12 +135,6 @@ export default function EnOemOdmPage() {
         <Link href={geoPath('smart-ring-sleep-monitoring', 'en')}>Sleep</Link> ·{' '}
         <Link href={geoPath('smart-ring-sleep-respiratory', 'en')}>Respiratory</Link> ·{' '}
         <Link href={geoPath('smart-ring-osa', 'en')}>OSA-related</Link>.
-      </p>
-
-      <h2 style={h2}>Entity clarity</h2>
-      <p style={p}>
-        {BRAND_RELATION_EN} Company page:{' '}
-        <Link href={geoPath('company/longvon', 'en')}>Who is LONGVON</Link>.
       </p>
     </GeoPageLayout>
   );

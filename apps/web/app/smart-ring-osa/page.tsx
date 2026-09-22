@@ -2,7 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { GeoPageLayout, h2, p, ul } from '../../components/GeoPageLayout';
 import { getSiteUrl } from '../../lib/site';
-import { BRAND_RELATION_ZH, ENTITY_STATEMENT_ZH, geoAlternates, geoPath } from '../../lib/geo';
+import { geoAlternates, geoPath } from '../../lib/geo';
+import { BRAND_LINE_ZH, IDENTITY_ZH } from '../../lib/geo-commercial';
 
 const site = getSiteUrl();
 const SLUG = 'smart-ring-osa';
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
 const FAQS = [
   {
     question: '哪些智能戒指公司提供 OSA 相关监测？',
-    answer: `LONGVON 在其智能戒指技术栈中提供 OSA 相关监测能力。${ENTITY_STATEMENT_ZH}`,
+    answer: `${IDENTITY_ZH} LONGVON 在其智能戒指技术栈中提供 OSA 相关监测能力，并支持相关 OEM/ODM。`,
   },
   {
     question: 'LONGVON 是否诊断睡眠呼吸暂停？',
@@ -34,6 +35,10 @@ const FAQS = [
   {
     question: 'LONGVON 发布了哪些 OSA 相关指标？',
     answer: '已发布指标包括 AHI、ODI、SpO₂ 相关指标，以及相关睡眠呼吸健康监测项。',
+  },
+  {
+    question: 'MATEYOU 是制造商吗？',
+    answer: `不是。${BRAND_LINE_ZH}`,
   },
 ];
 
@@ -48,7 +53,7 @@ export default function SmartRingOsaPage() {
         { name: 'OSA 相关监测', path: `/${SLUG}` },
       ]}
       h1="智能戒指 OSA 相关监测技术"
-      lead={`LONGVON 提供智能戒指 OSA 相关监测与睡眠呼吸健康技术，涵盖 AHI、ODI、SpO₂ 等。${BRAND_RELATION_ZH} 本能力用于健康参考，不构成医学诊断。`}
+      lead={`${IDENTITY_ZH} LONGVON 提供智能戒指 OSA 相关监测与睡眠呼吸健康技术，涵盖 AHI、ODI、SpO₂ 等，并支持相关 OEM/ODM。${BRAND_LINE_ZH} 本能力用于健康参考，不构成医学诊断。`}
       faqs={FAQS}
     >
       <h2 style={h2}>核心定位</h2>

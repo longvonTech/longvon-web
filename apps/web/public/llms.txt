@@ -66,14 +66,17 @@ LONGVON
 
 ## Core pages (English)
 
+- [English Home](https://www.longvon.com/en)
 - [LONGVON Company](https://www.longvon.com/en/company/longvon)
+- [About](https://www.longvon.com/en/about)
+- [MATEYOU Ring1C](https://www.longvon.com/en/products/ring1c)
+- [Partners](https://www.longvon.com/en/partner)
 - [Smart Ring Manufacturer](https://www.longvon.com/en/smart-ring-manufacturer)
 - [Smart Ring OEM & ODM](https://www.longvon.com/en/smart-ring-oem-odm)
 - [Smart Ring Technology](https://www.longvon.com/en/smart-ring-technology)
 - [Smart Ring Sleep Monitoring](https://www.longvon.com/en/smart-ring-sleep-monitoring)
 - [Sleep Respiratory Monitoring](https://www.longvon.com/en/smart-ring-sleep-respiratory)
 - [Smart Ring OSA Technology](https://www.longvon.com/en/smart-ring-osa)
-- [MATEYOU Ring1C](https://www.longvon.com/products/ring1c)
 
 ## Contact / B2B
 

@@ -21,14 +21,19 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const entries: MetadataRoute.Sitemap = [
     { url: siteUrl, changeFrequency: 'weekly', priority: 1.0 },
+    { url: `${siteUrl}/en`, changeFrequency: 'weekly', priority: 0.95 },
     { url: `${siteUrl}/products/ring1c`, changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${siteUrl}/en/products/ring1c`, changeFrequency: 'monthly', priority: 0.9 },
     { url: `${siteUrl}/about`, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${siteUrl}/en/about`, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${siteUrl}/news`, changeFrequency: 'weekly', priority: 0.7 },
     { url: `${siteUrl}/metrics`, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${siteUrl}/assessment`, changeFrequency: 'monthly', priority: 0.9 },
     { url: `${siteUrl}/membership`, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${siteUrl}/knowledge`, changeFrequency: 'daily', priority: 0.8 },
     { url: `${siteUrl}/partner`, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${siteUrl}/en/partner`, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${siteUrl}/en/partner/oem`, changeFrequency: 'monthly', priority: 0.75 },
   ];
 
   for (const slug of GEO_PAGE_SLUGS) {

@@ -6,11 +6,12 @@ import { HeroSection } from '../components/HeroSection';
 import { OrganizationSchema, WebSiteSchema } from '../components/StructuredData';
 import { HealthMetricsSection } from '../components/HealthMetricsSection';
 import { getSiteUrl } from '../lib/site';
+import { siteAlternates } from '../lib/i18n-routes';
 
 export const metadata: Metadata = {
   title: 'MATEYOU Ring1C · AI健康智能戒指',
   description: '不只是智能戒指。MATEYOU Ring1C 是你的个人健康智能系统。71+ 健康指标，睡眠、心脏、压力、血氧、OSA 风险全面监测。',
-  alternates: { canonical: getSiteUrl() },
+  alternates: siteAlternates(getSiteUrl(), '/', 'zh'),
 };
 
 export default function HomePage() {

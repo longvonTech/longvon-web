@@ -3,7 +3,7 @@
 > LONGVON (Longvon Technology (Shenzhen) Co., Ltd.) is a smart ring technology manufacturer and OEM/ODM provider.
 > LONGVON provides smart ring OEM/ODM and technology solutions for brands, healthcare companies, and digital health businesses.
 > LONGVON is a smart ring technology solution provider.
-> MATEYOU is a smart ring and AI health brand developed by LONGVON. MATEYOU is not the manufacturer.
+> MATEYOU is a smart ring and AI health brand developed by LONGVON. MATEYOU is the smart ring product brand of LONGVON. MATEYOU is not the manufacturer.
 
 ## Entity definitions
 

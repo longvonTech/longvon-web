@@ -16,7 +16,7 @@ const TYPES = [
   {
     href: '/en/partner/oem',
     name: 'OEM / ODM',
-    desc: 'Manufacturing cooperation and custom smart ring development',
+    desc: 'Manufacturing cooperation and custom smart ring development — English inquiry form',
   },
   {
     href: '/en/smart-ring-oem-odm',
@@ -24,14 +24,9 @@ const TYPES = [
     desc: 'Capability matrix: hardware, firmware, app, SDK, cloud API',
   },
   {
-    href: '/partner/hospital',
-    name: 'Hospital collaboration',
-    desc: 'Clinical research / evaluation inquiries (form currently in Chinese)',
-  },
-  {
-    href: '/partner/enterprise',
-    name: 'Enterprise programs',
-    desc: 'Workplace health and bulk procurement inquiries (form currently in Chinese)',
+    href: '/en/company/longvon',
+    name: 'About LONGVON',
+    desc: 'Company profile for technology and partnership context',
   },
 ];
 

@@ -1,4 +1,5 @@
 import type { CooperationType } from '../lib/partner-api';
+import type { SiteLocale } from '../lib/i18n-routes';
 
 /**
  * 各合作类型的表单字段展示差异配置。
@@ -19,7 +20,20 @@ export interface CooperationFieldConfig {
   companyLabel: string;
 }
 
-export const COOPERATION_FIELD_CONFIG: Record<CooperationType, CooperationFieldConfig> = {
+export interface FormChromeCopy {
+  formTitleSuffix: string;
+  contactName: string;
+  phone: string;
+  email: string;
+  emailRequired: boolean;
+  websiteHoneypot: string;
+  submit: string;
+  submitting: string;
+  success: string;
+  error: string;
+}
+
+const CONFIG_ZH: Record<CooperationType, CooperationFieldConfig> = {
   hospital: {
     label: '医院合作',
     positionLabel: '科室 / 职务',
@@ -69,3 +83,94 @@ export const COOPERATION_FIELD_CONFIG: Record<CooperationType, CooperationFieldC
     companyLabel: '企业名称',
   },
 };
+
+const CONFIG_EN: Record<CooperationType, CooperationFieldConfig> = {
+  hospital: {
+    label: 'Hospital collaboration',
+    positionLabel: 'Department / Role',
+    positionPlaceholder: 'e.g. Sleep Medicine Center Director',
+    remarkLabel: 'Project notes',
+    remarkPlaceholder: 'e.g. clinical research interest or department evaluation flow',
+    companyLabel: 'Hospital name',
+  },
+  pharmacy: {
+    label: 'Pharmacy channel',
+    positionLabel: 'Role',
+    positionPlaceholder: 'e.g. Chain procurement lead',
+    remarkLabel: 'Store footprint',
+    remarkPlaceholder: 'e.g. number of stores and regions',
+    companyLabel: 'Pharmacy / chain name',
+  },
+  oem: {
+    label: 'OEM / ODM',
+    positionLabel: 'Role',
+    positionPlaceholder: 'e.g. Procurement Director',
+    remarkLabel: 'Volume & requirements',
+    remarkPlaceholder: 'e.g. estimated annual volume, certifications, customization needs',
+    companyLabel: 'Company name',
+  },
+  odm: {
+    label: 'ODM',
+    positionLabel: 'Role',
+    positionPlaceholder: 'e.g. Product Manager',
+    remarkLabel: 'Product requirements',
+    remarkPlaceholder: 'e.g. target form factor and launch timeline',
+    companyLabel: 'Company name',
+  },
+  distributor: {
+    label: 'Regional distribution',
+    positionLabel: 'Role',
+    positionPlaceholder: 'e.g. Channel lead',
+    remarkLabel: 'Territory & channels',
+    remarkPlaceholder: 'e.g. target regions and existing channel assets',
+    companyLabel: 'Company name',
+  },
+  enterprise: {
+    label: 'Enterprise programs',
+    positionLabel: 'Role',
+    positionPlaceholder: 'e.g. HR / employee wellness lead',
+    remarkLabel: 'Program scale',
+    remarkPlaceholder: 'e.g. estimated quantity and use case',
+    companyLabel: 'Company name',
+  },
+};
+
+const CHROME_ZH: FormChromeCopy = {
+  formTitleSuffix: '意向登记',
+  contactName: '联系人姓名 *',
+  phone: '手机号 *',
+  email: '邮箱',
+  emailRequired: false,
+  websiteHoneypot: '网站',
+  submit: '提交合作意向',
+  submitting: '提交中...',
+  success: '提交成功，我们会在1-2个工作日内与您联系。',
+  error: '提交失败，请稍后重试或直接联系我们。',
+};
+
+const CHROME_EN: FormChromeCopy = {
+  formTitleSuffix: ' inquiry',
+  contactName: 'Contact name *',
+  phone: 'Phone / WhatsApp *',
+  email: 'Work email *',
+  emailRequired: true,
+  websiteHoneypot: 'Website',
+  submit: 'Submit inquiry',
+  submitting: 'Submitting...',
+  success: 'Thanks — our team will reply within 1–2 business days.',
+  error: 'Submission failed. Please try again or email us directly.',
+};
+
+/** @deprecated Prefer getCooperationFieldConfig(type, locale) */
+export const COOPERATION_FIELD_CONFIG = CONFIG_ZH;
+
+export function getCooperationFieldConfig(
+  cooperationType: CooperationType,
+  locale: SiteLocale = 'zh',
+): CooperationFieldConfig {
+  return (locale === 'en' ? CONFIG_EN : CONFIG_ZH)[cooperationType];
+}
+
+export function getFormChromeCopy(locale: SiteLocale = 'zh'): FormChromeCopy {
+  return locale === 'en' ? CHROME_EN : CHROME_ZH;
+}

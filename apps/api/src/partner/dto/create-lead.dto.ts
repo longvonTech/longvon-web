@@ -1,4 +1,4 @@
-import { IsEmail, IsIn, IsOptional, IsPhoneNumber, IsString, MaxLength } from 'class-validator';
+import { IsEmail, IsIn, IsOptional, IsString, Matches, MaxLength } from 'class-validator';
 
 // 与schema.prisma的Lead.cooperationType CHECK约束保持完全一致（TASK-104裁定的六值枚举），
 // 这是唯一权威定义，QualificationForm的前端选项与本DTO都必须以此为准，不在别处重复定义
@@ -30,10 +30,10 @@ export class CreateLeadDto {
   @MaxLength(100)
   contactName!: string;
 
-  // 校验为中国大陆手机号格式；OEM/Distributor等B2B咨询可能来自境外企业，
-  // 如未来发现这类需求量明显，需要放宽为更通用的国际号码格式校验，
-  // 本Sprint先按主要目标市场(国内)的实际情况实现
-  @IsPhoneNumber('CN')
+  // CN mobile (1[3-9]…) or international dialing (+ / spaces / dashes).
+  // EN OEM/partner forms need non-CN numbers; CN pages still send mainland mobiles.
+  @Matches(/^(1[3-9]\d{9}|\+?[\d\s\-().]{7,20})$/)
+  @MaxLength(30)
   phone!: string;
 
   @IsOptional()

@@ -2,10 +2,12 @@ import type { Metadata } from 'next';
 import Script from 'next/script';
 import { GlobalNav } from '../components/GlobalNav';
 import { GlobalFooter } from '../components/GlobalFooter';
+import { getSiteUrl } from '../lib/site';
 import './globals.css';
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.longvon.com'),
+  // Production builds must set NEXT_PUBLIC_SITE_URL; getSiteUrl() refuses localhost in production.
+  metadataBase: new URL(getSiteUrl()),
   title: {
     default: 'MATEYOU · AI数字健康平台 | 龙汾科技',
     template: '%s | MATEYOU',

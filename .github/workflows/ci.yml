@@ -33,6 +33,8 @@ jobs:
       REDIS_URL: redis://localhost:6379
       JWT_ACCESS_SECRET: ci-only-placeholder-secret
       JWT_REFRESH_SECRET: ci-only-placeholder-secret-2
+      # Required at Next.js build time after Task #15 (prod rejects missing/localhost SITE_URL).
+      NEXT_PUBLIC_SITE_URL: https://www.longvon.com
 
     steps:
       - uses: actions/checkout@v4

@@ -56,7 +56,7 @@ function orgNode() {
     logo: { '@type': 'ImageObject', url: logoUrl() },
     image: logoUrl(),
     description:
-      'LONGVON (龙汾科技（深圳）有限公司) is a smart ring manufacturer and OEM/ODM technology provider offering hardware, firmware, health algorithms, mobile apps, SDK/API and manufacturing. MATEYOU is its product brand — not the manufacturer.',
+      'LONGVON (龙汾科技（深圳）有限公司) is a smart ring manufacturer and OEM/ODM technology provider offering hardware, firmware, health algorithms, mobile apps, SDK/API and manufacturing. MATEYOU is its product brand — not the manufacturer. Enterprise credentials stated on-site include National High-Tech Enterprise and related SME designations; manufacturing uses Class 100,000 cleanroom controls and ISO 13485–oriented quality practices (project-scoped).',
     foundingDate: '2017',
     address: {
       '@type': 'PostalAddress',
@@ -80,15 +80,25 @@ function orgNode() {
       'HRV',
       'AHI',
       'ODI',
+      'ISO 13485',
+      'NMPA medical device manufacturing practices',
+      'Class 100000 cleanroom',
+      'National High-Tech Enterprise',
+    ],
+    award: [
+      'National High-Tech Enterprise',
+      'Shenzhen Specialized and Innovative Enterprise',
+      'Shenzhen Innovative SME',
+      'National Technology-Based SME',
     ],
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'sales',
       availableLanguage: ['Chinese', 'English'],
       areaServed: ['CN', 'Worldwide'],
-      url: `${siteOrigin()}/partner/oem`,
+      url: `${siteOrigin()}/en/partner/oem`,
     },
-    sameAs: ['https://www.mateyou.net'],
+    sameAs: ['https://www.mateyou.net', `${siteOrigin()}/en/company/longvon`],
     mainEntityOfPage: `${siteOrigin()}/company/longvon`,
   };
 }

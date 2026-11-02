@@ -193,7 +193,7 @@ export default function Ring1CPage() {
           </p>
         </header>
 
-        <figure style={{ ...sectionPad, paddingBottom: 56, margin: 0 }}>
+        <figure style={{ ...sectionPad, paddingBottom: 56 }}>
           <Img
             slot="ring1c-hero-main"
             alt="MATEYOU Ring1C 智能戒指产品图"

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Script from 'next/script';
 import { GlobalNav } from '../components/GlobalNav';
 import { GlobalFooter } from '../components/GlobalFooter';
+import { LeadAttributionCapture } from '../components/LeadAttributionCapture';
 import { getSiteUrl } from '../lib/site';
 import './globals.css';
 
@@ -51,6 +52,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         )}
       </head>
       <body>
+        <LeadAttributionCapture />
         <GlobalNav />
         {children}
         <GlobalFooter />

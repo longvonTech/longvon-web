@@ -16,6 +16,26 @@ export interface LeadSubmission {
   utmSource?: string;
   utmMedium?: string;
   utmCampaign?: string;
+  /** First-touch document.referrer (host+path). */
+  referrer?: string;
+  /** First landing path in the session. */
+  landingPage?: string;
+  firstLandingPage?: string;
+  firstReferrer?: string;
+  firstUtmSource?: string;
+  firstUtmMedium?: string;
+  firstUtmCampaign?: string;
+  firstUtmContent?: string;
+  firstUtmTerm?: string;
+  firstVisitAt?: string;
+  latestLandingPage?: string;
+  latestReferrer?: string;
+  latestUtmSource?: string;
+  latestUtmMedium?: string;
+  latestUtmCampaign?: string;
+  latestVisitAt?: string;
+  attributionChannel?: string;
+  attributionConfidence?: string;
   website?: string; // honeypot，正常用户不应该填写这个字段
 }
 

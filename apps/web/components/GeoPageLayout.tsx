@@ -1,6 +1,7 @@
 import type { CSSProperties, ReactNode } from 'react';
 import Link from 'next/link';
 import { BreadcrumbSchema, FaqSchema, type FaqItem } from './StructuredData';
+import { EnTrustStrip } from './EnTrustStrip';
 import { getSiteUrl } from '../lib/site';
 import {
   GEO_NAV_EN,
@@ -138,6 +139,11 @@ export function GeoPageLayout({
             {h1}
           </h1>
           <p style={{ fontSize: 17, color: '#4B5563', lineHeight: 1.75, maxWidth: 720 }}>{lead}</p>
+          {locale === 'en' ? (
+            <div style={{ marginTop: 20, maxWidth: 720 }}>
+              <EnTrustStrip />
+            </div>
+          ) : null}
         </div>
       </section>
 

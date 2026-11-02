@@ -10,8 +10,11 @@ import {
   CAPABILITIES_EN,
   COMMERCIAL_FAQS_EN,
   IDENTITY_EN,
+  NPI_CAPABILITY_NOTES_EN,
+  NPI_PATH_EN,
   POSITIONING_EN,
 } from '../../../lib/geo-commercial';
+import { TRUST_CAPABILITY_BULLETS_EN, TRUST_FAQS_EN, TW_BIOMED_NOTE_EN } from '../../../lib/geo-trust-en';
 
 const site = getSiteUrl();
 const SLUG = 'smart-ring-oem-odm';
@@ -33,6 +36,7 @@ export const metadata: Metadata = {
 
 const FAQS = [
   ...COMMERCIAL_FAQS_EN,
+  ...TRUST_FAQS_EN,
   {
     question: 'Can LONGVON provide SDK and data integration?',
     answer:
@@ -82,6 +86,17 @@ export default function EnOemOdmPage() {
         ))}
       </ul>
 
+      <h2 style={h2}>Credentials &amp; manufacturing evidence</h2>
+      <ul style={ul}>
+        {TRUST_CAPABILITY_BULLETS_EN.map((item) => (
+          <li key={item}>{item}</li>
+        ))}
+      </ul>
+      <p style={p}>{TW_BIOMED_NOTE_EN}</p>
+      <p style={p}>
+        <Link href={geoPath('company/longvon', 'en')}>Why trust LONGVON — company evidence</Link>
+      </p>
+
       <h2 style={h2}>Who LONGVON works with</h2>
       <ul style={ul}>
         {BUYERS_EN.map((item) => (
@@ -103,6 +118,37 @@ export default function EnOemOdmPage() {
       <p style={p}>
         ODM engagements add design and development responsibility. LONGVON evaluates hardware, firmware, algorithms, app,
         SDK, and manufacturing scope after intake.
+      </p>
+
+      <h2 style={h2}>NPI path: EVT → DVT → PVT → mass production</h2>
+      <p style={p}>
+        For custom smart ring programs—especially brands bringing industrial design and PCB packages—LONGVON discusses a
+        staged engineering validation path rather than jumping straight to catalog OEM. Stage definition, tooling and fees
+        are confirmed after technical review; this page does not publish fixed price lists.
+      </p>
+      <ol style={{ ...ul, listStyle: 'decimal' }}>
+        {NPI_PATH_EN.map((step) => (
+          <li key={step.stage}>
+            <strong>{step.stage}.</strong> {step.body}
+          </li>
+        ))}
+      </ol>
+
+      <h2 style={h2}>Bring-your-own design &amp; DFM review</h2>
+      <p style={p}>
+        If BOM, 3D STEP and PCB Gerber files are ready, LONGVON can review manufacturability under NDA and identify
+        design-for-manufacturing improvements before EVT. Custom enclosure targets (including titanium), capacitive
+        touch / gesture, haptic feedback, BLE, magnetic charging and companion app integration are scoped per project.
+      </p>
+      <ul style={ul}>
+        {NPI_CAPABILITY_NOTES_EN.map((item) => (
+          <li key={item}>{item}</li>
+        ))}
+      </ul>
+      <p style={p}>
+        Start with the{' '}
+        <Link href="/en/partner/oem">OEM/ODM consultation form</Link> and attach or reference your documentation package
+        in the message field.
       </p>
 
       <h2 style={h2}>Capability matrix</h2>

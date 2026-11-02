@@ -7,7 +7,7 @@ import { PARTNER_CATEGORY_SLUG } from '../../../lib/article-path';
 import { getSiteUrl } from '../../../lib/site';
 
 export const metadata: Metadata = {
-  title: '商业合作资讯 | MATEYOU',
+  title: { absolute: '商业合作资讯 | LONGVON' },
   description:
     '智能戒指 OEM/ODM、代工合作、企业采购与渠道合作相关资讯，助力 B2B 决策者了解选型、流程与质量体系。',
   keywords: [

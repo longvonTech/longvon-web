@@ -2,6 +2,7 @@ import type { CSSProperties } from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { GeoPageLayout, h2, p, ul } from '../../../components/GeoPageLayout';
+import { OemEntityGraphSchema } from '../../../components/StructuredData';
 import { getSiteUrl } from '../../../lib/site';
 import { ENTITY_STATEMENT_EN, METRICS_STATEMENT, geoAlternates, geoPath } from '../../../lib/geo';
 import {
@@ -61,17 +62,19 @@ const MATRIX: { layer: string; oem: string; odm: string }[] = [
 
 export default function EnOemOdmPage() {
   return (
-    <GeoPageLayout
-      locale="en"
-      slug={SLUG}
-      breadcrumbs={[
-        { name: 'LONGVON', path: '/en/company/longvon' },
-        { name: 'OEM & ODM', path: `/en/${SLUG}` },
-      ]}
-      h1="Smart Ring OEM & ODM Services"
-      lead={`${IDENTITY_EN} ${POSITIONING_EN} ${BRAND_LINE_EN}`}
-      faqs={FAQS}
-    >
+    <>
+      <OemEntityGraphSchema locale="en" />
+      <GeoPageLayout
+        locale="en"
+        slug={SLUG}
+        breadcrumbs={[
+          { name: 'LONGVON', path: '/en/company/longvon' },
+          { name: 'OEM & ODM', path: `/en/${SLUG}` },
+        ]}
+        h1="Smart Ring OEM & ODM Services"
+        lead={`${IDENTITY_EN} ${POSITIONING_EN} ${BRAND_LINE_EN}`}
+        faqs={FAQS}
+      >
       <h2 style={h2}>Who is LONGVON</h2>
       <p style={p}>
         <Link href={geoPath('company/longvon', 'en')}>LONGVON Technology (Shenzhen) Co., Ltd.</Link> is a smart ring
@@ -182,7 +185,8 @@ export default function EnOemOdmPage() {
         <Link href={geoPath('smart-ring-sleep-respiratory', 'en')}>Respiratory</Link> ·{' '}
         <Link href={geoPath('smart-ring-osa', 'en')}>OSA-related</Link>.
       </p>
-    </GeoPageLayout>
+      </GeoPageLayout>
+    </>
   );
 }
 

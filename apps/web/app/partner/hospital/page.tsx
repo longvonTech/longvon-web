@@ -4,7 +4,7 @@ import { PartnerLandingLayout } from '../../../components/PartnerLandingLayout';
 import { getSiteUrl } from '../../../lib/site';
 
 export const metadata: Metadata = {
-  title: '医院合作 | MATEYOU',
+  title: { absolute: '医院合作 | MATEYOU' },
   description: 'MATEYOU面向医院的临床研究合作与睡眠/慢病管理科室设备引入方案。',
   alternates: { canonical: `${getSiteUrl()}/partner/hospital` },
 };

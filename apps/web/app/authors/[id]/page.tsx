@@ -11,8 +11,8 @@ interface Props {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { id } = await params;
   const author = await getAuthorById(id).catch(() => null);
-  if (!author) return { title: '作者未找到 | MATEYOU' };
-  return { title: `${author.name} | MATEYOU 健康知识库` };
+  if (!author) return { title: { absolute: '作者未找到 | MATEYOU' } };
+  return { title: { absolute: `${author.name} | MATEYOU 健康知识库` } };
 }
 
 export default async function AuthorPage({ params }: Props) {

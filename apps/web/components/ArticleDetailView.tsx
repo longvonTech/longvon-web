@@ -15,7 +15,12 @@ interface Props {
 
 export async function buildArticlePageMetadata({ slug, section }: Props): Promise<Metadata> {
   const article = await getArticleBySlug(slug).catch(() => null);
-  if (!article) return { title: section === 'partner' ? '文章未找到 | 商业合作' : '文章未找到 | MATEYOU' };
+  if (!article)
+    return {
+      title: {
+        absolute: section === 'partner' ? '文章未找到 | LONGVON' : '文章未找到 | MATEYOU',
+      },
+    };
 
   const categorySlug = article.category?.slug ?? null;
   const onPartner = isPartnerCategorySlug(categorySlug);
@@ -30,11 +35,13 @@ export async function buildArticlePageMetadata({ slug, section }: Props): Promis
     };
   }
 
-  const title = article.seoTitle || `${article.title} | MATEYOU`;
+  const brand = section === 'partner' ? 'LONGVON' : 'MATEYOU';
+  const raw = (article.seoTitle || article.title).trim();
+  const title = raw.includes('|') ? raw : `${raw} | ${brand}`;
   const description = article.seoDescription || article.summary || undefined;
   const url = getArticleAbsoluteUrl(getSiteUrl(), slug, categorySlug);
   return {
-    title,
+    title: { absolute: title },
     description,
     keywords: article.seoKeywords?.split(',').map((k) => k.trim()).filter(Boolean),
     alternates: { canonical: url },

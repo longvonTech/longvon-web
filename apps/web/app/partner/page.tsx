@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { getSiteUrl } from '../../lib/site';
 
 export const metadata: Metadata = {
-  title: '商业合作 | MATEYOU',
+  title: { absolute: '商业合作 | LONGVON' },
   description: '龙汾科技（LONGVON）面向医院、药房、OEM代工、区域代理、企业批量采购的商业合作入口。MATEYOU 是龙汾科技旗下品牌。',
   alternates: { canonical: `${getSiteUrl()}/partner` },
 };

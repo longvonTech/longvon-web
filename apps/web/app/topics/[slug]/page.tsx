@@ -13,10 +13,10 @@ interface Props {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const topic = await getTopicBySlug(slug).catch(() => null);
-  if (!topic) return { title: '专题未找到 | MATEYOU' };
+  if (!topic) return { title: { absolute: '专题未找到 | MATEYOU' } };
   const title = topic.name + ' | MATEYOU 健康知识库';
   const url = getSiteUrl() + '/topics/' + slug;
-  return { title, description: topic.description ?? undefined, alternates: { canonical: url } };
+  return { title: { absolute: title }, description: topic.description ?? undefined, alternates: { canonical: url } };
 }
 
 export default async function TopicHubPage({ params }: Props) {

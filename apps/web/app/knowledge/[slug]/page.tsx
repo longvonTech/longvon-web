@@ -15,12 +15,13 @@ interface Props {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const article = await getArticleBySlug(slug).catch(() => null);
-  if (!article) return { title: '文章未找到 | MATEYOU' };
-  const title = article.seoTitle || `${article.title} | MATEYOU`;
+  if (!article) return { title: { absolute: '文章未找到 | MATEYOU' } };
+  const raw = article.seoTitle || article.title;
+  const title = /MATEYOU/i.test(raw) ? raw : `${raw} | MATEYOU`;
   const description = article.seoDescription || article.summary || undefined;
   const url = `${getSiteUrl()}/knowledge/${article.slug}`;
   return {
-    title,
+    title: { absolute: title },
     description,
     alternates: { canonical: url },
     openGraph: { title, description, url, type: 'article' },

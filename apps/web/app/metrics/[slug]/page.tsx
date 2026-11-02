@@ -18,9 +18,9 @@ type Props = { params: Promise<{ slug: string }> };
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const category = getHealthMetricBySlug(slug);
-  if (!category) return { title: '监测参数' };
+  if (!category) return { title: { absolute: '监测参数 | MATEYOU' } };
   return {
-    title: `${category.title} · ${category.count}项监测参数`,
+    title: { absolute: `${category.title} · ${category.count}项监测参数 | MATEYOU` },
     description: category.summary,
     alternates: { canonical: `${getSiteUrl()}/metrics/${slug}` },
   };

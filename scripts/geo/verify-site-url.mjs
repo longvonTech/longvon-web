@@ -106,6 +106,45 @@ test('StructuredData: no invented sku/mpn/InStock/free app price', () => {
   assert.match(sd, /getSiteUrl/);
 });
 
+test('GEO-FIX-01: knowsAbout does not list ISO 13485 or NMPA as credentials', () => {
+  const sd = readFileSync(join(root, 'apps/web/components/StructuredData.tsx'), 'utf8');
+  const knows = sd.slice(sd.indexOf('knowsAbout:'), sd.indexOf('award:'));
+  assert.doesNotMatch(knows, /ISO 13485/);
+  assert.doesNotMatch(knows, /NMPA medical device manufacturing practices/);
+  assert.match(sd, /ISO 13485–oriented quality practices/);
+});
+
+test('GEO-FIX-01: RFQ pair uses reciprocal oemRfqAlternates with EN x-default', () => {
+  const i18n = readFileSync(join(root, 'apps/web/lib/i18n-routes.ts'), 'utf8');
+  const zh = readFileSync(join(root, 'apps/web/app/partner/oem/page.tsx'), 'utf8');
+  const en = readFileSync(join(root, 'apps/web/app/en/partner/oem/page.tsx'), 'utf8');
+  assert.match(i18n, /export function oemRfqAlternates/);
+  assert.match(i18n, /xDefault:\s*'en'/);
+  assert.match(zh, /oemRfqAlternates\(site,\s*'zh'\)/);
+  assert.match(en, /oemRfqAlternates\(site,\s*'en'\)/);
+  assert.doesNotMatch(zh, /alternates:\s*\{\s*canonical:/);
+});
+
+test('GEO-FIX-01: html lang is SSR from path, not client useEffect', () => {
+  const layout = readFileSync(join(root, 'apps/web/app/layout.tsx'), 'utf8');
+  const enLayout = readFileSync(join(root, 'apps/web/app/en/layout.tsx'), 'utf8');
+  const mw = readFileSync(join(root, 'apps/web/middleware.ts'), 'utf8');
+  assert.match(layout, /headers\(\)/);
+  assert.match(layout, /html lang=\{lang\}/);
+  assert.doesNotMatch(layout, /lang="zh-CN"/);
+  assert.match(mw, /htmlLangFromPathname/);
+  assert.doesNotMatch(enLayout, /HtmlLang/);
+});
+
+test('GEO-FIX-01: EN OEM page reuses Organization @id via OemEntityGraphSchema', () => {
+  const page = readFileSync(join(root, 'apps/web/app/en/smart-ring-oem-odm/page.tsx'), 'utf8');
+  const sd = readFileSync(join(root, 'apps/web/components/StructuredData.tsx'), 'utf8');
+  assert.match(page, /OemEntityGraphSchema locale="en"/);
+  assert.match(sd, /export function OemEntityGraphSchema/);
+  assert.match(sd, /@id': orgId\(\)/);
+  assert.match(sd, /@id': oemServiceId\(\)/);
+});
+
 test('Ring1C pages link to company entity', () => {
   const zh = readFileSync(join(root, 'apps/web/app/products/ring1c/page.tsx'), 'utf8');
   const en = readFileSync(join(root, 'apps/web/app/en/products/ring1c/page.tsx'), 'utf8');

@@ -20,7 +20,7 @@ import {
   NPI_PATH_EN,
 } from '../../../../lib/geo-commercial';
 import { TRUST_FAQS_EN, TW_BIOMED_NOTE_EN } from '../../../../lib/geo-trust-en';
-import { siteAlternates } from '../../../../lib/i18n-routes';
+import { oemRfqAlternates } from '../../../../lib/i18n-routes';
 
 const OEM_FAQS_EN = [
   {
@@ -50,7 +50,7 @@ const site = getSiteUrl();
 export const metadata: Metadata = {
   title: { absolute: 'Smart Ring OEM/ODM & Product Development | LONGVON' },
   description: `LONGVON accepts OEM/ODM inquiries for customized smart ring hardware, firmware, health algorithms, apps, SDK/API integration and manufacturing. ${ENTITY_STATEMENT_EN}`,
-  alternates: siteAlternates(site, '/partner/oem', 'en'),
+  alternates: oemRfqAlternates(site, 'en'),
   openGraph: {
     title: 'Smart Ring OEM/ODM & Product Development | LONGVON',
     description:
@@ -169,7 +169,7 @@ export default function EnglishPartnerOemPage() {
   return (
     <main style={{ maxWidth: 920, margin: '48px auto 80px', padding: '0 20px', overflowX: 'hidden' }}>
       <OrganizationSchema />
-      <OemServiceSchema />
+      <OemServiceSchema locale="en" />
       <FaqSchema faqs={OEM_FAQS_EN} />
       <h1 style={{ fontSize: 'clamp(26px, 4vw, 36px)', fontWeight: 700, letterSpacing: '-0.03em', margin: 0 }}>
         Smart Ring OEM/ODM &amp; Product Development

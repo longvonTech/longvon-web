@@ -11,6 +11,7 @@ import {
   OemServiceSchema,
 } from '../../../components/StructuredData';
 import { getSiteUrl } from '../../../lib/site';
+import { oemRfqAlternates } from '../../../lib/i18n-routes';
 import { BRAND_RELATION_ZH, ENTITY_STATEMENT_ZH } from '../../../lib/geo';
 import {
   BRAND_LINE_ZH,
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
   title: { absolute: '智能戒指 OEM/ODM 合作 | LONGVON' },
   description:
     '龙汾科技（LONGVON）面向智能戒指硬件、固件、健康算法、App、SDK/API 集成及 OEM/ODM 制造提供项目咨询与合作。提交 RFQ，开始智能戒指产品开发讨论。',
-  alternates: { canonical: `${site}/partner/oem` },
+  alternates: oemRfqAlternates(site, 'zh'),
   openGraph: {
     title: '智能戒指 OEM/ODM 合作 | LONGVON',
     description:

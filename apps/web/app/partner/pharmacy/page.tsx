@@ -4,7 +4,7 @@ import { PartnerLandingLayout } from '../../../components/PartnerLandingLayout';
 import { getSiteUrl } from '../../../lib/site';
 
 export const metadata: Metadata = {
-  title: '药房渠道合作 | MATEYOU',
+  title: { absolute: '药房渠道合作 | MATEYOU' },
   description: 'MATEYOU面向连锁药房与零售药店的渠道铺货与销售支持合作方案。',
   alternates: { canonical: `${getSiteUrl()}/partner/pharmacy` },
 };

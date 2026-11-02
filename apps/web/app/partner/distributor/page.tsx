@@ -4,7 +4,7 @@ import { PartnerLandingLayout } from '../../../components/PartnerLandingLayout';
 import { getSiteUrl } from '../../../lib/site';
 
 export const metadata: Metadata = {
-  title: '区域代理合作 | MATEYOU',
+  title: { absolute: '区域代理合作 | MATEYOU' },
   description: 'MATEYOU面向区域代理商提供独家/非独家代理合作方案，涵盖区域保护政策与最小订货量说明。',
   alternates: { canonical: `${getSiteUrl()}/partner/distributor` },
 };

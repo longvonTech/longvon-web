@@ -1,8 +1,10 @@
 import type { Metadata } from 'next';
 import Script from 'next/script';
+import { headers } from 'next/headers';
 import { GlobalNav } from '../components/GlobalNav';
 import { GlobalFooter } from '../components/GlobalFooter';
 import { LeadAttributionCapture } from '../components/LeadAttributionCapture';
+import { HTML_LANG_HEADER } from '../lib/i18n-routes';
 import { getSiteUrl } from '../lib/site';
 import './globals.css';
 
@@ -10,11 +12,21 @@ export const metadata: Metadata = {
   // Production builds must set NEXT_PUBLIC_SITE_URL; getSiteUrl() refuses localhost in production.
   metadataBase: new URL(getSiteUrl()),
   title: {
-    default: 'MATEYOU · AI数字健康平台 | 龙汾科技',
-    template: '%s | MATEYOU',
+    default: '智能戒指制造商与 OEM/ODM | LONGVON 龙汾科技',
+    template: '%s | LONGVON',
   },
-  description: 'MATEYOU是龙汾科技旗下AI数字健康平台，搭载Ring1C智能戒指，提供睡眠、OSA、压力、减重、糖尿病、高原适应六大健康风险自评服务。',
-  keywords: ['健康自评', '智能戒指', 'OSA风险筛查', '睡眠监测', 'AI健康', 'Ring1C', '龙汾科技', 'MATEYOU'],
+  description:
+    'LONGVON（龙汾科技）是智能戒指制造商及 OEM/ODM 技术方案提供商，提供硬件、固件、健康算法、App、SDK/API 与制造。MATEYOU 是 LONGVON 的消费级智能戒指产品品牌，不是制造商。',
+  keywords: [
+    'LONGVON',
+    '龙汾科技',
+    '智能戒指制造商',
+    '智能戒指 OEM',
+    '智能戒指 ODM',
+    'MATEYOU',
+    'Ring1C',
+    '智能戒指',
+  ],
   authors: [{ name: '龙汾科技', url: 'https://www.longvon.com' }],
   openGraph: {
     type: 'website',
@@ -34,9 +46,11 @@ export const metadata: Metadata = {
 
 const BAIDU_TONGJI_ID = process.env.NEXT_PUBLIC_BAIDU_TONGJI_ID;
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const headerList = await headers();
+  const lang = headerList.get(HTML_LANG_HEADER) === 'en' ? 'en' : 'zh-CN';
   return (
-    <html lang="zh-CN">
+    <html lang={lang}>
       <head>
         {/* 百度统计——仅在有统计ID时注入，避免本地开发被误统计 */}
         {BAIDU_TONGJI_ID && (

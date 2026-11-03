@@ -9,7 +9,7 @@ const site = getSiteUrl();
 
 export const metadata: Metadata = {
   title: { absolute: 'OEM / ODM Inquiry | LONGVON' },
-  description: `Contact LONGVON for smart ring OEM manufacturing and ODM/custom development. ${ENTITY_STATEMENT_EN}`,
+  description: 'Develop custom smart rings with LONGVON. We provide OEM/ODM hardware, firmware, health algorithms, apps, SDK/API integration, testing and manufacturing.',
   alternates: siteAlternates(site, '/partner/oem', 'en'),
 };
 

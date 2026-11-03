@@ -10,7 +10,7 @@ const SLUG = 'smart-ring-osa';
 
 export const metadata: Metadata = {
   title: { absolute: '智能戒指 OSA 相关监测技术 | LONGVON' },
-  description: `LONGVON 智能戒指 OSA 相关与睡眠呼吸监测：AHI、ODI、SpO₂。71 项健康监测参数，含 22 项睡眠相关参数。非诊断型医疗器械表述。`,
+  description: `LONGVON 智能戒指 OSA 相关监测与 OSA 风险筛查：AHI、ODI、SpO₂。71 项健康监测参数，含 22 项睡眠相关参数。消费级健康监测技术，不是注册医疗器械；筛查结果不是 OSA 诊断，也不能替代医生评估。`,
   alternates: geoAlternates(site, SLUG, 'zh'),
   openGraph: {
     title: '智能戒指 OSA 相关监测技术 | LONGVON',
@@ -30,7 +30,8 @@ const FAQS = [
   },
   {
     question: 'LONGVON 是否诊断睡眠呼吸暂停？',
-    answer: '否。LONGVON 不宣称诊断、治疗或预防 OSA，也不宣称替代多导睡眠监测（PSG）。',
+    answer:
+      '否。LONGVON 不宣称诊断、治疗或预防 OSA，也不宣称替代多导睡眠监测（PSG）。Ring1C 的 OSA 风险筛查是消费级功能，结果不是临床诊断，也不能替代医生评估，且不是注册医疗器械许可。',
   },
   {
     question: 'LONGVON 发布了哪些 OSA 相关指标？',
@@ -69,7 +70,8 @@ export default function SmartRingOsaPage() {
       <h2 style={h2}>什么是 OSA？</h2>
       <p style={p}>
         阻塞性睡眠呼吸暂停（OSA）指睡眠中反复出现的呼吸中断。只有具备资质的临床医生可以诊断 OSA。可穿戴 OSA
-        相关指标在适当使用时可用于研究或筛查工作流，不能替代临床评估或 PSG。
+        相关指标在适当使用时可用于 OSA 风险筛查或研究工作流，不能替代临床医生的评估或 PSG。Ring1C 的 OSA
+        风险筛查是消费级功能，不是注册医疗器械，也不构成临床诊断。
       </p>
 
       <h2 style={h2}>OSA 相关监测</h2>

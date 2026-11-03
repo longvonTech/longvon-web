@@ -46,7 +46,7 @@ const FAQS = [
   {
     question: 'Is this a medical sleep diagnosis device?',
     answer:
-      'No. LONGVON positions these capabilities as health monitoring for reference and research/screening contexts. They do not diagnose, treat, or replace clinical polysomnography (PSG).',
+      'No. LONGVON positions these capabilities as health reference and research/screening uses, including Ring1C OSA screening / OSA risk screening. Screening results are not a clinical diagnosis or treatment, are not registered-device clearance, and do not replace a clinician’s assessment or PSG.',
   },
   {
     question: 'Is MATEYOU the manufacturer?',

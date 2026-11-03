@@ -39,7 +39,7 @@ const CONFIG_ZH: Record<CooperationType, CooperationFieldConfig> = {
     positionLabel: '科室 / 职务',
     positionPlaceholder: '如：睡眠医学中心 主任',
     remarkLabel: '合作意向说明',
-    remarkPlaceholder: '如：希望了解临床研究合作或科室设备引入流程',
+    remarkPlaceholder: '如：希望了解消费级戒指的技术交流方式，包括 OSA 风险筛查的功能边界',
     companyLabel: '医院名称',
   },
   pharmacy: {

@@ -57,7 +57,7 @@ export default function EnglishAboutPage() {
           <ul style={{ color: '#374151', lineHeight: 1.9, fontSize: 16 }}>
             <li>Smart ring hardware, firmware, apps, SDKs, and cloud APIs</li>
             <li>OEM manufacturing and ODM / custom development</li>
-            <li>Sleep monitoring, respiratory health monitoring, OSA-related monitoring</li>
+            <li>Sleep monitoring, respiratory health monitoring, OSA-related monitoring, and Ring1C OSA screening / OSA risk screening (consumer function; not a clinical diagnosis or a registered medical device)</li>
             <li>Healthcare wearable technology partnerships</li>
           </ul>
           <p style={{ marginTop: 28 }}>

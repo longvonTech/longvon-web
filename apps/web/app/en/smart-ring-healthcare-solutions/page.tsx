@@ -40,11 +40,12 @@ const FAQS = [
   {
     question: 'Does LONGVON diagnose or treat OSA?',
     answer:
-      'No. LONGVON uses “OSA-related monitoring” wording and does not claim to diagnose, treat, or prevent OSA, or to replace PSG.',
+      'No. LONGVON provides OSA screening / OSA risk screening and OSA-related monitoring. It does not claim to diagnose, treat, or prevent OSA, to replace PSG, or to hold registered-device clearance. Screening results are not a clinical diagnosis and do not replace a clinician’s assessment.',
   },
   {
     question: 'Is MATEYOU the healthcare manufacturer?',
-    answer: `No. ${BRAND_LINE_EN}`,
+    answer:
+      'No. MATEYOU is LONGVON’s product brand, not the manufacturer and not a medical-device company. The published product, Ring1C, is a consumer-electronics smart ring with OSA screening / OSA risk screening. It is not a registered medical device. Screening results are not a clinical diagnosis and do not replace a clinician’s assessment.',
   },
 ];
 

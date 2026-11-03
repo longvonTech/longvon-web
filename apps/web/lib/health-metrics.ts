@@ -134,7 +134,7 @@ export const HEALTH_METRIC_CATEGORIES: HealthMetricCategory[] = [
     emoji: '🫁',
     color: '#BF5AF2',
     count: 20,
-    summary: '专项监测睡眠呼吸健康，覆盖血氧跌落、AHI、ODI 等指标，结合 AI 提供 OSA 初筛参考。',
+    summary: '专项覆盖血氧跌落、AHI、ODI 等指标，并结合 AI 提供 OSA 初筛 / 风险筛查参考。初筛结果仅供健康参考，不是临床诊断，也不能替代医生评估；Ring1C 不是注册医疗器械。',
     parameters: [
       '血氧跌落≥4%次数和时长',
       '血氧跌落≥3%次数和时长',

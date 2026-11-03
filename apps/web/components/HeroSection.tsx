@@ -33,7 +33,7 @@ export function HeroSection() {
           把关爱，<br /><span style={{ color:'#60A5FA' }}>戴在手上</span>
         </h1>
         <p style={{ fontSize:'clamp(15px,2vw,20px)', color:'rgba(255,255,255,0.72)', lineHeight:1.7, maxWidth:480, marginBottom:'clamp(28px,5vw,40px)' }}>
-          MATEYOU Ring1C 智能健康戒指——专为睡眠呼吸暂停筛查和睡眠质量监测而生，24小时守护你和家人的健康。
+          MATEYOU Ring1C 是龙汾科技（LONGVON）制造的消费级智能戒指，用于睡眠呼吸暂停筛查（OSA 风险筛查）和睡眠质量监测。它不是注册医疗器械。筛查结果仅供健康参考，不是临床诊断，也不能替代医生评估。
         </p>
         <div style={{ display:'flex', gap:16, flexWrap:'wrap', marginBottom:28 }}>
           <Link href="/partner" style={{ padding:'15px 36px', background:'#fff', color:'#1D1D1F', borderRadius:980, fontSize:16, fontWeight:700 }}>了解合作方案</Link>
@@ -52,7 +52,7 @@ export function HeroSection() {
           ))}
           <span style={{ fontSize:12, color:'rgba(255,255,255,0.5)' }}>{COLORS[active].label}</span>
         </div>
-        <p style={{ marginTop:16, fontSize:12, color:'rgba(255,255,255,0.3)' }}>消费级健康监测设备 · 结果仅供参考 · 非医疗诊断</p>
+        <p style={{ marginTop:16, fontSize:12, color:'rgba(255,255,255,0.3)' }}>消费级健康监测设备 · 不是注册医疗器械 · OSA 风险筛查结果仅供参考，不构成临床诊断</p>
       </div>
       {/* Scroll indicator */}
       <div style={{ position:'absolute', bottom:32, left:'50%', transform:'translateX(-50%)', zIndex:3, textAlign:'center' }}>

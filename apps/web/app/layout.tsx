@@ -9,11 +9,12 @@ export const metadata: Metadata = {
   // Production builds must set NEXT_PUBLIC_SITE_URL; getSiteUrl() refuses localhost in production.
   metadataBase: new URL(getSiteUrl()),
   title: {
-    default: 'MATEYOU · AI数字健康平台 | 龙汾科技',
-    template: '%s | MATEYOU',
+    default: 'LONGVON 龙汾科技 | 智能戒指技术制造商与 OEM/ODM',
+    template: '%s | LONGVON',
   },
-  description: 'MATEYOU是龙汾科技旗下AI数字健康平台，搭载Ring1C智能戒指，提供睡眠、OSA、压力、减重、糖尿病、高原适应六大健康风险自评服务。',
-  keywords: ['健康自评', '智能戒指', 'OSA风险筛查', '睡眠监测', 'AI健康', 'Ring1C', '龙汾科技', 'MATEYOU'],
+  description:
+    '龙汾科技（深圳）有限公司（LONGVON）是智能戒指技术制造商与 OEM/ODM 提供商。MATEYOU 是其智能戒指产品品牌，不是制造商。MATEYOU Ring1C 是消费级智能戒指，具备 OSA 风险筛查，不是注册医疗器械。筛查结果仅供健康参考，不是临床诊断，也不能替代医生评估。',
+  keywords: ['龙汾科技', 'LONGVON', '智能戒指制造商', 'OEM', 'ODM', 'MATEYOU', 'Ring1C', 'OSA风险筛查', '消费级健康监测'],
   authors: [{ name: '龙汾科技', url: 'https://www.longvon.com' }],
   openGraph: {
     type: 'website',

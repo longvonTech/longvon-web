@@ -9,8 +9,9 @@ import { getSiteUrl } from '../lib/site';
 import { siteAlternates } from '../lib/i18n-routes';
 
 export const metadata: Metadata = {
-  title: 'MATEYOU Ring1C · AI健康智能戒指',
-  description: '不只是智能戒指。MATEYOU Ring1C 是你的个人健康智能系统。71+ 健康指标，睡眠、心脏、压力、血氧、OSA 风险全面监测。',
+  title: { absolute: 'LONGVON | MATEYOU Ring1C 消费级智能戒指' },
+  description:
+    '龙汾科技（LONGVON）研发制造 MATEYOU Ring1C。MATEYOU 是产品品牌，不是制造商。Ring1C 是消费级智能戒指，具备 OSA 风险筛查，不是注册医疗器械。公开口径为 71 项健康监测参数（含 22 项睡眠相关）。筛查结果仅供健康参考，不是临床诊断，也不能替代医生评估。',
   alternates: siteAlternates(getSiteUrl(), '/', 'zh'),
 };
 
@@ -49,8 +50,8 @@ export default function HomePage() {
           <div>
             <p style={{ fontSize:12, fontWeight:600, letterSpacing:'0.1em', textTransform:'uppercase', color:'#3B82F6', marginBottom:20 }}>Sleep Apnea Screening</p>
             <h2 style={{ fontSize:'clamp(26px,4vw,52px)', fontWeight:800, letterSpacing:'-0.02em', lineHeight:1.1, color:'#fff', marginBottom:24 }}>数百万人在睡眠中<br />停止呼吸，却浑然不觉</h2>
-            <p style={{ fontSize:18, color:'#94A3B8', lineHeight:1.7, marginBottom:12 }}>Ring1C 内置基于 STOP-BANG 量表的 OSA 风险评估，结合夜间血氧与心率数据，提供睡眠呼吸暂停风险参考评分。</p>
-            <p style={{ fontSize:12, color:'#475569', marginBottom:36 }}>*结果仅供参考，不构成医学诊断</p>
+            <p style={{ fontSize:18, color:'#94A3B8', lineHeight:1.7, marginBottom:12 }}>Ring1C 提供 OSA 风险筛查：可结合 STOP-BANG 量表与夜间血氧、心率数据，给出睡眠呼吸暂停风险参考。这是消费级功能，不是注册医疗器械。</p>
+            <p style={{ fontSize:12, color:'#475569', marginBottom:36 }}>*筛查结果仅供健康参考，不是临床诊断，也不能替代医生评估</p>
             <Link href="/assessment" style={{ fontSize:16, color:'#60A5FA', fontWeight:600 }}>做 OSA 风险自评 →</Link>
           </div>
         </div>
@@ -85,7 +86,7 @@ export default function HomePage() {
           <div>
             <p style={{ fontSize:12, fontWeight:600, letterSpacing:'0.1em', textTransform:'uppercase', color:'#4B5563', marginBottom:20 }}>Product Design</p>
             <h2 style={{ fontSize:'clamp(26px,4vw,52px)', fontWeight:800, letterSpacing:'-0.02em', lineHeight:1.1, color:'#fff', marginBottom:48 }}>极致轻薄，<br />高端工艺</h2>
-            {[['约 4g','超轻设计，佩戴忘我'],['氧化锆陶瓷','高端外壳，触感温润'],['IP68','游泳洗澡全程无忧'],['7天续航','单次充电持续一周'],['多波长PPG','高精度生理数据采集']].map(([v,d]) => (
+            {[['约 4g','超轻设计，佩戴忘我'],['氧化锆陶瓷','高端外壳，触感温润'],['IP68','游泳洗澡全程无忧'],['7天续航','单次充电持续一周'],['多波长PPG','生理信号采集']].map(([v,d]) => (
               <div key={v} style={{ display:'flex', justifyContent:'space-between', padding:'16px 0', borderBottom:'1px solid rgba(255,255,255,0.06)' }}>
                 <span style={{ fontSize:16, fontWeight:600, color:'#fff' }}>{v}</span>
                 <span style={{ fontSize:14, color:'#6B7280' }}>{d}</span>
@@ -118,7 +119,7 @@ export default function HomePage() {
           <h2 style={{ fontSize:'clamp(40px,5vw,64px)', fontWeight:800, letterSpacing:'-0.03em', color:'#1D1D1F', marginBottom:20 }}>共建数字健康生态</h2>
           <p style={{ fontSize:20, color:'#6B7280', maxWidth:500, margin:'0 auto 60px' }}>面向医院、药房、OEM代工、区域代理及企业客户开放多元合作形式</p>
           <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(160px,1fr))', gap:16, marginBottom:56 }}>
-            {[{href:'/partner/hospital',icon:'🏥',title:'医院合作',sub:'临床研究·设备引入'},{href:'/partner/pharmacy',icon:'💊',title:'药房渠道',sub:'铺货·品牌陈列'},{href:'/partner/oem',icon:'🏭',title:'OEM代工',sub:'产能·定制开发'},{href:'/partner/distributor',icon:'🗺️',title:'区域代理',sub:'区域保护·渠道'},{href:'/partner/enterprise',icon:'🏢',title:'企业采购',sub:'员工福利·批量'}].map(p => (
+            {[{href:'/partner/hospital',icon:'🏥',title:'医院合作',sub:'消费级设备技术交流'},{href:'/partner/pharmacy',icon:'💊',title:'药房渠道',sub:'铺货·品牌陈列'},{href:'/partner/oem',icon:'🏭',title:'OEM代工',sub:'产能·定制开发'},{href:'/partner/distributor',icon:'🗺️',title:'区域代理',sub:'区域保护·渠道'},{href:'/partner/enterprise',icon:'🏢',title:'企业采购',sub:'员工福利·批量'}].map(p => (
               <Link key={p.href} href={p.href} style={{ background:'#F9FAFB', borderRadius:20, padding:'28px 16px', display:'block', border:'1px solid #F3F4F6' }}>
                 <div style={{ fontSize:32, marginBottom:12 }}>{p.icon}</div>
                 <div style={{ fontWeight:600, fontSize:15, color:'#1D1D1F', marginBottom:6 }}>{p.title}</div>

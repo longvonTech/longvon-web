@@ -20,7 +20,7 @@ const site = getSiteUrl();
 
 export const metadata: Metadata = {
   title: { absolute: 'MATEYOU Ring1C Smart Ring | LONGVON Reference Product' },
-  description: `MATEYOU Ring1C is a smart ring reference product manufactured by LONGVON. ${METRICS_STATEMENT} Consumer health monitoring wearable—not a medical device. ${BRAND_RELATION_EN}`,
+  description: `MATEYOU Ring1C is a consumer smart ring manufactured by LONGVON. ${METRICS_STATEMENT} It includes OSA screening / OSA risk screening. It is not a registered medical device. Screening results are health reference only, not a clinical diagnosis, and not a substitute for a clinician's assessment. ${BRAND_RELATION_EN}`,
   alternates: siteAlternates(site, '/products/ring1c', 'en'),
 };
 
@@ -84,10 +84,12 @@ export default function EnglishRing1cPage() {
           MATEYOU Ring1C Smart Ring
         </h1>
         <p style={{ fontSize: 18, color: '#1F2937', lineHeight: 1.75, marginBottom: 24, maxWidth: 820 }}>
-          MATEYOU Ring1C is a smart ring reference product designed and manufactured by {LEGAL_NAME_EN}{' '}
-          (LONGVON). It is a consumer health-monitoring wearable—not a medical device—with {TOTAL_HEALTH_METRICS}{' '}
+          MATEYOU Ring1C is a consumer smart ring designed and manufactured by {LEGAL_NAME_EN}{' '}
+          (LONGVON). It is not a registered medical device. It has {TOTAL_HEALTH_METRICS}{' '}
           health monitoring parameters including 22 sleep-related parameters, covering sleep, SpO₂, HRV,
-          respiratory health, and OSA-related monitoring for health reference only (not diagnosis).{' '}
+          respiratory health, OSA-related monitoring, and OSA screening / OSA risk screening. Screening results
+          are for health reference only: they are not a clinical diagnosis and do not replace a clinician’s
+          assessment.{' '}
           {BRAND_RELATION_EN}
         </p>
         <p style={{ fontSize: 14, margin: 0, display: 'flex', flexWrap: 'wrap', gap: 12 }}>
@@ -128,8 +130,9 @@ export default function EnglishRing1cPage() {
             the public metric set)
           </li>
           <li style={liStyle}>
-            Respiratory / OSA-related monitoring discussions: AHI, ODI, and SpO₂-related indicators in a
-            screening/monitoring context—not a substitute for clinical diagnosis or PSG
+            Respiratory / OSA screening discussions: AHI, ODI, and SpO₂-related indicators in an OSA screening
+            / OSA risk-screening context—not a clinical diagnosis, and not a substitute for a clinician’s
+            assessment or PSG
           </li>
           <li style={liStyle}>
             Digital-health and wearable brand evaluation: Ring1C as a reference sample of LONGVON hardware,

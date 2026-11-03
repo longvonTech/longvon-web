@@ -4,7 +4,7 @@ import { getSiteUrl } from '../../lib/site';
 import { siteAlternates } from '../../lib/i18n-routes';
 
 export const metadata: Metadata = {
-  title: '关于龙汾科技 | LONGVON',
+  title: { absolute: '关于龙汾科技 | LONGVON' },
   description:
     '龙汾科技（深圳）有限公司（LONGVON）是智能戒指技术厂商与OEM/ODM提供商。MATEYOU是LONGVON打造的智能戒指及AI健康品牌。',
   alternates: siteAlternates(getSiteUrl(), '/about', 'zh'),
@@ -53,12 +53,12 @@ export default function AboutPage() {
         <div style={{ maxWidth:1000, margin:'0 auto' }}>
           <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(150px,1fr))', gap:2 }}>
             {[
-              { num:'2017',   label:'成立时间',       sub:'Founded' },
-              { num:'国高企', label:'国家高新技术企业', sub:'National High-Tech Enterprise' },
-              { num:'专精特新', label:'深圳市专精特新企业', sub:'Specialized & Innovative SME' },
-              { num:'AI+医疗', label:'核心技术方向',   sub:'Core Technology' },
-              { num:'院内+院外', label:'全场景覆盖',  sub:'Full-Scene Coverage' },
-              { num:'24×7',  label:'持续健康管理',    sub:'Continuous Health Care' },
+              { num:'2017', label:'成立时间', sub:'Founded' },
+              { num:'71', label:'健康监测参数', sub:'Public metric set' },
+              { num:'OSA', label:'风险筛查', sub:'Consumer function' },
+              { num:'戒指', label:'智能戒指与健康监测', sub:'Smart ring monitoring' },
+              { num:'合作', label:'个人与机构', sub:'Partnerships' },
+              { num:'参考', label:'日常健康参考', sub:'Daily health reference' },
             ].map((item, i) => (
               <div key={i} style={{ background:'#fff', padding:'28px 16px', textAlign:'center',
                 borderRadius: i===0 ? '16px 0 0 16px' : i===5 ? '0 16px 16px 0' : 0,
@@ -79,14 +79,14 @@ export default function AboutPage() {
           <h2 style={{ fontSize:'clamp(28px,4vw,44px)', fontWeight:700, letterSpacing:'-0.02em', marginBottom:32 }}>龙汾科技</h2>
           <div style={{ display:'flex', flexDirection:'column', gap:20 }}>
             <p style={{ fontSize:17, color:'#374151', lineHeight:1.85 }}>
-              龙汾科技（深圳）有限公司成立于2017年，是国家高新技术企业、深圳市专精特新中小企业、深圳市创新型中小企业。龙汾科技（LONGVON）是智能戒指技术厂商及 OEM/ODM 提供商；MATEYOU 是龙汾科技打造的智能戒指及 AI 健康品牌（非制造商）。完整实体说明见{' '}
+              龙汾科技（深圳）有限公司成立于2017年。龙汾科技（LONGVON）是智能戒指技术厂商及 OEM/ODM 提供商。MATEYOU 是产品品牌，不是制造商。公开产品 MATEYOU Ring1C 是消费级智能戒指，具备 OSA 风险筛查，不是注册医疗器械；筛查结果仅供健康参考，不是临床诊断，也不能替代医生评估。公司材料述及的资质名称（国家高新技术企业、深圳市专精特新中小企业、深圳市创新型中小企业）以可公开核验的证书为准。完整实体说明见{' '}
               <Link href="/company/longvon" style={{ color:'#2563EB' }}>龙汾科技 LONGVON 企业页</Link>。
             </p>
             <p style={{ fontSize:17, color:'#374151', lineHeight:1.85 }}>
               公司聚焦人工智能与健康领域融合创新，致力于构建覆盖个人、家庭、医疗机构及健康服务机构的AI健康管理基础设施，让专业健康服务能力更好地延伸到日常生活之中。
             </p>
             <p style={{ fontSize:17, color:'#374151', lineHeight:1.85 }}>
-              依托人工智能、大数据、云计算、智能可穿戴设备及医疗健康模型能力，龙汾科技打造了 MATEYOU® AI健康管理平台，通过持续的数据采集、智能分析和个性化干预，实现从&ldquo;疾病治疗&rdquo;向&ldquo;健康管理&rdquo;的转变。
+              依托人工智能、大数据、云计算与智能可穿戴设备，龙汾科技打造了 MATEYOU AI 健康参考平台，用于数据采集与趋势查看。平台不提供疾病治疗或临床诊断。
             </p>
           </div>
         </div>
@@ -104,7 +104,7 @@ export default function AboutPage() {
           </p>
           <div style={{ maxWidth:560, margin:'0 auto', textAlign:'left' }}>
             <p style={{ fontSize:17, color:'#6B7280', lineHeight:1.9, marginBottom:16 }}>
-              它能够持续了解你的身体变化，发现潜在健康风险，提供个性化健康建议，并在需要的时候连接医生、家人和专业健康服务。
+              它旨在持续记录身体数据变化，提示潜在健康风险参考，并提供个性化健康建议。这些建议不是临床诊断。如需医学判断，应咨询医生或专业健康服务。
             </p>
             <p style={{ fontSize:17, color:'#6B7280', lineHeight:1.9 }}>
               龙汾科技正在构建这样一个以数据为基础、以AI为核心、以健康服务为价值的智慧健康生态。
@@ -127,7 +127,7 @@ export default function AboutPage() {
                 imgPath: '/images/about/what-ai-platform.jpg',
                 bg: '#EFF6FF',
                 title:'AI健康管理平台',
-                desc:'通过多维健康数据与医疗知识模型，为用户提供持续的健康评估、风险预警、趋势分析及健康管理服务。',
+                desc:'通过多维健康数据，为用户提供健康数据查看、OSA 风险筛查参考与趋势分析。结果仅供健康参考，不构成临床诊断或医疗预警。',
               },
               {
                 imgSlot: 'about-what-terminal',
@@ -141,7 +141,7 @@ export default function AboutPage() {
                 imgPath: '/images/about/what-medical.jpg',
                 bg: '#ECFDF5',
                 title:'健康管理服务',
-                desc:'围绕睡眠健康、呼吸健康、慢病管理及老龄化健康需求，打造覆盖筛查、监测、评估、干预及随访的全周期服务体系。',
+                desc:'围绕睡眠与呼吸健康，提供 OSA 风险筛查、监测和健康参考评估。不提供疾病治疗或临床随访，也不是注册医疗器械服务。',
               },
               {
                 imgSlot: 'about-what-family',

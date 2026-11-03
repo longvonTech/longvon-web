@@ -4,13 +4,13 @@ import Link from 'next/link';
 import { getSiteUrl } from '../../lib/site';
 
 export const metadata: Metadata = {
-  title: '商业合作 | MATEYOU',
+  title: { absolute: '商业合作 | LONGVON' },
   description: '龙汾科技（LONGVON）面向医院、药房、OEM代工、区域代理、企业批量采购的商业合作入口。MATEYOU 是龙汾科技旗下品牌。',
   alternates: { canonical: `${getSiteUrl()}/partner` },
 };
 
 const PARTNER_TYPES = [
-  { slug: 'hospital', name: '医院合作', desc: '临床研究合作、科室设备引入' },
+  { slug: 'hospital', name: '医院合作', desc: '消费级设备技术交流' },
   { slug: 'pharmacy', name: '药房渠道合作', desc: '零售渠道铺货与销售支持' },
   { slug: 'oem', name: 'OEM代工合作', desc: '代工生产与产能合作' },
   { slug: 'distributor', name: '区域代理合作', desc: '区域独家/非独家代理' },

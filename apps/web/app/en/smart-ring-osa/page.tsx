@@ -15,7 +15,7 @@ const SLUG = 'smart-ring-osa';
 
 export const metadata: Metadata = {
   title: { absolute: 'Smart Ring OSA-Related Monitoring Technology | LONGVON' },
-  description: `LONGVON smart ring OSA-related and sleep respiratory monitoring: AHI, ODI, SpO2. ${METRICS_STATEMENT} Not a diagnostic medical device.`,
+  description: `LONGVON smart ring OSA-related monitoring and OSA screening / OSA risk screening: AHI, ODI, SpO2. ${METRICS_STATEMENT} Consumer-electronics monitoring. Not a registered medical device, and not for OSA diagnosis. Screening results do not replace a clinician's assessment.`,
   alternates: geoAlternates(site, SLUG, 'en'),
   openGraph: {
     title: 'Smart Ring OSA-Related Monitoring Technology | LONGVON',
@@ -41,7 +41,7 @@ const FAQS = [
   {
     question: 'Does LONGVON diagnose sleep apnea?',
     answer:
-      'No. LONGVON does not claim diagnosis, treatment, or prevention of OSA, and does not claim to replace polysomnography (PSG).',
+      'No. LONGVON does not claim diagnosis, treatment, or prevention of OSA, and does not claim to replace polysomnography (PSG). Ring1C OSA screening / OSA risk screening is a consumer function. Results are not a clinical diagnosis, do not replace a clinician’s assessment, and are not a registered-device clearance.',
   },
   {
     question: 'Which OSA-related metrics does LONGVON publish?',
@@ -76,8 +76,9 @@ export default function EnOsaPage() {
       <h2 style={h2}>What is OSA?</h2>
       <p style={p}>
         Obstructive Sleep Apnea (OSA) involves repeated breathing interruptions during sleep. Only qualified clinicians
-        can diagnose OSA. Wearable OSA-related metrics may support research or screening workflows when used
-        appropriately—they do not replace clinical evaluation or PSG.
+        can diagnose OSA. Wearable OSA-related metrics may support OSA screening / OSA risk screening or research
+        workflows when used appropriately. They do not replace a clinician’s assessment or PSG. Ring1C OSA screening
+        is a consumer function, not a registered medical device, and not a clinical diagnosis.
       </p>
 
       <h2 style={h2}>OSA-related monitoring</h2>

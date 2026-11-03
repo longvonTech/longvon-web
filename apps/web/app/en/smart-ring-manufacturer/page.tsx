@@ -17,7 +17,7 @@ const SLUG = 'smart-ring-manufacturer';
 
 export const metadata: Metadata = {
   title: { absolute: 'LONGVON | Smart Ring Manufacturer & OEM/ODM Provider' },
-  description: `${IDENTITY_EN} ${METRICS_STATEMENT}`,
+  description: 'LONGVON is a smart ring manufacturer offering OEM/ODM, custom hardware, firmware, health algorithms, apps, SDK/API integration and manufacturing.',
   alternates: geoAlternates(site, SLUG, 'en'),
   openGraph: {
     title: 'LONGVON | Smart Ring Manufacturer & OEM/ODM Provider',

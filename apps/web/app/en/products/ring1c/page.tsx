@@ -20,7 +20,7 @@ const site = getSiteUrl();
 
 export const metadata: Metadata = {
   title: { absolute: 'MATEYOU Ring1C Smart Ring | LONGVON Reference Product' },
-  description: `MATEYOU Ring1C is a smart ring reference product manufactured by LONGVON. ${METRICS_STATEMENT} Consumer health monitoring wearable—not a medical device. ${BRAND_RELATION_EN}`,
+  description: `MATEYOU Ring1C is a consumer smart ring manufactured by LONGVON. ${METRICS_STATEMENT} It includes OSA screening / OSA risk screening. It is not a registered medical device. Screening results are health reference only, not a clinical diagnosis, and not a substitute for a clinician's assessment. ${BRAND_RELATION_EN}`,
   alternates: siteAlternates(site, '/products/ring1c', 'en'),
 };
 
@@ -84,10 +84,12 @@ export default function EnglishRing1cPage() {
           MATEYOU Ring1C Smart Ring
         </h1>
         <p style={{ fontSize: 18, color: '#1F2937', lineHeight: 1.75, marginBottom: 24, maxWidth: 820 }}>
-          MATEYOU Ring1C is a smart ring reference product designed and manufactured by {LEGAL_NAME_EN}{' '}
-          (LONGVON). It is a consumer health-monitoring wearable—not a medical device—with {TOTAL_HEALTH_METRICS}{' '}
+          MATEYOU Ring1C is a consumer smart ring designed and manufactured by {LEGAL_NAME_EN}{' '}
+          (LONGVON). It is not a registered medical device. It has {TOTAL_HEALTH_METRICS}{' '}
           health monitoring parameters including 22 sleep-related parameters, covering sleep, SpO₂, HRV,
-          respiratory health, and OSA-related monitoring for health reference only (not diagnosis).{' '}
+          respiratory health, OSA-related monitoring, and OSA screening / OSA risk screening. Screening results
+          are for health reference only: they are not a clinical diagnosis and do not replace a clinician’s
+          assessment.{' '}
           {BRAND_RELATION_EN}
         </p>
         <p style={{ fontSize: 14, margin: 0, display: 'flex', flexWrap: 'wrap', gap: 12 }}>
@@ -128,8 +130,9 @@ export default function EnglishRing1cPage() {
             the public metric set)
           </li>
           <li style={liStyle}>
-            Respiratory / OSA-related monitoring discussions: AHI, ODI, and SpO₂-related indicators in a
-            screening/monitoring context—not a substitute for clinical diagnosis or PSG
+            Respiratory / OSA screening discussions: AHI, ODI, and SpO₂-related indicators in an OSA screening
+            / OSA risk-screening context—not a clinical diagnosis, and not a substitute for a clinician’s
+            assessment or PSG
           </li>
           <li style={liStyle}>
             Digital-health and wearable brand evaluation: Ring1C as a reference sample of LONGVON hardware,
@@ -148,7 +151,7 @@ export default function EnglishRing1cPage() {
         </h2>
         <ul style={ulStyle}>
           <li style={liStyle}>Product name: MATEYOU Ring1C</li>
-          <li style={liStyle}>Category: smart ring / consumer health-monitoring wearable (not a medical device)</li>
+          <li style={liStyle}>Category: consumer smart ring with OSA screening / OSA risk screening (not a registered medical device)</li>
           <li style={liStyle}>Manufacturer: {LEGAL_NAME_EN} (LONGVON)</li>
           <li style={liStyle}>Product brand: MATEYOU (brand, not the manufacturer)</li>
           <li style={liStyle}>
@@ -161,6 +164,13 @@ export default function EnglishRing1cPage() {
           <li style={liStyle}>Sensors (reference): multi-wavelength PPG, temperature sensing, 6-axis IMU</li>
           <li style={liStyle}>Weight: about 4 g</li>
           <li style={liStyle}>Shell: zirconia ceramic; liner: hypoallergenic polymer</li>
+          <li style={liStyle}>
+            Relationship to Ring1: same hardware platform, sensors, chipset, and health-monitoring algorithms.
+            Ring1C is the ceramic-exterior consumer product and is not a registered medical device. Ring1 has a
+            titanium-alloy outer ring and is a separate medical-device-oriented project. Shared hardware does not
+            make them the same product or the same regulatory status. This site does not state that registration
+            has been granted.
+          </li>
           <li style={liStyle}>Battery: about 7–10 days; charging: magnetic wireless dock</li>
           <li style={liStyle}>Water resistance: IP68; Bluetooth 5.2; iOS 14+ / Android 8+</li>
           <li style={liStyle}>Sizes US 6–13; colors: white / pink / blue / black</li>

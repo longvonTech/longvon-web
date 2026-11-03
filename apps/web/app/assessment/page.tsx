@@ -5,7 +5,7 @@ import { getSiteUrl } from '../../lib/site';
 
 export const metadata: Metadata = {
   title: '六大健康风险自评 · 免费健康评估',
-  description: '免费完成OSA风险、睡眠质量、压力水平、减重风险、糖尿病风险、高原健康六大自评，获取个性化健康参考报告。',
+  description: '免费完成 OSA 风险筛查、睡眠质量、压力水平、减重风险、糖尿病风险、高原健康六项问卷。结果仅供健康参考，不是临床诊断，也不能替代医生评估。',
   alternates: { canonical: `${getSiteUrl()}/assessment` },
 };
 
@@ -17,7 +17,7 @@ const ASSESSMENTS = [
     imgPath: '/images/assessment/osa.jpg',
     icon: '🫁',
     title: 'OSA风险筛查',
-    desc: '基于STOP-BANG量表，评估打鼾与睡眠呼吸暂停风险',
+    desc: '基于 STOP-BANG 量表的 OSA 风险筛查。结果不是临床诊断，也不能替代医生评估。',
     duration: '约3分钟',
     questions: '8题',
     color: '#2563EB',

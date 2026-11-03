@@ -4,8 +4,8 @@ import { HEALTH_METRIC_CATEGORIES, TOTAL_HEALTH_METRICS } from '../../lib/health
 import { getSiteUrl } from '../../lib/site';
 
 export const metadata: Metadata = {
-  title: '71+ 健康监测指标 · 7大功能参数清单',
-  description: `MATEYOU Ring1C 覆盖 ${TOTAL_HEALTH_METRICS} 项健康监测参数，涵盖快速检测、运动、心率、血氧、压力、睡眠与 OSA 筛查七大功能模块。`,
+  title: '71 项健康监测指标 · 7大功能参数清单',
+  description: `MATEYOU Ring1C 覆盖 ${TOTAL_HEALTH_METRICS} 项健康监测参数，涵盖快速检测、运动、心率、血氧、压力、睡眠与 OSA 筛查七大功能模块。OSA 筛查为消费级健康参考，不是临床诊断，也不是注册医疗器械。`,
   alternates: { canonical: `${getSiteUrl()}/metrics` },
 };
 
@@ -19,7 +19,6 @@ export default function MetricsIndexPage() {
           </p>
           <h1 style={{ fontSize: 'clamp(48px,8vw,80px)', fontWeight: 800, letterSpacing: '-0.03em', margin: '0 0 12px' }}>
             {TOTAL_HEALTH_METRICS}
-            <span style={{ color: '#3B82F6' }}>+</span>
           </h1>
           <p style={{ fontSize: 20, color: '#9CA3AF', marginBottom: 16 }}>健康监测指标</p>
           <p style={{ fontSize: 16, color: '#6B7280', lineHeight: 1.7 }}>

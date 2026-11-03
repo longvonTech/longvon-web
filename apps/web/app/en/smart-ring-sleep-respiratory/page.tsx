@@ -46,7 +46,7 @@ const FAQS = [
   {
     question: 'Does this diagnose OSA?',
     answer:
-      'No. LONGVON describes OSA-related monitoring for health reference or research/screening contexts. It does not diagnose or treat OSA, and does not replace PSG.',
+      'No. LONGVON describes both OSA-related monitoring and OSA screening / OSA risk screening for health reference or research/screening contexts. Screening results are not a clinical diagnosis, are not registered-device clearance, and do not replace a clinician’s assessment or PSG.',
   },
 ];
 
@@ -83,7 +83,9 @@ export default function EnSleepRespiratoryPage() {
 
       <h2 style={h2}>3. OSA-related Monitoring</h2>
       <p style={p}>
-        Use the phrase <strong>OSA-related monitoring</strong>—not “OSA diagnosis”. Details:{' '}
+        Use <strong>OSA-related monitoring</strong> and <strong>OSA screening / OSA risk screening</strong>—not “OSA
+        diagnosis”. Ring1C OSA screening is a consumer function, not a registered medical device, and screening results
+        do not replace a clinician’s assessment. Details:{' '}
         <Link href={geoPath('smart-ring-osa', 'en')}>OSA Technology</Link>.
       </p>
 

@@ -43,6 +43,13 @@ export default function EnglishAboutPage() {
           National High-Tech Enterprise and a Shenzhen Specialized &amp; Innovative SME (as stated on company materials).
         </p>
         <p style={{ fontSize: 16, color: '#374151', lineHeight: 1.8, marginBottom: 14 }}>{BRAND_RELATION_EN}</p>
+        <p style={{ fontSize: 16, color: '#374151', lineHeight: 1.8, marginBottom: 14 }}>
+          Ring1 and Ring1C share the same hardware platform, sensors, chipset, and health-monitoring algorithms.
+          Ring1C has a ceramic outer ring and is a consumer smart ring with OSA screening / OSA risk screening; it is
+          not a registered medical device. Ring1 has a titanium-alloy outer ring and is a separate medical-device-oriented
+          project. Shared hardware does not make them the same product or give them the same regulatory status. This
+          site does not state that registration has been granted.
+        </p>
         <p style={{ fontSize: 16, color: '#374151', lineHeight: 1.8 }}>
           Full entity page:{' '}
           <Link href="/en/company/longvon" style={{ color: '#2563EB' }}>
@@ -57,7 +64,7 @@ export default function EnglishAboutPage() {
           <ul style={{ color: '#374151', lineHeight: 1.9, fontSize: 16 }}>
             <li>Smart ring hardware, firmware, apps, SDKs, and cloud APIs</li>
             <li>OEM manufacturing and ODM / custom development</li>
-            <li>Sleep monitoring, respiratory health monitoring, OSA-related monitoring</li>
+            <li>Sleep monitoring, respiratory health monitoring, OSA-related monitoring, and Ring1C OSA screening / OSA risk screening (consumer function; not a clinical diagnosis or a registered medical device)</li>
             <li>Healthcare wearable technology partnerships</li>
           </ul>
           <p style={{ marginTop: 28 }}>

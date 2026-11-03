@@ -38,6 +38,7 @@ Never: MATEYOU = manufacturer
 - Sleep Monitoring
 - Respiratory Monitoring
 - OSA-related Monitoring
+- OSA Screening / OSA Risk Screening (Ring1C consumer function; not a clinical diagnosis or device registration)
 
 ## Metrics
 
@@ -58,6 +59,15 @@ LONGVON
 
 Brand branch (do not reverse):
 LONGVON → MATEYOU → MATEYOU Ring1C
+
+## Product and regulatory positioning
+
+- MATEYOU Ring1C is the consumer smart ring published on this site. It includes OSA screening / OSA risk screening (OSA 风险筛查 / 初筛) as a product function.
+- OSA screening results are for health reference only. They are not a clinical diagnosis, not treatment, and not a substitute for a clinician's assessment or PSG.
+- MATEYOU Ring1C is not a registered medical device. This site does not publish a medical-device registration number for Ring1C.
+- Ring1 and Ring1C share the same hardware platform, sensors, chipset, and health-monitoring algorithms.
+- Exterior and positioning differ. Ring1C has a ceramic outer ring. It is the consumer smart ring published on this site, with OSA screening / OSA risk screening, and it is not a registered medical device. Ring1 has a titanium-alloy outer ring and is a separate medical-device-oriented project.
+- Shared hardware does not make Ring1 and Ring1C the same product or give them the same regulatory status. This site does not describe Ring1C as Ring1, and does not state that any medical-device registration has been granted.
 
 ## Company
 

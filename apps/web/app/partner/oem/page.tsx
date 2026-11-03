@@ -4,7 +4,7 @@ import { PartnerLandingLayout } from '../../../components/PartnerLandingLayout';
 import { getSiteUrl } from '../../../lib/site';
 
 export const metadata: Metadata = {
-  title: 'OEM代工合作 | LONGVON',
+  title: { absolute: 'OEM代工合作 | LONGVON' },
   description:
     '龙汾科技（LONGVON）提供智能戒指/可穿戴设备的OEM代工生产合作。MATEYOU 是龙汾科技旗下智能戒指品牌。涵盖产能、质量体系与报价咨询。',
   alternates: { canonical: `${getSiteUrl()}/partner/oem` },
@@ -18,7 +18,7 @@ export default function OemPartnerPage() {
       intro="龙汾科技（LONGVON）面向有代工生产需求的企业，提供智能戒指/可穿戴健康监测设备的OEM代工合作方案。MATEYOU 是龙汾科技旗下智能戒指品牌。"
       valueProps={[
         { title: '产能说明', description: '提供现有产线产能与交付周期说明，可根据订单量评估排期' },
-        { title: '质量体系', description: '提供质量管理体系认证情况，供贵司供应链评估流程参考' },
+        { title: '质量体系', description: '可按项目说明已获授权公开的质量体系情况。未核验的认证编号不在本页列出。' },
         { title: '报价咨询', description: '根据贵司的订单规模与定制化需求提供报价方案' },
         { title: '定制化能力', description: '支持外观/包装/部分功能模块的定制化调整' },
       ]}

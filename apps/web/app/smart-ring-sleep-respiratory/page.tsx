@@ -34,7 +34,7 @@ const FAQS = [
   {
     question: '是否诊断 OSA？',
     answer:
-      '否。本站使用「OSA 相关监测」表述，用于健康参考或研究/筛查语境，不构成医学诊断，也不替代 PSG。',
+      '否。本站同时使用「OSA 相关监测」和「OSA 风险筛查」，用于健康参考或研究/筛查语境。筛查结果不构成临床诊断，不是注册医疗器械许可，也不替代医生评估或 PSG。',
   },
 ];
 
@@ -70,7 +70,7 @@ export default function SmartRingSleepRespiratoryPage() {
 
       <h2 style={h2}>3. OSA 相关监测</h2>
       <p style={p}>
-        使用「OSA 相关监测」表述，不使用「OSA 诊断」。详见{' '}
+        使用「OSA 相关监测」和「OSA 风险筛查」表述，不使用「OSA 诊断」。Ring1C 的 OSA 风险筛查是消费级功能，不是注册医疗器械，筛查结果也不能替代医生评估。详见{' '}
         <Link href={geoPath('smart-ring-osa')}>OSA 相关监测技术</Link>。
       </p>
 

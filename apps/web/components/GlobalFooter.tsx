@@ -95,8 +95,8 @@ export function GlobalFooter() {
             <div style={{ color: '#fff', fontWeight: 700, fontSize: 18, marginBottom: 12 }}>LONGVON</div>
             <p style={{ fontSize: 13, lineHeight: 1.7 }}>
               {isEn
-                ? 'LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in customized smart ring hardware, firmware, mobile apps, SDKs, cloud APIs, and health monitoring solutions. MATEYOU is its smart ring product brand.'
-                : 'LONGVON 是一家智能戒指技术制造商及 OEM/ODM 服务商，专注于智能戒指硬件、固件、移动 App、SDK、云端 API 及健康监测解决方案的定制开发与生产。MATEYOU 是其智能戒指产品品牌。公开口径：71 项健康监测参数，其中包含 22 项睡眠监测参数。'}
+                ? 'LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in customized smart ring hardware, firmware, mobile apps, SDKs, cloud APIs, and health monitoring solutions. MATEYOU is its smart ring product brand. MATEYOU Ring1C is a consumer smart ring with OSA screening / OSA risk screening. It is not a registered medical device. Screening results are not a clinical diagnosis and do not replace a clinician’s assessment.'
+                : 'LONGVON 是一家智能戒指技术制造商及 OEM/ODM 服务商，专注于智能戒指硬件、固件、移动 App、SDK、云端 API 及健康监测解决方案的定制开发与生产。MATEYOU 是其智能戒指产品品牌，不是制造商。MATEYOU Ring1C 是消费级智能戒指，具备 OSA 风险筛查，不是注册医疗器械。筛查结果不是临床诊断，也不能替代医生评估。公开口径：71 项健康监测参数，其中包含 22 项睡眠监测参数。'}
             </p>
             <p style={{ marginTop: 16 }}>
               <Link

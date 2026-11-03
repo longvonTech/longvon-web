@@ -43,7 +43,7 @@ export default async function MetricDetailPage({ params }: Props) {
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 12, marginBottom: 32, fontSize: 14 }}>
             <Link href="/" style={{ color: '#6B7280' }}>首页</Link>
             <span style={{ color: '#374151' }}>/</span>
-            <Link href="/metrics" style={{ color: '#6B7280' }}>71+ 监测指标</Link>
+            <Link href="/metrics" style={{ color: '#6B7280' }}>71 项监测指标</Link>
             <span style={{ color: '#374151' }}>/</span>
             <span style={{ color: '#9CA3AF' }}>{category.title}</span>
           </div>

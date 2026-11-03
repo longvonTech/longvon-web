@@ -39,11 +39,12 @@ const FAQS = [
   ...COMMERCIAL_FAQS_ZH,
   {
     question: '是否宣称诊断或治疗 OSA？',
-    answer: '否。LONGVON 使用「OSA 相关监测」表述，不宣称诊断、治疗或预防 OSA，也不宣称替代 PSG。',
+    answer:
+      '否。LONGVON 提供 OSA 风险筛查和 OSA 相关监测，不宣称诊断、治疗或预防 OSA，也不宣称替代 PSG 或取得注册医疗器械许可。筛查结果不是临床诊断，也不能替代医生评估。',
   },
   {
     question: 'MATEYOU 是医疗器械厂商吗？',
-    answer: `不是制造商身份。${BRAND_LINE_ZH}`,
+    answer: `都不是。MATEYOU 是 LONGVON 的产品品牌，不是制造商，也不是医疗器械厂商。公开产品 Ring1C 是消费级智能戒指，具备 OSA 风险筛查，不是注册医疗器械。筛查结果不是临床诊断，也不能替代医生评估。`,
   },
 ];
 

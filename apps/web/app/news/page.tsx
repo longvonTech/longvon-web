@@ -5,7 +5,7 @@ import { listPublishedNews } from '../../lib/news-api';
 import { getSiteUrl } from '../../lib/site';
 
 export const metadata: Metadata = {
-  title: '企业动态 | LONGVON 龙汾科技',
+  title: { absolute: '企业动态 | LONGVON 龙汾科技' },
   description: '龙汾科技企业新闻、公告与资讯发布。',
   alternates: { canonical: `${getSiteUrl()}/news` },
 };

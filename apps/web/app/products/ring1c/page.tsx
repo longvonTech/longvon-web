@@ -16,9 +16,9 @@ import { BRAND_RELATION_ZH, LEGAL_NAME_ZH } from '../../../lib/geo';
 const site = getSiteUrl();
 
 export const metadata: Metadata = {
-  title: 'MATEYOU Ring1C 智能戒指 | LONGVON 参考产品',
+  title: { absolute: 'MATEYOU Ring1C 智能戒指 | LONGVON 参考产品' },
   description:
-    'MATEYOU Ring1C 是 LONGVON（龙汾科技）研发制造的智能戒指参考产品：71 项健康监测参数（含 22 项睡眠相关），覆盖睡眠、SpO₂、HRV、呼吸与 OSA 相关监测。消费级可穿戴，非医疗器械。',
+    'MATEYOU Ring1C 是 LONGVON（龙汾科技）研发制造的消费级智能戒指：71 项健康监测参数（含 22 项睡眠相关），覆盖睡眠、SpO₂、HRV、呼吸与 OSA 相关监测，并具备 OSA 风险筛查。不是注册医疗器械。筛查结果仅供健康参考，不是临床诊断，也不能替代医生评估。',
   alternates: siteAlternates(site, '/products/ring1c', 'zh'),
 };
 
@@ -172,10 +172,10 @@ export default function Ring1CPage() {
               maxWidth: 820,
             }}
           >
-            MATEYOU Ring1C 是由{LEGAL_NAME_ZH}（LONGVON）研发制造的智能戒指参考产品，属于消费级健康监测可穿戴设备而非医疗器械；公开能力口径为{' '}
+            MATEYOU Ring1C 是由{LEGAL_NAME_ZH}（LONGVON）研发制造的消费级智能戒指，不是注册医疗器械；公开能力口径为{' '}
             {TOTAL_HEALTH_METRICS}{' '}
             项健康监测参数（其中 22 项与睡眠相关），覆盖睡眠、SpO₂、HRV、呼吸健康与 OSA
-            相关监测，结果仅供健康参考、不构成医学诊断。{BRAND_RELATION_ZH}
+            相关监测，并提供 OSA 风险筛查。筛查与监测结果仅供健康参考，不是临床诊断，也不能替代医生评估。{BRAND_RELATION_ZH}
           </p>
           <p style={{ fontSize: 14, margin: 0, display: 'flex', flexWrap: 'wrap', gap: 12 }}>
             <Link href="/company/longvon" style={{ color: '#60A5FA', fontWeight: 600 }}>
@@ -214,8 +214,8 @@ export default function Ring1CPage() {
               睡眠健康产品验证：需要戒指形态睡眠监测参数（公开口径含 22 项睡眠相关参数）的体验与方案演示
             </li>
             <li style={liStyle}>
-              呼吸 / OSA 相关监测方案沟通：以筛查与监测语境展示 AHI、ODI、SpO₂
-              等相关指标，不替代医学诊断或 PSG
+              呼吸 / OSA 风险筛查方案沟通：以 OSA 风险筛查与监测语境展示 AHI、ODI、SpO₂
+              等相关指标。筛查结果不是临床诊断，也不能替代医生评估或 PSG
             </li>
             <li style={liStyle}>
               数字健康 / 可穿戴品牌评估：将 Ring1C 作为 LONGVON 硬件、算法与 App 能力的参考样机
@@ -233,7 +233,7 @@ export default function Ring1CPage() {
           </h2>
           <ul style={ulStyle}>
             <li style={liStyle}>产品名称：MATEYOU Ring1C</li>
-            <li style={liStyle}>品类：智能戒指 / 消费级健康监测可穿戴设备（非医疗器械）</li>
+            <li style={liStyle}>品类：消费级智能戒指（不是注册医疗器械；具备 OSA 风险筛查）</li>
             <li style={liStyle}>制造商：{LEGAL_NAME_ZH}（LONGVON）</li>
             <li style={liStyle}>产品品牌：MATEYOU（品牌，不是制造商）</li>
             <li style={liStyle}>
@@ -246,6 +246,9 @@ export default function Ring1CPage() {
             <li style={liStyle}>传感器参考：多波长 PPG、温度传感、六轴运动传感</li>
             <li style={liStyle}>重量：约 4g</li>
             <li style={liStyle}>外壳：氧化锆陶瓷；内衬：抗过敏高分子聚合物</li>
+            <li style={liStyle}>
+              与 Ring1：同一硬件平台、传感器、芯片和健康监测算法。Ring1C 为陶瓷外壳的消费级产品，具备 OSA 风险筛查，不是注册医疗器械；Ring1 为钛合金外壳的医疗器械导向项目。共享硬件不表示二者是同一产品或同一监管身份。本站不声明注册已经获批。
+            </li>
             <li style={liStyle}>续航：约 7–10 天；充电：无线磁吸充电仓</li>
             <li style={liStyle}>防水：IP68；蓝牙：Bluetooth 5.2</li>
             <li style={liStyle}>兼容：iOS 14+ / Android 8+</li>
@@ -280,7 +283,7 @@ export default function Ring1CPage() {
               相对「仅贴牌、无研发链路」的戒指商品：Ring1C 背后是 LONGVON 的硬件、固件、健康算法、App 与制造参考链路，可用于 OEM/ODM 能力评估
             </li>
             <li style={liStyle}>
-              相对医疗器械 / 临床监护设备：Ring1C 定位消费级健康参考监测，不宣称诊断、治疗或替代医用检测流程
+              相对注册医疗器械 / 临床监护设备：Ring1C 是消费级智能戒指，具备 OSA 风险筛查，不宣称临床诊断、治疗或注册许可，也不替代医生评估或医用检测流程
             </li>
             <li style={liStyle}>
               相对纯工厂来料加工叙述：LONGVON 以 Technology + OEM/ODM +
@@ -376,8 +379,8 @@ export default function Ring1CPage() {
             {[
               {
                 slug: 'sleep-apnea',
-                title: '睡眠呼吸暂停相关监测',
-                desc: '含 AHI、ODI、血氧跌落分析等参数，用于健康参考筛查语境，不构成医学诊断。',
+                title: 'OSA 风险筛查',
+                desc: '含 AHI、ODI、血氧跌落与 OSA 初筛结果等参数，用于消费级 OSA 风险筛查。结果仅供健康参考，不是临床诊断，也不能替代医生评估或 PSG。',
                 slot: 'ring1c-feature-osa',
               },
               {

@@ -76,6 +76,8 @@ function orgNode() {
       'Sleep Monitoring',
       'Respiratory Health Monitoring',
       'OSA-related Monitoring',
+      'OSA Screening',
+      'OSA Risk Screening',
       'SpO2',
       'HRV',
       'AHI',
@@ -101,8 +103,7 @@ function brandNode() {
     alternateName: ['美特优'],
     url: `${siteOrigin()}/products/ring1c`,
     description:
-      'MATEYOU is LONGVON’s smart ring / AI health product brand. MATEYOU is not the manufacturer; LONGVON Technology (Shenzhen) Co., Ltd. manufactures the products.',
-    logo: logoUrl(),
+      'MATEYOU is LONGVON’s smart ring / AI health product brand. MATEYOU is not the manufacturer; LONGVON Technology (Shenzhen) Co., Ltd. manufactures the products. MATEYOU Ring1C is a consumer smart ring with OSA screening / OSA risk screening. It is not a registered medical device.',
   };
 }
 
@@ -158,11 +159,11 @@ function ring1cProductNode(locale: Locale, pageUrl: string) {
       ? ['Ring1C', 'MATEYOU 智能戒指', '美特优 Ring1C']
       : ['Ring1C', 'MATEYOU Smart Ring'],
     description: isZh
-      ? 'MATEYOU Ring1C 是 LONGVON（龙汾科技）研发制造的智能戒指参考产品：71 项健康监测参数（含 22 项睡眠相关），覆盖睡眠、SpO₂、HRV、呼吸健康与 OSA 相关监测。消费级可穿戴设备，非医疗器械；监测结果仅供健康参考，不构成医学诊断。MATEYOU 为产品品牌，LONGVON 为制造商。'
-      : 'MATEYOU Ring1C is a smart ring reference product manufactured by LONGVON: 71 health monitoring parameters including 22 sleep-related parameters (sleep, SpO₂, HRV, respiratory health, OSA-related monitoring). Consumer wearable—not a medical device. Health reference only, not diagnosis. MATEYOU is the brand; LONGVON is the manufacturer.',
+      ? 'MATEYOU Ring1C 是 LONGVON（龙汾科技）研发制造的消费级智能戒指：71 项健康监测参数（含 22 项睡眠相关），覆盖睡眠、SpO₂、HRV、呼吸健康与 OSA 相关监测，并具备 OSA 风险筛查。不是注册医疗器械。筛查与监测结果仅供健康参考，不是临床诊断，也不能替代医生评估。MATEYOU 为产品品牌，LONGVON 为制造商。'
+      : 'MATEYOU Ring1C is a consumer smart ring manufactured by LONGVON: 71 health monitoring parameters including 22 sleep-related parameters (sleep, SpO₂, HRV, respiratory health, OSA-related monitoring) and OSA screening / OSA risk screening. Not a registered medical device. Screening results are health reference only, not a clinical diagnosis, and not a substitute for a clinician’s assessment. MATEYOU is the brand; LONGVON is the manufacturer.',
     url: pageUrl,
     image: images,
-    category: isZh ? '智能戒指 / 可穿戴健康监测' : 'Smart Ring / Wearable Health Monitoring',
+    category: isZh ? '消费电子 / 智能戒指（非注册医疗器械）' : 'Consumer electronics / smart ring (not a registered medical device)',
     brand: { '@id': brandId() },
     manufacturer: { '@id': orgId() },
     isRelatedTo: { '@id': oemServiceId() },
@@ -178,7 +179,19 @@ function ring1cProductNode(locale: Locale, pageUrl: string) {
     additionalProperty: [
       property(isZh ? '健康监测参数总数' : 'Total health monitoring parameters', 71),
       property(isZh ? '睡眠相关参数' : 'Sleep-related parameters', 22),
-      property(isZh ? '产品定位' : 'Product class', isZh ? '消费级健康监测可穿戴（非医疗器械）' : 'Consumer health-monitoring wearable (not a medical device)'),
+      property(isZh ? '产品定位' : 'Product class', isZh ? '消费级智能戒指（不是注册医疗器械）' : 'Consumer smart ring (not a registered medical device)'),
+      property(
+        isZh ? '监管状态' : 'Regulatory status',
+        isZh
+          ? '消费级电子产品，不是注册医疗器械。具备 OSA 风险筛查；筛查结果不是临床诊断，不能替代医生评估。本站未公布医疗器械注册证编号，也不声明注册已经获批。'
+          : 'Consumer electronics, not a registered medical device. Includes OSA screening / OSA risk screening. Screening results are not a clinical diagnosis and do not replace a clinician’s assessment. This site does not publish a medical-device registration number and does not state that registration has been granted.',
+      ),
+      property(
+        isZh ? '与 Ring1 的关系' : 'Relationship to Ring1',
+        isZh
+          ? 'Ring1 与 Ring1C 使用同一硬件平台、传感器、芯片和健康监测算法。Ring1C 外壳为氧化锆陶瓷，是消费级智能戒指，不是注册医疗器械。Ring1 外壳为钛合金，是单独的医疗器械导向项目。共享硬件不表示二者是同一产品或同一监管身份。'
+          : 'Ring1 and Ring1C share the same hardware platform, sensors, chipset, and health-monitoring algorithms. Ring1C has a ceramic outer ring and is a consumer smart ring, not a registered medical device. Ring1 has a titanium-alloy outer ring and is a separate medical-device-oriented project. Shared hardware does not make them the same product or the same regulatory status.',
+      ),
       property(isZh ? '传感器' : 'Sensors', isZh ? '多波长PPG、温度传感、六轴运动传感' : 'Multi-wavelength PPG, temperature, 6-axis IMU'),
       property(isZh ? '续航' : 'Battery life', isZh ? '约7–10天' : 'About 7–10 days'),
       property(isZh ? '防水' : 'Water resistance', 'IP68'),
@@ -188,8 +201,8 @@ function ring1cProductNode(locale: Locale, pageUrl: string) {
       property(
         isZh ? '监测边界' : 'Monitoring boundary',
         isZh
-          ? '睡眠/呼吸/OSA相关监测仅供健康参考，不诊断、不治疗、不替代PSG'
-          : 'Sleep/respiratory/OSA-related monitoring for health reference only — not diagnosis, treatment, or PSG replacement',
+          ? 'Ring1C 提供 OSA 风险筛查，仅供健康参考；不是临床诊断、治疗或注册医疗器械，也不替代医生评估或 PSG'
+          : 'Ring1C provides OSA screening / OSA risk screening for health reference only — not a clinical diagnosis, treatment, registered medical device, or a substitute for a clinician or PSG',
       ),
     ],
     hasVariant: [
@@ -211,8 +224,8 @@ function mateyouAppNode(locale: Locale) {
     operatingSystem: 'iOS 14+, Android 8+',
     url: `${siteOrigin()}/products/ring1c`,
     description: isZh
-      ? 'MATEYOU App 是 Ring1C 配套应用，展示健康总览、睡眠、心脏、OSA 相关、压力与运动等监测视图。结果仅供健康参考，不构成医学诊断。'
-      : 'MATEYOU App accompanies Ring1C with health overview, sleep, heart, OSA-related, stress and activity views. Health reference only—not medical diagnosis.',
+      ? 'MATEYOU App 是 Ring1C 配套应用，展示健康总览、睡眠、心脏、OSA 风险筛查、压力与运动等视图。结果仅供健康参考，不是临床诊断。'
+      : 'MATEYOU App accompanies Ring1C with health overview, sleep, heart, OSA risk screening, stress and activity views. Health reference only—not a clinical diagnosis.',
     author: { '@id': orgId() },
     isRelatedTo: { '@id': ring1cId() },
   };
@@ -365,7 +378,7 @@ export function ProductSchema({ name, description, url, imageUrl, brand = 'MATEY
       name: ORG_NAME,
     },
     ...(imageUrl ? { image: imageUrl } : {}),
-    category: 'Smart Ring / Wearable Health Monitoring',
+    category: 'Consumer electronics / smart ring (not a registered medical device)',
   };
   return <JsonLd data={data} />;
 }
@@ -414,7 +427,7 @@ export const RING1C_FAQS_ZH: FaqItem[] = [
   {
     question: 'MATEYOU Ring1C 是什么产品？',
     answer:
-      'MATEYOU Ring1C 是 LONGVON（龙汾科技（深圳）有限公司）研发制造的智能戒指参考产品，属于消费级健康监测可穿戴设备，不是医疗器械。',
+      'MATEYOU Ring1C 是 LONGVON（龙汾科技（深圳）有限公司）研发制造的智能戒指参考产品，属于消费级健康监测可穿戴设备，不是注册医疗器械。它具备 OSA 风险筛查；筛查结果仅供健康参考，不是临床诊断，也不能替代医生评估。',
   },
   {
     question: 'Ring1C 的制造商是谁？MATEYOU 是制造商吗？',
@@ -424,12 +437,17 @@ export const RING1C_FAQS_ZH: FaqItem[] = [
   {
     question: 'Ring1C 有哪些健康监测参数？',
     answer:
-      '公开口径为 71 项健康监测参数，其中 22 项与睡眠相关，覆盖睡眠、SpO₂、HRV、呼吸健康与 OSA 相关监测。结果仅供健康参考，不构成医学诊断。',
+      '公开口径为 71 项健康监测参数，其中 22 项与睡眠相关，覆盖睡眠、SpO₂、HRV、呼吸健康与 OSA 相关监测，并包含 OSA 风险筛查。结果仅供健康参考，不构成医学诊断。',
   },
   {
     question: 'Ring1C 能否诊断或治疗 OSA？',
     answer:
-      '不能。Ring1C 提供 OSA 相关监测/筛查语境的指标（如 AHI、ODI 等）仅供健康参考，不诊断、不治疗，也不替代多导睡眠监测（PSG）。',
+      '不能。Ring1C 具备 OSA 风险筛查 / 初筛（如 AHI、ODI 等指标），结果仅供健康参考。它不诊断、不治疗，不替代医生评估或多导睡眠监测（PSG），也不是注册医疗器械。',
+  },
+  {
+    question: 'Ring1C 是注册医疗器械吗？它和 Ring1 是同一个产品吗？',
+    answer:
+      '不是同一个产品，也不是同一监管身份。Ring1 与 Ring1C 使用同一硬件平台、传感器、芯片和健康监测算法。Ring1C 外壳为氧化锆陶瓷，是消费级智能戒指，具备 OSA 风险筛查，不是注册医疗器械。Ring1 外壳为钛合金，是单独的医疗器械导向项目。本站不公布注册证编号，也不声明注册已经获批。筛查结果不是临床诊断，也不能替代医生评估。',
   },
 ];
 
@@ -437,7 +455,7 @@ export const RING1C_FAQS_EN: FaqItem[] = [
   {
     question: 'What is MATEYOU Ring1C?',
     answer:
-      'MATEYOU Ring1C is a smart ring reference product designed and manufactured by LONGVON Technology (Shenzhen) Co., Ltd. It is a consumer health-monitoring wearable, not a medical device.',
+      'MATEYOU Ring1C is a smart ring reference product designed and manufactured by LONGVON Technology (Shenzhen) Co., Ltd. It is a consumer smart ring, not a registered medical device. It includes OSA screening / OSA risk screening. Screening results are for health reference only, are not a clinical diagnosis, and do not replace a clinician’s assessment.',
   },
   {
     question: 'Who manufactures Ring1C? Is MATEYOU the manufacturer?',
@@ -447,11 +465,16 @@ export const RING1C_FAQS_EN: FaqItem[] = [
   {
     question: 'How many health monitoring parameters does Ring1C have?',
     answer:
-      'The public metric set is 71 total health monitoring parameters, including 22 sleep-related parameters (sleep, SpO₂, HRV, respiratory health, and OSA-related monitoring). For health reference only — not medical diagnosis.',
+      'The public metric set is 71 total health monitoring parameters, including 22 sleep-related parameters (sleep, SpO₂, HRV, respiratory health, OSA-related monitoring, and OSA risk screening). For health reference only — not a clinical diagnosis.',
   },
   {
     question: 'Can Ring1C diagnose or treat OSA?',
     answer:
-      'No. OSA-related indicators (such as AHI and ODI in a screening/monitoring context) are for health reference only. Ring1C does not diagnose or treat OSA and does not replace PSG.',
+      'No. Ring1C does provide OSA screening / OSA risk screening (including indicators such as AHI and ODI). Those results are for health reference only. Ring1C does not diagnose or treat OSA, does not replace a clinician’s assessment or PSG, and is not a registered medical device.',
+  },
+  {
+    question: 'Is Ring1C a registered medical device? Is it the same product as Ring1?',
+    answer:
+      'No. They are not the same product and do not have the same regulatory status. Ring1 and Ring1C share the same hardware platform, sensors, chipset, and health-monitoring algorithms. Ring1C has a ceramic outer ring and is a consumer-electronics smart ring with OSA screening / OSA risk screening; it is not a registered medical device. Ring1 has a titanium-alloy outer ring and is a separate medical-device-oriented project. This site does not publish a registration number and does not state that registration has been granted. Screening results are not a clinical diagnosis and do not replace a clinician’s assessment.',
   },
 ];

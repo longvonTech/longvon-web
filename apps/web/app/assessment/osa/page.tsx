@@ -100,7 +100,7 @@ export default function OsaAssessment() {
             </div>
           </div>
           <p style={{ fontSize: 12, color: '#9CA3AF', textAlign: 'center', lineHeight: 1.6 }}>
-            结果仅供健康参考，不构成医学诊断。如有健康疑虑请及时就医。
+            本问卷是 OSA 风险筛查，结果不是临床诊断，也不能替代医生评估。Ring1C 的 OSA 风险筛查是消费级功能，不是注册医疗器械。如有健康疑虑请及时就医。
           </p>
         </div>
       </main>
@@ -141,7 +141,7 @@ export default function OsaAssessment() {
                   <li>保持规律作息，避免熬夜</li>
                   <li>控制体重，保持健康BMI</li>
                   <li>侧卧睡眠，避免饮酒</li>
-                  <li>建议使用Ring1C持续监测夜间血氧</li>
+                  <li>如使用 Ring1C，可查看夜间血氧趋势，作为 OSA 风险筛查的健康参考。这不是医疗预警，也不能替代就医。</li>
                 </ul>
               )}
               {risk.level === 'moderate' && (
@@ -149,7 +149,7 @@ export default function OsaAssessment() {
                   <li>建议就医进行专业睡眠评估</li>
                   <li>积极控制体重和血压</li>
                   <li>戒烟戒酒，改善睡眠姿势</li>
-                  <li>使用Ring1C监测夜间血氧和心率变化</li>
+                  <li>如使用 Ring1C，可查看夜间血氧和心率趋势，作为 OSA 风险筛查的健康参考。这不是临床诊断，也不能替代医生评估。</li>
                 </ul>
               )}
               {risk.level === 'high' && (
@@ -157,7 +157,7 @@ export default function OsaAssessment() {
                   <li>强烈建议尽快就医，进行多导睡眠监测（PSG）</li>
                   <li>配合医生评估是否需要CPAP治疗</li>
                   <li>避免独自驾驶，警惕日间嗜睡</li>
-                  <li>使用Ring1C实时监测夜间血氧预警</li>
+                  <li>如使用 Ring1C，可查看夜间血氧趋势，作为 OSA 风险筛查的健康参考。这不是临床诊断或医疗预警，也不能替代医生评估或 PSG。</li>
                 </ul>
               )}
             </div>
@@ -169,7 +169,7 @@ export default function OsaAssessment() {
             </button>
           </div>
           <p style={{ fontSize: 12, color: '#9CA3AF', textAlign: 'center', lineHeight: 1.6 }}>
-            以上结果仅供健康参考，不构成医学诊断或治疗建议。
+            以上是 OSA 风险筛查结果，仅供健康参考，不是临床诊断或治疗建议，也不能替代医生评估。Ring1C 不是注册医疗器械。
           </p>
         </div>
       </main>

@@ -151,7 +151,7 @@ export default function EnglishRing1cPage() {
         </h2>
         <ul style={ulStyle}>
           <li style={liStyle}>Product name: MATEYOU Ring1C</li>
-          <li style={liStyle}>Category: smart ring / consumer health-monitoring wearable (not a medical device)</li>
+          <li style={liStyle}>Category: consumer smart ring with OSA screening / OSA risk screening (not a registered medical device)</li>
           <li style={liStyle}>Manufacturer: {LEGAL_NAME_EN} (LONGVON)</li>
           <li style={liStyle}>Product brand: MATEYOU (brand, not the manufacturer)</li>
           <li style={liStyle}>
@@ -164,6 +164,13 @@ export default function EnglishRing1cPage() {
           <li style={liStyle}>Sensors (reference): multi-wavelength PPG, temperature sensing, 6-axis IMU</li>
           <li style={liStyle}>Weight: about 4 g</li>
           <li style={liStyle}>Shell: zirconia ceramic; liner: hypoallergenic polymer</li>
+          <li style={liStyle}>
+            Relationship to Ring1: same hardware platform, sensors, chipset, and health-monitoring algorithms.
+            Ring1C is the ceramic-exterior consumer product and is not a registered medical device. Ring1 has a
+            titanium-alloy outer ring and is a separate medical-device-oriented project. Shared hardware does not
+            make them the same product or the same regulatory status. This site does not state that registration
+            has been granted.
+          </li>
           <li style={liStyle}>Battery: about 7–10 days; charging: magnetic wireless dock</li>
           <li style={liStyle}>Water resistance: IP68; Bluetooth 5.2; iOS 14+ / Android 8+</li>
           <li style={liStyle}>Sizes US 6–13; colors: white / pink / blue / black</li>

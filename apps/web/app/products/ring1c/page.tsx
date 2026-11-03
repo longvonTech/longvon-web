@@ -246,6 +246,9 @@ export default function Ring1CPage() {
             <li style={liStyle}>传感器参考：多波长 PPG、温度传感、六轴运动传感</li>
             <li style={liStyle}>重量：约 4g</li>
             <li style={liStyle}>外壳：氧化锆陶瓷；内衬：抗过敏高分子聚合物</li>
+            <li style={liStyle}>
+              与 Ring1：同一硬件平台、传感器、芯片和健康监测算法。Ring1C 为陶瓷外壳的消费级产品，具备 OSA 风险筛查，不是注册医疗器械；Ring1 为钛合金外壳的医疗器械导向项目。共享硬件不表示二者是同一产品或同一监管身份。本站不声明注册已经获批。
+            </li>
             <li style={liStyle}>续航：约 7–10 天；充电：无线磁吸充电仓</li>
             <li style={liStyle}>防水：IP68；蓝牙：Bluetooth 5.2</li>
             <li style={liStyle}>兼容：iOS 14+ / Android 8+</li>

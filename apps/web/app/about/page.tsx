@@ -54,11 +54,11 @@ export default function AboutPage() {
           <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(150px,1fr))', gap:2 }}>
             {[
               { num:'2017', label:'成立时间', sub:'Founded' },
-              { num:'71', label:'健康监测参数', sub:'Public metric set' },
-              { num:'OSA', label:'风险筛查', sub:'Consumer function' },
-              { num:'戒指', label:'智能戒指与健康监测', sub:'Smart ring monitoring' },
-              { num:'合作', label:'个人与机构', sub:'Partnerships' },
-              { num:'参考', label:'日常健康参考', sub:'Daily health reference' },
+              { num:'国高企', label:'国家高新技术企业', sub:'公司材料所述' },
+              { num:'专精特新', label:'深圳市专精特新企业', sub:'公司材料所述' },
+              { num:'OEM', label:'OEM / ODM 提供商', sub:'智能戒指制造商' },
+              { num:'71', label:'健康监测参数', sub:'公开口径' },
+              { num:'OSA', label:'Ring1C 风险筛查', sub:'消费级功能' },
             ].map((item, i) => (
               <div key={i} style={{ background:'#fff', padding:'28px 16px', textAlign:'center',
                 borderRadius: i===0 ? '16px 0 0 16px' : i===5 ? '0 16px 16px 0' : 0,
@@ -79,7 +79,7 @@ export default function AboutPage() {
           <h2 style={{ fontSize:'clamp(28px,4vw,44px)', fontWeight:700, letterSpacing:'-0.02em', marginBottom:32 }}>龙汾科技</h2>
           <div style={{ display:'flex', flexDirection:'column', gap:20 }}>
             <p style={{ fontSize:17, color:'#374151', lineHeight:1.85 }}>
-              龙汾科技（深圳）有限公司成立于2017年。龙汾科技（LONGVON）是智能戒指技术厂商及 OEM/ODM 提供商。MATEYOU 是产品品牌，不是制造商。公开产品 MATEYOU Ring1C 是消费级智能戒指，具备 OSA 风险筛查，不是注册医疗器械；筛查结果仅供健康参考，不是临床诊断，也不能替代医生评估。公司材料述及的资质名称（国家高新技术企业、深圳市专精特新中小企业、深圳市创新型中小企业）以可公开核验的证书为准。完整实体说明见{' '}
+              龙汾科技（深圳）有限公司成立于2017年。公司材料表述其为国家高新技术企业、深圳市专精特新中小企业。龙汾科技（LONGVON）是智能戒指技术厂商及 OEM/ODM 提供商。MATEYOU 是产品品牌，不是制造商。公开产品 MATEYOU Ring1C 是消费级智能戒指，外壳为氧化锆陶瓷，具备 OSA 风险筛查，不是注册医疗器械。Ring1 与 Ring1C 使用同一硬件平台、传感器、芯片和健康监测算法；Ring1 外壳为钛合金，且是单独的医疗器械导向项目。本站不声明医疗器械注册已经获批。筛查结果仅供健康参考，不是临床诊断，也不能替代医生评估。完整实体说明见{' '}
               <Link href="/company/longvon" style={{ color:'#2563EB' }}>龙汾科技 LONGVON 企业页</Link>。
             </p>
             <p style={{ fontSize:17, color:'#374151', lineHeight:1.85 }}>

@@ -183,8 +183,14 @@ function ring1cProductNode(locale: Locale, pageUrl: string) {
       property(
         isZh ? '监管状态' : 'Regulatory status',
         isZh
-          ? '消费级电子产品，不是注册医疗器械。具备 OSA 风险筛查；筛查结果不是临床诊断，不能替代医生评估。本站未公布医疗器械注册证编号。Ring1 是单独的医疗器械导向项目，本站不声明注册已经获批。'
-          : 'Consumer electronics, not a registered medical device. Includes OSA screening / OSA risk screening. Screening results are not a clinical diagnosis and do not replace a clinician’s assessment. This site does not publish a medical-device registration number. Ring1 is a separate medical-device-oriented project; this site does not state that registration has been granted.',
+          ? '消费级电子产品，不是注册医疗器械。具备 OSA 风险筛查；筛查结果不是临床诊断，不能替代医生评估。本站未公布医疗器械注册证编号，也不声明注册已经获批。'
+          : 'Consumer electronics, not a registered medical device. Includes OSA screening / OSA risk screening. Screening results are not a clinical diagnosis and do not replace a clinician’s assessment. This site does not publish a medical-device registration number and does not state that registration has been granted.',
+      ),
+      property(
+        isZh ? '与 Ring1 的关系' : 'Relationship to Ring1',
+        isZh
+          ? 'Ring1 与 Ring1C 使用同一硬件平台、传感器、芯片和健康监测算法。Ring1C 外壳为氧化锆陶瓷，是消费级智能戒指，不是注册医疗器械。Ring1 外壳为钛合金，是单独的医疗器械导向项目。共享硬件不表示二者是同一产品或同一监管身份。'
+          : 'Ring1 and Ring1C share the same hardware platform, sensors, chipset, and health-monitoring algorithms. Ring1C has a ceramic outer ring and is a consumer smart ring, not a registered medical device. Ring1 has a titanium-alloy outer ring and is a separate medical-device-oriented project. Shared hardware does not make them the same product or the same regulatory status.',
       ),
       property(isZh ? '传感器' : 'Sensors', isZh ? '多波长PPG、温度传感、六轴运动传感' : 'Multi-wavelength PPG, temperature, 6-axis IMU'),
       property(isZh ? '续航' : 'Battery life', isZh ? '约7–10天' : 'About 7–10 days'),
@@ -441,7 +447,7 @@ export const RING1C_FAQS_ZH: FaqItem[] = [
   {
     question: 'Ring1C 是注册医疗器械吗？它和 Ring1 是同一个产品吗？',
     answer:
-      '不是。Ring1C 是消费级智能戒指，具备 OSA 风险筛查，不是注册医疗器械。本站不公布 Ring1C 的医疗器械注册证编号。Ring1 是单独的医疗器械导向项目。本站不把 Ring1C 写成 Ring1，也不声明 Ring1 或 Ring1C 的医疗器械注册已经获批。筛查结果不是临床诊断，也不能替代医生评估。',
+      '不是同一个产品，也不是同一监管身份。Ring1 与 Ring1C 使用同一硬件平台、传感器、芯片和健康监测算法。Ring1C 外壳为氧化锆陶瓷，是消费级智能戒指，具备 OSA 风险筛查，不是注册医疗器械。Ring1 外壳为钛合金，是单独的医疗器械导向项目。本站不公布注册证编号，也不声明注册已经获批。筛查结果不是临床诊断，也不能替代医生评估。',
   },
 ];
 
@@ -469,6 +475,6 @@ export const RING1C_FAQS_EN: FaqItem[] = [
   {
     question: 'Is Ring1C a registered medical device? Is it the same product as Ring1?',
     answer:
-      'No. Ring1C is a consumer-electronics smart ring with OSA screening / OSA risk screening. It is not a registered medical device, and this site does not publish a medical-device registration number for it. Ring1 is a separate medical-device-oriented project. This site does not describe Ring1C as Ring1, and does not state that registration has been granted for either product. Screening results are not a clinical diagnosis and do not replace a clinician’s assessment.',
+      'No. They are not the same product and do not have the same regulatory status. Ring1 and Ring1C share the same hardware platform, sensors, chipset, and health-monitoring algorithms. Ring1C has a ceramic outer ring and is a consumer-electronics smart ring with OSA screening / OSA risk screening; it is not a registered medical device. Ring1 has a titanium-alloy outer ring and is a separate medical-device-oriented project. This site does not publish a registration number and does not state that registration has been granted. Screening results are not a clinical diagnosis and do not replace a clinician’s assessment.',
   },
 ];

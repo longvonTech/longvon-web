@@ -129,17 +129,24 @@ git clone https://github.com/longvonTech/mateyou-platform.git .
 
 ### 5.2 配置环境变量
 
+生产密钥只放在服务器上的 `.env.production`（或受保护的 GitHub Actions secret）。不要把真实值写进 `ecosystem.config.js`、工作流文件或镜像层。PM2 配置在缺少必填变量名时会拒绝启动。轮换清单见 [credential-rotation.md](./credential-rotation.md)。
+
 ```bash
 cp .env.production.example .env.production
+chmod 600 .env.production
 nano .env.production
 # 按模板说明填入所有必填项：
 # - POSTGRES_PASSWORD（强密码，建议 openssl rand -hex 32 生成）
 # - REDIS_PASSWORD（同上）
 # - JWT_ACCESS_SECRET（openssl rand -hex 64）
 # - JWT_REFRESH_SECRET（openssl rand -hex 64）
+# - ADMIN_IMAGE_PASSWORD
+# - WECOM_WEBHOOK_URL
+# - DASHSCOPE_API_KEY
 # - NEXT_PUBLIC_BAIDU_TONGJI_ID（百度统计ID）
 # - NEXT_PUBLIC_BAIDU_VERIFICATION（百度站点验证码）
 # - BAIDU_PUSH_TOKEN（百度主动推送Token）
+# Gemini API key 只在批准上线后写到 API 主机，变量名 GEMINI_API_KEY。不要提交。
 ```
 
 ### 5.3 构建并启动
@@ -350,6 +357,7 @@ docker compose start api
 - [ ] SSL 证书有效（证书到期日 > 30天）
 - [ ] API 端点未对外暴露（仅通过 Nginx 代理）
 - [ ] .env.production 未提交到 git
+- [ ] 已按 [credential-rotation.md](./credential-rotation.md) 轮换曾出现在 git 中的数据库、Redis、JWT、管理员密码、企业微信和 DashScope 凭证。删除源码中的字面量不会使旧凭证失效。
 
 ### 监控
 - [ ] /health/live 端点返回 200

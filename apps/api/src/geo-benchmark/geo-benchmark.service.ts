@@ -11,6 +11,12 @@ import {
 } from './adapters/provider-adapters';
 import { buildMetrics, type ScoredResultRow } from './domain/aggregation';
 import {
+  PrismaGeminiQuotaStore,
+  readGeminiMonthlyCap,
+  type GeminiQuotaSnapshot,
+  type GeminiQuotaStore,
+} from './domain/gemini-quota';
+import {
   sanitizeExportDocument,
   toCsv,
   type ExportAudit,
@@ -76,7 +82,10 @@ export type ResultFilters = {
 export class GeoBenchmarkService {
   private bankReady: Promise<void> | null = null;
 
-  constructor(private readonly prisma: PrismaService) {}
+  constructor(
+    private readonly prisma: PrismaService,
+    private readonly geminiQuotaStore: GeminiQuotaStore = new PrismaGeminiQuotaStore(prisma),
+  ) {}
 
   providerStatus() {
     return {
@@ -85,6 +94,19 @@ export class GeoBenchmarkService {
       providers: listProviderReadiness(),
       access: 'admin-token',
     };
+  }
+
+  async geminiQuota(now = new Date()): Promise<GeminiQuotaSnapshot> {
+    try {
+      const readiness = providerReadiness('gemini');
+      return await this.geminiQuotaStore.snapshot(
+        now,
+        readGeminiMonthlyCap(process.env),
+        readiness.model,
+      );
+    } catch (error) {
+      this.rethrow(error);
+    }
   }
 
   async listQueries() {
@@ -524,15 +546,17 @@ export class GeoBenchmarkService {
   async runApi(
     dto: CreateApiRunDto,
     fetchImpl: FetchLike = globalThis.fetch as unknown as FetchLike,
+    now: Date = new Date(),
   ) {
     try {
       const provider = assertProvider(dto.provider);
       const queryCodes = assertQueryCodes(dto.queryCodes);
-      // Reject before readiness checks, database writes, and any provider fetch.
+      // Reject before readiness checks, quota reservation, database writes, and any provider fetch.
       assertCostConfirmed(queryCodes.length, dto.confirmCost);
       const readiness = providerReadiness(provider);
       if (!readiness.ready)
         throw new ProviderNotReadyError(readiness.setupMessage ?? 'Provider is not configured.');
+      const geminiCap = provider === 'gemini' ? readGeminiMonthlyCap(process.env) : null;
       const operator = assertRoleLabel(dto.operatorLabel, 'Operator');
       await this.ensureQueries();
       const queries = await this.prisma.geoQuery.findMany({ where: { code: { in: queryCodes } } });
@@ -552,6 +576,12 @@ export class GeoBenchmarkService {
           metadata: {
             benchmark: GEO_BENCHMARK_ID,
             note: 'API behavior only. Not consumer-product GEO evidence.',
+            ...(geminiCap == null
+              ? {}
+              : {
+                  geminiMonthlyCap: geminiCap,
+                  groundingEnabled: false,
+                }),
           },
         },
       });
@@ -562,6 +592,23 @@ export class GeoBenchmarkService {
         if (!query) {
           failures.push({ queryCode: code, message: 'Query is not in the database.' });
           continue;
+        }
+        if (provider === 'gemini' && geminiCap != null) {
+          const reservation = await this.geminiQuotaStore.reserve({
+            now,
+            cap: geminiCap,
+            model: readiness.model ?? 'gemini',
+            queryCode: query.code,
+            runId: run.id,
+          });
+          if (reservation.blocked) {
+            failures.push({
+              queryCode: code,
+              message:
+                reservation.blockReason ?? 'Gemini monthly cap reached. No request was sent.',
+            });
+            continue;
+          }
         }
         try {
           const parsed = await executeProviderCall({
@@ -616,9 +663,14 @@ export class GeoBenchmarkService {
           resultIds.push(saved.id);
         } catch (error) {
           if (error instanceof ProviderNotReadyError) throw error;
+          // The Gemini reservation stays consumed. Do not call the provider again.
           failures.push({ queryCode: code, message: this.publicError(error) });
         }
       }
+      const geminiQuota =
+        provider === 'gemini' && geminiCap != null
+          ? await this.geminiQuotaStore.snapshot(now, geminiCap, readiness.model)
+          : null;
       const status =
         failures.length === 0 ? 'completed' : resultIds.length === 0 ? 'failed' : 'partial';
       const updated = await this.prisma.geoRun.update({
@@ -638,6 +690,16 @@ export class GeoBenchmarkService {
             benchmark: GEO_BENCHMARK_ID,
             failures,
             note: 'API behavior only. Not consumer-product GEO evidence.',
+            ...(geminiQuota
+              ? {
+                  geminiMonthBucket: geminiQuota.monthBucket,
+                  geminiUsed: geminiQuota.used,
+                  geminiRemaining: geminiQuota.remaining,
+                  geminiMonthlyCap: geminiQuota.cap,
+                  geminiResetAt: geminiQuota.resetAt,
+                  groundingEnabled: false,
+                }
+              : {}),
           },
         },
       });
@@ -654,6 +716,14 @@ export class GeoBenchmarkService {
             successCount: resultIds.length,
             failureCount: failures.length,
             costAcknowledged: updated.costAcknowledged,
+            ...(geminiQuota
+              ? {
+                  groundingEnabled: false,
+                  geminiMonthBucket: geminiQuota.monthBucket,
+                  geminiUsed: geminiQuota.used,
+                  geminiRemaining: geminiQuota.remaining,
+                }
+              : {}),
           },
         },
       });
@@ -664,6 +734,7 @@ export class GeoBenchmarkService {
         mode: 'api' as const,
         resultIds,
         failures,
+        geminiQuota,
         note: 'Stored API output is not consumer-platform GEO evidence. It stays in the api panel until a human reviews it.',
       };
     } catch (error) {

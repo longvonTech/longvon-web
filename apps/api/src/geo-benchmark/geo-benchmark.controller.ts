@@ -19,6 +19,12 @@ export class GeoBenchmarkController {
     return this.service.providerStatus();
   }
 
+  @Get('gemini-quota')
+  geminiQuota(@Headers('x-admin-token') token: string) {
+    verifyAdminToken(token);
+    return this.service.geminiQuota();
+  }
+
   @Get('queries')
   queries(@Headers('x-admin-token') token: string) {
     verifyAdminToken(token);

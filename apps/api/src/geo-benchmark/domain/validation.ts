@@ -172,7 +172,7 @@ export function assertQueryCodes(codes: string[]): string[] {
 export function assertCostConfirmed(queryCount: number, confirmCost: boolean | undefined): void {
   if (queryCount < 1 || confirmCost !== true) {
     throw new BenchmarkValidationError(
-      'Provider API runs call paid APIs, including a single query. Review the provider, model, and cost warning, then resubmit with confirmCost set to true. No request was sent.',
+      'Provider API runs require confirmCost set to true, including a single query. Review the provider, model, and cost warning. For Gemini, free-tier eligibility is controlled by Google and the monthly request cap does not guarantee a $0 bill. No request was sent.',
     );
   }
 }

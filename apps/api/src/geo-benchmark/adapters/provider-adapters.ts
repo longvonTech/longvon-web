@@ -1,5 +1,10 @@
-import { PROVIDERS, type ProviderId } from '../query-bank';
+import {
+  GEMINI_FREE_TIER_MODELS,
+  GEMINI_GROUNDING_NOTE,
+  isGeminiFreeTierModel,
+} from '../domain/gemini-quota';
 import { redactJson, truncateText } from '../domain/redact';
+import { PROVIDERS, type ProviderId } from '../query-bank';
 
 export type ProviderReadiness = {
   provider: ProviderId;
@@ -95,15 +100,21 @@ export function providerReadiness(
   if (provider === 'gemini') {
     const key = envValue(env, 'GEMINI_API_KEY');
     const model = envValue(env, 'GEMINI_MODEL') ?? DEFAULT_GEMINI_MODEL;
+    const freeTierModel = isGeminiFreeTierModel(model);
+    let setupMessage: string | null = null;
+    if (!freeTierModel) {
+      setupMessage = `Gemini model ${model} is not on the server free-tier allowlist (${GEMINI_FREE_TIER_MODELS.join(', ')}). No request was sent. The admin UI cannot change this list.`;
+    } else if (!key) {
+      setupMessage =
+        'Gemini is not configured. Set GEMINI_API_KEY on the API server. Optional: GEMINI_MODEL (default gemini-3.8-flash). No request was sent.';
+    }
     return {
       provider,
       configured: !!key,
-      ready: !!key,
+      ready: !!key && freeTierModel,
       model,
       endpointHost: GEMINI_HOST,
-      setupMessage: key
-        ? null
-        : 'Gemini is not configured. Set GEMINI_API_KEY on the API server. Optional: GEMINI_MODEL (default gemini-3.8-flash). No request was sent.',
+      setupMessage,
       measures: 'api_behavior_not_consumer_geo',
     };
   }
@@ -161,6 +172,8 @@ export function buildProviderRequest(
   if (provider === 'gemini') {
     const key = envValue(env, 'GEMINI_API_KEY') as string;
     const model = readiness.model as string;
+    // Google Search grounding, Maps grounding, and other paid tools stay off.
+    // GEMINI_GOOGLE_SEARCH_GROUNDING is ignored. There is no paid model fallback.
     return {
       url: `https://${GEMINI_HOST}/v1beta/models/${encodeURIComponent(model)}:generateContent`,
       headers: {
@@ -169,7 +182,6 @@ export function buildProviderRequest(
       },
       body: {
         contents: [{ role: 'user', parts: [{ text: queryText }] }],
-        tools: [{ google_search: {} }],
       },
     };
   }
@@ -304,7 +316,8 @@ function parseGemini(payload: unknown, requestedModel: string | null): ParsedPro
       webSearchQueries: Array.isArray(grounding.webSearchQueries) ? grounding.webSearchQueries : [],
       usage,
       searchEntryPointOmitted: true,
-      note: 'Gemini API output with Google Search grounding. This is API behavior, not the consumer Gemini web product.',
+      groundingRequested: false,
+      note: `Gemini API generateContent output. ${GEMINI_GROUNDING_NOTE} This is API behavior, not the consumer Gemini web product.`,
     },
     rawResponse: stored,
   };
@@ -489,6 +502,7 @@ export async function executeProviderCall(args: {
   }
   const request = buildProviderRequest(args.provider, args.env, args.queryText);
   const signal = AbortSignal.timeout(args.timeoutMs ?? 90_000);
+  // One attempt. A failure is returned to the caller; this function does not retry.
   let response: { ok: boolean; status: number; text: () => Promise<string> };
   try {
     response = await args.fetchImpl(request.url, {

@@ -49,8 +49,14 @@ describe('provider requests', () => {
     }
     expect(buildProviderRequest('gemini', ENV, query).body).toEqual({
       contents: [{ role: 'user', parts: [{ text: query }] }],
-      tools: [{ google_search: {} }],
     });
+    const grounded = buildProviderRequest(
+      'gemini',
+      { ...ENV, GEMINI_GOOGLE_SEARCH_GROUNDING: 'true' },
+      query,
+    );
+    expect(grounded.body).not.toHaveProperty('tools');
+    expect(JSON.stringify(grounded.body)).not.toMatch(/google_search|google_maps|code_execution/);
     const gemini = buildProviderRequest('gemini', { GEMINI_API_KEY: ENV.GEMINI_API_KEY }, query);
     expect(gemini.url).toBe(
       `https://generativelanguage.googleapis.com/v1beta/models/${DEFAULT_GEMINI_MODEL}:generateContent`,
@@ -68,6 +74,41 @@ describe('provider requests', () => {
     });
   });
 
+  it('blocks a model that is outside the free-tier allowlist before any request', async () => {
+    const fetchImpl = jest.fn();
+    const paidModel = { ...ENV, GEMINI_MODEL: 'gemini-3-pro' };
+    const status = providerReadiness('gemini', paidModel);
+    expect(status.ready).toBe(false);
+    expect(status.setupMessage).toMatch(/free-tier allowlist/);
+    await expect(
+      executeProviderCall({
+        provider: 'gemini',
+        env: paidModel,
+        queryText: 'Which companies manufacture smart rings in China?',
+        fetchImpl,
+      }),
+    ).rejects.toBeInstanceOf(ProviderNotReadyError);
+    expect(fetchImpl).not.toHaveBeenCalled();
+  });
+
+  it('does not retry a failed Gemini call or switch to another model', async () => {
+    const fetchImpl = jest.fn().mockResolvedValue({
+      ok: false,
+      status: 429,
+      text: async () => '{"error":"quota"}',
+    });
+    await expect(
+      executeProviderCall({
+        provider: 'gemini',
+        env: ENV,
+        queryText: 'Which companies manufacture smart rings in China?',
+        fetchImpl,
+      }),
+    ).rejects.toThrow(/HTTP 429/);
+    expect(fetchImpl).toHaveBeenCalledTimes(1);
+    expect(String(fetchImpl.mock.calls[0][0])).toContain('gemini-3.8-flash');
+  });
+
   it('does not call the network when a provider is not configured', async () => {
     const fetchImpl = jest.fn();
     await expect(
@@ -83,7 +124,7 @@ describe('provider requests', () => {
 });
 
 describe('provider parsers', () => {
-  it('parses Gemini grounding citations and drops the search widget HTML', () => {
+  it('parses unexpected Gemini grounding citations and drops the search widget HTML', () => {
     const parsed = parseProviderResponse(
       'gemini',
       {

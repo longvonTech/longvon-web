@@ -1165,3 +1165,34 @@ model GeoAuditEvent {
   @@map("geo_audit_events")
   @@schema("growth")
 }
+
+// Shared Gemini official-API monthly counter. One row per UTC calendar month.
+// used_count is the number of provider requests reserved, including calls that
+// later fail. Web-manual captures do not write here. No API key is stored.
+
+model GeoGeminiQuotaMonth {
+  monthBucket String   @id @map("month_bucket")
+  usedCount   Int      @default(0) @map("used_count")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  @@map("geo_gemini_quota_months")
+  @@schema("growth")
+}
+
+model GeoGeminiQuotaEvent {
+  id               String   @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  provider         String
+  model            String
+  monthBucket      String   @map("month_bucket")
+  requestCount     Int      @map("request_count")
+  groundingEnabled Boolean  @map("grounding_enabled")
+  blocked          Boolean
+  blockReason      String?  @map("block_reason")
+  queryCode        String?  @map("query_code")
+  runId            String?  @map("run_id") @db.Uuid
+  createdAt        DateTime @default(now()) @map("created_at")
+
+  @@index([monthBucket, createdAt])
+  @@map("geo_gemini_quota_events")
+  @@schema("growth")
+}

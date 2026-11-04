@@ -53,6 +53,7 @@ const apiEnv = {
   WECOM_WEBHOOK_URL: process.env.WECOM_WEBHOOK_URL,
   DASHSCOPE_API_KEY: process.env.DASHSCOPE_API_KEY,
   GEMINI_MODEL: optionalEnv('GEMINI_MODEL', 'gemini-3.8-flash'),
+  GEMINI_MONTHLY_REQUEST_CAP: optionalEnv('GEMINI_MONTHLY_REQUEST_CAP', '60'),
 };
 
 const geminiApiKey = optionalEnv('GEMINI_API_KEY', '');

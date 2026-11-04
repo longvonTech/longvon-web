@@ -34,6 +34,18 @@ type CoverageQuery = {
   scored: { id: string; score: number | null; countsTowardMetrics: boolean } | null;
 };
 type Citation = { id?: string; title: string | null; url: string; snippet: string | null; position?: number };
+type GeminiQuota = {
+  used: number;
+  remaining: number;
+  cap: number;
+  resetAt: string;
+  monthBucket: string;
+  model: string | null;
+  groundingEnabled: boolean;
+  groundingNote: string;
+  billingNote: string;
+  clientCanRaiseCap: false;
+};
 type ResultDetail = {
   id: string;
   provider: string;
@@ -120,6 +132,8 @@ export default function GeoBenchmarkPage() {
   const [error, setError] = useState('');
   const [busy, setBusy] = useState(false);
   const [confirmCost, setConfirmCost] = useState(false);
+  const [geminiQuota, setGeminiQuota] = useState<GeminiQuota | null>(null);
+  const [quotaNote, setQuotaNote] = useState('');
   const [capture, setCapture] = useState({
     rawAnswer: '',
     modelLabel: '',
@@ -168,12 +182,13 @@ export default function GeoBenchmarkPage() {
     if (from) params.set('from', from);
     if (to) params.set('to', to);
     const headers = { 'x-admin-token': activeToken };
-    const [statusRes, metricsRes, coverageRes] = await Promise.all([
+    const [statusRes, metricsRes, coverageRes, quotaRes] = await Promise.all([
       fetch('/api/admin/geo/providers', { headers }),
       fetch(`/api/admin/geo/metrics?${params}`, { headers }),
       fetch(`/api/admin/geo/coverage?${params}`, { headers }),
+      fetch('/api/admin/geo/gemini-quota', { headers }),
     ]);
-    if (statusRes.status === 401 || metricsRes.status === 401) {
+    if (statusRes.status === 401 || metricsRes.status === 401 || quotaRes.status === 401) {
       router.push('/admin/login');
       return;
     }
@@ -185,6 +200,13 @@ export default function GeoBenchmarkPage() {
     if (!metricsRes.ok) throw new Error(errorText(metricsJson));
     if (!coverageRes.ok) throw new Error(errorText(coverageJson));
     setProviderStatus(statusJson.providers ?? []);
+    if (quotaRes.ok) {
+      setGeminiQuota(await quotaRes.json());
+      setQuotaNote('');
+    } else {
+      setGeminiQuota(null);
+      setQuotaNote('Gemini monthly usage could not be loaded. Official API runs stay gated by the server.');
+    }
     const panel = (metricsJson.panels ?? []).find((item: { mode: Mode }) => item.mode === mode);
     setMetrics(panel?.providers?.find((item: ProviderMetrics) => item.provider === provider) ?? null);
     setCoverage(coverageJson.queries ?? []);
@@ -365,7 +387,11 @@ export default function GeoBenchmarkPage() {
           operatorLabel: capture.operatorLabel,
         }),
       });
-      setMessage(`API run ${result.status}. Stored ${result.resultIds.length} pending result(s). These rows measure ${provider} API behavior, not the consumer web product.`);
+      const quotaText = result.geminiQuota
+        ? ` Gemini official API quota: ${result.geminiQuota.used} used, ${result.geminiQuota.remaining} remaining, resets ${result.geminiQuota.resetAt}.`
+        : '';
+      const failureText = result.failures?.length ? ` ${result.failures.length} query request(s) were not sent or failed.` : '';
+      setMessage(`API run ${result.status}. Stored ${result.resultIds.length} pending result(s). These rows measure ${provider} API behavior, not the consumer web product.${quotaText}${failureText}`);
       await reload();
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Run failed');
@@ -559,29 +585,49 @@ export default function GeoBenchmarkPage() {
         <div style={card}>
           {mode === 'api' ? (
             <>
-              <h2 style={h2}>Paid API run</h2>
+              <h2 style={h2}>{provider === 'gemini' ? 'Gemini official API run' : 'Paid API run'}</h2>
               <p style={text}>
                 Provider: <strong>{provider}</strong>. Model: <strong>{activeModel}</strong>.
-                This sends the exact query, with no LONGVON priming, to the paid {provider} API.
-                Every query can incur charges, including a single query.
+                This sends the exact query, with no LONGVON priming, to the {provider} API.
                 The stored rows measure API behavior. They are not consumer {provider} GEO visibility.
                 Nothing is sent until you confirm.
               </p>
+              {provider === 'gemini' ? (
+                <div style={text}>
+                  <p>
+                    Shared monthly cap:{' '}
+                    {geminiQuota
+                      ? `${geminiQuota.used} used, ${geminiQuota.remaining} remaining of ${geminiQuota.cap}.`
+                      : 'usage loads from the server.'}{' '}
+                    Resets {geminiQuota ? geminiQuota.resetAt : 'at 00:00 UTC on the first day of the next month'}.
+                  </p>
+                  <p>{geminiQuota?.groundingNote ?? 'Google Search grounding stays off unless the server has verified free-tier eligibility. It is off.'}</p>
+                  <p>{geminiQuota?.billingNote ?? 'Free-tier eligibility is controlled by Google. This application cap cannot guarantee a $0 Google bill, and this page does not check Google billing.'}</p>
+                  <p>The cap is server configuration. This page cannot raise it.{quotaNote ? ` ${quotaNote}` : ''}</p>
+                </div>
+              ) : (
+                <p style={text}>Every query can incur charges, including a single query.</p>
+              )}
               <p style={text}>Selected: {selectedCode}. {selected?.text}</p>
               <label style={{ display: 'flex', gap: 8, margin: '12px 0', fontSize: 14 }}>
                 <input type="checkbox" checked={confirmCost} onChange={(event) => setConfirmCost(event.target.checked)} />
-                I confirm this paid {provider} API run for model {activeModel}.
+                {provider === 'gemini'
+                  ? `I confirm this Gemini API run for model ${activeModel}. I understand the monthly cap, that grounding is off, and that Google controls free-tier billing.`
+                  : `I confirm this paid ${provider} API run for model ${activeModel}.`}
               </label>
-              <button type="button" disabled={busy || !confirmCost} style={button(confirmCost)} onClick={() => runQueries([selectedCode])}>
+              <button type="button" disabled={busy || !confirmCost || (provider === 'gemini' && !geminiQuota)} style={button(confirmCost && (provider !== 'gemini' || !!geminiQuota))} onClick={() => runQueries([selectedCode])}>
                 Confirm and run {selectedCode}
               </button>
-              <button type="button" disabled={busy || !confirmCost || coverage.length === 0} style={button(confirmCost && coverage.length > 0)} onClick={() => runQueries(coverage.map((item) => item.code))}>
+              <button type="button" disabled={busy || !confirmCost || coverage.length === 0 || (provider === 'gemini' && !geminiQuota)} style={button(confirmCost && coverage.length > 0 && (provider !== 'gemini' || !!geminiQuota))} onClick={() => runQueries(coverage.map((item) => item.code))}>
                 Confirm and run {coverage.length} shown queries
               </button>
             </>
           ) : (
             <>
               <h2 style={h2}>Official web capture</h2>
+              <p style={text}>
+                This panel records a human paste from the consumer web product. It does not call the official API and it does not use the Gemini monthly API cap.
+              </p>
               <ol style={{ ...text, paddingLeft: 18 }}>
                 <li>Open a new chat in the official {provider} consumer product.</li>
                 <li>Do not prime it with LONGVON or a supplier list.</li>

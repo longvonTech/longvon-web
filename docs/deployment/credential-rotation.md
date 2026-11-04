@@ -12,19 +12,19 @@ If that file does not already contain the required names, the next deploy will s
 
 Required names:
 
-| Variable | Where to rotate |
-| --- | --- |
-| `DATABASE_URL` | PostgreSQL user password, then the server env URL |
-| `REDIS_URL` | Redis password, then the server env URL |
-| `JWT_ACCESS_SECRET` | Generate a new random secret. Existing access tokens stop validating. |
-| `JWT_REFRESH_SECRET` | Generate a different random secret. Existing refresh sessions stop validating. |
-| `ADMIN_IMAGE_PASSWORD` | Choose a new admin password. The API no longer accepts a built-in fallback. |
-| `WECOM_WEBHOOK_URL` | Recreate the WeCom group robot webhook and revoke the old one. |
-| `DASHSCOPE_API_KEY` | Revoke the DashScope key in the Alibaba Cloud console and issue a new one. |
+| Variable               | Where to rotate                                                                |
+| ---------------------- | ------------------------------------------------------------------------------ |
+| `DATABASE_URL`         | PostgreSQL user password, then the server env URL                              |
+| `REDIS_URL`            | Redis password, then the server env URL                                        |
+| `JWT_ACCESS_SECRET`    | Generate a new random secret. Existing access tokens stop validating.          |
+| `JWT_REFRESH_SECRET`   | Generate a different random secret. Existing refresh sessions stop validating. |
+| `ADMIN_IMAGE_PASSWORD` | Choose a new admin password. The API no longer accepts a built-in fallback.    |
+| `WECOM_WEBHOOK_URL`    | Recreate the WeCom group robot webhook and revoke the old one.                 |
+| `DASHSCOPE_API_KEY`    | Revoke the DashScope key in the Alibaba Cloud console and issue a new one.     |
 
 Also review any other third-party key that was ever stored in `ecosystem.config.js` or another tracked file, including Baidu push tokens if they were copied into source. `NEXT_PUBLIC_BAIDU_VERIFICATION` is published in page HTML; set it again from the Baidu console before the next web build if the meta tag must stay present. It is not a substitute for rotating the private keys above.
 
-`GEMINI_API_KEY` is not part of this cleanup and must not be added to git, GitHub Actions source, CI logs, or any `NEXT_PUBLIC_` variable. After deploy is approved, set it only on the API host. `GEMINI_MODEL` may be set on the API host; the default is `gemini-3.8-flash`.
+`GEMINI_API_KEY` is not part of this cleanup and must not be added to git, GitHub Actions source, CI logs, or any `NEXT_PUBLIC_` variable. After deploy is approved, set it only on the API host. `GEMINI_MODEL` may be set on the API host; the default is `gemini-3.8-flash`, and only `gemini-3.8-flash` or `gemini-3.5-flash-lite` are accepted. `GEMINI_MONTHLY_REQUEST_CAP` defaults to 60 and is not a secret. The admin UI cannot raise it. That cap does not prove the Google project has billing disabled. Confirm the project is on the intended free tier in Google AI Studio before any live call, and leave Google Search grounding disabled.
 
 Suggested local generation for new random secrets (run on the server, do not commit the output):
 

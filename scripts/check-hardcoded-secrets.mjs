@@ -94,8 +94,7 @@ function redactOutput(text) {
 
 function assignments(line) {
   const found = [];
-  const quoted =
-    /([A-Za-z_][A-Za-z0-9_]*)\s*[:=]\s*(['"`])((?:\\.|(?!\2)[\s\S])*)\2/g;
+  const quoted = /([A-Za-z_][A-Za-z0-9_]*)\s*[:=]\s*(['"`])((?:\\.|(?!\2)[\s\S])*)\2/g;
   let match = quoted.exec(line);
   while (match) {
     found.push({ name: match[1], value: match[3] });
@@ -150,10 +149,19 @@ export function scanText(file, text) {
   return findings;
 }
 
+function joinParts(parts) {
+  return parts.join('');
+}
+
 function runSelfTest() {
-  const apiKey = ['s', 'k', '-'].join('') + 'A'.repeat(24);
+  // Build sample values at runtime. The scanner reads this file as tracked
+  // source, so the samples must not appear here as contiguous literals.
+  const apiKey = joinParts(['s', 'k', '-']) + 'A'.repeat(24);
   const password = 'p'.repeat(16);
-  const databaseSample = `DATABASE_URL: 'postgresql://appuser:${password}@localhost:5432/db'\n`;
+  const postgresScheme = joinParts(['post', 'gresql://']);
+  const devPassword = joinParts(['mateyou', '_dev_', 'password']);
+  const adminFallback = joinParts(['built', '-in-', 'admin-', 'password']);
+  const databaseSample = `DATABASE_URL: '${postgresScheme}appuser:${password}@localhost:5432/db'\n`;
   const databaseHits = scanText('ecosystem.config.js', databaseSample);
   if (!databaseHits.some((hit) => hit.variable === 'DATABASE_URL')) {
     throw new Error('self-test missed a database credential assignment');
@@ -170,21 +178,21 @@ function runSelfTest() {
   }
   const example = scanText(
     '.env.example',
-    'DATABASE_URL="postgresql://mateyou:mateyou_dev_password@localhost:5432/mateyou?schema=public"\n',
+    `DATABASE_URL="${postgresScheme}mateyou:${devPassword}@localhost:5432/mateyou?schema=public"\n`,
   );
   if (example.length > 0) throw new Error('self-test flagged the documented dev example');
   const placeholder = scanText('ecosystem.config.js', 'JWT_ACCESS_SECRET=请替换为随机字符串\n');
   if (placeholder.length > 0) throw new Error('self-test flagged a placeholder');
   const fallback = scanText(
     'apps/api/src/common/admin-auth.util.ts',
-    "const password = process.env.ADMIN_IMAGE_PASSWORD ?? 'built-in-admin-password';\n",
+    `const password = process.env.ADMIN_IMAGE_PASSWORD ?? '${adminFallback}';\n`,
   );
   if (!fallback.some((hit) => hit.variable === 'ADMIN_IMAGE_PASSWORD')) {
     throw new Error('self-test missed an admin password fallback');
   }
   const outsideExample = scanText(
     'ecosystem.config.js',
-    'DATABASE_URL=postgresql://mateyou:mateyou_dev_password@localhost/db\n',
+    `DATABASE_URL=${postgresScheme}mateyou:${devPassword}@localhost/db\n`,
   );
   if (outsideExample.length === 0) {
     throw new Error('self-test allowed a database password outside example files');
@@ -194,8 +202,14 @@ function runSelfTest() {
     'DATABASE_URL: process.env.DATABASE_URL,\nJWT_ACCESS_SECRET: process.env.JWT_ACCESS_SECRET,\n',
   );
   if (reference.length > 0) throw new Error('self-test flagged an environment reference');
-  const localName = scanText('auth.ts', "const secret = process.env.JWT_ACCESS_SECRET;\n");
+  const localName = scanText('auth.ts', 'const secret = process.env.JWT_ACCESS_SECRET;\n');
   if (localName.length > 0) throw new Error('self-test flagged a local secret variable');
+  const ownSource = fs.readFileSync(fileURLToPath(import.meta.url), 'utf8');
+  const ownHits = scanText('scripts/check-hardcoded-secrets.mjs', ownSource);
+  if (ownHits.length > 0) {
+    const names = ownHits.map((hit) => hit.variable).join(', ');
+    throw new Error(`self-test source was flagged: ${names}`);
+  }
 }
 
 function trackedFiles() {
@@ -241,7 +255,10 @@ function checkEcosystem() {
   }
   const ok = spawnSync(
     process.execPath,
-    ['-e', "const config = require('./ecosystem.config.js'); if (!config.apps || config.apps.length < 2) process.exit(2);"],
+    [
+      '-e',
+      "const config = require('./ecosystem.config.js'); if (!config.apps || config.apps.length < 2) process.exit(2);",
+    ],
     { cwd: root, env: ready, encoding: 'utf8' },
   );
   if (ok.status !== 0) {
@@ -275,5 +292,6 @@ function main() {
   console.log('ecosystem.config.js fail-closed check passed.');
 }
 
-const isDirectRun = process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url);
+const isDirectRun =
+  process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url);
 if (isDirectRun) main();

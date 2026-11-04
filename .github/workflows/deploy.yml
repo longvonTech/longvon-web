@@ -50,12 +50,19 @@ jobs:
 
           RSYNC_SSH="ssh -i ${KEY_FILE} -o StrictHostKeyChecking=accept-new"
           echo "==> Rsync source to ECS (skip git pull on server)"
+          # Server-side .env.production is the secret source. Do not overwrite it
+          # and do not copy private keys or local env files onto the host.
           rsync -az \
             --exclude node_modules \
             --exclude apps/web/.next \
             --exclude apps/api/dist \
             --exclude .git \
-            --exclude .env.production \
+            --exclude .env \
+            --exclude '.env.*' \
+            --exclude '*.pem' \
+            --exclude '*.key' \
+            --exclude id_rsa \
+            --exclude id_ed25519 \
             --exclude _orphans \
             --exclude _rollback \
             -e "$RSYNC_SSH" \

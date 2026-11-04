@@ -20,31 +20,44 @@ STANDALONE_WEB="$WEB_DIR/.next/standalone/apps/web"
 API_DIST="/root/mateyou/apps/api/dist"
 
 load_production_env() {
-  if [ -f .env.production ]; then
-    set -a
-    # shellcheck disable=SC1091
-    source .env.production 2>/dev/null || true
-    set +a
-  fi
-
-  if [ -z "${DATABASE_URL:-}" ] && [ -f ecosystem.config.js ]; then
-    eval "$(node - <<'NODE'
-const config = require('./ecosystem.config.js');
-const api = config.apps.find((a) => a.name === 'mateyou-api');
-const web = config.apps.find((a) => a.name === 'mateyou-web');
-const env = { ...(api?.env || {}), ...(web?.env || {}) };
-for (const [key, value] of Object.entries(env)) {
-  if (value == null || value === '') continue;
-  const escaped = String(value).replace(/'/g, "'\\''");
-  process.stdout.write(`export ${key}='${escaped}'\n`);
-}
-NODE
-)"
-  fi
-
-  if [ -z "${DATABASE_URL:-}" ]; then
-    echo "ERROR: DATABASE_URL 未设置。请检查 .env.production 或 ecosystem.config.js"
+  # Secrets live in the server-side file. ecosystem.config.js only reads names
+  # from the environment and refuses to start when a required name is empty.
+  if [ ! -f .env.production ]; then
+    echo "ERROR: .env.production is missing on the server."
+    echo "Set production secrets in that gitignored file before deploy. ecosystem.config.js does not contain them."
     exit 1
+  fi
+
+  set -a
+  # shellcheck disable=SC1091
+  source .env.production
+  set +a
+
+  local missing=()
+  local name
+  for name in \
+    DATABASE_URL \
+    REDIS_URL \
+    JWT_ACCESS_SECRET \
+    JWT_REFRESH_SECRET \
+    ADMIN_IMAGE_PASSWORD \
+    WECOM_WEBHOOK_URL \
+    DASHSCOPE_API_KEY
+  do
+    if [ -z "${!name:-}" ]; then
+      missing+=("$name")
+    fi
+  done
+  if [ "${#missing[@]}" -gt 0 ]; then
+    echo "ERROR: missing required production environment variables: ${missing[*]}"
+    echo "Set them in server-side .env.production. Values are not printed. Refusing to build or restart."
+    exit 1
+  fi
+  if [ -z "${GEMINI_API_KEY:-}" ]; then
+    echo "NOTE: GEMINI_API_KEY is unset. Gemini API runs stay disabled until it is set on the API host."
+  fi
+  if [ -z "${NEXT_PUBLIC_BAIDU_VERIFICATION:-}" ]; then
+    echo "NOTE: NEXT_PUBLIC_BAIDU_VERIFICATION is unset. The Baidu verification meta tag will be empty in this web build."
   fi
 }
 

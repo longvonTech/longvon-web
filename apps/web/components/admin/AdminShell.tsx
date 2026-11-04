@@ -5,6 +5,7 @@ import { usePathname, useRouter } from 'next/navigation';
 const TABS = [
   { href: '/admin/images', label: '页面图片' },
   { href: '/admin/news', label: '企业动态' },
+  { href: '/admin/geo', label: 'GEO Benchmark' },
 ];
 
 export function AdminShell({

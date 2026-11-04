@@ -11,7 +11,7 @@ The dashboard is `/admin/geo`. Every API route under `/admin/geo-benchmark` requ
 
 The repository's internal boundary for this admin surface is the shared `ADMIN_IMAGE_PASSWORD` checked by `verifyAdminToken` on every `/admin/geo-benchmark` handler. It is not per-user JWT authorization. The Next proxy at `/api/admin/geo/*` forwards only that header to the API and does not echo it in the response. Unauthenticated calls receive 401. The page shell at `/admin/geo` contains no benchmark rows; it redirects to `/admin/login` when the browser has no token. `/admin/` and `/api/` stay disallowed in `robots.txt`.
 
-If `ADMIN_IMAGE_PASSWORD` is unset, `verifyAdminToken` still accepts the built-in development password that already gates the image and news admin. This benchmark does not change that helper. Set `ADMIN_IMAGE_PASSWORD` on every deployed API process. Do not put the value in the browser bundle, seed data, logs, or exports.
+If `ADMIN_IMAGE_PASSWORD` is unset, `verifyAdminToken` rejects the call. There is no built-in password. Set `ADMIN_IMAGE_PASSWORD` on every deployed API process. Do not put the value in the browser bundle, seed data, logs, or exports.
 
 Operator and evaluator fields are role labels. The API rejects values that look like an email address or a phone number. Do not store platform account credentials or other personal data.
 
@@ -23,7 +23,7 @@ Set these on the API server only. Leave keys empty and the provider stays disabl
 | --- | --- | --- |
 | `ADMIN_IMAGE_PASSWORD` | For every dashboard call | Existing admin gate |
 | `GEMINI_API_KEY` | Yes | Gemini API key, sent as `x-goog-api-key` |
-| `GEMINI_MODEL` | No | Default `gemini-2.5-flash` |
+| `GEMINI_MODEL` | No | Default `gemini-3.8-flash` (server-only) |
 | `PERPLEXITY_API_KEY` | Yes | Perplexity Agent API bearer token |
 | `PERPLEXITY_MODEL` | No | Sent only when set. Otherwise Perplexity uses its default |
 | `DOUBAO_API_KEY` | Yes, unless `ARK_API_KEY` is set | Volcengine Ark bearer token |
@@ -45,11 +45,13 @@ The migration inserts Q001–Q060. The API also upserts that bank on first use, 
 
 Development and tests do not call the providers. A call happens only when an authenticated user posts to `POST /admin/geo-benchmark/runs`.
 
-- One query is a single run. The screen shows a cost warning. Batch confirmation is not required.
-- More than one query is a batch. The server rejects it unless `confirmCost` is true, and it sends nothing until then.
+- Every API run, including a single query, is rejected unless `confirmCost` is true. The server checks that flag before readiness, database writes, and any provider fetch. Tests assert that `fetch` is not called when the flag is missing or false.
+- The API panel shows the selected provider and model, states that the call can incur charges, and requires the confirmation checkbox before either run button is enabled. API rows stay in the API panel and are not labeled as consumer Gemini, Perplexity, or Doubao GEO visibility.
 - Nothing runs on page load or deploy.
 - Requests contain the exact query text and no LONGVON priming.
-- Gemini uses `POST https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent` with the `google_search` tool. Citations come from `groundingMetadata.groundingChunks`. The search-widget HTML is not stored.
+- Gemini stays on the documented generateContent REST API: `POST https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent` with header `x-goog-api-key` and `tools: [{ google_search: {} }]`. Citations come from `groundingMetadata.groundingChunks`. The search-widget HTML is not stored.
+- Default model is `gemini-3.8-flash`, checked against the Gemini API model page on 2026-11-04 (`https://ai.google.dev/gemini-api/docs/models/gemini-3.8-flash`). That stable model supports Grounding with Google Search. Google’s 2026-09-18 changelog limits Gemini 2.5 access to projects that have already used those models and points new projects to `gemini-3.5-flash-lite` or `gemini-3.8-flash`. This integration uses `gemini-3.8-flash` because the current generateContent grounding examples use it. Override it with server-only `GEMINI_MODEL`. Do not put `GEMINI_API_KEY` in the browser bundle or a `NEXT_PUBLIC_` variable.
+- The Interactions API is Google’s recommended surface for new applications. This adapter stays on generateContent so the existing grounding citation parser remains the one from the Benchmark 01 adapter.
 - Perplexity uses `POST https://api.perplexity.ai/v1/agent` with the `web_search` tool. Citations come from `output[]` items of type `search_results`. Legacy `citations` / `search_results` payloads are still parsed if a response has that shape.
 - Doubao uses the Ark Chat Completions API with `web_search_options: {}`. Citations come from `choices[].message.annotations[].url_citation` or `references` when the provider returns them.
 - A missing citation list is stored as an empty list. The benchmark does not invent sources.

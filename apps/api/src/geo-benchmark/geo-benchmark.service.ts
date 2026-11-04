@@ -19,7 +19,7 @@ import {
 } from './domain/export';
 import { collectSecretValues, redactJson, redactString, truncateText } from './domain/redact';
 import {
-  assertBatchConfirmed,
+  assertCostConfirmed,
   assertBoundedText,
   assertProvider,
   assertQueryCodes,
@@ -528,7 +528,8 @@ export class GeoBenchmarkService {
     try {
       const provider = assertProvider(dto.provider);
       const queryCodes = assertQueryCodes(dto.queryCodes);
-      assertBatchConfirmed(queryCodes.length, dto.confirmCost);
+      // Reject before readiness checks, database writes, and any provider fetch.
+      assertCostConfirmed(queryCodes.length, dto.confirmCost);
       const readiness = providerReadiness(provider);
       if (!readiness.ready)
         throw new ProviderNotReadyError(readiness.setupMessage ?? 'Provider is not configured.');
@@ -546,7 +547,7 @@ export class GeoBenchmarkService {
           locale: assertBoundedText(dto.locale, 'Locale', 120),
           language: assertBoundedText(dto.language, 'Language', 120),
           operatorLabel: operator,
-          costAcknowledged: queryCodes.length > 1 || dto.confirmCost === true,
+          costAcknowledged: dto.confirmCost === true,
           queryCount: queryCodes.length,
           metadata: {
             benchmark: GEO_BENCHMARK_ID,

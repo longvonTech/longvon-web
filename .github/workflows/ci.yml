@@ -44,6 +44,9 @@ jobs:
           node-version: '20'
           cache: 'npm'
 
+      - name: Check for hard-coded credentials
+        run: node scripts/check-hardcoded-secrets.mjs
+
       - name: Install dependencies
         run: npm install
 

@@ -17,6 +17,14 @@ describe('geo benchmark authorization', () => {
     expect(() => verifyAdminToken('wrong-token')).toThrow();
   });
 
+  it('fails closed when ADMIN_IMAGE_PASSWORD is unset', () => {
+    delete process.env.ADMIN_IMAGE_PASSWORD;
+    expect(() => verifyAdminToken('geo-admin-test-secret')).toThrow(/not configured/);
+    const source = fs.readFileSync(path.join(__dirname, '../common/admin-auth.util.ts'), 'utf8');
+    expect(source).not.toMatch(/ADMIN_IMAGE_PASSWORD\s*\?\?/);
+    expect(source).not.toContain('mateyou-admin');
+  });
+
   it('accepts the configured admin token', () => {
     process.env.ADMIN_IMAGE_PASSWORD = 'geo-admin-test-secret';
     expect(() => verifyAdminToken('geo-admin-test-secret')).not.toThrow();

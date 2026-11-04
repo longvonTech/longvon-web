@@ -59,7 +59,7 @@ export class ProviderHttpError extends Error {
 const GEMINI_HOST = 'generativelanguage.googleapis.com';
 const PERPLEXITY_HOST = 'api.perplexity.ai';
 const DOUBAO_DEFAULT_BASE = 'https://ark.cn-beijing.volces.com/api/v3/chat/completions';
-const DEFAULT_GEMINI_MODEL = 'gemini-2.5-flash';
+export const DEFAULT_GEMINI_MODEL = 'gemini-3.8-flash';
 
 function isRecord(value: unknown): value is Record<string, unknown> {
   return !!value && typeof value === 'object' && !Array.isArray(value);
@@ -103,7 +103,7 @@ export function providerReadiness(
       endpointHost: GEMINI_HOST,
       setupMessage: key
         ? null
-        : 'Gemini is not configured. Set GEMINI_API_KEY on the API server. Optional: GEMINI_MODEL (default gemini-2.5-flash). No request was sent.',
+        : 'Gemini is not configured. Set GEMINI_API_KEY on the API server. Optional: GEMINI_MODEL (default gemini-3.8-flash). No request was sent.',
       measures: 'api_behavior_not_consumer_geo',
     };
   }

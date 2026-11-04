@@ -169,10 +169,10 @@ export function assertQueryCodes(codes: string[]): string[] {
   return codes;
 }
 
-export function assertBatchConfirmed(queryCount: number, confirmCost: boolean | undefined): void {
-  if (queryCount > 1 && confirmCost !== true) {
+export function assertCostConfirmed(queryCount: number, confirmCost: boolean | undefined): void {
+  if (queryCount < 1 || confirmCost !== true) {
     throw new BenchmarkValidationError(
-      'Batch runs call paid provider APIs. Review the cost warning and resubmit with confirmCost set to true. No request was sent.',
+      'Provider API runs call paid APIs, including a single query. Review the provider, model, and cost warning, then resubmit with confirmCost set to true. No request was sent.',
     );
   }
 }

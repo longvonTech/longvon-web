@@ -3,7 +3,7 @@ import { validate } from 'class-validator';
 import { CreateApiRunDto, CreateCaptureDto, ReviewResultDto } from './dto/geo-benchmark.dto';
 import { SCORE_RUBRIC } from './query-bank';
 import {
-  assertBatchConfirmed,
+  assertCostConfirmed,
   assertPublicHttpUrl,
   assertQueryCodes,
   assertRawMutable,
@@ -115,9 +115,11 @@ describe('validation', () => {
     expect(assertQueryCodes(['Q001', 'Q060'])).toEqual(['Q001', 'Q060']);
     expect(() => assertQueryCodes(['Q061'])).toThrow(/Q001-Q060/);
     expect(() => assertQueryCodes(['Q001', 'Q001'])).toThrow(/more than once/);
-    expect(() => assertBatchConfirmed(2, false)).toThrow(/No request was sent/);
-    expect(() => assertBatchConfirmed(1, undefined)).not.toThrow();
-    expect(() => assertBatchConfirmed(60, true)).not.toThrow();
+    expect(() => assertCostConfirmed(1, undefined)).toThrow(/No request was sent/);
+    expect(() => assertCostConfirmed(1, false)).toThrow(/No request was sent/);
+    expect(() => assertCostConfirmed(2, false)).toThrow(/No request was sent/);
+    expect(() => assertCostConfirmed(1, true)).not.toThrow();
+    expect(() => assertCostConfirmed(60, true)).not.toThrow();
   });
 
   it('locks the raw answer after review or exclusion', () => {

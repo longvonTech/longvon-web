@@ -119,7 +119,7 @@ export default function GeoBenchmarkPage() {
   const [message, setMessage] = useState('');
   const [error, setError] = useState('');
   const [busy, setBusy] = useState(false);
-  const [confirmBatch, setConfirmBatch] = useState(false);
+  const [confirmCost, setConfirmCost] = useState(false);
   const [capture, setCapture] = useState({
     rawAnswer: '',
     modelLabel: '',
@@ -347,7 +347,11 @@ export default function GeoBenchmarkPage() {
     }
   }
 
-  async function runQueries(codes: string[], batch: boolean) {
+  async function runQueries(codes: string[]) {
+    if (!confirmCost) {
+      setError('Confirm the paid API cost warning before sending. No request was sent.');
+      return;
+    }
     setBusy(true);
     setError('');
     setMessage('');
@@ -357,15 +361,16 @@ export default function GeoBenchmarkPage() {
         body: JSON.stringify({
           provider,
           queryCodes: codes,
-          confirmCost: batch ? confirmBatch : undefined,
+          confirmCost: true,
           operatorLabel: capture.operatorLabel,
         }),
       });
-      setMessage(`API run ${result.status}. Stored ${result.resultIds.length} pending result(s). These rows measure API behavior, not the consumer web product.`);
+      setMessage(`API run ${result.status}. Stored ${result.resultIds.length} pending result(s). These rows measure ${provider} API behavior, not the consumer web product.`);
       await reload();
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Run failed');
     } finally {
+      setConfirmCost(false);
       setBusy(false);
     }
   }
@@ -406,6 +411,9 @@ export default function GeoBenchmarkPage() {
     const citations = capture.citations.map((item, itemIndex) => itemIndex === index ? { ...item, [key]: value } : item);
     setCapture({ ...capture, citations });
   }
+
+  const activeProvider = providerStatus.find((item) => item.provider === provider);
+  const activeModel = activeProvider?.model ?? (provider === 'gemini' ? 'gemini-3.8-flash' : 'server default');
 
   return (
     <AdminShell title="GEO Benchmark 01" subtitle="Gemini, Perplexity, and Doubao. API and official-web captures stay in separate panels.">
@@ -552,15 +560,23 @@ export default function GeoBenchmarkPage() {
           {mode === 'api' ? (
             <>
               <h2 style={h2}>Paid API run</h2>
-              <p style={text}>Each run sends the exact query with no LONGVON priming. A single query does not need batch confirmation. A batch does, and nothing is sent until you confirm.</p>
+              <p style={text}>
+                Provider: <strong>{provider}</strong>. Model: <strong>{activeModel}</strong>.
+                This sends the exact query, with no LONGVON priming, to the paid {provider} API.
+                Every query can incur charges, including a single query.
+                The stored rows measure API behavior. They are not consumer {provider} GEO visibility.
+                Nothing is sent until you confirm.
+              </p>
               <p style={text}>Selected: {selectedCode}. {selected?.text}</p>
-              <button type="button" disabled={busy} style={button(true)} onClick={() => runQueries([selectedCode], false)}>Run {selectedCode}</button>
               <label style={{ display: 'flex', gap: 8, margin: '12px 0', fontSize: 14 }}>
-                <input type="checkbox" checked={confirmBatch} onChange={(event) => setConfirmBatch(event.target.checked)} />
-                I understand this batch calls paid provider APIs.
+                <input type="checkbox" checked={confirmCost} onChange={(event) => setConfirmCost(event.target.checked)} />
+                I confirm this paid {provider} API run for model {activeModel}.
               </label>
-              <button type="button" disabled={busy || !confirmBatch || coverage.length === 0} style={button(confirmBatch && coverage.length > 0)} onClick={() => runQueries(coverage.map((item) => item.code), true)}>
-                Run {coverage.length} shown queries
+              <button type="button" disabled={busy || !confirmCost} style={button(confirmCost)} onClick={() => runQueries([selectedCode])}>
+                Confirm and run {selectedCode}
+              </button>
+              <button type="button" disabled={busy || !confirmCost || coverage.length === 0} style={button(confirmCost && coverage.length > 0)} onClick={() => runQueries(coverage.map((item) => item.code))}>
+                Confirm and run {coverage.length} shown queries
               </button>
             </>
           ) : (

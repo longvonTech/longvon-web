@@ -1,5 +1,6 @@
 import {
   buildProviderRequest,
+  DEFAULT_GEMINI_MODEL,
   executeProviderCall,
   parseProviderResponse,
   ProviderNotReadyError,
@@ -8,7 +9,7 @@ import {
 
 const ENV = {
   GEMINI_API_KEY: 'gemini-test-key-value',
-  GEMINI_MODEL: 'gemini-2.5-flash',
+  GEMINI_MODEL: 'gemini-3.8-flash',
   PERPLEXITY_API_KEY: 'pplx-test-key-value',
   PERPLEXITY_MODEL: 'sonar',
   DOUBAO_API_KEY: 'ark-test-key-value',
@@ -19,7 +20,7 @@ describe('provider readiness', () => {
   it('reports configured state without returning secret values', () => {
     const status = providerReadiness('gemini', ENV);
     expect(status.ready).toBe(true);
-    expect(status.model).toBe('gemini-2.5-flash');
+    expect(status.model).toBe('gemini-3.8-flash');
     expect(JSON.stringify(status)).not.toContain('gemini-test-key-value');
     expect(providerReadiness('doubao', { DOUBAO_API_KEY: ENV.DOUBAO_API_KEY }).ready).toBe(false);
     expect(providerReadiness('perplexity', {}).setupMessage).toMatch(/No request was sent/);
@@ -50,6 +51,13 @@ describe('provider requests', () => {
       contents: [{ role: 'user', parts: [{ text: query }] }],
       tools: [{ google_search: {} }],
     });
+    const gemini = buildProviderRequest('gemini', { GEMINI_API_KEY: ENV.GEMINI_API_KEY }, query);
+    expect(gemini.url).toBe(
+      `https://generativelanguage.googleapis.com/v1beta/models/${DEFAULT_GEMINI_MODEL}:generateContent`,
+    );
+    expect(DEFAULT_GEMINI_MODEL).toBe('gemini-3.8-flash');
+    expect(gemini.url).not.toContain('gemini-test-key-value');
+    expect(gemini.headers['x-goog-api-key']).toBe('gemini-test-key-value');
     expect(buildProviderRequest('perplexity', ENV, query).url).toBe(
       'https://api.perplexity.ai/v1/agent',
     );
@@ -79,7 +87,7 @@ describe('provider parsers', () => {
     const parsed = parseProviderResponse(
       'gemini',
       {
-        modelVersion: 'gemini-2.5-flash',
+        modelVersion: 'gemini-3.8-flash',
         candidates: [
           {
             content: { parts: [{ text: 'One manufacturer is described here.' }] },
@@ -94,7 +102,7 @@ describe('provider parsers', () => {
           },
         ],
       },
-      'gemini-2.5-flash',
+      'gemini-3.8-flash',
     );
     expect(parsed.rawAnswer).toBe('One manufacturer is described here.');
     expect(parsed.citations).toEqual([

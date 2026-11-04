@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useEffect, useState, type CSSProperties } from 'react';
+import { useCallback, useEffect, useRef, useState, type CSSProperties } from 'react';
 import { useRouter } from 'next/navigation';
 import { AdminShell } from '../../../components/admin/AdminShell';
 
@@ -133,6 +133,11 @@ export default function GeoBenchmarkPage() {
     captureStatus: 'complete',
     citations: [{ title: '', url: '', snippet: '' }],
   });
+  const [correction, setCorrection] = useState({
+    rawAnswer: '',
+    captureStatus: 'complete',
+    citations: [{ title: '', url: '', snippet: '' }],
+  });
   const [review, setReview] = useState({
     reviewStatus: 'reviewed',
     score: '0',
@@ -155,7 +160,9 @@ export default function GeoBenchmarkPage() {
     return data;
   }
 
+  const loadId = useRef(0);
   const reload = useCallback(async (activeToken = token) => {
+    const id = ++loadId.current;
     const params = new URLSearchParams({ provider, mode });
     if (category) params.set('category', category);
     if (from) params.set('from', from);
@@ -173,6 +180,7 @@ export default function GeoBenchmarkPage() {
     const statusJson = await statusRes.json();
     const metricsJson = await metricsRes.json();
     const coverageJson = await coverageRes.json();
+    if (id !== loadId.current) return;
     if (!statusRes.ok) throw new Error(errorText(statusJson));
     if (!metricsRes.ok) throw new Error(errorText(metricsJson));
     if (!coverageRes.ok) throw new Error(errorText(coverageJson));
@@ -200,6 +208,29 @@ export default function GeoBenchmarkPage() {
     setError('');
     const data = await call(`results/${id}`);
     setDetail(data);
+    const citations = data.citations?.length
+      ? data.citations.map((item: Citation) => ({ title: item.title ?? '', url: item.url, snippet: item.snippet ?? '' }))
+      : [{ title: '', url: '', snippet: '' }];
+    if (data.mode === 'web_manual') {
+      setCapture((current) => ({
+        ...current,
+        rawAnswer: data.rawAnswer ?? '',
+        modelLabel: data.modelLabel ?? '',
+        locale: data.locale ?? '',
+        language: data.language ?? '',
+        region: data.region ?? '',
+        searchMode: data.searchMode ?? '',
+        notes: data.notes ?? '',
+        screenshotRef: data.screenshotRef ?? '',
+        captureStatus: data.captureStatus === 'draft' ? 'draft' : 'complete',
+        citations,
+      }));
+    }
+    setCorrection({
+      rawAnswer: data.rawAnswer ?? '',
+      captureStatus: 'complete',
+      citations,
+    });
     setReview({
       reviewStatus: data.reviewStatus === 'pending' ? 'reviewed' : data.reviewStatus,
       score: String(data.review?.score ?? 0),
@@ -215,38 +246,71 @@ export default function GeoBenchmarkPage() {
     });
   }
 
+  function citationPayload(citations: Array<{ title: string; url: string; snippet: string }>) {
+    return citations.filter((item) => item.url.trim()).map((item) => ({
+      title: item.title || undefined,
+      url: item.url,
+      snippet: item.snippet || undefined,
+    }));
+  }
+
   async function saveCapture() {
     setBusy(true);
     setError('');
     setMessage('');
     try {
-      const created = await call('captures', {
-        method: 'POST',
-        body: JSON.stringify({
-          provider,
-          queryCode: selectedCode,
-          rawAnswer: capture.rawAnswer,
-          captureStatus: capture.captureStatus,
-          modelLabel: capture.modelLabel || undefined,
-          locale: capture.locale || undefined,
-          language: capture.language || undefined,
-          region: capture.region || undefined,
-          searchMode: capture.searchMode || undefined,
-          notes: capture.notes || undefined,
-          screenshotRef: capture.screenshotRef || undefined,
-          operatorLabel: capture.operatorLabel,
-          citations: capture.citations.filter((item) => item.url.trim()).map((item) => ({
-            title: item.title || undefined,
-            url: item.url,
-            snippet: item.snippet || undefined,
-          })),
-        }),
-      });
-      setMessage(`Saved ${created.queryCode} as ${created.origin}. It is not scored until a human reviews it.`);
+      const body = {
+        rawAnswer: capture.rawAnswer,
+        captureStatus: capture.captureStatus,
+        modelLabel: capture.modelLabel || undefined,
+        locale: capture.locale || undefined,
+        language: capture.language || undefined,
+        region: capture.region || undefined,
+        searchMode: capture.searchMode || undefined,
+        notes: capture.notes || undefined,
+        screenshotRef: capture.screenshotRef || undefined,
+        operatorLabel: capture.operatorLabel,
+        citations: citationPayload(capture.citations),
+      };
+      const updating = detail && !detail.immutable && detail.mode === 'web_manual' && detail.queryCode === selectedCode;
+      const saved = updating
+        ? await call(`results/${detail.id}`, { method: 'PATCH', body: JSON.stringify(body) })
+        : await call('captures', {
+            method: 'POST',
+            body: JSON.stringify({ ...body, provider, queryCode: selectedCode }),
+          });
+      setMessage(updating
+        ? `Updated ${saved.queryCode}. It stays out of the rates until a human reviews it.`
+        : `Saved ${saved.queryCode} as ${saved.origin}. It is not scored until a human reviews it.`);
       await reload();
-      await openResult(created.id);
+      await openResult(saved.id);
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Save failed');
+    } finally {
+      setBusy(false);
+    }
+  }
+
+  async function saveCorrection() {
+    if (!detail?.immutable) return;
+    setBusy(true);
+    setError('');
+    setMessage('');
+    try {
+      const saved = await call(`results/${detail.id}/corrections`, {
+        method: 'POST',
+        body: JSON.stringify({
+          rawAnswer: correction.rawAnswer,
+          captureStatus: correction.captureStatus,
+          operatorLabel: capture.operatorLabel,
+          citations: citationPayload(correction.citations),
+        }),
+      });
+      setMessage(`Saved ${saved.queryCode} version ${saved.version} as a new ${saved.origin} record. The previous raw answer stays locked.`);
+      await reload();
+      await openResult(saved.id);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Correction failed');
     } finally {
       setBusy(false);
     }
@@ -311,6 +375,8 @@ export default function GeoBenchmarkPage() {
     const params = new URLSearchParams({ format, provider, mode, operatorLabel: capture.operatorLabel });
     if (category) params.set('category', category);
     if (status) params.set('status', status);
+    if (from) params.set('from', from);
+    if (to) params.set('to', to);
     try {
       const file = await call(`export?${params}`);
       const blob = new Blob([file.body], { type: file.mimeType });
@@ -330,7 +396,9 @@ export default function GeoBenchmarkPage() {
   const visibleCoverage = coverage.filter((item) => {
     if (!status) return true;
     if (status === 'draft') return item.latest?.captureStatus === 'draft';
-    if (status === 'reviewed') return Boolean(item.scored?.countsTowardMetrics);
+    if (status === 'reviewed') {
+      return item.latest?.reviewStatus === 'reviewed' && Boolean(item.latest.countsTowardMetrics);
+    }
     return item.latest?.reviewStatus === status;
   });
 
@@ -452,8 +520,24 @@ export default function GeoBenchmarkPage() {
                 type="button"
                 onClick={() => {
                   setSelectedCode(item.code);
-                  if (item.latest) openResult(item.latest.id).catch((err: Error) => setError(err.message));
-                  else setDetail(null);
+                  if (item.latest) {
+                    openResult(item.latest.id).catch((err: Error) => setError(err.message));
+                  } else {
+                    setDetail(null);
+                    setCapture((current) => ({
+                      ...current,
+                      rawAnswer: '',
+                      modelLabel: '',
+                      locale: '',
+                      language: '',
+                      region: '',
+                      searchMode: '',
+                      notes: '',
+                      screenshotRef: '',
+                      captureStatus: 'complete',
+                      citations: [{ title: '', url: '', snippet: '' }],
+                    }));
+                  }
                 }}
                 style={{ display: 'block', width: '100%', textAlign: 'left', border: selectedCode === item.code ? '1px solid #0066CC' : '1px solid transparent', background: 'transparent', padding: 8, borderRadius: 8, cursor: 'pointer' }}
               >
@@ -514,7 +598,17 @@ export default function GeoBenchmarkPage() {
                   <option value="draft">Draft</option>
                 </select>
                 <input aria-label="Operator role label" value={capture.operatorLabel} onChange={(event) => setCapture({ ...capture, operatorLabel: event.target.value })} style={field} />
-                <button type="button" disabled={busy} style={button(true)} onClick={saveCapture}>Save capture</button>
+                <button
+                  type="button"
+                  disabled={busy || Boolean(detail && detail.immutable && detail.mode === 'web_manual' && detail.queryCode === selectedCode)}
+                  style={button(!(busy || (detail && detail.immutable && detail.mode === 'web_manual' && detail.queryCode === selectedCode)))}
+                  onClick={saveCapture}
+                >
+                  {detail && !detail.immutable && detail.mode === 'web_manual' && detail.queryCode === selectedCode ? 'Update this capture' : 'Save new capture'}
+                </button>
+                {detail && detail.immutable && detail.mode === 'web_manual' && detail.queryCode === selectedCode && (
+                  <p style={text}>This answer is locked. Use Save correction on the record below to store a new version.</p>
+                )}
               </div>
             </>
           )}
@@ -551,9 +645,39 @@ export default function GeoBenchmarkPage() {
               <textarea aria-label="Rationale" placeholder="Rationale" value={review.rationale} onChange={(event) => setReview({ ...review, rationale: event.target.value })} style={{ ...field, width: '100%', minHeight: 80 }} />
               <input aria-label="Evaluator role label" value={review.evaluator} onChange={(event) => setReview({ ...review, evaluator: event.target.value })} style={field} />
               <button type="button" disabled={busy} style={button(true)} onClick={submitReview}>Save review</button>
-              {detail.immutable && <p style={text}>This raw answer is locked. A later correction must be saved as a new version from the API.</p>}
+              <h3 style={h3}>Versions</h3>
+              <ul>
+                {(detail.history ?? []).map((item) => (
+                  <li key={item.id} style={text}>
+                    <button type="button" onClick={() => openResult(item.id).catch((err: Error) => setError(err.message))} style={button(item.id === detail.id)}>
+                      v{item.version} · {item.reviewStatus} · {item.captureStatus}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+              {detail.immutable && (
+                <div>
+                  <h3 style={h3}>Correction</h3>
+                  <p style={text}>The raw answer above stays locked. Saving a correction stores a new {detail.origin} version and leaves it pending until someone reviews it.</p>
+                  <textarea aria-label="Corrected raw answer" value={correction.rawAnswer} onChange={(event) => setCorrection({ ...correction, rawAnswer: event.target.value })} style={{ ...field, width: '100%', minHeight: 100 }} />
+                  {correction.citations.map((citation, index) => (
+                    <div key={index} style={{ display: 'grid', gap: 6, marginBottom: 8 }}>
+                      <input aria-label={`Correction citation ${index + 1} title`} placeholder="Citation title" value={citation.title} onChange={(event) => setCorrection({ ...correction, citations: correction.citations.map((item, itemIndex) => itemIndex === index ? { ...item, title: event.target.value } : item) })} style={field} />
+                      <input aria-label={`Correction citation ${index + 1} URL`} placeholder="https:// citation URL" value={citation.url} onChange={(event) => setCorrection({ ...correction, citations: correction.citations.map((item, itemIndex) => itemIndex === index ? { ...item, url: event.target.value } : item) })} style={field} />
+                    </div>
+                  ))}
+                  <button type="button" style={button(false)} onClick={() => setCorrection({ ...correction, citations: [...correction.citations, { title: '', url: '', snippet: '' }] })}>Add correction citation</button>
+                  <div style={{ display: 'flex', gap: 8, marginTop: 8 }}>
+                    <select aria-label="Correction capture status" value={correction.captureStatus} onChange={(event) => setCorrection({ ...correction, captureStatus: event.target.value })} style={field}>
+                      <option value="complete">Complete</option>
+                      <option value="draft">Draft</option>
+                    </select>
+                    <button type="button" disabled={busy} style={button(true)} onClick={saveCorrection}>Save correction</button>
+                  </div>
+                </div>
+              )}
               <h3 style={h3}>Audit</h3>
-              <ul>{detail.audit.map((event) => <li key={event.id} style={text}>{event.action} · {event.actorLabel || 'unlabeled'} · {event.createdAt}</li>)}</ul>
+              <ul>{detail.audit.map((event) => <li key={event.id} style={text}>{event.action} · {event.actorLabel || 'unlabeled'} · {new Date(event.createdAt).toISOString()}</li>)}</ul>
             </div>
           )}
         </div>

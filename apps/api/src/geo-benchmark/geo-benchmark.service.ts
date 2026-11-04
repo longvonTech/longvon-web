@@ -28,11 +28,13 @@ import {
   assertRoleLabel,
   assertScreenshotRef,
   BenchmarkValidationError,
+  capturedAtRange,
   normalizeCitations,
   normalizeReview,
   rawAnswerLocked,
   type CitationInput,
 } from './domain/validation';
+import { pickLatestVersion } from './domain/versions';
 import {
   CATEGORIES,
   findQuery,
@@ -101,14 +103,16 @@ export class GeoBenchmarkService {
           'Coverage requires both provider and mode so API and web_manual stay separate.',
         );
       }
+      const capturedAt = capturedAtRange(filters.from, filters.to);
       const results = await this.prisma.geoResult.findMany({
         where: {
           provider,
           mode,
           ...(filters.category ? { category: this.readCategory(filters.category) } : {}),
+          ...(capturedAt ? { capturedAt } : {}),
         },
         include: { review: true, citations: { select: { id: true } } },
-        orderBy: [{ queryCode: 'asc' }, { version: 'desc' }],
+        orderBy: [{ queryCode: 'asc' }, { version: 'desc' }, { capturedAt: 'desc' }],
       });
       const universe = GEO_QUERY_BANK.filter(
         (item) => !filters.category || item.category === filters.category,
@@ -118,14 +122,15 @@ export class GeoBenchmarkService {
         mode,
         queries: universe.map((query) => {
           const versions = results.filter((item) => item.queryCode === query.code);
-          const latest = versions[0] ?? null;
-          const scored =
-            versions.find(
+          const latest = pickLatestVersion(versions);
+          const scored = pickLatestVersion(
+            versions.filter(
               (item) =>
                 item.reviewStatus === 'reviewed' &&
                 item.captureStatus === 'complete' &&
                 item.review?.score != null,
-            ) ?? null;
+            ),
+          );
           return {
             code: query.code,
             category: query.category,
@@ -311,7 +316,12 @@ export class GeoBenchmarkService {
       const existing = await this.requireResult(id);
       assertRawMutable(existing.reviewStatus);
       const operator = assertRoleLabel(dto.operatorLabel, 'Operator');
-      const rawAnswer = dto.rawAnswer == null ? undefined : assertRawAnswer(dto.rawAnswer);
+      const rawAnswer =
+        dto.rawAnswer == null
+          ? undefined
+          : dto.captureStatus === 'draft' && dto.rawAnswer.trim() === ''
+            ? ''
+            : assertRawAnswer(dto.rawAnswer);
       const citations = dto.citations == null ? undefined : normalizeCitations(dto.citations);
       const updated = await this.prisma.$transaction(async (tx) => {
         if (citations) {
@@ -815,28 +825,12 @@ export class GeoBenchmarkService {
         if (!isReviewStatus(filters.status)) throw new BenchmarkValidationError('Unknown status.');
         where.reviewStatus = filters.status;
       }
-      if (filters.from || filters.to) {
-        const capturedAt: Prisma.DateTimeFilter = {};
-        if (filters.from) capturedAt.gte = this.parseDate(filters.from, 'from');
-        if (filters.to) capturedAt.lte = this.parseDate(filters.to, 'to');
-        where.capturedAt = capturedAt;
-      }
+      const capturedAt = capturedAtRange(filters.from, filters.to);
+      if (capturedAt) where.capturedAt = capturedAt;
       return where;
     } catch (error) {
       this.rethrow(error);
     }
-  }
-
-  private parseDate(value: string, field: string): Date {
-    const dateOnly = /^\d{4}-\d{2}-\d{2}$/.test(value);
-    const normalized = dateOnly
-      ? `${value}T${field === 'to' ? '23:59:59.999Z' : '00:00:00.000Z'}`
-      : value;
-    const date = new Date(normalized);
-    if (Number.isNaN(date.getTime())) {
-      throw new BenchmarkValidationError(`${field} must be an ISO date.`);
-    }
-    return date;
   }
 
   private async writeAudit(

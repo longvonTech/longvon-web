@@ -295,3 +295,26 @@ export function assertRawMutable(reviewStatus: string): void {
     );
   }
 }
+
+export function parseFilterInstant(value: string, field: string): Date {
+  const dateOnly = /^\d{4}-\d{2}-\d{2}$/.test(value);
+  const normalized = dateOnly
+    ? `${value}T${field === 'to' ? '23:59:59.999Z' : '00:00:00.000Z'}`
+    : value;
+  const date = new Date(normalized);
+  if (Number.isNaN(date.getTime())) {
+    throw new BenchmarkValidationError(`${field} must be an ISO date.`);
+  }
+  return date;
+}
+
+export function capturedAtRange(
+  from?: string,
+  to?: string,
+): { gte?: Date; lte?: Date } | undefined {
+  if (!from && !to) return undefined;
+  const range: { gte?: Date; lte?: Date } = {};
+  if (from) range.gte = parseFilterInstant(from, 'from');
+  if (to) range.lte = parseFilterInstant(to, 'to');
+  return range;
+}

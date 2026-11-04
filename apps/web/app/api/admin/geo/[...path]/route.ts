@@ -1,10 +1,14 @@
-import { NextRequest } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import { proxyToApi } from '../../_lib/proxy';
+import { geoBenchmarkApiPath } from '../../_lib/geo-proxy-path';
 
 async function forward(request: NextRequest, method?: string) {
-  const params = request.nextUrl.pathname.replace(/^\/api\/admin\/geo\/?/, '');
-  const path = params ? `/${params}` : '';
-  return proxyToApi(request, `/admin/geo-benchmark${path}${request.nextUrl.search}`, method);
+  try {
+    const path = geoBenchmarkApiPath(request.nextUrl.pathname, request.nextUrl.search);
+    return proxyToApi(request, path, method);
+  } catch {
+    return NextResponse.json({ message: 'Rejected geo admin path.' }, { status: 400 });
+  }
 }
 
 export async function GET(request: NextRequest) {

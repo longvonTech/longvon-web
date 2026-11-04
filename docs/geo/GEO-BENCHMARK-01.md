@@ -9,7 +9,9 @@ The dashboard is `/admin/geo`. Every API route under `/admin/geo-benchmark` requ
 
 ## Access limitation
 
-The repository's internal boundary for this admin surface is the shared `ADMIN_IMAGE_PASSWORD` checked by `verifyAdminToken`. It is not per-user JWT authorization. Do not put the benchmark on a public controller. The token is server-checked. The browser only stores it in `localStorage` the same way the existing image and news admin does.
+The repository's internal boundary for this admin surface is the shared `ADMIN_IMAGE_PASSWORD` checked by `verifyAdminToken` on every `/admin/geo-benchmark` handler. It is not per-user JWT authorization. The Next proxy at `/api/admin/geo/*` forwards only that header to the API and does not echo it in the response. Unauthenticated calls receive 401. The page shell at `/admin/geo` contains no benchmark rows; it redirects to `/admin/login` when the browser has no token. `/admin/` and `/api/` stay disallowed in `robots.txt`.
+
+If `ADMIN_IMAGE_PASSWORD` is unset, `verifyAdminToken` still accepts the built-in development password that already gates the image and news admin. This benchmark does not change that helper. Set `ADMIN_IMAGE_PASSWORD` on every deployed API process. Do not put the value in the browser bundle, seed data, logs, or exports.
 
 Operator and evaluator fields are role labels. The API rejects values that look like an email address or a phone number. Do not store platform account credentials or other personal data.
 
@@ -98,7 +100,7 @@ After a result is reviewed or excluded, the raw answer and citations cannot be e
 
 The dashboard shows, per provider and per mode: coverage, mention rate, accurate-entity rate, supplier-candidate rate, active-recommendation rate, score 4–5 rate, official-citation rate, independent-citation rate, and factual-error rate. It also shows the 0–5 distribution and the six category breakdowns. Each rate shows numerator and denominator.
 
-Filters: provider, mode, category, date, and status. API and web panels are separate.
+Filters: provider, mode, category, date, and status. The date window applies to the rates, the query list, and the export. API and web panels are separate. A reviewed answer can be corrected in the dashboard; that stores the next version and leaves the locked answer unchanged.
 
 `GET /admin/geo-benchmark/export?format=csv|json` includes raw answers, citations, scores, and audit history. It writes an export audit event. Secrets are removed. CSV cells that start with `=`, `+`, `-`, or `@` are neutralized.
 

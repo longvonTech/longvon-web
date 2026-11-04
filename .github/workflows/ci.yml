@@ -56,7 +56,5 @@ jobs:
       - name: Build
         run: npm run build
 
-      # Sprint 1后端/前端均尚无单元测试用例（业务逻辑本身就是后续Sprint才实现），
-      # 测试步骤先占位，待有实际测试用例后取消跳过
-      - name: Test (占位，暂无测试用例)
-        run: echo "Sprint 1暂无测试用例，待业务模块实现后补充"
+      - name: Test
+        run: npm test

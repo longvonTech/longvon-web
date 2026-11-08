@@ -6,8 +6,8 @@
 ## Unique identifiers
 - Branch: `geo/fix-01-phase2-candidate`
 - Base: `71b3e8893f56848732f49acb580ef461129dcc49`
-- Technical candidate commit (branch tip): `a10e6114d496fb507c73cd82e5f9b995f1d19af0`
-- Package/content commit: `8e41fd4c6cf8f934ded7b8b87ddebc35a61e1ecf`
+- Unique technical package commit: `8e41fd4c6cf8f934ded7b8b87ddebc35a61e1ecf`
+- Branch tip (includes docs pins): `7c387c1fdc7f8001e1de2304879f3022be206e7c`
 - Package: `GEO-FIX-01-PHASE-2D` / `2D.1`
 - COPY: **30** (3 ADD + 27 REPLACE)
 - DELETE: **1** (`apps/web/components/HtmlLang.tsx`)

@@ -1,6 +1,6 @@
-# Phase 2D SHA256 inventory
+# Phase 3 SHA256 inventory
 
-Candidate payload hashes only. Not live production target hashes.
+Candidate payload hashes. Production target hashes are recorded in PHASE-3-PRODUCTION-READONLY-AUDIT.md.
 
 ```text
 384f53cf5239e088907bccb2918c983a6a548c525701e6ea107735368035d949  docs/geo/packages/geo-fix-01/payload/apps/web/middleware.ts

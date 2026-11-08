@@ -1,0 +1,73 @@
+[
+  {
+    "name": "home_lang",
+    "ok": true,
+    "detail": "zh-CN"
+  },
+  {
+    "name": "manu_lang",
+    "ok": true,
+    "detail": "en"
+  },
+  {
+    "name": "manu_meta",
+    "ok": true,
+    "detail": [
+      145,
+      "LONGVON is a smart ring manufacturer offering OEM/ODM, custom hardware, firmware, health algorithms, apps, SDK/API integration and manufacturing."
+    ]
+  },
+  {
+    "name": "oem_lang",
+    "ok": true,
+    "detail": "en"
+  },
+  {
+    "name": "oem_meta",
+    "ok": true,
+    "detail": [
+      152,
+      "Develop custom smart rings with LONGVON. We provide OEM/ODM hardware, firmware, health algorithms, apps, SDK/API integration, testing and manufacturing."
+    ]
+  },
+  {
+    "name": "oem_hreflang",
+    "ok": true,
+    "detail": [
+      "zh-CN",
+      "en",
+      "x-default"
+    ]
+  },
+  {
+    "name": "oem_xdefault_en",
+    "ok": true,
+    "detail": [
+      "zh-CN",
+      "en",
+      "x-default"
+    ]
+  },
+  {
+    "name": "manu_hreflang",
+    "ok": true,
+    "detail": [
+      "zh-CN",
+      "en",
+      "x-default"
+    ]
+  },
+  {
+    "name": "jsonld",
+    "ok": true,
+    "detail": [
+      6,
+      4
+    ]
+  },
+  {
+    "name": "contact_301",
+    "ok": true,
+    "detail": "HTTP/1.1 301 Moved Permanently"
+  }
+]

@@ -11,7 +11,7 @@ Worktree: `/private/tmp/longvon-geo-phase2-candidate` (original dirty worktree p
 | A4 | Prod backup | P0 | 已验证为不足 | `_rollback` standalone only; no 31-file source bak | Isolated pull hash OK | **Missing on-server source backup** | Owner creates backup | Deploy owner |
 | A5 | Rollback package | P0 | 隔离已验证 / 生产未就绪 | `/tmp/phase3-rollback-sim` PASS | Isolated PASS | No retained prod rollback artifact | Package + store on server | Deploy owner |
 | A6 | Audit doc | P0 | 已开发+已验证 | `PHASE-3-PRODUCTION-READONLY-AUDIT.md` | — | — | — | Cursor |
-| B1 | Candidate identity | P0 | 已验证 | payload `8e41fd4…`; Phase3 pkg `3.0.0` manifest `3f4dbc71e2a005c7d07e08b9f4d8d9de1a2c8a55fc8fd4e59e319a9b3dbc794e` | — | — | Don’t confuse tip vs package | Cursor |
+| B1 | Candidate identity | P0 | 已验证 | payload `8e41fd4…`; Phase3 pkg `3.0.0` manifest `bc13b55c7163068edc2e7a00ac6dd8a49625f67127c8aa06a726bc7be7af688f` | — | — | Don’t confuse tip vs package | Cursor |
 | B2 | Field Meta protect | P0 | 已验证 | assert-meta 145/152 | PASS | — | — | Cursor |
 | B3 | Contact nginx vs next | P0 | 已验证 | nginx 301; next never_copy | SSR PASS | — | — | Cursor |
 | B4 | Full retest | P0 | 已验证 | 26/26; build; tsc; lint; SSR | PASS | — | — | Cursor |

@@ -523,5 +523,6 @@
   ],
   "phase3_audit": "docs/geo/PHASE-3-PRODUCTION-READONLY-AUDIT.md",
   "phase2d_package_commit": "8e41fd4c6cf8f934ded7b8b87ddebc35a61e1ecf",
-  "phase2d_manifest_sha256": "f09887060cc33fe8447ac23badbe69596a20ace3a80709680181b4fa4b1cd703"
+  "phase2d_manifest_sha256": "f09887060cc33fe8447ac23badbe69596a20ace3a80709680181b4fa4b1cd703",
+  "phase3_docs_commit": "8ac87e6810110444ecc9af20cd16b6f033c10ad6"
 }

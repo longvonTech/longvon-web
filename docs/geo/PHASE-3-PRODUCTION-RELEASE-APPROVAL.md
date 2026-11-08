@@ -12,7 +12,7 @@ This document prepares human approval materials only. **No merge, deploy, rsync,
 |---|---|
 | Payload package commit | `8e41fd4c6cf8f934ded7b8b87ddebc35a61e1ecf` |
 | Phase 3 package | `GEO-FIX-01-PHASE-3` / `3.0.0` |
-| Manifest SHA256 | `3f4dbc71e2a005c7d07e08b9f4d8d9de1a2c8a55fc8fd4e59e319a9b3dbc794e` |
+| Manifest SHA256 | `bc13b55c7163068edc2e7a00ac6dd8a49625f67127c8aa06a726bc7be7af688f` |
 | Branch | `geo/fix-01-phase2-candidate` |
 | COPY / DELETE | 30 / 1 |
 

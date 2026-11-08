@@ -13,7 +13,7 @@
 | 2 | 31 targets vs candidate manifest? | **0 CONFLICT.** 3 EXPECTED_MISSING_FOR_ADD, 27 EXPECTED_DIFFERENCE (pinned), 1 EXPECTED_PRESENT_FOR_DELETE |
 | 3 | Production backup real & complete? | **No** for Option B 31-file source set. Standalone/api backups exist under `_rollback` but do not cover FIX-01 sources |
 | 4 | Rollback package verified? | **Isolated source rollback PASS** after fresh read-only pull; **on-server retained rollback package for Option B: missing** |
-| 5 | FIX-01 unique candidate? | **Yes (technical):** payload commit `8e41fd4…`; Phase 3 package `GEO-FIX-01-PHASE-3` `3.0.0` manifest `3f4dbc71e2a005c7d07e08b9f4d8d9de1a2c8a55fc8fd4e59e319a9b3dbc794e` |
+| 5 | FIX-01 unique candidate? | **Yes (technical):** payload commit `8e41fd4…`; Phase 3 package `GEO-FIX-01-PHASE-3` `3.0.0` (docs commit `8ac87e6810110444ecc9af20cd16b6f033c10ad6`) manifest `bc13b55c7163068edc2e7a00ac6dd8a49625f67127c8aa06a726bc7be7af688f` |
 | 6 | Submit production release approval? | **`NOT READY FOR PRODUCTION APPROVAL`** until on-server source backup/rollback retention exists |
 | 7 | AI visibility across products? | Consumer baselines **N/A** (worksheet ready). Historical contaminated/API samples must not be treated as Phase-3 baseline |
 | 8 | Bing/Google performance? | **N/A / UNVERIFIED** (no console access). Live HTML still shows pre-FIX-01 Meta/`lang` |

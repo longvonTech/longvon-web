@@ -9,9 +9,10 @@
 | Branch | `geo/fix-01-phase2-candidate` | Isolated worktree `/private/tmp/longvon-geo-phase2-candidate` |
 | Phase 2D package commit (payload code freeze) | `8e41fd4c6cf8f934ded7b8b87ddebc35a61e1ecf` | **Unique technical payload identity** — do not confuse with branch tip |
 | Branch tip at audit start | `b2cdb329fb04b4b8353295b79dc76611ccdd181e` | Docs/pins after package commit |
+| Phase 3 docs commit | `8ac87e6810110444ecc9af20cd16b6f033c10ad6` | Audit docs + predeploy pin refresh |
 | Phase 3 package | `GEO-FIX-01-PHASE-3` / `3.0.0` | Same payload source hashes as 2D.1; refreshed production `predeploy_sha256` pins only |
 | Phase 2D Manifest SHA256 | `f09887060cc33fe8447ac23badbe69596a20ace3a80709680181b4fa4b1cd703` | Historical |
-| Phase 3 Manifest SHA256 | `3f4dbc71e2a005c7d07e08b9f4d8d9de1a2c8a55fc8fd4e59e319a9b3dbc794e` | Changed because predeploy pins + package metadata updated |
+| Phase 3 Manifest SHA256 | `bc13b55c7163068edc2e7a00ac6dd8a49625f67127c8aa06a726bc7be7af688f` | Changed because predeploy pins + package metadata updated |
 | SHA256SUMS SHA256 | `1dc76049d734af7dd3ee6863b522d1a8a8edbf2fefc12a3a0c969f83c0488408` | Payload inventory (source hashes unchanged) |
 | COPY | 30 | 3 ADD + 27 REPLACE |
 | DELETE | 1 | `apps/web/components/HtmlLang.tsx` |
@@ -79,7 +80,7 @@ These remain outside Option B COPY.
 ## B5. Unique candidate statement
 
 - **Unique technical payload:** Phase 2D commit `8e41fd4…` / package bytes unchanged.
-- **Phase 3 audit overlay:** Manifest `GEO-FIX-01-PHASE-3` `3.0.0` with fresh predeploy pins (`3f4dbc71e2a005c7d07e08b9f4d8d9de1a2c8a55fc8fd4e59e319a9b3dbc794e`).
+- **Phase 3 audit overlay:** Manifest `GEO-FIX-01-PHASE-3` `3.0.0` with fresh predeploy pins (`bc13b55c7163068edc2e7a00ac6dd8a49625f67127c8aa06a726bc7be7af688f`).
 - Production backup/rollback retention: **incomplete** → cannot approve release.
 
 **Status:** 已验证（技术） / **未上线** / **不可自动批准发布**

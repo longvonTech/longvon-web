@@ -1,0 +1,128 @@
+[
+  {
+    "category": "Manufacturer Discovery",
+    "query_ids": [
+      "Q001",
+      "Q002",
+      "Q003",
+      "Q004",
+      "Q005",
+      "Q006",
+      "Q007",
+      "Q008",
+      "Q009",
+      "Q010"
+    ],
+    "cells": 40,
+    "captured": 0,
+    "na": 40,
+    "best_platform": "N/A",
+    "mention_rate": "N/A",
+    "notes": "No consumer UI scores yet"
+  },
+  {
+    "category": "OEM/ODM",
+    "query_ids": [
+      "Q011",
+      "Q012",
+      "Q013",
+      "Q014",
+      "Q015",
+      "Q016",
+      "Q017",
+      "Q018",
+      "Q019",
+      "Q020"
+    ],
+    "cells": 40,
+    "captured": 0,
+    "na": 40,
+    "best_platform": "N/A",
+    "mention_rate": "N/A",
+    "notes": "No consumer UI scores yet"
+  },
+  {
+    "category": "Health Monitoring",
+    "query_ids": [
+      "Q021",
+      "Q022",
+      "Q023",
+      "Q024",
+      "Q025",
+      "Q026",
+      "Q027",
+      "Q028",
+      "Q029",
+      "Q030"
+    ],
+    "cells": 40,
+    "captured": 0,
+    "na": 40,
+    "best_platform": "N/A",
+    "mention_rate": "N/A",
+    "notes": "No consumer UI scores yet"
+  },
+  {
+    "category": "SDK/API",
+    "query_ids": [
+      "Q031",
+      "Q032",
+      "Q033",
+      "Q034",
+      "Q035",
+      "Q036",
+      "Q037",
+      "Q038",
+      "Q039",
+      "Q040"
+    ],
+    "cells": 40,
+    "captured": 0,
+    "na": 40,
+    "best_platform": "N/A",
+    "mention_rate": "N/A",
+    "notes": "No consumer UI scores yet"
+  },
+  {
+    "category": "International Buyers",
+    "query_ids": [
+      "Q041",
+      "Q042",
+      "Q043",
+      "Q044",
+      "Q045",
+      "Q046",
+      "Q047",
+      "Q048",
+      "Q049",
+      "Q050"
+    ],
+    "cells": 40,
+    "captured": 0,
+    "na": 40,
+    "best_platform": "N/A",
+    "mention_rate": "N/A",
+    "notes": "No consumer UI scores yet"
+  },
+  {
+    "category": "Competitor Comparison",
+    "query_ids": [
+      "Q051",
+      "Q052",
+      "Q053",
+      "Q054",
+      "Q055",
+      "Q056",
+      "Q057",
+      "Q058",
+      "Q059",
+      "Q060"
+    ],
+    "cells": 40,
+    "captured": 0,
+    "na": 40,
+    "best_platform": "N/A",
+    "mention_rate": "N/A",
+    "notes": "No consumer UI scores yet"
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "probed_at_utc": "2026-11-08T15:23:23Z",
+  "ChatGPT": {
+    "url": "https://chatgpt.com/",
+    "result": "LOGIN_WALL",
+    "screenshot": "screenshots/phase41-chatgpt-access.png"
+  },
+  "Gemini": {
+    "url": "https://gemini.google.com/app",
+    "result": "LOGIN_CTA_VISIBLE",
+    "screenshot": "screenshots/phase41-gemini-access.png",
+    "api": "NOT_AUTHORIZED"
+  },
+  "Perplexity": {
+    "url": "https://www.perplexity.ai/",
+    "result": "CLOUDFLARE_BLOCK",
+    "screenshot": "screenshots/phase41-perplexity-access.png",
+    "ray_id": "a57591f9bdf5896b"
+  },
+  "Doubao": {
+    "url": "https://www.doubao.com/chat/",
+    "result": "UI_REACHABLE_LOGIN_OR_INTERSTITIAL",
+    "screenshot": "screenshots/phase41-doubao-access.png"
+  }
+}

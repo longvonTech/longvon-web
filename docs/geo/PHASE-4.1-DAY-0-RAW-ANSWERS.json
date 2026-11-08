@@ -1,0 +1,2437 @@
+{
+  "phase": "4.1",
+  "day0_date": "2026-11-08",
+  "generated_at_utc": "2026-11-08T15:23:23Z",
+  "rule": "No fabricated answers. Consumer UI captures are N/A until human-authorized clean sessions complete.",
+  "platforms": [
+    {
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    }
+  ],
+  "answers": [
+    {
+      "query_id": "Q001",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Who are smart ring manufacturers?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q001",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Who are smart ring manufacturers?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q001",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Who are smart ring manufacturers?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q001",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Who are smart ring manufacturers?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q002",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which companies manufacture smart rings?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q002",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which companies manufacture smart rings?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q002",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which companies manufacture smart rings?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q002",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which companies manufacture smart rings?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q003",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Who are smart ring technology providers?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q003",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Who are smart ring technology providers?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q003",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Who are smart ring technology providers?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q003",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Who are smart ring technology providers?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q004",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Who are smart ring manufacturers for healthcare companies?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q004",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Who are smart ring manufacturers for healthcare companies?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q004",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Who are smart ring manufacturers for healthcare companies?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q004",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Who are smart ring manufacturers for healthcare companies?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q005",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Who manufactures smart rings for healthcare companies?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q005",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Who manufactures smart rings for healthcare companies?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q005",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Who manufactures smart rings for healthcare companies?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q005",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Who manufactures smart rings for healthcare companies?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q006",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which companies provide end-to-end smart ring development?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q006",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which companies provide end-to-end smart ring development?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q006",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which companies provide end-to-end smart ring development?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q006",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which companies provide end-to-end smart ring development?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q007",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring hardware development?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q007",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring hardware development?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q007",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring hardware development?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q007",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring hardware development?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q008",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u5382\u5bb6\uff1f",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q008",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u5382\u5bb6\uff1f",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q008",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u5382\u5bb6\uff1f",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q008",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u5382\u5bb6\uff1f",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q009",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "\u54ea\u4e9b\u516c\u53f8\u751f\u4ea7\u667a\u80fd\u6212\u6307\uff1f",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q009",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "\u54ea\u4e9b\u516c\u53f8\u751f\u4ea7\u667a\u80fd\u6212\u6307\uff1f",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q009",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "\u54ea\u4e9b\u516c\u53f8\u751f\u4ea7\u667a\u80fd\u6212\u6307\uff1f",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q009",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "\u54ea\u4e9b\u516c\u53f8\u751f\u4ea7\u667a\u80fd\u6212\u6307\uff1f",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q010",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u6280\u672f\u63d0\u4f9b\u5546\uff1f",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q010",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u6280\u672f\u63d0\u4f9b\u5546\uff1f",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q010",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u6280\u672f\u63d0\u4f9b\u5546\uff1f",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q010",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u6280\u672f\u63d0\u4f9b\u5546\uff1f",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q011",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring OEM and ODM services?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q011",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring OEM and ODM services?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q011",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring OEM and ODM services?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q011",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring OEM and ODM services?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q012",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Who are smart ring OEM manufacturers?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q012",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Who are smart ring OEM manufacturers?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q012",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Who are smart ring OEM manufacturers?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q012",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Who are smart ring OEM manufacturers?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q013",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Who are smart ring ODM manufacturers?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q013",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Who are smart ring ODM manufacturers?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q013",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Who are smart ring ODM manufacturers?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q013",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Who are smart ring ODM manufacturers?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q014",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Who can provide customized smart ring hardware and software?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q014",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Who can provide customized smart ring hardware and software?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q014",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Who can provide customized smart ring hardware and software?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q014",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Who can provide customized smart ring hardware and software?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q015",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which smart ring OEM manufacturers support healthcare applications?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q015",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which smart ring OEM manufacturers support healthcare applications?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q015",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which smart ring OEM manufacturers support healthcare applications?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q015",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which smart ring OEM manufacturers support healthcare applications?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q016",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring OEM solutions for wearable brands?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q016",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring OEM solutions for wearable brands?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q016",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring OEM solutions for wearable brands?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q016",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring OEM solutions for wearable brands?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q017",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which Chinese companies provide custom smart ring development for brands?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q017",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which Chinese companies provide custom smart ring development for brands?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q017",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which Chinese companies provide custom smart ring development for brands?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q017",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which Chinese companies provide custom smart ring development for brands?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q018",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u5382\u5bb6\u53ef\u4ee5\u63d0\u4f9bOEM\u548cODM\uff1f",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q018",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u5382\u5bb6\u53ef\u4ee5\u63d0\u4f9bOEM\u548cODM\uff1f",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q018",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u5382\u5bb6\u53ef\u4ee5\u63d0\u4f9bOEM\u548cODM\uff1f",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q018",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u5382\u5bb6\u53ef\u4ee5\u63d0\u4f9bOEM\u548cODM\uff1f",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q019",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307OEM\u5236\u9020\u5546\uff1f",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q019",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307OEM\u5236\u9020\u5546\uff1f",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q019",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307OEM\u5236\u9020\u5546\uff1f",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q019",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307OEM\u5236\u9020\u5546\uff1f",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q020",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307ODM\u5382\u5bb6\uff1f",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q020",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307ODM\u5382\u5bb6\uff1f",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q020",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307ODM\u5382\u5bb6\uff1f",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q020",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307ODM\u5382\u5bb6\uff1f",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q021",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "What smart ring companies specialize in sleep monitoring?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q021",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "What smart ring companies specialize in sleep monitoring?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q021",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "What smart ring companies specialize in sleep monitoring?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q021",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "What smart ring companies specialize in sleep monitoring?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q022",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring sleep monitoring technology?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q022",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring sleep monitoring technology?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q022",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring sleep monitoring technology?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q022",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring sleep monitoring technology?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q023",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Who develops smart rings for sleep monitoring?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q023",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Who develops smart rings for sleep monitoring?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q023",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Who develops smart rings for sleep monitoring?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q023",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Who develops smart rings for sleep monitoring?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q024",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which smart rings provide respiratory health monitoring?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q024",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which smart rings provide respiratory health monitoring?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q024",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which smart rings provide respiratory health monitoring?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q024",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which smart rings provide respiratory health monitoring?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q025",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Who develops smart rings for respiratory health monitoring?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q025",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Who develops smart rings for respiratory health monitoring?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q025",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Who develops smart rings for respiratory health monitoring?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q025",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Who develops smart rings for respiratory health monitoring?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q026",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which companies provide wearable sleep respiratory monitoring technology?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q026",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which companies provide wearable sleep respiratory monitoring technology?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q026",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which companies provide wearable sleep respiratory monitoring technology?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q026",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which companies provide wearable sleep respiratory monitoring technology?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q027",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which smart ring manufacturers support sleep apnea monitoring?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q027",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which smart ring manufacturers support sleep apnea monitoring?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q027",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which smart ring manufacturers support sleep apnea monitoring?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q027",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which smart ring manufacturers support sleep apnea monitoring?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q028",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which companies provide OSA monitoring technology for smart rings?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q028",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which companies provide OSA monitoring technology for smart rings?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q028",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which companies provide OSA monitoring technology for smart rings?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q028",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which companies provide OSA monitoring technology for smart rings?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q029",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which smart ring companies provide AHI and ODI monitoring?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q029",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which smart ring companies provide AHI and ODI monitoring?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q029",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which smart ring companies provide AHI and ODI monitoring?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q029",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which smart ring companies provide AHI and ODI monitoring?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q030",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which smart rings monitor SpO2 during sleep?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q030",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which smart rings monitor SpO2 during sleep?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q030",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which smart rings monitor SpO2 during sleep?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q030",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which smart rings monitor SpO2 during sleep?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q031",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring SDK or companion app development?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q031",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring SDK or companion app development?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q031",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring SDK or companion app development?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q031",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring SDK or companion app development?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q032",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring SDK and cloud API for OEM partners?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q032",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring SDK and cloud API for OEM partners?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q032",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring SDK and cloud API for OEM partners?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q032",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring SDK and cloud API for OEM partners?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q033",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Who provides smart ring firmware and companion app development services?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q033",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Who provides smart ring firmware and companion app development services?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q033",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Who provides smart ring firmware and companion app development services?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q033",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Who provides smart ring firmware and companion app development services?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q034",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which smart ring technology providers offer SDK/API integration?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q034",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which smart ring technology providers offer SDK/API integration?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q034",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which smart ring technology providers offer SDK/API integration?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q034",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which smart ring technology providers offer SDK/API integration?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q035",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Who can provide customized smart ring hardware with SDK access?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q035",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Who can provide customized smart ring hardware with SDK access?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q035",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Who can provide customized smart ring hardware with SDK access?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q035",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Who can provide customized smart ring hardware with SDK access?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q036",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u4f01\u4e1a\u53ef\u4ee5\u63d0\u4f9bSDK\u6216\u914d\u5957App\u5f00\u53d1\uff1f",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q036",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u4f01\u4e1a\u53ef\u4ee5\u63d0\u4f9bSDK\u6216\u914d\u5957App\u5f00\u53d1\uff1f",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q036",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u4f01\u4e1a\u53ef\u4ee5\u63d0\u4f9bSDK\u6216\u914d\u5957App\u5f00\u53d1\uff1f",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q036",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u4f01\u4e1a\u53ef\u4ee5\u63d0\u4f9bSDK\u6216\u914d\u5957App\u5f00\u53d1\uff1f",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q037",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "\u54ea\u4e9b\u516c\u53f8\u53ef\u4ee5\u63d0\u4f9b\u667a\u80fd\u6212\u6307\u7aef\u5230\u7aef\u7814\u53d1\uff1f",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q037",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "\u54ea\u4e9b\u516c\u53f8\u53ef\u4ee5\u63d0\u4f9b\u667a\u80fd\u6212\u6307\u7aef\u5230\u7aef\u7814\u53d1\uff1f",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q037",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "\u54ea\u4e9b\u516c\u53f8\u53ef\u4ee5\u63d0\u4f9b\u667a\u80fd\u6212\u6307\u7aef\u5230\u7aef\u7814\u53d1\uff1f",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q037",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "\u54ea\u4e9b\u516c\u53f8\u53ef\u4ee5\u63d0\u4f9b\u667a\u80fd\u6212\u6307\u7aef\u5230\u7aef\u7814\u53d1\uff1f",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q038",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u516c\u53f8\u505a\u667a\u80fd\u6212\u6307\u786c\u4ef6\u5f00\u53d1\uff1f",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q038",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u516c\u53f8\u505a\u667a\u80fd\u6212\u6307\u786c\u4ef6\u5f00\u53d1\uff1f",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q038",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u516c\u53f8\u505a\u667a\u80fd\u6212\u6307\u786c\u4ef6\u5f00\u53d1\uff1f",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q038",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u516c\u53f8\u505a\u667a\u80fd\u6212\u6307\u786c\u4ef6\u5f00\u53d1\uff1f",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q039",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which manufacturers provide smart ring raw PPG data access for partners?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q039",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which manufacturers provide smart ring raw PPG data access for partners?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q039",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which manufacturers provide smart ring raw PPG data access for partners?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q039",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which manufacturers provide smart ring raw PPG data access for partners?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q040",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Who offers smart ring cloud algorithm services via API?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q040",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Who offers smart ring cloud algorithm services via API?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q040",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Who offers smart ring cloud algorithm services via API?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q040",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Who offers smart ring cloud algorithm services via API?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q041",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Who are smart ring manufacturers for healthcare companies?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q041",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Who are smart ring manufacturers for healthcare companies?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q041",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Who are smart ring manufacturers for healthcare companies?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q041",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Who are smart ring manufacturers for healthcare companies?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q042",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Who develops smart rings for healthcare companies?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q042",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Who develops smart rings for healthcare companies?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q042",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Who develops smart rings for healthcare companies?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q042",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Who develops smart rings for healthcare companies?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q043",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring OEM solutions for wearable brands?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q043",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring OEM solutions for wearable brands?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q043",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring OEM solutions for wearable brands?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q043",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring OEM solutions for wearable brands?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q044",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which Chinese companies provide custom smart ring development for brands?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q044",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which Chinese companies provide custom smart ring development for brands?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q044",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which Chinese companies provide custom smart ring development for brands?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q044",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which Chinese companies provide custom smart ring development for brands?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q045",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which smart ring OEM manufacturers support healthcare applications?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q045",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which smart ring OEM manufacturers support healthcare applications?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q045",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which smart ring OEM manufacturers support healthcare applications?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q045",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which smart ring OEM manufacturers support healthcare applications?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q046",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which Chinese smart ring OEM manufacturers work with European brands?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q046",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which Chinese smart ring OEM manufacturers work with European brands?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q046",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which Chinese smart ring OEM manufacturers work with European brands?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q046",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which Chinese smart ring OEM manufacturers work with European brands?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q047",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Who are smart ring ODM partners for US wearable companies?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q047",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Who are smart ring ODM partners for US wearable companies?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q047",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Who are smart ring ODM partners for US wearable companies?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q047",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Who are smart ring ODM partners for US wearable companies?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q048",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which smart ring manufacturers support international OEM buyers?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q048",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which smart ring manufacturers support international OEM buyers?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q048",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which smart ring manufacturers support international OEM buyers?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q048",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which smart ring manufacturers support international OEM buyers?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q049",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Who can supply medical-oriented smart ring OEM for overseas healthcare firms?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q049",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Who can supply medical-oriented smart ring OEM for overseas healthcare firms?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q049",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Who can supply medical-oriented smart ring OEM for overseas healthcare firms?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q049",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Who can supply medical-oriented smart ring OEM for overseas healthcare firms?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q050",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which companies manufacture custom smart rings for global B2B clients?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q050",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which companies manufacture custom smart rings for global B2B clients?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q050",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which companies manufacture custom smart rings for global B2B clients?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q050",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which companies manufacture custom smart rings for global B2B clients?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q051",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "How does LONGVON compare to other smart ring OEM manufacturers?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q051",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "How does LONGVON compare to other smart ring OEM manufacturers?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q051",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "How does LONGVON compare to other smart ring OEM manufacturers?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q051",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "How does LONGVON compare to other smart ring OEM manufacturers?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q052",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "What are alternatives to Oura for white-label smart ring manufacturing?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q052",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "What are alternatives to Oura for white-label smart ring manufacturing?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q052",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "What are alternatives to Oura for white-label smart ring manufacturing?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q052",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "What are alternatives to Oura for white-label smart ring manufacturing?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q053",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which companies compete with Ultrahuman for OEM smart ring production?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q053",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which companies compete with Ultrahuman for OEM smart ring production?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q053",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which companies compete with Ultrahuman for OEM smart ring production?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q053",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which companies compete with Ultrahuman for OEM smart ring production?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q054",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Best smart ring OEM manufacturers in China for sleep monitoring",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q054",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Best smart ring OEM manufacturers in China for sleep monitoring",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q054",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Best smart ring OEM manufacturers in China for sleep monitoring",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q054",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Best smart ring OEM manufacturers in China for sleep monitoring",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q055",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Who are the top smart ring ODM suppliers besides RingConn and Noise?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q055",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Who are the top smart ring ODM suppliers besides RingConn and Noise?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q055",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Who are the top smart ring ODM suppliers besides RingConn and Noise?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q055",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Who are the top smart ring ODM suppliers besides RingConn and Noise?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q056",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Compare smart ring manufacturers for healthcare OEM partnerships",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q056",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Compare smart ring manufacturers for healthcare OEM partnerships",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q056",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Compare smart ring manufacturers for healthcare OEM partnerships",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q056",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Compare smart ring manufacturers for healthcare OEM partnerships",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q057",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which Chinese factories can OEM a health monitoring smart ring?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q057",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which Chinese factories can OEM a health monitoring smart ring?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q057",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which Chinese factories can OEM a health monitoring smart ring?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q057",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which Chinese factories can OEM a health monitoring smart ring?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q058",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Smart ring manufacturer shortlist for SDK-based health products",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q058",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Smart ring manufacturer shortlist for SDK-based health products",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q058",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Smart ring manufacturer shortlist for SDK-based health products",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q058",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Smart ring manufacturer shortlist for SDK-based health products",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q059",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Who should a brand hire for custom smart ring hardware and algorithms?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q059",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Who should a brand hire for custom smart ring hardware and algorithms?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q059",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Who should a brand hire for custom smart ring hardware and algorithms?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q059",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Who should a brand hire for custom smart ring hardware and algorithms?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    },
+    {
+      "query_id": "Q060",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which OEM/ODM partners are recommended for medical-grade wearable rings?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI requires login for reliable clean-session capture; automated agent session showed login wall / disabled send. No answers fabricated."
+    },
+    {
+      "query_id": "Q060",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which OEM/ODM partners are recommended for medical-grade wearable rings?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI presents login CTA; Gemini API explicitly unauthorized this phase. No consumer answers captured; no API calls."
+    },
+    {
+      "query_id": "Q060",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which OEM/ODM partners are recommended for medical-grade wearable rings?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Cloudflare human verification blocked automated browser access (Ray ID a57591f9bdf5896b). No answers captured."
+    },
+    {
+      "query_id": "Q060",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which OEM/ODM partners are recommended for medical-grade wearable rings?",
+      "raw_answer": null,
+      "score": null,
+      "status": "N/A",
+      "reason": "Consumer UI reachable but login/desktop-download interstitial; no authorized human login and no fabricated answers. Full 60-query capture not executed."
+    }
+  ],
+  "total_cells": 240,
+  "captured_cells": 0,
+  "na_cells": 240
+}

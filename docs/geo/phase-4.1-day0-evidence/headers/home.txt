@@ -1,0 +1,11 @@
+HTTP/1.1 200 OK
+Server: nginx/1.28.3 (Ubuntu)
+Date: Sun, 08 Nov 2026 15:21:14 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
+link: </images/longvon-logo.png>; rel=preload; as="image", </images/ring1c/White-45-Left.jpg>; rel=preload; as="image", </images/ring1c/Pink-45-Left.jpg>; rel=preload; as="image", </images/ring1c/Blue-45-Left.jpg>; rel=preload; as="image", </images/ring1c/Black-45-Left.jpg>; rel=preload; as="image", </images/ring1c/Black.jpg>; rel=preload; as="image"
+X-Powered-By: Next.js
+Cache-Control: private, no-cache, no-store, max-age=0, must-revalidate
+

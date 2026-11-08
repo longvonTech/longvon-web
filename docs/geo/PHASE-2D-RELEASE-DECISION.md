@@ -6,7 +6,7 @@
 ## Unique identifiers
 - Branch: `geo/fix-01-phase2-candidate`
 - Base: `71b3e8893f56848732f49acb580ef461129dcc49`
-- Technical candidate commit: see git log after Phase 2D commit on this branch
+- Technical candidate commit: `8e41fd4c6cf8f934ded7b8b87ddebc35a61e1ecf`
 - Package: `GEO-FIX-01-PHASE-2D` / `2D.1`
 - COPY: **30** (3 ADD + 27 REPLACE)
 - DELETE: **1** (`apps/web/components/HtmlLang.tsx`)

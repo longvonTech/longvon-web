@@ -1,0 +1,46 @@
+{
+  "package": "GEO-FIX-01-PHASE-2D",
+  "base_commit": "71b3e8893f56848732f49acb580ef461129dcc49",
+  "purpose": "Field-level allowlist for Meta Description-only edits. Body, other metadata keys, forms, and G5 remain forbidden.",
+  "entries": [
+    {
+      "path": "apps/web/app/en/smart-ring-manufacturer/page.tsx",
+      "allowed_change": "metadata.description",
+      "allowed_description": "LONGVON is a smart ring manufacturer offering OEM/ODM, custom hardware, firmware, health algorithms, apps, SDK/API integration and manufacturing.",
+      "allowed_description_chars": 145,
+      "forbidden": [
+        "metadata.title",
+        "metadata.alternates",
+        "metadata.openGraph",
+        "metadata.robots",
+        "page_body",
+        "imports",
+        "component_behavior"
+      ]
+    },
+    {
+      "path": "apps/web/app/en/partner/oem/page.tsx",
+      "allowed_change": "metadata.description",
+      "allowed_description": "Develop custom smart rings with LONGVON. We provide OEM/ODM hardware, firmware, health algorithms, apps, SDK/API integration, testing and manufacturing.",
+      "allowed_description_chars": 152,
+      "forbidden": [
+        "metadata.title",
+        "metadata.alternates",
+        "metadata.openGraph",
+        "metadata.robots",
+        "page_body",
+        "OemRfqForm",
+        "G5",
+        "Contact",
+        "form_submit_logic"
+      ]
+    }
+  ],
+  "never_copy": [
+    "apps/web/next.config.ts",
+    "apps/web/components/LeadAttributionCapture.tsx",
+    "apps/web/lib/lead-attribution.ts",
+    "apps/web/components/OemRfqForm.tsx",
+    "apps/web/lib/partner-api.ts"
+  ]
+}

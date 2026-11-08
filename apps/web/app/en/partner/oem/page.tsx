@@ -49,7 +49,8 @@ const site = getSiteUrl();
 
 export const metadata: Metadata = {
   title: { absolute: 'Smart Ring OEM/ODM & Product Development | LONGVON' },
-  description: `LONGVON accepts OEM/ODM inquiries for customized smart ring hardware, firmware, health algorithms, apps, SDK/API integration and manufacturing. ${ENTITY_STATEMENT_EN}`,
+  description:
+    'Develop custom smart rings with LONGVON. We provide OEM/ODM hardware, firmware, health algorithms, apps, SDK/API integration, testing and manufacturing.',
   alternates: oemRfqAlternates(site, 'en'),
   openGraph: {
     title: 'Smart Ring OEM/ODM & Product Development | LONGVON',

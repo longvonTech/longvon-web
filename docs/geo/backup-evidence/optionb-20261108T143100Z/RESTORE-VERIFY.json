@@ -1,0 +1,167 @@
+{
+  "verify_root": "/tmp/geo-fix-01-optionb-restore-verify.20261108T143100Z",
+  "created_at_utc": "2026-11-08T14:31:00Z",
+  "results": [
+    {
+      "path": "apps/web/middleware.ts",
+      "restore_sha256": null,
+      "match": true,
+      "note": "absent as expected"
+    },
+    {
+      "path": "apps/web/app/assessment/layout.tsx",
+      "restore_sha256": null,
+      "match": true,
+      "note": "absent as expected"
+    },
+    {
+      "path": "apps/web/app/dashboard/layout.tsx",
+      "restore_sha256": null,
+      "match": true,
+      "note": "absent as expected"
+    },
+    {
+      "path": "apps/web/app/about/page.tsx",
+      "restore_sha256": "86e2960f6c2ff05858a519d850d7c0b67bc3dc4a6b709d8268d6d0b00da4510d",
+      "match": true
+    },
+    {
+      "path": "apps/web/app/assessment/page.tsx",
+      "restore_sha256": "671f0abb16d55d55d201cf1a65d79714fd294bbccda69653acc17131d493da09",
+      "match": true
+    },
+    {
+      "path": "apps/web/app/authors/[id]/page.tsx",
+      "restore_sha256": "51ba36d7ba83e83b7ec7f4bd4c45d35ec67ae3ee5d7e0bb46545846571bfb7f1",
+      "match": true
+    },
+    {
+      "path": "apps/web/app/en/layout.tsx",
+      "restore_sha256": "b79bcb149f1ba0a43037869a13c2554e603217baf74c57dfe4453006cf9be707",
+      "match": true
+    },
+    {
+      "path": "apps/web/app/en/partner/oem/page.tsx",
+      "restore_sha256": "5babf1d3d2b6d97ddd83a9c8aa035d87867f17de6bc561d0d7494e85f8dbc937",
+      "match": true
+    },
+    {
+      "path": "apps/web/app/en/smart-ring-oem-odm/page.tsx",
+      "restore_sha256": "23f699aa45dd2dfcba9f01b3e5de6197c36abfb3cf48bd5a77c18ecd77de958b",
+      "match": true
+    },
+    {
+      "path": "apps/web/app/knowledge/[slug]/page.tsx",
+      "restore_sha256": "aeb130e8960e758c4828e55e322430240cf2ad559bae363cc8c0dd58597267a8",
+      "match": true
+    },
+    {
+      "path": "apps/web/app/knowledge/page.tsx",
+      "restore_sha256": "6859a2d18a77bd0e0bc48baa3426e89e648abd5d64f13694f265e58310778af0",
+      "match": true
+    },
+    {
+      "path": "apps/web/app/layout.tsx",
+      "restore_sha256": "ee2a8356d2723c6a22a326ac0be84f7efd20d501d9ca5a45484fa68dfcb91d4e",
+      "match": true
+    },
+    {
+      "path": "apps/web/app/membership/page.tsx",
+      "restore_sha256": "7debdd66d58e06fa950ddd3537265f973e4ee69de291f5c3675f0d7aea60b160",
+      "match": true
+    },
+    {
+      "path": "apps/web/app/metrics/[slug]/page.tsx",
+      "restore_sha256": "9ff4ef6def02c9de7d8e6835a6b9c5af9ef96ed2acb2cd7e260bd470db492dac",
+      "match": true
+    },
+    {
+      "path": "apps/web/app/metrics/page.tsx",
+      "restore_sha256": "a05647e66faec87847dd59ed0880838c1380ca60cde7fb50bf8bff2fda5576a3",
+      "match": true
+    },
+    {
+      "path": "apps/web/app/news/[slug]/page.tsx",
+      "restore_sha256": "01b1691a0d765eef0710717b0856d8f7edd0750f9e7352b082e682f7d0ba2a9e",
+      "match": true
+    },
+    {
+      "path": "apps/web/app/news/page.tsx",
+      "restore_sha256": "fa0b16635bb4695688dee4439a17024a1ca5be4866e7d939fa6df15edde9e09c",
+      "match": true
+    },
+    {
+      "path": "apps/web/app/partner/articles/page.tsx",
+      "restore_sha256": "79d8f9c4fc4144d023edc74e2791bc99bbfd47bcb6b1aabff208a17f5cb8a785",
+      "match": true
+    },
+    {
+      "path": "apps/web/app/partner/distributor/page.tsx",
+      "restore_sha256": "21c2e55781f25906b80a4f6abc7455bed15f345420d5de798252ef345b248aca",
+      "match": true
+    },
+    {
+      "path": "apps/web/app/partner/enterprise/page.tsx",
+      "restore_sha256": "f0b84358a919e13170dc1a7f5aad21aa5294d64dd30b68870e6cbc1df5fca4c3",
+      "match": true
+    },
+    {
+      "path": "apps/web/app/partner/hospital/page.tsx",
+      "restore_sha256": "f98a5b4331dbdff4e67a6aea475723f3692b38de87272d7222f514cbb67b4b99",
+      "match": true
+    },
+    {
+      "path": "apps/web/app/partner/oem/page.tsx",
+      "restore_sha256": "f3836e2c6e29bb47c4a0c4cff8a8dd3a69ee40417032691001697f30c91f6e0d",
+      "match": true
+    },
+    {
+      "path": "apps/web/app/partner/page.tsx",
+      "restore_sha256": "68341a744091dbdc401ca6820c6819d4efe1521a172f4328554e4a24411bf74b",
+      "match": true
+    },
+    {
+      "path": "apps/web/app/partner/pharmacy/page.tsx",
+      "restore_sha256": "d2f0b859141986a970280e6fb3bb53c57ba7400782d1e7d5270c0d4cc7e7cc82",
+      "match": true
+    },
+    {
+      "path": "apps/web/app/products/ring1c/page.tsx",
+      "restore_sha256": "429fc359dc87e044a759f014b6afd64f8a18d31293b14d50d59e78581361a69d",
+      "match": true
+    },
+    {
+      "path": "apps/web/app/topics/[slug]/page.tsx",
+      "restore_sha256": "36b1d43897e50be7a494efe91069030cd49b8bbbba05104f5ba9e7540d1ebd2d",
+      "match": true
+    },
+    {
+      "path": "apps/web/components/ArticleDetailView.tsx",
+      "restore_sha256": "d5470396ae00ec7fa035cda9ab6d6d8011256b3a437e9946923e0b8df3144c9a",
+      "match": true
+    },
+    {
+      "path": "apps/web/components/StructuredData.tsx",
+      "restore_sha256": "b68bca062abb2698ffdb9616f7d1929226ba49193b3b0f00b68e0ec6c6cc9514",
+      "match": true
+    },
+    {
+      "path": "apps/web/lib/i18n-routes.ts",
+      "restore_sha256": "80fe66c184fc78783120bd4e71910c15ee1ca9b14536f4bbb879a0fc4fed80e5",
+      "match": true
+    },
+    {
+      "path": "apps/web/components/HtmlLang.tsx",
+      "restore_sha256": "1cd1f534caeae8dd2b1cafd8d2736d1461401866aa8d1511221f2f082c6e65de",
+      "match": true
+    },
+    {
+      "path": "apps/web/app/en/smart-ring-manufacturer/page.tsx",
+      "restore_sha256": "726cc0b872e050f62e47451c7580768a29a2eafed6413ce23ac9e8391e4ed7b7",
+      "match": true
+    }
+  ],
+  "error_count": 0,
+  "errors": [],
+  "pass": true
+}

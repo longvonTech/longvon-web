@@ -2,7 +2,7 @@
 
 ## Conclusion
 
-# NOT READY FOR PRODUCTION APPROVAL
+# READY FOR HUMAN RELEASE APPROVAL
 
 This document prepares human approval materials only. **No merge, deploy, rsync, PM2, nginx reload, or production mutation was performed.**
 
@@ -30,7 +30,7 @@ See `PHASE-3-PRODUCTION-READONLY-AUDIT.md` §A3. Summary: 3 expected missing ADD
 
 | Item | Status |
 |---|---|
-| On-server Option B 31-file source backup | **MISSING** |
+| On-server Option B 31-file source backup | **PRESENT** (`geo-fix-01-optionb-src.20261108T143100Z`) |
 | Standalone bak `web-standalone.bak.20261101165615` | Exists (compiled runtime; not Option B source set) |
 | Fresh read-only pull to auditor workstation | Done (`/tmp/phase3-rollback-sim/backup`, 28 files, hashes OK) — **not retained as official prod backup** |
 
@@ -76,5 +76,5 @@ As §6 + `docs/geo/ROLLBACK-RUNBOOK.md` / `GEO-FIX-01-DEPLOYMENT-RUNBOOK.md`.
 - [ ] Confirm no concurrent content edits on same paths
 - [ ] Explicit written approval to move from this pack to execution
 
-**Until P0 backup gate is closed, approval status remains:** `NOT READY FOR PRODUCTION APPROVAL`
+**P0 Option B source backup gate closed 2026-11-08.** Evidence: `PHASE-3-OPTIONB-SOURCE-BACKUP-REPORT.md`. Status: `READY FOR HUMAN RELEASE APPROVAL` — deploy still requires separate written owner approval.
 

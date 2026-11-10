@@ -36,7 +36,20 @@ Results: build PASS; SDK routes 200 with correct lang/canonical (see `phase-4.2/
 - Owner must revoke any previously exposed PAT.
 
 ## 5. Push / PR
-Filled after git push / gh pr create.
+| Item | Result |
+|---|---|
+| Branch |  |
+| Base retained |  |
+| Round 2 tip |  (after push may advance) |
+| Remote |  (no embedded credentials) |
+| Push | **SUCCESS** →  |
+| Pull Request | https://github.com/longvonTech/longvon-web/pull/9 |
+| Production publish | **Not performed** |
+
+## 5.1 Commit range (Round 2)
+- SDK page + claims/docs/credential sanitize
+- Remove accidental  symlink
+- Credential audit wording sanitize
 
 ## 6. Blockers
 - AI consumer platforms require login/Cloudflare — pilot scored answers = 0

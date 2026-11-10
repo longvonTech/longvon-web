@@ -24,7 +24,12 @@ Round 1 Push/PR failed. Inspection found `remote.origin.url` contained **embedde
 4. **Owner must revoke/rotate** any previously embedded personal access token that may have been exposed in local shell history, Cursor transcripts, or failed auth logs. This agent cannot complete GitHub token revocation in the account UI.
 
 ## Push / PR
-See Round 2 execution report for live push/PR outcome after sanitize.
+| Item | Result |
+|---|---|
+| Push | SUCCESS to `origin/geo/phase-4.2-execution` |
+| PR | https://github.com/longvonTech/longvon-web/pull/9 |
+| Auth method | GitHub CLI keyring (`longvonTech`) |
+| Secrets in report | None 
 
 ## Residual risk
 If the exposed token was real, treat it as compromised until owner revokes it — even though remote URL is now clean.

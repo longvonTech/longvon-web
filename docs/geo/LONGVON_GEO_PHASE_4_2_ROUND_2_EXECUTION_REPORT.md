@@ -41,7 +41,7 @@ Results: build PASS; SDK routes 200 with correct lang/canonical (see `phase-4.2/
 |---|---|
 | Branch | `geo/phase-4.2-execution` |
 | Base retained | `1ba1c29` |
-| Round 2 tip | `4b4ac46` (this doc commit may advance tip) |
+| Round 2 tip | `966fcc0` |
 | Remote | `https://github.com/longvonTech/longvon-web.git` (no embedded credentials) |
 | Push | **SUCCESS** → `origin/geo/phase-4.2-execution` |
 | Pull Request | https://github.com/longvonTech/longvon-web/pull/9 |
@@ -51,7 +51,7 @@ Results: build PASS; SDK routes 200 with correct lang/canonical (see `phase-4.2/
 - `22ed85f` — SDK page + claims/docs/credential sanitize
 - `033b85c` — remove accidental `node_modules` symlink
 - `7fa3a00` — credential audit wording sanitize
-- `4b4ac46`+ — Round 2 push/PR outcome docs
+- `966fcc0` — Round 2 push/PR outcome docs
 
 ## 6. Blockers
 - AI consumer platforms require login/Cloudflare — pilot scored answers = 0

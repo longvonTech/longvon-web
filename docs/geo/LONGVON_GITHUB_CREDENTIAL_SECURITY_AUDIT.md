@@ -14,7 +14,7 @@ Round 1 Push/PR failed. Inspection found `remote.origin.url` contained **embedde
 | Token-like pattern in remote URL | **YES** (before fix) |
 | Same pattern in main workspace remote after check | No (already clean / cleaned) |
 | Secrets written into tracked repo files this Round 2 | No |
-| `git rev-list` content scan for `ghp_` / `github_pat_` in reachable commits (sample) | No hits reported |
+| `git rev-list` content scan for classic/fine-grained GitHub PAT prefixes in reachable commits (sample) | No hits reported |
 | Full token printed in this report | **Never** |
 
 ## Handling

@@ -1,0 +1,14 @@
+{
+  "scored_answers": 0,
+  "platforms": {
+    "ChatGPT": "BLOCKED_LOGIN",
+    "Gemini": "BLOCKED_LOGIN_OR_API_FORBIDDEN",
+    "Perplexity": "BLOCKED_CLOUDFLARE",
+    "Doubao": "BLOCKED_LOGIN",
+    "DeepSeek": "BLOCKED_LOGIN",
+    "Kimi": "BLOCKED_LOGIN",
+    "Tongyi": "PENDING_HUMAN",
+    "Yuanbao": "PENDING_HUMAN",
+    "Baidu AI": "PENDING_HUMAN"
+  }
+}

@@ -18,6 +18,7 @@ export function GlobalFooter() {
         ['Company', '/en/company/longvon'],
         ['OEM / ODM', '/en/smart-ring-oem-odm'],
         ['Technology', '/en/smart-ring-technology'],
+        ['SDK & Cloud API', '/en/smart-ring-sdk-api'],
         ['Sleep Monitoring', '/en/smart-ring-sleep-monitoring'],
         ['Product', '/en/products/ring1c'],
       ]
@@ -51,6 +52,7 @@ export function GlobalFooter() {
         ['Solution Provider', '/en/smart-ring-solution-provider'],
         ['Healthcare Solutions', '/en/smart-ring-healthcare-solutions'],
         ['Technology', '/en/smart-ring-technology'],
+        ['SDK & Cloud API', '/en/smart-ring-sdk-api'],
         ['Respiratory Health', '/en/smart-ring-sleep-respiratory'],
         ['OSA Technology', '/en/smart-ring-osa'],
         ['About', '/en/about'],
@@ -63,6 +65,7 @@ export function GlobalFooter() {
         ['技术方案提供商', '/smart-ring-solution-provider'],
         ['医疗健康方案', '/smart-ring-healthcare-solutions'],
         ['智能戒指技术', '/smart-ring-technology'],
+        ['SDK / Cloud API', '/smart-ring-sdk-api'],
         ['睡眠监测技术', '/smart-ring-sleep-monitoring'],
         ['睡眠呼吸健康监测', '/smart-ring-sleep-respiratory'],
         ['OSA 相关监测', '/smart-ring-osa'],

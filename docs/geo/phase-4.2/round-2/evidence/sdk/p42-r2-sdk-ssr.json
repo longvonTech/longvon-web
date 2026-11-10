@@ -1,0 +1,30 @@
+[
+  {
+    "path": "/en/smart-ring-sdk-api",
+    "status": 200,
+    "lang": "en",
+    "canon": "https://www.longvon.com/en/smart-ring-sdk-api",
+    "title": "Smart Ring SDK &amp; Cloud API | LONGVON"
+  },
+  {
+    "path": "/smart-ring-sdk-api",
+    "status": 200,
+    "lang": "zh-CN",
+    "canon": "https://www.longvon.com/smart-ring-sdk-api",
+    "title": "智能戒指 SDK 与云端 API | LONGVON 龙汾科技"
+  },
+  {
+    "path": "/en/smart-ring-technology",
+    "status": 200,
+    "lang": "en",
+    "canon": "https://www.longvon.com/en/smart-ring-technology",
+    "title": "Smart Ring Technology &amp; Development | LONGVON"
+  },
+  {
+    "path": "/en/smart-ring-manufacturer",
+    "status": 200,
+    "lang": "en",
+    "canon": "https://www.longvon.com/en/smart-ring-manufacturer",
+    "title": "LONGVON | Smart Ring Manufacturer &amp; OEM/ODM Provider"
+  }
+]

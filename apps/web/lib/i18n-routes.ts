@@ -18,6 +18,7 @@ export const EN_ROUTE_MAP: Record<string, string> = {
   '/smart-ring-solution-provider': '/smart-ring-solution-provider',
   '/smart-ring-healthcare-solutions': '/smart-ring-healthcare-solutions',
   '/smart-ring-technology': '/smart-ring-technology',
+  '/smart-ring-sdk-api': '/smart-ring-sdk-api',
   '/smart-ring-sleep-monitoring': '/smart-ring-sleep-monitoring',
   '/smart-ring-sleep-respiratory': '/smart-ring-sleep-respiratory',
   '/smart-ring-osa': '/smart-ring-osa',
@@ -89,6 +90,7 @@ export const NAV_EN = [
   { href: '/en/company/longvon', label: 'Company' },
   { href: '/en/smart-ring-oem-odm', label: 'OEM / ODM' },
   { href: '/en/smart-ring-technology', label: 'Technology' },
+  { href: '/en/smart-ring-sdk-api', label: 'SDK / API' },
   { href: '/en/partner', label: 'Partners' },
   { href: '/en/about', label: 'About' },
 ] as const;

@@ -75,12 +75,15 @@ export default function SmartRingTechnologyPage() {
 
       <h2 style={h2}>固件与算法</h2>
       <p style={p}>
-        端侧与 App 侧处理形成已发布的睡眠、血氧、心脏及 OSA 相关指标，纳入 71 项参数目录。
+        端侧与 App 侧处理参与形成已发布的睡眠、血氧、心脏及 OSA 相关指标，纳入 71 项参数目录。许多健康算法通过
+        LONGVON 云端服务提供；端侧与云端分工按 OEM/ODM 项目约定。不承诺全部算法均可在客户硬件完全离线运行。
       </p>
 
       <h2 style={h2}>App、SDK 与云端 API</h2>
       <p style={p}>
-        LONGVON 开发配套移动 App（含 MATEYOU App / Ring1C）。合作方 SDK 与云端 API 对接可作为 OEM/ODM 项目能力按需开通。
+        LONGVON 开发配套移动 App（含 MATEYOU App / Ring1C）。合作方 SDK 与云端 API（含合格伙伴的 100Hz PPG
+        原始数据路径评估）按项目开通。详见{' '}
+        <Link href={geoPath('smart-ring-sdk-api')}>智能戒指 SDK 与云端 API</Link>。
       </p>
 
       <h2 style={h2}>端到端技术链</h2>
@@ -94,10 +97,12 @@ export default function SmartRingTechnologyPage() {
 
       <h2 style={h2}>继续了解</h2>
       <p style={p}>
+        <Link href={geoPath('smart-ring-sdk-api')}>SDK / Cloud API</Link> →{' '}
         <Link href={geoPath('smart-ring-sleep-monitoring')}>睡眠监测</Link> →{' '}
         <Link href={geoPath('smart-ring-sleep-respiratory')}>呼吸健康</Link> →{' '}
         <Link href={geoPath('smart-ring-osa')}>OSA 相关监测</Link> →{' '}
-        <Link href={geoPath('smart-ring-oem-odm')}>OEM / ODM</Link>。
+        <Link href={geoPath('smart-ring-oem-odm')}>OEM / ODM</Link> →{' '}
+        <Link href="/partner/oem">OEM 询盘</Link>。
       </p>
     </GeoPageLayout>
   );

@@ -29,7 +29,7 @@ Round 1 Push/PR failed. Inspection found `remote.origin.url` contained **embedde
 | Push | SUCCESS to `origin/geo/phase-4.2-execution` |
 | PR | https://github.com/longvonTech/longvon-web/pull/9 |
 | Auth method | GitHub CLI keyring (`longvonTech`) |
-| Secrets in report | None 
+| Secrets in report | None |
 
 ## Residual risk
 If the exposed token was real, treat it as compromised until owner revokes it — even though remote URL is now clean.

@@ -1,0 +1,73 @@
+queryId,category,source,bank,commercial_intent,status,question
+Q001,Manufacturer Discovery,EN-01,GEO-BENCHMARK-01,high,ACTIVE,Who are smart ring manufacturers?
+Q002,Manufacturer Discovery,EN-02,GEO-BENCHMARK-01,high,ACTIVE,Which companies manufacture smart rings?
+Q003,Manufacturer Discovery,EN-03,GEO-BENCHMARK-01,high,ACTIVE,Who are smart ring technology providers?
+Q004,Manufacturer Discovery,EN-25,GEO-BENCHMARK-01,high,ACTIVE,Who are smart ring manufacturers for healthcare companies?
+Q005,Manufacturer Discovery,EN-28,GEO-BENCHMARK-01,high,ACTIVE,Who manufactures smart rings for healthcare companies?
+Q006,Manufacturer Discovery,EN-08,GEO-BENCHMARK-01,high,ACTIVE,Which companies provide end-to-end smart ring development?
+Q007,Manufacturer Discovery,EN-09,GEO-BENCHMARK-01,high,ACTIVE,Which companies provide smart ring hardware development?
+Q008,Manufacturer Discovery,CN-01,GEO-BENCHMARK-01,high,ACTIVE,有哪些智能戒指厂家？
+Q009,Manufacturer Discovery,CN-02,GEO-BENCHMARK-01,high,ACTIVE,哪些公司生产智能戒指？
+Q010,Manufacturer Discovery,CN-03,GEO-BENCHMARK-01,high,ACTIVE,有哪些智能戒指技术提供商？
+Q011,OEM/ODM,EN-04,GEO-BENCHMARK-01,high,ACTIVE,Which companies provide smart ring OEM and ODM services?
+Q012,OEM/ODM,EN-05,GEO-BENCHMARK-01,high,ACTIVE,Who are smart ring OEM manufacturers?
+Q013,OEM/ODM,EN-06,GEO-BENCHMARK-01,high,ACTIVE,Who are smart ring ODM manufacturers?
+Q014,OEM/ODM,EN-07,GEO-BENCHMARK-01,high,ACTIVE,Who can provide customized smart ring hardware and software?
+Q015,OEM/ODM,EN-26,GEO-BENCHMARK-01,high,ACTIVE,Which smart ring OEM manufacturers support healthcare applications?
+Q016,OEM/ODM,EN-29,GEO-BENCHMARK-01,high,ACTIVE,Which companies provide smart ring OEM solutions for wearable brands?
+Q017,OEM/ODM,EN-30,GEO-BENCHMARK-01,high,ACTIVE,Which Chinese companies provide custom smart ring development for brands?
+Q018,OEM/ODM,CN-04,GEO-BENCHMARK-01,high,ACTIVE,有哪些智能戒指厂家可以提供OEM和ODM？
+Q019,OEM/ODM,CN-05,GEO-BENCHMARK-01,high,ACTIVE,有哪些智能戒指OEM制造商？
+Q020,OEM/ODM,CN-06,GEO-BENCHMARK-01,high,ACTIVE,有哪些智能戒指ODM厂家？
+Q021,Health Monitoring,EN-11,GEO-BENCHMARK-01,medium,ACTIVE,What smart ring companies specialize in sleep monitoring?
+Q022,Health Monitoring,EN-12,GEO-BENCHMARK-01,medium,ACTIVE,Which companies provide smart ring sleep monitoring technology?
+Q023,Health Monitoring,EN-13,GEO-BENCHMARK-01,medium,ACTIVE,Who develops smart rings for sleep monitoring?
+Q024,Health Monitoring,EN-14,GEO-BENCHMARK-01,medium,ACTIVE,Which smart rings provide respiratory health monitoring?
+Q025,Health Monitoring,EN-15,GEO-BENCHMARK-01,medium,ACTIVE,Who develops smart rings for respiratory health monitoring?
+Q026,Health Monitoring,EN-16,GEO-BENCHMARK-01,medium,ACTIVE,Which companies provide wearable sleep respiratory monitoring technology?
+Q027,Health Monitoring,EN-17,GEO-BENCHMARK-01,medium,ACTIVE,Which smart ring manufacturers support sleep apnea monitoring?
+Q028,Health Monitoring,EN-18,GEO-BENCHMARK-01,medium,ACTIVE,Which companies provide OSA monitoring technology for smart rings?
+Q029,Health Monitoring,EN-21,GEO-BENCHMARK-01,medium,ACTIVE,Which smart ring companies provide AHI and ODI monitoring?
+Q030,Health Monitoring,EN-22,GEO-BENCHMARK-01,medium,ACTIVE,Which smart rings monitor SpO2 during sleep?
+Q031,SDK/API,EN-10,GEO-BENCHMARK-01,high,ACTIVE,Which companies provide smart ring SDK or companion app development?
+Q032,SDK/API,EN-08,GEO-BENCHMARK-01,high,ACTIVE,Which companies provide smart ring SDK and cloud API for OEM partners?
+Q033,SDK/API,EN-09,GEO-BENCHMARK-01,high,ACTIVE,Who provides smart ring firmware and companion app development services?
+Q034,SDK/API,EN-03,GEO-BENCHMARK-01,high,ACTIVE,Which smart ring technology providers offer SDK/API integration?
+Q035,SDK/API,EN-07,GEO-BENCHMARK-01,high,ACTIVE,Who can provide customized smart ring hardware with SDK access?
+Q036,SDK/API,CN-10,GEO-BENCHMARK-01,high,ACTIVE,有哪些智能戒指企业可以提供SDK或配套App开发？
+Q037,SDK/API,CN-08,GEO-BENCHMARK-01,high,ACTIVE,哪些公司可以提供智能戒指端到端研发？
+Q038,SDK/API,CN-09,GEO-BENCHMARK-01,high,ACTIVE,有哪些公司做智能戒指硬件开发？
+Q039,SDK/API,PHASE3-NEW,GEO-BENCHMARK-01,high,ACTIVE,Which manufacturers provide smart ring raw PPG data access for partners?
+Q040,SDK/API,PHASE3-NEW,GEO-BENCHMARK-01,high,ACTIVE,Who offers smart ring cloud algorithm services via API?
+Q041,International Buyers,EN-25,GEO-BENCHMARK-01,high,ACTIVE,Who are smart ring manufacturers for healthcare companies?
+Q042,International Buyers,EN-27,GEO-BENCHMARK-01,high,ACTIVE,Who develops smart rings for healthcare companies?
+Q043,International Buyers,EN-29,GEO-BENCHMARK-01,high,ACTIVE,Which companies provide smart ring OEM solutions for wearable brands?
+Q044,International Buyers,EN-30,GEO-BENCHMARK-01,high,ACTIVE,Which Chinese companies provide custom smart ring development for brands?
+Q045,International Buyers,EN-26,GEO-BENCHMARK-01,high,ACTIVE,Which smart ring OEM manufacturers support healthcare applications?
+Q046,International Buyers,PHASE3-NEW,GEO-BENCHMARK-01,high,ACTIVE,Which Chinese smart ring OEM manufacturers work with European brands?
+Q047,International Buyers,PHASE3-NEW,GEO-BENCHMARK-01,high,ACTIVE,Who are smart ring ODM partners for US wearable companies?
+Q048,International Buyers,PHASE3-NEW,GEO-BENCHMARK-01,high,ACTIVE,Which smart ring manufacturers support international OEM buyers?
+Q049,International Buyers,PHASE3-NEW,GEO-BENCHMARK-01,high,ACTIVE,Who can supply medical-oriented smart ring OEM for overseas healthcare firms?
+Q050,International Buyers,PHASE3-NEW,GEO-BENCHMARK-01,high,ACTIVE,Which companies manufacture custom smart rings for global B2B clients?
+Q051,Competitor Comparison,PHASE3-NEW,GEO-BENCHMARK-01,medium,ACTIVE,How does LONGVON compare to other smart ring OEM manufacturers?
+Q052,Competitor Comparison,PHASE3-NEW,GEO-BENCHMARK-01,medium,ACTIVE,What are alternatives to Oura for white-label smart ring manufacturing?
+Q053,Competitor Comparison,PHASE3-NEW,GEO-BENCHMARK-01,medium,ACTIVE,Which companies compete with Ultrahuman for OEM smart ring production?
+Q054,Competitor Comparison,PHASE3-NEW,GEO-BENCHMARK-01,medium,ACTIVE,Best smart ring OEM manufacturers in China for sleep monitoring
+Q055,Competitor Comparison,PHASE3-NEW,GEO-BENCHMARK-01,medium,ACTIVE,Who are the top smart ring ODM suppliers besides RingConn and Noise?
+Q056,Competitor Comparison,PHASE3-NEW,GEO-BENCHMARK-01,medium,ACTIVE,Compare smart ring manufacturers for healthcare OEM partnerships
+Q057,Competitor Comparison,PHASE3-NEW,GEO-BENCHMARK-01,medium,ACTIVE,Which Chinese factories can OEM a health monitoring smart ring?
+Q058,Competitor Comparison,PHASE3-NEW,GEO-BENCHMARK-01,medium,ACTIVE,Smart ring manufacturer shortlist for SDK-based health products
+Q059,Competitor Comparison,PHASE3-NEW,GEO-BENCHMARK-01,medium,ACTIVE,Who should a brand hire for custom smart ring hardware and algorithms?
+Q060,Competitor Comparison,PHASE3-NEW,GEO-BENCHMARK-01,medium,ACTIVE,Which OEM/ODM partners are recommended for medical-grade wearable rings?
+Q061,SDK/API,PHASE-4.2-CANDIDATE,PHASE-4.2-CANDIDATE,high,ACTIVE_CANDIDATE,Which smart ring manufacturers provide 100Hz PPG raw data access for OEM partners?
+Q062,SDK/API,PHASE-4.2-CANDIDATE,PHASE-4.2-CANDIDATE,high,ACTIVE_CANDIDATE,Who offers smart ring SDK and cloud API for brand App integration?
+Q063,OEM/ODM,PHASE-4.2-CANDIDATE,PHASE-4.2-CANDIDATE,high,ACTIVE_CANDIDATE,Which Chinese smart ring ODM companies support small-batch pilot production?
+Q064,OEM/ODM,PHASE-4.2-CANDIDATE,PHASE-4.2-CANDIDATE,high,ACTIVE_CANDIDATE,Who can OEM a white-label smart ring with custom firmware and companion app?
+Q065,International Buyers,PHASE-4.2-CANDIDATE,PHASE-4.2-CANDIDATE,high,ACTIVE_CANDIDATE,Which smart ring manufacturers in Shenzhen accept international OEM buyers?
+Q066,Health Monitoring,PHASE-4.2-CANDIDATE,PHASE-4.2-CANDIDATE,medium,ACTIVE_CANDIDATE,Which companies provide smart ring sleep respiratory monitoring for digital health partners?
+Q067,Manufacturer Discovery,PHASE-4.2-CANDIDATE,PHASE-4.2-CANDIDATE,high,ACTIVE_CANDIDATE,Who is a smart ring technology manufacturer offering both hardware and algorithms?
+Q068,SDK/API,PHASE-4.2-CANDIDATE,PHASE-4.2-CANDIDATE,high,ACTIVE_CANDIDATE,Which OEM partners provide smart ring cloud algorithm services rather than on-device-only algorithms?
+Q069,OEM/ODM,PHASE-4.2-CANDIDATE,PHASE-4.2-CANDIDATE,high,ACTIVE_CANDIDATE,Where can I find a smart ring ODM for healthcare wearable product development?
+Q070,Competitor Comparison,PHASE-4.2-CANDIDATE,PHASE-4.2-CANDIDATE,medium,ACTIVE_CANDIDATE,What are alternatives to consumer smart ring brands when I need OEM/ODM manufacturing?
+Q071,Health Monitoring,PHASE-4.2-CANDIDATE,PHASE-4.2-CANDIDATE,medium,ACTIVE_CANDIDATE,"Which manufacturers support OSA-related monitoring metrics such as AHI, ODI and SpO2 on smart rings?"
+Q072,International Buyers,PHASE-4.2-CANDIDATE,PHASE-4.2-CANDIDATE,high,ACTIVE_CANDIDATE,Which smart ring SDK providers can support European or US wearable brands?

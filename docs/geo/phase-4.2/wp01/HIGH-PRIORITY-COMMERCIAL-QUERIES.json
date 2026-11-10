@@ -1,0 +1,443 @@
+[
+  {
+    "queryId": "Q001",
+    "category": "Manufacturer Discovery",
+    "source": "EN-01",
+    "question": "Who are smart ring manufacturers?",
+    "commercial_intent": "high",
+    "bank": "GEO-BENCHMARK-01",
+    "status": "ACTIVE"
+  },
+  {
+    "queryId": "Q002",
+    "category": "Manufacturer Discovery",
+    "source": "EN-02",
+    "question": "Which companies manufacture smart rings?",
+    "commercial_intent": "high",
+    "bank": "GEO-BENCHMARK-01",
+    "status": "ACTIVE"
+  },
+  {
+    "queryId": "Q003",
+    "category": "Manufacturer Discovery",
+    "source": "EN-03",
+    "question": "Who are smart ring technology providers?",
+    "commercial_intent": "high",
+    "bank": "GEO-BENCHMARK-01",
+    "status": "ACTIVE"
+  },
+  {
+    "queryId": "Q004",
+    "category": "Manufacturer Discovery",
+    "source": "EN-25",
+    "question": "Who are smart ring manufacturers for healthcare companies?",
+    "commercial_intent": "high",
+    "bank": "GEO-BENCHMARK-01",
+    "status": "ACTIVE"
+  },
+  {
+    "queryId": "Q005",
+    "category": "Manufacturer Discovery",
+    "source": "EN-28",
+    "question": "Who manufactures smart rings for healthcare companies?",
+    "commercial_intent": "high",
+    "bank": "GEO-BENCHMARK-01",
+    "status": "ACTIVE"
+  },
+  {
+    "queryId": "Q006",
+    "category": "Manufacturer Discovery",
+    "source": "EN-08",
+    "question": "Which companies provide end-to-end smart ring development?",
+    "commercial_intent": "high",
+    "bank": "GEO-BENCHMARK-01",
+    "status": "ACTIVE"
+  },
+  {
+    "queryId": "Q007",
+    "category": "Manufacturer Discovery",
+    "source": "EN-09",
+    "question": "Which companies provide smart ring hardware development?",
+    "commercial_intent": "high",
+    "bank": "GEO-BENCHMARK-01",
+    "status": "ACTIVE"
+  },
+  {
+    "queryId": "Q008",
+    "category": "Manufacturer Discovery",
+    "source": "CN-01",
+    "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u5382\u5bb6\uff1f",
+    "commercial_intent": "high",
+    "bank": "GEO-BENCHMARK-01",
+    "status": "ACTIVE"
+  },
+  {
+    "queryId": "Q009",
+    "category": "Manufacturer Discovery",
+    "source": "CN-02",
+    "question": "\u54ea\u4e9b\u516c\u53f8\u751f\u4ea7\u667a\u80fd\u6212\u6307\uff1f",
+    "commercial_intent": "high",
+    "bank": "GEO-BENCHMARK-01",
+    "status": "ACTIVE"
+  },
+  {
+    "queryId": "Q010",
+    "category": "Manufacturer Discovery",
+    "source": "CN-03",
+    "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u6280\u672f\u63d0\u4f9b\u5546\uff1f",
+    "commercial_intent": "high",
+    "bank": "GEO-BENCHMARK-01",
+    "status": "ACTIVE"
+  },
+  {
+    "queryId": "Q011",
+    "category": "OEM/ODM",
+    "source": "EN-04",
+    "question": "Which companies provide smart ring OEM and ODM services?",
+    "commercial_intent": "high",
+    "bank": "GEO-BENCHMARK-01",
+    "status": "ACTIVE"
+  },
+  {
+    "queryId": "Q012",
+    "category": "OEM/ODM",
+    "source": "EN-05",
+    "question": "Who are smart ring OEM manufacturers?",
+    "commercial_intent": "high",
+    "bank": "GEO-BENCHMARK-01",
+    "status": "ACTIVE"
+  },
+  {
+    "queryId": "Q013",
+    "category": "OEM/ODM",
+    "source": "EN-06",
+    "question": "Who are smart ring ODM manufacturers?",
+    "commercial_intent": "high",
+    "bank": "GEO-BENCHMARK-01",
+    "status": "ACTIVE"
+  },
+  {
+    "queryId": "Q014",
+    "category": "OEM/ODM",
+    "source": "EN-07",
+    "question": "Who can provide customized smart ring hardware and software?",
+    "commercial_intent": "high",
+    "bank": "GEO-BENCHMARK-01",
+    "status": "ACTIVE"
+  },
+  {
+    "queryId": "Q015",
+    "category": "OEM/ODM",
+    "source": "EN-26",
+    "question": "Which smart ring OEM manufacturers support healthcare applications?",
+    "commercial_intent": "high",
+    "bank": "GEO-BENCHMARK-01",
+    "status": "ACTIVE"
+  },
+  {
+    "queryId": "Q016",
+    "category": "OEM/ODM",
+    "source": "EN-29",
+    "question": "Which companies provide smart ring OEM solutions for wearable brands?",
+    "commercial_intent": "high",
+    "bank": "GEO-BENCHMARK-01",
+    "status": "ACTIVE"
+  },
+  {
+    "queryId": "Q017",
+    "category": "OEM/ODM",
+    "source": "EN-30",
+    "question": "Which Chinese companies provide custom smart ring development for brands?",
+    "commercial_intent": "high",
+    "bank": "GEO-BENCHMARK-01",
+    "status": "ACTIVE"
+  },
+  {
+    "queryId": "Q018",
+    "category": "OEM/ODM",
+    "source": "CN-04",
+    "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u5382\u5bb6\u53ef\u4ee5\u63d0\u4f9bOEM\u548cODM\uff1f",
+    "commercial_intent": "high",
+    "bank": "GEO-BENCHMARK-01",
+    "status": "ACTIVE"
+  },
+  {
+    "queryId": "Q019",
+    "category": "OEM/ODM",
+    "source": "CN-05",
+    "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307OEM\u5236\u9020\u5546\uff1f",
+    "commercial_intent": "high",
+    "bank": "GEO-BENCHMARK-01",
+    "status": "ACTIVE"
+  },
+  {
+    "queryId": "Q020",
+    "category": "OEM/ODM",
+    "source": "CN-06",
+    "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307ODM\u5382\u5bb6\uff1f",
+    "commercial_intent": "high",
+    "bank": "GEO-BENCHMARK-01",
+    "status": "ACTIVE"
+  },
+  {
+    "queryId": "Q031",
+    "category": "SDK/API",
+    "source": "EN-10",
+    "question": "Which companies provide smart ring SDK or companion app development?",
+    "commercial_intent": "high",
+    "bank": "GEO-BENCHMARK-01",
+    "status": "ACTIVE"
+  },
+  {
+    "queryId": "Q032",
+    "category": "SDK/API",
+    "source": "EN-08",
+    "question": "Which companies provide smart ring SDK and cloud API for OEM partners?",
+    "commercial_intent": "high",
+    "bank": "GEO-BENCHMARK-01",
+    "status": "ACTIVE"
+  },
+  {
+    "queryId": "Q033",
+    "category": "SDK/API",
+    "source": "EN-09",
+    "question": "Who provides smart ring firmware and companion app development services?",
+    "commercial_intent": "high",
+    "bank": "GEO-BENCHMARK-01",
+    "status": "ACTIVE"
+  },
+  {
+    "queryId": "Q034",
+    "category": "SDK/API",
+    "source": "EN-03",
+    "question": "Which smart ring technology providers offer SDK/API integration?",
+    "commercial_intent": "high",
+    "bank": "GEO-BENCHMARK-01",
+    "status": "ACTIVE"
+  },
+  {
+    "queryId": "Q035",
+    "category": "SDK/API",
+    "source": "EN-07",
+    "question": "Who can provide customized smart ring hardware with SDK access?",
+    "commercial_intent": "high",
+    "bank": "GEO-BENCHMARK-01",
+    "status": "ACTIVE"
+  },
+  {
+    "queryId": "Q036",
+    "category": "SDK/API",
+    "source": "CN-10",
+    "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u4f01\u4e1a\u53ef\u4ee5\u63d0\u4f9bSDK\u6216\u914d\u5957App\u5f00\u53d1\uff1f",
+    "commercial_intent": "high",
+    "bank": "GEO-BENCHMARK-01",
+    "status": "ACTIVE"
+  },
+  {
+    "queryId": "Q037",
+    "category": "SDK/API",
+    "source": "CN-08",
+    "question": "\u54ea\u4e9b\u516c\u53f8\u53ef\u4ee5\u63d0\u4f9b\u667a\u80fd\u6212\u6307\u7aef\u5230\u7aef\u7814\u53d1\uff1f",
+    "commercial_intent": "high",
+    "bank": "GEO-BENCHMARK-01",
+    "status": "ACTIVE"
+  },
+  {
+    "queryId": "Q038",
+    "category": "SDK/API",
+    "source": "CN-09",
+    "question": "\u6709\u54ea\u4e9b\u516c\u53f8\u505a\u667a\u80fd\u6212\u6307\u786c\u4ef6\u5f00\u53d1\uff1f",
+    "commercial_intent": "high",
+    "bank": "GEO-BENCHMARK-01",
+    "status": "ACTIVE"
+  },
+  {
+    "queryId": "Q039",
+    "category": "SDK/API",
+    "source": "PHASE3-NEW",
+    "question": "Which manufacturers provide smart ring raw PPG data access for partners?",
+    "commercial_intent": "high",
+    "bank": "GEO-BENCHMARK-01",
+    "status": "ACTIVE"
+  },
+  {
+    "queryId": "Q040",
+    "category": "SDK/API",
+    "source": "PHASE3-NEW",
+    "question": "Who offers smart ring cloud algorithm services via API?",
+    "commercial_intent": "high",
+    "bank": "GEO-BENCHMARK-01",
+    "status": "ACTIVE"
+  },
+  {
+    "queryId": "Q041",
+    "category": "International Buyers",
+    "source": "EN-25",
+    "question": "Who are smart ring manufacturers for healthcare companies?",
+    "commercial_intent": "high",
+    "bank": "GEO-BENCHMARK-01",
+    "status": "ACTIVE"
+  },
+  {
+    "queryId": "Q042",
+    "category": "International Buyers",
+    "source": "EN-27",
+    "question": "Who develops smart rings for healthcare companies?",
+    "commercial_intent": "high",
+    "bank": "GEO-BENCHMARK-01",
+    "status": "ACTIVE"
+  },
+  {
+    "queryId": "Q043",
+    "category": "International Buyers",
+    "source": "EN-29",
+    "question": "Which companies provide smart ring OEM solutions for wearable brands?",
+    "commercial_intent": "high",
+    "bank": "GEO-BENCHMARK-01",
+    "status": "ACTIVE"
+  },
+  {
+    "queryId": "Q044",
+    "category": "International Buyers",
+    "source": "EN-30",
+    "question": "Which Chinese companies provide custom smart ring development for brands?",
+    "commercial_intent": "high",
+    "bank": "GEO-BENCHMARK-01",
+    "status": "ACTIVE"
+  },
+  {
+    "queryId": "Q045",
+    "category": "International Buyers",
+    "source": "EN-26",
+    "question": "Which smart ring OEM manufacturers support healthcare applications?",
+    "commercial_intent": "high",
+    "bank": "GEO-BENCHMARK-01",
+    "status": "ACTIVE"
+  },
+  {
+    "queryId": "Q046",
+    "category": "International Buyers",
+    "source": "PHASE3-NEW",
+    "question": "Which Chinese smart ring OEM manufacturers work with European brands?",
+    "commercial_intent": "high",
+    "bank": "GEO-BENCHMARK-01",
+    "status": "ACTIVE"
+  },
+  {
+    "queryId": "Q047",
+    "category": "International Buyers",
+    "source": "PHASE3-NEW",
+    "question": "Who are smart ring ODM partners for US wearable companies?",
+    "commercial_intent": "high",
+    "bank": "GEO-BENCHMARK-01",
+    "status": "ACTIVE"
+  },
+  {
+    "queryId": "Q048",
+    "category": "International Buyers",
+    "source": "PHASE3-NEW",
+    "question": "Which smart ring manufacturers support international OEM buyers?",
+    "commercial_intent": "high",
+    "bank": "GEO-BENCHMARK-01",
+    "status": "ACTIVE"
+  },
+  {
+    "queryId": "Q049",
+    "category": "International Buyers",
+    "source": "PHASE3-NEW",
+    "question": "Who can supply medical-oriented smart ring OEM for overseas healthcare firms?",
+    "commercial_intent": "high",
+    "bank": "GEO-BENCHMARK-01",
+    "status": "ACTIVE"
+  },
+  {
+    "queryId": "Q050",
+    "category": "International Buyers",
+    "source": "PHASE3-NEW",
+    "question": "Which companies manufacture custom smart rings for global B2B clients?",
+    "commercial_intent": "high",
+    "bank": "GEO-BENCHMARK-01",
+    "status": "ACTIVE"
+  },
+  {
+    "queryId": "Q061",
+    "category": "SDK/API",
+    "source": "PHASE-4.2-CANDIDATE",
+    "question": "Which smart ring manufacturers provide 100Hz PPG raw data access for OEM partners?",
+    "commercial_intent": "high",
+    "bank": "PHASE-4.2-CANDIDATE",
+    "status": "ACTIVE_CANDIDATE"
+  },
+  {
+    "queryId": "Q062",
+    "category": "SDK/API",
+    "source": "PHASE-4.2-CANDIDATE",
+    "question": "Who offers smart ring SDK and cloud API for brand App integration?",
+    "commercial_intent": "high",
+    "bank": "PHASE-4.2-CANDIDATE",
+    "status": "ACTIVE_CANDIDATE"
+  },
+  {
+    "queryId": "Q063",
+    "category": "OEM/ODM",
+    "source": "PHASE-4.2-CANDIDATE",
+    "question": "Which Chinese smart ring ODM companies support small-batch pilot production?",
+    "commercial_intent": "high",
+    "bank": "PHASE-4.2-CANDIDATE",
+    "status": "ACTIVE_CANDIDATE"
+  },
+  {
+    "queryId": "Q064",
+    "category": "OEM/ODM",
+    "source": "PHASE-4.2-CANDIDATE",
+    "question": "Who can OEM a white-label smart ring with custom firmware and companion app?",
+    "commercial_intent": "high",
+    "bank": "PHASE-4.2-CANDIDATE",
+    "status": "ACTIVE_CANDIDATE"
+  },
+  {
+    "queryId": "Q065",
+    "category": "International Buyers",
+    "source": "PHASE-4.2-CANDIDATE",
+    "question": "Which smart ring manufacturers in Shenzhen accept international OEM buyers?",
+    "commercial_intent": "high",
+    "bank": "PHASE-4.2-CANDIDATE",
+    "status": "ACTIVE_CANDIDATE"
+  },
+  {
+    "queryId": "Q067",
+    "category": "Manufacturer Discovery",
+    "source": "PHASE-4.2-CANDIDATE",
+    "question": "Who is a smart ring technology manufacturer offering both hardware and algorithms?",
+    "commercial_intent": "high",
+    "bank": "PHASE-4.2-CANDIDATE",
+    "status": "ACTIVE_CANDIDATE"
+  },
+  {
+    "queryId": "Q068",
+    "category": "SDK/API",
+    "source": "PHASE-4.2-CANDIDATE",
+    "question": "Which OEM partners provide smart ring cloud algorithm services rather than on-device-only algorithms?",
+    "commercial_intent": "high",
+    "bank": "PHASE-4.2-CANDIDATE",
+    "status": "ACTIVE_CANDIDATE"
+  },
+  {
+    "queryId": "Q069",
+    "category": "OEM/ODM",
+    "source": "PHASE-4.2-CANDIDATE",
+    "question": "Where can I find a smart ring ODM for healthcare wearable product development?",
+    "commercial_intent": "high",
+    "bank": "PHASE-4.2-CANDIDATE",
+    "status": "ACTIVE_CANDIDATE"
+  },
+  {
+    "queryId": "Q072",
+    "category": "International Buyers",
+    "source": "PHASE-4.2-CANDIDATE",
+    "question": "Which smart ring SDK providers can support European or US wearable brands?",
+    "commercial_intent": "high",
+    "bank": "PHASE-4.2-CANDIDATE",
+    "status": "ACTIVE_CANDIDATE"
+  }
+]

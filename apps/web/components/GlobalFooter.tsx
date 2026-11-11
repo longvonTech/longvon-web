@@ -52,8 +52,9 @@ export function GlobalFooter() {
         ['Healthcare Solutions', '/en/smart-ring-healthcare-solutions'],
         ['Technology', '/en/smart-ring-technology'],
         ['SDK & Cloud API', '/en/smart-ring-sdk-api'],
+        ['OSA Technology & OEM', '/en/osa-smart-ring-technology'],
         ['Respiratory Health', '/en/smart-ring-sleep-respiratory'],
-        ['OSA Technology', '/en/smart-ring-osa'],
+        ['OSA Metrics', '/en/smart-ring-osa'],
         ['About', '/en/about'],
         ['中文网站', '/'],
       ]
@@ -65,6 +66,7 @@ export function GlobalFooter() {
         ['医疗健康方案', '/smart-ring-healthcare-solutions'],
         ['智能戒指技术', '/smart-ring-technology'],
         ['SDK / Cloud API', '/smart-ring-sdk-api'],
+        ['OSA 技术与 OEM', '/osa-smart-ring-technology'],
         ['睡眠监测技术', '/smart-ring-sleep-monitoring'],
         ['睡眠呼吸健康监测', '/smart-ring-sleep-respiratory'],
         ['OSA 相关监测', '/smart-ring-osa'],

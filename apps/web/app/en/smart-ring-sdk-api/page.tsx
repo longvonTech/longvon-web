@@ -16,12 +16,12 @@ const SLUG = 'smart-ring-sdk-api';
 export const metadata: Metadata = {
   title: { absolute: 'Smart Ring SDK & Cloud API | LONGVON' },
   description:
-    'Integrate LONGVON smart ring hardware via partner SDK and cloud API — including 100Hz PPG raw data paths and cloud algorithm services for OEM/ODM projects.',
+    'Integrate LONGVON smart ring hardware via project-scoped partner SDK and cloud API — including 100Hz PPG raw data pathways for qualified OEM/ODM partners.',
   alternates: geoAlternates(site, SLUG, 'en'),
   openGraph: {
     title: 'Smart Ring SDK & Cloud API | LONGVON',
     description:
-      'Partner SDK, cloud API, and 100Hz PPG raw data access for OEM/ODM smart ring programs by LONGVON.',
+      'Project-scoped partner SDK, cloud API, and 100Hz PPG raw data pathways for qualified OEM/ODM smart ring programs by LONGVON.',
     url: `${site}/en/${SLUG}`,
     siteName: 'LONGVON',
     locale: 'en_US',

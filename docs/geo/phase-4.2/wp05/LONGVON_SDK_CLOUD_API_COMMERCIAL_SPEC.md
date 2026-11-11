@@ -24,4 +24,4 @@ LONGVON can enable partner access to:
 5. Commercial license / OEM agreement
 
 ## Proposed route
-`/en/smart-ring-sdk-api` (currently 404) — content draft below; implementation needs code PR + deploy approval.
+`/en/smart-ring-sdk-api` — **implemented in branch** (PR #9 + CGE-001 follow-up PR #10); **production still 404** until owner-approved deploy. Content draft below retained for history.

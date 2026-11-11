@@ -6,12 +6,14 @@ test('htmlLangFromPathname: English routes', () => {
   assert.equal(htmlLangFromPathname('/en'), 'en');
   assert.equal(htmlLangFromPathname('/en/partner/oem'), 'en');
   assert.equal(htmlLangFromPathname('/en/smart-ring-oem-odm'), 'en');
+  assert.equal(htmlLangFromPathname('/en/smart-ring-sdk-api'), 'en');
 });
 
 test('htmlLangFromPathname: Chinese routes', () => {
   assert.equal(htmlLangFromPathname('/'), 'zh-CN');
   assert.equal(htmlLangFromPathname('/partner/oem'), 'zh-CN');
   assert.equal(htmlLangFromPathname('/knowledge'), 'zh-CN');
+  assert.equal(htmlLangFromPathname('/smart-ring-sdk-api'), 'zh-CN');
   assert.equal(htmlLangFromPathname('/enfoo'), 'zh-CN');
 });
 
@@ -32,4 +34,14 @@ test('siteAlternates default x-default remains Chinese for non-RFQ pairs', () =>
   const home = siteAlternates(site, '/', 'en');
   assert.equal(home.canonical, 'https://www.longvon.com/en');
   assert.equal(home.languages['x-default'], 'https://www.longvon.com');
+});
+
+test('siteAlternates covers SDK commercial page pair', () => {
+  const site = 'https://www.longvon.com';
+  const zh = siteAlternates(site, '/smart-ring-sdk-api', 'zh');
+  const en = siteAlternates(site, '/smart-ring-sdk-api', 'en');
+  assert.equal(zh.canonical, 'https://www.longvon.com/smart-ring-sdk-api');
+  assert.equal(en.canonical, 'https://www.longvon.com/en/smart-ring-sdk-api');
+  assert.equal(zh.languages.en, 'https://www.longvon.com/en/smart-ring-sdk-api');
+  assert.equal(en.languages['zh-CN'], 'https://www.longvon.com/smart-ring-sdk-api');
 });

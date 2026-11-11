@@ -27,6 +27,9 @@ Critical acceptance answers:
 
 **Phase 4.2 is NOT claimed fully complete** while AI observations, analytics access, owner evidence, and production publish remain open.
 
+### Audit follow-up (same mission)
+Post-completion review from [Audit PR9 SDK pages](bc-96c0ae1b-343e-57ba-9e47-ed3dbd99b0ac) and [Audit claims and queries](bc-4acbc147-6acd-5b39-a5f3-b6aa129ca945): P1 CN SDK gaps were already addressed in the first CGE commit; remaining P2 items applied in follow-up commit (EN OG soft wording, CN `NAV_ZH` SDK link, EN footer SDK dedupe, stale WP05 status sync, i18n SDK route tests).
+
 ---
 
 ## 2. Work package status

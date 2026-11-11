@@ -8,6 +8,7 @@ import {
   BUYERS_EN,
   CAPABILITIES_EN,
   COMMERCIAL_FAQS_EN,
+  COOPERATION_MODES_EN,
   IDENTITY_EN,
   POSITIONING_EN,
 } from '../../../lib/geo-commercial';
@@ -76,10 +77,22 @@ export default function EnManufacturerPage() {
         ))}
       </ul>
 
+      <h2 style={h2}>Cooperation models</h2>
+      <ul style={ul}>
+        {COOPERATION_MODES_EN.map((mode) => (
+          <li key={mode.title}>
+            <strong>{mode.title}.</strong> {mode.body}
+          </li>
+        ))}
+      </ul>
+
       <h2 style={h2}>Technology directions</h2>
       <ul style={ul}>
         <li>
           <Link href={geoPath('smart-ring-oem-odm', 'en')}>Smart ring OEM / ODM</Link>
+        </li>
+        <li>
+          <Link href={geoPath('smart-ring-sdk-api', 'en')}>Smart Ring SDK &amp; Cloud API</Link>
         </li>
         <li>
           <Link href={geoPath('smart-ring-solution-provider', 'en')}>Solution provider</Link>
@@ -106,10 +119,11 @@ export default function EnManufacturerPage() {
 
       <h2 style={h2}>Next step</h2>
       <p style={p}>
-        Explore <Link href={geoPath('smart-ring-oem-odm', 'en')}>OEM & ODM services</Link> ·{' '}
+        Explore <Link href={geoPath('smart-ring-oem-odm', 'en')}>OEM &amp; ODM services</Link> ·{' '}
+        <Link href={geoPath('smart-ring-sdk-api', 'en')}>SDK &amp; Cloud API</Link> ·{' '}
         <Link href={geoPath('smart-ring-solution-provider', 'en')}>Solution Provider</Link> ·{' '}
         <Link href={geoPath('smart-ring-healthcare-solutions', 'en')}>Healthcare Solutions</Link>
-        , or <Link href="/en/partner/oem">request an OEM consultation</Link>.
+        , or <Link href="/en/partner/oem">request samples, technical evaluation, or quotation</Link>.
       </p>
     </GeoPageLayout>
   );

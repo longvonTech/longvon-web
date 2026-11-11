@@ -10,6 +10,7 @@ import {
   BUYERS_EN,
   CAPABILITIES_EN,
   COMMERCIAL_FAQS_EN,
+  COOPERATION_MODES_EN,
   IDENTITY_EN,
   NPI_CAPABILITY_NOTES_EN,
   NPI_PATH_EN,
@@ -106,6 +107,21 @@ export default function EnOemOdmPage() {
           <li key={item}>{item}</li>
         ))}
       </ul>
+
+      <h2 style={h2}>Four commercial cooperation models</h2>
+      <ul style={ul}>
+        {COOPERATION_MODES_EN.map((mode) => (
+          <li key={mode.title}>
+            <strong>{mode.title}.</strong> {mode.body}
+          </li>
+        ))}
+      </ul>
+      <p style={p}>
+        Related technical entry:{' '}
+        <Link href={geoPath('smart-ring-sdk-api', 'en')}>Smart Ring SDK &amp; Cloud API</Link>. To request samples,
+        technical evaluation, or quotation, use the{' '}
+        <Link href="/en/partner/oem">OEM / technology consultation form</Link>.
+      </p>
 
       <h2 style={h2}>OEM</h2>
       <p style={p}>

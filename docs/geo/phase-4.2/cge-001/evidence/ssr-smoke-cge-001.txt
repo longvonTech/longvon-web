@@ -1,0 +1,5 @@
+/en/smart-ring-sdk-api status=200 lang=en canonical=https://www.longvon.com/en/smart-ring-sdk-api checks={'cooperation_en': False, 'cooperation_zh': False, 'sdk_100hz': True, 'licensing': True, 'nmpa_soft': False}
+/smart-ring-sdk-api status=200 lang=zh-CN canonical=https://www.longvon.com/smart-ring-sdk-api checks={'cooperation_en': False, 'cooperation_zh': True, 'sdk_100hz': True, 'licensing': True, 'nmpa_soft': False}
+/en/smart-ring-manufacturer status=200 lang=en canonical=https://www.longvon.com/en/smart-ring-manufacturer checks={'cooperation_en': True, 'cooperation_zh': False, 'sdk_100hz': False, 'licensing': False, 'nmpa_soft': False}
+/en/smart-ring-oem-odm status=200 lang=en canonical=https://www.longvon.com/en/smart-ring-oem-odm checks={'cooperation_en': True, 'cooperation_zh': False, 'sdk_100hz': False, 'licensing': False, 'nmpa_soft': True}
+/smart-ring-oem-odm status=200 lang=zh-CN canonical=https://www.longvon.com/smart-ring-oem-odm checks={'cooperation_en': False, 'cooperation_zh': True, 'sdk_100hz': False, 'licensing': False, 'nmpa_soft': False}

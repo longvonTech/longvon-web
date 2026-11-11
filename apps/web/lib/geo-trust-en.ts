@@ -23,7 +23,7 @@ export const TRUST_CAPABILITY_BULLETS_EN = [
   'R&D: multi-modal sensing and AI algorithms (sleep staging, respiratory analysis, PPG) with a Taiyuan R&D center (est. 2022).',
   'Hardware engineering: circuit, embedded and validation labs for health-monitoring wearables.',
   'Manufacturing: Class 100,000 cleanroom with temperature/humidity control; medical-grade and consumer lines physically separated; OEM/ODM customization supported.',
-  'Quality direction: NMPA medical-device GMP practices and ISO 13485–oriented controls; reliability testing includes wear, waterproofing, biocompatibility and EMC (project-scoped).',
+  'Quality direction: ISO 13485–oriented controls; NMPA medical-device GMP–oriented practices may be discussed where project-applicable — this is not a claim of completed NMPA GMP certification. Reliability testing may include wear, waterproofing, biocompatibility and EMC (project-scoped).',
 ] as const;
 
 export const TRUST_FAQS_EN = [

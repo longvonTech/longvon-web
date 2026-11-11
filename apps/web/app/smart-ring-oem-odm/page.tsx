@@ -9,6 +9,7 @@ import {
   BUYERS_ZH,
   CAPABILITIES_ZH,
   COMMERCIAL_FAQS_ZH,
+  COOPERATION_MODES_ZH,
   IDENTITY_ZH,
   POSITIONING_ZH,
 } from '../../lib/geo-commercial';
@@ -93,6 +94,20 @@ export default function SmartRingOemOdmPage() {
           <li key={item}>{item}</li>
         ))}
       </ul>
+
+      <h2 style={h2}>四种商业合作模式</h2>
+      <ul style={ul}>
+        {COOPERATION_MODES_ZH.map((mode) => (
+          <li key={mode.title}>
+            <strong>{mode.title}。</strong>
+            {mode.body}
+          </li>
+        ))}
+      </ul>
+      <p style={p}>
+        技术入口：<Link href={geoPath('smart-ring-sdk-api')}>智能戒指 SDK 与云端 API</Link>。申请样品、技术评估或报价沟通：
+        <Link href="/partner/oem">OEM / 技术合作咨询表单</Link>。
+      </p>
 
       <h2 style={h2}>中国市场常见合作表述</h2>
       <p style={p}>龙汾科技（LONGVON）可对应以下采购语义：</p>

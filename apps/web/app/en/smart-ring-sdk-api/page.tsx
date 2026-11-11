@@ -61,6 +61,11 @@ const FAQS = [
     answer:
       'Yes. Customer-owned App integration via SDK/API is a supported model and is evaluated during technical consultation.',
   },
+  {
+    question: 'How are SDK, algorithm licensing, technical support, and cloud services separated?',
+    answer:
+      'SDK covers device connectivity and data pathways; algorithm licensing defines which metrics/models are authorized; technical support is provided in agreed windows; cloud services host cloud algorithms and data APIs and are scoped/priced separately under the cooperation model.',
+  },
 ];
 
 const PROCESS = [
@@ -143,12 +148,22 @@ export default function EnSmartRingSdkApiPage() {
         ))}
       </ol>
 
+      <h2 style={h2}>Licensing components</h2>
+      <ul style={ul}>
+        <li>SDK — connectivity and data pathways</li>
+        <li>Algorithm licensing — authorized metrics / models</li>
+        <li>Technical support — agreed integration windows</li>
+        <li>Cloud services — cloud algorithms and data APIs (separately scoped)</li>
+      </ul>
+
       <h2 style={h2}>Boundaries (read carefully)</h2>
       <ul style={ul}>
         <li>No unrestricted Bluetooth protocol as a default public promise</li>
         <li>No guarantee that every algorithm runs fully offline</li>
         <li>No public self-serve SDK download</li>
         <li>Ring1C remains a consumer health-monitoring product — not a medical device</li>
+        <li>Ring1 and Ring1C share relevant sensor/chipset/algorithm capability only as supported by product documentation; regulatory positioning differs</li>
+        <li>Chinese regulatory progress is never presented as overseas medical-device approval</li>
       </ul>
 
       <h2 style={h2}>Request technical consultation</h2>

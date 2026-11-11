@@ -14,6 +14,8 @@ Generated (UTC): 2026-11-11T14:30:00Z
 | FDA/CE/NMPA OSA device approval | — | — | Missing | — | BLOCKED | NO | Certificates |
 | Diagnoses OSA / replaces PSG | Forbidden | — | — | — | BLOCKED | NO | — |
 | Exact 525/630/880 nm | Missing | — | — | — | UNVERIFIED | NO | Optical BOM |
+| STOP-BANG web “OSA风险筛查” | Questionnaire risk UX (`/assessment/osa`) | UX present | None | Ring1C context | VERIFIED UX only | YES as tool, not diagnosis | Keep separate from device AHI/ODI metrics |
+| Hero “睡眠呼吸暂停筛查” soft line | Existing marketing | Soft | None | Site-wide | PARTIAL | Align to non-diagnostic wording | Owner copy hygiene |
 | 100Hz raw PPG for partners | SDK pages | — | — | Partner programs | PARTIAL | Soft yes | Technical one-pager |
 | Ring1C is medical device | Contradicted | — | — | Ring1C | BLOCKED | NO | — |
 | Ring1 overseas clearance from China filings | — | — | Forbidden inference | Ring1 | BLOCKED | NO | Dossier |

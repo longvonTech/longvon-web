@@ -18,3 +18,5 @@ Updated (UTC): 2026-11-11T14:10:00Z
 | 12 | Approve production deploy of `/osa-smart-ring-technology` pages | Release | Not live until then |
 | 13 | Approve six OSA content drafts for publish | WP07-F | |
 | 14 | Authorized clinical/partner case language (anonymized) | Trust | Optional |
+| 15 | Confirm whether STOP-BANG web tool may be cited on B2B OSA commercial page | Positioning | UX exists; keep questionnaire ≠ device clinical screening |
+| 16 | HeroSection soft “睡眠呼吸暂停筛查” wording hygiene vs medical boundary | Site consistency | Optional but recommended |

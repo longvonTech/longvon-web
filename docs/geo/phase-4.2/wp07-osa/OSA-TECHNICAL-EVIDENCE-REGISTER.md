@@ -21,3 +21,9 @@ Generated (UTC): 2026-11-11T14:10:00Z
 | OSA-E-15 | Full apnea/hypopnea event recognition taxonomy | — | None beyond metric names | UNVERIFIED | NO detailed taxonomy | Algorithm design doc |
 | OSA-E-16 | ISO 13485–oriented quality / cleanroom soft claims | Trust pages | Soft | PARTIAL | Soft oriented only | Certs/photos |
 | OSA-E-17 | OEM/ODM manufacturing + cooperation models | Commercial pages | Strong | VERIFIED | YES | — |
+| OSA-E-18 | STOP-BANG–style OSA **risk screening** web UX | `apps/web/app/assessment/osa/page.tsx`; assessment hub; homepage copy | Strong as **product UX** | VERIFIED (UX only) | YES only as questionnaire risk tool — **not** device clinical validation | Do not equate to PSG/device clearance |
+| OSA-E-19 | “OSA初筛结果” + AI sleep-respiratory suggestion metric names | `health-metrics.ts` | Strong as catalogue names | VERIFIED (names) | Soft yes non-diagnostic | Algorithm / clinical dossiers |
+| OSA-E-20 | Exact PPG wavelengths 525 / 630 / 880 nm | Full-repo audit (zero hits for those nm strings) | None | UNVERIFIED / MISSING | **NO** | Optical BOM (same as OSA-E-06) |
+| OSA-E-21 | Soft marketing “专为睡眠呼吸暂停筛查…” hero line | `apps/web/components/HeroSection.tsx` | Soft marketing | PARTIAL | Existing site language — keep aligned with medical boundary; prefer “OSA-related / risk reference” on B2B OSA page | Owner copy hygiene |
+
+**Cross-check (2026-11-11):** Independent repo audit confirms: wavelengths **absent**; 100Hz/SDK **PARTIAL**; Ring1 **UNVERIFIED**; no clinical study / FDA–CE–NMPA dossier files; usable stack is published metrics + medical-boundary framing only.

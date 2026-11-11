@@ -36,7 +36,8 @@ WP07 converts LONGVON’s **evidenced** sleep respiratory / OSA-related monitori
 LONGVON-FACTS, EVIDENCE-MATRIX, PROCUREMENT library, PRODUCT technical evidence, MEDICAL claims boundary, Claims Register, health-metrics.ts, geo.ts, Ring1C/OSA/SDK/sleep-respiratory pages, CGE-001 competitor/query packets.
 
 ## 4. Evidence discovered vs missing
-See `OSA-TECHNICAL-EVIDENCE-REGISTER.md` and `OSA-OWNER-INPUT-REQUIRED.md`.
+See `OSA-TECHNICAL-EVIDENCE-REGISTER.md` and `OSA-OWNER-INPUT-REQUIRED.md`.  
+Follow-up cross-check from [Audit OSA evidence sources](bc-cfd2ab98-6f8f-50aa-8b5e-d9805fb128fb): zero repo hits for 525/630/880 nm; STOP-BANG `/assessment/osa` UX added as OSA-E-18 (questionnaire only); no clinical/regulatory dossiers found.
 
 ## 5. Competitor findings (commercial)
 Belun/Samsung lead on **regulated screening/HSAT evidence**; Circul on **ODI literature**; RingConn on **consumer OSA insights**; OEM peers on **SDK/MOQ landers**. LONGVON’s defensible angle is **full stack technology + manufacturing partner** with honest non-diagnostic OSA metrics — not claiming Belun-equivalent FDA HSAT without dossiers.

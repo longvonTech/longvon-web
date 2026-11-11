@@ -67,6 +67,7 @@ Generated (UTC): 2026-11-11T14:10:00Z · Local: 2026-11-11 22:10 Asia/Shanghai
 | “OSA初筛结果” published metric name | VERIFIED | `health-metrics.ts` | Framed as 初筛参考 / health reference |
 | AHI as published monitoring/research metric | VERIFIED | FACTS #11; OSA pages | **Not** PSG-equivalent claim |
 | AI sleep respiratory health assessment suggestions | PARTIAL | Parameter `AI睡眠呼吸健康评估及建议` | Soft product feature name |
+| STOP-BANG–style web OSA risk screening UX | VERIFIED (UX) | `/assessment/osa`; assessment hub; homepage | Questionnaire risk tool — **not** clinical device validation |
 | Clinically validated AHI vs PSG | BLOCKED | Evidence Matrix bans clinical stats | No study dossier in repo |
 | Approved medical-device OSA function | NOT IMPLEMENTED (public) | Ring1C = not medical device | Ring1 dossier UNVERIFIED |
 | Diagnose/treat OSA / replace PSG | BLOCKED (forbidden) | Medical claims boundary | Never publish |

@@ -171,6 +171,7 @@ export default function EnSmartRingSdkApiPage() {
         Start with an OEM/ODM technical inquiry:{' '}
         <Link href="/en/partner/oem">Request OEM / technology consultation</Link>. Related pages:{' '}
         <Link href={geoPath('smart-ring-technology', 'en')}>Technology</Link> ·{' '}
+        <Link href={geoPath('osa-smart-ring-technology', 'en')}>OSA Technology &amp; OEM</Link> ·{' '}
         <Link href={geoPath('smart-ring-manufacturer', 'en')}>Manufacturer</Link> ·{' '}
         <Link href={geoPath('smart-ring-oem-odm', 'en')}>OEM &amp; ODM</Link>.
       </p>

@@ -82,6 +82,30 @@ export default function ZhOsaSmartRingTechnologyPage() {
         OSA 相关输出仅供健康参考 / 研究场景，不构成诊断。
       </p>
 
+      <aside
+        aria-label="监管与临床边界说明"
+        style={{
+          margin: '20px 0 28px',
+          padding: '16px 18px',
+          border: '1px solid #D1D5DB',
+          borderLeft: '4px solid #374151',
+          background: '#F9FAFB',
+          borderRadius: 4,
+        }}
+      >
+        <p style={{ ...p, margin: '0 0 10px', fontWeight: 600 }}>重要说明 — 监管与临床边界</p>
+        <p style={{ ...p, margin: '0 0 10px' }}>
+          「医疗向 / medical-oriented」描述的是 LONGVON 在智能戒指项目上的工程与质量取向，
+          <strong>不</strong>表示 Ring1C 或本页所述任何产品已获医疗器械批准，也不表示 LONGVON
+          已持有未经证书入库证明的 FDA、CE Medical Device、NMPA 等产品认证。
+        </p>
+        <p style={{ ...p, margin: 0 }}>
+          <strong>Ring1C 是消费电子 / 健康监测参考产品，不是医疗器械。</strong>
+          OSA 相关输出（包括 AHI、ODI、SpO₂ 统计与 OSA 初筛标签）仅供健康参考或研究场景使用 — 不构成医学诊断、治疗，也不替代多导睡眠监测（PSG）。本站其他问卷类风险评估工具（如有）与戒指算法相互独立，
+          <strong>不</strong>构成对戒指算法的临床验证。
+        </p>
+      </aside>
+
       <h2 style={h2}>1. 睡眠呼吸与 OSA 相关技术</h2>
       <ul style={ul}>
         <li>整夜 SpO₂ 统计与血氧跌落计数（≥3% / ≥4%）</li>

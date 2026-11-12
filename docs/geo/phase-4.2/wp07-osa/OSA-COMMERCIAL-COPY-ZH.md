@@ -21,6 +21,9 @@ LONGVON 定位为**医疗向智能戒指技术与制造合作伙伴**，覆盖�
 
 纳入 `METRICS_STATEMENT`。OSA 相关输出仅供健康参考 / 研究场景，不构成诊断。
 
+## 监管与临床边界说明（D-01 — 醒目 aside，非页脚小字）
+完整文案见 `apps/web/app/osa-smart-ring-technology/page.tsx` 与 `OSA-MEDICAL-CLAIMS-FINAL-REVIEW.md`。
+
 ## H2 — 1. 睡眠呼吸与 OSA 相关技术
 - 整夜 SpO₂ 统计与血氧跌落计数（≥3% / ≥4%）
 - ODI 与 ODI 评分（公开监测指标）

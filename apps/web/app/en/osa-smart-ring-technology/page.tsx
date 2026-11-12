@@ -87,6 +87,35 @@ export default function EnOsaSmartRingTechnologyPage() {
         <strong>{METRICS_STATEMENT}</strong> OSA-related outputs are for health reference / research contexts — not diagnosis.
       </p>
 
+      <aside
+        aria-label="Regulatory and clinical boundaries"
+        style={{
+          margin: '20px 0 28px',
+          padding: '16px 18px',
+          border: '1px solid #D1D5DB',
+          borderLeft: '4px solid #374151',
+          background: '#F9FAFB',
+          borderRadius: 4,
+        }}
+      >
+        <p style={{ ...p, margin: '0 0 10px', fontWeight: 600 }}>
+          Important notice — regulatory &amp; clinical boundaries
+        </p>
+        <p style={{ ...p, margin: '0 0 10px' }}>
+          “Medical-oriented” describes LONGVON’s engineering and quality direction for smart ring programs. It does{' '}
+          <strong>not</strong> mean that Ring1C—or any product described on this page—is an approved medical device, or that
+          LONGVON holds FDA, CE Medical Device, NMPA, or other product clearances unless certificates are separately on
+          file.
+        </p>
+        <p style={{ ...p, margin: 0 }}>
+          <strong>Ring1C is a consumer electronics / health-monitoring reference product, not a medical device.</strong>{' '}
+          OSA-related outputs (including AHI, ODI, SpO₂ statistics, and OSA screening labels) are for health reference or
+          research contexts only — not medical diagnosis, treatment, or a substitute for polysomnography (PSG). Any
+          questionnaire-based risk tools elsewhere on this site are separate from ring algorithms and are{' '}
+          <strong>not</strong> clinical validation of those algorithms.
+        </p>
+      </aside>
+
       <h2 style={h2}>1. Sleep respiratory &amp; OSA-related technology</h2>
       <ul style={ul}>
         <li>Overnight SpO₂ statistics and desaturation counts (≥3% / ≥4%)</li>

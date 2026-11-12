@@ -21,6 +21,9 @@ LONGVON positions as a **medical-oriented smart ring technology and manufacturin
 
 Include `METRICS_STATEMENT`. OSA-related outputs are for health reference / research contexts — not diagnosis.
 
+## Regulatory & clinical boundaries notice (D-01 — prominent aside, not footer)
+See implemented copy in `apps/web/app/en/osa-smart-ring-technology/page.tsx` and `OSA-MEDICAL-CLAIMS-FINAL-REVIEW.md`.
+
 ## H2 — 1. Sleep respiratory & OSA-related technology
 - Overnight SpO₂ statistics and desaturation counts (≥3% / ≥4%)
 - ODI and ODI scoring items (published monitoring metrics)

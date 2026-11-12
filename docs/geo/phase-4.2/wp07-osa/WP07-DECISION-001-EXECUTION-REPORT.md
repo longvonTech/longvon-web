@@ -2,6 +2,8 @@
 
 **Final status:** `READY_FOR_OWNER_REVIEW`  
 **UTC:** 2026-11-12T12:00:00Z · **Asia/Shanghai:** 2026-11-12 20:00  
+**Branch tip:** `a6b234f595519fb204ba3eb20d3b73be040e3c87` on `cursor/geo-wp07-osa-fc31`  
+**PR:** https://github.com/longvonTech/longvon-web/pull/11  
 **Parent review:** WP07-REVIEW-001 `PASS_WITH_CONDITIONS`  
 **Auth boundaries honored:** no PR merge · no production deploy · no content draft publish
 

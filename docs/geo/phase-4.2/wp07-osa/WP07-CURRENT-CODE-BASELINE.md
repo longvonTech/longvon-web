@@ -38,4 +38,5 @@
 
 ## 4. Post–decision tip
 
-Recorded in execution report after push (D-01 + docs). Baseline parent for decision work: **`fa5fce6`**.
+Baseline parent for decision work: **`fa5fce6`**.  
+Decision commit tip: **`a6b234f595519fb204ba3eb20d3b73be040e3c87`** (D-01 + readiness docs + SDK↔OSA links).

@@ -1,0 +1,230 @@
+{
+  "backup_root": "/root/mateyou/_rollback/geo-fix-01-optionb-src.20261108T143100Z",
+  "backup_mode": "0o700",
+  "inventory_sha256": "ce52d7961e83afa145116421ed9e794f024ce0569b5df6dedbd1450341dfb953",
+  "tarball": "/root/mateyou/_rollback/geo-fix-01-optionb-src.20261108T143100Z.tar.gz",
+  "tarball_sha256": "567e42c62e4946afa73b7dccdebf42b325d3da1793f6129ccc18844f239f52b9",
+  "inventory_errors": [],
+  "restore_errors": [],
+  "reread_errors": [],
+  "backed_up": 28,
+  "missing_expected": 3,
+  "restore_pass": true,
+  "reread": [
+    {
+      "path": "apps/web/middleware.ts",
+      "action": "ADD",
+      "production_sha256_reread": null,
+      "matches_pin": true
+    },
+    {
+      "path": "apps/web/app/assessment/layout.tsx",
+      "action": "ADD",
+      "production_sha256_reread": null,
+      "matches_pin": true
+    },
+    {
+      "path": "apps/web/app/dashboard/layout.tsx",
+      "action": "ADD",
+      "production_sha256_reread": null,
+      "matches_pin": true
+    },
+    {
+      "path": "apps/web/app/about/page.tsx",
+      "action": "REPLACE",
+      "production_sha256_reread": "86e2960f6c2ff05858a519d850d7c0b67bc3dc4a6b709d8268d6d0b00da4510d",
+      "matches_pin": true,
+      "unchanged_during_backup": true
+    },
+    {
+      "path": "apps/web/app/assessment/page.tsx",
+      "action": "REPLACE",
+      "production_sha256_reread": "671f0abb16d55d55d201cf1a65d79714fd294bbccda69653acc17131d493da09",
+      "matches_pin": true,
+      "unchanged_during_backup": true
+    },
+    {
+      "path": "apps/web/app/authors/[id]/page.tsx",
+      "action": "REPLACE",
+      "production_sha256_reread": "51ba36d7ba83e83b7ec7f4bd4c45d35ec67ae3ee5d7e0bb46545846571bfb7f1",
+      "matches_pin": true,
+      "unchanged_during_backup": true
+    },
+    {
+      "path": "apps/web/app/en/layout.tsx",
+      "action": "REPLACE",
+      "production_sha256_reread": "b79bcb149f1ba0a43037869a13c2554e603217baf74c57dfe4453006cf9be707",
+      "matches_pin": true,
+      "unchanged_during_backup": true
+    },
+    {
+      "path": "apps/web/app/en/partner/oem/page.tsx",
+      "action": "REPLACE",
+      "production_sha256_reread": "5babf1d3d2b6d97ddd83a9c8aa035d87867f17de6bc561d0d7494e85f8dbc937",
+      "matches_pin": true,
+      "unchanged_during_backup": true
+    },
+    {
+      "path": "apps/web/app/en/smart-ring-oem-odm/page.tsx",
+      "action": "REPLACE",
+      "production_sha256_reread": "23f699aa45dd2dfcba9f01b3e5de6197c36abfb3cf48bd5a77c18ecd77de958b",
+      "matches_pin": true,
+      "unchanged_during_backup": true
+    },
+    {
+      "path": "apps/web/app/knowledge/[slug]/page.tsx",
+      "action": "REPLACE",
+      "production_sha256_reread": "aeb130e8960e758c4828e55e322430240cf2ad559bae363cc8c0dd58597267a8",
+      "matches_pin": true,
+      "unchanged_during_backup": true
+    },
+    {
+      "path": "apps/web/app/knowledge/page.tsx",
+      "action": "REPLACE",
+      "production_sha256_reread": "6859a2d18a77bd0e0bc48baa3426e89e648abd5d64f13694f265e58310778af0",
+      "matches_pin": true,
+      "unchanged_during_backup": true
+    },
+    {
+      "path": "apps/web/app/layout.tsx",
+      "action": "REPLACE",
+      "production_sha256_reread": "ee2a8356d2723c6a22a326ac0be84f7efd20d501d9ca5a45484fa68dfcb91d4e",
+      "matches_pin": true,
+      "unchanged_during_backup": true
+    },
+    {
+      "path": "apps/web/app/membership/page.tsx",
+      "action": "REPLACE",
+      "production_sha256_reread": "7debdd66d58e06fa950ddd3537265f973e4ee69de291f5c3675f0d7aea60b160",
+      "matches_pin": true,
+      "unchanged_during_backup": true
+    },
+    {
+      "path": "apps/web/app/metrics/[slug]/page.tsx",
+      "action": "REPLACE",
+      "production_sha256_reread": "9ff4ef6def02c9de7d8e6835a6b9c5af9ef96ed2acb2cd7e260bd470db492dac",
+      "matches_pin": true,
+      "unchanged_during_backup": true
+    },
+    {
+      "path": "apps/web/app/metrics/page.tsx",
+      "action": "REPLACE",
+      "production_sha256_reread": "a05647e66faec87847dd59ed0880838c1380ca60cde7fb50bf8bff2fda5576a3",
+      "matches_pin": true,
+      "unchanged_during_backup": true
+    },
+    {
+      "path": "apps/web/app/news/[slug]/page.tsx",
+      "action": "REPLACE",
+      "production_sha256_reread": "01b1691a0d765eef0710717b0856d8f7edd0750f9e7352b082e682f7d0ba2a9e",
+      "matches_pin": true,
+      "unchanged_during_backup": true
+    },
+    {
+      "path": "apps/web/app/news/page.tsx",
+      "action": "REPLACE",
+      "production_sha256_reread": "fa0b16635bb4695688dee4439a17024a1ca5be4866e7d939fa6df15edde9e09c",
+      "matches_pin": true,
+      "unchanged_during_backup": true
+    },
+    {
+      "path": "apps/web/app/partner/articles/page.tsx",
+      "action": "REPLACE",
+      "production_sha256_reread": "79d8f9c4fc4144d023edc74e2791bc99bbfd47bcb6b1aabff208a17f5cb8a785",
+      "matches_pin": true,
+      "unchanged_during_backup": true
+    },
+    {
+      "path": "apps/web/app/partner/distributor/page.tsx",
+      "action": "REPLACE",
+      "production_sha256_reread": "21c2e55781f25906b80a4f6abc7455bed15f345420d5de798252ef345b248aca",
+      "matches_pin": true,
+      "unchanged_during_backup": true
+    },
+    {
+      "path": "apps/web/app/partner/enterprise/page.tsx",
+      "action": "REPLACE",
+      "production_sha256_reread": "f0b84358a919e13170dc1a7f5aad21aa5294d64dd30b68870e6cbc1df5fca4c3",
+      "matches_pin": true,
+      "unchanged_during_backup": true
+    },
+    {
+      "path": "apps/web/app/partner/hospital/page.tsx",
+      "action": "REPLACE",
+      "production_sha256_reread": "f98a5b4331dbdff4e67a6aea475723f3692b38de87272d7222f514cbb67b4b99",
+      "matches_pin": true,
+      "unchanged_during_backup": true
+    },
+    {
+      "path": "apps/web/app/partner/oem/page.tsx",
+      "action": "REPLACE",
+      "production_sha256_reread": "f3836e2c6e29bb47c4a0c4cff8a8dd3a69ee40417032691001697f30c91f6e0d",
+      "matches_pin": true,
+      "unchanged_during_backup": true
+    },
+    {
+      "path": "apps/web/app/partner/page.tsx",
+      "action": "REPLACE",
+      "production_sha256_reread": "68341a744091dbdc401ca6820c6819d4efe1521a172f4328554e4a24411bf74b",
+      "matches_pin": true,
+      "unchanged_during_backup": true
+    },
+    {
+      "path": "apps/web/app/partner/pharmacy/page.tsx",
+      "action": "REPLACE",
+      "production_sha256_reread": "d2f0b859141986a970280e6fb3bb53c57ba7400782d1e7d5270c0d4cc7e7cc82",
+      "matches_pin": true,
+      "unchanged_during_backup": true
+    },
+    {
+      "path": "apps/web/app/products/ring1c/page.tsx",
+      "action": "REPLACE",
+      "production_sha256_reread": "429fc359dc87e044a759f014b6afd64f8a18d31293b14d50d59e78581361a69d",
+      "matches_pin": true,
+      "unchanged_during_backup": true
+    },
+    {
+      "path": "apps/web/app/topics/[slug]/page.tsx",
+      "action": "REPLACE",
+      "production_sha256_reread": "36b1d43897e50be7a494efe91069030cd49b8bbbba05104f5ba9e7540d1ebd2d",
+      "matches_pin": true,
+      "unchanged_during_backup": true
+    },
+    {
+      "path": "apps/web/components/ArticleDetailView.tsx",
+      "action": "REPLACE",
+      "production_sha256_reread": "d5470396ae00ec7fa035cda9ab6d6d8011256b3a437e9946923e0b8df3144c9a",
+      "matches_pin": true,
+      "unchanged_during_backup": true
+    },
+    {
+      "path": "apps/web/components/StructuredData.tsx",
+      "action": "REPLACE",
+      "production_sha256_reread": "b68bca062abb2698ffdb9616f7d1929226ba49193b3b0f00b68e0ec6c6cc9514",
+      "matches_pin": true,
+      "unchanged_during_backup": true
+    },
+    {
+      "path": "apps/web/lib/i18n-routes.ts",
+      "action": "REPLACE",
+      "production_sha256_reread": "80fe66c184fc78783120bd4e71910c15ee1ca9b14536f4bbb879a0fc4fed80e5",
+      "matches_pin": true,
+      "unchanged_during_backup": true
+    },
+    {
+      "path": "apps/web/components/HtmlLang.tsx",
+      "action": "DELETE",
+      "production_sha256_reread": "1cd1f534caeae8dd2b1cafd8d2736d1461401866aa8d1511221f2f082c6e65de",
+      "matches_pin": true,
+      "unchanged_during_backup": true
+    },
+    {
+      "path": "apps/web/app/en/smart-ring-manufacturer/page.tsx",
+      "action": "REPLACE",
+      "production_sha256_reread": "726cc0b872e050f62e47451c7580768a29a2eafed6413ce23ac9e8391e4ed7b7",
+      "matches_pin": true,
+      "unchanged_during_backup": true
+    }
+  ],
+  "overall_pass": true
+}

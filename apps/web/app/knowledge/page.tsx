@@ -5,7 +5,7 @@ import { listArticles } from '../../lib/knowledge-api';
 import { getSiteUrl } from '../../lib/site';
 
 export const metadata: Metadata = {
-  title: '健康知识库 | MATEYOU',
+  title: { absolute: '健康知识库 | MATEYOU' },
   description: '经医学审核的健康知识文章，覆盖睡眠、压力、体重管理等主题。',
   alternates: { canonical: `${getSiteUrl()}/knowledge` },
 };

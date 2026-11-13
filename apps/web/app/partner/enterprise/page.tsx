@@ -4,7 +4,7 @@ import { PartnerLandingLayout } from '../../../components/PartnerLandingLayout';
 import { getSiteUrl } from '../../../lib/site';
 
 export const metadata: Metadata = {
-  title: '企业批量采购 | MATEYOU',
+  title: { absolute: '企业批量采购 | MATEYOU' },
   description: 'MATEYOU面向企业客户提供智能戒指批量采购方案，适用于员工健康福利、团建活动等场景。',
   alternates: { canonical: `${getSiteUrl()}/partner/enterprise` },
 };

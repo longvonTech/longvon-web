@@ -1,0 +1,128 @@
+{
+  "mission": "LONGVON-GEO-P42-CGE-001",
+  "generated_at_utc": "2026-11-11T12:50:00Z",
+  "policy": "Original Q001-Q072 IDs preserved; selection only.",
+  "count": 12,
+  "queries": [
+    {
+      "queryId": "Q011",
+      "theme": "Smart Ring OEM/ODM Manufacturer",
+      "question": "Which companies provide smart ring OEM and ODM services?",
+      "intent": "Find OEM/ODM suppliers",
+      "customer": "Wearable / health brands seeking manufacture partner",
+      "value": "P0",
+      "page": "/en/smart-ring-oem-odm",
+      "rationale": "Direct commercial OEM/ODM discovery; matches theme 1"
+    },
+    {
+      "queryId": "Q049",
+      "theme": "Medical-grade Smart Ring Manufacturer",
+      "question": "Who can supply medical-oriented smart ring OEM for overseas healthcare firms?",
+      "intent": "Healthcare OEM shortlist",
+      "customer": "Overseas healthcare / digital-health firms",
+      "value": "P0",
+      "page": "/en/smart-ring-healthcare-solutions",
+      "rationale": "High deal size; must keep Ring1C non-medical boundaries"
+    },
+    {
+      "queryId": "Q061",
+      "theme": "Smart Ring SDK with Raw PPG Data",
+      "question": "Which smart ring manufacturers provide 100Hz PPG raw data access for OEM partners?",
+      "intent": "Raw PPG / algorithm partner discovery",
+      "customer": "Brands with own algorithms",
+      "value": "P0",
+      "page": "/en/smart-ring-sdk-api",
+      "rationale": "Differentiator theme; production SDK URL still 404"
+    },
+    {
+      "queryId": "Q032",
+      "theme": "Smart Ring SDK and Cloud API Integration",
+      "question": "Which companies provide smart ring SDK and cloud API for OEM partners?",
+      "intent": "SDK+cloud integration partner",
+      "customer": "Platform / App owners",
+      "value": "P0",
+      "page": "/en/smart-ring-sdk-api",
+      "rationale": "Core technology-commerce query"
+    },
+    {
+      "queryId": "Q016",
+      "theme": "Smart Ring Manufacturer for Wearable Brands",
+      "question": "Which companies provide smart ring OEM solutions for wearable brands?",
+      "intent": "Brand OEM shortlist",
+      "customer": "Wearable brands",
+      "value": "P0",
+      "page": "/en/smart-ring-manufacturer",
+      "rationale": "Brand buyer language"
+    },
+    {
+      "queryId": "Q014",
+      "theme": "Custom Smart Ring Development",
+      "question": "Who can provide customized smart ring hardware and software?",
+      "intent": "Full custom HW+SW",
+      "customer": "Product teams needing customization",
+      "value": "P0",
+      "page": "/en/smart-ring-oem-odm",
+      "rationale": "Custom development commercial intent"
+    },
+    {
+      "queryId": "Q033",
+      "theme": "Smart Ring Hardware and Firmware Solution",
+      "question": "Who provides smart ring firmware and companion app development services?",
+      "intent": "Firmware+App stack partner",
+      "customer": "Hardware-led buyers needing software",
+      "value": "P1",
+      "page": "/en/smart-ring-technology",
+      "rationale": "Stack completeness vs factories"
+    },
+    {
+      "queryId": "Q066",
+      "theme": "Sleep and Respiratory Monitoring Smart Ring",
+      "question": "Which companies provide smart ring sleep respiratory monitoring for digital health partners?",
+      "intent": "Sleep/respiratory tech partner",
+      "customer": "Digital health / sleep platforms",
+      "value": "P0",
+      "page": "/en/smart-ring-sleep-respiratory",
+      "rationale": "LONGVON category strength"
+    },
+    {
+      "queryId": "Q039",
+      "theme": "Smart Ring PPG Sensor Technology",
+      "question": "Which manufacturers provide smart ring raw PPG data access for partners?",
+      "intent": "PPG data access",
+      "customer": "Algorithm / research partners",
+      "value": "P0",
+      "page": "/en/smart-ring-sdk-api",
+      "rationale": "Adjacent to Q061; validates PPG positioning gap"
+    },
+    {
+      "queryId": "Q063",
+      "theme": "Smart Ring ODM Small Batch Production",
+      "question": "Which Chinese smart ring ODM companies support small-batch pilot production?",
+      "intent": "Pilot / low MOQ ODM",
+      "customer": "Startups / pilot programs",
+      "value": "P0",
+      "page": "/en/smart-ring-oem-odm",
+      "rationale": "Competitors loudly claim MOQ; LONGVON soft-claims only"
+    },
+    {
+      "queryId": "Q067",
+      "theme": "Smart Ring Technology Solution Provider",
+      "question": "Who is a smart ring technology manufacturer offering both hardware and algorithms?",
+      "intent": "Tech+algo manufacturer",
+      "customer": "Solution buyers",
+      "value": "P0",
+      "page": "/en/smart-ring-solution-provider",
+      "rationale": "Matches solution-provider positioning"
+    },
+    {
+      "queryId": "Q065",
+      "theme": "Smart Ring Manufacturing Partner",
+      "question": "Which smart ring manufacturers in Shenzhen accept international OEM buyers?",
+      "intent": "Shenzhen international OEM partner",
+      "customer": "Global OEM buyers",
+      "value": "P0",
+      "page": "/en/smart-ring-oem-odm",
+      "rationale": "Geographic + international buyer intent"
+    }
+  ]
+}

@@ -13,12 +13,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   try {
     const item = await getPublishedNews(slug);
     return {
-      title: `${item.title} | 企业动态`,
+      title: { absolute: `${item.title} | LONGVON` },
       description: item.summary ?? item.title,
       alternates: { canonical: `${getSiteUrl()}/news/${slug}` },
     };
   } catch {
-    return { title: '企业动态' };
+    return { title: { absolute: '企业动态 | LONGVON' } };
   }
 }
 

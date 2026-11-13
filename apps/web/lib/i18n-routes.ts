@@ -18,6 +18,8 @@ export const EN_ROUTE_MAP: Record<string, string> = {
   '/smart-ring-solution-provider': '/smart-ring-solution-provider',
   '/smart-ring-healthcare-solutions': '/smart-ring-healthcare-solutions',
   '/smart-ring-technology': '/smart-ring-technology',
+  '/smart-ring-sdk-api': '/smart-ring-sdk-api',
+  '/osa-smart-ring-technology': '/osa-smart-ring-technology',
   '/smart-ring-sleep-monitoring': '/smart-ring-sleep-monitoring',
   '/smart-ring-sleep-respiratory': '/smart-ring-sleep-respiratory',
   '/smart-ring-osa': '/smart-ring-osa',
@@ -25,6 +27,14 @@ export const EN_ROUTE_MAP: Record<string, string> = {
 
 export function getLocaleFromPath(pathname: string): SiteLocale {
   return pathname === '/en' || pathname.startsWith('/en/') ? 'en' : 'zh';
+}
+
+/** Request header set by middleware so the root layout can SSR `<html lang>`. */
+export const HTML_LANG_HEADER = 'x-html-lang';
+
+/** BCP 47 language tag for the document. English routes are `/en` and `/en/*`. */
+export function htmlLangFromPathname(pathname: string): 'en' | 'zh-CN' {
+  return getLocaleFromPath(pathname) === 'en' ? 'en' : 'zh-CN';
 }
 
 /** Prefix a bare path for the given locale (`/` → `/en` when en). */
@@ -72,6 +82,7 @@ export const NAV_ZH = [
   { href: '/assessment', label: '健康评估' },
   { href: '/company/longvon', label: '龙汾科技' },
   { href: '/partner', label: '商业合作' },
+  { href: '/smart-ring-sdk-api', label: 'SDK / API' },
   { href: '/knowledge', label: '健康知识库' },
   { href: '/about', label: '关于我们' },
 ] as const;
@@ -81,20 +92,35 @@ export const NAV_EN = [
   { href: '/en/company/longvon', label: 'Company' },
   { href: '/en/smart-ring-oem-odm', label: 'OEM / ODM' },
   { href: '/en/smart-ring-technology', label: 'Technology' },
+  { href: '/en/smart-ring-sdk-api', label: 'SDK / API' },
   { href: '/en/partner', label: 'Partners' },
   { href: '/en/about', label: 'About' },
 ] as const;
 
-export function siteAlternates(site: string, barePath: string, locale: SiteLocale) {
+export function siteAlternates(
+  site: string,
+  barePath: string,
+  locale: SiteLocale,
+  options?: { xDefault?: SiteLocale },
+) {
   const clean = barePath === '/' ? '' : barePath.replace(/^\//, '');
   const zh = clean ? `${site}/${clean}` : site;
   const en = clean ? `${site}/en/${clean}` : `${site}/en`;
+  const xDefaultLocale = options?.xDefault ?? 'zh';
   return {
     canonical: locale === 'en' ? en : zh,
     languages: {
       'zh-CN': zh,
       en,
-      'x-default': zh,
+      'x-default': xDefaultLocale === 'en' ? en : zh,
     },
   };
+}
+
+/**
+ * Reciprocal hreflang for the OEM RFQ pair.
+ * x-default is English: overseas B2B OEM/ODM is the intended unspecified-locale destination.
+ */
+export function oemRfqAlternates(site: string, locale: SiteLocale) {
+  return siteAlternates(site, '/partner/oem', locale, { xDefault: 'en' });
 }

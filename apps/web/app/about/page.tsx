@@ -4,7 +4,7 @@ import { getSiteUrl } from '../../lib/site';
 import { siteAlternates } from '../../lib/i18n-routes';
 
 export const metadata: Metadata = {
-  title: '关于龙汾科技 | LONGVON',
+  title: { absolute: '关于龙汾科技 | LONGVON' },
   description:
     '龙汾科技（深圳）有限公司（LONGVON）是智能戒指技术厂商与OEM/ODM提供商。MATEYOU是LONGVON打造的智能戒指及AI健康品牌。',
   alternates: siteAlternates(getSiteUrl(), '/about', 'zh'),

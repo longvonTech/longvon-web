@@ -32,6 +32,18 @@ const nextConfig: NextConfig = {
         destination: '/en/smart-ring-sleep-respiratory',
         permanent: true,
       },
+      // Production 301 is issued by Nginx. This is an app-layer fallback
+      // (Next.js permanent redirects are 308) so /contact never 404s.
+      {
+        source: '/contact',
+        destination: '/partner/oem',
+        permanent: true,
+      },
+      {
+        source: '/contact/',
+        destination: '/partner/oem',
+        permanent: true,
+      },
     ];
   },
 };

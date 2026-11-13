@@ -56,7 +56,7 @@ function orgNode() {
     logo: { '@type': 'ImageObject', url: logoUrl() },
     image: logoUrl(),
     description:
-      'LONGVON (龙汾科技（深圳）有限公司) is a smart ring manufacturer and OEM/ODM technology provider offering hardware, firmware, health algorithms, mobile apps, SDK/API and manufacturing. MATEYOU is its product brand — not the manufacturer.',
+      'LONGVON (龙汾科技（深圳）有限公司) is a smart ring manufacturer and OEM/ODM technology provider offering hardware, firmware, health algorithms, mobile apps, SDK/API and manufacturing. MATEYOU is its product brand — not the manufacturer. Enterprise credentials stated on-site include National High-Tech Enterprise and related SME designations; manufacturing uses Class 100,000 cleanroom controls and ISO 13485–oriented quality practices (project-scoped).',
     foundingDate: '2017',
     address: {
       '@type': 'PostalAddress',
@@ -80,15 +80,23 @@ function orgNode() {
       'HRV',
       'AHI',
       'ODI',
+      'Class 100000 cleanroom',
+      'National High-Tech Enterprise',
+    ],
+    award: [
+      'National High-Tech Enterprise',
+      'Shenzhen Specialized and Innovative Enterprise',
+      'Shenzhen Innovative SME',
+      'National Technology-Based SME',
     ],
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'sales',
       availableLanguage: ['Chinese', 'English'],
       areaServed: ['CN', 'Worldwide'],
-      url: `${siteOrigin()}/partner/oem`,
+      url: `${siteOrigin()}/en/partner/oem`,
     },
-    sameAs: ['https://www.mateyou.net'],
+    sameAs: ['https://www.mateyou.net', `${siteOrigin()}/en/company/longvon`],
     mainEntityOfPage: `${siteOrigin()}/company/longvon`,
   };
 }
@@ -119,7 +127,11 @@ function websiteNode() {
   };
 }
 
-function oemServiceNode() {
+function oemServiceNode(locale: Locale = 'zh') {
+  const serviceUrl =
+    locale === 'en' ? `${siteOrigin()}/en/partner/oem` : `${siteOrigin()}/partner/oem`;
+  const termsUrl =
+    locale === 'en' ? `${siteOrigin()}/en/smart-ring-oem-odm` : `${siteOrigin()}/smart-ring-oem-odm`;
   return {
     '@type': 'Service',
     '@id': oemServiceId(),
@@ -128,10 +140,10 @@ function oemServiceNode() {
     serviceType: ['OEM', 'ODM', 'Smart Ring Manufacturing', 'Wearable Technology Solution'],
     provider: { '@id': orgId() },
     areaServed: 'Worldwide',
-    url: `${siteOrigin()}/partner/oem`,
+    url: serviceUrl,
     description:
       'End-to-end smart ring OEM/ODM: hardware, firmware, health algorithms, mobile app, project-based SDK/API, and manufacturing for qualified brand and digital-health projects.',
-    termsOfService: `${siteOrigin()}/smart-ring-oem-odm`,
+    termsOfService: termsUrl,
   };
 }
 
@@ -227,7 +239,7 @@ export function SiteEntityGraphSchema({ locale = 'zh' }: { locale?: Locale }) {
       orgNode(),
       brandNode(),
       websiteNode(),
-      oemServiceNode(),
+      oemServiceNode(locale),
       ring1cProductNode(locale, productUrl),
       mateyouAppNode(locale),
     ],
@@ -244,7 +256,7 @@ export function Ring1CEntityGraphSchema({ locale = 'zh' }: { locale?: Locale }) 
     '@graph': [
       orgNode(),
       brandNode(),
-      oemServiceNode(),
+      oemServiceNode(locale),
       ring1cProductNode(locale, pageUrl),
       mateyouAppNode(locale),
       {
@@ -292,20 +304,43 @@ export function WebSiteSchema() {
   );
 }
 
-export function OemServiceSchema() {
+export function OemServiceSchema({ locale = 'zh' }: { locale?: Locale }) {
   return (
     <JsonLd
       data={{
         '@context': 'https://schema.org',
-        ...oemServiceNode(),
-        provider: {
-          '@type': 'Organization',
-          name: ORG_NAME,
-          url: siteOrigin(),
-        },
+        ...oemServiceNode(locale),
       }}
     />
   );
+}
+
+/**
+ * OEM/ODM capability page graph. Reuses Organization `@id` (`/#organization`)
+ * and Service `@id` (`/#service-oem-odm`). Does not emit a second Organization
+ * node or the MATEYOU Product graph.
+ */
+export function OemEntityGraphSchema({ locale = 'en' }: { locale?: Locale }) {
+  const pageUrl =
+    locale === 'en' ? `${siteOrigin()}/en/smart-ring-oem-odm` : `${siteOrigin()}/smart-ring-oem-odm`;
+  const data = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      orgNode(),
+      oemServiceNode(locale),
+      {
+        '@type': 'WebPage',
+        '@id': `${pageUrl}#webpage`,
+        url: pageUrl,
+        name: locale === 'en' ? 'Smart Ring OEM & ODM Services' : '智能戒指 OEM / ODM 服务',
+        inLanguage: locale === 'en' ? 'en' : 'zh-CN',
+        isPartOf: { '@id': websiteId() },
+        about: { '@id': orgId() },
+        mainEntity: { '@id': oemServiceId() },
+      },
+    ],
+  };
+  return <JsonLd data={data} />;
 }
 
 interface ArticleSchemaProps {

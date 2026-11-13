@@ -34,9 +34,9 @@ export function SizeGuide() {
         {/* 标题 */}
         <div style={{ textAlign:'center', marginBottom:72 }}>
           <p style={{ fontSize:14, color:'#86868B', letterSpacing:'0.1em', textTransform:'uppercase', marginBottom:20 }}>Ring Size</p>
-          <h2 style={{ fontSize:'clamp(36px,5vw,60px)', fontWeight:700, letterSpacing:'-0.025em', marginBottom:16 }}>
-            找到适合你的尺寸。
-          </h2>
+          <h3 style={{ fontSize:'clamp(28px,4vw,40px)', fontWeight:700, letterSpacing:'-0.025em', marginBottom:16 }}>
+            找到适合你的尺寸
+          </h3>
           <p style={{ fontSize:18, color:'#86868B' }}>在家量测，精准选码</p>
         </div>
 
@@ -164,15 +164,12 @@ export function SizeGuide() {
               </button>
             </div>
             {/* 右侧图片 */}
-            <div style={{ background:'#1a0a0a', display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', minHeight:360, padding:32, gap:0 }}>
-              <div style={{ background:'rgba(255,255,255,0.04)', borderRadius:16, width:'100%', flex:1, display:'flex', alignItems:'center', justifyContent:'center', border:'1px dashed rgba(255,255,255,0.1)', marginBottom:16 }}>
-                <div style={{ textAlign:'center' }}>
-                  <div style={{ fontSize:48, marginBottom:8 }}>🎁</div>
-                  <div style={{ fontSize:13, color:'#444' }}>礼品卡指模套装展示图</div>
-                  <div style={{ fontSize:11, color:'#333', marginTop:4, fontFamily:'monospace' }}>ring1c-giftcard</div>
-                </div>
-              </div>
-
+            <div style={{ background:'#1a0a0a', display:'flex', alignItems:'center', justifyContent:'center', minHeight:360, padding:32 }}>
+              <img
+                src="/images/ring1c/giftcard.jpg"
+                alt="Ring1C 礼品卡指模套装"
+                style={{ width:'100%', maxWidth:360, height:'auto', maxHeight:480, objectFit:'contain', borderRadius:16, display:'block' }}
+              />
             </div>
           </div>
         </div>

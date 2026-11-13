@@ -1,0 +1,107 @@
+{
+  "checked_at_utc": "2026-11-08T15:21:14Z",
+  "home": {
+    "status_line": "HTTP/1.1 200 OK",
+    "lang": "zh-CN",
+    "description": "\u9f99\u6c7e\u79d1\u6280\uff08\u6df1\u5733\uff09\u6709\u9650\u516c\u53f8\uff08LONGVON\uff09\u662f\u667a\u80fd\u6212\u6307\u5236\u9020\u5546\u4e0e OEM/ODM \u6280\u672f\u65b9\u6848\u63d0\u4f9b\u5546\uff0c\u63d0\u4f9b\u786c\u4ef6\u3001\u56fa\u4ef6\u3001\u5065\u5eb7\u7b97\u6cd5\u3001App\u3001SDK/API \u4e0e\u751f\u4ea7\u5236\u9020\uff0c\u670d\u52a1\u533b\u7597\u5065\u5eb7\u3001\u6570\u5b57\u5065\u5eb7\u3001\u7761\u7720\u4e0e\u547c\u5438\u5065\u5eb7\u9879\u76ee\u53ca\u7a7f\u6234\u54c1\u724c\u3002",
+    "description_chars": 105,
+    "canonical": "https://www.longvon.com",
+    "hreflang": [
+      {
+        "lang": "zh-CN",
+        "href": "https://www.longvon.com"
+      },
+      {
+        "lang": "en",
+        "href": "https://www.longvon.com/en"
+      },
+      {
+        "lang": "x-default",
+        "href": "https://www.longvon.com"
+      }
+    ],
+    "jsonld_blocks": 4,
+    "html_sha256": "72a935e61bf131795b6f6bbe42bc69a2a3cd4cbdb5f21be879200b6675338246",
+    "html_bytes": 95509,
+    "checks": {
+      "lang_ok": true,
+      "hreflang_ok": true,
+      "jsonld_ok": true,
+      "http_200": true
+    }
+  },
+  "manufacturer": {
+    "status_line": "HTTP/1.1 200 OK",
+    "lang": "en",
+    "description": "LONGVON is a smart ring manufacturer offering OEM/ODM, custom hardware, firmware, health algorithms, apps, SDK/API integration and manufacturing.",
+    "description_chars": 145,
+    "canonical": "https://www.longvon.com/en/smart-ring-manufacturer",
+    "hreflang": [
+      {
+        "lang": "zh-CN",
+        "href": "https://www.longvon.com/smart-ring-manufacturer"
+      },
+      {
+        "lang": "en",
+        "href": "https://www.longvon.com/en/smart-ring-manufacturer"
+      },
+      {
+        "lang": "x-default",
+        "href": "https://www.longvon.com/smart-ring-manufacturer"
+      }
+    ],
+    "jsonld_blocks": 4,
+    "html_sha256": "3bf3d0acafc055e7abaefc44c31ac8737b9ffafbb2c0f9d8aa4924180031ce85",
+    "html_bytes": 62474,
+    "checks": {
+      "lang_ok": true,
+      "desc_text_ok": true,
+      "desc_len_ok": true,
+      "hreflang_ok": true,
+      "jsonld_ok": true,
+      "http_200": true
+    }
+  },
+  "oem": {
+    "status_line": "HTTP/1.1 200 OK",
+    "lang": "en",
+    "description": "Develop custom smart rings with LONGVON. We provide OEM/ODM hardware, firmware, health algorithms, apps, SDK/API integration, testing and manufacturing.",
+    "description_chars": 152,
+    "canonical": "https://www.longvon.com/en/partner/oem",
+    "hreflang": [
+      {
+        "lang": "zh-CN",
+        "href": "https://www.longvon.com/partner/oem"
+      },
+      {
+        "lang": "en",
+        "href": "https://www.longvon.com/en/partner/oem"
+      },
+      {
+        "lang": "x-default",
+        "href": "https://www.longvon.com/en/partner/oem"
+      }
+    ],
+    "jsonld_blocks": 6,
+    "html_sha256": "d85153d88ca229977f0a42b0fe7a494d618dcba02c77e671cdcc150b5843f9ca",
+    "html_bytes": 72727,
+    "checks": {
+      "lang_ok": true,
+      "desc_text_ok": true,
+      "desc_len_ok": true,
+      "hreflang_ok": true,
+      "jsonld_ok": true,
+      "http_200": true
+    }
+  },
+  "contact": {
+    "status_line": "HTTP/1.1 301 Moved Permanently",
+    "location": "https://www.longvon.com/partner/oem",
+    "checks": {
+      "http_301": true,
+      "to_oem": true
+    }
+  },
+  "all_pass": true,
+  "failures": []
+}

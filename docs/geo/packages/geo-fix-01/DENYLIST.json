@@ -1,0 +1,407 @@
+{
+  "package": "GEO-FIX-01",
+  "purpose": "Files and directories that must not be overwritten or deleted by FIX-01 deployment. Isolated apps/web is not a complete production source.",
+  "isolated_commit": "71b3e8893f56848732f49acb580ef461129dcc49",
+  "production_root": "/root/mateyou",
+  "sha256_source": "Read-only ECS hashes 2026-11-02 from GEO-FIX-01-DEPLOYMENT-REVIEW.md",
+  "entries": [
+    {
+      "path": "apps/web/next.config.ts",
+      "kind": "file",
+      "protect": "must_not_change",
+      "sha256": "48fe0a78b857e4108ebab339433795c1a3a57e618d8955e3f467ab8d09cd8e91",
+      "reason": "Production has /contact \u2192 /partner/oem fallback; isolated 0b0d50d does not."
+    },
+    {
+      "path": "apps/web/app/sitemap.ts",
+      "kind": "file",
+      "protect": "must_not_change",
+      "sha256": "5416d5ba8a817cd8611cd24b4d792caa6bb97d866dab3b09307a163bf599bfa5",
+      "reason": "Production sitemap differs from git HEAD."
+    },
+    {
+      "path": "apps/web/app/page.tsx",
+      "kind": "file",
+      "protect": "must_not_change",
+      "sha256": "e8b6954d63556e61b3acf1940166d2ca1187b61085ab30827a4b302e2356f125",
+      "reason": "Live Chinese homepage."
+    },
+    {
+      "path": "apps/web/app/en/page.tsx",
+      "kind": "file",
+      "protect": "must_not_change",
+      "sha256": "f6c0860b3a2db698a06f94418e890f7fa789c87c23578e07b837f4e2842b155c",
+      "reason": "Live English homepage."
+    },
+    {
+      "path": "apps/web/app/company/longvon/page.tsx",
+      "kind": "file",
+      "protect": "must_not_change",
+      "sha256": "dc9f596403b0a0509cab15b24d1a9301d486ee0e2ba264ceeb2dc0a3079e64d5",
+      "reason": "Live company evidence page."
+    },
+    {
+      "path": "apps/web/app/en/company/longvon/page.tsx",
+      "kind": "file",
+      "protect": "must_not_change",
+      "sha256": "677e97e569ae50dd19b5cb086fd9496fad179a25725a9148b93efcb150c79f0c",
+      "reason": "Live English company evidence page."
+    },
+    {
+      "path": "apps/web/app/en/products/ring1c/page.tsx",
+      "kind": "file",
+      "protect": "must_not_change",
+      "sha256": "7d21c63c13265595730a99e9e2a16013b5ece0c4ee03c2409ad0449afd68e62e",
+      "reason": "Live EN Ring1C page. FIX-01 only patches ZH Ring1C title."
+    },
+    {
+      "path": "apps/web/app/smart-ring-healthcare-solutions/page.tsx",
+      "kind": "file",
+      "protect": "must_not_change",
+      "sha256": "54be4f8634fee84c946392e36e847ef33570a0c055c86fb11d4e82e83efbd5d0",
+      "reason": "Live ZH GEO cluster. Not in FIX-01."
+    },
+    {
+      "path": "apps/web/app/smart-ring-manufacturer/page.tsx",
+      "kind": "file",
+      "protect": "must_not_change",
+      "sha256": "65e565a5deb9c16aa2513444f7985c058c1c30daed0ddf0200719f851eef8b07",
+      "reason": "Live ZH GEO cluster. Not in FIX-01."
+    },
+    {
+      "path": "apps/web/app/smart-ring-oem-odm/page.tsx",
+      "kind": "file",
+      "protect": "must_not_change",
+      "sha256": "26f8f3278216a19eaf76654f7492fc38e0ac555643131f3787951286d2df0783",
+      "reason": "Live ZH OEM/ODM GEO page. FIX-01 only mounts schema on the EN sibling."
+    },
+    {
+      "path": "apps/web/app/smart-ring-osa/page.tsx",
+      "kind": "file",
+      "protect": "must_not_change",
+      "sha256": "d20e5753bfcbb5ae25336b4ec5810ba603e70d4026d685fbed6fe9b6340ab8ef",
+      "reason": "Live ZH GEO cluster. Not in FIX-01."
+    },
+    {
+      "path": "apps/web/app/smart-ring-sleep-monitoring/page.tsx",
+      "kind": "file",
+      "protect": "must_not_change",
+      "sha256": "4400ab8ba00e06054bd0e7b872e45824e834d61cd3837041d39b5af8b74cd088",
+      "reason": "Live ZH GEO cluster. Not in FIX-01."
+    },
+    {
+      "path": "apps/web/app/smart-ring-sleep-respiratory/page.tsx",
+      "kind": "file",
+      "protect": "must_not_change",
+      "sha256": "ea6a27a6b894f96be8d86e397c2bcf5acdd3ec1bc611c537a2d2981fdaf3f509",
+      "reason": "Live ZH GEO cluster. Not in FIX-01."
+    },
+    {
+      "path": "apps/web/app/smart-ring-solution-provider/page.tsx",
+      "kind": "file",
+      "protect": "must_not_change",
+      "sha256": "e7471017a76fd3b311b80d88935e32088d12926b00945eccb7c2c4fd8209fdd0",
+      "reason": "Live ZH GEO cluster. Not in FIX-01."
+    },
+    {
+      "path": "apps/web/app/smart-ring-technology/page.tsx",
+      "kind": "file",
+      "protect": "must_not_change",
+      "sha256": "4002be981578daeb7f36897256a5bf95b16a194a5e1c3e26051b830fcfa8a3ad",
+      "reason": "Live ZH GEO cluster. Not in FIX-01."
+    },
+    {
+      "path": "apps/web/app/en/smart-ring-healthcare-solutions/page.tsx",
+      "kind": "file",
+      "protect": "must_not_change",
+      "sha256": "c3a48c08f2b16cd73dd95f149666943a67a54844d08839b2d40293a2734ac035",
+      "reason": "Live EN GEO cluster. Not in FIX-01."
+    },
+    {
+      "path": "apps/web/app/en/smart-ring-manufacturer/page.tsx",
+      "kind": "file",
+      "protect": "allow_metadata_description_only",
+      "reason": "Phase 2D: description-only Meta COPY is authorized. Title/openGraph/robots/body/component behavior remain protected. Whole-file must_not_change replaced by field-level allowlist.",
+      "allowed_description": "LONGVON is a smart ring manufacturer offering OEM/ODM, custom hardware, firmware, health algorithms, apps, SDK/API integration and manufacturing.",
+      "allowed_description_chars": 145,
+      "forbid_body_changes": true,
+      "forbid_other_metadata_key_changes": true,
+      "production_sha256_before_meta_2026_11_02": "726cc0b872e050f62e47451c7580768a29a2eafed6413ce23ac9e8391e4ed7b7",
+      "sha256": null
+    },
+    {
+      "path": "apps/web/app/en/smart-ring-osa/page.tsx",
+      "kind": "file",
+      "protect": "must_not_change",
+      "sha256": "ad9dc82c2f310719ff462c7609ee88e424ab332b454c8501ee0c71922274a0a4",
+      "reason": "Live EN GEO cluster. Not in FIX-01."
+    },
+    {
+      "path": "apps/web/app/en/smart-ring-sleep-monitoring/page.tsx",
+      "kind": "file",
+      "protect": "must_not_change",
+      "sha256": "0bf37822e24e335bf40c92ce68b699b6e0e263be4e4084fdc7adbbb9ff99be3e",
+      "reason": "Live EN GEO cluster. Not in FIX-01."
+    },
+    {
+      "path": "apps/web/app/en/smart-ring-sleep-respiratory/page.tsx",
+      "kind": "file",
+      "protect": "must_not_change",
+      "sha256": "82bc85cde95e5f2e70b9e729392d66d43ba6647a68b9c0496054023fe15fd2cf",
+      "reason": "Live EN GEO cluster. Not in FIX-01."
+    },
+    {
+      "path": "apps/web/app/en/smart-ring-solution-provider/page.tsx",
+      "kind": "file",
+      "protect": "must_not_change",
+      "sha256": "2f7b71f9855efeee90be647357ab0f9cee91d839a8a203f973edb6a822a3ab10",
+      "reason": "Live EN GEO cluster. Not in FIX-01."
+    },
+    {
+      "path": "apps/web/app/en/smart-ring-technology/page.tsx",
+      "kind": "file",
+      "protect": "must_not_change",
+      "sha256": "f1dbb9e66965f0206fe333a3ebb76c35bd2393a82daa7666ec8434c56d5e04ae",
+      "reason": "Live EN GEO cluster. Not in FIX-01."
+    },
+    {
+      "path": "apps/web/components/HeroSection.tsx",
+      "kind": "file",
+      "protect": "must_not_change",
+      "sha256": "1f527c8230cc9079daba285f095ba15b05e988acf85e5eda63f4bb3423b51d81",
+      "reason": "Production UI differs from git HEAD."
+    },
+    {
+      "path": "apps/web/components/QualificationForm.tsx",
+      "kind": "file",
+      "protect": "must_not_change",
+      "sha256": "f04bda7b2a6583566bd81c972ffb9a8886858b1b18a00e5dd1b4a9bd4292875e",
+      "reason": "Production form differs from git HEAD."
+    },
+    {
+      "path": "apps/web/components/LeadAttributionCapture.tsx",
+      "kind": "file",
+      "protect": "must_not_change",
+      "sha256": "56abca827e24d24c50908b8f56aa9607f4aaf7ec7b0544e59dacd6bb50869682",
+      "reason": "G5 first-touch capture. Already on production. Not a FIX-01 file."
+    },
+    {
+      "path": "apps/web/lib/lead-attribution.ts",
+      "kind": "file",
+      "protect": "must_not_change",
+      "sha256": "a96d88a63f2834e72af9aaa6a1cd0b6bc4fc512ced4b74fc5ba96786c2ed9838",
+      "reason": "G5 attribution helper. Already on production."
+    },
+    {
+      "path": "apps/web/components/OemRfqForm.tsx",
+      "kind": "file",
+      "protect": "must_not_change",
+      "sha256": "70a9c1aafa3fb30260bb059ec41f4a62bf57857e207d94ab628b5b778c60c9c3",
+      "reason": "Production RFQ form. Already matches isolated snapshot. Do not replace from git HEAD."
+    },
+    {
+      "path": "apps/web/lib/partner-api.ts",
+      "kind": "file",
+      "protect": "must_not_change",
+      "sha256": "2b7f56604d6f4150f410445ff1e387513f38ce98701551f3d908e357523b4b05",
+      "reason": "G5 lead payload fields. Already on production."
+    },
+    {
+      "path": "apps/web/components/EnTrustStrip.tsx",
+      "kind": "file",
+      "protect": "must_not_change",
+      "sha256": "c8c5bdda835089e78eeb7c1c63fc61c17242c52129cd8534266636b997ee99f8",
+      "reason": "Production EN trust strip. Already on production."
+    },
+    {
+      "path": "apps/web/lib/geo-trust-en.ts",
+      "kind": "file",
+      "protect": "must_not_change",
+      "sha256": "4b55c8ba1c533e182daf0c664927b687da0005ba73beb526857e69cc35746b34",
+      "reason": "Production EN trust copy. Already on production."
+    },
+    {
+      "path": "apps/web/components/GeoPageLayout.tsx",
+      "kind": "file",
+      "protect": "must_not_change",
+      "sha256": "06cdd539dd3da37ca6fe00a0c7e714e24b47a9d7e2653340dffce814e7864e9f",
+      "reason": "Production GEO layout. Already on production."
+    },
+    {
+      "path": "apps/web/lib/geo.ts",
+      "kind": "file",
+      "protect": "must_not_change",
+      "sha256": "244e25debe8df8d1cf010f8f87989f4758fab955cb5d6eadc8a8e2ff958eab43",
+      "reason": "Production geo helpers. Already on production."
+    },
+    {
+      "path": "apps/web/lib/geo-commercial.ts",
+      "kind": "file",
+      "protect": "must_not_change",
+      "sha256": "4b34651f450a8baf24f53e2127965fdbf57dd72e470e4ee540aeca26088794bc",
+      "reason": "Production commercial GEO copy including NPI. Already on production."
+    },
+    {
+      "path": "apps/web/app/products/ring1c/SizeGuide.tsx",
+      "kind": "file",
+      "protect": "must_not_change",
+      "sha256": "957ed17180db62f03511ce95e97b6beae66536fc00454cbd3c065a7719fc02e5",
+      "reason": "Production Ring1C size guide. Already on production."
+    },
+    {
+      "path": "apps/web/components/CompanyTrustEvidence.tsx",
+      "kind": "file",
+      "protect": "must_exist",
+      "sha256": "da7a448270e2d180fc3bed148da481a0929e81fa64074b1d700b478dcc281479",
+      "reason": "Production-only company evidence. Missing from isolated tree; rsync --delete would remove it."
+    },
+    {
+      "path": "apps/web/components/LeadershipTrust.tsx",
+      "kind": "file",
+      "protect": "must_exist",
+      "sha256": "a828cd0fc952f56d3d595dfff627c46f7d016f7ed1ad401ce045bd4092cf7245",
+      "reason": "Production-only. Missing from isolated tree."
+    },
+    {
+      "path": "apps/web/components/PartnerRelatedArticles.tsx",
+      "kind": "file",
+      "protect": "must_exist",
+      "sha256": "9f94bd556daad4cc75df162ec4902d86b07586f28879fb7638fc64c7e722c3ee",
+      "reason": "Production-only. Missing from isolated tree."
+    },
+    {
+      "path": "apps/web/app/products/ring1c/AppScreensGallery.tsx",
+      "kind": "file",
+      "protect": "must_exist",
+      "sha256": "b59c2cf6e7343db87cdc308de7ec155c39c5f132d8bab7346136a0fa2d736c9a",
+      "reason": "Production-only Ring1C gallery. Missing from isolated tree."
+    },
+    {
+      "path": "apps/web/app/admin/growth/layout.tsx",
+      "kind": "file",
+      "protect": "must_exist",
+      "sha256": "b4e4e2c23070d729219c0b75bc0681c58b9c8d69f2377ad314b8a637d071f5c9",
+      "reason": "Production-only admin layout. Missing from isolated tree."
+    },
+    {
+      "path": "apps/web/lib/admin-auth.ts",
+      "kind": "file",
+      "protect": "must_exist",
+      "sha256": "981cf04c71bd29a99ea8b2a5e872c520d0ae68ce56327c91ec6e5ea1c71561b7",
+      "reason": "Production-only admin helper. Missing from isolated tree."
+    },
+    {
+      "path": "apps/web/lib/image-slots.ts",
+      "kind": "file",
+      "protect": "must_exist",
+      "sha256": "de8afad7d889fea9d70bbdaca80b2cdb33313cea92466dfbd6b181ccbf8d92d0",
+      "reason": "Production-only image slots. Missing from isolated tree."
+    },
+    {
+      "path": "apps/web/public/images/company/founder-credentials.jpg",
+      "kind": "file",
+      "protect": "must_exist",
+      "sha256": "309c8d2b9d3f6c8b6d975b9f3aca72b662e908e6ab367f48e1fc4f6c1bb94ce4",
+      "reason": "Live company evidence image."
+    },
+    {
+      "path": "apps/web/public/images/company/manufacturing-capability.jpg",
+      "kind": "file",
+      "protect": "must_exist",
+      "sha256": "7509cffc16111793401d1c7e334a1665ff86cd7172137d3df635546ed6560593",
+      "reason": "Live company evidence image."
+    },
+    {
+      "path": "apps/web/public/images/company/rd-ai-algorithms.jpg",
+      "kind": "file",
+      "protect": "must_exist",
+      "sha256": "1880c3edca3d1bc2df5b07ccbddabc77e461024431db655211a01a3d2df133d3",
+      "reason": "Live company evidence image."
+    },
+    {
+      "path": "apps/web/public/images/company/rd-hardware-team.jpg",
+      "kind": "file",
+      "protect": "must_exist",
+      "sha256": "e70f4e17474e5122b36446fa4b614b3b46a97c0fb9a727de5f2a96479a7d9379",
+      "reason": "Live company evidence image."
+    },
+    {
+      "path": "apps/web/public/images/shi-libing.jpg",
+      "kind": "file",
+      "protect": "must_exist",
+      "sha256": "7f0212905a0f655d03d561879ce3537899095da70f041de149a4ecac01bf5c08",
+      "reason": "Live leadership photo."
+    },
+    {
+      "path": "apps/web/public/images/company/",
+      "kind": "directory",
+      "protect": "must_exist",
+      "sha256": null,
+      "reason": "Entire company image directory. Do not delete."
+    },
+    {
+      "path": "apps/api/",
+      "kind": "directory",
+      "protect": "must_not_touch",
+      "sha256": null,
+      "reason": "Out of FIX-01 scope. No API rsync."
+    },
+    {
+      "path": "packages/database/",
+      "kind": "directory",
+      "protect": "must_not_touch",
+      "sha256": null,
+      "reason": "No Prisma generate/migrate in this package."
+    },
+    {
+      "path": "infra/",
+      "kind": "directory",
+      "protect": "must_not_touch",
+      "sha256": null,
+      "reason": "Nginx and infra stay as production."
+    },
+    {
+      "path": ".env.production",
+      "kind": "file",
+      "protect": "must_not_touch",
+      "sha256": null,
+      "reason": "Production secrets. Never rsync."
+    },
+    {
+      "path": "ecosystem.config.js",
+      "kind": "file",
+      "protect": "must_not_touch",
+      "sha256": null,
+      "reason": "PM2 process definitions. Restart web only; do not replace this file."
+    },
+    {
+      "path": ".github/workflows/deploy.yml",
+      "kind": "file",
+      "protect": "must_not_run",
+      "sha256": null,
+      "reason": "Full-repo rsync + deploy.sh including prisma migrate deploy."
+    },
+    {
+      "path": "scripts/deploy.sh",
+      "kind": "file",
+      "protect": "must_not_run",
+      "sha256": null,
+      "reason": "Runs db:migrate:deploy. Syndication migration still unfinished."
+    },
+    {
+      "path": "apps/web/app/en/partner/oem/page.tsx",
+      "kind": "file",
+      "protect": "allow_metadata_description_only",
+      "allowed_description": "Develop custom smart rings with LONGVON. We provide OEM/ODM hardware, firmware, health algorithms, apps, SDK/API integration, testing and manufacturing.",
+      "allowed_description_chars": 152,
+      "forbid_body_changes": true,
+      "forbid_other_metadata_key_changes": true,
+      "forbid_form_behavior_changes": true,
+      "sha256": null,
+      "production_sha256_before_meta_2026_11_02": "5babf1d3d2b6d97ddd83a9c8aa035d87867f17de6bc561d0d7494e85f8dbc937",
+      "reason": "Phase 2D: description-only Meta change authorized. OemRfqForm/G5/Contact behavior must remain unchanged."
+    }
+  ],
+  "phase": "2D",
+  "field_allowlist": "docs/geo/packages/geo-fix-01/FIELD-ALLOWLIST.json"
+}

@@ -99,7 +99,9 @@ export default function SmartRingOsaPage() {
 
       <h2 style={h2}>合作咨询</h2>
       <p style={p}>
-        商业与技术路径：
+        B2B 技术入口：
+        <Link href={geoPath('osa-smart-ring-technology')}>OSA 技术与 OEM</Link> ·{' '}
+        <Link href={geoPath('smart-ring-sdk-api')}>SDK / Cloud API</Link>。商业与技术路径：
         <Link href={geoPath('smart-ring-oem-odm')}>智能戒指 OEM/ODM</Link> ·{' '}
         <Link href={geoPath('smart-ring-manufacturer')}>智能戒指制造商</Link> ·{' '}
         <Link href={geoPath('smart-ring-sleep-monitoring')}>睡眠监测</Link> ·{' '}

@@ -4,7 +4,7 @@ import { HEALTH_METRIC_CATEGORIES, TOTAL_HEALTH_METRICS } from '../../lib/health
 import { getSiteUrl } from '../../lib/site';
 
 export const metadata: Metadata = {
-  title: '71+ 健康监测指标 · 7大功能参数清单',
+  title: { absolute: '71+ 健康监测指标 · 7大功能参数清单 | MATEYOU' },
   description: `MATEYOU Ring1C 覆盖 ${TOTAL_HEALTH_METRICS} 项健康监测参数，涵盖快速检测、运动、心率、血氧、压力、睡眠与 OSA 筛查七大功能模块。`,
   alternates: { canonical: `${getSiteUrl()}/metrics` },
 };

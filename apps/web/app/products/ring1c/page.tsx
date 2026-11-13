@@ -16,7 +16,7 @@ import { BRAND_RELATION_ZH, LEGAL_NAME_ZH } from '../../../lib/geo';
 const site = getSiteUrl();
 
 export const metadata: Metadata = {
-  title: 'MATEYOU Ring1C 智能戒指 | LONGVON 参考产品',
+  title: { absolute: 'MATEYOU Ring1C 智能戒指 | LONGVON 参考产品' },
   description:
     'MATEYOU Ring1C 是 LONGVON（龙汾科技）研发制造的智能戒指参考产品：71 项健康监测参数（含 22 项睡眠相关），覆盖睡眠、SpO₂、HRV、呼吸与 OSA 相关监测。消费级可穿戴，非医疗器械。',
   alternates: siteAlternates(site, '/products/ring1c', 'zh'),
@@ -193,7 +193,7 @@ export default function Ring1CPage() {
           </p>
         </header>
 
-        <figure style={{ ...sectionPad, paddingBottom: 56, margin: 0 }}>
+        <figure style={{ ...sectionPad, paddingBottom: 56 }}>
           <Img
             slot="ring1c-hero-main"
             alt="MATEYOU Ring1C 智能戒指产品图"

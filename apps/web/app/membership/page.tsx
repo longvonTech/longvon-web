@@ -4,7 +4,7 @@ import { BenefitsMatrix } from '../../components/membership/BenefitsMatrix';
 import { getSiteUrl } from '../../lib/site';
 
 export const metadata: Metadata = {
-  title: '会员权益 | MATEYOU',
+  title: { absolute: '会员权益 | MATEYOU' },
   description: 'MATEYOU健康自评平台会员权益说明——Free、Premium、Pro、Enterprise四档。',
   alternates: { canonical: `${getSiteUrl()}/membership` },
 };

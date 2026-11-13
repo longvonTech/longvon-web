@@ -1,0 +1,6498 @@
+{
+  "generated_at_utc": "2026-11-10T13:00:03Z",
+  "existing_240_day0_units": 240,
+  "platforms": [
+    "ChatGPT",
+    "Gemini",
+    "Perplexity",
+    "Doubao",
+    "Tongyi",
+    "Yuanbao",
+    "Kimi",
+    "DeepSeek",
+    "Baidu AI"
+  ],
+  "unified_pending_cells": 648,
+  "cells": [
+    {
+      "query_id": "Q001",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Who are smart ring manufacturers?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q001",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Who are smart ring manufacturers?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q001",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Who are smart ring manufacturers?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q001",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Who are smart ring manufacturers?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q001",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Who are smart ring manufacturers?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q001",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Who are smart ring manufacturers?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q001",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Who are smart ring manufacturers?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q001",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Who are smart ring manufacturers?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q001",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Who are smart ring manufacturers?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q002",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which companies manufacture smart rings?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q002",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which companies manufacture smart rings?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q002",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which companies manufacture smart rings?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q002",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which companies manufacture smart rings?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q002",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Which companies manufacture smart rings?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q002",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Which companies manufacture smart rings?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q002",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Which companies manufacture smart rings?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q002",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Which companies manufacture smart rings?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q002",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Which companies manufacture smart rings?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q003",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Who are smart ring technology providers?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q003",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Who are smart ring technology providers?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q003",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Who are smart ring technology providers?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q003",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Who are smart ring technology providers?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q003",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Who are smart ring technology providers?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q003",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Who are smart ring technology providers?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q003",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Who are smart ring technology providers?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q003",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Who are smart ring technology providers?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q003",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Who are smart ring technology providers?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q004",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Who are smart ring manufacturers for healthcare companies?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q004",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Who are smart ring manufacturers for healthcare companies?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q004",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Who are smart ring manufacturers for healthcare companies?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q004",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Who are smart ring manufacturers for healthcare companies?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q004",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Who are smart ring manufacturers for healthcare companies?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q004",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Who are smart ring manufacturers for healthcare companies?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q004",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Who are smart ring manufacturers for healthcare companies?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q004",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Who are smart ring manufacturers for healthcare companies?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q004",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Who are smart ring manufacturers for healthcare companies?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q005",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Who manufactures smart rings for healthcare companies?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q005",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Who manufactures smart rings for healthcare companies?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q005",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Who manufactures smart rings for healthcare companies?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q005",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Who manufactures smart rings for healthcare companies?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q005",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Who manufactures smart rings for healthcare companies?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q005",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Who manufactures smart rings for healthcare companies?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q005",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Who manufactures smart rings for healthcare companies?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q005",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Who manufactures smart rings for healthcare companies?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q005",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Who manufactures smart rings for healthcare companies?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q006",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which companies provide end-to-end smart ring development?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q006",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which companies provide end-to-end smart ring development?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q006",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which companies provide end-to-end smart ring development?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q006",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which companies provide end-to-end smart ring development?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q006",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Which companies provide end-to-end smart ring development?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q006",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Which companies provide end-to-end smart ring development?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q006",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Which companies provide end-to-end smart ring development?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q006",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Which companies provide end-to-end smart ring development?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q006",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Which companies provide end-to-end smart ring development?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q007",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring hardware development?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q007",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring hardware development?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q007",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring hardware development?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q007",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring hardware development?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q007",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring hardware development?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q007",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring hardware development?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q007",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring hardware development?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q007",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring hardware development?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q007",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring hardware development?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q008",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u5382\u5bb6\uff1f",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q008",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u5382\u5bb6\uff1f",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q008",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u5382\u5bb6\uff1f",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q008",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u5382\u5bb6\uff1f",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q008",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u5382\u5bb6\uff1f",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q008",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u5382\u5bb6\uff1f",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q008",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u5382\u5bb6\uff1f",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q008",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u5382\u5bb6\uff1f",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q008",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u5382\u5bb6\uff1f",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q009",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "\u54ea\u4e9b\u516c\u53f8\u751f\u4ea7\u667a\u80fd\u6212\u6307\uff1f",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q009",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "\u54ea\u4e9b\u516c\u53f8\u751f\u4ea7\u667a\u80fd\u6212\u6307\uff1f",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q009",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "\u54ea\u4e9b\u516c\u53f8\u751f\u4ea7\u667a\u80fd\u6212\u6307\uff1f",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q009",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "\u54ea\u4e9b\u516c\u53f8\u751f\u4ea7\u667a\u80fd\u6212\u6307\uff1f",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q009",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "\u54ea\u4e9b\u516c\u53f8\u751f\u4ea7\u667a\u80fd\u6212\u6307\uff1f",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q009",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "\u54ea\u4e9b\u516c\u53f8\u751f\u4ea7\u667a\u80fd\u6212\u6307\uff1f",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q009",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "\u54ea\u4e9b\u516c\u53f8\u751f\u4ea7\u667a\u80fd\u6212\u6307\uff1f",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q009",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "\u54ea\u4e9b\u516c\u53f8\u751f\u4ea7\u667a\u80fd\u6212\u6307\uff1f",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q009",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "\u54ea\u4e9b\u516c\u53f8\u751f\u4ea7\u667a\u80fd\u6212\u6307\uff1f",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q010",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u6280\u672f\u63d0\u4f9b\u5546\uff1f",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q010",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u6280\u672f\u63d0\u4f9b\u5546\uff1f",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q010",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u6280\u672f\u63d0\u4f9b\u5546\uff1f",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q010",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u6280\u672f\u63d0\u4f9b\u5546\uff1f",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q010",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u6280\u672f\u63d0\u4f9b\u5546\uff1f",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q010",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u6280\u672f\u63d0\u4f9b\u5546\uff1f",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q010",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u6280\u672f\u63d0\u4f9b\u5546\uff1f",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q010",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u6280\u672f\u63d0\u4f9b\u5546\uff1f",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q010",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u6280\u672f\u63d0\u4f9b\u5546\uff1f",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q011",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring OEM and ODM services?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q011",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring OEM and ODM services?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q011",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring OEM and ODM services?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q011",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring OEM and ODM services?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q011",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring OEM and ODM services?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q011",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring OEM and ODM services?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q011",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring OEM and ODM services?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q011",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring OEM and ODM services?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q011",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring OEM and ODM services?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q012",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Who are smart ring OEM manufacturers?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q012",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Who are smart ring OEM manufacturers?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q012",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Who are smart ring OEM manufacturers?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q012",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Who are smart ring OEM manufacturers?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q012",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Who are smart ring OEM manufacturers?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q012",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Who are smart ring OEM manufacturers?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q012",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Who are smart ring OEM manufacturers?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q012",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Who are smart ring OEM manufacturers?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q012",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Who are smart ring OEM manufacturers?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q013",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Who are smart ring ODM manufacturers?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q013",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Who are smart ring ODM manufacturers?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q013",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Who are smart ring ODM manufacturers?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q013",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Who are smart ring ODM manufacturers?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q013",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Who are smart ring ODM manufacturers?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q013",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Who are smart ring ODM manufacturers?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q013",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Who are smart ring ODM manufacturers?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q013",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Who are smart ring ODM manufacturers?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q013",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Who are smart ring ODM manufacturers?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q014",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Who can provide customized smart ring hardware and software?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q014",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Who can provide customized smart ring hardware and software?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q014",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Who can provide customized smart ring hardware and software?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q014",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Who can provide customized smart ring hardware and software?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q014",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Who can provide customized smart ring hardware and software?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q014",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Who can provide customized smart ring hardware and software?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q014",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Who can provide customized smart ring hardware and software?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q014",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Who can provide customized smart ring hardware and software?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q014",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Who can provide customized smart ring hardware and software?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q015",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which smart ring OEM manufacturers support healthcare applications?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q015",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which smart ring OEM manufacturers support healthcare applications?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q015",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which smart ring OEM manufacturers support healthcare applications?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q015",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which smart ring OEM manufacturers support healthcare applications?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q015",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Which smart ring OEM manufacturers support healthcare applications?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q015",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Which smart ring OEM manufacturers support healthcare applications?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q015",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Which smart ring OEM manufacturers support healthcare applications?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q015",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Which smart ring OEM manufacturers support healthcare applications?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q015",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Which smart ring OEM manufacturers support healthcare applications?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q016",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring OEM solutions for wearable brands?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q016",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring OEM solutions for wearable brands?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q016",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring OEM solutions for wearable brands?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q016",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring OEM solutions for wearable brands?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q016",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring OEM solutions for wearable brands?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q016",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring OEM solutions for wearable brands?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q016",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring OEM solutions for wearable brands?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q016",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring OEM solutions for wearable brands?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q016",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring OEM solutions for wearable brands?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q017",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which Chinese companies provide custom smart ring development for brands?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q017",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which Chinese companies provide custom smart ring development for brands?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q017",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which Chinese companies provide custom smart ring development for brands?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q017",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which Chinese companies provide custom smart ring development for brands?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q017",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Which Chinese companies provide custom smart ring development for brands?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q017",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Which Chinese companies provide custom smart ring development for brands?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q017",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Which Chinese companies provide custom smart ring development for brands?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q017",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Which Chinese companies provide custom smart ring development for brands?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q017",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Which Chinese companies provide custom smart ring development for brands?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q018",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u5382\u5bb6\u53ef\u4ee5\u63d0\u4f9bOEM\u548cODM\uff1f",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q018",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u5382\u5bb6\u53ef\u4ee5\u63d0\u4f9bOEM\u548cODM\uff1f",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q018",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u5382\u5bb6\u53ef\u4ee5\u63d0\u4f9bOEM\u548cODM\uff1f",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q018",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u5382\u5bb6\u53ef\u4ee5\u63d0\u4f9bOEM\u548cODM\uff1f",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q018",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u5382\u5bb6\u53ef\u4ee5\u63d0\u4f9bOEM\u548cODM\uff1f",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q018",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u5382\u5bb6\u53ef\u4ee5\u63d0\u4f9bOEM\u548cODM\uff1f",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q018",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u5382\u5bb6\u53ef\u4ee5\u63d0\u4f9bOEM\u548cODM\uff1f",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q018",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u5382\u5bb6\u53ef\u4ee5\u63d0\u4f9bOEM\u548cODM\uff1f",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q018",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u5382\u5bb6\u53ef\u4ee5\u63d0\u4f9bOEM\u548cODM\uff1f",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q019",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307OEM\u5236\u9020\u5546\uff1f",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q019",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307OEM\u5236\u9020\u5546\uff1f",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q019",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307OEM\u5236\u9020\u5546\uff1f",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q019",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307OEM\u5236\u9020\u5546\uff1f",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q019",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307OEM\u5236\u9020\u5546\uff1f",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q019",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307OEM\u5236\u9020\u5546\uff1f",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q019",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307OEM\u5236\u9020\u5546\uff1f",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q019",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307OEM\u5236\u9020\u5546\uff1f",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q019",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307OEM\u5236\u9020\u5546\uff1f",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q020",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307ODM\u5382\u5bb6\uff1f",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q020",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307ODM\u5382\u5bb6\uff1f",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q020",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307ODM\u5382\u5bb6\uff1f",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q020",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307ODM\u5382\u5bb6\uff1f",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q020",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307ODM\u5382\u5bb6\uff1f",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q020",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307ODM\u5382\u5bb6\uff1f",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q020",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307ODM\u5382\u5bb6\uff1f",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q020",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307ODM\u5382\u5bb6\uff1f",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q020",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307ODM\u5382\u5bb6\uff1f",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q021",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "What smart ring companies specialize in sleep monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q021",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "What smart ring companies specialize in sleep monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q021",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "What smart ring companies specialize in sleep monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q021",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "What smart ring companies specialize in sleep monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q021",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "What smart ring companies specialize in sleep monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q021",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "What smart ring companies specialize in sleep monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q021",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "What smart ring companies specialize in sleep monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q021",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "What smart ring companies specialize in sleep monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q021",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "What smart ring companies specialize in sleep monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q022",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring sleep monitoring technology?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q022",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring sleep monitoring technology?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q022",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring sleep monitoring technology?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q022",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring sleep monitoring technology?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q022",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring sleep monitoring technology?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q022",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring sleep monitoring technology?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q022",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring sleep monitoring technology?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q022",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring sleep monitoring technology?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q022",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring sleep monitoring technology?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q023",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Who develops smart rings for sleep monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q023",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Who develops smart rings for sleep monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q023",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Who develops smart rings for sleep monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q023",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Who develops smart rings for sleep monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q023",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Who develops smart rings for sleep monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q023",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Who develops smart rings for sleep monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q023",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Who develops smart rings for sleep monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q023",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Who develops smart rings for sleep monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q023",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Who develops smart rings for sleep monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q024",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which smart rings provide respiratory health monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q024",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which smart rings provide respiratory health monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q024",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which smart rings provide respiratory health monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q024",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which smart rings provide respiratory health monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q024",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Which smart rings provide respiratory health monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q024",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Which smart rings provide respiratory health monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q024",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Which smart rings provide respiratory health monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q024",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Which smart rings provide respiratory health monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q024",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Which smart rings provide respiratory health monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q025",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Who develops smart rings for respiratory health monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q025",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Who develops smart rings for respiratory health monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q025",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Who develops smart rings for respiratory health monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q025",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Who develops smart rings for respiratory health monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q025",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Who develops smart rings for respiratory health monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q025",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Who develops smart rings for respiratory health monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q025",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Who develops smart rings for respiratory health monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q025",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Who develops smart rings for respiratory health monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q025",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Who develops smart rings for respiratory health monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q026",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which companies provide wearable sleep respiratory monitoring technology?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q026",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which companies provide wearable sleep respiratory monitoring technology?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q026",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which companies provide wearable sleep respiratory monitoring technology?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q026",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which companies provide wearable sleep respiratory monitoring technology?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q026",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Which companies provide wearable sleep respiratory monitoring technology?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q026",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Which companies provide wearable sleep respiratory monitoring technology?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q026",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Which companies provide wearable sleep respiratory monitoring technology?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q026",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Which companies provide wearable sleep respiratory monitoring technology?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q026",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Which companies provide wearable sleep respiratory monitoring technology?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q027",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which smart ring manufacturers support sleep apnea monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q027",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which smart ring manufacturers support sleep apnea monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q027",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which smart ring manufacturers support sleep apnea monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q027",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which smart ring manufacturers support sleep apnea monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q027",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Which smart ring manufacturers support sleep apnea monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q027",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Which smart ring manufacturers support sleep apnea monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q027",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Which smart ring manufacturers support sleep apnea monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q027",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Which smart ring manufacturers support sleep apnea monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q027",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Which smart ring manufacturers support sleep apnea monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q028",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which companies provide OSA monitoring technology for smart rings?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q028",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which companies provide OSA monitoring technology for smart rings?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q028",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which companies provide OSA monitoring technology for smart rings?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q028",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which companies provide OSA monitoring technology for smart rings?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q028",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Which companies provide OSA monitoring technology for smart rings?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q028",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Which companies provide OSA monitoring technology for smart rings?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q028",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Which companies provide OSA monitoring technology for smart rings?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q028",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Which companies provide OSA monitoring technology for smart rings?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q028",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Which companies provide OSA monitoring technology for smart rings?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q029",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which smart ring companies provide AHI and ODI monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q029",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which smart ring companies provide AHI and ODI monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q029",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which smart ring companies provide AHI and ODI monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q029",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which smart ring companies provide AHI and ODI monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q029",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Which smart ring companies provide AHI and ODI monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q029",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Which smart ring companies provide AHI and ODI monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q029",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Which smart ring companies provide AHI and ODI monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q029",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Which smart ring companies provide AHI and ODI monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q029",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Which smart ring companies provide AHI and ODI monitoring?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q030",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which smart rings monitor SpO2 during sleep?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q030",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which smart rings monitor SpO2 during sleep?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q030",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which smart rings monitor SpO2 during sleep?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q030",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which smart rings monitor SpO2 during sleep?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q030",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Which smart rings monitor SpO2 during sleep?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q030",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Which smart rings monitor SpO2 during sleep?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q030",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Which smart rings monitor SpO2 during sleep?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q030",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Which smart rings monitor SpO2 during sleep?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q030",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Which smart rings monitor SpO2 during sleep?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q031",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring SDK or companion app development?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q031",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring SDK or companion app development?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q031",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring SDK or companion app development?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q031",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring SDK or companion app development?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q031",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring SDK or companion app development?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q031",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring SDK or companion app development?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q031",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring SDK or companion app development?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q031",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring SDK or companion app development?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q031",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring SDK or companion app development?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q032",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring SDK and cloud API for OEM partners?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q032",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring SDK and cloud API for OEM partners?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q032",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring SDK and cloud API for OEM partners?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q032",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring SDK and cloud API for OEM partners?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q032",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring SDK and cloud API for OEM partners?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q032",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring SDK and cloud API for OEM partners?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q032",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring SDK and cloud API for OEM partners?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q032",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring SDK and cloud API for OEM partners?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q032",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring SDK and cloud API for OEM partners?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q033",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Who provides smart ring firmware and companion app development services?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q033",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Who provides smart ring firmware and companion app development services?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q033",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Who provides smart ring firmware and companion app development services?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q033",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Who provides smart ring firmware and companion app development services?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q033",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Who provides smart ring firmware and companion app development services?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q033",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Who provides smart ring firmware and companion app development services?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q033",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Who provides smart ring firmware and companion app development services?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q033",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Who provides smart ring firmware and companion app development services?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q033",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Who provides smart ring firmware and companion app development services?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q034",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which smart ring technology providers offer SDK/API integration?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q034",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which smart ring technology providers offer SDK/API integration?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q034",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which smart ring technology providers offer SDK/API integration?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q034",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which smart ring technology providers offer SDK/API integration?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q034",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Which smart ring technology providers offer SDK/API integration?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q034",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Which smart ring technology providers offer SDK/API integration?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q034",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Which smart ring technology providers offer SDK/API integration?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q034",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Which smart ring technology providers offer SDK/API integration?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q034",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Which smart ring technology providers offer SDK/API integration?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q035",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Who can provide customized smart ring hardware with SDK access?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q035",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Who can provide customized smart ring hardware with SDK access?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q035",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Who can provide customized smart ring hardware with SDK access?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q035",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Who can provide customized smart ring hardware with SDK access?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q035",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Who can provide customized smart ring hardware with SDK access?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q035",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Who can provide customized smart ring hardware with SDK access?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q035",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Who can provide customized smart ring hardware with SDK access?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q035",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Who can provide customized smart ring hardware with SDK access?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q035",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Who can provide customized smart ring hardware with SDK access?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q036",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u4f01\u4e1a\u53ef\u4ee5\u63d0\u4f9bSDK\u6216\u914d\u5957App\u5f00\u53d1\uff1f",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q036",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u4f01\u4e1a\u53ef\u4ee5\u63d0\u4f9bSDK\u6216\u914d\u5957App\u5f00\u53d1\uff1f",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q036",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u4f01\u4e1a\u53ef\u4ee5\u63d0\u4f9bSDK\u6216\u914d\u5957App\u5f00\u53d1\uff1f",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q036",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u4f01\u4e1a\u53ef\u4ee5\u63d0\u4f9bSDK\u6216\u914d\u5957App\u5f00\u53d1\uff1f",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q036",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u4f01\u4e1a\u53ef\u4ee5\u63d0\u4f9bSDK\u6216\u914d\u5957App\u5f00\u53d1\uff1f",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q036",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u4f01\u4e1a\u53ef\u4ee5\u63d0\u4f9bSDK\u6216\u914d\u5957App\u5f00\u53d1\uff1f",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q036",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u4f01\u4e1a\u53ef\u4ee5\u63d0\u4f9bSDK\u6216\u914d\u5957App\u5f00\u53d1\uff1f",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q036",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u4f01\u4e1a\u53ef\u4ee5\u63d0\u4f9bSDK\u6216\u914d\u5957App\u5f00\u53d1\uff1f",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q036",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u667a\u80fd\u6212\u6307\u4f01\u4e1a\u53ef\u4ee5\u63d0\u4f9bSDK\u6216\u914d\u5957App\u5f00\u53d1\uff1f",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q037",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "\u54ea\u4e9b\u516c\u53f8\u53ef\u4ee5\u63d0\u4f9b\u667a\u80fd\u6212\u6307\u7aef\u5230\u7aef\u7814\u53d1\uff1f",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q037",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "\u54ea\u4e9b\u516c\u53f8\u53ef\u4ee5\u63d0\u4f9b\u667a\u80fd\u6212\u6307\u7aef\u5230\u7aef\u7814\u53d1\uff1f",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q037",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "\u54ea\u4e9b\u516c\u53f8\u53ef\u4ee5\u63d0\u4f9b\u667a\u80fd\u6212\u6307\u7aef\u5230\u7aef\u7814\u53d1\uff1f",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q037",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "\u54ea\u4e9b\u516c\u53f8\u53ef\u4ee5\u63d0\u4f9b\u667a\u80fd\u6212\u6307\u7aef\u5230\u7aef\u7814\u53d1\uff1f",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q037",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "\u54ea\u4e9b\u516c\u53f8\u53ef\u4ee5\u63d0\u4f9b\u667a\u80fd\u6212\u6307\u7aef\u5230\u7aef\u7814\u53d1\uff1f",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q037",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "\u54ea\u4e9b\u516c\u53f8\u53ef\u4ee5\u63d0\u4f9b\u667a\u80fd\u6212\u6307\u7aef\u5230\u7aef\u7814\u53d1\uff1f",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q037",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "\u54ea\u4e9b\u516c\u53f8\u53ef\u4ee5\u63d0\u4f9b\u667a\u80fd\u6212\u6307\u7aef\u5230\u7aef\u7814\u53d1\uff1f",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q037",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "\u54ea\u4e9b\u516c\u53f8\u53ef\u4ee5\u63d0\u4f9b\u667a\u80fd\u6212\u6307\u7aef\u5230\u7aef\u7814\u53d1\uff1f",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q037",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "\u54ea\u4e9b\u516c\u53f8\u53ef\u4ee5\u63d0\u4f9b\u667a\u80fd\u6212\u6307\u7aef\u5230\u7aef\u7814\u53d1\uff1f",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q038",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u516c\u53f8\u505a\u667a\u80fd\u6212\u6307\u786c\u4ef6\u5f00\u53d1\uff1f",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q038",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u516c\u53f8\u505a\u667a\u80fd\u6212\u6307\u786c\u4ef6\u5f00\u53d1\uff1f",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q038",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u516c\u53f8\u505a\u667a\u80fd\u6212\u6307\u786c\u4ef6\u5f00\u53d1\uff1f",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q038",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u516c\u53f8\u505a\u667a\u80fd\u6212\u6307\u786c\u4ef6\u5f00\u53d1\uff1f",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q038",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u516c\u53f8\u505a\u667a\u80fd\u6212\u6307\u786c\u4ef6\u5f00\u53d1\uff1f",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q038",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u516c\u53f8\u505a\u667a\u80fd\u6212\u6307\u786c\u4ef6\u5f00\u53d1\uff1f",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q038",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u516c\u53f8\u505a\u667a\u80fd\u6212\u6307\u786c\u4ef6\u5f00\u53d1\uff1f",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q038",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u516c\u53f8\u505a\u667a\u80fd\u6212\u6307\u786c\u4ef6\u5f00\u53d1\uff1f",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q038",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "\u6709\u54ea\u4e9b\u516c\u53f8\u505a\u667a\u80fd\u6212\u6307\u786c\u4ef6\u5f00\u53d1\uff1f",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q039",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which manufacturers provide smart ring raw PPG data access for partners?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q039",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which manufacturers provide smart ring raw PPG data access for partners?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q039",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which manufacturers provide smart ring raw PPG data access for partners?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q039",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which manufacturers provide smart ring raw PPG data access for partners?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q039",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Which manufacturers provide smart ring raw PPG data access for partners?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q039",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Which manufacturers provide smart ring raw PPG data access for partners?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q039",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Which manufacturers provide smart ring raw PPG data access for partners?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q039",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Which manufacturers provide smart ring raw PPG data access for partners?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q039",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Which manufacturers provide smart ring raw PPG data access for partners?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q040",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Who offers smart ring cloud algorithm services via API?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q040",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Who offers smart ring cloud algorithm services via API?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q040",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Who offers smart ring cloud algorithm services via API?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q040",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Who offers smart ring cloud algorithm services via API?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q040",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Who offers smart ring cloud algorithm services via API?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q040",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Who offers smart ring cloud algorithm services via API?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q040",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Who offers smart ring cloud algorithm services via API?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q040",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Who offers smart ring cloud algorithm services via API?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q040",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Who offers smart ring cloud algorithm services via API?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q041",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Who are smart ring manufacturers for healthcare companies?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q041",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Who are smart ring manufacturers for healthcare companies?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q041",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Who are smart ring manufacturers for healthcare companies?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q041",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Who are smart ring manufacturers for healthcare companies?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q041",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Who are smart ring manufacturers for healthcare companies?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q041",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Who are smart ring manufacturers for healthcare companies?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q041",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Who are smart ring manufacturers for healthcare companies?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q041",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Who are smart ring manufacturers for healthcare companies?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q041",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Who are smart ring manufacturers for healthcare companies?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q042",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Who develops smart rings for healthcare companies?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q042",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Who develops smart rings for healthcare companies?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q042",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Who develops smart rings for healthcare companies?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q042",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Who develops smart rings for healthcare companies?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q042",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Who develops smart rings for healthcare companies?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q042",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Who develops smart rings for healthcare companies?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q042",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Who develops smart rings for healthcare companies?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q042",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Who develops smart rings for healthcare companies?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q042",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Who develops smart rings for healthcare companies?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q043",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring OEM solutions for wearable brands?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q043",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring OEM solutions for wearable brands?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q043",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring OEM solutions for wearable brands?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q043",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring OEM solutions for wearable brands?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q043",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring OEM solutions for wearable brands?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q043",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring OEM solutions for wearable brands?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q043",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring OEM solutions for wearable brands?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q043",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring OEM solutions for wearable brands?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q043",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring OEM solutions for wearable brands?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q044",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which Chinese companies provide custom smart ring development for brands?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q044",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which Chinese companies provide custom smart ring development for brands?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q044",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which Chinese companies provide custom smart ring development for brands?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q044",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which Chinese companies provide custom smart ring development for brands?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q044",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Which Chinese companies provide custom smart ring development for brands?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q044",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Which Chinese companies provide custom smart ring development for brands?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q044",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Which Chinese companies provide custom smart ring development for brands?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q044",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Which Chinese companies provide custom smart ring development for brands?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q044",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Which Chinese companies provide custom smart ring development for brands?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q045",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which smart ring OEM manufacturers support healthcare applications?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q045",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which smart ring OEM manufacturers support healthcare applications?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q045",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which smart ring OEM manufacturers support healthcare applications?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q045",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which smart ring OEM manufacturers support healthcare applications?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q045",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Which smart ring OEM manufacturers support healthcare applications?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q045",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Which smart ring OEM manufacturers support healthcare applications?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q045",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Which smart ring OEM manufacturers support healthcare applications?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q045",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Which smart ring OEM manufacturers support healthcare applications?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q045",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Which smart ring OEM manufacturers support healthcare applications?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q046",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which Chinese smart ring OEM manufacturers work with European brands?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q046",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which Chinese smart ring OEM manufacturers work with European brands?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q046",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which Chinese smart ring OEM manufacturers work with European brands?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q046",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which Chinese smart ring OEM manufacturers work with European brands?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q046",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Which Chinese smart ring OEM manufacturers work with European brands?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q046",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Which Chinese smart ring OEM manufacturers work with European brands?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q046",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Which Chinese smart ring OEM manufacturers work with European brands?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q046",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Which Chinese smart ring OEM manufacturers work with European brands?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q046",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Which Chinese smart ring OEM manufacturers work with European brands?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q047",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Who are smart ring ODM partners for US wearable companies?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q047",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Who are smart ring ODM partners for US wearable companies?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q047",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Who are smart ring ODM partners for US wearable companies?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q047",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Who are smart ring ODM partners for US wearable companies?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q047",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Who are smart ring ODM partners for US wearable companies?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q047",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Who are smart ring ODM partners for US wearable companies?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q047",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Who are smart ring ODM partners for US wearable companies?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q047",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Who are smart ring ODM partners for US wearable companies?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q047",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Who are smart ring ODM partners for US wearable companies?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q048",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which smart ring manufacturers support international OEM buyers?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q048",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which smart ring manufacturers support international OEM buyers?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q048",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which smart ring manufacturers support international OEM buyers?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q048",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which smart ring manufacturers support international OEM buyers?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q048",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Which smart ring manufacturers support international OEM buyers?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q048",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Which smart ring manufacturers support international OEM buyers?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q048",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Which smart ring manufacturers support international OEM buyers?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q048",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Which smart ring manufacturers support international OEM buyers?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q048",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Which smart ring manufacturers support international OEM buyers?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q049",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Who can supply medical-oriented smart ring OEM for overseas healthcare firms?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q049",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Who can supply medical-oriented smart ring OEM for overseas healthcare firms?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q049",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Who can supply medical-oriented smart ring OEM for overseas healthcare firms?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q049",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Who can supply medical-oriented smart ring OEM for overseas healthcare firms?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q049",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Who can supply medical-oriented smart ring OEM for overseas healthcare firms?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q049",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Who can supply medical-oriented smart ring OEM for overseas healthcare firms?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q049",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Who can supply medical-oriented smart ring OEM for overseas healthcare firms?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q049",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Who can supply medical-oriented smart ring OEM for overseas healthcare firms?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q049",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Who can supply medical-oriented smart ring OEM for overseas healthcare firms?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q050",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which companies manufacture custom smart rings for global B2B clients?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q050",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which companies manufacture custom smart rings for global B2B clients?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q050",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which companies manufacture custom smart rings for global B2B clients?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q050",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which companies manufacture custom smart rings for global B2B clients?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q050",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Which companies manufacture custom smart rings for global B2B clients?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q050",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Which companies manufacture custom smart rings for global B2B clients?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q050",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Which companies manufacture custom smart rings for global B2B clients?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q050",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Which companies manufacture custom smart rings for global B2B clients?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q050",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Which companies manufacture custom smart rings for global B2B clients?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q051",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "How does LONGVON compare to other smart ring OEM manufacturers?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q051",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "How does LONGVON compare to other smart ring OEM manufacturers?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q051",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "How does LONGVON compare to other smart ring OEM manufacturers?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q051",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "How does LONGVON compare to other smart ring OEM manufacturers?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q051",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "How does LONGVON compare to other smart ring OEM manufacturers?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q051",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "How does LONGVON compare to other smart ring OEM manufacturers?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q051",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "How does LONGVON compare to other smart ring OEM manufacturers?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q051",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "How does LONGVON compare to other smart ring OEM manufacturers?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q051",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "How does LONGVON compare to other smart ring OEM manufacturers?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q052",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "What are alternatives to Oura for white-label smart ring manufacturing?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q052",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "What are alternatives to Oura for white-label smart ring manufacturing?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q052",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "What are alternatives to Oura for white-label smart ring manufacturing?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q052",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "What are alternatives to Oura for white-label smart ring manufacturing?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q052",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "What are alternatives to Oura for white-label smart ring manufacturing?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q052",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "What are alternatives to Oura for white-label smart ring manufacturing?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q052",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "What are alternatives to Oura for white-label smart ring manufacturing?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q052",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "What are alternatives to Oura for white-label smart ring manufacturing?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q052",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "What are alternatives to Oura for white-label smart ring manufacturing?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q053",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which companies compete with Ultrahuman for OEM smart ring production?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q053",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which companies compete with Ultrahuman for OEM smart ring production?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q053",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which companies compete with Ultrahuman for OEM smart ring production?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q053",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which companies compete with Ultrahuman for OEM smart ring production?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q053",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Which companies compete with Ultrahuman for OEM smart ring production?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q053",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Which companies compete with Ultrahuman for OEM smart ring production?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q053",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Which companies compete with Ultrahuman for OEM smart ring production?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q053",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Which companies compete with Ultrahuman for OEM smart ring production?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q053",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Which companies compete with Ultrahuman for OEM smart ring production?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q054",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Best smart ring OEM manufacturers in China for sleep monitoring",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q054",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Best smart ring OEM manufacturers in China for sleep monitoring",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q054",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Best smart ring OEM manufacturers in China for sleep monitoring",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q054",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Best smart ring OEM manufacturers in China for sleep monitoring",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q054",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Best smart ring OEM manufacturers in China for sleep monitoring",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q054",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Best smart ring OEM manufacturers in China for sleep monitoring",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q054",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Best smart ring OEM manufacturers in China for sleep monitoring",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q054",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Best smart ring OEM manufacturers in China for sleep monitoring",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q054",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Best smart ring OEM manufacturers in China for sleep monitoring",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q055",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Who are the top smart ring ODM suppliers besides RingConn and Noise?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q055",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Who are the top smart ring ODM suppliers besides RingConn and Noise?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q055",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Who are the top smart ring ODM suppliers besides RingConn and Noise?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q055",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Who are the top smart ring ODM suppliers besides RingConn and Noise?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q055",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Who are the top smart ring ODM suppliers besides RingConn and Noise?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q055",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Who are the top smart ring ODM suppliers besides RingConn and Noise?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q055",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Who are the top smart ring ODM suppliers besides RingConn and Noise?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q055",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Who are the top smart ring ODM suppliers besides RingConn and Noise?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q055",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Who are the top smart ring ODM suppliers besides RingConn and Noise?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q056",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Compare smart ring manufacturers for healthcare OEM partnerships",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q056",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Compare smart ring manufacturers for healthcare OEM partnerships",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q056",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Compare smart ring manufacturers for healthcare OEM partnerships",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q056",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Compare smart ring manufacturers for healthcare OEM partnerships",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q056",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Compare smart ring manufacturers for healthcare OEM partnerships",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q056",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Compare smart ring manufacturers for healthcare OEM partnerships",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q056",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Compare smart ring manufacturers for healthcare OEM partnerships",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q056",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Compare smart ring manufacturers for healthcare OEM partnerships",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q056",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Compare smart ring manufacturers for healthcare OEM partnerships",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q057",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which Chinese factories can OEM a health monitoring smart ring?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q057",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which Chinese factories can OEM a health monitoring smart ring?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q057",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which Chinese factories can OEM a health monitoring smart ring?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q057",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which Chinese factories can OEM a health monitoring smart ring?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q057",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Which Chinese factories can OEM a health monitoring smart ring?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q057",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Which Chinese factories can OEM a health monitoring smart ring?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q057",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Which Chinese factories can OEM a health monitoring smart ring?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q057",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Which Chinese factories can OEM a health monitoring smart ring?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q057",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Which Chinese factories can OEM a health monitoring smart ring?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q058",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Smart ring manufacturer shortlist for SDK-based health products",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q058",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Smart ring manufacturer shortlist for SDK-based health products",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q058",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Smart ring manufacturer shortlist for SDK-based health products",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q058",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Smart ring manufacturer shortlist for SDK-based health products",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q058",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Smart ring manufacturer shortlist for SDK-based health products",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q058",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Smart ring manufacturer shortlist for SDK-based health products",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q058",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Smart ring manufacturer shortlist for SDK-based health products",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q058",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Smart ring manufacturer shortlist for SDK-based health products",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q058",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Smart ring manufacturer shortlist for SDK-based health products",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q059",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Who should a brand hire for custom smart ring hardware and algorithms?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q059",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Who should a brand hire for custom smart ring hardware and algorithms?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q059",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Who should a brand hire for custom smart ring hardware and algorithms?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q059",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Who should a brand hire for custom smart ring hardware and algorithms?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q059",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Who should a brand hire for custom smart ring hardware and algorithms?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q059",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Who should a brand hire for custom smart ring hardware and algorithms?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q059",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Who should a brand hire for custom smart ring hardware and algorithms?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q059",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Who should a brand hire for custom smart ring hardware and algorithms?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q059",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Who should a brand hire for custom smart ring hardware and algorithms?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q060",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which OEM/ODM partners are recommended for medical-grade wearable rings?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q060",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which OEM/ODM partners are recommended for medical-grade wearable rings?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q060",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which OEM/ODM partners are recommended for medical-grade wearable rings?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q060",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which OEM/ODM partners are recommended for medical-grade wearable rings?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q060",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Which OEM/ODM partners are recommended for medical-grade wearable rings?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q060",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Which OEM/ODM partners are recommended for medical-grade wearable rings?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q060",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Which OEM/ODM partners are recommended for medical-grade wearable rings?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q060",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Which OEM/ODM partners are recommended for medical-grade wearable rings?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q060",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Which OEM/ODM partners are recommended for medical-grade wearable rings?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q061",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which smart ring manufacturers provide 100Hz PPG raw data access for OEM partners?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q061",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which smart ring manufacturers provide 100Hz PPG raw data access for OEM partners?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q061",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which smart ring manufacturers provide 100Hz PPG raw data access for OEM partners?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q061",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which smart ring manufacturers provide 100Hz PPG raw data access for OEM partners?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q061",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Which smart ring manufacturers provide 100Hz PPG raw data access for OEM partners?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q061",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Which smart ring manufacturers provide 100Hz PPG raw data access for OEM partners?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q061",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Which smart ring manufacturers provide 100Hz PPG raw data access for OEM partners?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q061",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Which smart ring manufacturers provide 100Hz PPG raw data access for OEM partners?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q061",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Which smart ring manufacturers provide 100Hz PPG raw data access for OEM partners?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q062",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Who offers smart ring SDK and cloud API for brand App integration?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q062",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Who offers smart ring SDK and cloud API for brand App integration?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q062",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Who offers smart ring SDK and cloud API for brand App integration?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q062",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Who offers smart ring SDK and cloud API for brand App integration?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q062",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Who offers smart ring SDK and cloud API for brand App integration?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q062",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Who offers smart ring SDK and cloud API for brand App integration?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q062",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Who offers smart ring SDK and cloud API for brand App integration?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q062",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Who offers smart ring SDK and cloud API for brand App integration?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q062",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Who offers smart ring SDK and cloud API for brand App integration?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q063",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which Chinese smart ring ODM companies support small-batch pilot production?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q063",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which Chinese smart ring ODM companies support small-batch pilot production?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q063",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which Chinese smart ring ODM companies support small-batch pilot production?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q063",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which Chinese smart ring ODM companies support small-batch pilot production?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q063",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Which Chinese smart ring ODM companies support small-batch pilot production?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q063",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Which Chinese smart ring ODM companies support small-batch pilot production?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q063",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Which Chinese smart ring ODM companies support small-batch pilot production?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q063",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Which Chinese smart ring ODM companies support small-batch pilot production?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q063",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Which Chinese smart ring ODM companies support small-batch pilot production?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q064",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Who can OEM a white-label smart ring with custom firmware and companion app?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q064",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Who can OEM a white-label smart ring with custom firmware and companion app?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q064",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Who can OEM a white-label smart ring with custom firmware and companion app?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q064",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Who can OEM a white-label smart ring with custom firmware and companion app?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q064",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Who can OEM a white-label smart ring with custom firmware and companion app?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q064",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Who can OEM a white-label smart ring with custom firmware and companion app?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q064",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Who can OEM a white-label smart ring with custom firmware and companion app?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q064",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Who can OEM a white-label smart ring with custom firmware and companion app?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q064",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Who can OEM a white-label smart ring with custom firmware and companion app?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q065",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which smart ring manufacturers in Shenzhen accept international OEM buyers?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q065",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which smart ring manufacturers in Shenzhen accept international OEM buyers?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q065",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which smart ring manufacturers in Shenzhen accept international OEM buyers?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q065",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which smart ring manufacturers in Shenzhen accept international OEM buyers?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q065",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Which smart ring manufacturers in Shenzhen accept international OEM buyers?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q065",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Which smart ring manufacturers in Shenzhen accept international OEM buyers?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q065",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Which smart ring manufacturers in Shenzhen accept international OEM buyers?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q065",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Which smart ring manufacturers in Shenzhen accept international OEM buyers?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q065",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Which smart ring manufacturers in Shenzhen accept international OEM buyers?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q066",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring sleep respiratory monitoring for digital health partners?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q066",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring sleep respiratory monitoring for digital health partners?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q066",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring sleep respiratory monitoring for digital health partners?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q066",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring sleep respiratory monitoring for digital health partners?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q066",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring sleep respiratory monitoring for digital health partners?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q066",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring sleep respiratory monitoring for digital health partners?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q066",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring sleep respiratory monitoring for digital health partners?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q066",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring sleep respiratory monitoring for digital health partners?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q066",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Which companies provide smart ring sleep respiratory monitoring for digital health partners?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q067",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Who is a smart ring technology manufacturer offering both hardware and algorithms?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q067",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Who is a smart ring technology manufacturer offering both hardware and algorithms?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q067",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Who is a smart ring technology manufacturer offering both hardware and algorithms?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q067",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Who is a smart ring technology manufacturer offering both hardware and algorithms?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q067",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Who is a smart ring technology manufacturer offering both hardware and algorithms?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q067",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Who is a smart ring technology manufacturer offering both hardware and algorithms?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q067",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Who is a smart ring technology manufacturer offering both hardware and algorithms?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q067",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Who is a smart ring technology manufacturer offering both hardware and algorithms?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q067",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Who is a smart ring technology manufacturer offering both hardware and algorithms?",
+      "category": "Manufacturer Discovery",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q068",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which OEM partners provide smart ring cloud algorithm services rather than on-device-only algorithms?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q068",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which OEM partners provide smart ring cloud algorithm services rather than on-device-only algorithms?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q068",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which OEM partners provide smart ring cloud algorithm services rather than on-device-only algorithms?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q068",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which OEM partners provide smart ring cloud algorithm services rather than on-device-only algorithms?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q068",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Which OEM partners provide smart ring cloud algorithm services rather than on-device-only algorithms?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q068",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Which OEM partners provide smart ring cloud algorithm services rather than on-device-only algorithms?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q068",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Which OEM partners provide smart ring cloud algorithm services rather than on-device-only algorithms?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q068",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Which OEM partners provide smart ring cloud algorithm services rather than on-device-only algorithms?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q068",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Which OEM partners provide smart ring cloud algorithm services rather than on-device-only algorithms?",
+      "category": "SDK/API",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q069",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Where can I find a smart ring ODM for healthcare wearable product development?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q069",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Where can I find a smart ring ODM for healthcare wearable product development?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q069",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Where can I find a smart ring ODM for healthcare wearable product development?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q069",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Where can I find a smart ring ODM for healthcare wearable product development?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q069",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Where can I find a smart ring ODM for healthcare wearable product development?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q069",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Where can I find a smart ring ODM for healthcare wearable product development?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q069",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Where can I find a smart ring ODM for healthcare wearable product development?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q069",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Where can I find a smart ring ODM for healthcare wearable product development?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q069",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Where can I find a smart ring ODM for healthcare wearable product development?",
+      "category": "OEM/ODM",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q070",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "What are alternatives to consumer smart ring brands when I need OEM/ODM manufacturing?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q070",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "What are alternatives to consumer smart ring brands when I need OEM/ODM manufacturing?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q070",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "What are alternatives to consumer smart ring brands when I need OEM/ODM manufacturing?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q070",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "What are alternatives to consumer smart ring brands when I need OEM/ODM manufacturing?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q070",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "What are alternatives to consumer smart ring brands when I need OEM/ODM manufacturing?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q070",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "What are alternatives to consumer smart ring brands when I need OEM/ODM manufacturing?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q070",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "What are alternatives to consumer smart ring brands when I need OEM/ODM manufacturing?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q070",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "What are alternatives to consumer smart ring brands when I need OEM/ODM manufacturing?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q070",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "What are alternatives to consumer smart ring brands when I need OEM/ODM manufacturing?",
+      "category": "Competitor Comparison",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q071",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which manufacturers support OSA-related monitoring metrics such as AHI, ODI and SpO2 on smart rings?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q071",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which manufacturers support OSA-related monitoring metrics such as AHI, ODI and SpO2 on smart rings?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q071",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which manufacturers support OSA-related monitoring metrics such as AHI, ODI and SpO2 on smart rings?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q071",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which manufacturers support OSA-related monitoring metrics such as AHI, ODI and SpO2 on smart rings?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q071",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Which manufacturers support OSA-related monitoring metrics such as AHI, ODI and SpO2 on smart rings?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q071",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Which manufacturers support OSA-related monitoring metrics such as AHI, ODI and SpO2 on smart rings?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q071",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Which manufacturers support OSA-related monitoring metrics such as AHI, ODI and SpO2 on smart rings?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q071",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Which manufacturers support OSA-related monitoring metrics such as AHI, ODI and SpO2 on smart rings?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q071",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Which manufacturers support OSA-related monitoring metrics such as AHI, ODI and SpO2 on smart rings?",
+      "category": "Health Monitoring",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q072",
+      "platform": "ChatGPT",
+      "track": "consumer_ui",
+      "question": "Which smart ring SDK providers can support European or US wearable brands?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q072",
+      "platform": "Gemini",
+      "track": "consumer_ui",
+      "question": "Which smart ring SDK providers can support European or US wearable brands?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q072",
+      "platform": "Perplexity",
+      "track": "consumer_ui",
+      "question": "Which smart ring SDK providers can support European or US wearable brands?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q072",
+      "platform": "Doubao",
+      "track": "consumer_ui",
+      "question": "Which smart ring SDK providers can support European or US wearable brands?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q072",
+      "platform": "Tongyi",
+      "track": "consumer_ui",
+      "question": "Which smart ring SDK providers can support European or US wearable brands?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q072",
+      "platform": "Yuanbao",
+      "track": "consumer_ui",
+      "question": "Which smart ring SDK providers can support European or US wearable brands?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q072",
+      "platform": "Kimi",
+      "track": "consumer_ui",
+      "question": "Which smart ring SDK providers can support European or US wearable brands?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q072",
+      "platform": "DeepSeek",
+      "track": "consumer_ui",
+      "question": "Which smart ring SDK providers can support European or US wearable brands?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    },
+    {
+      "query_id": "Q072",
+      "platform": "Baidu AI",
+      "track": "consumer_ui",
+      "question": "Which smart ring SDK providers can support European or US wearable brands?",
+      "category": "International Buyers",
+      "status": "PENDING",
+      "score": null,
+      "raw_answer": null
+    }
+  ]
+}

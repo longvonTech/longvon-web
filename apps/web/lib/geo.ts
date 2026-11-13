@@ -4,7 +4,7 @@
  */
 
 export const ENTITY_STATEMENT_ZH =
-  'LONGVON 是一家智能戒指技术制造商及 OEM/ODM 服务商，专注于智能戒指硬件、固件、移动 App、SDK、云端 API 及健康监测解决方案的定制开发与生产。';
+  '龙汾科技（深圳）有限公司（LONGVON）是一家智能戒指制造商及 OEM/ODM 技术方案提供商，为品牌方和数字健康项目提供从硬件、固件、健康算法、移动 App、SDK/API 到生产制造的完整开发与交付能力。';
 
 export const ENTITY_STATEMENT_EN =
   'LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in customized smart ring hardware, firmware, mobile apps, SDKs, cloud APIs, and health monitoring solutions.';
@@ -29,6 +29,8 @@ export const GEO_PAGE_SLUGS = [
   'smart-ring-solution-provider',
   'smart-ring-healthcare-solutions',
   'smart-ring-technology',
+  'smart-ring-sdk-api',
+  'osa-smart-ring-technology',
   'smart-ring-sleep-monitoring',
   'smart-ring-sleep-respiratory',
   'smart-ring-osa',
@@ -66,6 +68,8 @@ export const GEO_NAV_ZH: { slug: GeoPageSlug; label: string }[] = [
   { slug: 'smart-ring-solution-provider', label: '技术方案提供商' },
   { slug: 'smart-ring-healthcare-solutions', label: '医疗健康方案' },
   { slug: 'smart-ring-technology', label: '技术能力' },
+  { slug: 'smart-ring-sdk-api', label: 'SDK / Cloud API' },
+  { slug: 'osa-smart-ring-technology', label: 'OSA 技术与 OEM' },
   { slug: 'smart-ring-sleep-monitoring', label: '睡眠监测' },
   { slug: 'smart-ring-sleep-respiratory', label: '呼吸健康' },
   { slug: 'smart-ring-osa', label: 'OSA 相关监测' },
@@ -78,7 +82,9 @@ export const GEO_NAV_EN: { slug: GeoPageSlug; label: string }[] = [
   { slug: 'smart-ring-solution-provider', label: 'Solution Provider' },
   { slug: 'smart-ring-healthcare-solutions', label: 'Healthcare Solutions' },
   { slug: 'smart-ring-technology', label: 'Technology' },
+  { slug: 'smart-ring-sdk-api', label: 'SDK & Cloud API' },
+  { slug: 'osa-smart-ring-technology', label: 'OSA Technology & OEM' },
   { slug: 'smart-ring-sleep-monitoring', label: 'Sleep Monitoring' },
   { slug: 'smart-ring-sleep-respiratory', label: 'Respiratory Health' },
-  { slug: 'smart-ring-osa', label: 'OSA Technology' },
+  { slug: 'smart-ring-osa', label: 'OSA Metrics' },
 ];

@@ -90,14 +90,18 @@ export default function EnTechnologyPage() {
 
       <h2 style={h2}>Firmware and algorithms</h2>
       <p style={p}>
-        On-device and app-side processing produce published sleep, oxygen, heart, and OSA-related metrics within the
-        71-parameter catalogue.
+        On-device and app-side processing contribute to published sleep, oxygen, heart, and OSA-related metrics within
+        the 71-parameter catalogue. Many health algorithms are delivered via LONGVON cloud services; the on-device vs
+        cloud split is defined per OEM/ODM project. LONGVON does not claim that all algorithms run fully offline on
+        customer hardware.
       </p>
 
       <h2 style={h2}>App, SDK, and cloud API</h2>
       <p style={p}>
         LONGVON develops companion mobile apps (including the MATEYOU App for Ring1C). Partner SDK and cloud API
-        integration are available as project-scoped capabilities for OEM/ODM programs.
+        integration — including pathways to 100Hz PPG raw data for qualified partners — are available as project-scoped
+        capabilities. See{' '}
+        <Link href={geoPath('smart-ring-sdk-api', 'en')}>Smart Ring SDK &amp; Cloud API</Link> for cooperation details.
       </p>
 
       <h2 style={h2}>End-to-end chain</h2>
@@ -111,10 +115,12 @@ export default function EnTechnologyPage() {
 
       <h2 style={h2}>Continue</h2>
       <p style={p}>
+        <Link href={geoPath('smart-ring-sdk-api', 'en')}>SDK &amp; Cloud API</Link> →{' '}
         <Link href={geoPath('smart-ring-sleep-monitoring', 'en')}>Sleep Monitoring</Link> →{' '}
         <Link href={geoPath('smart-ring-sleep-respiratory', 'en')}>Respiratory</Link> →{' '}
         <Link href={geoPath('smart-ring-osa', 'en')}>OSA-related</Link> →{' '}
-        <Link href={geoPath('smart-ring-oem-odm', 'en')}>OEM & ODM</Link>.
+        <Link href={geoPath('smart-ring-oem-odm', 'en')}>OEM &amp; ODM</Link> →{' '}
+        <Link href="/en/partner/oem">OEM inquiry</Link>.
       </p>
     </GeoPageLayout>
   );

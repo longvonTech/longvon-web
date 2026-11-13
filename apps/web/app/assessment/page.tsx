@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { getSiteUrl } from '../../lib/site';
 
 export const metadata: Metadata = {
-  title: '六大健康风险自评 · 免费健康评估',
+  title: { absolute: '六大健康风险自评 · 免费健康评估 | MATEYOU' },
   description: '免费完成OSA风险、睡眠质量、压力水平、减重风险、糖尿病风险、高原健康六大自评，获取个性化健康参考报告。',
   alternates: { canonical: `${getSiteUrl()}/assessment` },
 };

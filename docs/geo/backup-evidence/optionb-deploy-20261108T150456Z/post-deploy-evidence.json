@@ -1,0 +1,277 @@
+{
+  "post_files": [
+    {
+      "path": "apps/web/middleware.ts",
+      "action": "ADD",
+      "post_exists": true,
+      "post_sha256": "384f53cf5239e088907bccb2918c983a6a548c525701e6ea107735368035d949",
+      "expected": "384f53cf5239e088907bccb2918c983a6a548c525701e6ea107735368035d949",
+      "ok": true
+    },
+    {
+      "path": "apps/web/app/assessment/layout.tsx",
+      "action": "ADD",
+      "post_exists": true,
+      "post_sha256": "d3a4c4ad2be8711c511876e10042c322933255f6bd2e4ea1c3d010a137c6bbe5",
+      "expected": "d3a4c4ad2be8711c511876e10042c322933255f6bd2e4ea1c3d010a137c6bbe5",
+      "ok": true
+    },
+    {
+      "path": "apps/web/app/dashboard/layout.tsx",
+      "action": "ADD",
+      "post_exists": true,
+      "post_sha256": "c6be9544f5b757338bf78667ccfb8e3b8f2cd6002fb15e72017124c770710c23",
+      "expected": "c6be9544f5b757338bf78667ccfb8e3b8f2cd6002fb15e72017124c770710c23",
+      "ok": true
+    },
+    {
+      "path": "apps/web/app/about/page.tsx",
+      "action": "REPLACE",
+      "post_exists": true,
+      "post_sha256": "c6edb5f814201e201cb199a7287db42071c718841545f7a3546c4c3497af24df",
+      "expected": "c6edb5f814201e201cb199a7287db42071c718841545f7a3546c4c3497af24df",
+      "ok": true
+    },
+    {
+      "path": "apps/web/app/assessment/page.tsx",
+      "action": "REPLACE",
+      "post_exists": true,
+      "post_sha256": "7ee962aa30e40cbcedbc093212b2893627793066232fed285379461b3c7beb97",
+      "expected": "7ee962aa30e40cbcedbc093212b2893627793066232fed285379461b3c7beb97",
+      "ok": true
+    },
+    {
+      "path": "apps/web/app/authors/[id]/page.tsx",
+      "action": "REPLACE",
+      "post_exists": true,
+      "post_sha256": "06b6e839404e9c34ab0149f0f154dabe358b7340ecf08943e7d1881bcee0b340",
+      "expected": "06b6e839404e9c34ab0149f0f154dabe358b7340ecf08943e7d1881bcee0b340",
+      "ok": true
+    },
+    {
+      "path": "apps/web/app/en/layout.tsx",
+      "action": "REPLACE",
+      "post_exists": true,
+      "post_sha256": "17bb0676eb7f1e6f00b7cf8696613f53cce6cece59d0d4c23722ed58d2fc9f5d",
+      "expected": "17bb0676eb7f1e6f00b7cf8696613f53cce6cece59d0d4c23722ed58d2fc9f5d",
+      "ok": true
+    },
+    {
+      "path": "apps/web/app/en/partner/oem/page.tsx",
+      "action": "REPLACE",
+      "post_exists": true,
+      "post_sha256": "c6882b5233fd9bd7e779de2ed672cd60791f0ed061d684c26684a2d91bb05caf",
+      "expected": "c6882b5233fd9bd7e779de2ed672cd60791f0ed061d684c26684a2d91bb05caf",
+      "ok": true
+    },
+    {
+      "path": "apps/web/app/en/smart-ring-oem-odm/page.tsx",
+      "action": "REPLACE",
+      "post_exists": true,
+      "post_sha256": "2ae508e8b213dc0181624482deed2fa4e660952441c67668a38832f874dfc1f4",
+      "expected": "2ae508e8b213dc0181624482deed2fa4e660952441c67668a38832f874dfc1f4",
+      "ok": true
+    },
+    {
+      "path": "apps/web/app/knowledge/[slug]/page.tsx",
+      "action": "REPLACE",
+      "post_exists": true,
+      "post_sha256": "65985dfe3a64e3f8820eb1b5cd7aaf6730a20aa10ce837a0a4babc554413c172",
+      "expected": "65985dfe3a64e3f8820eb1b5cd7aaf6730a20aa10ce837a0a4babc554413c172",
+      "ok": true
+    },
+    {
+      "path": "apps/web/app/knowledge/page.tsx",
+      "action": "REPLACE",
+      "post_exists": true,
+      "post_sha256": "3c0c99a10c06901cfe3c75b6c6680ee2eef80f140633b8b1ad6caa7911efbfed",
+      "expected": "3c0c99a10c06901cfe3c75b6c6680ee2eef80f140633b8b1ad6caa7911efbfed",
+      "ok": true
+    },
+    {
+      "path": "apps/web/app/layout.tsx",
+      "action": "REPLACE",
+      "post_exists": true,
+      "post_sha256": "d2add71a289f076f5c1145ff4311fadf73034c71f164a71fa2d1083c0d3d2c55",
+      "expected": "d2add71a289f076f5c1145ff4311fadf73034c71f164a71fa2d1083c0d3d2c55",
+      "ok": true
+    },
+    {
+      "path": "apps/web/app/membership/page.tsx",
+      "action": "REPLACE",
+      "post_exists": true,
+      "post_sha256": "af6e80b7d8f9fef41725f376148c4552949a3ba42638b8bc8559758610ddd82d",
+      "expected": "af6e80b7d8f9fef41725f376148c4552949a3ba42638b8bc8559758610ddd82d",
+      "ok": true
+    },
+    {
+      "path": "apps/web/app/metrics/[slug]/page.tsx",
+      "action": "REPLACE",
+      "post_exists": true,
+      "post_sha256": "617431e403307917a5270880ff91eb012d9465e80aa8f6a949e4273cf0a7307e",
+      "expected": "617431e403307917a5270880ff91eb012d9465e80aa8f6a949e4273cf0a7307e",
+      "ok": true
+    },
+    {
+      "path": "apps/web/app/metrics/page.tsx",
+      "action": "REPLACE",
+      "post_exists": true,
+      "post_sha256": "84c7ca9927b2ff3ff2e96660349e907210288a6d52c38d7ed5c3a40f9a39c4c7",
+      "expected": "84c7ca9927b2ff3ff2e96660349e907210288a6d52c38d7ed5c3a40f9a39c4c7",
+      "ok": true
+    },
+    {
+      "path": "apps/web/app/news/[slug]/page.tsx",
+      "action": "REPLACE",
+      "post_exists": true,
+      "post_sha256": "c1bef5b06d442509216694d7657ecbd7d92c236672a586fb374f6e653163021e",
+      "expected": "c1bef5b06d442509216694d7657ecbd7d92c236672a586fb374f6e653163021e",
+      "ok": true
+    },
+    {
+      "path": "apps/web/app/news/page.tsx",
+      "action": "REPLACE",
+      "post_exists": true,
+      "post_sha256": "6478ef09215bf17968830367a9bd30140dd01e2bd58fbb569750efded765b6b9",
+      "expected": "6478ef09215bf17968830367a9bd30140dd01e2bd58fbb569750efded765b6b9",
+      "ok": true
+    },
+    {
+      "path": "apps/web/app/partner/articles/page.tsx",
+      "action": "REPLACE",
+      "post_exists": true,
+      "post_sha256": "3b07c018c6dbb172f1095dbaeb89bf32ebae03676e01de43e35364e39007e66c",
+      "expected": "3b07c018c6dbb172f1095dbaeb89bf32ebae03676e01de43e35364e39007e66c",
+      "ok": true
+    },
+    {
+      "path": "apps/web/app/partner/distributor/page.tsx",
+      "action": "REPLACE",
+      "post_exists": true,
+      "post_sha256": "f7b29320afa444e0e69a7b39cd696549d0d0c299dd543e57a5c1f2586c8edc03",
+      "expected": "f7b29320afa444e0e69a7b39cd696549d0d0c299dd543e57a5c1f2586c8edc03",
+      "ok": true
+    },
+    {
+      "path": "apps/web/app/partner/enterprise/page.tsx",
+      "action": "REPLACE",
+      "post_exists": true,
+      "post_sha256": "ea38342e3cf81493dfa429b0533d759776282968dc0cd17617a937625309bdb9",
+      "expected": "ea38342e3cf81493dfa429b0533d759776282968dc0cd17617a937625309bdb9",
+      "ok": true
+    },
+    {
+      "path": "apps/web/app/partner/hospital/page.tsx",
+      "action": "REPLACE",
+      "post_exists": true,
+      "post_sha256": "1c609d01a10c6dc71e43fb0d58d681f73239d568d3d1aaa10418decb1454f16b",
+      "expected": "1c609d01a10c6dc71e43fb0d58d681f73239d568d3d1aaa10418decb1454f16b",
+      "ok": true
+    },
+    {
+      "path": "apps/web/app/partner/oem/page.tsx",
+      "action": "REPLACE",
+      "post_exists": true,
+      "post_sha256": "7a7917d9a91bf9982fb62e9303aba79ca71923f9cabb8941cba2c8688c5aecea",
+      "expected": "7a7917d9a91bf9982fb62e9303aba79ca71923f9cabb8941cba2c8688c5aecea",
+      "ok": true
+    },
+    {
+      "path": "apps/web/app/partner/page.tsx",
+      "action": "REPLACE",
+      "post_exists": true,
+      "post_sha256": "79b228f5b93defea3acee1c0daa44f0a30bcdf4d4b51d61e50dcef8054ce276a",
+      "expected": "79b228f5b93defea3acee1c0daa44f0a30bcdf4d4b51d61e50dcef8054ce276a",
+      "ok": true
+    },
+    {
+      "path": "apps/web/app/partner/pharmacy/page.tsx",
+      "action": "REPLACE",
+      "post_exists": true,
+      "post_sha256": "cfb18e339fd5fa7adf8db7ac90e56561039ac373dda306d18ae88d7bdaa4e592",
+      "expected": "cfb18e339fd5fa7adf8db7ac90e56561039ac373dda306d18ae88d7bdaa4e592",
+      "ok": true
+    },
+    {
+      "path": "apps/web/app/products/ring1c/page.tsx",
+      "action": "REPLACE",
+      "post_exists": true,
+      "post_sha256": "b403f05c8b6688c86edfbe59a05c92bcdb20ec871cd22d34bed549f79f5dc82b",
+      "expected": "b403f05c8b6688c86edfbe59a05c92bcdb20ec871cd22d34bed549f79f5dc82b",
+      "ok": true
+    },
+    {
+      "path": "apps/web/app/topics/[slug]/page.tsx",
+      "action": "REPLACE",
+      "post_exists": true,
+      "post_sha256": "15d6f9f938a69d4cea5fe648c6e090838df7a32552da238c9c4460b31dca0215",
+      "expected": "15d6f9f938a69d4cea5fe648c6e090838df7a32552da238c9c4460b31dca0215",
+      "ok": true
+    },
+    {
+      "path": "apps/web/components/ArticleDetailView.tsx",
+      "action": "REPLACE",
+      "post_exists": true,
+      "post_sha256": "52fbe64868f7973047c5ef5193c6f24f3e71fb1707fb31bc6608d55cbb22514a",
+      "expected": "52fbe64868f7973047c5ef5193c6f24f3e71fb1707fb31bc6608d55cbb22514a",
+      "ok": true
+    },
+    {
+      "path": "apps/web/components/StructuredData.tsx",
+      "action": "REPLACE",
+      "post_exists": true,
+      "post_sha256": "8a6dbb658b395970dc6fefaae2569c51e4490b104039f4458553d89f82853109",
+      "expected": "8a6dbb658b395970dc6fefaae2569c51e4490b104039f4458553d89f82853109",
+      "ok": true
+    },
+    {
+      "path": "apps/web/lib/i18n-routes.ts",
+      "action": "REPLACE",
+      "post_exists": true,
+      "post_sha256": "5e9242e5cc0b5248ce07f78f9c1a261f30bc4c1f27099439bedfa337b12ef0ac",
+      "expected": "5e9242e5cc0b5248ce07f78f9c1a261f30bc4c1f27099439bedfa337b12ef0ac",
+      "ok": true
+    },
+    {
+      "path": "apps/web/components/HtmlLang.tsx",
+      "action": "DELETE",
+      "post_exists": false,
+      "post_sha256": null,
+      "expected_absent": true,
+      "ok": true
+    },
+    {
+      "path": "apps/web/app/en/smart-ring-manufacturer/page.tsx",
+      "action": "REPLACE",
+      "post_exists": true,
+      "post_sha256": "2912e2b5965c06dcbb8544c6494e60847bc01a22dfaf43bff54ae8db5a715bca",
+      "expected": "2912e2b5965c06dcbb8544c6494e60847bc01a22dfaf43bff54ae8db5a715bca",
+      "ok": true
+    }
+  ],
+  "denylist": {
+    "apps/web/next.config.ts": {
+      "sha": "48fe0a78b857e4108ebab339433795c1a3a57e618d8955e3f467ab8d09cd8e91",
+      "ok": true
+    },
+    "apps/web/components/OemRfqForm.tsx": {
+      "sha": "70a9c1aafa3fb30260bb059ec41f4a62bf57857e207d94ab628b5b778c60c9c3",
+      "ok": true
+    },
+    "apps/web/lib/partner-api.ts": {
+      "sha": "2b7f56604d6f4150f410445ff1e387513f38ce98701551f3d908e357523b4b05",
+      "ok": true
+    },
+    "apps/web/components/LeadAttributionCapture.tsx": {
+      "sha": "56abca827e24d24c50908b8f56aa9607f4aaf7ec7b0544e59dacd6bb50869682",
+      "ok": true
+    },
+    "apps/web/lib/lead-attribution.ts": {
+      "sha": "a96d88a63f2834e72af9aaa6a1cd0b6bc4fc512ced4b74fc5ba96786c2ed9838",
+      "ok": true
+    }
+  },
+  "all_ok": true,
+  "build_id": "dORiARwI1hD7uxf-T7e_K",
+  "standalone_bak": "/root/mateyou/_rollback/web-standalone.bak.geo-fix01-pre-20261108T150456Z"
+}

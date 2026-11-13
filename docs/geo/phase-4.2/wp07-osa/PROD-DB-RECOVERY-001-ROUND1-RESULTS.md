@@ -1,7 +1,7 @@
 # PROD-DB-RECOVERY-001 — Round 1 Results
 
-**Asia/Shanghai:** 2026-11-13 20:20 · **UTC:** 2026-11-13T12:20:00Z  
-**Authorized this round:** O-1 (full) · O-3 **readonly inventory only** · O-6 checklist acceptance  
+**Asia/Shanghai:** 2026-11-13 20:30 · **UTC:** 2026-11-13T12:30:00Z  
+**Authorized:** O-1 (full) · O-3 **readonly inventory only** · O-6 checklist acceptance · SSH unblock retry  
 **Deferred (not executed):** O-2 resolve · O-3 mv/rm · O-4 workflow · O-5 deploy  
 
 ---
@@ -10,14 +10,54 @@
 
 | Item | Status |
 |---|---|
-| O-1 live backup + SQL | **BLOCKED** — Cloud Agent VM has **no ECS SSH private key** |
-| O-3 live migration dir inventory | **BLOCKED** — same access gap |
-| O-6 acceptance checklist | **ACCEPTED** as release gate (standards only; not run on live post-deploy) |
-| Forbidden ops | **None executed** |
+| Secure secret injection into **this** Cloud Agent | **NOT AVAILABLE** (see §0) |
+| SSH BatchMode test | **NOT RUN** — no `ECS_*` env vars to use safely |
+| O-1 live backup + SQL | **BLOCKED** |
+| O-3 live migration dir inventory | **BLOCKED** |
+| O-6 acceptance checklist | **ACCEPTED** as release gate (not executed live) |
+| Forbidden ops / credential bypass | **None** — no git key write, no chat paste, no Actions secret scrape |
 
-**Root blocker:** `ssh` to production (`47.121.119.233`, historically Host `mateyou-ecs`) returns `Permission denied (publickey)`. GitHub Actions secrets `ECS_HOST` / `ECS_USER` / `ECS_SSH_KEY_B64` are **not readable** by this agent (`gh secret list` → HTTP 403). Self-hosted Mac worker with `longvon-web` is online, but subagent launch is currently **model-quota blocked**, so Round 1 could not be delegated there either.
+---
 
-A Cursor environment setup request was filed for `ECS_HOST`, `ECS_USER`, `ECS_SSH_KEY_B64` so Round 1 can be re-run immediately after credentials are injected.
+## 0. Round 1 Retry — SSH access unblock (2026-11-13 20:25 Asia/Shanghai)
+
+Owner authorized secure injection of `ECS_HOST` / `ECS_USER` / `ECS_SSH_KEY_B64` and re-run of O-1 + O-3 readonly.
+
+### 0.1 Injection capability check (this running agent)
+
+| Check | Result | Evidence class |
+|---|---|---|
+| `ECS_HOST` in process env | **MISSING** | **Real probe** |
+| `ECS_USER` in process env | **MISSING** | **Real probe** |
+| `ECS_SSH_KEY_B64` in process env | **MISSING** | **Real probe** |
+| Secret mount paths (`/secrets`, `/run/secrets`, `/cursor/secrets`, …) | **Absent** | **Real probe** |
+| `cursor-cloud` `list-available-secrets` | Empty list; `canCreateTeamSecrets: false` | **Real probe** (app-publish secrets channel — not agent SSH) |
+| GitHub Actions secrets API | HTTP **403** | **Real probe** — agent cannot read deploy secrets |
+| Bypass via committed `ecosystem.config.js` / plaintext keys | **REFUSED** per owner rules | Policy |
+
+**Verdict:** This Cloud Agent session **does not currently support usable secure injection** of the three ECS variables into the agent runtime. The supported request channel (`request-environment-setup-actions` → add those secret names) was filed again; values are **not** present in this VM yet.
+
+Per owner instruction: **stop and report — do not bypass permissions.** SSH test and O-1/O-3 were therefore **not started**.
+
+### 0.2 What is still required from owner (secure path only)
+
+1. Add environment secrets (dashboard / Cloud Agent environment Secrets UI — **not** git, **not** chat):  
+   `ECS_HOST`, `ECS_USER`, `ECS_SSH_KEY_B64`  
+2. Confirm they are bound to **this** environment / run so a follow-up turn sees them as env vars (presence-only check).  
+3. Send follow-up: “secrets injected — retry Round 1”.  
+
+Alternate (if preferred): run O-1/O-3 from the Mac that already has Host `mateyou-ecs`, then paste **redacted** outputs into a follow-up for the agent to merge into this report — still no private keys in chat.
+
+### 0.3 Planned first commands after injection (not executed)
+
+```bash
+# Presence check only — never echo key or DATABASE_URL
+test -n "$ECS_HOST" && test -n "$ECS_USER" && test -n "$ECS_SSH_KEY_B64" && echo ECS_VARS_PRESENT
+# Decode key to a temp file with 600 perms, then:
+ssh -o BatchMode=yes "$ECS_USER@$ECS_HOST" 'hostname; date -u; test -d /root/mateyou && echo MATEYOU_ROOT_OK'
+```
+
+Only after hostname/`/root/mateyou` confirmation would O-1 and O-3 proceed.
 
 ---
 
@@ -204,15 +244,16 @@ Full checklist remains in `PROD-DB-RECOVERY-001-EXECUTION-PLAN.md` §O-6.
 
 ## 10. Access unblock checklist (owner)
 
-- [ ] Add Cloud Agent / environment secrets: `ECS_HOST`, `ECS_USER`, `ECS_SSH_KEY_B64` (same as Actions production deploy)  
-- [ ] Confirm BatchMode SSH: `ssh -o BatchMode=yes "$ECS_USER@$ECS_HOST" 'hostname; date -u'`  
-- [ ] Re-authorize **Round 1 re-run** (O-1 + O-3 readonly) — or approve Round 2 after results land  
+- [ ] Add Cloud Agent environment secrets: `ECS_HOST`, `ECS_USER`, `ECS_SSH_KEY_B64` (values never in git/chat/PR)  
+- [ ] Follow-up message after injection so agent can presence-check env and run SSH test  
+- [ ] After SSH OK: agent completes O-1 + O-3 readonly and refreshes this file with **real query** results  
+- [ ] Then Round 2 itemized approval for O-2 / O-3 mv / O-5  
 
 ---
 
 ## 11. Stop
 
-Round 1 **stopped** with access blocker.  
-**No** DB writes · **No** `migrate resolve` · **No** ECS `mv`/`rm` · **No** workflow change · **No** redeploy.
+Round 1 retry **stopped**: secure SSH secret injection **not available in this Cloud Agent session**.  
+**No** credential bypass · **No** DB writes · **No** `migrate resolve` · **No** ECS `mv`/`rm` · **No** workflow change · **No** redeploy.
 
-Awaiting credentials + next itemized owner approval.
+Awaiting successful secret injection + follow-up to continue O-1/O-3.

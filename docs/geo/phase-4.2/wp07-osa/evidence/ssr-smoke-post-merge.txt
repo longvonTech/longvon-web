@@ -1,0 +1,12 @@
+utc=2026-11-13T08:51:38.559799+00:00
+/en/osa-smart-ring-technology 200 can=https://www.longvon.com/en/osa-smart-ring-technology hreflang=['en', 'x-default', 'zh-CN']
+/osa-smart-ring-technology 200 can=https://www.longvon.com/osa-smart-ring-technology hreflang=['en', 'x-default', 'zh-CN']
+/en/smart-ring-sdk-api 200 can=https://www.longvon.com/en/smart-ring-sdk-api hreflang=['en', 'x-default', 'zh-CN']
+/smart-ring-sdk-api 200 can=https://www.longvon.com/smart-ring-sdk-api hreflang=['en', 'x-default', 'zh-CN']
+/en/smart-ring-manufacturer 200 can=https://www.longvon.com/en/smart-ring-manufacturer hreflang=['en', 'x-default', 'zh-CN']
+/en/smart-ring-oem-odm 200 can=https://www.longvon.com/en/smart-ring-oem-odm hreflang=['en', 'x-default', 'zh-CN']
+/sitemap.xml 200 can=None hreflang=[]
+PATH /en/osa-smart-ring-technology->/en/smart-ring-sdk-api link=True target=200
+PATH /en/smart-ring-sdk-api->/en/osa-smart-ring-technology link=True target=200
+PATH /en/osa-smart-ring-technology->/en/smart-ring-oem-odm link=True target=200
+PATH /en/smart-ring-sdk-api->/en/partner/oem link=True target=200

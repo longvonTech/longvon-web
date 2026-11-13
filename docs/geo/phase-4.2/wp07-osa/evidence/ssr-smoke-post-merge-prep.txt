@@ -1,0 +1,12 @@
+utc=2026-11-13T08:50:37.447419+00:00
+/en/osa-smart-ring-technology 200 can=https://www.longvon.com/en/osa-smart-ring-technology hreflang=['zh-CN', 'zh-CN', 'zh-CN', 'en', 'x-default'] {'zh_new': False, 'disclaimer_en': True, 'osa': True, 'sdk': True, 'not_md': True}
+/osa-smart-ring-technology 200 can=https://www.longvon.com/osa-smart-ring-technology hreflang=['en', 'en', 'zh-CN', 'en', 'x-default'] {'zh_new': True, 'disclaimer_en': False, 'osa': True, 'sdk': True, 'not_md': True}
+/en/smart-ring-sdk-api 200 can=https://www.longvon.com/en/smart-ring-sdk-api hreflang=['zh-CN', 'zh-CN', 'zh-CN', 'en', 'x-default'] {'zh_new': False, 'disclaimer_en': False, 'osa': True, 'sdk': True, 'not_md': True}
+/smart-ring-sdk-api 200 can=https://www.longvon.com/smart-ring-sdk-api hreflang=['en', 'en', 'zh-CN', 'en', 'x-default'] {'zh_new': False, 'disclaimer_en': False, 'osa': True, 'sdk': True, 'not_md': True}
+/en/smart-ring-manufacturer 200 can=https://www.longvon.com/en/smart-ring-manufacturer hreflang=['zh-CN', 'zh-CN', 'zh-CN', 'en', 'x-default'] {'zh_new': False, 'disclaimer_en': False, 'osa': True, 'sdk': True, 'not_md': False}
+/en/smart-ring-oem-odm 200 can=https://www.longvon.com/en/smart-ring-oem-odm hreflang=['zh-CN', 'zh-CN', 'zh-CN', 'en', 'x-default'] {'zh_new': False, 'disclaimer_en': False, 'osa': True, 'sdk': True, 'not_md': False}
+/sitemap.xml 200 can=None hreflang=[] {'zh_new': False, 'disclaimer_en': False, 'osa': True, 'sdk': True, 'not_md': False}
+PATH /en/osa-smart-ring-technology->/en/smart-ring-sdk-api link=True target=200
+PATH /en/smart-ring-sdk-api->/en/osa-smart-ring-technology link=True target=200
+PATH /en/osa-smart-ring-technology->/en/partner/oem link=True target=200
+PATH /en/smart-ring-sdk-api->/en/partner/oem link=True target=200

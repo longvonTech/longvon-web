@@ -18,7 +18,7 @@ export type CloudUploadOperation = (typeof CLOUD_UPLOAD_OPERATIONS)[number];
  * this phase must not transmit or persist health data.
  */
 export class PrepareCloudUploadDto {
-  @IsIn(CLOUD_UPLOAD_OPERATIONS)
+  @IsIn([...CLOUD_UPLOAD_OPERATIONS])
   operation!: CloudUploadOperation;
 
   @IsString()

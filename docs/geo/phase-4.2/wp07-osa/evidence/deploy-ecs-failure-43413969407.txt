@@ -1,0 +1,8 @@
+deploy_run=https://github.com/longvonTech/longvon-web/actions/runs/43413969407
+ci_run=https://github.com/longvonTech/longvon-web/actions/runs/43413542994
+ci_conclusion=success
+deploy_conclusion=failure
+error=Prisma P3009 migrate found failed migrations
+failed_migration=20261002000000_syndication_jobs
+failed_started_at_utc=2026-10-17 15:16:32.005100 UTC
+note=Deploy script stopped at db:migrate:deploy before web build/restart. No unauthorized migrate-resolve attempted.

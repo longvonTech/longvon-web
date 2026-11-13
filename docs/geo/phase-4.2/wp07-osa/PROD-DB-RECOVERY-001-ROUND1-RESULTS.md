@@ -1,7 +1,7 @@
 # PROD-DB-RECOVERY-001 — Round 1 Results
 
-**Asia/Shanghai:** 2026-11-13 20:30 · **UTC:** 2026-11-13T12:30:00Z  
-**Authorized:** O-1 (full) · O-3 **readonly inventory only** · O-6 checklist acceptance · SSH unblock retry  
+**Asia/Shanghai:** 2026-11-13 20:35 · **UTC:** 2026-11-13T12:35:00Z  
+**Authorized:** O-1 · O-3 readonly · O-6 checklist · SSH unblock · **Mac handoff** (`mateyou-ecs`)  
 **Deferred (not executed):** O-2 resolve · O-3 mv/rm · O-4 workflow · O-5 deploy  
 
 ---
@@ -11,11 +11,12 @@
 | Item | Status |
 |---|---|
 | Secure secret injection into **this** Cloud Agent | **NOT AVAILABLE** (see §0) |
-| SSH BatchMode test | **NOT RUN** — no `ECS_*` env vars to use safely |
+| Mac Cursor worker handoff (`mateyou-ecs`) | **BLOCKED** — no connected self-hosted worker (see §0.4) |
+| SSH BatchMode test | **NOT RUN** |
 | O-1 live backup + SQL | **BLOCKED** |
 | O-3 live migration dir inventory | **BLOCKED** |
 | O-6 acceptance checklist | **ACCEPTED** as release gate (not executed live) |
-| Forbidden ops / credential bypass | **None** — no git key write, no chat paste, no Actions secret scrape |
+| Forbidden ops / credential bypass | **None** — no key copy to Cloud Agent/git/chat |
 
 ---
 
@@ -58,6 +59,27 @@ ssh -o BatchMode=yes "$ECS_USER@$ECS_HOST" 'hostname; date -u; test -d /root/mat
 ```
 
 Only after hostname/`/root/mateyou` confirmation would O-1 and O-3 proceed.
+
+### 0.4 Mac Cursor execution handoff (2026-11-13 20:34 Asia/Shanghai)
+
+Owner directed: run O-1/O-3 from the Mac that already has SSH Host `mateyou-ecs`; **do not** copy private keys to Cloud Agent / git / chat.
+
+| Check | Result | Evidence class |
+|---|---|---|
+| `cursor-cloud` `list-self-hosted-workers` | **0 connected workers** | **Real probe** |
+| Prior Mac worker (`longvon-web` / mateyou-platform) | Was seen earlier this run; **now offline** | **Real probe** (current list empty) |
+| Task handoff to Mac | **NOT STARTED** — no eligible connected worker | **Real probe** |
+| Key copy to Cloud Agent | **REFUSED** | Policy |
+
+**Verdict:** Mac handoff cannot proceed until the owner starts the Cursor CLI worker on that Mac (`agent worker start` after `agent login` if needed). External action request filed: `start-mac-mateyou-worker`.
+
+**After worker is Connected**, send follow-up “Mac worker online — retry handoff”. Planned Mac-side first command (not executed):
+
+```bash
+ssh -o BatchMode=yes mateyou-ecs 'hostname; date -u; test -d /root/mateyou && echo MATEYOU_ROOT_OK'
+```
+
+Then O-1 backup + readonly SQL and O-3 migration inventory exactly as in the execution plan (no resolve / mv / rm / deploy).
 
 ---
 
@@ -244,16 +266,23 @@ Full checklist remains in `PROD-DB-RECOVERY-001-EXECUTION-PLAN.md` §O-6.
 
 ## 10. Access unblock checklist (owner)
 
-- [ ] Add Cloud Agent environment secrets: `ECS_HOST`, `ECS_USER`, `ECS_SSH_KEY_B64` (values never in git/chat/PR)  
-- [ ] Follow-up message after injection so agent can presence-check env and run SSH test  
-- [ ] After SSH OK: agent completes O-1 + O-3 readonly and refreshes this file with **real query** results  
-- [ ] Then Round 2 itemized approval for O-2 / O-3 mv / O-5  
+**Preferred (this handoff):**
+- [ ] On Mac with `mateyou-ecs`: `agent login` (if needed) → `agent worker start` for longvon-web / mateyou-platform  
+- [ ] Confirm worker **Connected** in Cloud Agent worker list  
+- [ ] Follow-up: “Mac worker online — retry handoff”  
+
+**Alternate:**
+- [ ] Inject Cloud Agent secrets `ECS_HOST` / `ECS_USER` / `ECS_SSH_KEY_B64` (never git/chat) + follow-up  
+
+Then:
+- [ ] SSH test + O-1 + O-3 readonly → refresh this file with **real query** results  
+- [ ] Round 2 itemized approval for O-2 / O-3 mv / O-5  
 
 ---
 
 ## 11. Stop
 
-Round 1 retry **stopped**: secure SSH secret injection **not available in this Cloud Agent session**.  
-**No** credential bypass · **No** DB writes · **No** `migrate resolve` · **No** ECS `mv`/`rm` · **No** workflow change · **No** redeploy.
+Mac handoff **stopped**: **no connected self-hosted Mac worker**; Cloud Agent still has **no** injectable ECS secrets.  
+**No** key copy · **No** DB writes · **No** `migrate resolve` · **No** ECS `mv`/`rm` · **No** workflow change · **No** redeploy.
 
-Awaiting successful secret injection + follow-up to continue O-1/O-3.
+Awaiting Mac worker online (or secret injection) + follow-up.

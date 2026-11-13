@@ -16,6 +16,7 @@ import { BRAND_RELATION_EN, ENTITY_STATEMENT_EN } from '../../../../lib/geo';
 import {
   BRAND_LINE_EN,
   COMMERCIAL_FAQS_EN,
+  COOPERATION_MODES_EN,
   NPI_CAPABILITY_NOTES_EN,
   NPI_PATH_EN,
 } from '../../../../lib/geo-commercial';
@@ -94,24 +95,7 @@ const E2E = [
   'Manufacturing',
 ];
 
-const MODES = [
-  {
-    title: 'Standard OEM',
-    body: 'Brand, packaging, or project-level adjustments on an existing product platform.',
-  },
-  {
-    title: 'Small-Batch / Evaluation',
-    body: 'For sample validation, market tests, or technical evaluation.',
-  },
-  {
-    title: 'Customized OEM/ODM',
-    body: 'Project-scoped customization across hardware, firmware, algorithms, App, and SDK/API.',
-  },
-  {
-    title: 'End-to-End Product Development',
-    body: 'From product requirements through development support toward manufacturing.',
-  },
-];
+const MODES = COOPERATION_MODES_EN;
 
 const h2: CSSProperties = {
   fontSize: 22,

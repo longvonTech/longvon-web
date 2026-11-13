@@ -208,3 +208,42 @@ export const NPI_CAPABILITY_NOTES_EN = [
   'Haptic, capacitive touch / gesture, LED indicator and magnetic charging features when in scope',
   'Manufacturing, assembly and quality discussion through evaluation to volume',
 ] as const;
+
+/** Four commercial cooperation models — shared across manufacturer / OEM / RFQ pages. */
+export const COOPERATION_MODES_EN = [
+  {
+    title: 'Existing Product OEM',
+    body: 'Manufacture and brand/packaging adjustments on an agreed existing smart ring platform.',
+  },
+  {
+    title: 'Small Batch / Pilot',
+    body: 'Sample evaluation, technical validation, and pilot builds before volume commitment. Exact quantities are confirmed after RFQ — this site does not publish fixed MOQ.',
+  },
+  {
+    title: 'Customized ODM',
+    body: 'Project-scoped customization across industrial design, hardware, firmware, algorithms, App, and partner SDK/API.',
+  },
+  {
+    title: 'Full Technology Solution',
+    body: 'End-to-end path from requirements through hardware, firmware, algorithms, App/SDK/cloud integration discussion, and manufacturing support.',
+  },
+] as const;
+
+export const COOPERATION_MODES_ZH = [
+  {
+    title: '现有产品 OEM',
+    body: '基于约定的现有智能戒指平台进行制造与品牌/包装等项目级调整。',
+  },
+  {
+    title: '小批量 / 试产',
+    body: '样品评估、技术验证与试产，再进入量产沟通。具体数量以 RFQ 评估为准，本站不公布固定 MOQ。',
+  },
+  {
+    title: '定制 ODM',
+    body: '按项目范围讨论工业设计、硬件、固件、算法、App 与合作伙伴 SDK/API 定制。',
+  },
+  {
+    title: '完整技术方案',
+    body: '从需求到硬件、固件、算法、App/SDK/云端对接讨论与制造支持的端到端路径。',
+  },
+] as const;

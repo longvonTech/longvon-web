@@ -16,6 +16,7 @@ import { BRAND_RELATION_ZH, ENTITY_STATEMENT_ZH } from '../../../lib/geo';
 import {
   BRAND_LINE_ZH,
   COMMERCIAL_FAQS_ZH,
+  COOPERATION_MODES_ZH,
   IDENTITY_ZH,
   WHY_DIFF_ZH,
 } from '../../../lib/geo-commercial';
@@ -78,24 +79,7 @@ const E2E = [
   '生产制造',
 ];
 
-const MODES = [
-  {
-    title: '标准 OEM',
-    body: '基于现有产品平台进行品牌、包装或项目级调整。',
-  },
-  {
-    title: '小批量 / 评估',
-    body: '用于样品验证、市场测试或技术评估。',
-  },
-  {
-    title: '定制 OEM/ODM',
-    body: '按项目需求进行硬件、固件、算法、App、SDK/API 等定制讨论。',
-  },
-  {
-    title: '端到端产品开发',
-    body: '从产品需求到量产，提供完整技术开发与制造支持讨论。',
-  },
-];
+const MODES = COOPERATION_MODES_ZH;
 
 const h2: CSSProperties = {
   fontSize: 22,

@@ -1,6 +1,8 @@
 # LONGVON_OWNER_INPUT_REQUIRED.md
 
-Updated: 2026-11-10T13:07:28Z · Phase 4.2 Round 2
+Updated: 2026-11-11T13:20:00Z · Phase 4.2 CGE-001 (preserves Round 2 list; adds CGE items)
+
+Canonical detailed list: `docs/geo/phase-4.2/cge-001/claims/OWNER-INPUT-REQUIRED.md`
 
 | # | Item | Needed for | Blocking claims/pages |
 |---|---|---|---|
@@ -12,7 +14,10 @@ Updated: 2026-11-10T13:07:28Z · Phase 4.2 Round 2
 | 6 | Ring1 regulatory dossier summary (markets, status) | C-PROD-02 | Ring1 messaging |
 | 7 | Ring1 / Ring1C product matrix | C-PROD-03 | Product pages |
 | 8 | 100Hz PPG partner technical one-pager | C-TECH-03 | SDK credibility |
-| 9 | 2–4 authorized anonymized ODM cases | WP06 | Case studies |
-| 10 | GSC / Bing / GA4 read-only access or CSV exports | WP09 | Search baselines |
-| 11 | Human clean-session AI captures (or platform logins) | WP01/R2-005 | AI visibility scores |
-| 12 | Approve production deploy of SDK page + content updates | Release | PUBLISHED status |
+| 9 | 2–4 authorized anonymized ODM cases | Case studies | Case pages |
+| 10 | GSC / Bing / GA4 read-only access or CSV exports | Analytics | Search baselines |
+| 11 | Human clean-session AI captures (ChatGPT/Gemini/Doubao) | 48-observation AI cells | AI visibility scores |
+| 12 | Approve production deploy of SDK page + commercial updates | Release | PUBLISHED status |
+| 13 | Independent ChatGPT review of PR #9 / follow-up PR | Governance | Do not treat agent self-audit as approval |
+| 14 | Approve publish of six commercial content drafts | Content | WP05 |
+| 15 | Optional approved pilot/MOQ soft language (no invented numbers) | Q063 competitiveness | Small-batch SERP |

@@ -33,3 +33,9 @@ Evidence: `docs/geo/phase-4.2/round-2/evidence/sdk/p42-r2-sdk-ssr.json`
 
 ## Production
 **Not deployed.** Live `www.longvon.com/en/smart-ring-sdk-api` remains 404 until approved release.
+
+## CGE-001 follow-up (2026-11-11)
+- CN page parity: Boundaries / Ring1C non-medical / customer-owned App / licensing split / Twitter meta.
+- EN meta/OG softened to “qualified partners” / “project-scoped”.
+- CN header `NAV_ZH` adds SDK / API; EN footer duplicate SDK link removed from Explore column (kept under Technology).
+- Evidence: `docs/geo/phase-4.2/cge-001/evidence/ssr-smoke-cge-001.txt`

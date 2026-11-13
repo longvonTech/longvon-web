@@ -1,6 +1,7 @@
 # LONGVON_PUBLIC_CLAIMS_REGISTER.md
 
 Updated: 2026-11-10T13:07:28Z (Phase 4.2 Round 2 audit)  
+CGE-001 addendum (2026-11-11): see `docs/geo/phase-4.2/cge-001/claims/CLAIMS-EVIDENCE-REGISTER-CGE-001.md` — EN trust NMPA wording softened in code; historical Round 2 rows below preserved.  
 Sources: LONGVON-FACTS, EVIDENCE-MATRIX, PROCUREMENT library, live site, company pages.
 
 **Rule:** VERIFIED ≠ APPROVED. APPROVED means cleared for external GEO/site use after this review.

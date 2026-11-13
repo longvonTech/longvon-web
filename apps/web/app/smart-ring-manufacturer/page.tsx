@@ -8,6 +8,7 @@ import {
   BUYERS_ZH,
   CAPABILITIES_ZH,
   COMMERCIAL_FAQS_ZH,
+  COOPERATION_MODES_ZH,
   IDENTITY_ZH,
   POSITIONING_ZH,
 } from '../../lib/geo-commercial';
@@ -77,10 +78,23 @@ export default function SmartRingManufacturerPage() {
         ))}
       </ul>
 
+      <h2 style={h2}>合作模式</h2>
+      <ul style={ul}>
+        {COOPERATION_MODES_ZH.map((mode) => (
+          <li key={mode.title}>
+            <strong>{mode.title}。</strong>
+            {mode.body}
+          </li>
+        ))}
+      </ul>
+
       <h2 style={h2}>技术方向</h2>
       <ul style={ul}>
         <li>
           <Link href={geoPath('smart-ring-oem-odm')}>智能戒指 OEM / ODM</Link>
+        </li>
+        <li>
+          <Link href={geoPath('smart-ring-sdk-api')}>智能戒指 SDK 与云端 API</Link>
         </li>
         <li>
           <Link href={geoPath('smart-ring-solution-provider')}>智能戒指技术方案提供商</Link>
@@ -108,9 +122,10 @@ export default function SmartRingManufacturerPage() {
       <h2 style={h2}>下一步</h2>
       <p style={p}>
         了解 <Link href={geoPath('smart-ring-oem-odm')}>OEM / ODM 服务</Link> ·{' '}
+        <Link href={geoPath('smart-ring-sdk-api')}>SDK / Cloud API</Link> ·{' '}
         <Link href={geoPath('smart-ring-solution-provider')}>技术方案提供商</Link> ·{' '}
         <Link href={geoPath('smart-ring-healthcare-solutions')}>医疗健康方案</Link>
-        ，或通过 <Link href="/partner/oem">OEM 咨询表单</Link> 提交需求。
+        ，或通过 <Link href="/partner/oem">OEM 咨询表单</Link> 申请样品、技术评估与报价沟通。
       </p>
     </GeoPageLayout>
   );

@@ -81,6 +81,7 @@ export const NAV_ZH = [
   { href: '/assessment', label: '健康评估' },
   { href: '/company/longvon', label: '龙汾科技' },
   { href: '/partner', label: '商业合作' },
+  { href: '/smart-ring-sdk-api', label: 'SDK / API' },
   { href: '/knowledge', label: '健康知识库' },
   { href: '/about', label: '关于我们' },
 ] as const;

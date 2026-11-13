@@ -18,7 +18,6 @@ export function GlobalFooter() {
         ['Company', '/en/company/longvon'],
         ['OEM / ODM', '/en/smart-ring-oem-odm'],
         ['Technology', '/en/smart-ring-technology'],
-        ['SDK & Cloud API', '/en/smart-ring-sdk-api'],
         ['Sleep Monitoring', '/en/smart-ring-sleep-monitoring'],
         ['Product', '/en/products/ring1c'],
       ]

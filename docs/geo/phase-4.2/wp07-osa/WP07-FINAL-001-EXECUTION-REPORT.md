@@ -2,6 +2,8 @@
 
 **Final status:** `READY_FOR_OWNER_MERGE_APPROVAL`  
 **Asia/Shanghai:** 2026-11-13 15:58 · **UTC:** 2026-11-13T07:58:00Z  
+**PR #11 tip after FINAL:** `58687e510e5ff2bfc5934a9dc368b5de72e89ea7`  
+**PR:** https://github.com/longvonTech/longvon-web/pull/11  
 **Auth:** no merge · no restack · no production deploy · no content publish
 
 ## 1. Live PR baseline (re-verified before FINAL edit)

@@ -7,6 +7,7 @@ test('htmlLangFromPathname: English routes', () => {
   assert.equal(htmlLangFromPathname('/en/partner/oem'), 'en');
   assert.equal(htmlLangFromPathname('/en/smart-ring-oem-odm'), 'en');
   assert.equal(htmlLangFromPathname('/en/smart-ring-sdk-api'), 'en');
+  assert.equal(htmlLangFromPathname('/en/osa-smart-ring-technology'), 'en');
 });
 
 test('htmlLangFromPathname: Chinese routes', () => {
@@ -14,6 +15,7 @@ test('htmlLangFromPathname: Chinese routes', () => {
   assert.equal(htmlLangFromPathname('/partner/oem'), 'zh-CN');
   assert.equal(htmlLangFromPathname('/knowledge'), 'zh-CN');
   assert.equal(htmlLangFromPathname('/smart-ring-sdk-api'), 'zh-CN');
+  assert.equal(htmlLangFromPathname('/osa-smart-ring-technology'), 'zh-CN');
   assert.equal(htmlLangFromPathname('/enfoo'), 'zh-CN');
 });
 

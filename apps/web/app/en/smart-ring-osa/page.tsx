@@ -109,7 +109,9 @@ export default function EnOsaPage() {
 
       <h2 style={h2}>Partnership</h2>
       <p style={p}>
-        Commercial path:{' '}
+        B2B technology entry:{' '}
+        <Link href={geoPath('osa-smart-ring-technology', 'en')}>OSA Technology &amp; OEM</Link> ·{' '}
+        <Link href={geoPath('smart-ring-sdk-api', 'en')}>SDK &amp; Cloud API</Link>. Commercial path:{' '}
         <Link href={geoPath('smart-ring-oem-odm', 'en')}>OEM / ODM</Link> ·{' '}
         <Link href={geoPath('smart-ring-manufacturer', 'en')}>Manufacturer</Link> ·{' '}
         <Link href={geoPath('smart-ring-sleep-monitoring', 'en')}>Sleep Monitoring</Link> ·{' '}

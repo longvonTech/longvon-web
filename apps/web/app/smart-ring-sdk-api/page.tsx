@@ -157,6 +157,7 @@ export default function ZhSmartRingSdkApiPage() {
       <p style={p}>
         <Link href="/partner/oem">提交 OEM / 技术合作咨询</Link> ·{' '}
         <Link href={geoPath('smart-ring-technology')}>技术能力</Link> ·{' '}
+        <Link href={geoPath('osa-smart-ring-technology')}>OSA 技术与 OEM</Link> ·{' '}
         <Link href={geoPath('smart-ring-manufacturer')}>制造商</Link> ·{' '}
         <Link href={geoPath('smart-ring-oem-odm')}>OEM / ODM</Link>
       </p>

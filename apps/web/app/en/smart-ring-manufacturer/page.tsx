@@ -95,6 +95,9 @@ export default function EnManufacturerPage() {
           <Link href={geoPath('smart-ring-sdk-api', 'en')}>Smart Ring SDK &amp; Cloud API</Link>
         </li>
         <li>
+          <Link href={geoPath('osa-smart-ring-technology', 'en')}>OSA Technology &amp; OEM</Link>
+        </li>
+        <li>
           <Link href={geoPath('smart-ring-solution-provider', 'en')}>Solution provider</Link>
         </li>
         <li>

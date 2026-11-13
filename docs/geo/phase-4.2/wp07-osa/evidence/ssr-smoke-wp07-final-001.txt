@@ -1,0 +1,20 @@
+utc=2026-11-13T07:58:10.706817+00:00
+/en/osa-smart-ring-technology 200 lang=en can=https://www.longvon.com/en/osa-smart-ring-technology title='Smart Ring OSA Monitoring Technology & OEM/ODM | LONGVON' flags={'disclaimer_en': True, 'disclaimer_zh_new': False, 'disclaimer_zh_old': False, 'medical_oriented': True, 'not_md': True, 'ahi_not_psg': True, 'no_diagnose': True, '100hz': True, 'cloud': True, 'no_stopbang': True, 'osa_link': True, 'sdk_link': True, 'oem_link': True, 'hreflang_zh': True, 'hreflang_en': True, 'hreflang_xd': True} hreflangs={'zh-CN': 'https://www.longvon.com/osa-smart-ring-technology', 'en': 'https://www.longvon.com/en/osa-smart-ring-technology', 'x-default': 'https://www.longvon.com/osa-smart-ring-technology'}
+/osa-smart-ring-technology 200 lang=zh-CN can=https://www.longvon.com/osa-smart-ring-technology title='智能戒指 OSA 监测技术与 OEM/ODM | LONGVON' flags={'disclaimer_en': False, 'disclaimer_zh_new': True, 'disclaimer_zh_old': False, 'medical_oriented': True, 'not_md': True, 'ahi_not_psg': True, 'no_diagnose': True, '100hz': True, 'cloud': True, 'no_stopbang': True, 'osa_link': True, 'sdk_link': True, 'oem_link': True, 'hreflang_zh': True, 'hreflang_en': True, 'hreflang_xd': True} hreflangs={'zh-CN': 'https://www.longvon.com/osa-smart-ring-technology', 'en': 'https://www.longvon.com/en/osa-smart-ring-technology', 'x-default': 'https://www.longvon.com/osa-smart-ring-technology'}
+/en/smart-ring-sdk-api 200 lang=en can=https://www.longvon.com/en/smart-ring-sdk-api title='Smart Ring SDK & Cloud API | LONGVON' flags={'disclaimer_en': False, 'disclaimer_zh_new': False, 'disclaimer_zh_old': False, 'medical_oriented': True, 'not_md': True, 'ahi_not_psg': False, 'no_diagnose': False, '100hz': True, 'cloud': True, 'no_stopbang': True, 'osa_link': True, 'sdk_link': True, 'oem_link': True, 'hreflang_zh': True, 'hreflang_en': True, 'hreflang_xd': True} hreflangs={'zh-CN': 'https://www.longvon.com/smart-ring-sdk-api', 'en': 'https://www.longvon.com/en/smart-ring-sdk-api', 'x-default': 'https://www.longvon.com/smart-ring-sdk-api'}
+/smart-ring-sdk-api 200 lang=zh-CN can=https://www.longvon.com/smart-ring-sdk-api title='智能戒指 SDK 与云端 API | LONGVON' flags={'disclaimer_en': False, 'disclaimer_zh_new': False, 'disclaimer_zh_old': False, 'medical_oriented': False, 'not_md': True, 'ahi_not_psg': False, 'no_diagnose': True, '100hz': True, 'cloud': True, 'no_stopbang': True, 'osa_link': True, 'sdk_link': True, 'oem_link': True, 'hreflang_zh': True, 'hreflang_en': True, 'hreflang_xd': True} hreflangs={'zh-CN': 'https://www.longvon.com/smart-ring-sdk-api', 'en': 'https://www.longvon.com/en/smart-ring-sdk-api', 'x-default': 'https://www.longvon.com/smart-ring-sdk-api'}
+
+PATHS
+OSA EN → SDK: link_present=True target=/en/smart-ring-sdk-api SSR=200 PASS=True
+SDK EN → OSA: link_present=True target=/en/osa-smart-ring-technology SSR=200 PASS=True
+OSA EN → OEM page: link_present=True target=/en/smart-ring-oem-odm SSR=200 PASS=True
+OSA EN → Partner OEM CTA: link_present=True target=/en/partner/oem SSR=200 PASS=True
+SDK EN → OEM page: link_present=True target=/en/smart-ring-oem-odm SSR=200 PASS=True
+SDK EN → Partner OEM CTA: link_present=True target=/en/partner/oem SSR=200 PASS=True
+OSA ZH → SDK: link_present=True target=/smart-ring-sdk-api SSR=200 PASS=True
+SDK ZH → OSA: link_present=True target=/osa-smart-ring-technology SSR=200 PASS=True
+OSA ZH → OEM: link_present=True target=/smart-ring-oem-odm SSR=200 PASS=True
+OSA ZH → Partner OEM: link_present=True target=/partner/oem SSR=200 PASS=True
+SDK ZH → OEM: link_present=True target=/smart-ring-oem-odm SSR=200 PASS=True
+SDK ZH → Partner OEM: link_present=True target=/partner/oem SSR=200 PASS=True
+sitemap.xml SSR=200 contains_osa_and_sdk=True

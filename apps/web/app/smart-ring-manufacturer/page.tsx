@@ -97,6 +97,9 @@ export default function SmartRingManufacturerPage() {
           <Link href={geoPath('smart-ring-sdk-api')}>智能戒指 SDK 与云端 API</Link>
         </li>
         <li>
+          <Link href={geoPath('osa-smart-ring-technology')}>OSA 技术与 OEM</Link>
+        </li>
+        <li>
           <Link href={geoPath('smart-ring-solution-provider')}>智能戒指技术方案提供商</Link>
         </li>
         <li>

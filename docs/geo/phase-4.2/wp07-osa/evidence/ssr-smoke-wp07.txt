@@ -1,0 +1,5 @@
+/en/osa-smart-ring-technology 200 lang=en can=https://www.longvon.com/en/osa-smart-ring-technology {'osa_h1': True, 'non_dx': True, 'sdk_link': True, 'medical_grade_clarified': True}
+/osa-smart-ring-technology 200 lang=zh-CN can=https://www.longvon.com/osa-smart-ring-technology {'osa_h1': True, 'non_dx': True, 'sdk_link': True, 'medical_grade_clarified': True}
+/en/smart-ring-osa 200 lang=en can=https://www.longvon.com/en/smart-ring-osa {'osa_h1': False, 'non_dx': True, 'sdk_link': True, 'medical_grade_clarified': True}
+/en/smart-ring-sdk-api 200 lang=en can=https://www.longvon.com/en/smart-ring-sdk-api {'osa_h1': False, 'non_dx': True, 'sdk_link': True, 'medical_grade_clarified': True}
+/en/smart-ring-manufacturer 200 lang=en can=https://www.longvon.com/en/smart-ring-manufacturer {'osa_h1': False, 'non_dx': False, 'sdk_link': True, 'medical_grade_clarified': True}

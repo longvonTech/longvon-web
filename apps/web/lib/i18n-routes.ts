@@ -19,6 +19,7 @@ export const EN_ROUTE_MAP: Record<string, string> = {
   '/smart-ring-healthcare-solutions': '/smart-ring-healthcare-solutions',
   '/smart-ring-technology': '/smart-ring-technology',
   '/smart-ring-sdk-api': '/smart-ring-sdk-api',
+  '/osa-smart-ring-technology': '/osa-smart-ring-technology',
   '/smart-ring-sleep-monitoring': '/smart-ring-sleep-monitoring',
   '/smart-ring-sleep-respiratory': '/smart-ring-sleep-respiratory',
   '/smart-ring-osa': '/smart-ring-osa',

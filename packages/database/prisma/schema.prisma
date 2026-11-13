@@ -1023,3 +1023,176 @@ model ExecutiveReport {
   @@map("executive_reports")
   @@schema("growth")
 }
+
+// ── GEO Benchmark 01 ─────────────────────────────────────────
+// Hybrid AI recommendation benchmark. api and web_manual stay in separate rows.
+// Raw answers are immutable once a result is reviewed or excluded.
+
+model GeoQuery {
+  id        String   @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  code      String   @unique
+  category  String
+  text      String
+  sortOrder Int      @map("sort_order")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  results GeoResult[]
+
+  @@map("geo_queries")
+  @@schema("growth")
+}
+
+model GeoRun {
+  id               String    @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  provider         String
+  mode             String
+  trigger          String
+  status           String    @default("completed")
+  modelLabel       String?   @map("model_label")
+  locale           String?
+  language         String?
+  operatorLabel    String?   @map("operator_label")
+  costAcknowledged Boolean   @default(false) @map("cost_acknowledged")
+  queryCount       Int       @default(0) @map("query_count")
+  successCount     Int       @default(0) @map("success_count")
+  failureCount     Int       @default(0) @map("failure_count")
+  errorSummary     String?   @map("error_summary")
+  metadata         Json?
+  startedAt        DateTime  @default(now()) @map("started_at")
+  completedAt      DateTime? @map("completed_at")
+  createdAt        DateTime  @default(now()) @map("created_at")
+
+  results GeoResult[]
+
+  @@index([provider, mode, startedAt])
+  @@map("geo_runs")
+  @@schema("growth")
+}
+
+model GeoResult {
+  id               String   @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  queryId          String   @map("query_id") @db.Uuid
+  runId            String?  @map("run_id") @db.Uuid
+  provider         String
+  mode             String
+  origin           String
+  version          Int      @default(1)
+  predecessorId    String?  @map("predecessor_id") @db.Uuid
+  modelLabel       String?  @map("model_label")
+  queryCode        String   @map("query_code")
+  queryText        String   @map("query_text")
+  category         String
+  capturedAt       DateTime @map("captured_at")
+  locale           String?
+  language         String?
+  region           String?
+  searchMode       String?  @map("search_mode")
+  notes            String?
+  screenshotRef    String?  @map("screenshot_ref")
+  rawAnswer        String   @map("raw_answer")
+  rawResponse      Json?    @map("raw_response")
+  providerMetadata Json?    @map("provider_metadata")
+  captureStatus    String   @default("complete") @map("capture_status")
+  reviewStatus     String   @default("pending") @map("review_status")
+  errorMessage     String?  @map("error_message")
+  createdAt        DateTime @default(now()) @map("created_at")
+  updatedAt        DateTime @updatedAt @map("updated_at")
+
+  query        GeoQuery      @relation(fields: [queryId], references: [id], onDelete: Restrict)
+  run          GeoRun?       @relation(fields: [runId], references: [id], onDelete: Restrict)
+  predecessor  GeoResult?    @relation("GeoResultVersions", fields: [predecessorId], references: [id], onDelete: Restrict)
+  successors   GeoResult[]   @relation("GeoResultVersions")
+  citations    GeoCitation[]
+  review       GeoReview?
+
+  @@index([provider, mode, reviewStatus])
+  @@index([queryCode, provider, mode])
+  @@index([capturedAt])
+  @@map("geo_results")
+  @@schema("growth")
+}
+
+model GeoCitation {
+  id               String  @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  resultId         String  @map("result_id") @db.Uuid
+  position         Int
+  title            String?
+  url              String
+  snippet          String?
+  providerMetadata Json?   @map("provider_metadata")
+
+  result GeoResult @relation(fields: [resultId], references: [id], onDelete: Restrict)
+
+  @@index([resultId])
+  @@map("geo_citations")
+  @@schema("growth")
+}
+
+model GeoReview {
+  id                   String   @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  resultId             String   @unique @map("result_id") @db.Uuid
+  score                Int?
+  mention              Boolean  @default(false)
+  identityCorrect      Boolean  @default(false) @map("identity_correct")
+  supplierCandidate    Boolean  @default(false) @map("supplier_candidate")
+  activeRecommendation Boolean  @default(false) @map("active_recommendation")
+  officialCitation     Boolean  @default(false) @map("official_citation")
+  independentCitation  Boolean  @default(false) @map("independent_citation")
+  factualErrors        Boolean  @default(false) @map("factual_errors")
+  rationale            String
+  evaluator            String
+  reviewedAt           DateTime @map("reviewed_at")
+  createdAt            DateTime @default(now()) @map("created_at")
+  updatedAt            DateTime @updatedAt @map("updated_at")
+
+  result GeoResult @relation(fields: [resultId], references: [id], onDelete: Restrict)
+
+  @@map("geo_reviews")
+  @@schema("growth")
+}
+
+model GeoAuditEvent {
+  id         String   @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  action     String
+  entityType String   @map("entity_type")
+  entityId   String?  @map("entity_id") @db.Uuid
+  actorLabel String?  @map("actor_label")
+  payload    Json?
+  createdAt  DateTime @default(now()) @map("created_at")
+
+  @@index([entityType, entityId])
+  @@index([action, createdAt])
+  @@map("geo_audit_events")
+  @@schema("growth")
+}
+
+// Shared Gemini official-API monthly counter. One row per UTC calendar month.
+// used_count is the number of provider requests reserved, including calls that
+// later fail. Web-manual captures do not write here. No API key is stored.
+
+model GeoGeminiQuotaMonth {
+  monthBucket String   @id @map("month_bucket")
+  usedCount   Int      @default(0) @map("used_count")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  @@map("geo_gemini_quota_months")
+  @@schema("growth")
+}
+
+model GeoGeminiQuotaEvent {
+  id               String   @id @default(dbgenerated("uuidv7()")) @db.Uuid
+  provider         String
+  model            String
+  monthBucket      String   @map("month_bucket")
+  requestCount     Int      @map("request_count")
+  groundingEnabled Boolean  @map("grounding_enabled")
+  blocked          Boolean
+  blockReason      String?  @map("block_reason")
+  queryCode        String?  @map("query_code")
+  runId            String?  @map("run_id") @db.Uuid
+  createdAt        DateTime @default(now()) @map("created_at")
+
+  @@index([monthBucket, createdAt])
+  @@map("geo_gemini_quota_events")
+  @@schema("growth")
+}

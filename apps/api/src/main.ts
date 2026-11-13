@@ -1,8 +1,10 @@
 import { NestFactory } from '@nestjs/core';
 import { ValidationPipe } from '@nestjs/common';
 import { AppModule } from './app.module';
+import { assertProductionEnv } from './config/required-production-env';
 
 async function bootstrap() {
+  assertProductionEnv();
   const app = await NestFactory.create(AppModule);
 
   // 全局校验管道：DTO上的class-validator装饰器在此生效，

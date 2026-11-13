@@ -18,9 +18,11 @@
 ## Full ZH disclaimer (as implemented)
 **标题：** 重要说明 — 监管与临床边界  
 
-「医疗向 / medical-oriented」描述的是 LONGVON 在智能戒指项目上的工程与质量取向，**不**表示 Ring1C 或本页所述任何产品已获医疗器械批准，也不表示 LONGVON 已持有未经证书入库证明的 FDA、CE Medical Device、NMPA 等产品认证。
+「医疗向 / medical-oriented」描述的是 LONGVON 在智能戒指项目上的工程与质量取向，**不**表示 Ring1C 或本页所述任何产品已获医疗器械批准，也不表示 LONGVON 已取得 FDA、CE 医疗器械或 NMPA 等相关产品批准或认证。具体产品的监管状态应以适用市场的正式监管文件为准。
 
 **Ring1C 是消费电子 / 健康监测参考产品，不是医疗器械。** OSA 相关输出（包括 AHI、ODI、SpO₂ 统计与 OSA 初筛标签）仅供健康参考或研究场景使用 — 不构成医学诊断、治疗，也不替代多导睡眠监测（PSG）。本站其他问卷类风险评估工具（如有）与戒指算法相互独立，**不**构成对戒指算法的临床验证。
+
+**WP07-FINAL-001-A:** ZH sentence above updated for clarity; EN disclaimer unchanged (no substantive error found). Meaning remains aligned: no implied FDA/CE/NMPA product approvals without formal market documentation.
 
 ## Checklist vs owner rules
 

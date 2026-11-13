@@ -97,7 +97,7 @@ export default function ZhOsaSmartRingTechnologyPage() {
         <p style={{ ...p, margin: '0 0 10px' }}>
           「医疗向 / medical-oriented」描述的是 LONGVON 在智能戒指项目上的工程与质量取向，
           <strong>不</strong>表示 Ring1C 或本页所述任何产品已获医疗器械批准，也不表示 LONGVON
-          已持有未经证书入库证明的 FDA、CE Medical Device、NMPA 等产品认证。
+          已取得 FDA、CE 医疗器械或 NMPA 等相关产品批准或认证。具体产品的监管状态应以适用市场的正式监管文件为准。
         </p>
         <p style={{ ...p, margin: 0 }}>
           <strong>Ring1C 是消费电子 / 健康监测参考产品，不是医疗器械。</strong>

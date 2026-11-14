@@ -1,6 +1,6 @@
 # PROD-DB-RECOVERY-002 — Diagnostics Report
 
-**Asia/Shanghai:** 2026-11-14 21:05 · **UTC:** 2026-11-14T13:05:00Z  
+**Asia/Shanghai:** 2026-11-14 21:40 · **UTC:** 2026-11-14T13:40:00Z  
 **Task:** Independent GitHub Actions production **readonly** diagnostics workflow  
 **PR:** #19 · Branch `recovery/production-readonly-diagnostics` → `main`  
 **Approved content SHA (keep-set):** `6762bb656c7d603669ef46a8a8ad6eaf33da439a`  
@@ -56,8 +56,16 @@ After an approved dispatch, **replace** live sections with the Artifact Markdown
 | Issue | Fix |
 |---|---|
 | SSH host match | `ssh-keygen -F "$ECS_HOST" -f known_hosts` required; no “any hashed line” shortcut; `StrictHostKeyChecking=yes` kept |
-| Remote script cleanup | Unique `/tmp/production-readonly-diagnostics-remote-<runid>.sh`; cleanup deletes **only** that path |
+| Remote script path | Unique `/tmp/production-readonly-diagnostics-remote-<runid>.sh` (mode 700) |
 | Backup failure flow | `pg_dump`/`pg_restore -l` failure → `O1_BACKUP_FAILED`; O-1 SQL = `NOT_EXECUTED`; O-3 still runs; overall `FAILED`; job fails after fetching report |
+
+### Round-5 review fixes
+
+| Issue | Fix |
+|---|---|
+| Backup dir overwrite | Atomic `mkdir` of `…/db-backup-prod-db-recovery-002-<stamp>-<RUN_ID>`; fail if exists; no reuse/clear |
+| Dump overwrite | Exclusive noclobber create of `mateyou_prod.dump` (+ sidecars); refuse if present; failures retain dir |
+| ECS temp script | **No** workflow SSH `rm` of remote script; path recorded in report/logs for owner-approved cleanup later |
 
 ### Owner action before first run
 

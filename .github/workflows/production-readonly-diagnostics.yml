@@ -4,6 +4,7 @@ name: Production readonly diagnostics
 # Manual-only ECS readonly diagnostics (O-1 backup + O-3 migration inventory).
 # Does NOT call deploy.yml or scripts/deploy.sh.
 # Does NOT run migrate resolve/deploy, DDL/DML, mv/rm, PM2 restart, or publish.
+# Does NOT auto-delete the per-run ECS temp script (mode 700; owner cleans later).
 #
 # Required production environment secrets:
 #   ECS_HOST, ECS_USER, ECS_SSH_KEY_B64
@@ -189,13 +190,17 @@ jobs:
           test -n "${REMOTE_SCRIPT}"
           echo "RUN_ID=${RUN_ID}" >> "$GITHUB_OUTPUT"
           echo "REPORT_OUT_DIR=${REPORT_OUT_DIR}" >> "$GITHUB_OUTPUT"
+          echo "REMOTE_SCRIPT=${REMOTE_SCRIPT}" >> "$GITHUB_OUTPUT"
+          echo "ECS temp script retained (no auto-delete): ${REMOTE_SCRIPT}"
           # Pass keep-set via SSH remote env assignment from Actions env (validated keep dirs from git).
+          # REMOTE_SCRIPT env is recorded in the sanitized report for owner-approved cleanup later.
           # shellcheck disable=SC2086
           ssh $SSH_OPTS "${ECS_USER}@${ECS_HOST}" \
             env APPROVED_KEEP_DIRS="$APPROVED_KEEP_DIRS" \
                 TARGET_MIGRATION="$TARGET_MIGRATION" \
                 RUN_ID="$RUN_ID" \
                 REPORT_OUT_DIR="$REPORT_OUT_DIR" \
+                REMOTE_SCRIPT="$REMOTE_SCRIPT" \
                 "$REMOTE_SCRIPT" \
             | tee "${RUNNER_TEMP}/remote-diagnostics.log" \
             | sed -E 's#postgresql://[^[:space:]]+#postgresql://***REDACTED***#gi'
@@ -246,22 +251,21 @@ jobs:
           if-no-files-found: error
           retention-days: 14
 
-      - name: Cleanup this-run remote temp script and local key
+      - name: Record retained ECS temp script; cleanup local key only
         if: always()
         env:
-          ECS_HOST: ${{ secrets.ECS_HOST }}
-          ECS_USER: ${{ secrets.ECS_USER }}
           REMOTE_SCRIPT: ${{ steps.paths.outputs.REMOTE_SCRIPT }}
         run: |
           set -euo pipefail
-          # Delete only this run's unique remote script path (never a shared name / app tree).
-          if [ -n "${REMOTE_SCRIPT:-}" ] \
-            && [[ "$REMOTE_SCRIPT" =~ ^/tmp/production-readonly-diagnostics-remote-[A-Za-z0-9._-]+\.sh$ ]]; then
-            # shellcheck disable=SC2086
-            ssh $SSH_OPTS "${ECS_USER}@${ECS_HOST}" "rm -f -- '${REMOTE_SCRIPT}'" || true
+          # Round 5: do NOT SSH rm the remote temp script (or any ECS path).
+          # Script remains at unique per-run path with mode 700 for owner-approved cleanup later.
+          if [ -n "${REMOTE_SCRIPT:-}" ]; then
+            echo "RETAINED_ECS_TEMP_SCRIPT=${REMOTE_SCRIPT}"
+            echo "Owner may approve cleanup of this path in a later change; this workflow will not delete it."
           else
-            echo "WARN: skipping remote script cleanup (REMOTE_SCRIPT unset or unexpected)"
+            echo "WARN: REMOTE_SCRIPT unset (nothing retained to record)"
           fi
+          # Local runner key only — never touches ECS backups, reports, or temp scripts.
           rm -f "${RUNNER_TEMP}/ecs_diag_key" || true
 
       - name: Fail job if remote diagnostics reported failure

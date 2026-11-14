@@ -178,46 +178,58 @@ fi
 node -e 'const u=new URL(process.env.DATABASE_URL); console.log(JSON.stringify({protocol:u.protocol,host:u.host,db:u.pathname,user:u.username,password:"***"}))'
 
 STAMP="$(date -u +%Y%m%dT%H%M%SZ)"
-BK="$ROOT/_rollback/db-backup-prod-db-recovery-001-$STAMP"
+# Unique per-run backup leaf under _rollback (RUN_ID from workflow; never reuse/overwrite).
+if [[ ! "$RUN_ID" =~ ^[A-Za-z0-9._-]+$ ]]; then
+  echo "ERROR: RUN_ID failed allowlist for backup path" >&2
+  exit 1
+fi
+BK="$ROOT/_rollback/db-backup-prod-db-recovery-002-${STAMP}-${RUN_ID}"
+DUMP_FILE="$BK/mateyou_prod.dump"
+DUMP_SHA_FILE="$BK/mateyou_prod.dump.sha256"
+TOC_FILE="$BK/pg_restore_toc.txt"
+TOC_ERR_FILE="$BK/pg_restore_toc.err"
+BACKUP_FAIL_REASON=""
+REMOTE_SCRIPT_PATH="${REMOTE_SCRIPT:-}"
+
+# Parent may already exist; leaf must be created atomically (mkdir fails if present).
 mkdir -p "$ROOT/_rollback"
-mkdir -p "$BK"
-chmod 700 "$BK"
-mkdir -p "$REPORT_OUT_DIR"
-chmod 700 "$REPORT_OUT_DIR"
+chmod 700 "$ROOT/_rollback" 2>/dev/null || true
+if ! mkdir "$BK" 2>/dev/null; then
+  # Do not reuse or clear an existing backup directory.
+  BACKUP_FAIL_REASON="backup directory already exists (refusing reuse/overwrite): $BK"
+  fail_section O1_BACKUP "$BACKUP_FAIL_REASON"
+  O1_BACKUP_STATUS="O1_BACKUP_FAILED"
+  O1_SQL_STATUS="NOT_EXECUTED"
+  echo "O1_BACKUP_FAILED=yes"
+  echo "BACKUP_DIR=$BK"
+  echo "BACKUP_FAIL_REASON=$BACKUP_FAIL_REASON"
+  # Still allow O-3 + report; never rm/overwrite the existing dir.
+else
+  chmod 700 "$BK"
+fi
+
+# Report dir: unique path from workflow; mkdir fails closed if leaf already exists.
+if [ -e "$REPORT_OUT_DIR" ]; then
+  if [ -n "$(ls -A "$REPORT_OUT_DIR" 2>/dev/null || true)" ]; then
+    echo "ERROR: REPORT_OUT_DIR is not empty: $REPORT_OUT_DIR" >&2
+    echo "Refusing to clear or reuse a non-empty directory." >&2
+    exit 1
+  fi
+  # Empty pre-created dir is acceptable; ensure perms only.
+  chmod 700 "$REPORT_OUT_DIR"
+else
+  if ! mkdir "$REPORT_OUT_DIR" 2>/dev/null; then
+    echo "ERROR: failed to create REPORT_OUT_DIR atomically: $REPORT_OUT_DIR" >&2
+    exit 1
+  fi
+  chmod 700 "$REPORT_OUT_DIR"
+fi
 echo "BACKUP_DIR=$BK"
 echo "REPORT_OUT_DIR=$REPORT_OUT_DIR"
 echo "RUN_ID=$RUN_ID"
-
-# ---------- Disk protection before pg_dump ----------
-echo "==> Disk protection check (readonly)"
-DISK_CHECK_STATUS="RUNNING"
-set +e
-DB_SIZE_BYTES="$(psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -At -c "SELECT pg_database_size(current_database());")"
-DB_SIZE_RC=$?
-set -e
-if [ "$DB_SIZE_RC" -ne 0 ] || [ -z "$DB_SIZE_BYTES" ]; then
-  fail_section DISK_CHECK "unable to read pg_database_size"
-  exit 1
+if [ -n "$REMOTE_SCRIPT_PATH" ]; then
+  echo "REMOTE_SCRIPT=$REMOTE_SCRIPT_PATH"
 fi
-# Available bytes on filesystem containing backup dir (POSIX df -k; column 4 = avail KB)
-FS_AVAIL_KB="$(df -Pk "$BK" | awk 'NR==2 {print $4}')"
-if [ -z "$FS_AVAIL_KB" ] || ! [[ "$FS_AVAIL_KB" =~ ^[0-9]+$ ]]; then
-  fail_section DISK_CHECK "unable to read df available space for $BK"
-  exit 1
-fi
-FS_AVAIL_BYTES=$((FS_AVAIL_KB * 1024))
-# Conservative requirement: 2x DB size + 1 GiB margin (custom dump often smaller, but leave headroom)
-DISK_MARGIN_BYTES=$((1024 * 1024 * 1024))
-DISK_REQUIRED_BYTES=$((DB_SIZE_BYTES * 2 + DISK_MARGIN_BYTES))
-echo "DB_SIZE_BYTES=$DB_SIZE_BYTES"
-echo "FS_AVAIL_BYTES=$FS_AVAIL_BYTES"
-echo "DISK_REQUIRED_BYTES=$DISK_REQUIRED_BYTES"
-echo "DISK_MARGIN_BYTES=$DISK_MARGIN_BYTES"
-if [ "$FS_AVAIL_BYTES" -lt "$DISK_REQUIRED_BYTES" ]; then
-  fail_section DISK_CHECK "insufficient free space: avail=$FS_AVAIL_BYTES required=$DISK_REQUIRED_BYTES"
-  exit 1
-fi
-DISK_CHECK_STATUS="OK"
 
 DUMP_BYTES=""
 DUMP_SHA256=""
@@ -233,41 +245,161 @@ declare -a INV_LINES=()
 declare -a ECS_ONLY=()
 declare -a KEEP_STATUS=()
 
-# ---------- O-1 backup ----------
-O1_BACKUP_STATUS="RUNNING"
-set +e
-pg_dump "$DATABASE_URL" -Fc -f "$BK/mateyou_prod.dump"
-DUMP_RC=$?
-set -e
-if [ "$DUMP_RC" -ne 0 ] || [ ! -s "$BK/mateyou_prod.dump" ]; then
-  fail_section O1_BACKUP "pg_dump failed rc=$DUMP_RC"
-  O1_BACKUP_STATUS="O1_BACKUP_FAILED"
-  echo "O1_BACKUP_FAILED=yes"
-  # Do not run O-1 SQL checks that follow a successful backup path.
-  O1_SQL_STATUS="NOT_EXECUTED"
-else
-  chmod 600 "$BK/mateyou_prod.dump"
-  DUMP_BYTES="$(wc -c < "$BK/mateyou_prod.dump" | tr -d ' ')"
-  sha256sum "$BK/mateyou_prod.dump" | tee "$BK/mateyou_prod.dump.sha256" >/dev/null
-  chmod 600 "$BK/mateyou_prod.dump.sha256"
-  DUMP_SHA256="$(awk '{print $1}' "$BK/mateyou_prod.dump.sha256")"
-  # pipefail-safe TOC listing (head must not abort the pipeline)
+# ---------- Disk protection before pg_dump (skip if backup dir was not created) ----------
+if [ "$O1_BACKUP_STATUS" != "O1_BACKUP_FAILED" ]; then
+  echo "==> Disk protection check (readonly)"
+  DISK_CHECK_STATUS="RUNNING"
   set +e
-  TOC_FILE="$BK/pg_restore_toc.txt"
-  pg_restore -l "$BK/mateyou_prod.dump" >"$TOC_FILE" 2>"$BK/pg_restore_toc.err"
-  TOC_RC=$?
+  DB_SIZE_BYTES="$(psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -At -c "SELECT pg_database_size(current_database());")"
+  DB_SIZE_RC=$?
   set -e
-  chmod 600 "$TOC_FILE" "$BK/pg_restore_toc.err" 2>/dev/null || true
-  if [ "$TOC_RC" -eq 0 ]; then
-    PG_RESTORE_OK="yes"
-    PG_RESTORE_TOC_LINES="$(wc -l < "$TOC_FILE" | tr -d ' ')"
-    O1_BACKUP_STATUS="OK"
+  if [ "$DB_SIZE_RC" -ne 0 ] || [ -z "$DB_SIZE_BYTES" ]; then
+    fail_section DISK_CHECK "unable to read pg_database_size"
+    BACKUP_FAIL_REASON="unable to read pg_database_size"
+    O1_SQL_STATUS="NOT_EXECUTED"
+    # Keep empty BK we created; do not delete it. Continue to O-3 + report.
   else
-    fail_section O1_BACKUP "pg_restore -l failed rc=$TOC_RC"
+    # Available bytes on filesystem containing backup dir (POSIX df -k; column 4 = avail KB)
+    FS_AVAIL_KB="$(df -Pk "$BK" | awk 'NR==2 {print $4}')"
+    if [ -z "$FS_AVAIL_KB" ] || ! [[ "$FS_AVAIL_KB" =~ ^[0-9]+$ ]]; then
+      fail_section DISK_CHECK "unable to read df available space for $BK"
+      BACKUP_FAIL_REASON="unable to read df available space for $BK"
+      O1_SQL_STATUS="NOT_EXECUTED"
+    else
+      FS_AVAIL_BYTES=$((FS_AVAIL_KB * 1024))
+      # Conservative requirement: 2x DB size + 1 GiB margin
+      DISK_MARGIN_BYTES=$((1024 * 1024 * 1024))
+      DISK_REQUIRED_BYTES=$((DB_SIZE_BYTES * 2 + DISK_MARGIN_BYTES))
+      echo "DB_SIZE_BYTES=$DB_SIZE_BYTES"
+      echo "FS_AVAIL_BYTES=$FS_AVAIL_BYTES"
+      echo "DISK_REQUIRED_BYTES=$DISK_REQUIRED_BYTES"
+      echo "DISK_MARGIN_BYTES=$DISK_MARGIN_BYTES"
+      if [ "$FS_AVAIL_BYTES" -lt "$DISK_REQUIRED_BYTES" ]; then
+        fail_section DISK_CHECK "insufficient free space: avail=$FS_AVAIL_BYTES required=$DISK_REQUIRED_BYTES"
+        BACKUP_FAIL_REASON="insufficient free space: avail=$FS_AVAIL_BYTES required=$DISK_REQUIRED_BYTES"
+        O1_SQL_STATUS="NOT_EXECUTED"
+      else
+        DISK_CHECK_STATUS="OK"
+      fi
+    fi
+  fi
+fi
+
+# ---------- O-1 backup ----------
+# Exclusive create dump file (noclobber); never overwrite an existing dump. On failure keep dir as-is.
+if [ "$DISK_CHECK_STATUS" = "OK" ] && [ "$O1_BACKUP_STATUS" != "O1_BACKUP_FAILED" ]; then
+  O1_BACKUP_STATUS="RUNNING"
+  if [ -e "$DUMP_FILE" ]; then
+    BACKUP_FAIL_REASON="dump file already exists (refusing overwrite): $DUMP_FILE"
+    fail_section O1_BACKUP "$BACKUP_FAIL_REASON"
     O1_BACKUP_STATUS="O1_BACKUP_FAILED"
     echo "O1_BACKUP_FAILED=yes"
     O1_SQL_STATUS="NOT_EXECUTED"
+  else
+    # Atomic exclusive create of empty dump path (bash noclobber); then pg_dump into it.
+    set +e
+    (
+      set -C
+      : > "$DUMP_FILE"
+    )
+    EXCL_RC=$?
+    set -e
+    if [ "$EXCL_RC" -ne 0 ]; then
+      BACKUP_FAIL_REASON="failed exclusive create of dump file (exists or race): $DUMP_FILE"
+      fail_section O1_BACKUP "$BACKUP_FAIL_REASON"
+      O1_BACKUP_STATUS="O1_BACKUP_FAILED"
+      echo "O1_BACKUP_FAILED=yes"
+      O1_SQL_STATUS="NOT_EXECUTED"
+    else
+      chmod 600 "$DUMP_FILE"
+      set +e
+      pg_dump "$DATABASE_URL" -Fc -f "$DUMP_FILE"
+      DUMP_RC=$?
+      set -e
+      if [ "$DUMP_RC" -ne 0 ] || [ ! -s "$DUMP_FILE" ]; then
+        BACKUP_FAIL_REASON="pg_dump failed rc=$DUMP_RC (existing backup dir retained: $BK)"
+        fail_section O1_BACKUP "$BACKUP_FAIL_REASON"
+        O1_BACKUP_STATUS="O1_BACKUP_FAILED"
+        echo "O1_BACKUP_FAILED=yes"
+        # Do not rm dump/dir — leave partial for forensics; never overwrite foreign backups.
+        O1_SQL_STATUS="NOT_EXECUTED"
+      else
+        chmod 600 "$DUMP_FILE"
+        DUMP_BYTES="$(wc -c < "$DUMP_FILE" | tr -d ' ')"
+        if [ -e "$DUMP_SHA_FILE" ]; then
+          BACKUP_FAIL_REASON="sha256 sidecar already exists (refusing overwrite): $DUMP_SHA_FILE"
+          fail_section O1_BACKUP "$BACKUP_FAIL_REASON"
+          O1_BACKUP_STATUS="O1_BACKUP_FAILED"
+          echo "O1_BACKUP_FAILED=yes"
+          O1_SQL_STATUS="NOT_EXECUTED"
+        else
+          set +e
+          (
+            set -C
+            sha256sum "$DUMP_FILE" > "$DUMP_SHA_FILE"
+          )
+          SHA_RC=$?
+          set -e
+          if [ "$SHA_RC" -ne 0 ]; then
+            BACKUP_FAIL_REASON="failed exclusive write of sha256 sidecar"
+            fail_section O1_BACKUP "$BACKUP_FAIL_REASON"
+            O1_BACKUP_STATUS="O1_BACKUP_FAILED"
+            echo "O1_BACKUP_FAILED=yes"
+            O1_SQL_STATUS="NOT_EXECUTED"
+          else
+            chmod 600 "$DUMP_SHA_FILE"
+            DUMP_SHA256="$(awk '{print $1}' "$DUMP_SHA_FILE")"
+            # pipefail-safe TOC listing
+            if [ -e "$TOC_FILE" ] || [ -e "$TOC_ERR_FILE" ]; then
+              BACKUP_FAIL_REASON="TOC sidecar already exists (refusing overwrite)"
+              fail_section O1_BACKUP "$BACKUP_FAIL_REASON"
+              O1_BACKUP_STATUS="O1_BACKUP_FAILED"
+              echo "O1_BACKUP_FAILED=yes"
+              O1_SQL_STATUS="NOT_EXECUTED"
+            else
+              set +e
+              (
+                set -C
+                : > "$TOC_FILE"
+                : > "$TOC_ERR_FILE"
+              )
+              TOC_EXCL_RC=$?
+              set -e
+              if [ "$TOC_EXCL_RC" -ne 0 ]; then
+                BACKUP_FAIL_REASON="failed exclusive create of TOC sidecars"
+                fail_section O1_BACKUP "$BACKUP_FAIL_REASON"
+                O1_BACKUP_STATUS="O1_BACKUP_FAILED"
+                echo "O1_BACKUP_FAILED=yes"
+                O1_SQL_STATUS="NOT_EXECUTED"
+              else
+                set +e
+                pg_restore -l "$DUMP_FILE" >"$TOC_FILE" 2>"$TOC_ERR_FILE"
+                TOC_RC=$?
+                set -e
+                chmod 600 "$TOC_FILE" "$TOC_ERR_FILE" 2>/dev/null || true
+                if [ "$TOC_RC" -eq 0 ]; then
+                  PG_RESTORE_OK="yes"
+                  PG_RESTORE_TOC_LINES="$(wc -l < "$TOC_FILE" | tr -d ' ')"
+                  O1_BACKUP_STATUS="OK"
+                else
+                  BACKUP_FAIL_REASON="pg_restore -l failed rc=$TOC_RC (dump retained: $DUMP_FILE)"
+                  fail_section O1_BACKUP "$BACKUP_FAIL_REASON"
+                  O1_BACKUP_STATUS="O1_BACKUP_FAILED"
+                  echo "O1_BACKUP_FAILED=yes"
+                  O1_SQL_STATUS="NOT_EXECUTED"
+                fi
+              fi
+            fi
+          fi
+        fi
+      fi
+    fi
   fi
+elif [ "$O1_BACKUP_STATUS" != "O1_BACKUP_FAILED" ]; then
+  # Disk check failed path already set statuses; ensure backup marked failed for gating.
+  O1_BACKUP_STATUS="O1_BACKUP_FAILED"
+  echo "O1_BACKUP_FAILED=yes"
+  O1_SQL_STATUS="NOT_EXECUTED"
 fi
 
 # ---------- O-1 SQL (readonly) — only after successful backup ----------
@@ -478,10 +610,19 @@ REPORT="$REPORT_OUT_DIR/PROD-DB-RECOVERY-002-DIAGNOSTICS-REPORT.md"
   echo "| Field | Value |"
   echo "|---|---|"
   echo "| status | \`$O1_BACKUP_STATUS\` |"
+  echo "| backup_dir | \`$BK\` |"
+  echo "| dump_path | \`${DUMP_FILE:-n/a}\` |"
+  echo "| fail_reason | \`${BACKUP_FAIL_REASON:-none}\` |"
   echo "| dump_bytes | \`${DUMP_BYTES:-n/a}\` |"
   echo "| sha256 | \`${DUMP_SHA256:-n/a}\` |"
   echo "| pg_restore_-l | \`$PG_RESTORE_OK\` |"
   echo "| toc_lines | \`$PG_RESTORE_TOC_LINES\` |"
+  echo
+  echo "## ECS temp script (retained for owner-approved cleanup)"
+  echo "| Field | Value |"
+  echo "|---|---|"
+  echo "| remote_script | \`${REMOTE_SCRIPT_PATH:-n/a}\` |"
+  echo "| note | Workflow does **not** auto-delete this path; owner may approve cleanup later. |"
   echo
 
   echo "## Target migration \`$TARGET_MIGRATION\`"
@@ -544,6 +685,9 @@ chmod 600 "$REPORT"
 
 echo "REPORT_PATH=$REPORT"
 echo "REPORT_OUT_DIR=$REPORT_OUT_DIR"
+echo "BACKUP_DIR=$BK"
+echo "BACKUP_FAIL_REASON=${BACKUP_FAIL_REASON:-}"
+echo "REMOTE_SCRIPT=${REMOTE_SCRIPT_PATH:-}"
 echo "DISK_CHECK_STATUS=$DISK_CHECK_STATUS"
 echo "O1_BACKUP_STATUS=$O1_BACKUP_STATUS"
 echo "O1_SQL_STATUS=$O1_SQL_STATUS"

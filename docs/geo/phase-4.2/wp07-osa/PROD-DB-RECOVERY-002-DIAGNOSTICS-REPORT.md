@@ -1,6 +1,6 @@
 # PROD-DB-RECOVERY-002 — Diagnostics Report
 
-**Asia/Shanghai:** 2026-11-14 20:45 · **UTC:** 2026-11-14T12:45:00Z  
+**Asia/Shanghai:** 2026-11-14 21:05 · **UTC:** 2026-11-14T13:05:00Z  
 **Task:** Independent GitHub Actions production **readonly** diagnostics workflow  
 **PR:** #19 · Branch `recovery/production-readonly-diagnostics` → `main`  
 **Approved content SHA (keep-set):** `6762bb656c7d603669ef46a8a8ad6eaf33da439a`  
@@ -22,7 +22,7 @@
 
 | Item | Status | Class |
 |---|---|---|
-| Security hardening of workflow + remote script | **YES** (this commit) | Actual (repo) |
+| Security hardening (+ round-3 fixes) | **YES** | Actual (repo) |
 | Workflow executed | **NO** — owner forbade run until review | Unresolved |
 | Live O-1 / O-3 | **NOT RUN** | Unresolved |
 | Production contact from authoring agent | **NONE** | Actual |
@@ -31,18 +31,25 @@ After an approved dispatch, **replace** live sections with the Artifact Markdown
 
 ---
 
-## 0.1 Security hardening summary (PR #19 fix)
+## 0.1 Security hardening summary (PR #19)
 
 | Requirement | Implementation |
 |---|---|
 | Backup perms | `umask 077`; backup dir `700`; dump/CSV/logs `600` |
 | Dump never leaves ECS | Artifact allowlist = one `.md` file; refuse `*.dump`/`*.csv`/`*_raw*` |
 | Artifact contents | Status fields, sizes, SHA256, table exists, schema privs, dir inventory, dep **count** only — **no** raw migration logs/SQL/structure dumps |
-| SSH trust | Requires secret **`ECS_SSH_KNOWN_HOSTS`** (owner-supplied pre-verified lines). **No** `ssh-keyscan`-only trust |
-| Inputs | Passed via `env:`; `approved_sha` must match `^[0-9a-fA-F]{40}$` and a real commit; keep-set from that SHA’s git tree |
-| pipefail + `head` | `pg_restore -l` written to file first |
-| inventory | No `migration.sql` head dump; size + SHA256 only |
-| Failures | Separate `O1_BACKUP` / `O1_SQL` / `O3_INVENTORY` statuses; non-OK → exit 1 |
+| SSH trust | Requires secret **`ECS_SSH_KNOWN_HOSTS`** (owner-supplied). **No** `ssh-keyscan`-only trust |
+| Inputs | Passed via `env:`; `approved_sha` 40-hex + real commit; keep-set from that SHA |
+| pipefail + TOC | `pg_restore -l` → file first |
+| Failures | Separate section statuses; non-OK → exit 1 |
+
+### Round-3 review fixes
+
+| Issue | Fix |
+|---|---|
+| Unsafe env load | **No** `source .env.production`, **no** `eval`, **no** `require(ecosystem.config.js)`. Dotenv line parse + JS **text scan** of `DATABASE_URL: '…'` only; fail closed if unreadable |
+| Disk protection | Before `pg_dump`: `pg_database_size` + `df` avail; require `2×DB + 1GiB`; stop if insufficient; record in report |
+| Temp dir cleanup | Unique `/tmp/prod-db-recovery-002-<runid>/`; refuse non-empty provided dir; **no** blanket `rm` of report dir contents |
 
 ### Owner action before first run
 

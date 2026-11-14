@@ -22,13 +22,29 @@ for _kd in $APPROVED_KEEP_DIRS; do
 done
 ROOT="/root/mateyou"
 MIG_DIR="$ROOT/packages/database/prisma/migrations"
-REPORT_OUT_DIR="${REPORT_OUT_DIR:-/tmp/prod-db-recovery-002}"
+# Unique per-run report dir (never wipe shared /tmp trees)
+RUN_ID="${RUN_ID:-$(date -u +%Y%m%dT%H%M%SZ)-$$}"
+if [ -n "${REPORT_OUT_DIR:-}" ]; then
+  # Caller-provided path must be empty or not exist — never delete foreign files
+  if [ -e "$REPORT_OUT_DIR" ] && [ -n "$(ls -A "$REPORT_OUT_DIR" 2>/dev/null || true)" ]; then
+    echo "ERROR: REPORT_OUT_DIR is not empty: $REPORT_OUT_DIR" >&2
+    echo "Refusing to clear or reuse a non-empty directory." >&2
+    exit 1
+  fi
+else
+  REPORT_OUT_DIR="/tmp/prod-db-recovery-002-${RUN_ID}"
+fi
 
 # Stage statuses (do not mask failures)
 O1_BACKUP_STATUS="NOT_STARTED"
 O1_SQL_STATUS="NOT_STARTED"
 O3_INVENTORY_STATUS="NOT_STARTED"
 OVERALL_STATUS="RUNNING"
+DISK_CHECK_STATUS="NOT_STARTED"
+DB_SIZE_BYTES=""
+FS_AVAIL_BYTES=""
+DISK_REQUIRED_BYTES=""
+DISK_MARGIN_BYTES=""
 
 fail_section() {
   local section="$1"
@@ -38,6 +54,7 @@ fail_section() {
     O1_BACKUP) O1_BACKUP_STATUS="FAILED" ;;
     O1_SQL) O1_SQL_STATUS="FAILED" ;;
     O3_INVENTORY) O3_INVENTORY_STATUS="FAILED" ;;
+    DISK_CHECK) DISK_CHECK_STATUS="FAILED"; O1_BACKUP_STATUS="FAILED" ;;
   esac
   OVERALL_STATUS="FAILED"
 }
@@ -56,6 +73,65 @@ redact_line() {
     -e 's#redis://:[^@]+@#redis://:***@#gi'
 }
 
+# Read KEY=value from a dotenv file without sourcing/executing it.
+extract_dotenv_value() {
+  local file="$1" key="$2"
+  local line raw val
+  [ -f "$file" ] || return 1
+  line="$(grep -E "^[[:space:]]*(export[[:space:]]+)?${key}=" "$file" | tail -n 1)" || return 1
+  [ -n "$line" ] || return 1
+  raw="${line#*=}"
+  # Trim CR and surrounding whitespace
+  raw="$(printf '%s' "$raw" | tr -d '\r' | sed -E 's/^[[:space:]]+//;s/[[:space:]]+$//')"
+  if [[ "$raw" =~ ^\"(.*)\"$ ]]; then
+    val="${BASH_REMATCH[1]}"
+  elif [[ "$raw" =~ ^\'(.*)\'$ ]]; then
+    val="${BASH_REMATCH[1]}"
+  else
+    val="$raw"
+  fi
+  printf '%s' "$val"
+}
+
+# Text-scan ecosystem.config.js for DATABASE_URL string literal (no require/eval).
+extract_ecosystem_database_url() {
+  local file="$1"
+  [ -f "$file" ] || return 1
+  ECOSYSTEM_CONFIG_PATH="$file" node <<'NODE'
+const fs = require('fs');
+const file = process.env.ECOSYSTEM_CONFIG_PATH;
+const text = fs.readFileSync(file, 'utf8');
+// Match DATABASE_URL: '...' or "..." only (no template literals / concatenation).
+const re = /DATABASE_URL\s*:\s*(['"])([^'"\\]*(?:\\.[^'"\\]*)*)\1/;
+const m = text.match(re);
+if (!m) process.exit(2);
+let v = m[2];
+v = v.replace(/\\(['"\\])/g, '$1');
+process.stdout.write(v);
+NODE
+}
+
+export_database_url_safely() {
+  local val="$1"
+  if [ -z "$val" ]; then
+    echo "ERROR: empty DATABASE_URL" >&2
+    return 1
+  fi
+  if [[ "$val" == *$'\n'* || "$val" == *$'\r'* ]]; then
+    echo "ERROR: DATABASE_URL contains newline" >&2
+    return 1
+  fi
+  if [[ "$val" == *'$('* || "$val" == *'`'* || "$val" == *'${'* ]]; then
+    echo "ERROR: DATABASE_URL contains shell expansion markers" >&2
+    return 1
+  fi
+  if [[ ! "$val" =~ ^postgres(ql)?:// ]]; then
+    echo "ERROR: DATABASE_URL is not a postgres URL scheme" >&2
+    return 1
+  fi
+  export DATABASE_URL="$val"
+}
+
 echo "==> HOST identity"
 hostname
 date -u +"UTC=%Y-%m-%dT%H:%M:%SZ"
@@ -65,48 +141,83 @@ if [ ! -d "$ROOT" ]; then
 fi
 echo "MATEYOU_ROOT_OK=yes"
 
-echo "==> Disk space"
+echo "==> Disk space (pre-check overview)"
 df -h "$ROOT" / 2>/dev/null | redact_line || df -h | redact_line
 
-echo "==> Load production env (DATABASE_URL never printed)"
+echo "==> Load DATABASE_URL (safe parse only; never source/eval/require config)"
 cd "$ROOT"
 ENV_SOURCE="none"
+unset DATABASE_URL || true
 if [ -f .env.production ]; then
-  set -a
-  # shellcheck disable=SC1091
-  source .env.production 2>/dev/null || true
-  set +a
-  ENV_SOURCE=".env.production"
+  if VAL="$(extract_dotenv_value .env.production DATABASE_URL)"; then
+    if export_database_url_safely "$VAL"; then
+      ENV_SOURCE=".env.production (dotenv parse)"
+    fi
+  fi
 fi
 if [ -z "${DATABASE_URL:-}" ] && [ -f ecosystem.config.js ]; then
-  eval "$(node - <<'NODE'
-const config = require('./ecosystem.config.js');
-const api = config.apps.find((a) => a.name === 'mateyou-api');
-const web = config.apps.find((a) => a.name === 'mateyou-web');
-const env = { ...(api?.env || {}), ...(web?.env || {}) };
-for (const [key, value] of Object.entries(env)) {
-  if (value == null || value === '') continue;
-  const escaped = String(value).replace(/'/g, "'\\''");
-  process.stdout.write(`export ${key}='${escaped}'\n`);
-}
-NODE
-)"
-  ENV_SOURCE="ecosystem.config.js"
+  set +e
+  VAL="$(extract_ecosystem_database_url ecosystem.config.js)"
+  ECO_RC=$?
+  set -e
+  if [ "$ECO_RC" -eq 0 ] && [ -n "$VAL" ]; then
+    if export_database_url_safely "$VAL"; then
+      ENV_SOURCE="ecosystem.config.js (text scan)"
+    fi
+  elif [ "$ECO_RC" -eq 2 ]; then
+    echo "WARN: DATABASE_URL string literal not found in ecosystem.config.js"
+  else
+    echo "WARN: failed to text-scan ecosystem.config.js"
+  fi
 fi
 echo "ENV_SOURCE=$ENV_SOURCE"
 if [ -z "${DATABASE_URL:-}" ]; then
-  fail_section O1_BACKUP "DATABASE_URL not set after load"
+  fail_section O1_BACKUP "DATABASE_URL could not be loaded safely; refusing to bypass"
   exit 1
 fi
 node -e 'const u=new URL(process.env.DATABASE_URL); console.log(JSON.stringify({protocol:u.protocol,host:u.host,db:u.pathname,user:u.username,password:"***"}))'
 
 STAMP="$(date -u +%Y%m%dT%H%M%SZ)"
 BK="$ROOT/_rollback/db-backup-prod-db-recovery-001-$STAMP"
+mkdir -p "$ROOT/_rollback"
 mkdir -p "$BK"
 chmod 700 "$BK"
 mkdir -p "$REPORT_OUT_DIR"
 chmod 700 "$REPORT_OUT_DIR"
 echo "BACKUP_DIR=$BK"
+echo "REPORT_OUT_DIR=$REPORT_OUT_DIR"
+echo "RUN_ID=$RUN_ID"
+
+# ---------- Disk protection before pg_dump ----------
+echo "==> Disk protection check (readonly)"
+DISK_CHECK_STATUS="RUNNING"
+set +e
+DB_SIZE_BYTES="$(psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -At -c "SELECT pg_database_size(current_database());")"
+DB_SIZE_RC=$?
+set -e
+if [ "$DB_SIZE_RC" -ne 0 ] || [ -z "$DB_SIZE_BYTES" ]; then
+  fail_section DISK_CHECK "unable to read pg_database_size"
+  exit 1
+fi
+# Available bytes on filesystem containing backup dir (POSIX df -k; column 4 = avail KB)
+FS_AVAIL_KB="$(df -Pk "$BK" | awk 'NR==2 {print $4}')"
+if [ -z "$FS_AVAIL_KB" ] || ! [[ "$FS_AVAIL_KB" =~ ^[0-9]+$ ]]; then
+  fail_section DISK_CHECK "unable to read df available space for $BK"
+  exit 1
+fi
+FS_AVAIL_BYTES=$((FS_AVAIL_KB * 1024))
+# Conservative requirement: 2x DB size + 1 GiB margin (custom dump often smaller, but leave headroom)
+DISK_MARGIN_BYTES=$((1024 * 1024 * 1024))
+DISK_REQUIRED_BYTES=$((DB_SIZE_BYTES * 2 + DISK_MARGIN_BYTES))
+echo "DB_SIZE_BYTES=$DB_SIZE_BYTES"
+echo "FS_AVAIL_BYTES=$FS_AVAIL_BYTES"
+echo "DISK_REQUIRED_BYTES=$DISK_REQUIRED_BYTES"
+echo "DISK_MARGIN_BYTES=$DISK_MARGIN_BYTES"
+if [ "$FS_AVAIL_BYTES" -lt "$DISK_REQUIRED_BYTES" ]; then
+  fail_section DISK_CHECK "insufficient free space: avail=$FS_AVAIL_BYTES required=$DISK_REQUIRED_BYTES"
+  exit 1
+fi
+DISK_CHECK_STATUS="OK"
 
 DUMP_BYTES=""
 DUMP_SHA256=""
@@ -337,13 +448,24 @@ REPORT="$REPORT_OUT_DIR/PROD-DB-RECOVERY-002-DIAGNOSTICS-REPORT.md"
   echo "**Generated UTC:** $STAMP"
   echo "**Evidence class:** actual execution (ECS via Actions readonly workflow)"
   echo "**Overall status:** \`$OVERALL_STATUS\`"
-  echo "**O-1 backup:** \`$O1_BACKUP_STATUS\` · **O-1 SQL:** \`$O1_SQL_STATUS\` · **O-3 inventory:** \`$O3_INVENTORY_STATUS\`"
+  echo "**Disk check:** \`$DISK_CHECK_STATUS\` · **O-1 backup:** \`$O1_BACKUP_STATUS\` · **O-1 SQL:** \`$O1_SQL_STATUS\` · **O-3 inventory:** \`$O3_INVENTORY_STATUS\`"
   echo "**Backup dir (ECS only):** \`$BK\`"
+  echo "**Report dir (ECS temp):** \`$REPORT_OUT_DIR\`"
+  echo "**ENV_SOURCE:** \`$ENV_SOURCE\`"
   echo
   echo "## Host"
   echo "- hostname: \`$(hostname)\`"
   echo "- UTC: \`$(date -u +%Y-%m-%dT%H:%M:%SZ)\`"
   echo "- mateyou root: present"
+  echo
+  echo "## Disk protection (pre-pg_dump)"
+  echo "| Field | Value |"
+  echo "|---|---|"
+  echo "| status | \`$DISK_CHECK_STATUS\` |"
+  echo "| db_size_bytes | \`${DB_SIZE_BYTES:-n/a}\` |"
+  echo "| fs_avail_bytes | \`${FS_AVAIL_BYTES:-n/a}\` |"
+  echo "| required_bytes (2x DB + 1GiB) | \`${DISK_REQUIRED_BYTES:-n/a}\` |"
+  echo "| margin_bytes | \`${DISK_MARGIN_BYTES:-n/a}\` |"
   echo
   echo "## O-1 Backup"
   echo "| Field | Value |"
@@ -354,6 +476,7 @@ REPORT="$REPORT_OUT_DIR/PROD-DB-RECOVERY-002-DIAGNOSTICS-REPORT.md"
   echo "| pg_restore_-l | \`$PG_RESTORE_OK\` |"
   echo "| toc_lines | \`$PG_RESTORE_TOC_LINES\` |"
   echo
+
   echo "## Target migration \`$TARGET_MIGRATION\`"
   echo "| Field | Value |"
   echo "|---|---|"
@@ -410,10 +533,11 @@ REPORT="$REPORT_OUT_DIR/PROD-DB-RECOVERY-002-DIAGNOSTICS-REPORT.md"
 } > "$REPORT"
 chmod 600 "$REPORT"
 
-# Ensure report dir contains ONLY the sanitized markdown (nothing else for scp)
-find "$REPORT_OUT_DIR" -mindepth 1 -maxdepth 1 ! -name 'PROD-DB-RECOVERY-002-DIAGNOSTICS-REPORT.md' -exec rm -f {} + 2>/dev/null || true
+# No directory wipe: this run only creates REPORT in its unique empty REPORT_OUT_DIR.
 
 echo "REPORT_PATH=$REPORT"
+echo "REPORT_OUT_DIR=$REPORT_OUT_DIR"
+echo "DISK_CHECK_STATUS=$DISK_CHECK_STATUS"
 echo "O1_BACKUP_STATUS=$O1_BACKUP_STATUS"
 echo "O1_SQL_STATUS=$O1_SQL_STATUS"
 echo "O3_INVENTORY_STATUS=$O3_INVENTORY_STATUS"

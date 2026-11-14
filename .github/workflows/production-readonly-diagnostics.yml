@@ -147,6 +147,7 @@ jobs:
           ssh $SSH_OPTS "${ECS_USER}@${ECS_HOST}" 'chmod 700 /tmp/production-readonly-diagnostics-remote.sh'
 
       - name: Run O-1 backup + O-3 inventory (remote)
+        id: remote
         env:
           ECS_HOST: ${{ secrets.ECS_HOST }}
           ECS_USER: ${{ secrets.ECS_USER }}
@@ -154,12 +155,18 @@ jobs:
           TARGET_MIGRATION: '20261002000000_syndication_jobs'
         run: |
           set -euo pipefail
+          # Unique per-run remote report directory (never reuse/wipe a shared path)
+          RUN_ID="$(date -u +%Y%m%dT%H%M%SZ)-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+          REPORT_OUT_DIR="/tmp/prod-db-recovery-002-${RUN_ID}"
+          echo "RUN_ID=${RUN_ID}" >> "$GITHUB_OUTPUT"
+          echo "REPORT_OUT_DIR=${REPORT_OUT_DIR}" >> "$GITHUB_OUTPUT"
           # Pass keep-set via SSH remote env assignment from Actions env (validated keep dirs from git).
           # shellcheck disable=SC2086
           ssh $SSH_OPTS "${ECS_USER}@${ECS_HOST}" \
             env APPROVED_KEEP_DIRS="$APPROVED_KEEP_DIRS" \
                 TARGET_MIGRATION="$TARGET_MIGRATION" \
-                REPORT_OUT_DIR=/tmp/prod-db-recovery-002 \
+                RUN_ID="$RUN_ID" \
+                REPORT_OUT_DIR="$REPORT_OUT_DIR" \
                 /tmp/production-readonly-diagnostics-remote.sh \
             | tee "${RUNNER_TEMP}/remote-diagnostics.log" \
             | sed -E 's#postgresql://[^[:space:]]+#postgresql://***REDACTED***#gi'
@@ -168,12 +175,19 @@ jobs:
         env:
           ECS_HOST: ${{ secrets.ECS_HOST }}
           ECS_USER: ${{ secrets.ECS_USER }}
+          REPORT_OUT_DIR: ${{ steps.remote.outputs.REPORT_OUT_DIR }}
         run: |
           set -euo pipefail
+          test -n "${REPORT_OUT_DIR}"
+          # Allowlist path: only /tmp/prod-db-recovery-002-<runid>
+          if [[ ! "$REPORT_OUT_DIR" =~ ^/tmp/prod-db-recovery-002-[A-Za-z0-9._-]+$ ]]; then
+            echo "ERROR: unexpected REPORT_OUT_DIR"
+            exit 1
+          fi
           mkdir -p diagnostics-out
           # shellcheck disable=SC2086
           scp $SSH_OPTS \
-            "${ECS_USER}@${ECS_HOST}:/tmp/prod-db-recovery-002/PROD-DB-RECOVERY-002-DIAGNOSTICS-REPORT.md" \
+            "${ECS_USER}@${ECS_HOST}:${REPORT_OUT_DIR}/PROD-DB-RECOVERY-002-DIAGNOSTICS-REPORT.md" \
             diagnostics-out/PROD-DB-RECOVERY-002-DIAGNOSTICS-REPORT.md
           # Enforce Artifact allowlist: exactly one markdown file
           mapfile -t files < <(find diagnostics-out -type f | sort)

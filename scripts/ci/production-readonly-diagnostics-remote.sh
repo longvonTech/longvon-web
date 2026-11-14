@@ -22,18 +22,32 @@ for _kd in $APPROVED_KEEP_DIRS; do
 done
 ROOT="/root/mateyou"
 MIG_DIR="$ROOT/packages/database/prisma/migrations"
-# Unique per-run report dir (never wipe shared /tmp trees)
+# Unique per-run report dir (never wipe / chmod / reuse shared or foreign trees)
 RUN_ID="${RUN_ID:-$(date -u +%Y%m%dT%H%M%SZ)-$$}"
+if [[ ! "$RUN_ID" =~ ^[A-Za-z0-9._-]+$ ]]; then
+  echo "ERROR: RUN_ID failed allowlist" >&2
+  exit 1
+fi
+EXPECTED_REPORT_OUT_DIR="/tmp/prod-db-recovery-002-${RUN_ID}"
 if [ -n "${REPORT_OUT_DIR:-}" ]; then
-  # Caller-provided path must be empty or not exist — never delete foreign files
-  if [ -e "$REPORT_OUT_DIR" ] && [ -n "$(ls -A "$REPORT_OUT_DIR" 2>/dev/null || true)" ]; then
-    echo "ERROR: REPORT_OUT_DIR is not empty: $REPORT_OUT_DIR" >&2
-    echo "Refusing to clear or reuse a non-empty directory." >&2
+  if [ "$REPORT_OUT_DIR" != "$EXPECTED_REPORT_OUT_DIR" ]; then
+    echo "ERROR: REPORT_OUT_DIR must be exactly ${EXPECTED_REPORT_OUT_DIR}" >&2
+    echo "got: ${REPORT_OUT_DIR}" >&2
     exit 1
   fi
 else
-  REPORT_OUT_DIR="/tmp/prod-db-recovery-002-${RUN_ID}"
+  REPORT_OUT_DIR="$EXPECTED_REPORT_OUT_DIR"
 fi
+
+# True only for a real directory that is not a symlink (including via final path component).
+is_real_dir() {
+  local p="$1"
+  # -L before -d: reject symlinks even when the target is a directory.
+  if [ -L "$p" ]; then
+    return 1
+  fi
+  [ -d "$p" ]
+}
 
 # Stage statuses (do not mask failures)
 O1_BACKUP_STATUS="NOT_STARTED"
@@ -178,12 +192,8 @@ fi
 node -e 'const u=new URL(process.env.DATABASE_URL); console.log(JSON.stringify({protocol:u.protocol,host:u.host,db:u.pathname,user:u.username,password:"***"}))'
 
 STAMP="$(date -u +%Y%m%dT%H%M%SZ)"
-# Unique per-run backup leaf under _rollback (RUN_ID from workflow; never reuse/overwrite).
-if [[ ! "$RUN_ID" =~ ^[A-Za-z0-9._-]+$ ]]; then
-  echo "ERROR: RUN_ID failed allowlist for backup path" >&2
-  exit 1
-fi
-BK="$ROOT/_rollback/db-backup-prod-db-recovery-002-${STAMP}-${RUN_ID}"
+ROLLBACK_PARENT="$ROOT/_rollback"
+BK="$ROLLBACK_PARENT/db-backup-prod-db-recovery-002-${STAMP}-${RUN_ID}"
 DUMP_FILE="$BK/mateyou_prod.dump"
 DUMP_SHA_FILE="$BK/mateyou_prod.dump.sha256"
 TOC_FILE="$BK/pg_restore_toc.txt"
@@ -192,42 +202,122 @@ BACKUP_FAIL_REASON=""
 REMOTE_SCRIPT_PATH="${REMOTE_SCRIPT:-}"
 # Only write into BK when this run exclusively created it (never into a pre-existing dir).
 BK_OWNED="no"
+ROLLBACK_PARENT_CREATED="no"
 
-# Parent may already exist; leaf must be created atomically (mkdir fails if present).
-mkdir -p "$ROOT/_rollback"
-chmod 700 "$ROOT/_rollback" 2>/dev/null || true
-if ! mkdir "$BK" 2>/dev/null; then
-  # Do not reuse, clear, chmod, or write into an existing backup directory.
-  BACKUP_FAIL_REASON="backup directory already exists (refusing reuse/overwrite): $BK"
+# ----- _rollback parent: create only if missing; never chmod a pre-existing shared dir -----
+echo "==> Ensure _rollback parent (no chmod on pre-existing)"
+if [ -L "$ROLLBACK_PARENT" ]; then
+  BACKUP_FAIL_REASON="_rollback parent is a symlink (refusing): $ROLLBACK_PARENT"
   fail_section O1_BACKUP "$BACKUP_FAIL_REASON"
   O1_BACKUP_STATUS="O1_BACKUP_FAILED"
   O1_SQL_STATUS="NOT_EXECUTED"
   echo "O1_BACKUP_FAILED=yes"
-  echo "BACKUP_DIR=$BK"
-  echo "BACKUP_FAIL_REASON=$BACKUP_FAIL_REASON"
-  # Still allow O-3 + report; never rm/overwrite the existing dir.
+elif [ -e "$ROLLBACK_PARENT" ]; then
+  if ! is_real_dir "$ROLLBACK_PARENT"; then
+    BACKUP_FAIL_REASON="_rollback parent exists but is not a real directory: $ROLLBACK_PARENT"
+    fail_section O1_BACKUP "$BACKUP_FAIL_REASON"
+    O1_BACKUP_STATUS="O1_BACKUP_FAILED"
+    O1_SQL_STATUS="NOT_EXECUTED"
+    echo "O1_BACKUP_FAILED=yes"
+  else
+    # Pre-existing shared dir: do NOT chmod, clear, or alter permissions.
+    echo "ROLLBACK_PARENT_PREEXISTING=yes"
+  fi
 else
-  chmod 700 "$BK"
-  BK_OWNED="yes"
+  # Does not exist — create leaf parent only (not mkdir -p through unknown parents beyond ROOT).
+  if [ ! -d "$ROOT" ] || [ -L "$ROOT" ]; then
+    BACKUP_FAIL_REASON="mateyou root is missing or a symlink; cannot create _rollback safely"
+    fail_section O1_BACKUP "$BACKUP_FAIL_REASON"
+    O1_BACKUP_STATUS="O1_BACKUP_FAILED"
+    O1_SQL_STATUS="NOT_EXECUTED"
+    echo "O1_BACKUP_FAILED=yes"
+  elif ! mkdir "$ROLLBACK_PARENT" 2>/dev/null; then
+    # Race or unexpected failure — re-validate; never chmod whatever appeared.
+    if [ -L "$ROLLBACK_PARENT" ]; then
+      BACKUP_FAIL_REASON="_rollback parent became a symlink after mkdir race: $ROLLBACK_PARENT"
+      fail_section O1_BACKUP "$BACKUP_FAIL_REASON"
+      O1_BACKUP_STATUS="O1_BACKUP_FAILED"
+      O1_SQL_STATUS="NOT_EXECUTED"
+      echo "O1_BACKUP_FAILED=yes"
+    elif is_real_dir "$ROLLBACK_PARENT"; then
+      # Another process created a real dir; treat as pre-existing (no chmod).
+      echo "ROLLBACK_PARENT_PREEXISTING=yes (created concurrently)"
+    else
+      BACKUP_FAIL_REASON="unable to create or safely confirm _rollback parent: $ROLLBACK_PARENT"
+      fail_section O1_BACKUP "$BACKUP_FAIL_REASON"
+      O1_BACKUP_STATUS="O1_BACKUP_FAILED"
+      O1_SQL_STATUS="NOT_EXECUTED"
+      echo "O1_BACKUP_FAILED=yes"
+    fi
+  else
+    if [ -L "$ROLLBACK_PARENT" ] || ! is_real_dir "$ROLLBACK_PARENT"; then
+      BACKUP_FAIL_REASON="_rollback parent after create is not a real directory: $ROLLBACK_PARENT"
+      fail_section O1_BACKUP "$BACKUP_FAIL_REASON"
+      O1_BACKUP_STATUS="O1_BACKUP_FAILED"
+      O1_SQL_STATUS="NOT_EXECUTED"
+      echo "O1_BACKUP_FAILED=yes"
+    else
+      # Only chmod directories this run newly created.
+      chmod 700 "$ROLLBACK_PARENT"
+      ROLLBACK_PARENT_CREATED="yes"
+      echo "ROLLBACK_PARENT_CREATED=yes"
+    fi
+  fi
 fi
 
-# Report dir: unique path from workflow; mkdir fails closed if leaf already exists.
-if [ -e "$REPORT_OUT_DIR" ]; then
-  if [ -n "$(ls -A "$REPORT_OUT_DIR" 2>/dev/null || true)" ]; then
-    echo "ERROR: REPORT_OUT_DIR is not empty: $REPORT_OUT_DIR" >&2
-    echo "Refusing to clear or reuse a non-empty directory." >&2
-    exit 1
+# ----- Backup leaf: atomic mkdir; chmod only if this run created it -----
+if [ "$O1_BACKUP_STATUS" != "O1_BACKUP_FAILED" ]; then
+  if ! is_real_dir "$ROLLBACK_PARENT"; then
+    BACKUP_FAIL_REASON="cannot safely confirm _rollback parent is a real directory before write"
+    fail_section O1_BACKUP "$BACKUP_FAIL_REASON"
+    O1_BACKUP_STATUS="O1_BACKUP_FAILED"
+    O1_SQL_STATUS="NOT_EXECUTED"
+    echo "O1_BACKUP_FAILED=yes"
+  elif ! mkdir "$BK" 2>/dev/null; then
+    # Do not reuse, clear, chmod, or write into an existing backup directory.
+    BACKUP_FAIL_REASON="backup directory already exists (refusing reuse/overwrite): $BK"
+    fail_section O1_BACKUP "$BACKUP_FAIL_REASON"
+    O1_BACKUP_STATUS="O1_BACKUP_FAILED"
+    O1_SQL_STATUS="NOT_EXECUTED"
+    echo "O1_BACKUP_FAILED=yes"
+    echo "BACKUP_DIR=$BK"
+    echo "BACKUP_FAIL_REASON=$BACKUP_FAIL_REASON"
+  elif [ -L "$BK" ] || ! is_real_dir "$BK"; then
+    BACKUP_FAIL_REASON="backup leaf after create is not a real directory: $BK"
+    fail_section O1_BACKUP "$BACKUP_FAIL_REASON"
+    O1_BACKUP_STATUS="O1_BACKUP_FAILED"
+    O1_SQL_STATUS="NOT_EXECUTED"
+    echo "O1_BACKUP_FAILED=yes"
+  else
+    chmod 700 "$BK"
+    BK_OWNED="yes"
   fi
-  # Empty pre-created dir is acceptable; ensure perms only.
-  chmod 700 "$REPORT_OUT_DIR"
-else
-  if ! mkdir "$REPORT_OUT_DIR" 2>/dev/null; then
-    echo "ERROR: failed to create REPORT_OUT_DIR atomically: $REPORT_OUT_DIR" >&2
-    exit 1
-  fi
-  chmod 700 "$REPORT_OUT_DIR"
 fi
+
+# ----- REPORT_OUT_DIR: must match RUN_ID path; create-only; refuse any pre-existing (even empty) -----
+echo "==> Create report dir (refuse reuse / symlink / chmod of foreign)"
+if [ "$REPORT_OUT_DIR" != "$EXPECTED_REPORT_OUT_DIR" ]; then
+  echo "ERROR: REPORT_OUT_DIR mismatch after setup" >&2
+  exit 1
+fi
+if [ -L "$REPORT_OUT_DIR" ] || [ -e "$REPORT_OUT_DIR" ]; then
+  echo "ERROR: REPORT_OUT_DIR already exists (refusing reuse even if empty): $REPORT_OUT_DIR" >&2
+  echo "Refusing to chmod, clear, or overwrite an existing path." >&2
+  exit 1
+fi
+if ! mkdir "$REPORT_OUT_DIR" 2>/dev/null; then
+  echo "ERROR: failed to create REPORT_OUT_DIR atomically: $REPORT_OUT_DIR" >&2
+  exit 1
+fi
+if [ -L "$REPORT_OUT_DIR" ] || ! is_real_dir "$REPORT_OUT_DIR"; then
+  echo "ERROR: REPORT_OUT_DIR after create is not a real directory: $REPORT_OUT_DIR" >&2
+  exit 1
+fi
+chmod 700 "$REPORT_OUT_DIR"
+
 echo "BACKUP_DIR=$BK"
+echo "BK_OWNED=$BK_OWNED"
+echo "ROLLBACK_PARENT_CREATED=$ROLLBACK_PARENT_CREATED"
 echo "REPORT_OUT_DIR=$REPORT_OUT_DIR"
 echo "RUN_ID=$RUN_ID"
 if [ -n "$REMOTE_SCRIPT_PATH" ]; then

@@ -1,6 +1,6 @@
 # PROD-DB-RECOVERY-002 — Diagnostics Report
 
-**Asia/Shanghai:** 2026-11-14 21:40 · **UTC:** 2026-11-14T13:40:00Z  
+**Asia/Shanghai:** 2026-11-14 22:03 · **UTC:** 2026-11-14T14:03:00Z  
 **Task:** Independent GitHub Actions production **readonly** diagnostics workflow  
 **PR:** #19 · Branch `recovery/production-readonly-diagnostics` → `main`  
 **Approved content SHA (keep-set):** `6762bb656c7d603669ef46a8a8ad6eaf33da439a`  
@@ -66,6 +66,13 @@ After an approved dispatch, **replace** live sections with the Artifact Markdown
 | Backup dir overwrite | Atomic `mkdir` of `…/db-backup-prod-db-recovery-002-<stamp>-<RUN_ID>`; fail if exists; no reuse/clear |
 | Dump overwrite | Exclusive noclobber create of `mateyou_prod.dump` (+ sidecars); refuse if present; failures retain dir |
 | ECS temp script | **No** workflow SSH `rm` of remote script; path recorded in report/logs for owner-approved cleanup later |
+
+### Round-6 review fixes
+
+| Issue | Fix |
+|---|---|
+| `_rollback` chmod | Create only if missing; `chmod 700` **only** when this run created it; pre-existing → no chmod/clear; reject symlink / non-dir |
+| `REPORT_OUT_DIR` | Must equal `/tmp/prod-db-recovery-002-${RUN_ID}`; create-only + 700; **refuse any pre-existing** (even empty); reject symlink |
 
 ### Owner action before first run
 

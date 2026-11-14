@@ -34,6 +34,7 @@ export class SleepQueryDto {
   devTime!: string;
 
   @IsString()
+  @IsNotEmpty()
   phonenumber!: string;
 }
 
@@ -43,5 +44,6 @@ export class OsaQueryDto {
   devTime!: string;
 
   @IsString()
+  @IsNotEmpty()
   phonenumber!: string;
 }

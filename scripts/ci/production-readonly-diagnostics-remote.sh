@@ -190,12 +190,14 @@ TOC_FILE="$BK/pg_restore_toc.txt"
 TOC_ERR_FILE="$BK/pg_restore_toc.err"
 BACKUP_FAIL_REASON=""
 REMOTE_SCRIPT_PATH="${REMOTE_SCRIPT:-}"
+# Only write into BK when this run exclusively created it (never into a pre-existing dir).
+BK_OWNED="no"
 
 # Parent may already exist; leaf must be created atomically (mkdir fails if present).
 mkdir -p "$ROOT/_rollback"
 chmod 700 "$ROOT/_rollback" 2>/dev/null || true
 if ! mkdir "$BK" 2>/dev/null; then
-  # Do not reuse or clear an existing backup directory.
+  # Do not reuse, clear, chmod, or write into an existing backup directory.
   BACKUP_FAIL_REASON="backup directory already exists (refusing reuse/overwrite): $BK"
   fail_section O1_BACKUP "$BACKUP_FAIL_REASON"
   O1_BACKUP_STATUS="O1_BACKUP_FAILED"
@@ -206,6 +208,7 @@ if ! mkdir "$BK" 2>/dev/null; then
   # Still allow O-3 + report; never rm/overwrite the existing dir.
 else
   chmod 700 "$BK"
+  BK_OWNED="yes"
 fi
 
 # Report dir: unique path from workflow; mkdir fails closed if leaf already exists.
@@ -540,40 +543,49 @@ else
     KEEP_STATUS+=("LOCK_MISSING=migration_lock.toml")
   fi
 
-  # Dependency scan: count only for report; raw hits stay on ECS
+  # Dependency scan: count only for report; raw hits stay on ECS.
+  # Write sidecars only into this-run owned BK, else into REPORT_OUT_DIR (never a foreign backup dir).
+  if [ "$BK_OWNED" = "yes" ]; then
+    SIDE_DIR="$BK"
+  else
+    SIDE_DIR="$REPORT_OUT_DIR"
+  fi
   set +e
   if command -v rg >/dev/null 2>&1; then
     rg -n "syndication_jobs|SyndicationJob" "$ROOT/apps" "$ROOT/packages" \
       --glob '!node_modules/**' --glob '!**/generated/**' \
-      > "$BK/dependency_scan_raw.txt" 2>/dev/null
+      > "$SIDE_DIR/dependency_scan_raw.txt" 2>/dev/null
   else
     grep -RIn --exclude-dir=node_modules --exclude-dir=generated \
       -e 'syndication_jobs' -e 'SyndicationJob' "$ROOT/apps" "$ROOT/packages" \
-      > "$BK/dependency_scan_raw.txt" 2>/dev/null
+      > "$SIDE_DIR/dependency_scan_raw.txt" 2>/dev/null
   fi
   set -e
-  chmod 600 "$BK/dependency_scan_raw.txt" 2>/dev/null || true
-  if [ -s "$BK/dependency_scan_raw.txt" ]; then
-    DEP_MATCH_COUNT="$(wc -l < "$BK/dependency_scan_raw.txt" | tr -d ' ')"
+  chmod 600 "$SIDE_DIR/dependency_scan_raw.txt" 2>/dev/null || true
+  if [ -s "$SIDE_DIR/dependency_scan_raw.txt" ]; then
+    DEP_MATCH_COUNT="$(wc -l < "$SIDE_DIR/dependency_scan_raw.txt" | tr -d ' ')"
   else
     DEP_MATCH_COUNT="0"
-    echo "NO_MATCHES" > "$BK/dependency_scan_raw.txt"
-    chmod 600 "$BK/dependency_scan_raw.txt"
+    echo "NO_MATCHES" > "$SIDE_DIR/dependency_scan_raw.txt"
+    chmod 600 "$SIDE_DIR/dependency_scan_raw.txt"
   fi
 
   {
     printf '%s\n' "${INV_LINES[@]}"
     printf '%s\n' "${KEEP_STATUS[@]}"
     for d in "${ECS_ONLY[@]:-}"; do echo "ECS_ONLY_DIR=$d"; done
-  } > "$BK/migrations_inventory_raw.txt"
-  chmod 600 "$BK/migrations_inventory_raw.txt"
+  } > "$SIDE_DIR/migrations_inventory_raw.txt"
+  chmod 600 "$SIDE_DIR/migrations_inventory_raw.txt"
 
   if [ "$O3_INVENTORY_STATUS" = "RUNNING" ]; then
     O3_INVENTORY_STATUS="OK"
   fi
 fi
 
-secure_chmod_tree "$BK"
+# Never chmod/touch a pre-existing foreign backup directory.
+if [ "$BK_OWNED" = "yes" ]; then
+  secure_chmod_tree "$BK"
+fi
 
 if [ "$OVERALL_STATUS" != "FAILED" ]; then
   OVERALL_STATUS="OK"

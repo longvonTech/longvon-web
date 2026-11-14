@@ -1,4 +1,4 @@
-import { IsOptional, IsString, Matches } from 'class-validator';
+import { IsNotEmpty, IsOptional, IsString, Matches } from 'class-validator';
 
 /**
  * LONGVON channel query DTO.
@@ -20,6 +20,7 @@ export class ChannelRangeQueryDto {
   devTimeEnd!: string;
 
   @IsString()
+  @IsNotEmpty()
   phonenumber!: string;
 }
 

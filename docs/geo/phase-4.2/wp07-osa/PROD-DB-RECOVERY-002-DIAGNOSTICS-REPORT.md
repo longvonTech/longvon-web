@@ -1,9 +1,9 @@
 # PROD-DB-RECOVERY-002 — Diagnostics Report
 
-**Asia/Shanghai:** 2026-11-14 20:20 · **UTC:** 2026-11-14T12:20:00Z  
+**Asia/Shanghai:** 2026-11-14 20:45 · **UTC:** 2026-11-14T12:45:00Z  
 **Task:** Independent GitHub Actions production **readonly** diagnostics workflow  
-**Approved content SHA (keep-set compare):** `6762bb656c7d603669ef46a8a8ad6eaf33da439a`  
-**Branch (this PR):** `recovery/production-readonly-diagnostics` → `main`  
+**PR:** #19 · Branch `recovery/production-readonly-diagnostics` → `main`  
+**Approved content SHA (keep-set):** `6762bb656c7d603669ef46a8a8ad6eaf33da439a`  
 
 ---
 
@@ -22,14 +22,36 @@
 
 | Item | Status | Class |
 |---|---|---|
-| Workflow file added | **YES** — `.github/workflows/production-readonly-diagnostics.yml` | Actual (repo) |
-| Remote script added | **YES** — `scripts/ci/production-readonly-diagnostics-remote.sh` | Actual (repo) |
-| Workflow executed | **NO** — owner forbade run until PR review | Unresolved |
-| Live O-1 backup / SQL | **NOT RUN** | Unresolved |
-| Live O-3 inventory | **NOT RUN** | Unresolved |
-| Production deploy / migrate resolve | **NOT RUN** (forbidden) | Actual (policy) |
+| Security hardening of workflow + remote script | **YES** (this commit) | Actual (repo) |
+| Workflow executed | **NO** — owner forbade run until review | Unresolved |
+| Live O-1 / O-3 | **NOT RUN** | Unresolved |
+| Production contact from authoring agent | **NONE** | Actual |
 
-**After owner approves and manually dispatches the workflow with `confirm_readonly=YES`, replace sections 1–3 below with Artifact contents (sanitized report).** Database dump stays on ECS under `_rollback/`; never in GitHub Artifacts.
+After an approved dispatch, **replace** live sections with the Artifact Markdown only (single sanitized report). Dump/CSV/raw logs stay on ECS.
+
+---
+
+## 0.1 Security hardening summary (PR #19 fix)
+
+| Requirement | Implementation |
+|---|---|
+| Backup perms | `umask 077`; backup dir `700`; dump/CSV/logs `600` |
+| Dump never leaves ECS | Artifact allowlist = one `.md` file; refuse `*.dump`/`*.csv`/`*_raw*` |
+| Artifact contents | Status fields, sizes, SHA256, table exists, schema privs, dir inventory, dep **count** only — **no** raw migration logs/SQL/structure dumps |
+| SSH trust | Requires secret **`ECS_SSH_KNOWN_HOSTS`** (owner-supplied pre-verified lines). **No** `ssh-keyscan`-only trust |
+| Inputs | Passed via `env:`; `approved_sha` must match `^[0-9a-fA-F]{40}$` and a real commit; keep-set from that SHA’s git tree |
+| pipefail + `head` | `pg_restore -l` written to file first |
+| inventory | No `migration.sql` head dump; size + SHA256 only |
+| Failures | Separate `O1_BACKUP` / `O1_SQL` / `O3_INVENTORY` statuses; non-OK → exit 1 |
+
+### Owner action before first run
+
+Add production environment secret:
+
+- **`ECS_SSH_KNOWN_HOSTS`** — verified `known_hosts` line(s) for `ECS_HOST`  
+  (Do not invent fingerprints in git. Obtain from a trusted prior connection, e.g. `ssh-keygen -lf` on an already-trusted client.)
+
+Existing secrets still required: `ECS_HOST`, `ECS_USER`, `ECS_SSH_KEY_B64`.
 
 ---
 
@@ -37,14 +59,11 @@
 
 | Check | Result | Class |
 |---|---|---|
-| Disk space | **Unresolved** | — |
-| Env load path | Designed: `.env.production` then `ecosystem.config.js` (same as `deploy.sh` `load_production_env`); URL never printed | Inference from code review |
-| Backup dir | Planned: `/root/mateyou/_rollback/db-backup-prod-db-recovery-001-<UTC>/` | Actual (script) |
-| `pg_dump -Fc` size / SHA256 / `pg_restore -l` | **Unresolved** | — |
-| `_prisma_migrations` row for `20261002000000_syndication_jobs` | **Unresolved** live; historical: started `2026-10-17 15:16:32.005100 UTC`, failed P3018/42501 | Historical log |
-| `finished_at` / `rolled_back_at` / `applied_steps_count` / `checksum` / `logs` | **Unresolved** live | — |
-| `to_regclass('growth.syndication_jobs')` | **Unresolved** live; inference: table likely never created (CREATE failed ACL) | Inference |
-| Indexes / constraints / growth CREATE privilege | **Unresolved** live; historical CREATE denied | Historical + unresolved |
+| Disk / backup / SHA256 / pg_restore | **Unresolved** | — |
+| Target migration status fields | **Unresolved** live; historical started_at `2026-10-17 15:16:32.005100 UTC` | Historical |
+| logs field | Will remain **ECS-only** even after run | Policy |
+| `growth.syndication_jobs` exists | **Unresolved** | — |
+| growth USAGE/CREATE | **Unresolved** live; historical CREATE denied (42501) | Historical |
 
 ---
 
@@ -52,12 +71,10 @@
 
 | Check | Result | Class |
 |---|---|---|
-| Full ECS migration dir list | **Unresolved** (Actions previously reported **8** folders found) | Historical count only |
-| Per-dir `migration.sql` size / SHA256 | **Unresolved** | — |
-| `migration_lock.toml` | **Unresolved** on ECS; present in git SHA | Partial |
+| Full ECS dir list + SQL size/SHA256 | **Unresolved** (historical count **8**) | Historical count |
 | Keep-set at `6762bb6` | `00000000000000_init`, `20250627000000_news_enterprise_media`, `migration_lock.toml` | Actual (git) |
-| ECS-only dirs | **Unresolved** names; must include at least `20261002000000_syndication_jobs` | Historical name + unresolved others |
-| Code deps `syndication_jobs` / `SyndicationJob` | Absent in approved git tree `6762bb6` apps/packages | Actual (git); ECS tree pending |
+| ECS-only dirs | **Unresolved** names | — |
+| Dep match count | **Unresolved** on ECS; **0** matches in approved git apps/packages | Actual (git) + unresolved ECS |
 
 ---
 
@@ -65,60 +82,23 @@
 
 | Fact | Source |
 |---|---|
-| Original failure P3018 / SQLSTATE 42501 `permission denied for schema growth` on `CREATE TABLE growth.syndication_jobs` | Actions run `39044287850` |
-| Later P3009 blocking deploy; same migration started_at | Actions run `43413969407` |
-| Orphan dirs persist because main rsync lacks `--delete` | `deploy.yml` code review |
-| Round 1 Cloud Agent / Mac handoff could not obtain SSH | `PROD-DB-RECOVERY-001-ROUND1-RESULTS.md` |
+| P3018 / 42501 on `CREATE TABLE growth.syndication_jobs` | Actions `39044287850` |
+| P3009 blocking later deploy | Actions `43413969407` |
+| Round 1 Cloud/Mac SSH blocked | `PROD-DB-RECOVERY-001-ROUND1-RESULTS.md` |
 
 ---
 
-## 4. Workflow design summary
+## 4. Expected owner steps (after approve + secrets)
 
-| Requirement | Implementation |
-|---|---|
-| Trigger | `workflow_dispatch` only + input `confirm_readonly == YES` |
-| Environment | `production` (same secrets as Deploy) |
-| Secrets | `ECS_HOST`, `ECS_USER`, `ECS_SSH_KEY_B64` |
-| Runner | `ubuntu-latest` |
-| Permissions | `contents: read` only |
-| Host key check | `ssh-keyscan` then `StrictHostKeyChecking=yes` (not `no`) |
-| Secret hygiene | No `set -x`; redact `postgresql://…` in tee; no dump in Artifacts |
-| Does not call | `deploy.yml`, `scripts/deploy.sh`, migrate resolve/deploy, mv/rm, PM2 |
-
-### Expected execution steps (owner, after merge approval)
-
-1. Merge or otherwise land this workflow on a ref Actions can dispatch from (typically `main`).  
-2. Actions → **Production readonly diagnostics** → Run workflow.  
-3. Inputs: `confirm_readonly=YES`, `approved_sha=6762bb656c7d603669ef46a8a8ad6eaf33da439a`.  
-4. Review job logs (redacted) + download Artifact `prod-db-recovery-002-diagnostics`.  
-5. Confirm ECS backup path listed in report; dump **not** in Artifact.  
-6. Use live results to authorize Round 2 (O-2 / O-3 mv / O-5) separately.
+1. Ensure `ECS_SSH_KNOWN_HOSTS` is set on `production` environment.  
+2. Merge or allow `workflow_dispatch` from the approved ref.  
+3. Run **Production readonly diagnostics** with `confirm_readonly=YES` and approved SHA.  
+4. Download Artifact (single Markdown).  
+5. Separate Round 2 for O-2 / O-3 cleanup / O-5.
 
 ---
 
-## 5. Security / permissions analysis
+## 5. Stop
 
-| Topic | Assessment |
-|---|---|
-| Token scope | Job `permissions: contents: read` — no contents write, no PR write, no `actions: write` beyond default artifact upload with GITHUB_TOKEN |
-| Secret exposure | Key written only under `$RUNNER_TEMP` with mode 600; removed in always cleanup; never echoed |
-| Host verification | `StrictHostKeyChecking=yes` after `ssh-keyscan` — MITM harder than `accept-new`/`no` |
-| Blast radius | Script staged under `/tmp` on ECS; removed after run; does not alter `/root/mateyou` app tree except creating `_rollback` backup files |
-| Data exfil | Explicit refuse if `*.dump` appears in `diagnostics-out/`; Artifact = markdown + small text only |
-| Confirm gate | Workflow job skipped unless input exactly `YES` |
-| Residual risk | Operator with `production` environment access can still trigger; dump consumes disk — script checks `df` first |
-
----
-
-## 6. Unresolved / next owner decisions
-
-1. Approve & merge this PR (or allow workflow_dispatch from the branch if repo policy permits).  
-2. Manually run the workflow once.  
-3. Paste or attach Artifact report into a follow-up commit / Round 2 approval.  
-4. Still **do not** authorize O-2 resolve / O-3 deletes / O-5 deploy in this task.
-
----
-
-## 7. Stop
-
-PR created for review only. **Workflow not executed. Production not contacted from this agent.**
+Security fixes committed for PR review only.  
+**Workflow not executed. ECS not contacted. Production DB not accessed.**

@@ -114,14 +114,33 @@ jobs:
             echo "ERROR: ECS_SSH_KNOWN_HOSTS produced empty known_hosts"
             exit 1
           fi
-          if ! grep -F "$ECS_HOST" "$HOME/.ssh/known_hosts" >/dev/null 2>&1 \
-            && ! grep -E '^\|1\|' "$HOME/.ssh/known_hosts" >/dev/null 2>&1; then
-            echo "ERROR: known_hosts has neither plaintext ECS_HOST nor hashed |1| entries"
+          # Host must match ECS_HOST specifically (supports hashed known_hosts entries)
+          if ! ssh-keygen -F "$ECS_HOST" -f "$HOME/.ssh/known_hosts" >/dev/null; then
+            echo "ERROR: no known_hosts entry for ECS_HOST (ssh-keygen -F failed)"
+            echo "ECS_SSH_KNOWN_HOSTS must contain a verified record for this host."
             exit 1
           fi
           {
             echo "KEY_FILE=$KEY_FILE"
             echo "SSH_OPTS=-i ${KEY_FILE} -o BatchMode=yes -o StrictHostKeyChecking=yes -o UserKnownHostsFile=${HOME}/.ssh/known_hosts -o GlobalKnownHostsFile=/dev/null -o ConnectTimeout=15"
+          } >> "$GITHUB_ENV"
+
+      - name: Allocate unique run paths
+        id: paths
+        run: |
+          set -euo pipefail
+          RUN_ID="$(date -u +%Y%m%dT%H%M%SZ)-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+          REPORT_OUT_DIR="/tmp/prod-db-recovery-002-${RUN_ID}"
+          REMOTE_SCRIPT="/tmp/production-readonly-diagnostics-remote-${RUN_ID}.sh"
+          {
+            echo "RUN_ID=${RUN_ID}"
+            echo "REPORT_OUT_DIR=${REPORT_OUT_DIR}"
+            echo "REMOTE_SCRIPT=${REMOTE_SCRIPT}"
+          } >> "$GITHUB_OUTPUT"
+          {
+            echo "RUN_ID=${RUN_ID}"
+            echo "REPORT_OUT_DIR=${REPORT_OUT_DIR}"
+            echo "REMOTE_SCRIPT=${REMOTE_SCRIPT}"
           } >> "$GITHUB_ENV"
 
       - name: Verify ECS identity (hostname only)
@@ -133,31 +152,41 @@ jobs:
           # shellcheck disable=SC2086
           ssh $SSH_OPTS "${ECS_USER}@${ECS_HOST}" 'hostname; date -u; test -d /root/mateyou && echo MATEYOU_ROOT_OK'
 
-      - name: Stage remote diagnostics script under /tmp
+      - name: Stage remote diagnostics script under /tmp (unique per run)
         env:
           ECS_HOST: ${{ secrets.ECS_HOST }}
           ECS_USER: ${{ secrets.ECS_USER }}
+          REMOTE_SCRIPT: ${{ steps.paths.outputs.REMOTE_SCRIPT }}
         run: |
           set -euo pipefail
+          test -n "${REMOTE_SCRIPT}"
+          if [[ ! "$REMOTE_SCRIPT" =~ ^/tmp/production-readonly-diagnostics-remote-[A-Za-z0-9._-]+\.sh$ ]]; then
+            echo "ERROR: unexpected REMOTE_SCRIPT path"
+            exit 1
+          fi
           chmod +x scripts/ci/production-readonly-diagnostics-remote.sh
           # shellcheck disable=SC2086
           scp $SSH_OPTS scripts/ci/production-readonly-diagnostics-remote.sh \
-            "${ECS_USER}@${ECS_HOST}:/tmp/production-readonly-diagnostics-remote.sh"
+            "${ECS_USER}@${ECS_HOST}:${REMOTE_SCRIPT}"
           # shellcheck disable=SC2086
-          ssh $SSH_OPTS "${ECS_USER}@${ECS_HOST}" 'chmod 700 /tmp/production-readonly-diagnostics-remote.sh'
+          ssh $SSH_OPTS "${ECS_USER}@${ECS_HOST}" "chmod 700 '${REMOTE_SCRIPT}'"
 
       - name: Run O-1 backup + O-3 inventory (remote)
         id: remote
+        continue-on-error: true
         env:
           ECS_HOST: ${{ secrets.ECS_HOST }}
           ECS_USER: ${{ secrets.ECS_USER }}
           APPROVED_KEEP_DIRS: ${{ steps.keep.outputs.approved_keep_dirs }}
           TARGET_MIGRATION: '20261002000000_syndication_jobs'
+          RUN_ID: ${{ steps.paths.outputs.RUN_ID }}
+          REPORT_OUT_DIR: ${{ steps.paths.outputs.REPORT_OUT_DIR }}
+          REMOTE_SCRIPT: ${{ steps.paths.outputs.REMOTE_SCRIPT }}
         run: |
           set -euo pipefail
-          # Unique per-run remote report directory (never reuse/wipe a shared path)
-          RUN_ID="$(date -u +%Y%m%dT%H%M%SZ)-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
-          REPORT_OUT_DIR="/tmp/prod-db-recovery-002-${RUN_ID}"
+          test -n "${RUN_ID}"
+          test -n "${REPORT_OUT_DIR}"
+          test -n "${REMOTE_SCRIPT}"
           echo "RUN_ID=${RUN_ID}" >> "$GITHUB_OUTPUT"
           echo "REPORT_OUT_DIR=${REPORT_OUT_DIR}" >> "$GITHUB_OUTPUT"
           # Pass keep-set via SSH remote env assignment from Actions env (validated keep dirs from git).
@@ -167,15 +196,16 @@ jobs:
                 TARGET_MIGRATION="$TARGET_MIGRATION" \
                 RUN_ID="$RUN_ID" \
                 REPORT_OUT_DIR="$REPORT_OUT_DIR" \
-                /tmp/production-readonly-diagnostics-remote.sh \
+                "$REMOTE_SCRIPT" \
             | tee "${RUNNER_TEMP}/remote-diagnostics.log" \
             | sed -E 's#postgresql://[^[:space:]]+#postgresql://***REDACTED***#gi'
 
       - name: Fetch sanitized Markdown report only
+        if: always() && steps.paths.outputs.REPORT_OUT_DIR != ''
         env:
           ECS_HOST: ${{ secrets.ECS_HOST }}
           ECS_USER: ${{ secrets.ECS_USER }}
-          REPORT_OUT_DIR: ${{ steps.remote.outputs.REPORT_OUT_DIR }}
+          REPORT_OUT_DIR: ${{ steps.paths.outputs.REPORT_OUT_DIR }}
         run: |
           set -euo pipefail
           test -n "${REPORT_OUT_DIR}"
@@ -208,6 +238,7 @@ jobs:
           ls -la diagnostics-out
 
       - name: Upload GitHub Artifact (sanitized Markdown only)
+        if: always() && hashFiles('diagnostics-out/PROD-DB-RECOVERY-002-DIAGNOSTICS-REPORT.md') != ''
         uses: actions/upload-artifact@v4
         with:
           name: prod-db-recovery-002-diagnostics
@@ -215,14 +246,31 @@ jobs:
           if-no-files-found: error
           retention-days: 14
 
-      - name: Cleanup remote temp script and local key
+      - name: Cleanup this-run remote temp script and local key
         if: always()
         env:
           ECS_HOST: ${{ secrets.ECS_HOST }}
           ECS_USER: ${{ secrets.ECS_USER }}
+          REMOTE_SCRIPT: ${{ steps.paths.outputs.REMOTE_SCRIPT }}
         run: |
           set -euo pipefail
-          # shellcheck disable=SC2086
-          ssh $SSH_OPTS "${ECS_USER}@${ECS_HOST}" \
-            'rm -f /tmp/production-readonly-diagnostics-remote.sh' || true
+          # Delete only this run's unique remote script path (never a shared name / app tree).
+          if [ -n "${REMOTE_SCRIPT:-}" ] \
+            && [[ "$REMOTE_SCRIPT" =~ ^/tmp/production-readonly-diagnostics-remote-[A-Za-z0-9._-]+\.sh$ ]]; then
+            # shellcheck disable=SC2086
+            ssh $SSH_OPTS "${ECS_USER}@${ECS_HOST}" "rm -f -- '${REMOTE_SCRIPT}'" || true
+          else
+            echo "WARN: skipping remote script cleanup (REMOTE_SCRIPT unset or unexpected)"
+          fi
           rm -f "${RUNNER_TEMP}/ecs_diag_key" || true
+
+      - name: Fail job if remote diagnostics reported failure
+        if: always()
+        run: |
+          set -euo pipefail
+          # continue-on-error above lets us fetch the report; job must still fail on overall FAILED.
+          if [ "${{ steps.remote.outcome }}" != "success" ]; then
+            echo "Remote diagnostics step outcome=${{ steps.remote.outcome }} — failing job"
+            exit 1
+          fi
+          echo "Remote diagnostics succeeded"

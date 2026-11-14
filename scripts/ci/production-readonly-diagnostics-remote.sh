@@ -241,6 +241,10 @@ DUMP_RC=$?
 set -e
 if [ "$DUMP_RC" -ne 0 ] || [ ! -s "$BK/mateyou_prod.dump" ]; then
   fail_section O1_BACKUP "pg_dump failed rc=$DUMP_RC"
+  O1_BACKUP_STATUS="O1_BACKUP_FAILED"
+  echo "O1_BACKUP_FAILED=yes"
+  # Do not run O-1 SQL checks that follow a successful backup path.
+  O1_SQL_STATUS="NOT_EXECUTED"
 else
   chmod 600 "$BK/mateyou_prod.dump"
   DUMP_BYTES="$(wc -c < "$BK/mateyou_prod.dump" | tr -d ' ')"
@@ -260,11 +264,14 @@ else
     O1_BACKUP_STATUS="OK"
   else
     fail_section O1_BACKUP "pg_restore -l failed rc=$TOC_RC"
+    O1_BACKUP_STATUS="O1_BACKUP_FAILED"
+    echo "O1_BACKUP_FAILED=yes"
+    O1_SQL_STATUS="NOT_EXECUTED"
   fi
 fi
 
-# ---------- O-1 SQL (readonly) ----------
-if [ "$O1_BACKUP_STATUS" = "OK" ] || [ -n "${DATABASE_URL:-}" ]; then
+# ---------- O-1 SQL (readonly) — only after successful backup ----------
+if [ "$O1_BACKUP_STATUS" = "OK" ]; then
   O1_SQL_STATUS="RUNNING"
   set +e
   psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -c "\copy (SELECT id, checksum, finished_at, migration_name, logs, rolled_back_at, started_at, applied_steps_count FROM _prisma_migrations ORDER BY started_at) TO STDOUT WITH CSV HEADER" > "$BK/_prisma_migrations.csv"

@@ -51,6 +51,14 @@ After an approved dispatch, **replace** live sections with the Artifact Markdown
 | Disk protection | Before `pg_dump`: `pg_database_size` + `df` avail; require `2×DB + 1GiB`; stop if insufficient; record in report |
 | Temp dir cleanup | Unique `/tmp/prod-db-recovery-002-<runid>/`; refuse non-empty provided dir; **no** blanket `rm` of report dir contents |
 
+### Round-4 review fixes
+
+| Issue | Fix |
+|---|---|
+| SSH host match | `ssh-keygen -F "$ECS_HOST" -f known_hosts` required; no “any hashed line” shortcut; `StrictHostKeyChecking=yes` kept |
+| Remote script cleanup | Unique `/tmp/production-readonly-diagnostics-remote-<runid>.sh`; cleanup deletes **only** that path |
+| Backup failure flow | `pg_dump`/`pg_restore -l` failure → `O1_BACKUP_FAILED`; O-1 SQL = `NOT_EXECUTED`; O-3 still runs; overall `FAILED`; job fails after fetching report |
+
 ### Owner action before first run
 
 Add production environment secret:

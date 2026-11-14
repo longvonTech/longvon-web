@@ -1,0 +1,158 @@
+name: Production readonly diagnostics
+
+# LONGVON-PROD-RECOVERY-002
+# Manual-only ECS readonly diagnostics (O-1 backup + O-3 migration inventory).
+# Does NOT call deploy.yml or scripts/deploy.sh.
+# Does NOT run migrate resolve/deploy, DDL/DML, mv/rm, PM2 restart, or publish.
+
+on:
+  workflow_dispatch:
+    inputs:
+      confirm_readonly:
+        description: 'Type YES to confirm readonly diagnostics only (no deploy / no migrate resolve)'
+        required: true
+        type: string
+      approved_sha:
+        description: 'Approved content SHA for migration keep-set compare'
+        required: true
+        type: string
+        default: '6762bb656c7d603669ef46a8a8ad6eaf33da439a'
+
+concurrency:
+  group: production-readonly-diagnostics
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  diagnostics:
+    name: ECS readonly O-1 + O-3
+    runs-on: ubuntu-latest
+    environment: production
+    if: github.event.inputs.confirm_readonly == 'YES'
+    steps:
+      - name: Checkout (for remote script + approved migration list)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Resolve approved migration keep-set from git SHA
+        id: keep
+        run: |
+          set -euo pipefail
+          SHA="${{ github.event.inputs.approved_sha }}"
+          git cat-file -e "${SHA}^{commit}"
+          mapfile -t dirs < <(git ls-tree -d --name-only "${SHA}:packages/database/prisma/migrations" | xargs -n1 basename | sort)
+          KEEP="$(printf '%s ' "${dirs[@]}")"
+          echo "approved_keep_dirs=${KEEP% }" >> "$GITHUB_OUTPUT"
+          echo "Approved keep dirs: ${KEEP% }"
+
+      - name: Prepare SSH key and known_hosts
+        env:
+          ECS_HOST: ${{ secrets.ECS_HOST }}
+          ECS_USER: ${{ secrets.ECS_USER }}
+          ECS_SSH_KEY_B64: ${{ secrets.ECS_SSH_KEY_B64 }}
+        run: |
+          set -euo pipefail
+          # Do not use set -x
+          test -n "${ECS_HOST}"
+          test -n "${ECS_USER}"
+          test -n "${ECS_SSH_KEY_B64}"
+          KEY_FILE="${RUNNER_TEMP}/ecs_diag_key"
+          echo "$ECS_SSH_KEY_B64" | base64 -d > "$KEY_FILE"
+          chmod 600 "$KEY_FILE"
+          # Validate key parses (prints public key only to /dev/null)
+          ssh-keygen -y -f "$KEY_FILE" > /dev/null
+          mkdir -p "$HOME/.ssh"
+          chmod 700 "$HOME/.ssh"
+          # Host key verification enabled: populate known_hosts then require StrictHostKeyChecking=yes
+          ssh-keyscan -H -T 10 "$ECS_HOST" >> "$HOME/.ssh/known_hosts"
+          chmod 600 "$HOME/.ssh/known_hosts"
+          echo "KEY_FILE=$KEY_FILE" >> "$GITHUB_ENV"
+          echo "SSH_OPTS=-i $KEY_FILE -o BatchMode=yes -o StrictHostKeyChecking=yes -o ConnectTimeout=15" >> "$GITHUB_ENV"
+
+      - name: Verify ECS identity (hostname only)
+        env:
+          ECS_HOST: ${{ secrets.ECS_HOST }}
+          ECS_USER: ${{ secrets.ECS_USER }}
+        run: |
+          set -euo pipefail
+          # shellcheck disable=SC2086
+          ssh $SSH_OPTS "${ECS_USER}@${ECS_HOST}" 'hostname; date -u; test -d /root/mateyou && echo MATEYOU_ROOT_OK'
+
+      - name: Upload remote diagnostics script to /tmp on ECS
+        env:
+          ECS_HOST: ${{ secrets.ECS_HOST }}
+          ECS_USER: ${{ secrets.ECS_USER }}
+        run: |
+          set -euo pipefail
+          chmod +x scripts/ci/production-readonly-diagnostics-remote.sh
+          # shellcheck disable=SC2086
+          scp $SSH_OPTS scripts/ci/production-readonly-diagnostics-remote.sh \
+            "${ECS_USER}@${ECS_HOST}:/tmp/production-readonly-diagnostics-remote.sh"
+          # shellcheck disable=SC2086
+          ssh $SSH_OPTS "${ECS_USER}@${ECS_HOST}" 'chmod 700 /tmp/production-readonly-diagnostics-remote.sh'
+
+      - name: Run O-1 backup + O-3 inventory (remote)
+        env:
+          ECS_HOST: ${{ secrets.ECS_HOST }}
+          ECS_USER: ${{ secrets.ECS_USER }}
+        run: |
+          set -euo pipefail
+          KEEP='${{ steps.keep.outputs.approved_keep_dirs }}'
+          # shellcheck disable=SC2086
+          ssh $SSH_OPTS "${ECS_USER}@${ECS_HOST}" \
+            "export APPROVED_KEEP_DIRS='$KEEP'; export TARGET_MIGRATION='20261002000000_syndication_jobs'; export REPORT_OUT_DIR='/tmp/prod-db-recovery-002'; /tmp/production-readonly-diagnostics-remote.sh" \
+            | tee "${RUNNER_TEMP}/remote-diagnostics.log" \
+            | sed -E 's#postgresql://[^[:space:]]+#postgresql://***REDACTED***#gi'
+
+      - name: Fetch sanitized report (no database dump)
+        env:
+          ECS_HOST: ${{ secrets.ECS_HOST }}
+          ECS_USER: ${{ secrets.ECS_USER }}
+        run: |
+          set -euo pipefail
+          mkdir -p diagnostics-out
+          # shellcheck disable=SC2086
+          scp $SSH_OPTS \
+            "${ECS_USER}@${ECS_HOST}:/tmp/prod-db-recovery-002/PROD-DB-RECOVERY-002-DIAGNOSTICS-REPORT.md" \
+            diagnostics-out/ || {
+              echo "ERROR: sanitized report missing on ECS /tmp"
+              exit 1
+            }
+          # Optional supporting redacted snippets (still no dump)
+          # shellcheck disable=SC2086
+          scp $SSH_OPTS \
+            "${ECS_USER}@${ECS_HOST}:/tmp/prod-db-recovery-002/mateyou_prod.dump.sha256" \
+            "${ECS_USER}@${ECS_HOST}:/tmp/prod-db-recovery-002/migrations_inventory.txt" \
+            "${ECS_USER}@${ECS_HOST}:/tmp/prod-db-recovery-002/structure_checks.txt" \
+            "${ECS_USER}@${ECS_HOST}:/tmp/prod-db-recovery-002/target_migration_row.txt" \
+            "${ECS_USER}@${ECS_HOST}:/tmp/prod-db-recovery-002/dependency_scan.txt" \
+            diagnostics-out/ 2>/dev/null || true
+          # Safety: refuse if a dump slipped into the fetch dir
+          if find diagnostics-out -type f -name '*.dump' | grep -q .; then
+            echo "ERROR: dump file must not leave ECS"
+            exit 1
+          fi
+          ls -la diagnostics-out
+
+      - name: Upload GitHub Artifact (sanitized only)
+        uses: actions/upload-artifact@v4
+        with:
+          name: prod-db-recovery-002-diagnostics
+          path: diagnostics-out/
+          if-no-files-found: error
+          retention-days: 14
+
+      - name: Cleanup remote temp script
+        if: always()
+        env:
+          ECS_HOST: ${{ secrets.ECS_HOST }}
+          ECS_USER: ${{ secrets.ECS_USER }}
+        run: |
+          set -euo pipefail
+          # shellcheck disable=SC2086
+          ssh $SSH_OPTS "${ECS_USER}@${ECS_HOST}" \
+            'rm -f /tmp/production-readonly-diagnostics-remote.sh' || true
+          rm -f "${RUNNER_TEMP}/ecs_diag_key" || true

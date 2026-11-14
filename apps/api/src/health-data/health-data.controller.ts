@@ -9,7 +9,7 @@ import { JwtAuthGuard } from '../identity/guards/jwt-auth.guard';
 import { CurrentUser } from '../identity/decorators/current-user.decorator';
 import { AppJwtPayload } from '../identity/jwt-payload.types';
 import { ChannelRangeQueryDto, OsaQueryDto, SleepQueryDto } from './dto/channel-query.dto';
-import { ChannelResource, LongvonChannelClient } from './longvon-channel.client';
+import { LongvonChannelClient } from './longvon-channel.client';
 
 @Controller('health-data/channel')
 @UseGuards(JwtAuthGuard)

@@ -28,7 +28,8 @@ for expected in \
 done
 
 # Confirm env assignments precede a separate executable path in the final command.
-[[ "$command" == env\ *\ "$script" ]] || { echo "remote script path not separated from env assignments" >&2; exit 1; }
+suffix="'$script'"
+[[ "$command" == env\ * && "${command: -${#suffix}}" == "$suffix" ]] || { echo "remote script path not separated from env assignments" >&2; exit 1; }
 [[ "$command" != *"eval"* ]] || { echo "unexpected eval in remote command" >&2; exit 1; }
 
 # Quotes, whitespace, semicolon, dollar expansion, and command substitution remain literal.

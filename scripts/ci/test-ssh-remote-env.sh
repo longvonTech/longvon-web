@@ -53,6 +53,6 @@ for bad in 'bad;run' 'bad run' $'bad\nrun'; do
 done
 if validate_remote_args "$keep" "$target" "$run" "/tmp/foreign" "$script" >/dev/null 2>&1; then echo "illegal REPORT_OUT_DIR accepted" >&2; exit 1; fi
 if validate_remote_args "$keep" "$target" "$run" "$report" "/tmp/x;touch-pwned" >/dev/null 2>&1; then echo "illegal REMOTE_SCRIPT accepted" >&2; exit 1; fi
-if validate_remote_args "$keep" "$target" "$run" "$report" "$script" $'bad\nkeep' >/dev/null 2>&1; then echo "illegal keep-set accepted" >&2; exit 1; fi
+if validate_remote_args $'bad\nkeep' "$target" "$run" "$report" "$script" >/dev/null 2>&1; then echo "illegal keep-set accepted" >&2; exit 1; fi
 
 echo "SSH remote environment quoting tests passed"

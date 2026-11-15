@@ -197,8 +197,8 @@ jobs:
           # Quote each remote environment assignment as one POSIX shell word before SSH.
           # shellcheck disable=SC2086
           REMOTE_COMMAND=$(build_remote_env_command "$APPROVED_KEEP_DIRS" "$TARGET_MIGRATION" "$RUN_ID" "$REPORT_OUT_DIR" "$REMOTE_SCRIPT")
-          ssh $SSH_OPTS "${ECS_USER}@${ECS_HOST}" "$REMOTE_COMMAND" \\
-            | tee "${RUNNER_TEMP}/remote-diagnostics.log" \\
+          ssh $SSH_OPTS "${ECS_USER}@${ECS_HOST}" "$REMOTE_COMMAND" \
+            | tee "${RUNNER_TEMP}/remote-diagnostics.log" \
             | sed -E 's#postgresql://[^[:space:]]+#postgresql://***REDACTED***#gi'
 
       - name: Fetch sanitized Markdown report only

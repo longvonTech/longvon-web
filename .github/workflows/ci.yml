@@ -58,6 +58,7 @@ jobs:
 
       - name: Test SSH remote environment quoting
         run: |
+          bash -n scripts/ci/production-readonly-diagnostics-remote.sh
           bash -n scripts/ci/ssh-remote-env.sh
           bash -n scripts/ci/test-ssh-remote-env.sh
           bash scripts/ci/test-ssh-remote-env.sh

@@ -185,6 +185,8 @@ jobs:
           REMOTE_SCRIPT: ${{ steps.paths.outputs.REMOTE_SCRIPT }}
         run: |
           set -euo pipefail
+          source scripts/ci/ssh-remote-env.sh
+          validate_remote_args "$APPROVED_KEEP_DIRS" "$TARGET_MIGRATION" "$RUN_ID" "$REPORT_OUT_DIR" "$REMOTE_SCRIPT"
           test -n "${RUN_ID}"
           test -n "${REPORT_OUT_DIR}"
           test -n "${REMOTE_SCRIPT}"
@@ -192,17 +194,11 @@ jobs:
           echo "REPORT_OUT_DIR=${REPORT_OUT_DIR}" >> "$GITHUB_OUTPUT"
           echo "REMOTE_SCRIPT=${REMOTE_SCRIPT}" >> "$GITHUB_OUTPUT"
           echo "ECS temp script retained (no auto-delete): ${REMOTE_SCRIPT}"
-          # Pass keep-set via SSH remote env assignment from Actions env (validated keep dirs from git).
-          # REMOTE_SCRIPT env is recorded in the sanitized report for owner-approved cleanup later.
+          # Quote each remote environment assignment as one POSIX shell word before SSH.
           # shellcheck disable=SC2086
-          ssh $SSH_OPTS "${ECS_USER}@${ECS_HOST}" \
-            env APPROVED_KEEP_DIRS="$APPROVED_KEEP_DIRS" \
-                TARGET_MIGRATION="$TARGET_MIGRATION" \
-                RUN_ID="$RUN_ID" \
-                REPORT_OUT_DIR="$REPORT_OUT_DIR" \
-                REMOTE_SCRIPT="$REMOTE_SCRIPT" \
-                "$REMOTE_SCRIPT" \
-            | tee "${RUNNER_TEMP}/remote-diagnostics.log" \
+          REMOTE_COMMAND=$(build_remote_env_command "$APPROVED_KEEP_DIRS" "$TARGET_MIGRATION" "$RUN_ID" "$REPORT_OUT_DIR" "$REMOTE_SCRIPT")
+          ssh $SSH_OPTS "${ECS_USER}@${ECS_HOST}" "$REMOTE_COMMAND" \\
+            | tee "${RUNNER_TEMP}/remote-diagnostics.log" \\
             | sed -E 's#postgresql://[^[:space:]]+#postgresql://***REDACTED***#gi'
 
       - name: Fetch sanitized Markdown report only

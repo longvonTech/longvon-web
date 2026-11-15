@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # Quote arguments for the remote POSIX login shell used by OpenSSH.
+quote_remote_arg() {
   local value=$1
   value=${value//\'/\'\\\'\'}
   printf "'%s'" "$value"

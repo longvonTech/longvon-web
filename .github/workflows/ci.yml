@@ -56,7 +56,11 @@ jobs:
       - name: Build
         run: npm run build
 
-      # Sprint 1后端/前端均尚无单元测试用例（业务逻辑本身就是后续Sprint才实现），
-      # 测试步骤先占位，待有实际测试用例后取消跳过
-      - name: Test (占位，暂无测试用例)
-        run: echo "Sprint 1暂无测试用例，待业务模块实现后补充"
+      - name: Test SSH remote environment quoting
+        run: |
+          bash -n scripts/ci/ssh-remote-env.sh
+          bash -n scripts/ci/test-ssh-remote-env.sh
+          bash scripts/ci/test-ssh-remote-env.sh
+
+      - name: Test (占位，暂无业务测试)
+        run: echo "暂无业务单元测试用例"

@@ -28,8 +28,14 @@ for expected in \
 done
 
 # Confirm env assignments precede a separate executable path in the final command.
-suffix="'$script'"
-[[ "$command" == env\ * && "${command: -${#suffix}}" == "$suffix" ]] || { echo "remote script path not separated from env assignments" >&2; exit 1; }
+python3 - "$command" "$script" <<'PY'
+import shlex, sys
+argv = shlex.split(sys.argv[1], posix=True)
+expected = ["APPROVED_KEEP_DIRS", "TARGET_MIGRATION", "RUN_ID", "REPORT_OUT_DIR", "REMOTE_SCRIPT"]
+assert argv[0] == "env", argv
+assert [part.split("=", 1)[0] for part in argv[1:-1]] == expected, argv
+assert argv[-1] == sys.argv[2], argv
+PY
 [[ "$command" != *"eval"* ]] || { echo "unexpected eval in remote command" >&2; exit 1; }
 
 # Quotes, whitespace, semicolon, dollar expansion, and command substitution remain literal.

@@ -1,0 +1,44 @@
+name: RFQ contract regression
+on:
+  pull_request:
+    paths:
+      - 'apps/web/**'
+      - 'packages/**'
+      - 'scripts/rfq/**'
+      - 'package*.json'
+      - '.github/workflows/rfq-regression.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  contract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - run: node --test scripts/rfq/client-contract.test.cjs scripts/rfq/attribution-contract.test.cjs scripts/rfq/release-guard.test.cjs scripts/rfq/release/static-transaction.test.cjs scripts/rfq/release/activation-transaction.test.cjs
+# Production-equivalent integration requires the six approved private local
+# snapshot files. It runs via npm run test:rfq locally; snapshots are never
+# uploaded to this public repository and CI must not claim to have run that suite.
+
+  linux-web:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - run: node scripts/rfq/build-web-candidate.cjs
+      - run: RFQ_LINUX_NATIVE_DEPS="$PWD" RFQ_LINUX_WEB_OUTPUT="$RUNNER_TEMP/rfq-web" node scripts/rfq/package-linux-web.cjs
+      - run: RFQ_LINUX_WEB_ARTIFACT="$RUNNER_TEMP/rfq-web" node --test scripts/rfq/release/platform.test.cjs
+      - run: RFQ_LINUX_WEB_ARTIFACT="$RUNNER_TEMP/rfq-web" node scripts/rfq/release/standalone-linux-smoke.cjs
+# Private production-runtime and real-management integration run locally in the
+# isolated VM; this public job never receives or uploads the approved eight files.

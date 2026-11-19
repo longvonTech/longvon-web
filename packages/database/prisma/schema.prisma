@@ -11,6 +11,7 @@
 
 generator client {
   provider        = "prisma-client-js"
+  binaryTargets   = ["native", "debian-openssl-3.0.x"]
   previewFeatures = ["multiSchema"]
   output          = "../generated/client"
 }
@@ -187,6 +188,14 @@ model Lead {
   utmSource           String?   @map("utm_source")
   utmMedium           String?   @map("utm_medium")
   utmCampaign         String?   @map("utm_campaign")
+  // Existing production columns, verified read-only on 2026-11-17.
+  // Client-model alignment only: no migration is required or authorized here.
+  referrer            String?
+  landingPage         String?   @map("landing_page")
+  attribution         Json?
+  commercialStage     String    @default("NEW_INQUIRY") @map("commercial_stage")
+  commercialGrade     String?   @map("commercial_grade")
+  commercialMeta      Json?     @map("commercial_meta")
   // status 合法取值: new | contacted | qualified | converted | lost
   status              String    @default("new")
   assignedTo          String?   @map("assigned_to") @db.Uuid

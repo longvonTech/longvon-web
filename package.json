@@ -6,7 +6,8 @@
   "workspaces": [
     "apps/web",
     "apps/api",
-    "packages/database"
+    "packages/database",
+    "packages/lead-contract"
   ],
   "scripts": {
     "dev:web": "npm run dev --workspace=apps/web",
@@ -18,12 +19,17 @@
     "db:migrate:dev": "npm run migrate:dev --workspace=packages/database",
     "db:migrate:deploy": "npm run migrate:deploy --workspace=packages/database",
     "db:seed": "npm run seed --workspace=packages/database",
-    "db:studio": "npm run studio --workspace=packages/database"
+    "db:studio": "npm run studio --workspace=packages/database",
+    "test:rfq": "node --test scripts/rfq/client-contract.test.cjs scripts/rfq/attribution-contract.test.cjs scripts/rfq/release-guard.test.cjs scripts/rfq/release/static-transaction.test.cjs scripts/rfq/release/activation-transaction.test.cjs && npm run db:generate && npm run build --workspace=apps/api && node scripts/rfq/build-runtime-hotfix.cjs && node --test scripts/rfq/runtime-preservation.test.cjs && node scripts/rfq/regression.cjs"
   },
   "engines": {
     "node": ">=20.0.0",
     "npm": ">=10.0.0"
   },
   "packageManager": "npm@10.9.7",
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "embedded-postgres": "18.6.0-beta.19",
+    "playwright": "1.65.1"
+  }
 }

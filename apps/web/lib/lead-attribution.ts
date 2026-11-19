@@ -75,6 +75,8 @@ export type LeadAttributionPayload = {
   latestUtmSource?: string;
   latestUtmMedium?: string;
   latestUtmCampaign?: string;
+  latestUtmContent?: string;
+  latestUtmTerm?: string;
   latestVisitAt?: string;
   attributionChannel?: string;
   attributionConfidence?: 'HIGH' | 'MEDIUM' | 'LOW' | 'UNKNOWN';
@@ -282,7 +284,7 @@ export function captureLeadAttribution(currentPath: string): void {
     visitAt: nowTouch.visitAt,
     aiSource: nowTouch.aiSource || existing?.latest?.aiSource,
   };
-  if (nowTouch.utmSource || nowTouch.utmMedium || nowTouch.utmCampaign) {
+  if (nowTouch.utmSource || nowTouch.utmMedium || nowTouch.utmCampaign || nowTouch.utmContent || nowTouch.utmTerm) {
     latest.utmSource = nowTouch.utmSource;
     latest.utmMedium = nowTouch.utmMedium;
     latest.utmCampaign = nowTouch.utmCampaign;
@@ -333,6 +335,8 @@ export function readLeadAttribution(currentPath: string): LeadAttributionPayload
     latestUtmSource: latest?.utmSource,
     latestUtmMedium: latest?.utmMedium,
     latestUtmCampaign: latest?.utmCampaign,
+    latestUtmContent: latest?.utmContent,
+    latestUtmTerm: latest?.utmTerm,
     latestVisitAt: latest?.visitAt,
     attributionChannel: channel,
     attributionConfidence: confidence,

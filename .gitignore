@@ -19,3 +19,7 @@ packages/database/generated/
 apps/web/.next/
 apps/api/dist/
 packages/database/generated/
+
+# Isolated RFQ regression evidence
+.rfq-evidence/
+*.tsbuildinfo

@@ -1,99 +1,113 @@
 name: Deploy to ECS
 
-# CI 在 main 分支 push 且通过后自动部署；也可在 Actions 页手动触发。
-# 代码在 GitHub Actions 拉取后 rsync 到 ECS，避免 ECS 直连 GitHub 的 TLS 问题。
-
 on:
   workflow_run:
     workflows: [CI]
     types: [completed]
     branches: [main]
   workflow_dispatch:
+    inputs:
+      phase:
+        type: choice
+        options: [bootstrap-rfq, geo]
+        default: geo
+        required: true
+      perform_deploy:
+        description: 'Execute production deploy only after explicit owner release approval; false runs build verification only'
+        type: boolean
+        default: false
+        required: true
+      approval:
+        description: 'Enter LONGVON-P0-RECOVERY-001 after owner approves the concrete recovery release'
+        required: true
+        type: string
 
+permissions:
+  contents: read
 concurrency:
   group: deploy-production
   cancel-in-progress: false
-
 jobs:
-  deploy:
-    name: Deploy to production ECS
-    runs-on: ubuntu-latest
-    environment: production
-    if: >
-      github.event_name == 'workflow_dispatch' ||
-      (
-        github.event.workflow_run.conclusion == 'success' &&
-        github.event.workflow_run.event == 'push' &&
-        github.event.workflow_run.head_branch == 'main'
-      )
-
+  build:
+    if: >-
+      (github.event_name == 'workflow_dispatch' && (inputs.approval == 'LONGVON-P0-RECOVERY-001' || inputs.approval == 'VERIFY_ONLY')) ||
+      (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.event == 'push' && github.event.workflow_run.head_branch == 'main')
+    runs-on: ubuntu-26.04
+    timeout-minutes: 25
+    outputs:
+      phase: ${{ steps.phase.outputs.value }}
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           ref: ${{ github.event.workflow_run.head_sha || github.sha }}
-
-      - name: Sync code to ECS and deploy
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20.20.2'
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - name: Contract and failure-recovery regression
+        run: node --test scripts/rfq/client-contract.test.cjs scripts/rfq/attribution-contract.test.cjs scripts/rfq/release-guard.test.cjs scripts/rfq/release/static-transaction.test.cjs scripts/rfq/release/activation-transaction.test.cjs
+      - name: Generate isolated Linux Prisma client
+        run: npm run db:generate
+      - id: phase
+        env:
+          REQUESTED_PHASE: ${{ inputs.phase }}
+        run: |
+          phase="${REQUESTED_PHASE:-geo}"
+          case "$phase" in bootstrap-rfq|geo) ;; *) exit 1;; esac
+          echo "value=$phase" >> "$GITHUB_OUTPUT"
+          echo "LONGVON_RELEASE_PHASE=$phase" >> "$GITHUB_ENV"
+          echo "LONGVON_SOURCE_SHA=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
+          if [ "$phase" = geo ]; then echo 'RFQ_INCLUDE_APPROVED_GEO=1' >> "$GITHUB_ENV"; fi
+      - name: Build approved Web routes
+        run: node scripts/rfq/build-web-candidate.cjs
+      - name: Package and execute Linux standalone
+        run: |
+          RFQ_LINUX_NATIVE_DEPS="$PWD" RFQ_LINUX_WEB_OUTPUT="$RUNNER_TEMP/web-linux" node scripts/rfq/package-linux-web.cjs
+          RFQ_LINUX_WEB_ARTIFACT="$RUNNER_TEMP/web-linux" node scripts/rfq/release/standalone-linux-smoke.cjs
+          LONGVON_WEB_PACKAGE="$RUNNER_TEMP/web-linux" LONGVON_BUNDLE_OUTPUT="$RUNNER_TEMP/recovery-bundle" node scripts/recovery/build-bundle.cjs
+          python3 scripts/rfq/release/archive.py --source "$RUNNER_TEMP/recovery-bundle" --output "$RUNNER_TEMP/longvon-recovery.tar.gz"
+          cd "$RUNNER_TEMP"
+          sha256sum longvon-recovery.tar.gz > longvon-recovery.sha256
+      - uses: actions/upload-artifact@v4
+        with:
+          name: longvon-recovery
+          path: |
+            ${{ runner.temp }}/longvon-recovery.tar.gz
+            ${{ runner.temp }}/longvon-recovery.sha256
+          retention-days: 14
+  deploy:
+    if: github.event_name != 'workflow_dispatch' || (inputs.perform_deploy && inputs.approval == 'LONGVON-P0-RECOVERY-001')
+    needs: build
+    runs-on: ubuntu-26.04
+    environment: production
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+      - uses: actions/download-artifact@v4
+        with:
+          name: longvon-recovery
+          path: ${{ runner.temp }}/release
+      - name: Verify artifact and publish to ECS
         env:
           ECS_HOST: ${{ secrets.ECS_HOST }}
           ECS_USER: ${{ secrets.ECS_USER }}
           ECS_SSH_KEY_B64: ${{ secrets.ECS_SSH_KEY_B64 }}
         run: |
           set -euo pipefail
-          KEY_FILE="${RUNNER_TEMP}/ecs_deploy_key"
-          echo "$ECS_SSH_KEY_B64" | base64 -d > "$KEY_FILE"
+          cd "$RUNNER_TEMP/release"
+          sha256sum -c longvon-recovery.sha256
+          KEY_FILE="$RUNNER_TEMP/ecs_deploy_key"
+          trap 'rm -f "$KEY_FILE"' EXIT
+          printf '%s' "$ECS_SSH_KEY_B64" | base64 -d > "$KEY_FILE"
           chmod 600 "$KEY_FILE"
           ssh-keygen -y -f "$KEY_FILE" > /dev/null
-          SSH_OPTS=(-i "$KEY_FILE" -o StrictHostKeyChecking=accept-new)
-          mkdir -p "$HOME/.ssh"
-          ssh-keyscan -H "$ECS_HOST" >> "$HOME/.ssh/known_hosts" 2>/dev/null || true
-
-          RSYNC_SSH="ssh -i ${KEY_FILE} -o StrictHostKeyChecking=accept-new"
-          echo "==> Rsync source to ECS (skip git pull on server)"
-          rsync -az \
-            --exclude node_modules \
-            --exclude apps/web/.next \
-            --exclude apps/api/dist \
-            --exclude .git \
-            --exclude .env.production \
-            --exclude _orphans \
-            --exclude _rollback \
-            -e "$RSYNC_SSH" \
-            ./ "${ECS_USER}@${ECS_HOST}:/root/mateyou/"
-
-          # Keep API src identical to repo (remove ECS-only orphans that break nest build)
-          echo "==> Reconcile apps/api/src with --delete"
-          rsync -az --delete \
-            -e "$RSYNC_SSH" \
-            ./apps/api/src/ "${ECS_USER}@${ECS_HOST}:/root/mateyou/apps/api/src/"
-
-          echo "==> Run deploy on ECS"
-          ssh "${SSH_OPTS[@]}" "${ECS_USER}@${ECS_HOST}" << 'ENDSSH'
-          set -e
-          cd /root/mateyou
-          DEPLOY_SKIP_GIT_PULL=1 ./scripts/deploy.sh
-          echo "==> Health check (wait for Next.js)"
-          sleep 10
-          wait_for() {
-            local url="$1"
-            local label="$2"
-            for i in $(seq 1 24); do
-              if curl -sf -o /dev/null "$url"; then
-                echo "OK $label"
-                return 0
-              fi
-              echo "waiting $label ($i/24)..."
-              sleep 5
-            done
-            echo "WARN $label not ready (deploy may still have succeeded)"
-            pm2 status || true
-            pm2 logs mateyou-web --lines 20 --nostream || true
-            return 0
-          }
-          wait_for http://localhost:3000/ "home"
-          wait_for http://localhost:3000/news "news"
-          wait_for http://localhost:3000/assessment "assessment"
-          pm2 status
-          echo "✅ GitHub Actions deploy finished"
-          ENDSSH
-          rm -f "$KEY_FILE"
+          SSH_OPTS=(-i "$KEY_FILE" -o BatchMode=yes -o StrictHostKeyChecking=yes -o HostKeyAlias=longvon-ecs -o "UserKnownHostsFile=$GITHUB_WORKSPACE/.github/ecs_known_hosts")
+          RELEASE_ID="${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+          REMOTE="/root/mateyou/_recovery/incoming/$RELEASE_ID"
+          ssh "${SSH_OPTS[@]}" "$ECS_USER@$ECS_HOST" "umask 077; mkdir -p '$REMOTE'"
+          scp "${SSH_OPTS[@]}" longvon-recovery.tar.gz longvon-recovery.sha256 "$ECS_USER@$ECS_HOST:$REMOTE/"
+          ssh "${SSH_OPTS[@]}" "$ECS_USER@$ECS_HOST" "cd '$REMOTE' && sha256sum -c longvon-recovery.sha256 && mkdir bundle && tar -xzf longvon-recovery.tar.gz -C bundle && node bundle/scripts/recovery/deploy.cjs --approved=LONGVON-P0-RECOVERY-001"
+          echo 'Deployment health passed; browser TEST/SQL/WeCom acceptance is recorded separately.'

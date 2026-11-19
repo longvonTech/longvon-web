@@ -4,6 +4,8 @@ import { useEffect, useMemo, useState } from 'react';
 import { usePathname, useSearchParams } from 'next/navigation';
 import { submitPartnerLead, type CooperationType } from '../lib/partner-api';
 import { captureLeadAttribution, readLeadAttribution } from '../lib/lead-attribution';
+import { isValidLeadPhone, normalizeLeadPhone, buildLeadKeyword } from '@mateyou/lead-contract';
+import { leadSubmissionError } from '../lib/lead-errors';
 import type { SiteLocale } from '../lib/i18n-routes';
 
 interface Props {
@@ -113,8 +115,8 @@ const copy = {
     submitting: '提交中…',
     successTitle: '您的询盘已成功提交。',
     successBody: '我们的团队将审核您的项目需求，并通过邮件与您联系。',
-    error: '无法提交您的请求。请重试，或通过本站合作渠道再次联系我们。',
     emailInvalid: '请输入有效的商务邮箱地址。',
+    phoneInvalid: '请输入有效电话号码：7–15 位数字，可带 +、空格、括号或横线。',
     requiredMissing: '请填写所有必填项。',
     selectPlaceholder: '请选择',
   },
@@ -140,8 +142,8 @@ const copy = {
     successTitle: 'Your inquiry has been submitted successfully.',
     successBody:
       'Our team will review your project requirements and contact you by email. Meanwhile you can review LONGVON credentials and delivery evidence:',
-    error: "We couldn't submit your request. Please try again or contact us through this site's partner channels.",
     emailInvalid: 'Please enter a valid business email address.',
+    phoneInvalid: 'Please enter a valid phone number with 7–15 digits; +, spaces, parentheses and dashes are allowed.',
     requiredMissing: 'Please complete all required fields.',
     selectPlaceholder: 'Please select',
   },
@@ -277,6 +279,11 @@ export function OemRfqForm({ locale = 'zh' }: Props) {
       return;
     }
 
+    if (!isValidLeadPhone(phone)) {
+      setFieldError(t.phoneInvalid);
+      return;
+    }
+
     const selected = PROJECT_TYPES.find((p) => p.value === projectType);
     const cooperationType = selected?.coop ?? 'oem';
 
@@ -294,14 +301,10 @@ export function OemRfqForm({ locale = 'zh' }: Props) {
     setState('submitting');
     try {
       const attr = readLeadAttribution(pathname);
-      const keywordBits = [
-        searchParams.get('keyword') || undefined,
-        attr.aiSource ? `ai:${attr.aiSource}` : undefined,
-      ].filter(Boolean);
       await submitPartnerLead({
         companyName: companyName.trim(),
         contactName: contactName.trim(),
-        phone: phone.trim(),
+        phone: normalizeLeadPhone(phone),
         email: email.trim(),
         cooperationType,
         remark: remark || undefined,
@@ -311,7 +314,7 @@ export function OemRfqForm({ locale = 'zh' }: Props) {
         utmSource: attr.firstUtmSource || attr.utmSource || attr.aiSource || undefined,
         utmMedium: attr.firstUtmMedium || attr.utmMedium || (attr.aiSource ? 'ai_assistant' : undefined),
         utmCampaign: attr.firstUtmCampaign || attr.utmCampaign || undefined,
-        sourceKeyword: keywordBits.length ? keywordBits.join('|') : undefined,
+        sourceKeyword: buildLeadKeyword(searchParams.get('keyword'), attr.aiSource),
         firstLandingPage: attr.firstLandingPage,
         firstReferrer: attr.firstReferrer,
         firstUtmSource: attr.firstUtmSource,
@@ -325,15 +328,17 @@ export function OemRfqForm({ locale = 'zh' }: Props) {
         latestUtmSource: attr.latestUtmSource,
         latestUtmMedium: attr.latestUtmMedium,
         latestUtmCampaign: attr.latestUtmCampaign,
+        latestUtmContent: attr.latestUtmContent,
+        latestUtmTerm: attr.latestUtmTerm,
         latestVisitAt: attr.latestVisitAt,
         attributionChannel: attr.attributionChannel,
         attributionConfidence: attr.attributionConfidence,
         website: honeypot || undefined,
       });
       setState('success');
-    } catch {
+    } catch (error) {
       setState('error');
-      setErrorMessage(t.error);
+      setErrorMessage(leadSubmissionError(error, locale));
     }
   }
 
@@ -373,17 +378,19 @@ export function OemRfqForm({ locale = 'zh' }: Props) {
         <legend style={legendStyle}>{locale === 'zh' ? '联系信息' : 'Contact'}</legend>
         <label style={labelStyle}>
           {t.name}
-          <input required value={contactName} onChange={(e) => setContactName(e.target.value)} style={inputStyle} />
+          <input required name="contactName" autoComplete="name" maxLength={100} value={contactName} onChange={(e) => setContactName(e.target.value)} style={inputStyle} />
         </label>
         <label style={labelStyle}>
           {t.company}
-          <input required value={companyName} onChange={(e) => setCompanyName(e.target.value)} style={inputStyle} />
+          <input required name="companyName" autoComplete="organization" maxLength={200} value={companyName} onChange={(e) => setCompanyName(e.target.value)} style={inputStyle} />
         </label>
         <label style={labelStyle}>
           {t.email}
           <input
             required
             type="email"
+            name="email"
+            maxLength={200}
             autoComplete="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -395,6 +402,9 @@ export function OemRfqForm({ locale = 'zh' }: Props) {
           <input
             required
             type="tel"
+            name="phone"
+            autoComplete="tel"
+            maxLength={40}
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
             style={inputStyle}
@@ -549,8 +559,11 @@ export function OemRfqForm({ locale = 'zh' }: Props) {
 
       <p style={{ margin: 0, fontSize: 13, color: '#6B7280', lineHeight: 1.5 }}>{t.privacy}</p>
 
-      {fieldError ? <p style={{ color: '#B91C1C', margin: 0, fontSize: 14 }}>{fieldError}</p> : null}
-      {state === 'error' ? <p style={{ color: '#B91C1C', margin: 0, fontSize: 14 }}>{errorMessage}</p> : null}
+      {fieldError ? <p role="alert" style={{ color: '#B91C1C', margin: 0, fontSize: 14 }}>{fieldError}</p> : null}
+      {state === 'error' ? <div role="alert" style={{ color: '#B91C1C', fontSize: 14 }}>
+        <p style={{ margin: 0 }}>{errorMessage}</p>
+        <a href="mailto:general@longvon.com">{locale === 'zh' ? '备用邮箱：' : 'Email: '}general@longvon.com</a>
+      </div> : null}
 
       <button type="submit" disabled={state === 'submitting'} style={buttonStyle}>
         {state === 'submitting' ? t.submitting : t.submit}

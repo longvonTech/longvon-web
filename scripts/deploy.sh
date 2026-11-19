@@ -13,6 +13,11 @@
 #   /root/mateyou/_rollback/api-dist.bak.<timestamp>
 #
 set -euo pipefail
+RFQ_SCRIPT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+if [ -f "$RFQ_SCRIPT_ROOT/scripts/rfq/runtime/production-baseline.json" ]; then
+  echo "BLOCKED: RFQ runtime hotfix requires the reviewed immutable no-migration artifact path; generic source deploy is disabled." >&2
+  exit 78
+fi
 cd /root/mateyou
 
 WEB_DIR="/root/mateyou/apps/web"

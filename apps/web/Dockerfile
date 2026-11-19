@@ -5,10 +5,12 @@ WORKDIR /workspace
 
 FROM base AS deps
 COPY package.json package-lock.json* ./
+COPY packages/lead-contract/package.json packages/lead-contract/package.json
 COPY apps/web/package.json apps/web/package.json
 RUN npm ci --workspace=apps/web --ignore-scripts
 
 FROM deps AS build
+COPY packages/lead-contract packages/lead-contract
 COPY apps/web apps/web
 # Next.js standalone output模式：将server.js和所有依赖打包进.next/standalone，
 # 极大减小生产镜像体积（通常从500MB+缩小到100MB以内）

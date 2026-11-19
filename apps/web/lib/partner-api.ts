@@ -33,6 +33,8 @@ export interface LeadSubmission {
   latestUtmSource?: string;
   latestUtmMedium?: string;
   latestUtmCampaign?: string;
+  latestUtmContent?: string;
+  latestUtmTerm?: string;
   latestVisitAt?: string;
   attributionChannel?: string;
   attributionConfidence?: string;

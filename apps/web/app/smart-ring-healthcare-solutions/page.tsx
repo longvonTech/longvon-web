@@ -1,3 +1,4 @@
+import { OEM_JOURNEY_COPY, oemJourneyPath } from '../../lib/oem-journey';
 import { RAW_PPG_COPY, rawPpgSectionPath } from '../../lib/raw-ppg';
 import type { Metadata } from 'next';
 import Link from 'next/link';
@@ -110,6 +111,7 @@ export default function SmartRingHealthcareSolutionsPage() {
         <Link href="/partner/oem">OEM 咨询表单</Link>
       </p>
       <p style={p}><Link href={rawPpgSectionPath('zh')}>{RAW_PPG_COPY.zh.linkLabel}</Link></p>
+      <p style={p}><Link href={oemJourneyPath('zh')} style={{color:'#1D4ED8',textDecoration:'underline'}}>{OEM_JOURNEY_COPY.zh.linkLabel}</Link></p>
     </GeoPageLayout>
   );
 }

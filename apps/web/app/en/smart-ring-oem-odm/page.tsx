@@ -1,3 +1,5 @@
+import { OemJourneySection } from '../../../components/OemJourneySection';
+import { OEM_JOURNEY_COPY } from '../../../lib/oem-journey';
 import { RAW_PPG_COPY, rawPpgSectionPath } from '../../../lib/raw-ppg';
 import type { CSSProperties } from 'react';
 import type { Metadata } from 'next';
@@ -23,12 +25,12 @@ const site = getSiteUrl();
 const SLUG = 'smart-ring-oem-odm';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Smart Ring OEM & ODM Services | LONGVON' },
-  description: `${IDENTITY_EN} ${POSITIONING_EN}`,
+  title: { absolute: OEM_JOURNEY_COPY.en.metaTitle },
+  description: OEM_JOURNEY_COPY.en.description,
   alternates: geoAlternates(site, SLUG, 'en'),
   openGraph: {
-    title: 'Smart Ring OEM & ODM Services | LONGVON',
-    description: POSITIONING_EN,
+    title: OEM_JOURNEY_COPY.en.metaTitle,
+    description: OEM_JOURNEY_COPY.en.description,
     url: `${site}/en/${SLUG}`,
     siteName: 'LONGVON',
     locale: 'en_US',
@@ -75,7 +77,7 @@ export default function EnOemOdmPage() {
         ]}
         h1="Smart Ring OEM & ODM Services"
         lead={`${IDENTITY_EN} ${POSITIONING_EN} ${BRAND_LINE_EN}`}
-        faqs={FAQS}
+        faqs={[...FAQS, ...OEM_JOURNEY_COPY.en.faqs]}
       >
       <h2 style={h2}>Who is LONGVON</h2>
       <p style={p}>
@@ -83,6 +85,8 @@ export default function EnOemOdmPage() {
         manufacturer, smart ring OEM/ODM provider, and smart ring technology solution provider.{' '}
         {ENTITY_STATEMENT_EN}
       </p>
+
+      <OemJourneySection locale="en" />
 
       <h2 style={h2}>LONGVON Smart Ring OEM/ODM capabilities</h2>
       <ul style={ul}>

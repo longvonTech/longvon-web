@@ -1,0 +1,36 @@
+{
+  "baseSha": "62ae62ef31e7a3cd239302c53c11c359304d0ca7",
+  "unchangedFiles": [
+    "apps/web/lib/lead-attribution.ts",
+    "apps/web/lib/partner-api.ts",
+    "apps/web/lib/api-client.ts",
+    "apps/web/components/LeadAttributionCapture.tsx",
+    "packages/lead-contract/index.js",
+    "packages/database/prisma/schema.prisma",
+    ".github/workflows/deploy.yml"
+  ],
+  "backendSchemaAndNotificationUnchanged": true,
+  "productionPostCount": 0,
+  "evidenceFiles": {
+    "en-0-synthetic-payload.json": "80bd5b6b3e24e50e003072774b13cf603d6020e66bebcd8629a0b04534d04ae8",
+    "en-1-synthetic-payload.json": "c68f7428d39831a4a1a89f17dee108bad934d2e4ff8f0c691a4bc92742496b00",
+    "en-2-synthetic-payload.json": "3ecc6fa6ec220b3a76f98eabc9719a7cad1556c82c53d09e8352c9e41dfebf4b",
+    "en-after-desktop.png": "bcb6f37aca815348954046c4a6e61dbb5cad87b3233dfe0bb29954d51ac1e7f6",
+    "en-after-mobile.png": "b967c017e6d00ef540bdd9a38af4f0be48d192180a3b4d72c3190860c5a7354f",
+    "en-after.html": "841b8fcea69ff3ea6a7a85f5a104caccd50181a5d3a9e3e73cb82ca3586a46a4",
+    "en-before-production.html": "694e46fe3f647e8afb16f6129cfcacaa279e0972fc0a755b0ae9515e62a22c12",
+    "en-before-production.png": "f2b7d51c36fb4ea07e02e00ab38b8a9bd7b66b84eb9796d32f9155221909c76b",
+    "en-rfq-mobile.png": "9b02ac79409a23328b66dead8a5554bac042a6774040c542208e8ff2fc7d5c23",
+    "ppg-regression.json": "5eb6a43ffdfff013699573512f453d9e9b6a1630298f97a5cb2dc50d9597950a",
+    "verification.json": "b13570daf9e311cdea191b3e4800d9554e70837b30e06b920e9d3c643bc705f6",
+    "zh-0-synthetic-payload.json": "06435cde452e9d045cd9e9f04584450e00e40b5b849a1ce32e444e99b2060a04",
+    "zh-1-synthetic-payload.json": "db802b42d22119696d74a16fb284574982681d2f5560f5202e7440c7ae74f052",
+    "zh-2-synthetic-payload.json": "73153fa5c26f79729f6fe9779443b42d15e4bda40bf77c040aecb05b1652b81d",
+    "zh-after-desktop.png": "12becb8cc233910bf6af6f330973ae24025e52876a1f67eb46ae8cf5437bee7c",
+    "zh-after-mobile.png": "170a075d46adb882a4b2c837c55dd1436bcabd80b5302f03a4997ad1765cafae",
+    "zh-after.html": "3940183b51dc7014d4cf4e45900de7de8d5047c4213b0359c169d859ed658465",
+    "zh-before-production.html": "9417e285744a08cd5a601f015fafa590b38babe45f0281821479b8cea46345ef",
+    "zh-before-production.png": "b688b3824db014e74dab39e57ff02df48f2ed48b81ed685c40799f56143bd2d3",
+    "zh-rfq-mobile.png": "0a4429966710ea30e52f9decd0cf27207bad3d7b9b5c80a4c071622cd6490071"
+  }
+}

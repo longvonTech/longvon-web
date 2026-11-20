@@ -1,11 +1,12 @@
 'use client';
 
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { usePathname, useSearchParams } from 'next/navigation';
 import { submitPartnerLead, type CooperationType } from '../lib/partner-api';
 import { captureLeadAttribution, readLeadAttribution } from '../lib/lead-attribution';
 import { isValidLeadPhone, normalizeLeadPhone, buildLeadKeyword } from '@mateyou/lead-contract';
 import { leadSubmissionError } from '../lib/lead-errors';
+import { recordOemConversion } from '../lib/oem-conversion';
 import type { SiteLocale } from '../lib/i18n-routes';
 
 interface Props {
@@ -90,7 +91,7 @@ function buildRemark(parts: Record<string, string>): string {
   const lines = Object.entries(parts)
     .filter(([, v]) => v.trim())
     .map(([k, v]) => `${k}: ${v.trim()}`);
-  return lines.join('\n').slice(0, 2000);
+  return lines.join('\n');
 }
 
 const copy = {
@@ -238,6 +239,9 @@ export function OemRfqForm({ locale = 'zh' }: Props) {
   const [timeline, setTimeline] = useState('');
   const [message, setMessage] = useState('');
   const [honeypot, setHoneypot] = useState('');
+  const [modelUseCase, setModelUseCase] = useState('');
+  const [quantityPlan, setQuantityPlan] = useState('');
+  const startedRef = useRef(false);
   const [state, setState] = useState<SubmitState>('idle');
   const [errorMessage, setErrorMessage] = useState('');
   const [fieldError, setFieldError] = useState('');
@@ -288,6 +292,8 @@ export function OemRfqForm({ locale = 'zh' }: Props) {
     const cooperationType = selected?.coop ?? 'oem';
 
     const remark = buildRemark({
+      'Intended Product / Model / Use Case': modelUseCase.trim(),
+      'Sample / Pilot / Annual Forecast': quantityPlan.trim(),
       'Project Type': projectType,
       'Product Interest': productInterest,
       'Project Stage': projectStage,
@@ -297,6 +303,11 @@ export function OemRfqForm({ locale = 'zh' }: Props) {
       Timeline: timeline,
       Message: message,
     });
+
+    if (remark.length > 2000) {
+      setFieldError(locale === 'en' ? 'Please shorten the project brief: all project selections and notes together must fit within 2,000 characters.' : '请精简项目资料：项目选项与说明合计不能超过 2,000 个字符。');
+      return;
+    }
 
     setState('submitting');
     try {
@@ -335,6 +346,7 @@ export function OemRfqForm({ locale = 'zh' }: Props) {
         attributionConfidence: attr.attributionConfidence,
         website: honeypot || undefined,
       });
+      recordOemConversion('rfq_submit_success', locale, searchParams.get('keyword'), {contactName, email, honeypot});
       setState('success');
     } catch (error) {
       setState('error');
@@ -369,6 +381,7 @@ export function OemRfqForm({ locale = 'zh' }: Props) {
   return (
     <form
       onSubmit={handleSubmit}
+      onFocusCapture={() => { if (!startedRef.current) { startedRef.current = true; recordOemConversion('rfq_start', locale, searchParams.get('keyword'), {contactName, email}); } }}
       noValidate
       style={{ display: 'flex', flexDirection: 'column', gap: 16, maxWidth: 560, width: '100%' }}
     >
@@ -474,6 +487,19 @@ export function OemRfqForm({ locale = 'zh' }: Props) {
             ))}
           </select>
         </label>
+      </fieldset>
+
+      <fieldset style={fieldsetStyle}>
+        <legend style={legendStyle}>{locale === 'en' ? 'Quotation brief (optional)' : '报价准备资料（选填）'}</legend>
+        <label style={labelStyle}>
+          {locale === 'en' ? 'Intended product / model / use case' : '意向产品 / 型号 / 应用场景'}
+          <input name="modelUseCase" value={modelUseCase} onChange={(e) => setModelUseCase(e.target.value)} maxLength={300} style={inputStyle} />
+        </label>
+        <label style={labelStyle}>
+          {locale === 'en' ? 'Sample / pilot / annual forecast quantities' : '样品 / 试产 / 年度预测数量'}
+          <input name="quantityPlan" value={quantityPlan} onChange={(e) => setQuantityPlan(e.target.value)} maxLength={200} style={inputStyle} placeholder={locale === 'en' ? 'Samples: … / Pilot: … / Annual forecast: …' : '样品：… / 试产：… / 年度预测：…'} aria-describedby="quantity-plan-note" />
+        </label>
+        <p id="quantity-plan-note" style={{margin:0,fontSize:13,color:'#6B7280'}}>{locale === 'en' ? 'Estimates are not orders or an advertised MOQ. Leave unknown items blank.' : '需求估计不是订单，也不是对外公布的 MOQ。未知项可留空。'}</p>
       </fieldset>
 
       <fieldset style={fieldsetStyle}>

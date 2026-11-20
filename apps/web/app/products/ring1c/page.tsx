@@ -1,3 +1,4 @@
+import { OEM_JOURNEY_COPY, oemJourneyPath } from '../../../lib/oem-journey';
 export const dynamic = 'force-dynamic';
 import type { Metadata } from 'next';
 import Link from 'next/link';
@@ -644,6 +645,7 @@ export default function Ring1CPage() {
           </Link>
         </div>
       </section>
+      <p style={{ maxWidth: 880, padding: '24px', margin: '0 auto', fontSize: 16 }}><Link href={oemJourneyPath('zh')} style={{color:'#1D4ED8',textDecoration:'underline'}}>{OEM_JOURNEY_COPY.zh.linkLabel}</Link></p>
     </div>
   );
 }

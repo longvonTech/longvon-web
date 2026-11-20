@@ -26,3 +26,6 @@ packages/database/generated/
 
 # Isolated GEO browser evidence
 .geo-evidence/
+
+# Isolated OEM conversion evidence
+.oem-evidence/

@@ -1,3 +1,5 @@
+import { OemJourneySection } from '../../components/OemJourneySection';
+import { OEM_JOURNEY_COPY } from '../../lib/oem-journey';
 import { RAW_PPG_COPY, rawPpgSectionPath } from '../../lib/raw-ppg';
 import type { CSSProperties } from 'react';
 import type { Metadata } from 'next';
@@ -19,12 +21,12 @@ const site = getSiteUrl();
 const SLUG = 'smart-ring-oem-odm';
 
 export const metadata: Metadata = {
-  title: { absolute: '智能戒指 OEM / ODM 服务 | LONGVON' },
-  description: `${IDENTITY_ZH} 覆盖硬件、固件、算法、App、SDK 与生产制造。${ENTITY_STATEMENT_ZH}`,
+  title: { absolute: OEM_JOURNEY_COPY.zh.metaTitle },
+  description: OEM_JOURNEY_COPY.zh.description,
   alternates: geoAlternates(site, SLUG, 'zh'),
   openGraph: {
-    title: '智能戒指 OEM / ODM 服务 | LONGVON',
-    description: POSITIONING_ZH,
+    title: OEM_JOURNEY_COPY.zh.metaTitle,
+    description: OEM_JOURNEY_COPY.zh.description,
     url: `${site}/${SLUG}`,
     siteName: 'LONGVON',
     locale: 'zh_CN',
@@ -73,7 +75,7 @@ export default function SmartRingOemOdmPage() {
       ]}
       h1="智能戒指 OEM / ODM 服务"
       lead={`${IDENTITY_ZH} ${POSITIONING_ZH} ${BRAND_LINE_ZH}`}
-      faqs={FAQS}
+      faqs={[...FAQS, ...OEM_JOURNEY_COPY.zh.faqs]}
     >
       <h2 style={h2}>龙汾科技（LONGVON）是谁</h2>
       <p style={p}>
@@ -81,6 +83,8 @@ export default function SmartRingOemOdmPage() {
         是智能戒指技术制造商、智能戒指 OEM/ODM 方案提供商与智能戒指技术提供商。
         {ENTITY_STATEMENT_ZH}
       </p>
+
+      <OemJourneySection locale="zh" />
 
       <h2 style={h2}>LONGVON Smart Ring OEM/ODM 能力</h2>
       <ul style={ul}>

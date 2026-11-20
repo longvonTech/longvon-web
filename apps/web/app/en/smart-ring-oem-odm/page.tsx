@@ -1,3 +1,4 @@
+import { RAW_PPG_COPY, rawPpgSectionPath } from '../../../lib/raw-ppg';
 import type { CSSProperties } from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
@@ -201,6 +202,7 @@ export default function EnOemOdmPage() {
         <Link href={geoPath('smart-ring-sleep-respiratory', 'en')}>Respiratory</Link> ·{' '}
         <Link href={geoPath('smart-ring-osa', 'en')}>OSA-related</Link>.
       </p>
+      <p style={p}><Link href={rawPpgSectionPath('en')}>{RAW_PPG_COPY.en.linkLabel}</Link></p>
       </GeoPageLayout>
     </>
   );

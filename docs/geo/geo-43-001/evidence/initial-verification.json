@@ -1,0 +1,37 @@
+{
+  "scope": "isolated built Web; local synthetic API; POST intercepted; optional production baseline is GET-only",
+  "productionPosts": 0,
+  "tests": [
+    {
+      "locale": "en",
+      "sdk": "/en/smart-ring-sdk-api",
+      "status": 200,
+      "canonical": "https://www.longvon.com/en/smart-ring-sdk-api",
+      "faqSchemaQuestions": 10,
+      "desktopAndMobile": true,
+      "cta": "/en/partner/oem?keyword=100hz-raw-ppg",
+      "syntheticInterceptedPosts": 1,
+      "firstAndLatestUtmPreserved": true,
+      "aiAndInterestKeywordPreserved": true,
+      "internationalPhoneUnchanged": true
+    },
+    {
+      "locale": "zh",
+      "sdk": "/smart-ring-sdk-api",
+      "status": 200,
+      "canonical": "https://www.longvon.com/smart-ring-sdk-api",
+      "faqSchemaQuestions": 10,
+      "desktopAndMobile": true,
+      "cta": "/partner/oem?keyword=100hz-raw-ppg",
+      "syntheticInterceptedPosts": 1,
+      "firstAndLatestUtmPreserved": true,
+      "aiAndInterestKeywordPreserved": true,
+      "internationalPhoneUnchanged": true
+    }
+  ],
+  "errors": [],
+  "sitemapPairVerified": true,
+  "contextualLinksVerified": 12,
+  "result": "PASS",
+  "baselineEnvironment": "production public GET-only"
+}

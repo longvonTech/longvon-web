@@ -1,0 +1,58 @@
+name: GEO Raw PPG regression
+on:
+  pull_request:
+    paths:
+      - 'apps/web/**'
+      - 'scripts/geo/**'
+      - 'scripts/rfq/**'
+      - 'packages/lead-contract/**'
+      - 'package*.json'
+      - '.github/workflows/geo-raw-ppg.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  buyer-path:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      NEXT_PUBLIC_SITE_URL: https://www.longvon.com
+      NEXT_PUBLIC_API_BASE_URL: http://127.0.0.1:34672
+      NEXT_TELEMETRY_DISABLED: '1'
+      GEO_BASE_URL: http://127.0.0.1:34673
+      GEO_EVIDENCE_DIR: ${{ runner.temp }}/geo-raw-ppg
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - name: Unit and bilingual attribution contracts
+        run: |
+          node --test scripts/geo/raw-ppg.test.cjs scripts/rfq/client-contract.test.cjs scripts/rfq/attribution-contract.test.cjs
+          node --experimental-strip-types --test apps/web/lib/i18n-routes.spec.mjs
+      - name: Start read-only synthetic API fixture
+        run: |
+          node scripts/geo/local-api-stub.cjs > "$RUNNER_TEMP/geo-api.log" 2>&1 &
+          for i in $(seq 1 30); do curl -fsS http://127.0.0.1:34672/health >/dev/null && exit 0; sleep 1; done
+          exit 1
+      - name: Build Web without production API access
+        run: npm run build --workspace=apps/web
+      - name: Start built candidate
+        run: |
+          cp -R apps/web/public apps/web/.next/standalone/apps/web/public
+          cp -R apps/web/.next/static apps/web/.next/standalone/apps/web/.next/static
+          PORT=34673 HOSTNAME=127.0.0.1 node apps/web/.next/standalone/apps/web/server.js > "$RUNNER_TEMP/geo-web.log" 2>&1 &
+          for i in $(seq 1 30); do curl -fsS http://127.0.0.1:34673/en/smart-ring-sdk-api >/dev/null && exit 0; sleep 1; done
+          exit 1
+      - run: npx playwright install --with-deps chromium
+      - name: SSR, hreflang, sitemap, FAQ, mobile and synthetic RFQ CTA
+        run: node scripts/geo/raw-ppg-browser.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: geo-raw-ppg-evidence
+          path: ${{ runner.temp }}/geo-raw-ppg
+          retention-days: 14
+# No ECS credentials/environment, migration, merge or deployment step.

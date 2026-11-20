@@ -1,3 +1,4 @@
+import { RAW_PPG_COPY, rawPpgSectionPath } from '../../../lib/raw-ppg';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { GeoPageLayout, h2, p, ul } from '../../../components/GeoPageLayout';
@@ -188,6 +189,7 @@ export default function EnOsaSmartRingTechnologyPage() {
         Capability → evidence → integration options → cooperation model → inquiry:{' '}
         <Link href="/en/partner/oem">Request technical evaluation / OEM consultation</Link>.
       </p>
+      <p style={p}><Link href={rawPpgSectionPath('en')}>{RAW_PPG_COPY.en.linkLabel}</Link></p>
     </GeoPageLayout>
   );
 }

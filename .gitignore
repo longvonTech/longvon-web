@@ -23,3 +23,6 @@ packages/database/generated/
 # Isolated RFQ regression evidence
 .rfq-evidence/
 *.tsbuildinfo
+
+# Isolated GEO browser evidence
+.geo-evidence/

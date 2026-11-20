@@ -10,16 +10,19 @@ import {
   geoPath,
 } from '../../lib/geo';
 
+import { RawPpgSection } from '../../components/RawPpgSection';
+import { RAW_PPG_COPY } from '../../lib/raw-ppg';
+
 const site = getSiteUrl();
 const SLUG = 'smart-ring-sdk-api';
 
 export const metadata: Metadata = {
-  title: { absolute: '智能戒指 SDK 与云端 API | LONGVON 龙汾科技' },
+  title: { absolute: '智能戒指 SDK、100Hz 原始 PPG 与云端 API | LONGVON 龙汾科技' },
   description:
     'LONGVON 为 OEM/ODM 合作伙伴提供智能戒指 SDK 与云端 API 对接路径，可按项目评估 100Hz PPG 原始数据与云端算法服务。',
   alternates: geoAlternates(site, SLUG, 'zh'),
   openGraph: {
-    title: '智能戒指 SDK 与云端 API | LONGVON',
+    title: '智能戒指 SDK、100Hz 原始 PPG 与云端 API | LONGVON',
     description: '面向品牌与数字健康项目的智能戒指 SDK / 云端 API 合作说明。',
     url: `${site}/${SLUG}`,
     siteName: 'LONGVON',
@@ -28,7 +31,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary',
-    title: '智能戒指 SDK 与云端 API | LONGVON',
+    title: '智能戒指 SDK、100Hz 原始 PPG 与云端 API | LONGVON',
     description: '面向 OEM/ODM 项目的智能戒指 SDK 与云端 API 合作说明。',
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
@@ -82,7 +85,7 @@ export default function ZhSmartRingSdkApiPage() {
       ]}
       h1="智能戒指 SDK 与云端 API（合作伙伴）"
       lead={`${ENTITY_STATEMENT_ZH} ${BRAND_RELATION_ZH}`}
-      faqs={FAQS}
+      faqs={[...FAQS, ...RAW_PPG_COPY.zh.faqs]}
     >
       <h2 style={h2}>SDK 概览</h2>
       <p style={p}>
@@ -90,11 +93,7 @@ export default function ZhSmartRingSdkApiPage() {
         或其他应用集成。开通方式为项目制合作，而非公开自助门户。
       </p>
 
-      <h2 style={h2}>100Hz PPG 原始数据</h2>
-      <p style={p}>
-        对合格 OEM/ODM 合作伙伴，可讨论 <strong>100Hz PPG 原始数据</strong>{' '}
-        获取路径。交付格式、采样、缓存与授权以技术范围为准。
-      </p>
+      <RawPpgSection locale="zh" />
 
       <h2 style={h2}>传感器数据接入</h2>
       <p style={p}>

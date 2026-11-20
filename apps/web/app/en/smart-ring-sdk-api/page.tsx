@@ -1,3 +1,4 @@
+import { OEM_JOURNEY_COPY, oemJourneyPath } from '../../../lib/oem-journey';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { GeoPageLayout, h2, p, ul } from '../../../components/GeoPageLayout';
@@ -174,6 +175,7 @@ export default function EnSmartRingSdkApiPage() {
         <Link href={geoPath('smart-ring-manufacturer', 'en')}>Manufacturer</Link> ·{' '}
         <Link href={geoPath('smart-ring-oem-odm', 'en')}>OEM &amp; ODM</Link>.
       </p>
+      <p style={p}><Link href={oemJourneyPath('en')} style={{color:'#1D4ED8',textDecoration:'underline'}}>{OEM_JOURNEY_COPY.en.linkLabel}</Link></p>
     </GeoPageLayout>
   );
 }

@@ -1,4 +1,4 @@
-name: GEO Raw PPG regression
+name: GEO buyer-path regression
 on:
   pull_request:
     paths:
@@ -29,7 +29,7 @@ jobs:
       - run: npm ci --ignore-scripts
       - name: Unit and bilingual attribution contracts
         run: |
-          node --test scripts/geo/raw-ppg.test.cjs scripts/rfq/client-contract.test.cjs scripts/rfq/attribution-contract.test.cjs
+          node --test scripts/geo/oem-journey.test.cjs scripts/geo/raw-ppg.test.cjs scripts/rfq/client-contract.test.cjs scripts/rfq/attribution-contract.test.cjs
           node --experimental-strip-types --test apps/web/lib/i18n-routes.spec.mjs
       - name: Start read-only synthetic API fixture
         run: |
@@ -50,6 +50,10 @@ jobs:
         env:
           GEO_EVIDENCE_DIR: ${{ runner.temp }}/geo-raw-ppg
         run: node scripts/geo/raw-ppg-browser.cjs
+      - name: OEM sample, pilot, production, qualification and event regression
+        env:
+          OEM_EVIDENCE_DIR: ${{ runner.temp }}/geo-raw-ppg/oem
+        run: node scripts/geo/oem-journey-browser.cjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:

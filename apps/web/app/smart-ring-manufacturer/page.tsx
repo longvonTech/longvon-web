@@ -1,3 +1,4 @@
+import { OemJourneySection } from '../../components/OemJourneySection';
 import { RAW_PPG_COPY, rawPpgSectionPath } from '../../lib/raw-ppg';
 import type { Metadata } from 'next';
 import Link from 'next/link';
@@ -132,6 +133,7 @@ export default function SmartRingManufacturerPage() {
         ，或通过 <Link href="/partner/oem">OEM 咨询表单</Link> 申请样品、技术评估与报价沟通。
       </p>
       <p style={p}><Link href={rawPpgSectionPath('zh')}>{RAW_PPG_COPY.zh.linkLabel}</Link></p>
+      <OemJourneySection locale="zh" compact />
     </GeoPageLayout>
   );
 }

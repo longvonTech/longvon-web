@@ -1,3 +1,4 @@
+import { OEM_JOURNEY_COPY, oemJourneyPath } from '../../../../lib/oem-journey';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getSiteUrl } from '../../../../lib/site';
@@ -234,6 +235,7 @@ export default function EnglishRing1cPage() {
           ))}
         </div>
       </section>
+      <p style={{ maxWidth: 880, padding: '24px', margin: '0 auto', fontSize: 16 }}><Link href={oemJourneyPath('en')} style={{color:'#1D4ED8',textDecoration:'underline'}}>{OEM_JOURNEY_COPY.en.linkLabel}</Link></p>
     </main>
   );
 }

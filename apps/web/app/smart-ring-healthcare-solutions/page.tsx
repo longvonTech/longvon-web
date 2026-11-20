@@ -1,3 +1,4 @@
+import { RAW_PPG_COPY, rawPpgSectionPath } from '../../lib/raw-ppg';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { GeoPageLayout, h2, p, ul } from '../../components/GeoPageLayout';
@@ -108,6 +109,7 @@ export default function SmartRingHealthcareSolutionsPage() {
         <Link href={geoPath('smart-ring-manufacturer')}>智能戒指制造商</Link> ·{' '}
         <Link href="/partner/oem">OEM 咨询表单</Link>
       </p>
+      <p style={p}><Link href={rawPpgSectionPath('zh')}>{RAW_PPG_COPY.zh.linkLabel}</Link></p>
     </GeoPageLayout>
   );
 }

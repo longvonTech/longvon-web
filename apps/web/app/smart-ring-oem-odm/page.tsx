@@ -1,3 +1,4 @@
+import { RAW_PPG_COPY, rawPpgSectionPath } from '../../lib/raw-ppg';
 import type { CSSProperties } from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
@@ -170,6 +171,7 @@ export default function SmartRingOemOdmPage() {
         <Link href={geoPath('smart-ring-sleep-respiratory')}>呼吸健康</Link> ·{' '}
         <Link href={geoPath('smart-ring-osa')}>OSA 相关监测</Link>。
       </p>
+      <p style={p}><Link href={rawPpgSectionPath('zh')}>{RAW_PPG_COPY.zh.linkLabel}</Link></p>
     </GeoPageLayout>
   );
 }

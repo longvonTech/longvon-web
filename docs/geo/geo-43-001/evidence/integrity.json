@@ -1,0 +1,30 @@
+{
+  "baseSha": "01564a4a7dbcff6c15c00349e28ede5407fbeac5",
+  "rfqBackendAndAttributionUnchanged": true,
+  "unchangedFiles": [
+    "apps/web/components/OemRfqForm.tsx",
+    "apps/web/components/LeadAttributionCapture.tsx",
+    "apps/web/lib/lead-attribution.ts",
+    "apps/web/lib/partner-api.ts",
+    "packages/lead-contract/index.js",
+    ".github/workflows/deploy.yml",
+    "packages/database/prisma/schema.prisma"
+  ],
+  "evidenceFiles": {
+    "en-after-desktop.png": "6a11549aaf33dcab7a645785fda3b9e99544dd286273a3e0b51cb977c00cddde",
+    "en-after-mobile.png": "ed0e0b4b2213bb162b1c6de95f4d1b713e49dcbd0feb8fec98b6e252ca2e1b86",
+    "en-after.html": "4c4e09cad34ca67f4346eb794f6fd2feb741218019e9603e5a43d870804789a9",
+    "en-before-production.html": "c223f87e153574fabead91ae6ec6b6ca5ac1e6218bd4e511a57e19f3811d9b4b",
+    "en-before-production.png": "93890b6fc4d5cd2e6d7f10240ac45aed3a712cdfd9f2e039f271c52b3a80b80c",
+    "en-synthetic-payload.json": "bac91fb1cd15f05bd8e5f502b1b3cce000bf10889586a39391d6d7356b2e2512",
+    "initial-verification.json": "e77922ea168b065472dfce3bf27de6813c6a9540f7815d91b8457ff60fa5ff1d",
+    "sitemap.xml": "09531fe16f7d44561437aa32bae640e624f9c61e3b234a1419eb2b65b6c4b68c",
+    "verification.json": "5eb6a43ffdfff013699573512f453d9e9b6a1630298f97a5cb2dc50d9597950a",
+    "zh-after-desktop.png": "b0fdc7254aff6602bca4d62da8ea70c931f5a50c69e4045586dc41513940049b",
+    "zh-after-mobile.png": "728888a97b53f2f724ef38945b548f909ac19f39c7110dbd634e6958bcb33b2e",
+    "zh-after.html": "92e570027a545aec80c014ca1561f17cb073f8d2a1ed780ffbd48e80f2c690d6",
+    "zh-before-production.html": "89e2fe2fc1503224287bed228142e2781cb19d3732ebbf31eb6c3bc0f995580b",
+    "zh-before-production.png": "c13f3f9315d1af50ade7d3b4c53cee6833f19b6aebf0ac6dc086c5aba4969f3e",
+    "zh-synthetic-payload.json": "66e6716f31f97a2e8816e47f2a06b43b738fe58c61b3d3612df49fc0948db0b6"
+  }
+}

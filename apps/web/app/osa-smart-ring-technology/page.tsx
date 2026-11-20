@@ -1,3 +1,4 @@
+import { RAW_PPG_COPY, rawPpgSectionPath } from '../../lib/raw-ppg';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { GeoPageLayout, h2, p, ul } from '../../components/GeoPageLayout';
@@ -176,6 +177,7 @@ export default function ZhOsaSmartRingTechnologyPage() {
         技术能力 → 证据 → 集成选项 → 合作模式 → 咨询：
         <Link href="/partner/oem">提交技术评估 / OEM 咨询</Link>。
       </p>
+      <p style={p}><Link href={rawPpgSectionPath('zh')}>{RAW_PPG_COPY.zh.linkLabel}</Link></p>
     </GeoPageLayout>
   );
 }

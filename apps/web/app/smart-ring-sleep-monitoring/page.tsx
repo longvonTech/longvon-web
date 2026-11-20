@@ -1,3 +1,4 @@
+import { RAW_PPG_COPY, rawPpgSectionPath } from '../../lib/raw-ppg';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { GeoPageLayout, h2, p, ul } from '../../components/GeoPageLayout';
@@ -85,6 +86,7 @@ export default function SmartRingSleepMonitoringPage() {
           <Link href={geoPath('smart-ring-oem-odm')}>面向睡眠产品的 OEM / ODM</Link>
         </li>
       </ul>
+      <p style={p}><Link href={rawPpgSectionPath('zh')}>{RAW_PPG_COPY.zh.linkLabel}</Link></p>
     </GeoPageLayout>
   );
 }

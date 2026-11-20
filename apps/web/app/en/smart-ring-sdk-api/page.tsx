@@ -10,16 +10,19 @@ import {
   geoPath,
 } from '../../../lib/geo';
 
+import { RawPpgSection } from '../../../components/RawPpgSection';
+import { RAW_PPG_COPY } from '../../../lib/raw-ppg';
+
 const site = getSiteUrl();
 const SLUG = 'smart-ring-sdk-api';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Smart Ring SDK & Cloud API | LONGVON' },
+  title: { absolute: 'Smart Ring SDK, 100Hz Raw PPG & Cloud API | LONGVON' },
   description:
     'Integrate LONGVON smart ring hardware via project-scoped partner SDK and cloud API — including 100Hz PPG raw data pathways for qualified OEM/ODM partners.',
   alternates: geoAlternates(site, SLUG, 'en'),
   openGraph: {
-    title: 'Smart Ring SDK & Cloud API | LONGVON',
+    title: 'Smart Ring SDK, 100Hz Raw PPG & Cloud API | LONGVON',
     description:
       'Project-scoped partner SDK, cloud API, and 100Hz PPG raw data pathways for qualified OEM/ODM smart ring programs by LONGVON.',
     url: `${site}/en/${SLUG}`,
@@ -29,7 +32,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary',
-    title: 'Smart Ring SDK & Cloud API | LONGVON',
+    title: 'Smart Ring SDK, 100Hz Raw PPG & Cloud API | LONGVON',
     description: 'Partner SDK and cloud API for LONGVON smart ring OEM/ODM projects.',
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
@@ -87,7 +90,7 @@ export default function EnSmartRingSdkApiPage() {
       ]}
       h1="Smart Ring SDK & Cloud API for OEM Partners"
       lead={`${ENTITY_STATEMENT_EN} ${BRAND_RELATION_EN}`}
-      faqs={FAQS}
+      faqs={[...FAQS, ...RAW_PPG_COPY.en.faqs]}
     >
       <h2 style={h2}>Smart Ring SDK overview</h2>
       <p style={p}>
@@ -95,11 +98,7 @@ export default function EnSmartRingSdkApiPage() {
         their own applications. Access is project-scoped — not a public self-serve portal.
       </p>
 
-      <h2 style={h2}>100Hz PPG raw data</h2>
-      <p style={p}>
-        For qualified OEM/ODM partners, LONGVON can support pathways to <strong>100Hz PPG raw data</strong> access.
-        Exact delivery format, sampling, buffering, and licensing are defined in the technical statement of work.
-      </p>
+      <RawPpgSection locale="en" />
 
       <h2 style={h2}>Sensor data access</h2>
       <p style={p}>

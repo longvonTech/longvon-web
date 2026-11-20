@@ -77,7 +77,9 @@ jobs:
             ${{ runner.temp }}/longvon-recovery.sha256
           retention-days: 14
   deploy:
-    if: github.event_name != 'workflow_dispatch' || (inputs.perform_deploy && inputs.approval == 'LONGVON-P0-RECOVERY-001')
+    # Production publishing is never triggered by a successful main-branch CI workflow_run.
+    # It requires an explicit workflow_dispatch with perform_deploy=true and the release approval token.
+    if: github.event_name == 'workflow_dispatch' && inputs.perform_deploy && inputs.approval == 'LONGVON-P0-RECOVERY-001'
     needs: build
     runs-on: ubuntu-26.04
     environment: production

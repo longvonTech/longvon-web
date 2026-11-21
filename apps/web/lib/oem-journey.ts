@@ -4,7 +4,7 @@ export const OEM_INTERESTS = ['odm-sample-evaluation', 'odm-pilot-evaluation', '
 export function oemJourneyPath(locale: GeoLocale) { return `${locale === 'en' ? '/en' : ''}/smart-ring-oem-odm#${OEM_JOURNEY_ANCHOR}`; }
 export function oemJourneyRfqHref(locale: GeoLocale, stage: 0 | 1 | 2 = 0) { return `${locale === 'en' ? '/en' : ''}/partner/oem?keyword=${OEM_INTERESTS[stage]}`; }
 
-// Public quantities intentionally withheld: current procurement source requires RFQ confirmation.
+// Owner-approved public policy (2026-11-22): 1,000-unit MOQ only for standard OEM on existing Ring1/Ring1C platforms; custom ODM scoped separately. Do not publish the internal pilot quantity.
 export const OEM_JOURNEY_COPY = {
  en: {
   metaTitle: 'Smart Ring OEM/ODM: Samples, Pilot & Production | LONGVON',
@@ -17,7 +17,7 @@ export const OEM_JOURNEY_COPY = {
    { title: 'Mass-production planning', input: 'Share the target configuration, market, estimated annual demand, timing and feedback from the agreed validation stages.', output: 'Aim of the review: manufacturing feasibility, an agreed production scope and a quotation for the qualified project.', gate: 'Before proceeding: confirm the model-specific MOQ, configuration, acceptance scope and order. Forecast demand does not reserve capacity or establish an order.', cta: 'Request production feasibility review' },
   ],
   moqTitle: 'How are pilot quantity and production MOQ decided?',
-  moq: 'Pilot quantities and the production MOQ are confirmed after model, configuration and project evaluation. Sample evaluation, pilot production and a production order are different commitments. Quantity ranges in the inquiry form describe your estimate, not an advertised or recommended manufacturing MOQ.',
+  moq: 'For standard OEM orders using the existing Ring1 or Ring1C platform, the minimum order quantity (MOQ) is 1,000 units. Product configuration, pricing and other commercial terms are confirmed for each project. Custom ODM projects have separately evaluated quantities and terms. Pilot feasibility is discussed case by case; inquiry-form quantity ranges reflect buyer estimates, not manufacturing offers.',
   customizationTitle: 'Scope the customization your project actually needs',
   customization: [
    'Existing-platform OEM: discuss the selected hardware, branding and packaging scope.',
@@ -33,7 +33,7 @@ export const OEM_JOURNEY_COPY = {
   linkLabel: 'Plan a sample-to-pilot-to-production ODM project',
   faqs: [
    { question: 'Can we evaluate samples before committing to production?', answer: 'You can request sample evaluation and discuss suitability for your project. Confirm model/configuration, availability, evaluation scope and commercial terms first; submitting an inquiry does not create an accepted order or confirm payment.' },
-   { question: 'Can we run a smaller pilot, and what is the production MOQ?', answer: 'Discuss pilot quantities and the production MOQ after the model, configuration and project have been evaluated. There is no universal pilot or MOQ commitment on this page. The form’s quantity ranges are estimates from the buyer, not recommended production minimums.' },
+   { question: 'Can we run a smaller pilot, and what is the production MOQ?', answer: 'The standard OEM MOQ for existing Ring1/Ring1C platforms is 1,000 units, with configuration and pricing confirmed separately. Pilot feasibility and quantities are project-specific. Custom ODM projects are evaluated separately; the form’s quantity ranges are buyer estimates, not manufacturing offers.' },
    { question: 'What can we customize for an OEM or ODM smart ring?', answer: 'Discuss branding/packaging on an existing platform or project-scoped industrial design, hardware, firmware, App, partner SDK/API and cloud algorithm integration. Feasibility and deliverables must be agreed; SDK/data access does not imply unrestricted BLE access or that all algorithms run offline.' },
    { question: 'What do you need for a useful quotation and technical review?', answer: 'Provide the target market, intended product/model/use case, sample/pilot estimates, annual forecast, required functions/integration, timing and contact details. Mark unknowns rather than inventing a budget or order. Prices, timing and other commercial terms are confirmed for the qualified project.' },
   ],
@@ -49,7 +49,7 @@ export const OEM_JOURNEY_COPY = {
    { title: '量产规划', input: '说明目标配置、市场、预计年度需求、目标时间及约定验证阶段的反馈。', output: '本轮评估目标：评估制造可行性、约定生产范围，并为符合条件的项目提供报价。', gate: '进入下一步前：确认对应型号的 MOQ、配置、验收范围与订单。需求预测不代表预留产能或正式下单。', cta: '申请量产可行性评估' },
   ],
   moqTitle: '试产数量与量产 MOQ 如何确定？',
-  moq: '试产数量与量产 MOQ 在型号、配置及项目评估后确认。样品评估、试产与量产订单属于不同承诺阶段。询盘表中的数量区间用于表达您的需求估计，不是对外公布或推荐的生产起订量。',
+  moq: 'Ring1、Ring1C 现有平台的标准 OEM 合作起订量（MOQ）为 1,000 件，具体产品配置、报价及其他商务条件按项目另行确认。定制 ODM 项目的数量与条件单独评估。试产可行性按项目沟通；询盘表的数量区间仅代表买方需求估计，不构成供货承诺。',
   customizationTitle: '明确项目实际需要的定制范围',
   customization: [
    '现有平台 OEM：沟通所选硬件、品牌与包装范围。',
@@ -65,7 +65,7 @@ export const OEM_JOURNEY_COPY = {
   linkLabel: '规划样品—试产—量产 ODM 合作路径',
   faqs: [
    { question: '能否先评估样品，再决定是否量产？', answer: '可以提出样品评估需求，沟通项目适配性。应先确认型号/配置、供应情况、评估范围与商务条件；提交询盘不代表订单已接受，也不代表已付款。' },
-   { question: '能否先做小批量试产，量产 MOQ 是多少？', answer: '试产数量与量产 MOQ 在型号、配置及项目评估后沟通。本页不作通用试产数量或 MOQ 承诺。表单数量区间是买方需求估计，不是推荐的量产起订量。' },
+   { question: '能否先做小批量试产，量产 MOQ 是多少？', answer: 'Ring1、Ring1C 现有平台标准 OEM 的 MOQ 为 1,000 件，配置和报价另行确认。试产可行性与数量按项目评估；定制 ODM 单独评估，不适用统一 MOQ。表单数量区间只是客户需求估计，不构成供货承诺。' },
    { question: '智能戒指 OEM/ODM 可以定制哪些范围？', answer: '可讨论现有平台的品牌/包装，或项目范围内的工业设计、硬件、固件、App、合作伙伴 SDK/API 与云端算法集成。可行性和交付内容需约定；SDK/数据接入不等于无限制 BLE 访问，也不代表全部算法离线运行。' },
    { question: '报价与技术评估需要哪些信息？', answer: '请提供目标市场、意向产品/型号/场景、样品/试产数量估计、年度预测、所需功能/集成、时间与联系方式。未知内容请留待确认，不必虚构预算或订单。价格、时间及其他商务条件按符合要求的具体项目确认。' },
   ],

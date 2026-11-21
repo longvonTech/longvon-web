@@ -5,7 +5,7 @@ Base main: `62ae62ef31e7a3cd239302c53c11c359304d0ca7` (includes the accepted GEO
 
 ## Commercial review status
 
-The owner indicated that numeric publication approval exists, but has not yet supplied the source/version or model/project applicability. The current procurement source still says not to publish a fixed MOQ. This review candidate therefore uses model/configuration/project-qualified language, withholds the numeric pilot/MOQ values and flags the applicability gap in CLAIM-SOURCES.md. Do not infer that a pilot option is a universal ODM minimum. Numeric copy may be added only after the missing source/scope is confirmed.
+The owner explicitly approved a limited public numeric policy on 2026-11-22: 1,000 units is the standard OEM MOQ for existing Ring1/Ring1C platforms only; configuration and pricing remain project-specific; custom ODM is assessed separately. The 500-unit internal pilot option must not be mentioned publicly. The procurement evidence library section 5, bilingual copy and claim/source matrix have been updated on this PR branch. This does not authorize merge or deployment.
 
 ## Architecture and exact candidate URLs
 
@@ -41,4 +41,4 @@ The existing GEO CI retains every PPG check and adds the OEM suite. It has no pr
 
 ## Self-review boundary
 
-No numeric terms, sample prices, lead times, capacity, warranties, certifications, medical claims or unrestricted SDK/BLE/offline capabilities are invented. Source uncertainty is not hidden. The scope is qualified commercial inquiry generation, not traffic claims. Do not merge or publish: main CI can trigger the existing production deployment pipeline after a merge, so independent review and separate owner publication approval remain mandatory.
+Only the narrowly approved 1,000-unit Ring1/Ring1C standard OEM MOQ is public. No public pilot quantity, sample prices, lead times, capacity, warranties, certifications, medical claims or unrestricted SDK/BLE/offline capabilities are invented. Source uncertainty is not hidden. The scope is qualified commercial inquiry generation, not traffic claims. Do not merge or publish: main CI can trigger the existing production deployment pipeline after a merge, so independent review and separate owner publication approval remain mandatory.

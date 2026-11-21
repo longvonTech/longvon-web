@@ -1,6 +1,6 @@
 # GEO-43-002 technical validation
 
-Technical result: PASS for the conditional-MOQ candidate. Commercial numeric publication: SOURCE/APPLICABILITY PENDING after the owner indicated approval exists. Do not confuse these conclusions.
+Original technical validation: PASS for the earlier conditional-MOQ candidate at cb1bc6c. Owner approved a limited numeric copy update on 2026-11-22 (Ring1/Ring1C existing-platform standard OEM MOQ 1,000 units only; no public pilot number; custom ODM separately assessed). **This change requires fresh CI/content validation on the updated PR head; earlier PASS results must not be represented as validation of the new commits.**
 
 - Unit/contracts:24/24, retaining previous PPG and RFQ contracts.
 - Existing i18n tests:5/5.

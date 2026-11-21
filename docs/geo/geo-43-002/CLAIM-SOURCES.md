@@ -2,21 +2,22 @@
 
 ## Source register
 
-- S1: `docs/geo/LONGVON-PROCUREMENT-EVIDENCE-LIBRARY.md`, dated2026-10-31, the repository's stated external-sales/GEO source of truth. Section5 describes evaluation/custom OEM/ODM and explicitly says fixed MOQ/prices/standard delivery days are not public; RFQ confirmation is required.
-- S2: `apps/web/lib/geo-commercial.ts` at base main62ae62e: small batch/evaluation/pilot before volume, existing-product branding/packaging, project-specific customization, NPI discussion and no fixed public MOQ. This is published baseline copy, not a newly approved numerical technical pack.
-- S3: Issue23, GEO-43-002: internal guidance mentions a conditional pilot option and standard OEM MOQ, but requests current-source verification and conditional wording where exact terms cannot be verified. Its internal-guidance numbers are not treated as universal approved terms.
-- S4: owner reply in this task: “已有数字发布批准，补充来源与范围”. Status: approval existence indicated; actual file/version and product/configuration/OEM-vs-ODM applicability are awaiting the follow-up requested in this conversation.
+- S1: `docs/geo/LONGVON-PROCUREMENT-EVIDENCE-LIBRARY.md`, section 5, updated 2026-11-22 with the owner-approved limited exception to its earlier no-public-MOQ policy.
+- S2: `apps/web/lib/geo-commercial.ts` at base main 62ae62e, describing evaluation and project-specific customization; older baseline copy does not override the new approved limited exception.
+- S3: Issue #23, GEO-43-002, describing the proposed commercial conversion work; not itself authority to broaden the public quantity policy.
+- S4: LONGVON owner's explicit GEO-43-002 / PR #24 instruction dated 2026-11-22: do not publicly mention the 500-unit pilot quantity; 1,000 units is the standard OEM MOQ only for existing Ring1/Ring1C platforms; product configuration and pricing confirmed separately; custom ODM evaluated separately. Permission is limited to PR copy and evidence-library updates, not merge/deploy.
 - S5: SDK/cloud baseline and GEO-43-001 claim matrix: project-scoped SDK/API, customer App evaluation, cloud-dependent metrics, no unrestricted BLE or offline-all-algorithms promise.
 
 ## Quantity publication decisions
 
-- Sample quantity: not prescribed. Discuss sample configuration/availability and evaluation purpose, then agree terms. No request is described as accepted/paid. SourcesS1/S2. Public copy conditional.
-- 500-unit pilot reference: SOURCE/APPLICABILITY PENDING. An internal option is not a universal MOQ, guaranteed pilot slot or a product-wide entitlement. Not published numerically in this candidate.
-- 1,000-unit standard OEM reference: SOURCE/APPLICABILITY PENDING. Do not apply a standard OEM term to every custom ODM model/configuration or to samples. Not published numerically in this candidate.
-- 100-unit production minimum: not advertised or recommended. Existing form quantity ranges remain buyer estimates, explicitly marked not MOQ; they are not offers. No new recommended numeric tier is invented.
-- Current public MOQ paragraph: model/configuration/project review required; pilot/evaluation/order commitments are separate. SourceS1. Consistent with current recorded publication rule whileS4 details remain unavailable.
+- Sample evaluation: availability, configuration and commercial terms confirmed by inquiry; no fixed sample quantity claimed. S1/S2.
+- Pilot: **do not publish the internal 500-unit quantity** in public content, FAQ, metadata or marketing. Discuss pilot feasibility case by case without a guaranteed slot, quantity or blanket eligibility. S1/S4.
+- Standard OEM for existing Ring1/Ring1C platforms: **1,000-unit MOQ approved for public EN/ZH content**. Product configuration, pricing and other terms remain subject to project-specific quotation and agreement. S1/S4.
+- Custom ODM: evaluate minimum quantity, development scope, costs and deliverables separately; **never apply the 1,000-unit standard OEM reference as a universal ODM MOQ**. S1/S4.
+- 100-unit quantity: not advertised as recommended MOQ. RFQ quantity choices are buyer estimates only, not supply offers. S1.
+- No published price lists, standard lead-time days, guaranteed capacity, warranty, medical certification or additional regulatory claims. S1.
 
-The owner is not being asked to reconfirm the entire task or repeat prior production acceptance. Only the missing numeric source/applicability and authority to supersede S1's wording are pending. The final reviewer should not treat this candidate as a verified numeric MOQ landing page.
+**Evidence hierarchy:** S4 is the owner's dated and scope-specific commercial decision; S1 section 5 now records the narrow public exception and retains RFQ confirmation for other terms. This is approval of copy and evidence-library modification only; publication/merge/deployment remain separately gated.
 
 ## Added claim rows
 

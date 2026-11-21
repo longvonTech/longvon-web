@@ -1,6 +1,6 @@
 # GEO-43-002 copy draft
 
-Conditional-MOQ candidate. Numeric source/applicability awaits owner detail; no numeric pilot or production promise.
+Owner-approved scope (2026-11-22): public 1,000-unit MOQ only for standard OEM on existing Ring1/Ring1C platforms; no public pilot quantity; custom ODM assessed separately. See CLAIM-SOURCES.md.
 
 ## EN /en/smart-ring-oem-odm#sample-to-production
 
@@ -40,7 +40,7 @@ Before proceeding: confirm the model-specific MOQ, configuration, acceptance sco
 
 ### How are pilot quantity and production MOQ decided?
 
-Pilot quantities and the production MOQ are confirmed after model, configuration and project evaluation. Sample evaluation, pilot production and a production order are different commitments. Quantity ranges in the inquiry form describe your estimate, not an advertised or recommended manufacturing MOQ.
+For standard OEM orders using the existing Ring1 or Ring1C platform, the minimum order quantity (MOQ) is 1,000 units. Product configuration, pricing and other commercial terms are confirmed for each project. Custom ODM projects have separately evaluated quantities and terms. Pilot feasibility is discussed case by case; inquiry-form quantity ranges reflect buyer estimates, not manufacturing offers.
 
 ### Scope the customization your project actually needs
 
@@ -61,7 +61,7 @@ You can request sample evaluation and discuss suitability for your project. Conf
 
 **Can we run a smaller pilot, and what is the production MOQ?**
 
-Discuss pilot quantities and the production MOQ after the model, configuration and project have been evaluated. There is no universal pilot or MOQ commitment on this page. The form’s quantity ranges are estimates from the buyer, not recommended production minimums.
+The standard OEM MOQ for existing Ring1/Ring1C platforms is 1,000 units, with configuration and pricing confirmed separately. Pilot feasibility and quantities are project-specific. Custom ODM projects are evaluated separately; the form’s quantity ranges are buyer estimates, not manufacturing offers.
 
 **What can we customize for an OEM or ODM smart ring?**
 
@@ -109,7 +109,7 @@ Provide the target market, intended product/model/use case, sample/pilot estimat
 
 ### 试产数量与量产 MOQ 如何确定？
 
-试产数量与量产 MOQ 在型号、配置及项目评估后确认。样品评估、试产与量产订单属于不同承诺阶段。询盘表中的数量区间用于表达您的需求估计，不是对外公布或推荐的生产起订量。
+Ring1、Ring1C 现有平台的标准 OEM 合作起订量（MOQ）为 1,000 件，具体产品配置、报价及其他商务条件按项目另行确认。定制 ODM 项目的数量与条件单独评估。试产可行性按项目沟通；询盘表的数量区间仅代表买方需求估计，不构成供货承诺。
 
 ### 明确项目实际需要的定制范围
 
@@ -130,7 +130,7 @@ Provide the target market, intended product/model/use case, sample/pilot estimat
 
 **能否先做小批量试产，量产 MOQ 是多少？**
 
-试产数量与量产 MOQ 在型号、配置及项目评估后沟通。本页不作通用试产数量或 MOQ 承诺。表单数量区间是买方需求估计，不是推荐的量产起订量。
+Ring1、Ring1C 现有平台标准 OEM 的 MOQ 为 1,000 件，配置和报价另行确认。试产可行性与数量按项目评估；定制 ODM 单独评估，不适用统一 MOQ。表单数量区间只是客户需求估计，不构成供货承诺。
 
 **智能戒指 OEM/ODM 可以定制哪些范围？**
 

@@ -1,0 +1,933 @@
+{
+  "observed_at": "2026-11-22T01:16:44.606581+00:00",
+  "completed_at": "2026-11-22T01:26:53.573087+00:00",
+  "method": "public HTTP GET, Python urllib; no browser render, no POST; country UNKNOWN",
+  "results": [
+    {
+      "url": "https://www.longvon.com/",
+      "final_url": "https://www.longvon.com/",
+      "status": 200,
+      "bytes": 67611,
+      "title": "MATEYOU Ring1C · AI健康智能戒指",
+      "canonical": [
+        "https://www.longvon.com"
+      ],
+      "hreflang": [
+        {
+          "rel": "alternate",
+          "hreflang": "zh-CN",
+          "href": "https://www.longvon.com"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "en",
+          "href": "https://www.longvon.com/en"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "x-default",
+          "href": "https://www.longvon.com"
+        }
+      ],
+      "description": "不只是智能戒指。MATEYOU Ring1C 是你的个人健康智能系统。71+ 健康指标，睡眠、心脏、压力、血氧、OSA 风险全面监测。",
+      "viewport": "width=device-width, initial-scale=1",
+      "robots_meta": "index, follow",
+      "jsonld_parse": [
+        "PARSES",
+        "PARSES"
+      ],
+      "links_count": 62,
+      "rfq_anchor_present": false,
+      "body_sha256": "2ebcc15bd2f04a8eda509fb97f5b4beac2a1adc0df4a9fa196e48beca5511a4f"
+    },
+    {
+      "url": "https://www.longvon.com/en",
+      "final_url": "https://www.longvon.com/en",
+      "status": 200,
+      "bytes": 34902,
+      "title": "LONGVON | Smart Ring Manufacturer & OEM/ODM Provider",
+      "canonical": [
+        "https://www.longvon.com/en"
+      ],
+      "hreflang": [
+        {
+          "rel": "alternate",
+          "hreflang": "zh-CN",
+          "href": "https://www.longvon.com"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "en",
+          "href": "https://www.longvon.com/en"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "x-default",
+          "href": "https://www.longvon.com"
+        }
+      ],
+      "description": "LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in customized smart ring hardware, firmware, mobile apps, SDKs, cloud APIs, and health monitoring solutions. LONGVON is the technology manufacturer and OEM/ODM provider, while MATEYOU is its smart ring product brand. 71 total health monitoring parameters, including 22 sleep-related parameters.",
+      "viewport": "width=device-width, initial-scale=1",
+      "robots_meta": "index, follow",
+      "jsonld_parse": [
+        "PARSES",
+        "PARSES"
+      ],
+      "links_count": 43,
+      "rfq_anchor_present": false,
+      "body_sha256": "e9da5c61040e8748ce0aa590791e6addbb845139773444d8e56315dba15ecc84"
+    },
+    {
+      "url": "https://www.longvon.com/smart-ring-manufacturer",
+      "final_url": "https://www.longvon.com/smart-ring-manufacturer",
+      "status": 200,
+      "bytes": 68084,
+      "title": "LONGVON | 智能戒指制造商及 OEM/ODM 技术服务商",
+      "canonical": [
+        "https://www.longvon.com/smart-ring-manufacturer"
+      ],
+      "hreflang": [
+        {
+          "rel": "alternate",
+          "hreflang": "zh-CN",
+          "href": "https://www.longvon.com/smart-ring-manufacturer"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "en",
+          "href": "https://www.longvon.com/en/smart-ring-manufacturer"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "x-default",
+          "href": "https://www.longvon.com/smart-ring-manufacturer"
+        }
+      ],
+      "description": "龙汾科技（深圳）有限公司（LONGVON）是一家智能戒指制造商及 OEM/ODM 技术方案提供商。 71 项健康监测参数，含 22 项睡眠相关参数。覆盖睡眠、呼吸健康与 OSA 相关监测。",
+      "viewport": "width=device-width, initial-scale=1",
+      "robots_meta": "index, follow",
+      "jsonld_parse": [
+        "PARSES",
+        "PARSES"
+      ],
+      "links_count": 73,
+      "rfq_anchor_present": false,
+      "body_sha256": "7cd3b42142714e18193d121a605ceace0bc1e2af35a68ef97eda934568f9d3f4"
+    },
+    {
+      "url": "https://www.longvon.com/en/smart-ring-manufacturer",
+      "final_url": "https://www.longvon.com/en/smart-ring-manufacturer",
+      "status": 200,
+      "bytes": 67224,
+      "title": "LONGVON | Smart Ring Manufacturer & OEM/ODM Provider",
+      "canonical": [
+        "https://www.longvon.com/en/smart-ring-manufacturer"
+      ],
+      "hreflang": [
+        {
+          "rel": "alternate",
+          "hreflang": "zh-CN",
+          "href": "https://www.longvon.com/smart-ring-manufacturer"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "en",
+          "href": "https://www.longvon.com/en/smart-ring-manufacturer"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "x-default",
+          "href": "https://www.longvon.com/smart-ring-manufacturer"
+        }
+      ],
+      "description": "LONGVON is a smart ring manufacturer offering OEM/ODM, custom hardware, firmware, health algorithms, apps, SDK/API integration and manufacturing.",
+      "viewport": "width=device-width, initial-scale=1",
+      "robots_meta": "index, follow",
+      "jsonld_parse": [
+        "PARSES",
+        "PARSES"
+      ],
+      "links_count": 67,
+      "rfq_anchor_present": false,
+      "body_sha256": "32bafbd31c5c4ff06ea1f8e7e178b7c6f26143efe53262883d79979f5f809857"
+    },
+    {
+      "url": "https://www.longvon.com/smart-ring-oem-odm",
+      "final_url": "https://www.longvon.com/smart-ring-oem-odm",
+      "status": 200,
+      "bytes": 81135,
+      "title": "智能戒指 OEM / ODM 服务 | LONGVON",
+      "canonical": [
+        "https://www.longvon.com/smart-ring-oem-odm"
+      ],
+      "hreflang": [
+        {
+          "rel": "alternate",
+          "hreflang": "zh-CN",
+          "href": "https://www.longvon.com/smart-ring-oem-odm"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "en",
+          "href": "https://www.longvon.com/en/smart-ring-oem-odm"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "x-default",
+          "href": "https://www.longvon.com/smart-ring-oem-odm"
+        }
+      ],
+      "description": "龙汾科技（深圳）有限公司（LONGVON）是一家智能戒指制造商及 OEM/ODM 技术方案提供商。 覆盖硬件、固件、算法、App、SDK 与生产制造。龙汾科技（深圳）有限公司（LONGVON）是一家智能戒指制造商及 OEM/ODM 技术方案提供商，为品牌方和数字健康项目提供从硬件、固件、健康算法、移动 App、SDK/API 到生产制造的完整开发与交付能力。",
+      "viewport": "width=device-width, initial-scale=1",
+      "robots_meta": "index, follow",
+      "jsonld_parse": [
+        "PARSES",
+        "PARSES"
+      ],
+      "links_count": 68,
+      "rfq_anchor_present": false,
+      "body_sha256": "bd52d61450436dc6d63b4b62b1ec2a5ebd49cceea742321918989fb4fb11e3bf"
+    },
+    {
+      "url": "https://www.longvon.com/en/smart-ring-oem-odm",
+      "final_url": "https://www.longvon.com/en/smart-ring-oem-odm",
+      "status": 200,
+      "bytes": 105972,
+      "title": "Smart Ring OEM & ODM Services | LONGVON",
+      "canonical": [
+        "https://www.longvon.com/en/smart-ring-oem-odm"
+      ],
+      "hreflang": [
+        {
+          "rel": "alternate",
+          "hreflang": "zh-CN",
+          "href": "https://www.longvon.com/smart-ring-oem-odm"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "en",
+          "href": "https://www.longvon.com/en/smart-ring-oem-odm"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "x-default",
+          "href": "https://www.longvon.com/smart-ring-oem-odm"
+        }
+      ],
+      "description": "LONGVON (Longvon Technology (Shenzhen) Co., Ltd.) is a smart ring technology manufacturer and OEM/ODM provider. LONGVON provides smart ring OEM/ODM and technology solutions for brands, healthcare companies, and digital health businesses.",
+      "viewport": "width=device-width, initial-scale=1",
+      "robots_meta": "index, follow",
+      "jsonld_parse": [
+        "PARSES",
+        "PARSES",
+        "PARSES"
+      ],
+      "links_count": 64,
+      "rfq_anchor_present": false,
+      "body_sha256": "e850f35444d5747e8ddfe5f8fa66ae828693b4d6b2427db94fca29d3a313e616"
+    },
+    {
+      "url": "https://www.longvon.com/smart-ring-sdk-api",
+      "final_url": "https://www.longvon.com/smart-ring-sdk-api",
+      "status": 200,
+      "bytes": 73250,
+      "title": "智能戒指 SDK、100Hz 原始 PPG 与云端 API | LONGVON 龙汾科技",
+      "canonical": [
+        "https://www.longvon.com/smart-ring-sdk-api"
+      ],
+      "hreflang": [
+        {
+          "rel": "alternate",
+          "hreflang": "zh-CN",
+          "href": "https://www.longvon.com/smart-ring-sdk-api"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "en",
+          "href": "https://www.longvon.com/en/smart-ring-sdk-api"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "x-default",
+          "href": "https://www.longvon.com/smart-ring-sdk-api"
+        }
+      ],
+      "description": "LONGVON 为 OEM/ODM 合作伙伴提供智能戒指 SDK 与云端 API 对接路径，可按项目评估 100Hz PPG 原始数据与云端算法服务。",
+      "viewport": "width=device-width, initial-scale=1",
+      "robots_meta": "index, follow",
+      "jsonld_parse": [
+        "PARSES",
+        "PARSES"
+      ],
+      "links_count": 63,
+      "rfq_anchor_present": false,
+      "body_sha256": "5eba805be47463762aa5af56116f34894b58e91af2e5241ce6168fbf55f3724c"
+    },
+    {
+      "url": "https://www.longvon.com/en/smart-ring-sdk-api",
+      "final_url": "https://www.longvon.com/en/smart-ring-sdk-api",
+      "status": 200,
+      "bytes": 80468,
+      "title": "Smart Ring SDK, 100Hz Raw PPG & Cloud API | LONGVON",
+      "canonical": [
+        "https://www.longvon.com/en/smart-ring-sdk-api"
+      ],
+      "hreflang": [
+        {
+          "rel": "alternate",
+          "hreflang": "zh-CN",
+          "href": "https://www.longvon.com/smart-ring-sdk-api"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "en",
+          "href": "https://www.longvon.com/en/smart-ring-sdk-api"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "x-default",
+          "href": "https://www.longvon.com/smart-ring-sdk-api"
+        }
+      ],
+      "description": "Integrate LONGVON smart ring hardware via project-scoped partner SDK and cloud API — including 100Hz PPG raw data pathways for qualified OEM/ODM partners.",
+      "viewport": "width=device-width, initial-scale=1",
+      "robots_meta": "index, follow",
+      "jsonld_parse": [
+        "PARSES",
+        "PARSES"
+      ],
+      "links_count": 58,
+      "rfq_anchor_present": false,
+      "body_sha256": "6727069ba19f8aa82ad0a1d87267442f3beed5b6b809a37b952a0917251290fc"
+    },
+    {
+      "url": "https://www.longvon.com/smart-ring-sleep-respiratory",
+      "final_url": "https://www.longvon.com/smart-ring-sleep-respiratory",
+      "status": 200,
+      "bytes": 47151,
+      "title": "智能戒指睡眠呼吸健康监测 | LONGVON",
+      "canonical": [
+        "https://www.longvon.com/smart-ring-sleep-respiratory"
+      ],
+      "hreflang": [
+        {
+          "rel": "alternate",
+          "hreflang": "zh-CN",
+          "href": "https://www.longvon.com/smart-ring-sleep-respiratory"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "en",
+          "href": "https://www.longvon.com/en/smart-ring-sleep-respiratory"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "x-default",
+          "href": "https://www.longvon.com/smart-ring-sleep-respiratory"
+        }
+      ],
+      "description": "LONGVON 智能戒指睡眠与呼吸健康监测：睡眠监测 → 呼吸健康监测 → OSA 相关监测（AHI / ODI / SpO₂）。71 项健康监测参数，含 22 项睡眠相关参数。",
+      "viewport": "width=device-width, initial-scale=1",
+      "robots_meta": "index, follow",
+      "jsonld_parse": [
+        "PARSES",
+        "PARSES"
+      ],
+      "links_count": 63,
+      "rfq_anchor_present": false,
+      "body_sha256": "e10095951ff77eb6f0fcf9cade2494973d3329dac77a8ca298d4917f7e40ba4f"
+    },
+    {
+      "url": "https://www.longvon.com/en/smart-ring-sleep-respiratory",
+      "final_url": "https://www.longvon.com/en/smart-ring-sleep-respiratory",
+      "status": 200,
+      "bytes": 48414,
+      "title": "Smart Ring Sleep Respiratory Monitoring | LONGVON",
+      "canonical": [
+        "https://www.longvon.com/en/smart-ring-sleep-respiratory"
+      ],
+      "hreflang": [
+        {
+          "rel": "alternate",
+          "hreflang": "zh-CN",
+          "href": "https://www.longvon.com/smart-ring-sleep-respiratory"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "en",
+          "href": "https://www.longvon.com/en/smart-ring-sleep-respiratory"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "x-default",
+          "href": "https://www.longvon.com/smart-ring-sleep-respiratory"
+        }
+      ],
+      "description": "LONGVON smart ring sleep and respiratory health monitoring: Sleep → Respiratory → OSA-related (AHI / ODI / SpO2). 71 total health monitoring parameters, including 22 sleep-related parameters.",
+      "viewport": "width=device-width, initial-scale=1",
+      "robots_meta": "index, follow",
+      "jsonld_parse": [
+        "PARSES",
+        "PARSES"
+      ],
+      "links_count": 57,
+      "rfq_anchor_present": false,
+      "body_sha256": "4dbd319bb808e621c325f75e32375ad5e24e8a19c8b2ccd3d115ce6b09352c44"
+    },
+    {
+      "url": "https://www.longvon.com/company",
+      "error": "HTTP Error 404: Not Found",
+      "title": "",
+      "canonical": [],
+      "hreflang": [],
+      "description": null,
+      "viewport": null,
+      "robots_meta": null,
+      "jsonld_parse": [],
+      "links_count": 0,
+      "rfq_anchor_present": false,
+      "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "url": "https://www.longvon.com/en/company",
+      "error": "HTTP Error 404: Not Found",
+      "title": "",
+      "canonical": [],
+      "hreflang": [],
+      "description": null,
+      "viewport": null,
+      "robots_meta": null,
+      "jsonld_parse": [],
+      "links_count": 0,
+      "rfq_anchor_present": false,
+      "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "url": "https://www.longvon.com/robots.txt",
+      "final_url": "https://www.longvon.com/robots.txt",
+      "status": 200,
+      "bytes": 5406,
+      "title": "",
+      "canonical": [],
+      "hreflang": [],
+      "description": null,
+      "viewport": null,
+      "robots_meta": null,
+      "jsonld_parse": [],
+      "links_count": 0,
+      "rfq_anchor_present": false,
+      "body_sha256": "99dccce134723038c8e074f539c4bc9aa933675458b37cc939efbe78194602df",
+      "raw_text": "User-Agent: Baiduspider\nAllow: /\nAllow: /products\nAllow: /knowledge\nAllow: /topics\nAllow: /authors\nAllow: /partner\nAllow: /assessment\nAllow: /membership\nAllow: /about\nAllow: /news\nAllow: /metrics\nAllow: /company/longvon\nAllow: /smart-ring-manufacturer\nAllow: /smart-ring-oem-odm\nAllow: /smart-ring-solution-provider\nAllow: /smart-ring-healthcare-solutions\nAllow: /smart-ring-technology\nAllow: /smart-ring-sdk-api\nAllow: /osa-smart-ring-technology\nAllow: /smart-ring-sleep-monitoring\nAllow: /smart-ring-sleep-respiratory\nAllow: /smart-ring-osa\nAllow: /en/\nAllow: /en/company/longvon\nAllow: /en/about\nAllow: /en/products\nAllow: /en/partner\nAllow: /en/smart-ring-manufacturer\nAllow: /en/smart-ring-oem-odm\nAllow: /en/smart-ring-solution-provider\nAllow: /en/smart-ring-healthcare-solutions\nAllow: /en/smart-ring-technology\nAllow: /en/smart-ring-sdk-api\nAllow: /en/osa-smart-ring-technology\nAllow: /en/smart-ring-sleep-monitoring\nAllow: /en/smart-ring-sleep-respiratory\nAllow: /en/smart-ring-osa\nDisallow: /api/\nDisallow: /admin/\nDisallow: /dashboard\nDisallow: /_next/\nCrawl-delay: 1\n\nUser-Agent: GPTBot\nAllow: /\nAllow: /products\nAllow: /knowledge\nAllow: /topics\nAllow: /authors\nAllow: /partner\nAllow: /assessment\nAllow: /membership\nAllow: /about\nAllow: /news\nAllow: /metrics\nAllow: /company/longvon\nAllow: /smart-ring-manufacturer\nAllow: /smart-ring-oem-odm\nAllow: /smart-ring-solution-provider\nAllow: /smart-ring-healthcare-solutions\nAllow: /smart-ring-technology\nAllow: /smart-ring-sdk-api\nAllow: /osa-smart-ring-technology\nAllow: /smart-ring-sleep-monitoring\nAllow: /smart-ring-sleep-respiratory\nAllow: /smart-ring-osa\nAllow: /en/\nAllow: /en/company/longvon\nAllow: /en/about\nAllow: /en/products\nAllow: /en/partner\nAllow: /en/smart-ring-manufacturer\nAllow: /en/smart-ring-oem-odm\nAllow: /en/smart-ring-solution-provider\nAllow: /en/smart-ring-healthcare-solutions\nAllow: /en/smart-ring-technology\nAllow: /en/smart-ring-sdk-api\nAllow: /en/osa-smart-ring-technology\nAllow: /en/smart-ring-sleep-monitoring\nAllow: /en/smart-ring-sleep-respiratory\nAllow: /en/smart-ring-osa\nDisallow: /api/\nDisallow: /admin/\nDisallow: /dashboard\nDisallow: /_next/\n\nUser-Agent: Google-Extended\nAllow: /\nAllow: /products\nAllow: /knowledge\nAllow: /topics\nAllow: /authors\nAllow: /partner\nAllow: /assessment\nAllow: /membership\nAllow: /about\nAllow: /news\nAllow: /metrics\nAllow: /company/longvon\nAllow: /smart-ring-manufacturer\nAllow: /smart-ring-oem-odm\nAllow: /smart-ring-solution-provider\nAllow: /smart-ring-healthcare-solutions\nAllow: /smart-ring-technology\nAllow: /smart-ring-sdk-api\nAllow: /osa-smart-ring-technology\nAllow: /smart-ring-sleep-monitoring\nAllow: /smart-ring-sleep-respiratory\nAllow: /smart-ring-osa\nAllow: /en/\nAllow: /en/company/longvon\nAllow: /en/about\nAllow: /en/products\nAllow: /en/partner\nAllow: /en/smart-ring-manufacturer\nAllow: /en/smart-ring-oem-odm\nAllow: /en/smart-ring-solution-provider\nAllow: /en/smart-ring-healthcare-solutions\nAllow: /en/smart-ring-technology\nAllow: /en/smart-ring-sdk-api\nAllow: /en/osa-smart-ring-technology\nAllow: /en/smart-ring-sleep-monitoring\nAllow: /en/smart-ring-sleep-respiratory\nAllow: /en/smart-ring-osa\nDisallow: /api/\nDisallow: /admin/\nDisallow: /dashboard\nDisallow: /_next/\n\nUser-Agent: PerplexityBot\nAllow: /\nAllow: /products\nAllow: /knowledge\nAllow: /topics\nAllow: /authors\nAllow: /partner\nAllow: /assessment\nAllow: /membership\nAllow: /about\nAllow: /news\nAllow: /metrics\nAllow: /company/longvon\nAllow: /smart-ring-manufacturer\nAllow: /smart-ring-oem-odm\nAllow: /smart-ring-solution-provider\nAllow: /smart-ring-healthcare-solutions\nAllow: /smart-ring-technology\nAllow: /smart-ring-sdk-api\nAllow: /osa-smart-ring-technology\nAllow: /smart-ring-sleep-monitoring\nAllow: /smart-ring-sleep-respiratory\nAllow: /smart-ring-osa\nAllow: /en/\nAllow: /en/company/longvon\nAllow: /en/about\nAllow: /en/products\nAllow: /en/partner\nAllow: /en/smart-ring-manufacturer\nAllow: /en/smart-ring-oem-odm\nAllow: /en/smart-ring-solution-provider\nAllow: /en/smart-ring-healthcare-solutions\nAllow: /en/smart-ring-technology\nAllow: /en/smart-ring-sdk-api\nAllow: /en/osa-smart-ring-technology\nAllow: /en/smart-ring-sleep-monitoring\nAllow: /en/smart-ring-sleep-respiratory\nAllow: /en/smart-ring-osa\nDisallow: /api/\nDisallow: /admin/\nDisallow: /dashboard\nDisallow: /_next/\n\nUser-Agent: *\nAllow: /\nAllow: /products\nAllow: /knowledge\nAllow: /topics\nAllow: /authors\nAllow: /partner\nAllow: /assessment\nAllow: /membership\nAllow: /about\nAllow: /news\nAllow: /metrics\nAllow: /company/longvon\nAllow: /smart-ring-manufacturer\nAllow: /smart-ring-oem-odm\nAllow: /smart-ring-solution-provider\nAllow: /smart-ring-healthcare-solutions\nAllow: /smart-ring-technology\nAllow: /smart-ring-sdk-api\nAllow: /osa-smart-ring-technology\nAllow: /smart-ring-sleep-monitoring\nAllow: /smart-ring-sleep-respiratory\nAllow: /smart-ring-osa\nAllow: /en/\nAllow: /en/company/longvon\nAllow: /en/about\nAllow: /en/products\nAllow: /en/partner\nAllow: /en/smart-ring-manufacturer\nAllow: /en/smart-ring-oem-odm\nAllow: /en/smart-ring-solution-provider\nAllow: /en/smart-ring-healthcare-solutions\nAllow: /en/smart-ring-technology\nAllow: /en/smart-ring-sdk-api\nAllow: /en/osa-smart-ring-technology\nAllow: /en/smart-ring-sleep-monitoring\nAllow: /en/smart-ring-sleep-respiratory\nAllow: /en/smart-ring-osa\nDisallow: /api/\nDisallow: /admin/\nDisallow: /dashboard\nDisallow: /_next/\n\nHost: https://www.longvon.com\nSitemap: https://www.longvon.com/sitemap.xml\n"
+    },
+    {
+      "url": "https://www.longvon.com/sitemap.xml",
+      "final_url": "https://www.longvon.com/sitemap.xml",
+      "status": 200,
+      "bytes": 21857,
+      "title": "",
+      "canonical": [],
+      "hreflang": [],
+      "description": null,
+      "viewport": null,
+      "robots_meta": null,
+      "jsonld_parse": [],
+      "links_count": 0,
+      "rfq_anchor_present": false,
+      "body_sha256": "561bf3111384ecd1e1d5c7f6c1ae4be718b15e9189ae512027f6f230c8c29b17",
+      "raw_text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n<url>\n<loc>https://www.longvon.com</loc>\n<changefreq>weekly</changefreq>\n<priority>1</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/en</loc>\n<changefreq>weekly</changefreq>\n<priority>0.95</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/products/ring1c</loc>\n<changefreq>monthly</changefreq>\n<priority>0.9</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/en/products/ring1c</loc>\n<changefreq>monthly</changefreq>\n<priority>0.9</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/about</loc>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/en/about</loc>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/news</loc>\n<changefreq>weekly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/metrics</loc>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/assessment</loc>\n<changefreq>monthly</changefreq>\n<priority>0.9</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/membership</loc>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge</loc>\n<changefreq>daily</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/partner</loc>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/en/partner</loc>\n<changefreq>monthly</changefreq>\n<priority>0.8</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/en/partner/oem</loc>\n<changefreq>monthly</changefreq>\n<priority>0.75</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/company/longvon</loc>\n<changefreq>monthly</changefreq>\n<priority>0.95</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/en/company/longvon</loc>\n<changefreq>monthly</changefreq>\n<priority>0.95</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/smart-ring-manufacturer</loc>\n<changefreq>monthly</changefreq>\n<priority>0.95</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/en/smart-ring-manufacturer</loc>\n<changefreq>monthly</changefreq>\n<priority>0.95</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/smart-ring-oem-odm</loc>\n<changefreq>monthly</changefreq>\n<priority>0.95</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/en/smart-ring-oem-odm</loc>\n<changefreq>monthly</changefreq>\n<priority>0.95</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/smart-ring-solution-provider</loc>\n<changefreq>monthly</changefreq>\n<priority>0.95</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/en/smart-ring-solution-provider</loc>\n<changefreq>monthly</changefreq>\n<priority>0.95</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/smart-ring-healthcare-solutions</loc>\n<changefreq>monthly</changefreq>\n<priority>0.95</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/en/smart-ring-healthcare-solutions</loc>\n<changefreq>monthly</changefreq>\n<priority>0.95</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/smart-ring-technology</loc>\n<changefreq>monthly</changefreq>\n<priority>0.95</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/en/smart-ring-technology</loc>\n<changefreq>monthly</changefreq>\n<priority>0.95</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/smart-ring-sdk-api</loc>\n<changefreq>monthly</changefreq>\n<priority>0.95</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/en/smart-ring-sdk-api</loc>\n<changefreq>monthly</changefreq>\n<priority>0.95</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/osa-smart-ring-technology</loc>\n<changefreq>monthly</changefreq>\n<priority>0.95</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/en/osa-smart-ring-technology</loc>\n<changefreq>monthly</changefreq>\n<priority>0.95</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/smart-ring-sleep-monitoring</loc>\n<changefreq>monthly</changefreq>\n<priority>0.95</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/en/smart-ring-sleep-monitoring</loc>\n<changefreq>monthly</changefreq>\n<priority>0.95</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/smart-ring-sleep-respiratory</loc>\n<changefreq>monthly</changefreq>\n<priority>0.95</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/en/smart-ring-sleep-respiratory</loc>\n<changefreq>monthly</changefreq>\n<priority>0.95</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/smart-ring-osa</loc>\n<changefreq>monthly</changefreq>\n<priority>0.95</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/en/smart-ring-osa</loc>\n<changefreq>monthly</changefreq>\n<priority>0.95</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/partner/hospital</loc>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/partner/pharmacy</loc>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/partner/oem</loc>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/partner/distributor</loc>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/partner/enterprise</loc>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/assessment/osa</loc>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/assessment/sleep</loc>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/assessment/stress</loc>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/assessment/weight-loss</loc>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/assessment/diabetes</loc>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/assessment/altitude</loc>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/metrics/rapid-test</loc>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/metrics/activity</loc>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/metrics/heart-rate</loc>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/metrics/blood-oxygen</loc>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/metrics/stress</loc>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/metrics/sleep-quality</loc>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/metrics/sleep-apnea</loc>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/glp-1-receptor-agonist-dentistry-fs8g</loc>\n<lastmod>2026-10-21T03:01:25.252Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/glp-1-receptor-agonists-chronic-pain-1db1</loc>\n<lastmod>2026-10-21T03:01:00.356Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/pulse-oximeter-wqxy</loc>\n<lastmod>2026-10-21T03:00:39.112Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/nighttime-blood-oxygen-monitoring-j7ek</loc>\n<lastmod>2026-10-21T03:00:16.750Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/dangers-of-low-blood-oxygen-mdn1</loc>\n<lastmod>2026-10-20T03:01:37.367Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/blood-oxygen-saturation-zdpc</loc>\n<lastmod>2026-10-20T03:01:17.041Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/hrv-and-stress-xa78</loc>\n<lastmod>2026-10-20T03:00:57.702Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/smart-ring-sleep-monitoring-vxa5</loc>\n<lastmod>2026-10-20T03:00:35.634Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/health-policy-changes-health-monitoring-smart-ring-l9e0</loc>\n<lastmod>2026-10-20T03:00:14.376Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/glp-1-weight-loss-jiw3</loc>\n<lastmod>2026-10-14T03:01:28.952Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/glp-1-138f</loc>\n<lastmod>2026-10-14T03:01:03.322Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/pulse-oximeter-3q73</loc>\n<lastmod>2026-10-14T03:00:39.621Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/nocturnal-oxygen-monitoring-1484</loc>\n<lastmod>2026-10-14T03:00:18.359Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/dangers-of-low-blood-oxygen-ht5l</loc>\n<lastmod>2026-10-13T03:01:54.267Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/blood-oxygen-saturation-86qp</loc>\n<lastmod>2026-10-13T03:01:35.208Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/hrv-and-stress-zypd</loc>\n<lastmod>2026-10-13T03:01:12.590Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/sleep-apnea-smart-ring-n6vo</loc>\n<lastmod>2026-10-13T03:00:48.618Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/smart-ring-health-data-insights-1fh7</loc>\n<lastmod>2026-10-13T03:00:26.857Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/glp-1-efficacy-eb74</loc>\n<lastmod>2026-10-07T03:01:30.079Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/glp-1-ace6</loc>\n<lastmod>2026-10-07T03:01:06.505Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/pulse-oximeter-ydsx</loc>\n<lastmod>2026-10-07T03:00:47.533Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/nocturnal-blood-oxygen-monitoring-i1pk</loc>\n<lastmod>2026-10-07T03:00:27.934Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/dangers-of-low-blood-oxygen-iysv</loc>\n<lastmod>2026-10-07T03:00:12.970Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/blood-oxygen-saturation-qesj</loc>\n<lastmod>2026-10-06T03:01:26.774Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/hrv-and-stress-xqaw</loc>\n<lastmod>2026-10-06T03:01:09.686Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/smart-ring-sleep-monitoring-heart-health-y5v8</loc>\n<lastmod>2026-10-06T03:00:48.756Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/ehr-doctor-burnout-smart-ring-sleep-heart-ivkk</loc>\n<lastmod>2026-10-06T03:00:31.754Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/poor-sleep-quality-causes-smart-ring-4m46</loc>\n<lastmod>2026-10-06T03:00:13.677Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/hrv-and-stress-gv2h</loc>\n<lastmod>2026-10-03T03:00:37.338Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/hrv-monitoring-ha1k</loc>\n<lastmod>2026-10-03T03:00:15.975Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/smart-ring-supply-chain-6sq8</loc>\n<lastmod>2026-09-03T03:00:48.599Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/harm-of-low-blood-oxygen-i02u</loc>\n<lastmod>2026-09-03T03:00:24.734Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/smart-ring-production-cop2</loc>\n<lastmod>2026-09-02T03:00:42.093Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/night-time-blood-oxygen-monitoring-w7fa</loc>\n<lastmod>2026-09-02T03:00:17.217Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/smart-ring-solution-provider-9ilm</loc>\n<lastmod>2026-09-01T03:00:48.365Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/blood-oxygen-meter-lp3d</loc>\n<lastmod>2026-09-01T03:00:22.676Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/血氧仪-1782028241662</loc>\n<lastmod>2026-08-31T05:15:21.505Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/nighttime-blood-oxygen-monitoring</loc>\n<lastmod>2026-08-31T05:15:20.875Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/smart-ring-odm-nq5d</loc>\n<lastmod>2026-08-30T03:00:38.148Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/smart-ring-supply-chain-yl7n</loc>\n<lastmod>2026-08-29T03:00:56.063Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/blood-oxygen-meter-0gzr</loc>\n<lastmod>2026-08-29T03:00:28.703Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/smart-ring-production-wnh6</loc>\n<lastmod>2026-08-28T03:00:56.681Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/hrv-monitoring-jjj6</loc>\n<lastmod>2026-08-28T03:00:30.138Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/smart-ring-solution-provider-qe55</loc>\n<lastmod>2026-08-27T03:00:54.620Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/hrv-normal-range-sgol</loc>\n<lastmod>2026-08-27T03:00:26.037Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/smart-ring-white-label-spb4</loc>\n<lastmod>2026-08-26T03:00:52.523Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/hrv-and-stress-i32i</loc>\n<lastmod>2026-08-26T03:00:22.643Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/ring-oem-y4hw</loc>\n<lastmod>2026-08-25T03:00:54.716Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/blood-oxygen-level-87z2</loc>\n<lastmod>2026-08-25T03:00:27.411Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/smart-ring-oem-570d</loc>\n<lastmod>2026-08-24T03:00:48.877Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/harm-of-low-blood-oxygen-fgp7</loc>\n<lastmod>2026-08-24T03:00:23.246Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/smart-ring-odm-n806</loc>\n<lastmod>2026-08-23T03:00:50.782Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/night-time-blood-oxygen-monitoring-wigi</loc>\n<lastmod>2026-08-23T03:00:20.552Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/smart-ring-supply-chain-ydr2</loc>\n<lastmod>2026-08-22T03:00:46.398Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/blood-oxygen-meter-a3x5</loc>\n<lastmod>2026-08-22T03:00:23.564Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/smart-ring-production-9zgt</loc>\n<lastmod>2026-08-21T03:00:53.539Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/hrv-normal-range-nwga</loc>\n<lastmod>2026-08-21T03:00:21.799Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/smart-ring-solution-provider-0r8s</loc>\n<lastmod>2026-08-20T03:00:51.165Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/hrv-and-stress-mcs2</loc>\n<lastmod>2026-08-20T03:00:23.351Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/smart-ring-white-label-3k70</loc>\n<lastmod>2026-08-19T03:00:46.372Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/blood-oxygen-level-5c72</loc>\n<lastmod>2026-08-19T03:00:21.082Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/ring-oem-sulf</loc>\n<lastmod>2026-08-18T03:00:47.246Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/harm-of-low-blood-oxygen-1dj9</loc>\n<lastmod>2026-08-18T03:00:20.069Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/smart-ring-oem-ho9z</loc>\n<lastmod>2026-08-17T03:00:40.908Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/night-time-blood-oxygen-monitoring-yfbq</loc>\n<lastmod>2026-08-17T03:00:16.328Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/smart-ring-odm-4xq5</loc>\n<lastmod>2026-08-16T03:00:49.632Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/blood-oxygen-meter-b5en</loc>\n<lastmod>2026-08-16T03:00:20.128Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/smart-ring-supply-chain-ddx9</loc>\n<lastmod>2026-08-15T03:00:51.567Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/hrv-normal-range-36ir</loc>\n<lastmod>2026-08-15T03:00:23.833Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/smart-ring-production-xott</loc>\n<lastmod>2026-08-14T03:00:51.425Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/hrv-and-stress-m0tf</loc>\n<lastmod>2026-08-14T03:00:23.085Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/smart-ring-solution-provider-aexe</loc>\n<lastmod>2026-08-13T03:00:54.137Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/blood-oxygen-level-1fae</loc>\n<lastmod>2026-08-13T03:00:22.417Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/smart-ring-white-label-x18w</loc>\n<lastmod>2026-08-12T03:00:47.132Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/harm-of-low-blood-oxygen-mzae</loc>\n<lastmod>2026-08-12T03:00:22.640Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/ring-oem-rvii</loc>\n<lastmod>2026-08-11T03:00:46.405Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/nighttime-blood-oxygen-monitoring-47c0</loc>\n<lastmod>2026-08-11T03:00:19.528Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/smart-ring-oem-8uwh</loc>\n<lastmod>2026-08-10T03:00:29.965Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/smart-ring-odm-l712</loc>\n<lastmod>2026-08-09T03:00:47.950Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n<url>\n<loc>https://www.longvon.com/knowledge/blood-oxygen-meter-l2ng</loc>\n<lastmod>2026-08-09T03:00:19.543Z</lastmod>\n<changefreq>monthly</changefreq>\n<priority>0.6</priority>\n</url>\n</urlset>\n"
+    },
+    {
+      "url": "https://new.longvon.com/",
+      "final_url": "https://www.longvon.com/",
+      "status": 200,
+      "bytes": 67611,
+      "title": "MATEYOU Ring1C · AI健康智能戒指",
+      "canonical": [
+        "https://www.longvon.com"
+      ],
+      "hreflang": [
+        {
+          "rel": "alternate",
+          "hreflang": "zh-CN",
+          "href": "https://www.longvon.com"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "en",
+          "href": "https://www.longvon.com/en"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "x-default",
+          "href": "https://www.longvon.com"
+        }
+      ],
+      "description": "不只是智能戒指。MATEYOU Ring1C 是你的个人健康智能系统。71+ 健康指标，睡眠、心脏、压力、血氧、OSA 风险全面监测。",
+      "viewport": "width=device-width, initial-scale=1",
+      "robots_meta": "index, follow",
+      "jsonld_parse": [
+        "PARSES",
+        "PARSES"
+      ],
+      "links_count": 62,
+      "rfq_anchor_present": false,
+      "body_sha256": "2ebcc15bd2f04a8eda509fb97f5b4beac2a1adc0df4a9fa196e48beca5511a4f"
+    },
+    {
+      "url": "https://new.longvon.com/robots.txt",
+      "final_url": "https://www.longvon.com/robots.txt",
+      "status": 200,
+      "bytes": 5406,
+      "title": "",
+      "canonical": [],
+      "hreflang": [],
+      "description": null,
+      "viewport": null,
+      "robots_meta": null,
+      "jsonld_parse": [],
+      "links_count": 0,
+      "rfq_anchor_present": false,
+      "body_sha256": "99dccce134723038c8e074f539c4bc9aa933675458b37cc939efbe78194602df",
+      "raw_text": "User-Agent: Baiduspider\nAllow: /\nAllow: /products\nAllow: /knowledge\nAllow: /topics\nAllow: /authors\nAllow: /partner\nAllow: /assessment\nAllow: /membership\nAllow: /about\nAllow: /news\nAllow: /metrics\nAllow: /company/longvon\nAllow: /smart-ring-manufacturer\nAllow: /smart-ring-oem-odm\nAllow: /smart-ring-solution-provider\nAllow: /smart-ring-healthcare-solutions\nAllow: /smart-ring-technology\nAllow: /smart-ring-sdk-api\nAllow: /osa-smart-ring-technology\nAllow: /smart-ring-sleep-monitoring\nAllow: /smart-ring-sleep-respiratory\nAllow: /smart-ring-osa\nAllow: /en/\nAllow: /en/company/longvon\nAllow: /en/about\nAllow: /en/products\nAllow: /en/partner\nAllow: /en/smart-ring-manufacturer\nAllow: /en/smart-ring-oem-odm\nAllow: /en/smart-ring-solution-provider\nAllow: /en/smart-ring-healthcare-solutions\nAllow: /en/smart-ring-technology\nAllow: /en/smart-ring-sdk-api\nAllow: /en/osa-smart-ring-technology\nAllow: /en/smart-ring-sleep-monitoring\nAllow: /en/smart-ring-sleep-respiratory\nAllow: /en/smart-ring-osa\nDisallow: /api/\nDisallow: /admin/\nDisallow: /dashboard\nDisallow: /_next/\nCrawl-delay: 1\n\nUser-Agent: GPTBot\nAllow: /\nAllow: /products\nAllow: /knowledge\nAllow: /topics\nAllow: /authors\nAllow: /partner\nAllow: /assessment\nAllow: /membership\nAllow: /about\nAllow: /news\nAllow: /metrics\nAllow: /company/longvon\nAllow: /smart-ring-manufacturer\nAllow: /smart-ring-oem-odm\nAllow: /smart-ring-solution-provider\nAllow: /smart-ring-healthcare-solutions\nAllow: /smart-ring-technology\nAllow: /smart-ring-sdk-api\nAllow: /osa-smart-ring-technology\nAllow: /smart-ring-sleep-monitoring\nAllow: /smart-ring-sleep-respiratory\nAllow: /smart-ring-osa\nAllow: /en/\nAllow: /en/company/longvon\nAllow: /en/about\nAllow: /en/products\nAllow: /en/partner\nAllow: /en/smart-ring-manufacturer\nAllow: /en/smart-ring-oem-odm\nAllow: /en/smart-ring-solution-provider\nAllow: /en/smart-ring-healthcare-solutions\nAllow: /en/smart-ring-technology\nAllow: /en/smart-ring-sdk-api\nAllow: /en/osa-smart-ring-technology\nAllow: /en/smart-ring-sleep-monitoring\nAllow: /en/smart-ring-sleep-respiratory\nAllow: /en/smart-ring-osa\nDisallow: /api/\nDisallow: /admin/\nDisallow: /dashboard\nDisallow: /_next/\n\nUser-Agent: Google-Extended\nAllow: /\nAllow: /products\nAllow: /knowledge\nAllow: /topics\nAllow: /authors\nAllow: /partner\nAllow: /assessment\nAllow: /membership\nAllow: /about\nAllow: /news\nAllow: /metrics\nAllow: /company/longvon\nAllow: /smart-ring-manufacturer\nAllow: /smart-ring-oem-odm\nAllow: /smart-ring-solution-provider\nAllow: /smart-ring-healthcare-solutions\nAllow: /smart-ring-technology\nAllow: /smart-ring-sdk-api\nAllow: /osa-smart-ring-technology\nAllow: /smart-ring-sleep-monitoring\nAllow: /smart-ring-sleep-respiratory\nAllow: /smart-ring-osa\nAllow: /en/\nAllow: /en/company/longvon\nAllow: /en/about\nAllow: /en/products\nAllow: /en/partner\nAllow: /en/smart-ring-manufacturer\nAllow: /en/smart-ring-oem-odm\nAllow: /en/smart-ring-solution-provider\nAllow: /en/smart-ring-healthcare-solutions\nAllow: /en/smart-ring-technology\nAllow: /en/smart-ring-sdk-api\nAllow: /en/osa-smart-ring-technology\nAllow: /en/smart-ring-sleep-monitoring\nAllow: /en/smart-ring-sleep-respiratory\nAllow: /en/smart-ring-osa\nDisallow: /api/\nDisallow: /admin/\nDisallow: /dashboard\nDisallow: /_next/\n\nUser-Agent: PerplexityBot\nAllow: /\nAllow: /products\nAllow: /knowledge\nAllow: /topics\nAllow: /authors\nAllow: /partner\nAllow: /assessment\nAllow: /membership\nAllow: /about\nAllow: /news\nAllow: /metrics\nAllow: /company/longvon\nAllow: /smart-ring-manufacturer\nAllow: /smart-ring-oem-odm\nAllow: /smart-ring-solution-provider\nAllow: /smart-ring-healthcare-solutions\nAllow: /smart-ring-technology\nAllow: /smart-ring-sdk-api\nAllow: /osa-smart-ring-technology\nAllow: /smart-ring-sleep-monitoring\nAllow: /smart-ring-sleep-respiratory\nAllow: /smart-ring-osa\nAllow: /en/\nAllow: /en/company/longvon\nAllow: /en/about\nAllow: /en/products\nAllow: /en/partner\nAllow: /en/smart-ring-manufacturer\nAllow: /en/smart-ring-oem-odm\nAllow: /en/smart-ring-solution-provider\nAllow: /en/smart-ring-healthcare-solutions\nAllow: /en/smart-ring-technology\nAllow: /en/smart-ring-sdk-api\nAllow: /en/osa-smart-ring-technology\nAllow: /en/smart-ring-sleep-monitoring\nAllow: /en/smart-ring-sleep-respiratory\nAllow: /en/smart-ring-osa\nDisallow: /api/\nDisallow: /admin/\nDisallow: /dashboard\nDisallow: /_next/\n\nUser-Agent: *\nAllow: /\nAllow: /products\nAllow: /knowledge\nAllow: /topics\nAllow: /authors\nAllow: /partner\nAllow: /assessment\nAllow: /membership\nAllow: /about\nAllow: /news\nAllow: /metrics\nAllow: /company/longvon\nAllow: /smart-ring-manufacturer\nAllow: /smart-ring-oem-odm\nAllow: /smart-ring-solution-provider\nAllow: /smart-ring-healthcare-solutions\nAllow: /smart-ring-technology\nAllow: /smart-ring-sdk-api\nAllow: /osa-smart-ring-technology\nAllow: /smart-ring-sleep-monitoring\nAllow: /smart-ring-sleep-respiratory\nAllow: /smart-ring-osa\nAllow: /en/\nAllow: /en/company/longvon\nAllow: /en/about\nAllow: /en/products\nAllow: /en/partner\nAllow: /en/smart-ring-manufacturer\nAllow: /en/smart-ring-oem-odm\nAllow: /en/smart-ring-solution-provider\nAllow: /en/smart-ring-healthcare-solutions\nAllow: /en/smart-ring-technology\nAllow: /en/smart-ring-sdk-api\nAllow: /en/osa-smart-ring-technology\nAllow: /en/smart-ring-sleep-monitoring\nAllow: /en/smart-ring-sleep-respiratory\nAllow: /en/smart-ring-osa\nDisallow: /api/\nDisallow: /admin/\nDisallow: /dashboard\nDisallow: /_next/\n\nHost: https://www.longvon.com\nSitemap: https://www.longvon.com/sitemap.xml\n"
+    },
+    {
+      "url": "https://new.longvon.com/smart-ring-oem-odm",
+      "final_url": "https://www.longvon.com/smart-ring-oem-odm",
+      "status": 200,
+      "bytes": 81135,
+      "title": "智能戒指 OEM / ODM 服务 | LONGVON",
+      "canonical": [
+        "https://www.longvon.com/smart-ring-oem-odm"
+      ],
+      "hreflang": [
+        {
+          "rel": "alternate",
+          "hreflang": "zh-CN",
+          "href": "https://www.longvon.com/smart-ring-oem-odm"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "en",
+          "href": "https://www.longvon.com/en/smart-ring-oem-odm"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "x-default",
+          "href": "https://www.longvon.com/smart-ring-oem-odm"
+        }
+      ],
+      "description": "龙汾科技（深圳）有限公司（LONGVON）是一家智能戒指制造商及 OEM/ODM 技术方案提供商。 覆盖硬件、固件、算法、App、SDK 与生产制造。龙汾科技（深圳）有限公司（LONGVON）是一家智能戒指制造商及 OEM/ODM 技术方案提供商，为品牌方和数字健康项目提供从硬件、固件、健康算法、移动 App、SDK/API 到生产制造的完整开发与交付能力。",
+      "viewport": "width=device-width, initial-scale=1",
+      "robots_meta": "index, follow",
+      "jsonld_parse": [
+        "PARSES",
+        "PARSES"
+      ],
+      "links_count": 68,
+      "rfq_anchor_present": false,
+      "body_sha256": "bd52d61450436dc6d63b4b62b1ec2a5ebd49cceea742321918989fb4fb11e3bf"
+    },
+    {
+      "url": "https://www.longvon.com/company/longvon",
+      "final_url": "https://www.longvon.com/company/longvon",
+      "status": 200,
+      "redirects": [],
+      "title": "龙汾科技（深圳）有限公司 | LONGVON 智能戒指技术制造商及 OEM/ODM 服务商",
+      "canonical": [
+        "https://www.longvon.com/company/longvon"
+      ],
+      "hreflang": [
+        {
+          "rel": "alternate",
+          "hreflang": "zh-CN",
+          "href": "https://www.longvon.com/company/longvon"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "en",
+          "href": "https://www.longvon.com/en/company/longvon"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "x-default",
+          "href": "https://www.longvon.com/company/longvon"
+        }
+      ],
+      "description": "龙汾科技（深圳）有限公司（LONGVON）是一家智能戒指制造商及 OEM/ODM 技术方案提供商，为品牌方和数字健康项目提供从硬件、固件、健康算法、移动 App、SDK/API 到生产制造的完整开发与交付能力。 LONGVON（龙汾科技）是技术制造商与 OEM/ODM 提供方，MATEYOU 是其智能戒指产品品牌。 公开口径：71 项健康监测参数，含 22 项睡眠相关参数。",
+      "viewport": "width=device-width, initial-scale=1",
+      "robots_meta": "index, follow",
+      "jsonld_parse": [
+        "PARSES",
+        "PARSES",
+        "PARSES"
+      ],
+      "links_count": 67,
+      "rfq_anchor_present": false,
+      "body_sha256": "5696b8ec2908c58529d1280f368fccb2e2102fa92a85d83a51a20fda3f94add3"
+    },
+    {
+      "url": "https://www.longvon.com/en/company/longvon",
+      "final_url": "https://www.longvon.com/en/company/longvon",
+      "status": 200,
+      "redirects": [],
+      "title": "LONGVON | Smart Ring Technology Manufacturer & OEM/ODM Provider",
+      "canonical": [
+        "https://www.longvon.com/en/company/longvon"
+      ],
+      "hreflang": [
+        {
+          "rel": "alternate",
+          "hreflang": "zh-CN",
+          "href": "https://www.longvon.com/company/longvon"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "en",
+          "href": "https://www.longvon.com/en/company/longvon"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "x-default",
+          "href": "https://www.longvon.com/company/longvon"
+        }
+      ],
+      "description": "LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in customized smart ring hardware, firmware, mobile apps, SDKs, cloud APIs, and health monitoring solutions. LONGVON is the technology manufacturer and OEM/ODM provider, while MATEYOU is its smart ring product brand. 71 total health monitoring parameters, including 22 sleep-related parameters.",
+      "viewport": "width=device-width, initial-scale=1",
+      "robots_meta": "index, follow",
+      "jsonld_parse": [
+        "PARSES",
+        "PARSES",
+        "PARSES"
+      ],
+      "links_count": 60,
+      "rfq_anchor_present": false,
+      "body_sha256": "c5597bccd087bbbdbc8bed91eb659ba3fb93e7a8b8de95ca16a7087b8a1204e5"
+    },
+    {
+      "url": "https://www.longvon.com/about",
+      "final_url": "https://www.longvon.com/about",
+      "status": 200,
+      "redirects": [],
+      "title": "关于龙汾科技 | LONGVON",
+      "canonical": [
+        "https://www.longvon.com/about"
+      ],
+      "hreflang": [
+        {
+          "rel": "alternate",
+          "hreflang": "zh-CN",
+          "href": "https://www.longvon.com/about"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "en",
+          "href": "https://www.longvon.com/en/about"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "x-default",
+          "href": "https://www.longvon.com/about"
+        }
+      ],
+      "description": "龙汾科技（深圳）有限公司（LONGVON）是智能戒指技术厂商与OEM/ODM提供商。MATEYOU是LONGVON打造的智能戒指及AI健康品牌。",
+      "viewport": "width=device-width, initial-scale=1",
+      "robots_meta": "index, follow",
+      "jsonld_parse": [],
+      "links_count": 42,
+      "rfq_anchor_present": false,
+      "body_sha256": "928ad5af875b0d42359fe76b9c35c447deac39d0b3de38e01590afe15359d070"
+    },
+    {
+      "url": "https://www.longvon.com/en/about",
+      "final_url": "https://www.longvon.com/en/about",
+      "status": 200,
+      "redirects": [],
+      "title": "About LONGVON | Smart Ring Technology Manufacturer",
+      "canonical": [
+        "https://www.longvon.com/en/about"
+      ],
+      "hreflang": [
+        {
+          "rel": "alternate",
+          "hreflang": "zh-CN",
+          "href": "https://www.longvon.com/about"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "en",
+          "href": "https://www.longvon.com/en/about"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "x-default",
+          "href": "https://www.longvon.com/about"
+        }
+      ],
+      "description": "LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in customized smart ring hardware, firmware, mobile apps, SDKs, cloud APIs, and health monitoring solutions. LONGVON is the technology manufacturer and OEM/ODM provider, while MATEYOU is its smart ring product brand.",
+      "viewport": "width=device-width, initial-scale=1",
+      "robots_meta": "index, follow",
+      "jsonld_parse": [],
+      "links_count": 35,
+      "rfq_anchor_present": false,
+      "body_sha256": "415874043e9217f5ecc739999f793e33d6365f8031a50deaefa0cde5f1a009be"
+    },
+    {
+      "url": "https://www.longvon.com/smart-ring-sleep-monitoring",
+      "final_url": "https://www.longvon.com/smart-ring-sleep-monitoring",
+      "status": 200,
+      "redirects": [],
+      "title": "智能戒指睡眠监测技术 | LONGVON",
+      "canonical": [
+        "https://www.longvon.com/smart-ring-sleep-monitoring"
+      ],
+      "hreflang": [
+        {
+          "rel": "alternate",
+          "hreflang": "zh-CN",
+          "href": "https://www.longvon.com/smart-ring-sleep-monitoring"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "en",
+          "href": "https://www.longvon.com/en/smart-ring-sleep-monitoring"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "x-default",
+          "href": "https://www.longvon.com/smart-ring-sleep-monitoring"
+        }
+      ],
+      "description": "LONGVON 智能戒指睡眠监测技术。71 项健康监测参数，含 22 项睡眠相关参数。覆盖 SpO₂、心率、HRV 相关信号与呼吸健康监测。",
+      "viewport": "width=device-width, initial-scale=1",
+      "robots_meta": "index, follow",
+      "jsonld_parse": [
+        "PARSES",
+        "PARSES"
+      ],
+      "links_count": 62,
+      "rfq_anchor_present": false,
+      "body_sha256": "8f79539255f2b4fa8f50fa2dc9a4e8f0c902d4aee3669a2c9e6c54fae9edaf1b"
+    },
+    {
+      "url": "https://www.longvon.com/en/smart-ring-sleep-monitoring",
+      "final_url": "https://www.longvon.com/en/smart-ring-sleep-monitoring",
+      "status": 200,
+      "redirects": [],
+      "title": "Smart Ring Sleep Monitoring Technology | LONGVON",
+      "canonical": [
+        "https://www.longvon.com/en/smart-ring-sleep-monitoring"
+      ],
+      "hreflang": [
+        {
+          "rel": "alternate",
+          "hreflang": "zh-CN",
+          "href": "https://www.longvon.com/smart-ring-sleep-monitoring"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "en",
+          "href": "https://www.longvon.com/en/smart-ring-sleep-monitoring"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "x-default",
+          "href": "https://www.longvon.com/smart-ring-sleep-monitoring"
+        }
+      ],
+      "description": "LONGVON smart ring sleep monitoring technology. 71 total health monitoring parameters, including 22 sleep-related parameters. SpO2, heart rate, HRV-related signals, and respiratory health monitoring.",
+      "viewport": "width=device-width, initial-scale=1",
+      "robots_meta": "index, follow",
+      "jsonld_parse": [
+        "PARSES",
+        "PARSES"
+      ],
+      "links_count": 56,
+      "rfq_anchor_present": false,
+      "body_sha256": "59770721570312fcd5ffa85839acf27a391f82635dd73b0a6ed4f4367613348a"
+    },
+    {
+      "url": "https://www.longvon.com/osa-smart-ring-technology",
+      "final_url": "https://www.longvon.com/osa-smart-ring-technology",
+      "status": 200,
+      "redirects": [],
+      "title": "智能戒指 OSA 监测技术与 OEM/ODM | LONGVON 龙汾科技",
+      "canonical": [
+        "https://www.longvon.com/osa-smart-ring-technology"
+      ],
+      "hreflang": [
+        {
+          "rel": "alternate",
+          "hreflang": "zh-CN",
+          "href": "https://www.longvon.com/osa-smart-ring-technology"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "en",
+          "href": "https://www.longvon.com/en/osa-smart-ring-technology"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "x-default",
+          "href": "https://www.longvon.com/osa-smart-ring-technology"
+        }
+      ],
+      "description": "LONGVON 面向睡眠呼吸与 OSA 相关监测提供智能戒指技术、合作伙伴 SDK/云端 API 与 OEM/ODM 制造能力。Ring1C 非医疗器械；指标仅供健康参考，不构成诊断。",
+      "viewport": "width=device-width, initial-scale=1",
+      "robots_meta": "index, follow",
+      "jsonld_parse": [
+        "PARSES",
+        "PARSES"
+      ],
+      "links_count": 65,
+      "rfq_anchor_present": false,
+      "body_sha256": "f988dfd423f5fb65d7746c3b685ffa146341602cea062d6f3ef1f37773119856"
+    },
+    {
+      "url": "https://www.longvon.com/en/osa-smart-ring-technology",
+      "final_url": "https://www.longvon.com/en/osa-smart-ring-technology",
+      "status": 200,
+      "redirects": [],
+      "title": "Smart Ring OSA Monitoring Technology & OEM/ODM | LONGVON",
+      "canonical": [
+        "https://www.longvon.com/en/osa-smart-ring-technology"
+      ],
+      "hreflang": [
+        {
+          "rel": "alternate",
+          "hreflang": "zh-CN",
+          "href": "https://www.longvon.com/osa-smart-ring-technology"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "en",
+          "href": "https://www.longvon.com/en/osa-smart-ring-technology"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "x-default",
+          "href": "https://www.longvon.com/osa-smart-ring-technology"
+        }
+      ],
+      "description": "LONGVON provides smart ring sleep respiratory and OSA-related monitoring technology with partner SDK/Cloud API and OEM/ODM manufacturing. Ring1C is not a medical device; metrics are for health reference, not diagnosis.",
+      "viewport": "width=device-width, initial-scale=1",
+      "robots_meta": "index, follow",
+      "jsonld_parse": [
+        "PARSES",
+        "PARSES"
+      ],
+      "links_count": 60,
+      "rfq_anchor_present": false,
+      "body_sha256": "bcc5719220966811cc77d0f4e198ef3acf465c59af6300d15d19f10e27210dca"
+    },
+    {
+      "url": "https://new.longvon.com/",
+      "final_url": "https://www.longvon.com/",
+      "status": 200,
+      "redirects": [
+        {
+          "from": "https://new.longvon.com/",
+          "status": 301,
+          "to": "https://www.longvon.com/"
+        }
+      ],
+      "title": "MATEYOU Ring1C · AI健康智能戒指",
+      "canonical": [
+        "https://www.longvon.com"
+      ],
+      "hreflang": [
+        {
+          "rel": "alternate",
+          "hreflang": "zh-CN",
+          "href": "https://www.longvon.com"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "en",
+          "href": "https://www.longvon.com/en"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "x-default",
+          "href": "https://www.longvon.com"
+        }
+      ],
+      "description": "不只是智能戒指。MATEYOU Ring1C 是你的个人健康智能系统。71+ 健康指标，睡眠、心脏、压力、血氧、OSA 风险全面监测。",
+      "viewport": "width=device-width, initial-scale=1",
+      "robots_meta": "index, follow",
+      "jsonld_parse": [
+        "PARSES",
+        "PARSES"
+      ],
+      "links_count": 62,
+      "rfq_anchor_present": false,
+      "body_sha256": "2ebcc15bd2f04a8eda509fb97f5b4beac2a1adc0df4a9fa196e48beca5511a4f"
+    },
+    {
+      "url": "https://new.longvon.com/en/smart-ring-oem-odm",
+      "final_url": "https://www.longvon.com/en/smart-ring-oem-odm",
+      "status": 200,
+      "redirects": [
+        {
+          "from": "https://new.longvon.com/en/smart-ring-oem-odm",
+          "status": 301,
+          "to": "https://www.longvon.com/en/smart-ring-oem-odm"
+        }
+      ],
+      "title": "Smart Ring OEM & ODM Services | LONGVON",
+      "canonical": [
+        "https://www.longvon.com/en/smart-ring-oem-odm"
+      ],
+      "hreflang": [
+        {
+          "rel": "alternate",
+          "hreflang": "zh-CN",
+          "href": "https://www.longvon.com/smart-ring-oem-odm"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "en",
+          "href": "https://www.longvon.com/en/smart-ring-oem-odm"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "x-default",
+          "href": "https://www.longvon.com/smart-ring-oem-odm"
+        }
+      ],
+      "description": "LONGVON (Longvon Technology (Shenzhen) Co., Ltd.) is a smart ring technology manufacturer and OEM/ODM provider. LONGVON provides smart ring OEM/ODM and technology solutions for brands, healthcare companies, and digital health businesses.",
+      "viewport": "width=device-width, initial-scale=1",
+      "robots_meta": "index, follow",
+      "jsonld_parse": [
+        "PARSES",
+        "PARSES",
+        "PARSES"
+      ],
+      "links_count": 64,
+      "rfq_anchor_present": false,
+      "body_sha256": "e850f35444d5747e8ddfe5f8fa66ae828693b4d6b2427db94fca29d3a313e616"
+    },
+    {
+      "url": "https://new.longvon.com/robots.txt",
+      "final_url": "https://www.longvon.com/robots.txt",
+      "status": 200,
+      "redirects": [
+        {
+          "from": "https://new.longvon.com/robots.txt",
+          "status": 301,
+          "to": "https://www.longvon.com/robots.txt"
+        }
+      ],
+      "title": "",
+      "canonical": [],
+      "hreflang": [],
+      "description": null,
+      "viewport": null,
+      "robots_meta": null,
+      "jsonld_parse": [],
+      "links_count": 0,
+      "rfq_anchor_present": false,
+      "body_sha256": "99dccce134723038c8e074f539c4bc9aa933675458b37cc939efbe78194602df",
+      "raw_text": "User-Agent: Baiduspider\nAllow: /\nAllow: /products\nAllow: /knowledge\nAllow: /topics\nAllow: /authors\nAllow: /partner\nAllow: /assessment\nAllow: /membership\nAllow: /about\nAllow: /news\nAllow: /metrics\nAllow: /company/longvon\nAllow: /smart-ring-manufacturer\nAllow: /smart-ring-oem-odm\nAllow: /smart-ring-solution-provider\nAllow: /smart-ring-healthcare-solutions\nAllow: /smart-ring-technology\nAllow: /smart-ring-sdk-api\nAllow: /osa-smart-ring-technology\nAllow: /smart-ring-sleep-monitoring\nAllow: /smart-ring-sleep-respiratory\nAllow: /smart-ring-osa\nAllow: /en/\nAllow: /en/company/longvon\nAllow: /en/about\nAllow: /en/products\nAllow: /en/partner\nAllow: /en/smart-ring-manufacturer\nAllow: /en/smart-ring-oem-odm\nAllow: /en/smart-ring-solution-provider\nAllow: /en/smart-ring-healthcare-solutions\nAllow: /en/smart-ring-technology\nAllow: /en/smart-ring-sdk-api\nAllow: /en/osa-smart-ring-technology\nAllow: /en/smart-ring-sleep-monitoring\nAllow: /en/smart-ring-sleep-respiratory\nAllow: /en/smart-ring-osa\nDisallow: /api/\nDisallow: /admin/\nDisallow: /dashboard\nDisallow: /_next/\nCrawl-delay: 1\n\nUser-Agent: GPTBot\nAllow: /\nAllow: /products\nAllow: /knowledge\nAllow: /topics\nAllow: /authors\nAllow: /partner\nAllow: /assessment\nAllow: /membership\nAllow: /about\nAllow: /news\nAllow: /metrics\nAllow: /company/longvon\nAllow: /smart-ring-manufacturer\nAllow: /smart-ring-oem-odm\nAllow: /smart-ring-solution-provider\nAllow: /smart-ring-healthcare-solutions\nAllow: /smart-ring-technology\nAllow: /smart-ring-sdk-api\nAllow: /osa-smart-ring-technology\nAllow: /smart-ring-sleep-monitoring\nAllow: /smart-ring-sleep-respiratory\nAllow: /smart-ring-osa\nAllow: /en/\nAllow: /en/company/longvon\nAllow: /en/about\nAllow: /en/products\nAllow: /en/partner\nAllow: /en/smart-ring-manufacturer\nAllow: /en/smart-ring-oem-odm\nAllow: /en/smart-ring-solution-provider\nAllow: /en/smart-ring-healthcare-solutions\nAllow: /en/smart-ring-technology\nAllow: /en/smart-ring-sdk-api\nAllow: /en/osa-smart-ring-technology\nAllow: /en/smart-ring-sleep-monitoring\nAllow: /en/smart-ring-sleep-respiratory\nAllow: /en/smart-ring-osa\nDisallow: /api/\nDisallow: /admin/\nDisallow: /dashboard\nDisallow: /_next/\n\nUser-Agent: Google-Extended\nAllow: /\nAllow: /products\nAllow: /knowledge\nAllow: /topics\nAllow: /authors\nAllow: /partner\nAllow: /assessment\nAllow: /membership\nAllow: /about\nAllow: /news\nAllow: /metrics\nAllow: /company/longvon\nAllow: /smart-ring-manufacturer\nAllow: /smart-ring-oem-odm\nAllow: /smart-ring-solution-provider\nAllow: /smart-ring-healthcare-solutions\nAllow: /smart-ring-technology\nAllow: /smart-ring-sdk-api\nAllow: /osa-smart-ring-technology\nAllow: /smart-ring-sleep-monitoring\nAllow: /smart-ring-sleep-respiratory\nAllow: /smart-ring-osa\nAllow: /en/\nAllow: /en/company/longvon\nAllow: /en/about\nAllow: /en/products\nAllow: /en/partner\nAllow: /en/smart-ring-manufacturer\nAllow: /en/smart-ring-oem-odm\nAllow: /en/smart-ring-solution-provider\nAllow: /en/smart-ring-healthcare-solutions\nAllow: /en/smart-ring-technology\nAllow: /en/smart-ring-sdk-api\nAllow: /en/osa-smart-ring-technology\nAllow: /en/smart-ring-sleep-monitoring\nAllow: /en/smart-ring-sleep-respiratory\nAllow: /en/smart-ring-osa\nDisallow: /api/\nDisallow: /admin/\nDisallow: /dashboard\nDisallow: /_next/\n\nUser-Agent: PerplexityBot\nAllow: /\nAllow: /products\nAllow: /knowledge\nAllow: /topics\nAllow: /authors\nAllow: /partner\nAllow: /assessment\nAllow: /membership\nAllow: /about\nAllow: /news\nAllow: /metrics\nAllow: /company/longvon\nAllow: /smart-ring-manufacturer\nAllow: /smart-ring-oem-odm\nAllow: /smart-ring-solution-provider\nAllow: /smart-ring-healthcare-solutions\nAllow: /smart-ring-technology\nAllow: /smart-ring-sdk-api\nAllow: /osa-smart-ring-technology\nAllow: /smart-ring-sleep-monitoring\nAllow: /smart-ring-sleep-respiratory\nAllow: /smart-ring-osa\nAllow: /en/\nAllow: /en/company/longvon\nAllow: /en/about\nAllow: /en/products\nAllow: /en/partner\nAllow: /en/smart-ring-manufacturer\nAllow: /en/smart-ring-oem-odm\nAllow: /en/smart-ring-solution-provider\nAllow: /en/smart-ring-healthcare-solutions\nAllow: /en/smart-ring-technology\nAllow: /en/smart-ring-sdk-api\nAllow: /en/osa-smart-ring-technology\nAllow: /en/smart-ring-sleep-monitoring\nAllow: /en/smart-ring-sleep-respiratory\nAllow: /en/smart-ring-osa\nDisallow: /api/\nDisallow: /admin/\nDisallow: /dashboard\nDisallow: /_next/\n\nUser-Agent: *\nAllow: /\nAllow: /products\nAllow: /knowledge\nAllow: /topics\nAllow: /authors\nAllow: /partner\nAllow: /assessment\nAllow: /membership\nAllow: /about\nAllow: /news\nAllow: /metrics\nAllow: /company/longvon\nAllow: /smart-ring-manufacturer\nAllow: /smart-ring-oem-odm\nAllow: /smart-ring-solution-provider\nAllow: /smart-ring-healthcare-solutions\nAllow: /smart-ring-technology\nAllow: /smart-ring-sdk-api\nAllow: /osa-smart-ring-technology\nAllow: /smart-ring-sleep-monitoring\nAllow: /smart-ring-sleep-respiratory\nAllow: /smart-ring-osa\nAllow: /en/\nAllow: /en/company/longvon\nAllow: /en/about\nAllow: /en/products\nAllow: /en/partner\nAllow: /en/smart-ring-manufacturer\nAllow: /en/smart-ring-oem-odm\nAllow: /en/smart-ring-solution-provider\nAllow: /en/smart-ring-healthcare-solutions\nAllow: /en/smart-ring-technology\nAllow: /en/smart-ring-sdk-api\nAllow: /en/osa-smart-ring-technology\nAllow: /en/smart-ring-sleep-monitoring\nAllow: /en/smart-ring-sleep-respiratory\nAllow: /en/smart-ring-osa\nDisallow: /api/\nDisallow: /admin/\nDisallow: /dashboard\nDisallow: /_next/\n\nHost: https://www.longvon.com\nSitemap: https://www.longvon.com/sitemap.xml\n"
+    }
+  ]
+}

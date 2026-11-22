@@ -1,0 +1,11 @@
+{
+  "completed_at": "2026-11-22T02:22:16.538Z",
+  "fixed_queries_per_platform": 12,
+  "extra_authenticated_chatgpt_sample": 1,
+  "extra_sample_excluded": true,
+  "no_query_resubmission_for_screenshot_repair": true,
+  "local_screenshot_reopen": "BLOCKED_LOCAL_ENV: logged-out UC links reopened to new-chat screen; original DOM transcripts and original clipped screenshots preserved",
+  "perplexity_source_panel": "UNKNOWN exact targets for generic domain labels; observed source drawer remained empty",
+  "production_rfq_submissions": 0,
+  "viewport_override_reset": true
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "query_id": "Q01",
+    "url": "https://chatgpt.com/uc/6b024f2d-7cc0-83ea-9bc4-408bca051839",
+    "observed_at": "2026-11-22T02:21:42.726Z",
+    "same_prompt_visible": false,
+    "response_visible": false,
+    "method": "reopened existing conversation only; no query resubmission"
+  },
+  {
+    "query_id": "Q02",
+    "url": "https://chatgpt.com/uc/6b024f69-4604-83ea-a7da-79852863766a",
+    "observed_at": "2026-11-22T02:21:45.274Z",
+    "same_prompt_visible": false,
+    "response_visible": false,
+    "method": "reopened existing conversation only; no query resubmission"
+  },
+  {
+    "query_id": "Q03",
+    "url": "https://chatgpt.com/uc/6b024f9f-d53c-83ea-b405-528b2537f57a",
+    "observed_at": "2026-11-22T02:21:47.061Z",
+    "same_prompt_visible": false,
+    "response_visible": false,
+    "method": "reopened existing conversation only; no query resubmission"
+  },
+  {
+    "query_id": "Q04",
+    "url": "https://chatgpt.com/uc/6b024ff7-c410-83ea-94e9-4a3162c7b56b",
+    "observed_at": "2026-11-22T02:21:49.205Z",
+    "same_prompt_visible": false,
+    "response_visible": false,
+    "method": "reopened existing conversation only; no query resubmission"
+  },
+  {
+    "query_id": "Q05",
+    "url": "https://chatgpt.com/uc/6b02502d-fcc4-83ea-958d-91725fc8ce4f",
+    "observed_at": "2026-11-22T02:21:50.702Z",
+    "same_prompt_visible": false,
+    "response_visible": false,
+    "method": "reopened existing conversation only; no query resubmission"
+  },
+  {
+    "query_id": "Q06",
+    "url": "https://chatgpt.com/uc/6b02504e-612c-83ea-a4eb-4a7f1c98981f",
+    "observed_at": "2026-11-22T02:21:52.604Z",
+    "same_prompt_visible": false,
+    "response_visible": false,
+    "method": "reopened existing conversation only; no query resubmission"
+  },
+  {
+    "query_id": "Q07",
+    "url": "https://chatgpt.com/uc/6b025078-7488-83ea-b42c-e968790ef714",
+    "observed_at": "2026-11-22T02:21:54.633Z",
+    "same_prompt_visible": false,
+    "response_visible": false,
+    "method": "reopened existing conversation only; no query resubmission"
+  }
+]

@@ -1,0 +1,55 @@
+{
+  "record_id": "440651ea-c108-5e9f-a37d-c5ab7a946f31",
+  "query_id": "Q03",
+  "query": "private label smart ring manufacturer",
+  "platform": "Google",
+  "mode": "All / first result page with auto AI Overview",
+  "observed_at": "2026-11-22T02:12:08.104+00:00",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "Chrome existing signed-in profile; hl=en; personalized results; actual country unverified",
+  "availability": "COMPLETED",
+  "longvon_present": false,
+  "organic_rank": null,
+  "ai_body_recommended": false,
+  "source_cited": false,
+  "cited_urls": [],
+  "competitors": [
+    {
+      "name": "jointcorp.com",
+      "url": "https://www.jointcorp.com/white-label-service/",
+      "position": "first observed relevant source-link sequence 1; not a verified recommendation rank",
+      "evidence_quote": "- link \"www.jointcorp.com\":"
+    },
+    {
+      "name": "goodwaytechs.com",
+      "url": "https://www.goodwaytechs.com/smart-rings.html",
+      "position": "first observed relevant source-link sequence 2; not a verified recommendation rank",
+      "evidence_quote": "- link:"
+    },
+    {
+      "name": "starkingsmartring.com",
+      "url": "https://starkingsmartring.com/index.html",
+      "position": "first observed relevant source-link sequence 3; not a verified recommendation rank",
+      "evidence_quote": "- link:"
+    },
+    {
+      "name": "gysmartwatch.com",
+      "url": "https://www.gysmartwatch.com/html/custom-smart-ringr-private-label-1856.html",
+      "position": "first observed relevant source-link sequence 4; not a verified recommendation rank",
+      "evidence_quote": "- link \"Custom Smart Ring Manufacturer for Private Label ... Geyan Technology https://www.gysmartwatch.com › html › custom-smart-ri...\":"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-22-round1/google-Q03.jpg",
+      "sha256": "47d32d0e2c725a796e950d6b400c92f3d7b390de6b16666d8576e260aadd0b6a"
+    },
+    {
+      "path": "evidence/2026-11-22-round1/google-Q03.json",
+      "sha256": "63710516b22ef6f9744a4452529f4093f46866f5869e306312faa8dde9ef7b28"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "First observed round; no prior comparable record. Country UNKNOWN; no growth comparison. Scope: first Google results page, signed in/personalized. Organic links and AI citation are separate; pending AI panel UNKNOWN."
+}

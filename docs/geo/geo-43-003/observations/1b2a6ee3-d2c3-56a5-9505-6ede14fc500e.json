@@ -1,0 +1,61 @@
+{
+  "record_id": "1b2a6ee3-d2c3-56a5-9505-6ede14fc500e",
+  "query_id": "Q06",
+  "query": "smart ring manufacturer with SDK API",
+  "platform": "Google",
+  "mode": "All / first result page with auto AI Overview",
+  "observed_at": "2026-11-22T02:13:11.944+00:00",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "Chrome existing signed-in profile; hl=en; personalized results; actual country unverified",
+  "availability": "COMPLETED",
+  "longvon_present": false,
+  "organic_rank": null,
+  "ai_body_recommended": false,
+  "source_cited": false,
+  "cited_urls": [],
+  "competitors": [
+    {
+      "name": "jointcorp.com",
+      "url": "https://www.jointcorp.com/sdk-api/",
+      "position": "first observed relevant source-link sequence 1; not a verified recommendation rank",
+      "evidence_quote": "- link \"www.jointcorp.com\":"
+    },
+    {
+      "name": "goodwaytechs.com",
+      "url": "https://www.goodwaytechs.com/health-smart-rings.html",
+      "position": "first observed relevant source-link sequence 2; not a verified recommendation rank",
+      "evidence_quote": "- link:"
+    },
+    {
+      "name": "starkingsmartring.com",
+      "url": "https://starkingsmartring.com/resources/sdk-api/",
+      "position": "first observed relevant source-link sequence 3; not a verified recommendation rank",
+      "evidence_quote": "- link:"
+    },
+    {
+      "name": "gysmartwatch.com",
+      "url": "https://www.gysmartwatch.com/html/smart-ring-oem-sdk-api.html",
+      "position": "first observed relevant source-link sequence 4; not a verified recommendation rank",
+      "evidence_quote": "- link:"
+    },
+    {
+      "name": "goldenweald.com",
+      "url": "https://www.goldenweald.com/service/ai-smart-ring-oem-odm-manufacturer-ai-recording-translation-wearable-devices/",
+      "position": "first observed relevant source-link sequence 5; not a verified recommendation rank",
+      "evidence_quote": "- link:"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-22-round1/google-Q06.jpg",
+      "sha256": "96554c4256a364ef62d5c7f0956b3d9e35d86047939925285b853071f0fcc62b"
+    },
+    {
+      "path": "evidence/2026-11-22-round1/google-Q06.json",
+      "sha256": "cd930909bbf3a0405a51f630a8c4f0c6b853027ded05f0f80e7968f8b34719d0"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "First observed round; no prior comparable record. Country UNKNOWN; no growth comparison. Scope: first Google results page, signed in/personalized. Organic links and AI citation are separate; pending AI panel UNKNOWN."
+}

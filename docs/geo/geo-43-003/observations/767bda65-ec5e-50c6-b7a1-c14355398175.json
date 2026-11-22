@@ -1,0 +1,61 @@
+{
+  "record_id": "767bda65-ec5e-50c6-b7a1-c14355398175",
+  "query_id": "Q04",
+  "query": "custom smart ring development company",
+  "platform": "Google",
+  "mode": "All / first result page with auto AI Overview",
+  "observed_at": "2026-11-22T02:12:21.188+00:00",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "Chrome existing signed-in profile; hl=en; personalized results; actual country unverified",
+  "availability": "COMPLETED",
+  "longvon_present": false,
+  "organic_rank": null,
+  "ai_body_recommended": false,
+  "source_cited": false,
+  "cited_urls": [],
+  "competitors": [
+    {
+      "name": "starkingsmartring.com",
+      "url": "https://starkingsmartring.com/products/smart-rings/",
+      "position": "first observed relevant source-link sequence 1; not a verified recommendation rank",
+      "evidence_quote": "- link \"STAR KING\":"
+    },
+    {
+      "name": "goodwaytechs.com",
+      "url": "https://www.goodwaytechs.com/custom-smart-ring-development.html",
+      "position": "first observed relevant source-link sequence 2; not a verified recommendation rank",
+      "evidence_quote": "- link:"
+    },
+    {
+      "name": "jointcorp.com",
+      "url": "https://www.jointcorp.com/",
+      "position": "first observed relevant source-link sequence 3; not a verified recommendation rank",
+      "evidence_quote": "- link:"
+    },
+    {
+      "name": "gysmartwatch.com",
+      "url": "https://www.gysmartwatch.com/html/custom-logo-smart-ring-white-label.html",
+      "position": "first observed relevant source-link sequence 4; not a verified recommendation rank",
+      "evidence_quote": "- link \"Custom Logo Smart Ring Manufacturer | White Label & ... Geyan Technology https://www.gysmartwatch.com › html › custom-logo-sm...\":"
+    },
+    {
+      "name": "goldenweald.com",
+      "url": "https://www.goldenweald.com/smart-ring-manufacturer-oem-odm-smart-ring-development/",
+      "position": "first observed relevant source-link sequence 5; not a verified recommendation rank",
+      "evidence_quote": "- link \"Smart Ring Manufacturer OEM & ODM Smart Ring Development goldenweald.com https://www.goldenweald.com › smart-ring-manufactur...\":"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-22-round1/google-Q04.jpg",
+      "sha256": "553956206206d947f72344664a92f68c861f35c86fa34a8e49d94310d870bf14"
+    },
+    {
+      "path": "evidence/2026-11-22-round1/google-Q04.json",
+      "sha256": "ceaaa7c227a9a946fe173ff5ccb3925961d8ca178e84436ade97c518a00435eb"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "First observed round; no prior comparable record. Country UNKNOWN; no growth comparison. Scope: first Google results page, signed in/personalized. Organic links and AI citation are separate; pending AI panel UNKNOWN."
+}

@@ -1,0 +1,7 @@
+{
+  "validated_records": 36,
+  "duplicate_attempt": "PASS: duplicate rejected with FileExistsError",
+  "original_record_hashes_unchanged": true,
+  "all_evidence_hashes_valid": true,
+  "production_submissions": 0
+}

@@ -1,0 +1,204 @@
+- complementary:
+  - navigation "侧边栏导航":
+    - link:
+      - /url: /
+    - button "展开侧边栏"
+    - group "创建":
+      - link "新建":
+        - /url: /
+        - generic: 新建
+    - group "主导航":
+      - link "自动化":
+        - /url: /automations
+        - generic: 自动化
+      - link "工件":
+        - /url: /artifacts
+        - generic: 工件
+      - link "插件":
+        - /url: /computer/plugins
+        - generic: 插件
+      - button "更多":
+        - generic: 更多
+    - link "项目":
+      - /url: /projects
+    - link "会话":
+      - /url: /library
+    - button "升级计划":
+[profile label omitted]
+[profile label omitted]
+  - separator "调整侧边栏宽度"
+- main:
+  - button "返回上一页":
+  - tablist "回答模式标签页":
+    - tab "答案" [selected]:
+      - text: 答案
+    - tab "链接":
+      - text: 链接
+    - tab "图片":
+      - text: 图片
+  - button "会话选项":
+  - button "显示详情":
+  - button "分享":
+    - generic: 分享
+  - button "下载桌面应用":
+    - generic: 下载桌面应用
+  - generic: 10:16
+  - button "编辑查询":
+  - button "复制查询":
+  - paragraph: 100Hz raw PPG smart ring SDK
+  - button "已完成 1秒":
+    - generic "已完成"
+    - generic: 1秒
+  - paragraph:
+    - text: If you need a
+    - strong: smart ring SDK that can expose raw PPG at 100 Hz
+    - text: ", the most direct commercial option appears to be"
+    - strong: Sensor Bio V2
+    - text: ", while several OEM/ODM ring vendors offer it only as a partner/NDA capability. Most consumer rings (Oura, Ultrahuman, etc.) expose derived metrics rather than continuous 100 Hz raw optical waveforms."
+    - generic: sensorbio
+    - generic: "+2"
+  - heading "Commercial SDK options" [level=2]
+  - table:
+    - rowgroup:
+      - row "Product / vendor 100 Hz raw PPG Channels SDK / delivery Notes":
+        - columnheader "Product / vendor"
+        - columnheader "100 Hz raw PPG"
+        - columnheader "Channels"
+        - columnheader "SDK / delivery"
+        - columnheader "Notes"
+    - rowgroup:
+      - row "Sensor Bio V2 Yes — 25, 50, or 100 Hz Green, red, infrared PPG; 3-axis accelerometer iOS Swift package and Android Kotlin Flow SDK; per-organization download Raw stream can include PPG, IBI, HR, HRV, respiratory rate, SNR, and motion; 50 Hz is the default. sensorbio +1":
+        - cell "Sensor Bio V2":
+          - strong: Sensor Bio V2
+        - cell "Yes — 25, 50, or 100 Hz"
+        - cell "Green, red, infrared PPG; 3-axis accelerometer"
+        - cell "iOS Swift package and Android Kotlin Flow SDK; per-organization download"
+        - cell "Raw stream can include PPG, IBI, HR, HRV, respiratory rate, SNR, and motion; 50 Hz is the default. sensorbio +1":
+          - text: Raw stream can include PPG, IBI, HR, HRV, respiratory rate, SNR, and motion; 50 Hz is the default.
+          - generic: sensorbio
+          - generic: "+1"
+      - row "Longvon smart ring “Pathways” for qualified partners Not publicly specified Partner SDK and cloud API 100 Hz raw PPG is described as a project-scoped OEM/ODM capability, so access and integration depth are negotiated. Smart Ring Technology & Development":
+        - cell "Longvon smart ring":
+          - strong: Longvon smart ring
+        - cell "“Pathways” for qualified partners"
+        - cell "Not publicly specified"
+        - cell "Partner SDK and cloud API"
+        - cell "100 Hz raw PPG is described as a project-scoped OEM/ODM capability, so access and integration depth are negotiated. Smart Ring Technology & Development":
+          - text: 100 Hz raw PPG is described as a project-scoped OEM/ODM capability, so access and integration depth are negotiated.
+          - generic "Smart Ring Technology & Development":
+            - link "longvon":
+              - /url: https://www.longvon.com/en/smart-ring-technology
+              - generic: longvon
+      - row "Tucks OEM/ODM ring Yes, via custom firmware Raw AC/DC PPG; 3-axis accelerometer; micro-temperature Native iOS/Android SDKs, BLE 5.3 GATT, REST API; documentation/sample code under NDA Positioned for research, insurance, and digital-health platforms rather than a consumer developer SDK. OEM/ODM heart rate monitoring ring Manufacturer & Supplier - Tucks":
+        - cell "Tucks OEM/ODM ring":
+          - strong: Tucks OEM/ODM ring
+        - cell "Yes, via custom firmware"
+        - cell "Raw AC/DC PPG; 3-axis accelerometer; micro-temperature"
+        - cell "Native iOS/Android SDKs, BLE 5.3 GATT, REST API; documentation/sample code under NDA"
+        - cell "Positioned for research, insurance, and digital-health platforms rather than a consumer developer SDK. OEM/ODM heart rate monitoring ring Manufacturer & Supplier - Tucks":
+          - text: Positioned for research, insurance, and digital-health platforms rather than a consumer developer SDK.
+          - generic "OEM/ODM heart rate monitoring ring Manufacturer & Supplier - Tucks":
+            - link "tuckstechs":
+              - /url: https://www.tuckstechs.com/catalog/oemodm-heart-rate-monitoring-ring-manufacturer-supplier/
+              - generic: tuckstechs
+  - button "复制表格":
+  - button "下载 CSV":
+  - button "展开表格":
+  - heading "Best fit by use case" [level=2]
+  - list:
+    - paragraph:
+      - strong: "Research or product prototype needing immediate raw waveform access:"
+      - text: Sensor Bio V2 is the clearest match because it explicitly documents multi-wavelength raw PPG at selectable 25/50/100 Hz through mobile SDK streams.
+      - generic: sensorbio
+      - generic: "+1"
+    - paragraph:
+      - strong: "Building your own branded ring:"
+      - text: Longvon or Tucks may be better, since they offer OEM/ODM hardware plus SDK/BLE integration, but expect an NDA, qualification process, and potentially custom firmware.
+      - generic: longvon
+      - generic: "+1"
+    - paragraph:
+      - strong: "Algorithm development without buying a commercial ring:"
+      - text: The open
+      - strong: HealthRing
+      - text: dataset and
+      - strong: RingTool
+      - text: provide synchronized 100 Hz infrared/red PPG and accelerometer data, plus preprocessing and modeling pipelines.
+      - img "可信域名":
+      - generic: nature
+      - generic: "+1"
+    - paragraph:
+      - strong: "Hardware-level experimentation:"
+      - text: Open-source builds such as SenseRing use a MAX30102 red/IR PPG sensor and nRF52832 BLE platform, though the public description does not establish a 100 Hz SDK guarantee.
+      - generic "GitHub - Sense-Ring/Sense-Ring-1.0 · GitHub":
+        - link "github":
+          - /url: https://github.com/Sense-Ring/Sense-Ring-1.0
+          - generic: github
+  - heading "What to verify before committing" [level=2]
+  - paragraph: "Ask each vendor for:"
+  - list:
+    - paragraph:
+      - text: Exact PPG
+      - strong: sampling rate, bit depth, units, and whether values are AC, DC, or both
+    - paragraph: Which LED wavelengths are exposed and whether ambient-light cancellation is included
+    - paragraph:
+      - text: Whether 100 Hz is continuous or limited to
+      - strong: recording windows
+    - paragraph:
+      - text: "BLE throughput behavior: 100 Hz notifications can be unreliable, so ask whether the SDK buffers, batches, or timestamps samples."
+      - generic "smart-ring/README.md at main · josearruticuanda/smart-ring":
+        - link "github":
+          - /url: https://github.com/josearruticuanda/smart-ring/blob/main/README.md
+          - generic: github
+    - paragraph: Timestamp alignment between PPG, accelerometer, and derived metrics
+    - paragraph: SDK platform support, data-retention policy, export format, and whether raw access requires a research/partner agreement
+  - paragraph:
+    - text: For a practical shortlist, start with
+    - strong: Sensor Bio V2
+    - text: if you need documented 100 Hz raw multi-wavelength PPG through an SDK; pursue
+    - strong: Longvon or Tucks
+    - text: if you need an OEM ring you can brand and customize.
+    - generic: sensorbio
+    - generic: "+2"
+  - button "复制":
+  - button "分享":
+  - button "有帮助":
+  - button "没有帮助":
+  - button "复刻":
+  - button "10 个来源":
+    - text: 10 个来源
+  - button "更多操作":
+  - button "Alert me on new 100Hz raw PPG smart ring SDKs"
+  - text: Alert me on new 100Hz raw PPG smart ring SDKs
+  - text: 自动化
+  - button "Show me how to compare them"
+  - text: Show me how to compare them
+  - button "What are the SDK licensing terms"
+  - text: What are the SDK licensing terms
+  - button "How does Sensor Bio V2 handle data storage"
+  - text: How does Sensor Bio V2 handle data storage
+  - button "Tell me more about the open-source ring option"
+  - text: Tell me more about the open-source ring option
+  - button "滚动到末尾":
+    - generic: ⠋
+  - button "Pro 已启用高级搜索免费预览。 了解更多":
+    - generic: Pro
+    - generic: 已启用高级搜索免费预览。
+    - button "了解更多":
+      - generic: 了解更多
+  - status:
+    - generic: 您正处于隐身模式。
+    - button "退出隐身模式":
+      - generic: 退出无痕模式
+  - textbox "提出后续问题" [active]:
+    - paragraph
+  - generic: 提出后续问题
+  - button "添加文件、插件等":
+  - button "搜索" [pressed]:
+    - generic: 搜索
+  - button "Computer":
+    - generic: Computer
+  - button "模型":
+    - generic: 模型
+  - button "语音输入":
+  - button "提交" [disabled]:
+- listbox "Typeahead menu"

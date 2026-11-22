@@ -1,0 +1,67 @@
+{
+  "record_id": "16312816-552e-5d55-ab42-8bdd80311abe",
+  "query_id": "Q03",
+  "query": "private label smart ring manufacturer",
+  "platform": "ChatGPT",
+  "mode": "logged-out default answer (web-search invocation UNKNOWN)",
+  "observed_at": "2026-11-22T02:14:12.619+00:00",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "in-app browser logged out, new conversation per query; UI zh, query/answer en; model UNKNOWN",
+  "availability": "COMPLETED",
+  "longvon_present": true,
+  "organic_rank": null,
+  "ai_body_recommended": true,
+  "source_cited": true,
+  "cited_urls": [
+    "https://www.longvon.com/en/smart-ring-solution-provider?utm_source=chatgpt.com"
+  ],
+  "competitors": [
+    {
+      "name": "bonlala.com",
+      "url": "https://bonlala.com/?utm_source=chatgpt.com",
+      "position": "first observed relevant source-link sequence 1; not a verified recommendation rank",
+      "evidence_quote": "- link \"Bonlala OEM\":"
+    },
+    {
+      "name": "comiring.com",
+      "url": "https://comiring.com/customized-service/?utm_source=chatgpt.com",
+      "position": "first observed relevant source-link sequence 2; not a verified recommendation rank",
+      "evidence_quote": "- link \"COMI Manufacturing\":"
+    },
+    {
+      "name": "pineeon.com",
+      "url": "https://pineeon.com/products/smart-wearables/smart-rings/?utm_source=chatgpt.com",
+      "position": "first observed relevant source-link sequence 3; not a verified recommendation rank",
+      "evidence_quote": "- link \"Pineeon Smart Ring OEM\":"
+    },
+    {
+      "name": "smartwearworks.com",
+      "url": "https://www.smartwearworks.com/smart-ring-oem/?utm_source=chatgpt.com",
+      "position": "first observed relevant source-link sequence 4; not a verified recommendation rank",
+      "evidence_quote": "- link \"Smart Wear Works\":"
+    },
+    {
+      "name": "goodwaytechs.com",
+      "url": "https://www.goodwaytechs.com/smart-rings.html?utm_source=chatgpt.com",
+      "position": "first observed relevant source-link sequence 5; not a verified recommendation rank",
+      "evidence_quote": "- link \"Goodway Smart Rings\":"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-22-round1/chatgpt-Q03-meta.json",
+      "sha256": "c3f361ecbc5686cebbb13e469808c778263bd6a7f9062f9d489103b755958b23"
+    },
+    {
+      "path": "evidence/2026-11-22-round1/chatgpt-Q03.jpg",
+      "sha256": "6dbe75445ca361eed5bf8355dccceb5b66199aaf4e83f4368a4eab56601bc9be"
+    },
+    {
+      "path": "evidence/2026-11-22-round1/chatgpt-Q03.txt",
+      "sha256": "79b7519a25c9088e40a1e7a78b3db28b3940e95bb2e7410ad2e7d53947e5075f"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "First observed round; no prior comparable record. Country UNKNOWN; no growth comparison. Logged-out default answer; explicit web-search invocation and model version UNKNOWN; visible linked sources are not proof of live retrieval. Original screenshot horizontally clipped (BLOCKED_LOCAL_ENV); complete DOM retained; cached UC reopen failed; no resubmission."
+}

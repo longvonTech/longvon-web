@@ -1,0 +1,55 @@
+{
+  "record_id": "92e2fa6c-4f5d-577b-8beb-e51948a6eb02",
+  "query_id": "Q11",
+  "query": "digital health smart ring integration SDK",
+  "platform": "Google",
+  "mode": "All / first result page with auto AI Overview",
+  "observed_at": "2026-11-22T02:13:32.703+00:00",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "Chrome existing signed-in profile; hl=en; personalized results; actual country unverified",
+  "availability": "COMPLETED",
+  "longvon_present": false,
+  "organic_rank": null,
+  "ai_body_recommended": false,
+  "source_cited": false,
+  "cited_urls": [],
+  "competitors": [
+    {
+      "name": "jointcorp.com",
+      "url": "https://www.jointcorp.com/smart-ring-and-fitness-band-sdk-api-a-developers-guide/",
+      "position": "first observed relevant source-link sequence 1; not a verified recommendation rank",
+      "evidence_quote": "- 'link \"Smart Ring and Fitness Band SDK & API: A Developer''s Guide jointcorp.com https://www.jointcorp.com › smart-ring-and-fitness-ban...\"':"
+    },
+    {
+      "name": "gysmartwatch.com",
+      "url": "https://www.gysmartwatch.com/html/smart-ring-oem-sdk-api.html",
+      "position": "first observed relevant source-link sequence 2; not a verified recommendation rank",
+      "evidence_quote": "- link \"Smart Ring OEM Manufacturer with SDK & API Integration Geyan Technology https://www.gysmartwatch.com › html › smart-ring-oem-...\":"
+    },
+    {
+      "name": "starkingsmartring.com",
+      "url": "https://starkingsmartring.com/smart-ring-integration-system-integrators-guide/",
+      "position": "first observed relevant source-link sequence 3; not a verified recommendation rank",
+      "evidence_quote": "- 'link \"Smart Ring Integration: 7 Steps for System Integrators starkingsmartring.com https://starkingsmartring.com › smart-ring-integration-s...\"':"
+    },
+    {
+      "name": "goodwaytechs.com",
+      "url": "https://www.goodwaytechs.com/health-smart-rings.html",
+      "position": "first observed relevant source-link sequence 4; not a verified recommendation rank",
+      "evidence_quote": "- link \"Health Smart Rings | Goodway Goodway Techs https://www.goodwaytechs.com › Products › Smart Rings\":"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-22-round1/google-Q11.jpg",
+      "sha256": "d5cff465cca989665af977346702e1973c2597b9f825b86471414b2ec013fda5"
+    },
+    {
+      "path": "evidence/2026-11-22-round1/google-Q11.json",
+      "sha256": "154584da50478f25b204248d6adc823f81effdf189605bb96703cf43e42baf5e"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "First observed round; no prior comparable record. Country UNKNOWN; no growth comparison. Scope: first Google results page, signed in/personalized. Organic links and AI citation are separate; pending AI panel UNKNOWN."
+}

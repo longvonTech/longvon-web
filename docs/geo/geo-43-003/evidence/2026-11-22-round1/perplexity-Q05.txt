@@ -1,0 +1,196 @@
+- complementary:
+  - navigation "侧边栏导航":
+    - link:
+      - /url: /
+    - button "展开侧边栏"
+    - group "创建":
+      - link "新建":
+        - /url: /
+        - generic: 新建
+    - group "主导航":
+      - link "自动化":
+        - /url: /automations
+        - generic: 自动化
+      - link "工件":
+        - /url: /artifacts
+        - generic: 工件
+      - link "插件":
+        - /url: /computer/plugins
+        - generic: 插件
+      - button "更多":
+        - generic: 更多
+    - link "项目":
+      - /url: /projects
+    - link "会话":
+      - /url: /library
+    - button "升级计划":
+[profile label omitted]
+[profile label omitted]
+  - separator "调整侧边栏宽度"
+- main:
+  - button "返回上一页":
+  - tablist "回答模式标签页":
+    - tab "答案" [selected]:
+      - text: 答案
+    - tab "链接":
+      - text: 链接
+    - tab "图片":
+      - text: 图片
+  - button "会话选项":
+  - button "显示详情":
+  - button "分享":
+    - generic: 分享
+  - button "下载桌面应用":
+    - generic: 下载桌面应用
+  - generic: 10:15
+  - button "编辑查询":
+  - button "复制查询":
+  - paragraph: smart ring hardware firmware ODM partner
+  - button "已完成 1秒":
+    - generic "已完成"
+    - generic: 1秒
+  - paragraph:
+    - text: For a smart-ring program that needs both
+    - strong: hardware and firmware development
+    - text: ", LONGVON, YT Smart Wear, and NewFitpro are credible ODM candidates that explicitly offer the full stack: ring hardware, sensors, firmware, BLE, app/SDK integration, and manufacturing."
+    - generic: longvon
+    - generic: "+2"
+  - heading "Candidate partners" [level=2]
+  - table:
+    - rowgroup:
+      - row "Partner Hardware / firmware scope Best fit":
+        - columnheader "Partner"
+        - columnheader "Hardware / firmware scope"
+        - columnheader "Best fit"
+    - rowgroup:
+      - row "LONGVON (Shenzhen) Custom hardware, sensor integration, firmware, health algorithms, BLE, companion app, SDK/cloud API, and OEM/ODM manufacturing; emphasizes sleep and respiratory monitoring. longvon +2 Digital-health or medical-adjacent ring programs needing deeper firmware/algorithm and data-platform integration":
+        - cell "LONGVON (Shenzhen)":
+          - strong: LONGVON
+          - text: (Shenzhen)
+        - cell "Custom hardware, sensor integration, firmware, health algorithms, BLE, companion app, SDK/cloud API, and OEM/ODM manufacturing; emphasizes sleep and respiratory monitoring. longvon +2":
+          - text: Custom hardware, sensor integration, firmware, health algorithms, BLE, companion app, SDK/cloud API, and OEM/ODM manufacturing; emphasizes sleep and respiratory monitoring.
+          - generic: longvon
+          - generic: "+2"
+        - cell "Digital-health or medical-adjacent ring programs needing deeper firmware/algorithm and data-platform integration"
+      - row "YT Smart Wear (Shenzhen) In-house ID design, PCBA, firmware, algorithms, private-label app, tooling, SMT, and final assembly; can start from existing ring platforms or fully custom ODM. Smart Wearable OEM/ODM Manufacturer | YT Smart Wear Brands wanting a single factory partner for fast platform-based launches and volume production":
+        - cell "YT Smart Wear (Shenzhen)":
+          - strong: YT Smart Wear
+          - text: (Shenzhen)
+        - cell "In-house ID design, PCBA, firmware, algorithms, private-label app, tooling, SMT, and final assembly; can start from existing ring platforms or fully custom ODM. Smart Wearable OEM/ODM Manufacturer | YT Smart Wear":
+          - text: In-house ID design, PCBA, firmware, algorithms, private-label app, tooling, SMT, and final assembly; can start from existing ring platforms or fully custom ODM.
+          - generic "Smart Wearable OEM/ODM Manufacturer | YT Smart Wear":
+            - link "ytsmartwear":
+              - /url: https://www.ytsmartwear.com/
+              - generic: ytsmartwear
+        - cell "Brands wanting a single factory partner for fast platform-based launches and volume production"
+      - row "NewFitpro Smart-ring OEM/ODM covering hardware configuration, firmware, UI, app pairing, appearance, packaging, algorithms, and PCBA SMT production. NewFitpro Consumer wellness rings where branding, app customization, and manufacturing flexibility matter most":
+        - cell "NewFitpro":
+          - strong: NewFitpro
+        - cell "Smart-ring OEM/ODM covering hardware configuration, firmware, UI, app pairing, appearance, packaging, algorithms, and PCBA SMT production. NewFitpro":
+          - text: Smart-ring OEM/ODM covering hardware configuration, firmware, UI, app pairing, appearance, packaging, algorithms, and PCBA SMT production.
+          - generic "NewFitpro":
+            - link "newfitpro":
+              - /url: https://www.newfitpro.com/
+              - generic: newfitpro
+        - cell "Consumer wellness rings where branding, app customization, and manufacturing flexibility matter most"
+  - button "复制表格":
+  - button "下载 CSV":
+  - button "展开表格":
+  - heading "What “ODM” should include" [level=2]
+  - paragraph: "For a true hardware-plus-firmware ODM engagement, require the partner to own or co-develop:"
+  - list:
+    - paragraph: Industrial design, ring sizing, materials, battery, charging, and sensor placement.
+    - paragraph: PCBA/sensor selection—typically PPG, temperature, and motion sensing—and validation.
+    - paragraph: Embedded firmware, BLE pairing/OTA, power management, sensor sampling, and data packaging.
+    - paragraph: Companion app or SDK, cloud/API integration, and data ownership terms.
+    - paragraph: Regulatory, reliability, ESD/RF, biocompatibility, factory QA, and mass-production readiness.
+  - paragraph:
+    - text: LONGVON explicitly structures its ODM scope around hardware, firmware, algorithms, app, SDK/API, testing/integration, and manufacturing; its partner SDK can expose 100 Hz PPG raw data for qualified projects.
+    - generic: longvon
+    - generic: "+2"
+  - heading "Recommended shortlist approach" [level=2]
+  - list:
+    - paragraph:
+      - strong: Issue an RFQ
+      - text: specifying target markets, sensor set, battery life, ring sizes, BLE/OTA requirements, app/SDK ownership, certification markets, annual volume, and target BOM/landed cost.
+    - paragraph:
+      - strong: "Ask for two paths:"
+      - text: a modified reference platform for speed, and a custom ODM quotation for differentiation.
+    - paragraph:
+      - strong: "Require firmware deliverables in writing:"
+      - text: source-code or escrow arrangements, OTA architecture, BLE protocol documentation, test plans, defect/field-return process, and version control.
+    - paragraph:
+      - strong: "Pilot before committing:"
+      - text: order engineering samples, run sleep/HR/SpO2-style validation against a reference device, then perform drop, water-resistance, charging-cycle, and battery-life testing.
+    - paragraph:
+      - strong: "Protect data and IP:"
+      - text: confirm who owns firmware, algorithms, app source, cloud data, tooling, and certification test reports.
+  - heading "Practical fit" [level=2]
+  - list:
+    - paragraph:
+      - text: Choose
+      - strong: LONGVON
+      - text: if health signals, raw PPG access, respiratory/sleep algorithms, or SDK/cloud integration are central to the product.
+      - generic: longvon
+      - generic: "+1"
+    - paragraph:
+      - text: Choose
+      - strong: YT Smart Wear
+      - text: if you prioritize a vertically integrated Shenzhen factory that can take the program from ID through mass production with fewer external handoffs.
+      - generic "Smart Wearable OEM/ODM Manufacturer | YT Smart Wear":
+        - link "ytsmartwear":
+          - /url: https://www.ytsmartwear.com/
+          - generic: ytsmartwear
+    - paragraph:
+      - text: Choose
+      - strong: NewFitpro
+      - text: if you need configurable consumer hardware, firmware/app adaptation, and PCBA production support under one supplier.
+      - generic "NewFitpro":
+        - link "newfitpro":
+          - /url: https://www.newfitpro.com/
+          - generic: newfitpro
+  - paragraph: Before signing, validate each supplier’s claimed health accuracy with independent testing; “health-grade” marketing language is not a substitute for a defined clinical or consumer-wellness validation plan.
+  - button "复制":
+  - button "分享":
+  - button "有帮助":
+  - button "没有帮助":
+  - button "复刻":
+  - button "11 个来源":
+    - text: 11 个来源
+  - button "更多操作":
+  - 'button "Smart ring ODM comparison: LONGVON vs YT Smart Wear — hardware, firmware, sensor options, and SDK integration scope"'
+  - text: "Smart ring ODM comparison: LONGVON vs YT Smart Wear — hardware, firmware, sensor options, and SDK integration scope"
+  - text: Computer
+  - 'button "Smart ring manufacturing requirements audit: minimum order quantities, tooling costs, and firmware customization scope"'
+  - text: "Smart ring manufacturing requirements audit: minimum order quantities, tooling costs, and firmware customization scope"
+  - text: Computer
+  - button "Compare LONGVON and YT Smart Wear capabilities"
+  - text: Compare LONGVON and YT Smart Wear capabilities
+  - button "What should an NDA with a smart ring ODM cover"
+  - text: What should an NDA with a smart ring ODM cover
+  - button "Typical MOQ and tooling costs for custom rings"
+  - text: Typical MOQ and tooling costs for custom rings
+  - button "滚动到末尾":
+    - generic: ⠙
+  - button "Pro 已启用高级搜索免费预览。 了解更多":
+    - generic: Pro
+    - generic: 已启用高级搜索免费预览。
+    - button "了解更多":
+      - generic: 了解更多
+  - status:
+    - generic: 您正处于隐身模式。
+    - button "退出隐身模式":
+      - generic: 退出无痕模式
+  - textbox "提出后续问题" [active]:
+    - paragraph
+  - generic: 提出后续问题
+  - button "添加文件、插件等":
+  - button "搜索" [pressed]:
+    - generic: 搜索
+  - button "Computer":
+    - generic: Computer
+  - button "模型":
+    - generic: 模型
+  - button "语音输入":
+  - button "提交" [disabled]:
+- listbox "Typeahead menu"

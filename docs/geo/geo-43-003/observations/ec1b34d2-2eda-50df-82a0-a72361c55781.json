@@ -1,0 +1,47 @@
+{
+  "record_id": "ec1b34d2-2eda-50df-82a0-a72361c55781",
+  "query_id": "Q07",
+  "query": "100Hz raw PPG smart ring SDK",
+  "platform": "ChatGPT",
+  "mode": "logged-out default answer (web-search invocation UNKNOWN)",
+  "observed_at": "2026-11-22T02:17:06.074+00:00",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "in-app browser logged out, new conversation per query; UI zh, query/answer en; model UNKNOWN",
+  "availability": "COMPLETED",
+  "longvon_present": false,
+  "organic_rank": null,
+  "ai_body_recommended": false,
+  "source_cited": false,
+  "cited_urls": [],
+  "competitors": [
+    {
+      "name": "ultrahuman.com",
+      "url": "https://www.ultrahuman.com/ultrasignal/?utm_source=chatgpt.com",
+      "position": "first observed relevant source-link sequence 1; not a verified recommendation rank",
+      "evidence_quote": "- link \"UltraSignal developer platform\":"
+    },
+    {
+      "name": "sensorbio.com",
+      "url": "https://sensorbio.com/integrations/sdk/?utm_source=chatgpt.com",
+      "position": "first observed relevant source-link sequence 2; not a verified recommendation rank",
+      "evidence_quote": "- link \"Sensor Bio SDK\":"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-22-round1/chatgpt-Q07-meta.json",
+      "sha256": "223f39e992140e2c960c4c6c747b837fb384426692ebf8f9b91f26649393aaf3"
+    },
+    {
+      "path": "evidence/2026-11-22-round1/chatgpt-Q07.jpg",
+      "sha256": "6a2fdd83d50448dc4e2c1f6d9d1f7c4c6c93d2d84d3bf48b6bc4be67fccd80f9"
+    },
+    {
+      "path": "evidence/2026-11-22-round1/chatgpt-Q07.txt",
+      "sha256": "fe82253da02cab9d3a45b2f5da359e0c2fe524da071083bbaedebacfcab45004"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "First observed round; no prior comparable record. Country UNKNOWN; no growth comparison. Logged-out default answer; explicit web-search invocation and model version UNKNOWN; visible linked sources are not proof of live retrieval. Original screenshot horizontally clipped (BLOCKED_LOCAL_ENV); complete DOM retained; cached UC reopen failed; no resubmission."
+}

@@ -1,0 +1,41 @@
+{
+  "record_id": "7e606da0-275a-5ff3-be91-5123528b94b0",
+  "query_id": "Q10",
+  "query": "sleep breathing monitoring smart ring ODM",
+  "platform": "Perplexity",
+  "mode": "incognito Search / free-preview label",
+  "observed_at": "2026-11-22T02:19:27.596+00:00",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "Chrome signed-in incognito session, fresh query per conversation; UI zh, query/answer en; model UNKNOWN",
+  "availability": "COMPLETED",
+  "longvon_present": true,
+  "organic_rank": null,
+  "ai_body_recommended": true,
+  "source_cited": null,
+  "cited_urls": [],
+  "competitors": [
+    {
+      "name": "jointcorp.com",
+      "url": "https://www.jointcorp.com/application-scenarios/sleep-management/",
+      "position": "first observed relevant source-link sequence 1; not a verified recommendation rank",
+      "evidence_quote": "- link \"jointcorp\":"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-22-round1/perplexity-Q10-meta.json",
+      "sha256": "7439df82cf42c2efc4a1181ee9f4294e77d5996df3d15e2f1856e6063b63eb45"
+    },
+    {
+      "path": "evidence/2026-11-22-round1/perplexity-Q10.jpg",
+      "sha256": "2324c80ea8e520fe48e1af91e083b23442c698c52420fa770af057f00b633272"
+    },
+    {
+      "path": "evidence/2026-11-22-round1/perplexity-Q10.txt",
+      "sha256": "41c632b6e9a6ad0e1e1f44ad3bf1651b2ec89a3cde24258b59f762d0552c5df1"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "First observed round; no prior comparable record. Country UNKNOWN; no growth comparison. Incognito Search; Pro free preview label shown. Exact targets for generic domain-only citation labels UNKNOWN; source drawer observed empty."
+}

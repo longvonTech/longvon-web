@@ -1,0 +1,166 @@
+- banner:
+  - button "登录"
+  - button "免费注册"
+- main:
+  - region "对话":
+    - list "对话":
+      - heading "你说：" [level=4]
+      - paragraph: smart ring raw PPG data for research
+      - button "复制":
+      - status
+      - heading "ChatGPT 说：" [level=4]
+      - region "DIL content":
+        - paragraph:
+          - text: If you're looking for a
+          - generic: smart ring that provides raw PPG (photoplethysmography) data for academic or biomedical research
+          - text: ", the most important distinction is between:"
+        - list:
+          - paragraph:
+            - generic: "Raw PPG:"
+            - text: Actual optical sensor measurements (red, green, or infrared channels), ideally sampled at a known frequency.
+          - paragraph:
+            - generic: "Processed PPG:"
+            - text: Filtered pulse waveforms or derived heart-rate signals.
+          - paragraph:
+            - generic: "Summary metrics:"
+            - text: Heart rate, HRV, SpO₂, sleep stages, and activity data.
+        - paragraph: For research, you ideally want access to raw optical signals, timestamps, sampling frequency, LED wavelengths, and accelerometer data—not just HRV or heart-rate exports.
+        - heading "Best options for research" [level=2]
+        - table:
+          - rowgroup:
+            - row "Device/platform Raw PPG access Research suitability":
+              - columnheader "Device/platform":
+                - paragraph: Device/platform
+              - columnheader "Raw PPG access":
+                - paragraph: Raw PPG access
+              - columnheader "Research suitability":
+                - paragraph: Research suitability
+            - row "Ultrahuman Ring Not publicly verified Ask about enterprise access":
+              - cell "Ultrahuman Ring":
+                - paragraph: Ultrahuman Ring
+              - cell "Not publicly verified":
+                - paragraph: Not publicly verified
+              - cell "Ask about enterprise access":
+                - paragraph: Ask about enterprise access
+            - row "Oura Ring No public raw PPG API Better for derived metrics":
+              - cell "Oura Ring":
+                - paragraph: Oura Ring
+              - cell "No public raw PPG API":
+                - paragraph: No public raw PPG API
+              - cell "Better for derived metrics":
+                - paragraph: Better for derived metrics
+            - row "RingConn No documented raw PPG API Better for wellness metrics":
+              - cell "RingConn":
+                - paragraph: RingConn
+              - cell "No documented raw PPG API":
+                - paragraph: No documented raw PPG API
+              - cell "Better for wellness metrics":
+                - paragraph: Better for wellness metrics
+            - row "Samsung Galaxy Watch 4+ Yes, SDK Good alternative, wrist-worn":
+              - cell "Samsung Galaxy Watch 4+":
+                - paragraph: Samsung Galaxy Watch 4+
+              - cell "Yes, SDK":
+                - paragraph: Yes, SDK
+              - cell "Good alternative, wrist-worn":
+                - paragraph: Good alternative, wrist-worn
+            - row "Polar optical sensors Yes, BLE SDK Good alternative, wrist-worn":
+              - cell "Polar optical sensors":
+                - paragraph: Polar optical sensors
+              - cell "Yes, BLE SDK":
+                - paragraph: Yes, BLE SDK
+              - cell "Good alternative, wrist-worn":
+                - paragraph: Good alternative, wrist-worn
+            - row "Empatica EmbracePlus Research access Strong research option, wrist-worn":
+              - cell "Empatica EmbracePlus":
+                - paragraph: Empatica EmbracePlus
+              - cell "Research access":
+                - paragraph: Research access
+              - cell "Strong research option, wrist-worn":
+                - paragraph: Strong research option, wrist-worn
+        - paragraph:
+          - text: "Sources:"
+          - button "ChatPPG +2":
+            - generic: ChatPPG
+            - generic: "+2"
+        - paragraph:
+          - generic: "Important:"
+          - text: I would not purchase an Oura, RingConn, or Ultrahuman ring assuming that its raw PPG waveform can be downloaded. Consumer APIs generally expose processed measurements rather than raw optical signals.
+        - heading "An interesting research resource" [level=2]
+        - img "Senstream - Biowearable"
+        - button "Open Senstream - Biowearable"
+        - paragraph:
+          - generic: "HealthRing: Physiology Dataset for Health Sensing on Rings"
+        - paragraph: A research dataset containing raw ring PPG, accelerometer signals, and synchronized reference measurements.
+        - button "Read the research paper and access dataset information":
+          - link "Read the research paper and access dataset information":
+            - /url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13745541/?utm_source=chatgpt.com
+            - generic: Read the research paper and access dataset
+            - generic: information
+        - paragraph:
+          - text: The study describes customized rings recording raw PPG at 100 Hz, which is particularly relevant if you're developing signal-processing or machine-learning algorithms.
+          - button "PubMed Central (PMC)":
+            - generic: PubMed Central (PMC)
+        - heading "What kind of research are you doing?" [level=2]
+        - paragraph:
+          - text: "One important question:"
+          - generic: Do you specifically need raw PPG from a commercial smart ring, or would a research-grade/custom ring also work?
+        - paragraph: "I can help narrow this down to devices that provide:"
+        - list:
+          - paragraph: Raw PPG waveform samples (CSV/BIN).
+          - paragraph: Green, red, and infrared channels.
+          - paragraph: Sampling rates of 25–100+ Hz.
+          - paragraph: Real-time Bluetooth streaming or offline export.
+          - paragraph: Raw accelerometer data synchronized with PPG.
+          - paragraph: Research or institutional licensing.
+        - paragraph: The distinction matters because a ring with an accessible raw sensor stream is quite different from a consumer ring that only exports heart rate and HRV.
+      - status
+      - group "回复操作":
+        - button "复制回复":
+        - status
+        - button "回复优秀":
+        - button "回复不佳":
+        - status
+        - button "分享":
+        - button "更多操作":
+    - paragraph:
+      - generic: ChatGPT 是 AI，可能会犯错。
+- navigation "Sidebar shortcuts":
+  - link "ChatGPT 徽标":
+    - /url: /
+    - img "ChatGPT"
+  - navigation "侧边栏":
+    - link "新聊天":
+      - /url: /?noauth_recent_chat_failed=1
+      - generic: 新聊天
+    - link "图像":
+      - /url: /images
+      - generic: 图像
+    - link "插件":
+      - /url: /plugins?plugins_landing=1
+      - generic: 插件
+    - link "查看套餐和定价":
+      - /url: https://openai.com/chatgpt/pricing/
+      - generic: 查看套餐和定价
+    - link "帮助":
+      - /url: https://help.openai.com/zh-hans-cn/collections/3742473-chatgpt
+      - generic: 帮助
+    - button "深度研究":
+      - generic: 深度研究
+    - link "设置":
+      - /url: /settings
+      - generic: 设置
+- complementary "侧边栏":
+  - button "关闭边栏":
+  - heading "获取为你量身定制的回复" [level=2]
+  - paragraph: 登录以获取基于已保存聊天的回答，并可创建图像和上传文件。
+  - button "登录":
+    - generic: 登录
+- contentinfo:
+  - generic: 与 ChatGPT 聊天
+  - textbox "与 ChatGPT 聊天" [active]:
+    - /placeholder: 询问 ChatGPT
+  - button "添加文件等":
+  - button "开始听写":
+  - button "发送消息" [disabled]:
+- alert
+- status

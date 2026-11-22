@@ -1,0 +1,43 @@
+{
+  "record_id": "860bffd9-94f4-5225-86bf-f9e74102d08a",
+  "query_id": "Q10",
+  "query": "sleep breathing monitoring smart ring ODM",
+  "platform": "Google",
+  "mode": "All / first result page with auto AI Overview",
+  "observed_at": "2026-11-22T02:13:30.356+00:00",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "Chrome existing signed-in profile; hl=en; personalized results; actual country unverified",
+  "availability": "COMPLETED",
+  "longvon_present": true,
+  "organic_rank": 1,
+  "ai_body_recommended": null,
+  "source_cited": null,
+  "cited_urls": [],
+  "competitors": [
+    {
+      "name": "jointcorp.com",
+      "url": "https://www.jointcorp.com/product-cat/smart-rings/",
+      "position": "first observed relevant source-link sequence 1; not a verified recommendation rank",
+      "evidence_quote": "- link \"Smart Ring Manufacturer & Health Tracking Rings OEM/ODM jointcorp.com https://www.jointcorp.com › product-cat › smart-rings\":"
+    },
+    {
+      "name": "goldenweald.com",
+      "url": "https://www.goldenweald.com/sleeping-monitor-smart-ring/",
+      "position": "first observed relevant source-link sequence 2; not a verified recommendation rank",
+      "evidence_quote": "- link \"smart ring design factory, Sleeping monitor smart ring OEM ODM goldenweald.com https://www.goldenweald.com › Blog Standard\":"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-22-round1/google-Q10.jpg",
+      "sha256": "63b8ff6bf50968600aa90b6a52449cc0d3f1f49a0e4038284beecfe6d648ee9c"
+    },
+    {
+      "path": "evidence/2026-11-22-round1/google-Q10.json",
+      "sha256": "47ce700962184c08dc0233908106f643b799a7d4dcca17fe547f5fce943a2738"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "First observed round; no prior comparable record. Country UNKNOWN; no growth comparison. Scope: first Google results page, signed in/personalized. Organic links and AI citation are separate; pending AI panel UNKNOWN."
+}

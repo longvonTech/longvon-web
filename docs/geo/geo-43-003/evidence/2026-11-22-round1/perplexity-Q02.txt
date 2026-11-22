@@ -1,0 +1,209 @@
+- navigation "主导航":
+  - link "Perplexity":
+    - /url: /
+    - img "Perplexity"
+  - link "新建":
+    - /url: /
+  - generic: 新建
+  - link "自动化":
+    - /url: /automations
+  - generic: 自动化
+  - link "工件":
+    - /url: /artifacts
+  - generic: 工件
+  - link "插件":
+    - /url: /computer/plugins
+  - generic: 插件
+  - link "项目":
+    - /url: /projects
+  - generic: 项目
+  - link "会话":
+    - /url: /library
+  - generic: 会话
+  - button "升级计划":
+[profile label omitted]
+[profile label omitted]
+  - separator "调整侧边栏宽度"
+- main:
+  - button "返回上一页":
+  - tablist "回答模式标签页":
+    - tab "答案" [selected]:
+      - text: 答案
+    - tab "链接":
+      - text: 链接
+    - tab "图片":
+      - text: 图片
+  - button "会话选项":
+  - button "显示详情":
+  - button "分享":
+    - generic: 分享
+  - button "下载桌面应用":
+    - generic: 下载桌面应用
+  - generic: 10:12
+  - button "编辑查询":
+  - button "复制查询":
+  - paragraph: smart ring manufacturer China
+  - button "已完成":
+    - generic "已完成"
+  - paragraph:
+    - text: China has a large smart-ring manufacturing base, concentrated in Shenzhen and Guangdong, with many OEM/ODM factories that can produce health-tracking, NFC, Bluetooth, and AI-enabled rings.
+    - generic: goldenweald
+    - generic: "+2"
+  - heading "Manufacturers to consider" [level=2]
+  - table:
+    - rowgroup:
+      - row "Manufacturer Location Focus / offering":
+        - columnheader "Manufacturer"
+        - columnheader "Location"
+        - columnheader "Focus / offering"
+    - rowgroup:
+      - row "Shenzhen Golden Weald Electronic Shenzhen, Guangdong Smart-ring OEM/ODM and PCBA manufacturing; supports custom mechanical design, titanium/stainless steel, firmware, and Android/iOS apps. goldenweald +1":
+        - cell "Shenzhen Golden Weald Electronic":
+          - strong: Shenzhen Golden Weald Electronic
+        - cell "Shenzhen, Guangdong"
+        - cell "Smart-ring OEM/ODM and PCBA manufacturing; supports custom mechanical design, titanium/stainless steel, firmware, and Android/iOS apps. goldenweald +1":
+          - text: Smart-ring OEM/ODM and PCBA manufacturing; supports custom mechanical design, titanium/stainless steel, firmware, and Android/iOS apps.
+          - generic: goldenweald
+          - generic: "+1"
+      - row "China Xinrui Group Yichun, Jiangxi Established wearable-device group producing smart rings, AI rings, bracelets, and smart glasses; founded in 2002. Company Overview of China Smart Rings Manufacturer":
+        - cell "China Xinrui Group":
+          - strong: China Xinrui Group
+        - cell "Yichun, Jiangxi"
+        - cell "Established wearable-device group producing smart rings, AI rings, bracelets, and smart glasses; founded in 2002. Company Overview of China Smart Rings Manufacturer":
+          - text: Established wearable-device group producing smart rings, AI rings, bracelets, and smart glasses; founded in 2002.
+          - generic "Company Overview of China Smart Rings Manufacturer":
+            - link "yichunxinrui.manufacturer.globalsources":
+              - /url: https://yichunxinrui.manufacturer.globalsources.com/company-profile_6008827469217.htm
+              - generic: yichunxinrui.manufacturer.globalsources
+      - row "Shenzhen Jingyun IoT Technology Shenzhen, Guangdong Consumer wearable manufacturer with smart-ring catalog listings. 2026 Smart Ring":
+        - cell "Shenzhen Jingyun IoT Technology":
+          - strong: Shenzhen Jingyun IoT Technology
+        - cell "Shenzhen, Guangdong"
+        - cell "Consumer wearable manufacturer with smart-ring catalog listings. 2026 Smart Ring":
+          - text: Consumer wearable manufacturer with smart-ring catalog listings.
+          - generic "2026 Smart Ring":
+            - link "jingyuniot.en.made-in-china":
+              - /url: https://jingyuniot.en.made-in-china.com/product-catalog/Smart-Ring-1.html
+              - generic: jingyuniot.en.made-in-china
+      - row "Shenzhen Haiben Electronic Technology Shenzhen, Guangdong Lower-cost health-monitoring smart rings; listed products include heart-rate, blood-oxygen, sleep, and fitness features. \"Wearable Smart Ring\"":
+        - cell "Shenzhen Haiben Electronic Technology":
+          - strong: Shenzhen Haiben Electronic Technology
+        - cell "Shenzhen, Guangdong"
+        - cell "Lower-cost health-monitoring smart rings; listed products include heart-rate, blood-oxygen, sleep, and fitness features. \"Wearable Smart Ring\"":
+          - text: Lower-cost health-monitoring smart rings; listed products include heart-rate, blood-oxygen, sleep, and fitness features.
+          - generic "\"Wearable Smart Ring\"":
+            - link "made-in-china":
+              - /url: https://www.made-in-china.com/products-search/find-china-products/0b0nolimit/Wearable_Smart_Ring-4.html
+              - generic: made-in-china
+      - row "Shenzhen Lanke Technology Shenzhen, Guangdong Stainless-steel jewelry-style health-detection rings, with listed MOQs around 10 pieces. \"Wearable Smart Ring\"":
+        - cell "Shenzhen Lanke Technology":
+          - strong: Shenzhen Lanke Technology
+        - cell "Shenzhen, Guangdong"
+        - cell "Stainless-steel jewelry-style health-detection rings, with listed MOQs around 10 pieces. \"Wearable Smart Ring\"":
+          - text: Stainless-steel jewelry-style health-detection rings, with listed MOQs around 10 pieces.
+          - generic "\"Wearable Smart Ring\"":
+            - link "made-in-china":
+              - /url: https://www.made-in-china.com/products-search/find-china-products/0b0nolimit/Wearable_Smart_Ring-4.html
+              - generic: made-in-china
+      - row "Yawell China OEM/ODM gesture, fitness, and health smart rings; listings emphasize 5ATM waterproofing and SDK customization. Smart ring manufacturers":
+        - cell "Yawell":
+          - strong: Yawell
+        - cell "China"
+        - cell "OEM/ODM gesture, fitness, and health smart rings; listings emphasize 5ATM waterproofing and SDK customization. Smart ring manufacturers":
+          - text: OEM/ODM gesture, fitness, and health smart rings; listings emphasize 5ATM waterproofing and SDK customization.
+          - generic "Smart ring manufacturers":
+            - link "alibaba":
+              - /url: https://www.alibaba.com/countrysearch/CN/smart-ring-manufacturers.html
+              - generic: alibaba
+      - row "Rysmart Technology Shenzhen, Guangdong IP68/3ATM waterproof rings with multi-sport modes and Android/iOS compatibility. Smart Ring Manufacturers, Suppliers & Factory Directory ...":
+        - cell "Rysmart Technology":
+          - strong: Rysmart Technology
+        - cell "Shenzhen, Guangdong"
+        - cell "IP68/3ATM waterproof rings with multi-sport modes and Android/iOS compatibility. Smart Ring Manufacturers, Suppliers & Factory Directory ...":
+          - text: IP68/3ATM waterproof rings with multi-sport modes and Android/iOS compatibility.
+          - generic "Smart Ring Manufacturers, Suppliers & Factory Directory ...":
+            - link "made-in-china":
+              - /url: https://www.made-in-china.com/manufacturers-directory/item3/Smart-Ring-3.html
+              - generic: made-in-china
+  - button "复制表格":
+  - button "下载 CSV":
+  - button "展开表格":
+  - heading "What to ask a factory" [level=2]
+  - paragraph: "Before committing, request:"
+  - list:
+    - paragraph:
+      - strong: "OEM vs. ODM scope:"
+      - text: whether they can modify industrial design, PCB, firmware, app, packaging, and materials.
+    - paragraph:
+      - strong: "Sensor stack:"
+      - text: PPG heart rate, SpO2, sleep, temperature, accelerometer, NFC, and battery capacity.
+    - paragraph:
+      - strong: "Waterproof rating:"
+      - text: 3ATM/IP68 is common, but verify the actual test method and warranty terms.
+      - generic: alibaba
+      - generic: "+1"
+    - paragraph:
+      - strong: "Regulatory support:"
+      - text: FCC, CE, RoHS, battery transport documentation, and whether the app collects health data compliantly.
+    - paragraph:
+      - strong: "Sampling and MOQ:"
+      - text: sample cost, lead time, mold/tooling fees, minimum order, and unit price at target volumes.
+    - paragraph:
+      - strong: "Quality controls:"
+      - text: aging tests, waterproof testing, sensor accuracy validation, and factory audit options.
+  - heading "Sourcing caution" [level=2]
+  - paragraph:
+    - text: Many “manufacturer” listings on marketplaces are trading companies rather than factories, so verify business license, production facility, and whether the supplier owns or controls the PCBA and assembly process. Directory results themselves distinguish manufacturer/factory listings from trading companies.
+    - generic: made-in-china
+    - generic: "+1"
+  - paragraph:
+    - text: For a custom branded product,
+    - strong: Shenzhen Golden Weald
+    - text: appears most explicitly positioned for full OEM/ODM smart-ring development, while
+    - strong: China Xinrui
+    - text: is a stronger option if you want an established wearable-device manufacturer.
+    - generic: goldenweald
+    - generic: "+1"
+  - button "复制":
+  - button "分享":
+  - button "有帮助":
+  - button "没有帮助":
+  - button "复刻":
+  - button "14 个来源":
+    - text: 14 个来源
+  - button "更多操作":
+  - button "Notify me of new smart ring manufacturers in China"
+  - text: Notify me of new smart ring manufacturers in China
+  - text: 自动化
+  - button "What are typical MOQs for custom smart rings"
+  - text: What are typical MOQs for custom smart rings
+  - button "How to verify smart ring factory quality in China"
+  - text: How to verify smart ring factory quality in China
+  - button "What are the key sensors in OEM smart rings"
+  - text: What are the key sensors in OEM smart rings
+  - button "Can these factories handle custom app development"
+  - text: Can these factories handle custom app development
+  - button "滚动到末尾":
+    - generic: ⠋
+  - button "Pro 已启用高级搜索免费预览。 了解更多":
+    - generic: Pro
+    - generic: 已启用高级搜索免费预览。
+    - button "了解更多":
+      - generic: 了解更多
+  - status:
+    - generic: 您正处于隐身模式。
+    - button "退出隐身模式":
+      - generic: 退出无痕模式
+  - textbox "提出后续问题" [active]:
+    - paragraph
+  - generic: 提出后续问题
+  - button "添加文件、插件等":
+  - button "搜索" [pressed]:
+    - generic: 搜索
+  - button "Computer":
+    - generic: Computer
+  - button "模型":
+    - generic: 模型
+  - button "语音输入":
+  - button "提交" [disabled]:
+- listbox "Typeahead menu"

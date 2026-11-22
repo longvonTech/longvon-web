@@ -1,0 +1,25 @@
+{
+  "recorded_at": "2026-11-22T02:25:19.197432+00:00",
+  "FAIL": [
+    "Excluded authenticated ChatGPT Q01 due personalization contamination risk",
+    "ChatGPT Q01-Q07 original screenshots horizontally clipped",
+    "Python3.9 raw ISO Z timestamp parsing failed; equivalent +00:00 input used, no code change"
+  ],
+  "UNKNOWN": [
+    "country all36",
+    "ChatGPT model and live web-search invocation",
+    "Google Q07-Q10 pending AI panels",
+    "Perplexity full target URL for Q04 Q05 Q06 Q09 Q10 Q12",
+    "some candidate manufacturer identities/ranks"
+  ],
+  "UNAVAILABLE": {
+    "platform_level": 0,
+    "definition": "no complete platform outage after actual queries"
+  },
+  "BLOCKED_LOCAL_ENV": [
+    "CDP read timeout recovered without re-send",
+    "7 logged-out UC conversation reopens failed; original evidence retained"
+  ],
+  "no_production_changes": true,
+  "production_rfq_posts": 0
+}

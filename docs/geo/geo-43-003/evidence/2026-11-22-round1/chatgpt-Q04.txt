@@ -1,0 +1,221 @@
+- banner:
+  - button "打开边栏":
+  - button "登录"
+- main:
+  - region "对话":
+    - list "对话":
+      - heading "你说：" [level=4]
+      - button "custom smart ring development company":
+        - paragraph: custom smart ring development company
+      - heading "ChatGPT 说：" [level=4]
+      - region "DIL content":
+        - paragraph:
+          - text: If you're looking for a
+          - generic: custom smart ring development company
+          - text: ", you need an OEM/ODM or wearable technology development partner that can design, engineer, prototype, and manufacture a smart ring based on your specifications and brand."
+        - paragraph: "A suitable development partner should ideally offer:"
+        - list:
+          - paragraph:
+            - generic: "Industrial design:"
+            - text: Custom ring shape, materials, finish, and sizing.
+          - paragraph:
+            - generic: "Hardware development:"
+            - text: Sensors, Bluetooth, battery, charging, and PCB miniaturization.
+          - paragraph:
+            - generic: "Health tracking:"
+            - text: Heart rate, HRV, SpO₂, skin temperature, sleep, and activity tracking.
+          - paragraph:
+            - generic: "Firmware development:"
+            - text: Embedded software and sensor algorithms.
+          - paragraph:
+            - generic: "Mobile app development:"
+            - text: Custom iOS and Android applications.
+          - paragraph:
+            - generic: "Manufacturing:"
+            - text: Prototyping, tooling, mass production, and quality control.
+          - paragraph:
+            - generic: "Branding:"
+            - text: Private-label production and custom packaging.
+        - heading "Companies to consider" [level=2]
+        - paragraph: "Here are several companies worth contacting for custom development:"
+        - 'img "Smart Ring Sensors Explained: PPG, Accelerometer, Temperature | MATEYOU Health Insights"'
+        - 'button "Open Smart Ring Sensors Explained: PPG, Accelerometer, Temperature | MATEYOU Health Insights"'
+        - paragraph:
+          - text: "1."
+          - button "LONGVON Technology"
+          - generic: LONGVON Technology
+        - generic: Full-stack development
+        - list:
+          - paragraph: Custom hardware, firmware, sensors, algorithms and apps.
+          - paragraph: OEM/ODM manufacturing.
+          - paragraph: Suitable for developing a new smart ring platform.
+        - button "Company website":
+          - link "Company website":
+            - /url: https://www.longvon.com/en/smart-ring-manufacturer?utm_source=chatgpt.com
+            - generic: Company
+            - generic: website
+        - button "Smart Ring Manufacturer & OEM/ODM Provider +1":
+          - generic: Smart Ring Manufacturer & OEM/ODM Provider
+          - generic: "+1"
+        - img "产品中心_奔啦啦智能科技"
+        - button "Open 产品中心_奔啦啦智能科技"
+        - paragraph:
+          - text: "2."
+          - button "Bonlala"
+          - generic: Bonlala
+        - list:
+          - paragraph: Industrial design and hardware development.
+          - paragraph: Firmware, algorithms and mobile apps.
+          - paragraph: Manufacturing at scale.
+        - button "Company website":
+          - link "Company website":
+            - /url: https://bonlala.com/?utm_source=chatgpt.com
+            - generic: Company
+            - generic: website
+        - button "Smart Ring OEM/ODM":
+          - generic: Smart Ring OEM/ODM
+        - img "Jual COLMI Smart Ring R10 Health and sports detection 5ATM waterproof Military titanium steel Fashion Rings | Shopee Indonesia"
+        - button "Open Jual COLMI Smart Ring R10 Health and sports detection 5ATM waterproof Military titanium steel Fashion Rings | Shopee Indonesia"
+        - paragraph:
+          - text: "3."
+          - button "COMI Solutions"
+          - generic: COMI Solutions
+        - list:
+          - paragraph: Custom materials and exterior design.
+          - paragraph: Sensor modules and firmware.
+          - paragraph: SDK and app customization.
+        - button "Company website":
+          - link "Company website":
+            - /url: https://comiring.com/customized-service/?utm_source=chatgpt.com
+            - generic: Company
+            - generic: website
+        - button "OEM/ODM Smart Ring Manufacturer":
+          - generic: OEM/ODM Smart Ring Manufacturer
+        - img "Next generation smart ring integrates Nordic’s nRF54L15 SoC delivering unparalleled processing and power consumption performance - nordicsemi.com"
+        - button "Open Next generation smart ring integrates Nordic’s nRF54L15 SoC delivering unparalleled processing and power consumption performance - nordicsemi.com"
+        - paragraph:
+          - text: "4."
+          - button "AOL Health / IDOT RING"
+          - generic: AOL Health / IDOT RING
+        - list:
+          - paragraph: Custom product development.
+          - paragraph: PCB, embedded systems and sensor integration.
+          - paragraph: App and SDK/API integration.
+        - button "Company website":
+          - link "Company website":
+            - /url: https://idotring.com/en/?utm_source=chatgpt.com
+            - generic: Company
+            - generic: website
+        - button "AOL Health":
+          - generic: AOL Health
+        - img "2301A Smart Ring Companion App for iOS and Android"
+        - button "Open 2301A Smart Ring Companion App for iOS and Android"
+        - paragraph:
+          - text: "5."
+          - button "J-Style"
+          - generic: J-Style
+        - list:
+          - paragraph: Custom industrial design and firmware.
+          - paragraph: White-label apps and SDK/API.
+          - paragraph: Cloud health platform integration.
+        - button "Company website":
+          - link "Company website":
+            - /url: https://www.jointcorp.com/?utm_source=chatgpt.com
+            - generic: Company
+            - generic: website
+        - button "jointcorp.com":
+          - generic: jointcorp.com
+        - paragraph:
+          - generic: These are potential suppliers based on their published capabilities, not independently audited endorsements. Verify samples, references, IP ownership, certifications and manufacturing arrangements.
+        - heading "Let's identify the right development partner" [level=2]
+        - paragraph: I can narrow this down to companies capable of developing a completely new smart ring rather than simply putting a logo on an existing product.
+        - paragraph:
+          - generic: What type of smart ring are you planning to develop?
+        - paragraph:
+          - generic: 1. Smart ring functionality
+        - radiogroup "Options":
+          - radio "Health monitoring (HR, HRV, SpO₂, sleep, temperature)" [checked]
+          - text: Health monitoring (HR, HRV, SpO₂, sleep, temperature)
+          - radio "ECG / advanced health sensors"
+          - text: ECG / advanced health sensors
+          - radio "NFC payment / access control"
+          - text: NFC payment / access control
+          - radio "AI smart ring / voice assistant"
+          - text: AI smart ring / voice assistant
+          - radio "Custom functionality (my own concept)"
+          - text: Custom functionality (my own concept)
+        - paragraph:
+          - generic: 2. Development requirements
+        - radiogroup "Options":
+          - radio "Completely new hardware + software + mobile app" [checked]
+          - text: Completely new hardware + software + mobile app
+          - radio "Custom hardware using existing technology"
+          - text: Custom hardware using existing technology
+          - radio "Existing ring with customized branding and app"
+          - text: Existing ring with customized branding and app
+          - radio "Only engineering and prototyping"
+          - text: Only engineering and prototyping
+        - paragraph:
+          - generic: 3. Expected production quantity
+        - radiogroup "Options":
+          - radio "Prototype only (1–10 units)"
+          - text: Prototype only (1–10 units)
+          - radio "100–500 units"
+          - text: 100–500 units
+          - radio "1,000–5,000 units" [checked]
+          - text: 1,000–5,000 units
+          - radio "10,000–50,000 units"
+          - text: 10,000–50,000 units
+          - radio "50,000+ units"
+          - text: 50,000+ units
+        - paragraph:
+          - generic: 4. Development budget
+        - radiogroup "Options":
+          - radio "Under $25,000"
+          - text: Under $25,000
+          - radio "$25,000–$50,000"
+          - text: $25,000–$50,000
+          - radio "$50,000–$100,000"
+          - text: $50,000–$100,000
+          - radio "$100,000–$250,000"
+          - text: $100,000–$250,000
+          - radio "Over $250,000"
+          - text: Over $250,000
+          - radio "Not decided yet" [checked]
+          - text: Not decided yet
+        - paragraph:
+          - generic: 5. Preferred development location
+        - radiogroup "Options":
+          - radio "China or anywhere with strong R&D" [checked]
+          - text: China or anywhere with strong R&D
+          - radio "USA"
+          - text: USA
+          - radio "Europe"
+          - text: Europe
+          - radio "India"
+          - text: India
+          - radio "No preference"
+          - text: No preference
+        - button "Find suitable development companies":
+          - generic: Find suitable development companies
+        - paragraph: I can then shortlist the strongest manufacturers and engineering partners for your project, including direct contact websites and an estimated development budget.
+      - status
+      - group "回复操作":
+        - button "复制回复":
+        - status
+        - button "回复优秀":
+        - button "回复不佳":
+        - status
+        - button "分享":
+        - button "更多操作":
+    - paragraph:
+      - generic: ChatGPT 是 AI，可能会犯错。
+- contentinfo:
+  - generic: 与 ChatGPT 聊天
+  - textbox "与 ChatGPT 聊天" [active]:
+    - /placeholder: 询问 ChatGPT
+  - button "添加文件等":
+  - button "开始听写":
+  - button "发送消息" [disabled]:
+- alert
+- status

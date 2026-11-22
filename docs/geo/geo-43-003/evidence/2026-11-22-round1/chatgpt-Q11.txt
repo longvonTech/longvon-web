@@ -1,0 +1,213 @@
+- banner:
+  - button "登录"
+  - button "免费注册"
+- main:
+  - region "对话":
+    - list "对话":
+      - heading "你说：" [level=4]
+      - paragraph: digital health smart ring integration SDK
+      - button "复制":
+      - status
+      - heading "ChatGPT 说：" [active] [level=4]
+      - region "DIL content":
+        - heading "Digital Health Smart Ring Integration SDK" [level=1]
+        - paragraph:
+          - text: A
+          - generic: Smart Ring Integration SDK
+          - text: enables a digital health application, healthcare platform, or wellness system to connect with smart rings and retrieve biometric and activity data through APIs or SDKs.
+        - paragraph: "Typical integrations support:"
+        - list:
+          - paragraph: Heart rate (HR) and resting heart rate (RHR)
+          - paragraph: Heart rate variability (HRV)
+          - paragraph: Blood oxygen saturation (SpO₂)
+          - paragraph: Skin temperature and temperature deviations
+          - paragraph: Sleep duration, stages, and sleep quality
+          - paragraph: Steps, activity, and calorie expenditure
+          - paragraph: Respiratory rate
+          - paragraph: Readiness, recovery, and wellness scores
+        - heading "Smart ring platforms to consider" [level=2]
+        - table:
+          - rowgroup:
+            - row "Smart ring Integration method Access":
+              - columnheader "Smart ring":
+                - paragraph: Smart ring
+              - columnheader "Integration method":
+                - paragraph: Integration method
+              - columnheader "Access":
+                - paragraph: Access
+            - row "Oura Ring REST API V2, OAuth 2.0, webhooks Public developer API":
+              - cell "Oura Ring":
+                - paragraph:
+                  - button "Oura Ring"
+                  - generic: Oura Ring
+              - cell "REST API V2, OAuth 2.0, webhooks":
+                - paragraph: REST API V2, OAuth 2.0, webhooks
+              - cell "Public developer API":
+                - paragraph: Public developer API
+            - row "Ultrahuman Ring UltraSignal / partner API API access subject to program":
+              - cell "Ultrahuman Ring":
+                - paragraph:
+                  - button "Ultrahuman Ring"
+                  - generic: Ultrahuman Ring
+              - cell "UltraSignal / partner API":
+                - paragraph: UltraSignal / partner API
+              - cell "API access subject to program":
+                - paragraph: API access subject to program
+            - row "Samsung Galaxy Ring Samsung Health Data SDK, Health Connect Android":
+              - cell "Samsung Galaxy Ring":
+                - paragraph:
+                  - button "Samsung Galaxy Ring"
+                  - generic: Samsung Galaxy Ring
+              - cell "Samsung Health Data SDK, Health Connect":
+                - paragraph: Samsung Health Data SDK, Health Connect
+              - cell "Android":
+                - paragraph: Android
+            - row "RingConn Health Connect / Apple Health integrations Public API availability needs vendor confirmation":
+              - cell "RingConn":
+                - paragraph:
+                  - button "RingConn"
+                  - generic: RingConn
+              - cell "Health Connect / Apple Health integrations":
+                - paragraph: Health Connect / Apple Health integrations
+              - cell "Public API availability needs vendor confirmation":
+                - paragraph: Public API availability needs vendor confirmation
+        - paragraph:
+          - text: "Sources:"
+          - button "Oura Member Care +3":
+            - generic: Oura Member Care
+            - generic: "+3"
+        - heading "Recommended integration architecture" [level=2]
+        - paragraph:
+          - generic: Smart Ring Devices
+        - paragraph: Oura · Ultrahuman · Samsung · RingConn
+        - paragraph:
+          - generic: Cloud APIs
+        - paragraph: OAuth · REST · Webhooks
+        - paragraph:
+          - generic: Mobile SDKs
+        - paragraph: HealthKit · Health Connect
+        - paragraph:
+          - generic: Unified Digital Health Integration Layer
+        - paragraph: Data normalization · Consent · Identity · Synchronization
+        - paragraph:
+          - generic: Digital Health Platform
+        - paragraph: Patient dashboard · Health analytics · AI insights · Clinical systems
+        - heading "Existing SDKs and integration resources" [level=2]
+        - list:
+          - paragraph:
+            - button "Oura API V2 documentation":
+              - link "Oura API V2 documentation":
+                - /url: https://cloud.ouraring.com/v2/docs?utm_source=chatgpt.com
+                - generic: Oura API V2
+                - generic: documentation
+          - paragraph:
+            - button "Samsung Health SDK":
+              - link "Samsung Health SDK":
+                - /url: https://developer.samsung.com/health?utm_source=chatgpt.com
+                - generic: Samsung Health
+                - generic: SDK
+          - paragraph:
+            - button "Apple HealthKit":
+              - link "Apple HealthKit":
+                - /url: https://developer.apple.com/documentation/healthkit?utm_source=chatgpt.com
+                - generic: Apple
+                - generic: HealthKit
+          - paragraph:
+            - button "Android Health Connect":
+              - link "Android Health Connect":
+                - /url: https://developer.android.com/health-and-fitness/health-connect?utm_source=chatgpt.com
+                - generic: Android Health
+                - generic: Connect
+          - paragraph:
+            - button "Open Wearables – open-source integration platform":
+              - link "Open Wearables – open-source integration platform":
+                - /url: https://github.com/the-momentum/open-wearables?utm_source=chatgpt.com
+                - generic: Open Wearables – open-source integration
+                - generic: platform
+        - heading "What are you looking to build?" [level=2]
+        - paragraph: "The distinction matters because there are three different solutions:"
+        - paragraph:
+          - generic: 1. Your integration objective
+        - radiogroup "Options":
+          - radio "Unified SDK/API to integrate multiple smart ring brands" [checked]
+          - text: Unified SDK/API to integrate multiple smart ring brands
+          - radio "Build my own digital health app connected to smart rings"
+          - text: Build my own digital health app connected to smart rings
+          - radio "White-label smart ring integration platform for healthcare businesses"
+          - text: White-label smart ring integration platform for healthcare businesses
+          - radio "Develop an SDK for our own smart ring hardware"
+          - text: Develop an SDK for our own smart ring hardware
+        - paragraph:
+          - generic: 2. Target platforms
+        - radiogroup "Options":
+          - radio "iOS"
+          - text: iOS
+          - radio "Android"
+          - text: Android
+          - radio "Both iOS and Android" [checked]
+          - text: Both iOS and Android
+          - radio "Cloud API / Backend only"
+          - text: Cloud API / Backend only
+        - paragraph:
+          - generic: 3. Device coverage
+        - radiogroup "Options":
+          - radio "Multiple brands (Oura, Samsung, Ultrahuman, etc.)" [checked]
+          - text: Multiple brands (Oura, Samsung, Ultrahuman, etc.)
+          - radio "Oura only"
+          - text: Oura only
+          - radio "Our own branded smart ring"
+          - text: Our own branded smart ring
+        - button "Submit requirements":
+          - generic: Submit requirements
+        - paragraph: I can then narrow this down to suitable commercial SDK providers, open-source options, API documentation, and a recommended technical architecture.
+      - status
+      - group "回复操作":
+        - button "复制回复":
+        - status
+        - button "回复优秀":
+        - button "回复不佳":
+        - status
+        - button "分享":
+        - button "更多操作":
+    - paragraph:
+      - generic: ChatGPT 是 AI，可能会犯错。
+- navigation "Sidebar shortcuts":
+  - link "ChatGPT 徽标":
+    - /url: /
+    - img "ChatGPT"
+  - navigation "侧边栏":
+    - link "新聊天":
+      - /url: /?noauth_recent_chat_failed=1
+      - generic: 新聊天
+    - link "图像":
+      - /url: /images
+      - generic: 图像
+    - link "插件":
+      - /url: /plugins?plugins_landing=1
+      - generic: 插件
+    - link "查看套餐和定价":
+      - /url: https://openai.com/chatgpt/pricing/
+      - generic: 查看套餐和定价
+    - link "帮助":
+      - /url: https://help.openai.com/zh-hans-cn/collections/3742473-chatgpt
+      - generic: 帮助
+    - button "深度研究":
+      - generic: 深度研究
+    - link "设置":
+      - /url: /settings
+      - generic: 设置
+- complementary "侧边栏":
+  - button "关闭边栏":
+  - heading "获取为你量身定制的回复" [level=2]
+  - paragraph: 登录以获取基于已保存聊天的回答，并可创建图像和上传文件。
+  - button "登录":
+    - generic: 登录
+- contentinfo:
+  - generic: 与 ChatGPT 聊天
+  - textbox "与 ChatGPT 聊天":
+    - /placeholder: 询问 ChatGPT
+  - button "添加文件等":
+  - button "开始听写":
+  - button "发送消息" [disabled]:
+- alert
+- status

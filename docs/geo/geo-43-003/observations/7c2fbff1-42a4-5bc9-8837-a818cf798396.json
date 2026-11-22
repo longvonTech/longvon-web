@@ -1,0 +1,34 @@
+{
+  "record_id": "7c2fbff1-42a4-5bc9-8837-a818cf798396",
+  "query_id": "Q08",
+  "query": "smart ring raw PPG data for research",
+  "platform": "ChatGPT",
+  "mode": "logged-out default answer (web-search invocation UNKNOWN)",
+  "observed_at": "2026-11-22T02:17:57.854+00:00",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "in-app browser logged out, new conversation per query; UI zh, query/answer en; model UNKNOWN",
+  "availability": "COMPLETED",
+  "longvon_present": false,
+  "organic_rank": null,
+  "ai_body_recommended": false,
+  "source_cited": false,
+  "cited_urls": [],
+  "competitors": [],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-22-round1/chatgpt-Q08-meta.json",
+      "sha256": "27f9b3761b5cd3d0eadf1852ccf6aaaea0a3cc7da94e3374ad7177bc8c4b02c5"
+    },
+    {
+      "path": "evidence/2026-11-22-round1/chatgpt-Q08.jpg",
+      "sha256": "561f35da961f352c952bf7643d2e3f4c63710985141910a7df27baec8e20d9af"
+    },
+    {
+      "path": "evidence/2026-11-22-round1/chatgpt-Q08.txt",
+      "sha256": "3b8f88c8f6e03710d9f87c34250c4e682c67c969ff8a2a150d881d56442d489f"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "First observed round; no prior comparable record. Country UNKNOWN; no growth comparison. Logged-out default answer; explicit web-search invocation and model version UNKNOWN; visible linked sources are not proof of live retrieval."
+}

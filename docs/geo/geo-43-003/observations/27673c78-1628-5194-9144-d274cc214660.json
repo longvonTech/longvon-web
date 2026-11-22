@@ -1,0 +1,47 @@
+{
+  "record_id": "27673c78-1628-5194-9144-d274cc214660",
+  "query_id": "Q02",
+  "query": "smart ring manufacturer China",
+  "platform": "Perplexity",
+  "mode": "incognito Search / free-preview label",
+  "observed_at": "2026-11-22T02:13:08.386+00:00",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "Chrome signed-in incognito session, fresh query per conversation; UI zh, query/answer en; model UNKNOWN",
+  "availability": "COMPLETED",
+  "longvon_present": false,
+  "organic_rank": null,
+  "ai_body_recommended": false,
+  "source_cited": false,
+  "cited_urls": [],
+  "competitors": [
+    {
+      "name": "yichunxinrui.manufacturer.globalsources.com",
+      "url": "https://yichunxinrui.manufacturer.globalsources.com/company-profile_6008827469217.htm",
+      "position": "first observed relevant source-link sequence 1; not a verified recommendation rank",
+      "evidence_quote": "- link \"yichunxinrui.manufacturer.globalsources\":"
+    },
+    {
+      "name": "jingyuniot.en.made-in-china.com",
+      "url": "https://jingyuniot.en.made-in-china.com/product-catalog/Smart-Ring-1.html",
+      "position": "first observed relevant source-link sequence 2; not a verified recommendation rank",
+      "evidence_quote": "- link \"jingyuniot.en.made-in-china\":"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-22-round1/perplexity-Q02-meta.json",
+      "sha256": "b17113e182eb285f4328ec01bfeab24bcbd98938aa38f95225161f627a56e897"
+    },
+    {
+      "path": "evidence/2026-11-22-round1/perplexity-Q02.jpg",
+      "sha256": "14b386820a0e0c16f36248f0540ef8b08847ef22a0174c8a0d90698c7918137f"
+    },
+    {
+      "path": "evidence/2026-11-22-round1/perplexity-Q02.txt",
+      "sha256": "9ab246c149ed629569a6a42113d30338db0a683a68933e3459e2aee891d95dec"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "First observed round; no prior comparable record. Country UNKNOWN; no growth comparison. Incognito Search; Pro free preview label shown. Exact targets for generic domain-only citation labels UNKNOWN; source drawer observed empty."
+}

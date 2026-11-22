@@ -1,0 +1,41 @@
+{
+  "record_id": "43d38c84-85e6-572d-b42b-68bead1e7b0a",
+  "query_id": "Q11",
+  "query": "digital health smart ring integration SDK",
+  "platform": "ChatGPT",
+  "mode": "logged-out default answer (web-search invocation UNKNOWN)",
+  "observed_at": "2026-11-22T02:20:01.807+00:00",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "in-app browser logged out, new conversation per query; UI zh, query/answer en; model UNKNOWN",
+  "availability": "COMPLETED",
+  "longvon_present": false,
+  "organic_rank": null,
+  "ai_body_recommended": false,
+  "source_cited": false,
+  "cited_urls": [],
+  "competitors": [
+    {
+      "name": "cloud.ouraring.com",
+      "url": "https://cloud.ouraring.com/v2/docs?utm_source=chatgpt.com",
+      "position": "first observed relevant source-link sequence 1; not a verified recommendation rank",
+      "evidence_quote": "- link \"Oura API V2 documentation\":"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-22-round1/chatgpt-Q11-meta.json",
+      "sha256": "cd8c8ded4a96728e8ac5f992ca1887ec5d573c4173c3459a8c0c4fc9edd83e26"
+    },
+    {
+      "path": "evidence/2026-11-22-round1/chatgpt-Q11.jpg",
+      "sha256": "81f15f10aaee62f233187b96438a066895c328cdd1fe193910ed90a61b942817"
+    },
+    {
+      "path": "evidence/2026-11-22-round1/chatgpt-Q11.txt",
+      "sha256": "e1957624af41d3b73e7c5997d6d8cfc7b2338e1399f4e1e402450ab4f0731e99"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "First observed round; no prior comparable record. Country UNKNOWN; no growth comparison. Logged-out default answer; explicit web-search invocation and model version UNKNOWN; visible linked sources are not proof of live retrieval."
+}

@@ -42,3 +42,7 @@ HTTP200和可解析JSON-LD不代表完整SEO验收。尚待检查：sitemap逐UR
 ## 已采集页面的交叉核对
 
 基于同批HTTP证据，18个正式站HTML页面均在sitemap中、canonical自指，已观测到的hreflang目标均有回链。仅将域名根路径空字符串与`/`作等价归一，不修改其他路径。证据：`evidence/sitemap-hreflang-check.json`。这不代表全站每个URL均已验收。`/about`两种语言本次未发现JSON-LD，记录为待评估项，不直接推断抓取失败。
+
+## 2026-11-22 首轮深层URL补查
+
+新增12条GET：中英文询盘、SDK、公司、OSA、睡眠呼吸、制造商及带UTM/AI参数的OEM URL，均单跳301至www.longvon.com相同路径，最终200；受测查询参数保留。证据`evidence/2026-11-22-round1/new-domain-deep-http.json`。未提交表单，未改DNS/Nginx；不证明所有历史路径、旧索引或数据库归因写入均通过。

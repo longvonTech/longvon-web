@@ -1,0 +1,224 @@
+- banner:
+  - button "打开边栏":
+  - button "登录"
+- main:
+  - region "对话":
+    - list "对话":
+      - heading "你说：" [level=4]
+      - button "smart ring hardware firmware ODM partner":
+        - paragraph: smart ring hardware firmware ODM partner
+      - heading "ChatGPT 说：" [level=4]
+      - region "DIL content":
+        - paragraph:
+          - text: If you're looking for a
+          - generic: Smart Ring Hardware + Firmware ODM partner
+          - text: to develop and manufacture your own branded smart ring, I would start with manufacturers in Shenzhen and other Chinese wearable technology hubs.
+        - paragraph: The ideal partner should provide more than assembly. You want an ODM with in-house hardware engineering, embedded firmware, sensor integration, algorithms, and mass production.
+        - heading "1. Potential smart ring ODM partners" [level=2]
+        - paragraph: Here are three companies worth putting on your initial shortlist.
+        - 'img "Smart Ring Sensors Explained: PPG, Accelerometer, Temperature | MATEYOU Health Insights"'
+        - 'button "Open Smart Ring Sensors Explained: PPG, Accelerometer, Temperature | MATEYOU Health Insights"'
+        - paragraph:
+          - text: "1."
+          - button "LONGVON Technology"
+          - generic: LONGVON Technology
+        - generic: Full-stack ODM candidate
+        - list:
+          - paragraph: Smart ring hardware development
+          - paragraph: Embedded firmware and sensor integration
+          - paragraph: Health algorithms
+          - paragraph: Mobile app, SDK and cloud APIs
+          - paragraph: OEM/ODM manufacturing
+        - paragraph:
+          - text: "Website:"
+          - button "LONGVON":
+            - link "LONGVON":
+              - /url: https://www.longvon.com/en/company/longvon?utm_source=chatgpt.com
+              - generic: LONGVON
+        - paragraph: Based in Shenzhen, China.
+        - img "产品中心_奔啦啦智能科技"
+        - button "Open 产品中心_奔啦啦智能科技"
+        - paragraph:
+          - text: "2."
+          - button "Bonlala"
+          - generic: Bonlala
+        - generic: Manufacturing + R&D candidate
+        - list:
+          - paragraph: Hardware and structural design
+          - paragraph: MCU and firmware development
+          - paragraph: Sensor calibration
+          - paragraph: Mobile app development
+          - paragraph: Large-scale production
+        - paragraph:
+          - text: "Website:"
+          - button "Bonlala":
+            - link "Bonlala":
+              - /url: https://www.bonlala.com/?utm_source=chatgpt.com
+              - generic: Bonlala
+        - paragraph: Guangxi manufacturing and Shenzhen R&D operations.
+        - img "Smart Ring China Trade,Buy China Direct From Smart Ring Factories at Alibaba.com"
+        - button "Open Smart Ring China Trade,Buy China Direct From Smart Ring Factories at Alibaba.com"
+        - paragraph:
+          - text: "3."
+          - button "J-Style / Jointcorp"
+          - generic: J-Style / Jointcorp
+        - list:
+          - paragraph: Smart ring hardware and industrial design
+          - paragraph: Firmware development
+          - paragraph: SDK/API integration
+          - paragraph: Cloud health platform
+          - paragraph: White-label customization
+        - paragraph:
+          - text: "Website:"
+          - button "Jointcorp":
+            - link "Jointcorp":
+              - /url: https://www.jointcorp.com/?utm_source=chatgpt.com
+              - generic: Jointcorp
+        - paragraph: Full-stack wearable development positioning.
+        - paragraph: These are initial candidates based on their published capabilities, not independently audited supplier recommendations. Verify engineering ownership, factory capabilities and customer references before selecting one.
+        - heading "2. Technical capabilities to look for" [level=2]
+        - paragraph: "For a serious smart ring development project, I would use this checklist:"
+        - table:
+          - rowgroup:
+            - row "Area Required capability":
+              - columnheader "Area":
+                - paragraph: Area
+              - columnheader "Required capability":
+                - paragraph: Required capability
+            - row "Hardware PCB design, RF/Bluetooth, power management":
+              - cell "Hardware":
+                - paragraph: Hardware
+              - cell "PCB design, RF/Bluetooth, power management":
+                - paragraph: PCB design, RF/Bluetooth, power management
+            - row "Sensors PPG, HR, SpO₂, temperature, IMU":
+              - cell "Sensors":
+                - paragraph: Sensors
+              - cell "PPG, HR, SpO₂, temperature, IMU":
+                - paragraph: PPG, HR, SpO₂, temperature, IMU
+            - row "Firmware Embedded C/C++, BLE, OTA":
+              - cell "Firmware":
+                - paragraph: Firmware
+              - cell "Embedded C/C++, BLE, OTA":
+                - paragraph: Embedded C/C++, BLE, OTA
+            - row "Algorithms Heart rate, HRV, sleep, activity":
+              - cell "Algorithms":
+                - paragraph: Algorithms
+              - cell "Heart rate, HRV, sleep, activity":
+                - paragraph: Heart rate, HRV, sleep, activity
+            - row "Battery Charging, power optimization":
+              - cell "Battery":
+                - paragraph: Battery
+              - cell "Charging, power optimization":
+                - paragraph: Charging, power optimization
+            - row "Mechanical Titanium, stainless steel, waterproofing":
+              - cell "Mechanical":
+                - paragraph: Mechanical
+              - cell "Titanium, stainless steel, waterproofing":
+                - paragraph: Titanium, stainless steel, waterproofing
+            - row "Software SDK, APIs, iOS and Android":
+              - cell "Software":
+                - paragraph: Software
+              - cell "SDK, APIs, iOS and Android":
+                - paragraph: SDK, APIs, iOS and Android
+            - row "Manufacturing EVT, DVT, PVT, mass production":
+              - cell "Manufacturing":
+                - paragraph: Manufacturing
+              - cell "EVT, DVT, PVT, mass production":
+                - paragraph: EVT, DVT, PVT, mass production
+        - heading "3. Questions to ask potential ODM partners" [level=2]
+        - paragraph: "I would specifically ask:"
+        - list:
+          - paragraph: Do you own the hardware and firmware development, or outsource these functions?
+          - paragraph: Can you provide the complete PCB schematic, Gerber files and BOM?
+          - paragraph: Can we own the firmware source code and intellectual property?
+          - paragraph: Which sensor platforms and MCU chipsets do you support?
+          - paragraph: Can we access raw PPG and accelerometer data?
+          - paragraph: Can we customize algorithms and BLE communication protocols?
+          - paragraph: Can you support independent mobile app development through an SDK?
+          - paragraph: What are your MOQ, NRE engineering fees and production lead times?
+        - paragraph:
+          - generic: "Important:"
+          - text: Establish firmware source-code ownership, algorithm licensing, data access and tooling ownership in the contract.
+        - heading "4. Let's narrow down the right ODM partner" [level=2]
+        - paragraph: I can help identify more specialized manufacturers depending on your product strategy.
+        - paragraph:
+          - generic: 1. What type of partnership do you need?
+        - radiogroup "Options":
+          - radio "Complete hardware + firmware ODM" [checked]
+          - text: Complete hardware + firmware ODM
+          - radio "Hardware design + firmware development only"
+          - text: Hardware design + firmware development only
+          - radio "Existing smart ring platform customization"
+          - text: Existing smart ring platform customization
+          - radio "Manufacturing only (our own design)"
+          - text: Manufacturing only (our own design)
+        - paragraph:
+          - generic: 2. What kind of smart ring?
+        - radiogroup "Options":
+          - radio "Health monitoring (HR, HRV, SpO₂, sleep)" [checked]
+          - text: Health monitoring (HR, HRV, SpO₂, sleep)
+          - radio "Fitness and activity tracking"
+          - text: Fitness and activity tracking
+          - radio "AI-powered smart ring"
+          - text: AI-powered smart ring
+          - radio "Payment / NFC smart ring"
+          - text: Payment / NFC smart ring
+          - radio "Custom multifunction smart ring"
+          - text: Custom multifunction smart ring
+        - paragraph:
+          - generic: 3. Expected initial production volume
+        - radiogroup "Options":
+          - radio "Under 1,000 units"
+          - text: Under 1,000 units
+          - radio "1,000–5,000 units" [checked]
+          - text: 1,000–5,000 units
+          - radio "5,000–20,000 units"
+          - text: 5,000–20,000 units
+          - radio "20,000–100,000 units"
+          - text: 20,000–100,000 units
+          - radio "100,000+ units"
+          - text: 100,000+ units
+        - paragraph:
+          - generic: 4. Preferred ODM location
+        - radiogroup "Options":
+          - radio "China (Shenzhen / Dongguan / Guangzhou)" [checked]
+          - text: China (Shenzhen / Dongguan / Guangzhou)
+          - radio "Taiwan"
+          - text: Taiwan
+          - radio "South Korea"
+          - text: South Korea
+          - radio "Japan"
+          - text: Japan
+          - radio "Open to global suppliers"
+          - text: Open to global suppliers
+        - paragraph:
+          - generic: 5. IP ownership preference
+        - radiogroup "Options":
+          - radio "We own hardware design and firmware IP" [checked]
+          - text: We own hardware design and firmware IP
+          - radio "ODM owns platform; we license it"
+          - text: ODM owns platform; we license it
+          - radio "Joint development and IP agreement"
+          - text: Joint development and IP agreement
+        - button "Find matching ODM partners":
+          - generic: Find matching ODM partners
+        - paragraph: "My recommendation: prioritize a partner with genuine in-house hardware and firmware engineering rather than a factory that simply rebrands an existing smart ring. This makes a substantial difference if you intend to build your own differentiated product."
+      - status
+      - group "回复操作":
+        - button "复制回复":
+        - status
+        - button "回复优秀":
+        - button "回复不佳":
+        - status
+        - button "分享":
+    - paragraph:
+      - generic: ChatGPT 是 AI，可能会犯错。
+- contentinfo:
+  - generic: 与 ChatGPT 聊天
+  - textbox "与 ChatGPT 聊天" [active]:
+    - /placeholder: 询问 ChatGPT
+  - button "添加文件等":
+  - button "开始听写":
+  - button "发送消息" [disabled]:
+- alert
+- status

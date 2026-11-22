@@ -1,0 +1,43 @@
+{
+  "record_id": "90d712f9-1cbb-5bbf-b81f-059cebd2ca4e",
+  "query_id": "Q07",
+  "query": "100Hz raw PPG smart ring SDK",
+  "platform": "Google",
+  "mode": "All / first result page with auto AI Overview",
+  "observed_at": "2026-11-22T02:13:14.142+00:00",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "Chrome existing signed-in profile; hl=en; personalized results; actual country unverified",
+  "availability": "COMPLETED",
+  "longvon_present": true,
+  "organic_rank": 5,
+  "ai_body_recommended": null,
+  "source_cited": null,
+  "cited_urls": [],
+  "competitors": [
+    {
+      "name": "sensorbio.com",
+      "url": "https://sensorbio.com/the-signal/wearables-around-your-protocol/",
+      "position": "first observed relevant source-link sequence 1; not a verified recommendation rank",
+      "evidence_quote": "- link \"Wearables built around your protocol Sensor Bio https://sensorbio.com › the-signal › wearables-around-y...\":"
+    },
+    {
+      "name": "jointcorp.com",
+      "url": "https://www.jointcorp.com/blog/smart-wearable-sdk/ppg-sampling-rate-explained-how-data-frequency-impacts-ai-health-algorithms/",
+      "position": "first observed relevant source-link sequence 2; not a verified recommendation rank",
+      "evidence_quote": "- link \"How Data Frequency Impacts AI Health Algorithms - J-Style jointcorp.com https://www.jointcorp.com › blog › smart-wearable-sdk\":"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-22-round1/google-Q07.jpg",
+      "sha256": "e64127cf816ffe50347e5fda5fef8892410a62800650a3773eaaf9e7cc82664b"
+    },
+    {
+      "path": "evidence/2026-11-22-round1/google-Q07.json",
+      "sha256": "a94dae062e70e51b861ad851522b5bb833210e0c69e5efe6eb7ccd7cdefa0a66"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "First observed round; no prior comparable record. Country UNKNOWN; no growth comparison. Scope: first Google results page, signed in/personalized. Organic links and AI citation are separate; pending AI panel UNKNOWN."
+}

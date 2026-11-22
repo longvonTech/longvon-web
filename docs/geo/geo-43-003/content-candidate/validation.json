@@ -1,0 +1,10 @@
+{
+  "production_get_pairs": 10,
+  "all_status_200": true,
+  "all_exact_body_hashes_unchanged": true,
+  "round1_manifest_entries_unchanged": 148,
+  "page_source_files_modified": 0,
+  "production_writes": 0,
+  "status": "DRAFT_REVIEW_REQUIRED",
+  "missing_manufacturing_test_originals": "BLOCKED_SOURCE"
+}

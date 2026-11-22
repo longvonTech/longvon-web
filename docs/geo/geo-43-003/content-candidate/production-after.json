@@ -1,0 +1,62 @@
+[
+  {
+    "url": "https://www.longvon.com/en/smart-ring-manufacturer",
+    "status": 200,
+    "sha256": "32bafbd31c5c4ff06ea1f8e7e178b7c6f26143efe53262883d79979f5f809857",
+    "observed_at": "2026-11-22T10:29:42.466062+00:00"
+  },
+  {
+    "url": "https://www.longvon.com/en/smart-ring-oem-odm",
+    "status": 200,
+    "sha256": "e850f35444d5747e8ddfe5f8fa66ae828693b4d6b2427db94fca29d3a313e616",
+    "observed_at": "2026-11-22T10:29:42.468848+00:00"
+  },
+  {
+    "url": "https://www.longvon.com/en/smart-ring-sdk-api",
+    "status": 200,
+    "sha256": "6727069ba19f8aa82ad0a1d87267442f3beed5b6b809a37b952a0917251290fc",
+    "observed_at": "2026-11-22T10:29:42.239714+00:00"
+  },
+  {
+    "url": "https://www.longvon.com/en/smart-ring-sleep-respiratory",
+    "status": 200,
+    "sha256": "4dbd319bb808e621c325f75e32375ad5e24e8a19c8b2ccd3d115ce6b09352c44",
+    "observed_at": "2026-11-22T10:29:42.237016+00:00"
+  },
+  {
+    "url": "https://www.longvon.com/en/company/longvon",
+    "status": 200,
+    "sha256": "c5597bccd087bbbdbc8bed91eb659ba3fb93e7a8b8de95ca16a7087b8a1204e5",
+    "observed_at": "2026-11-22T10:29:42.236304+00:00"
+  },
+  {
+    "url": "https://www.longvon.com/smart-ring-manufacturer",
+    "status": 200,
+    "sha256": "7cd3b42142714e18193d121a605ceace0bc1e2af35a68ef97eda934568f9d3f4",
+    "observed_at": "2026-11-22T10:29:43.279633+00:00"
+  },
+  {
+    "url": "https://www.longvon.com/smart-ring-oem-odm",
+    "status": 200,
+    "sha256": "bd52d61450436dc6d63b4b62b1ec2a5ebd49cceea742321918989fb4fb11e3bf",
+    "observed_at": "2026-11-22T10:29:43.396046+00:00"
+  },
+  {
+    "url": "https://www.longvon.com/smart-ring-sdk-api",
+    "status": 200,
+    "sha256": "5eba805be47463762aa5af56116f34894b58e91af2e5241ce6168fbf55f3724c",
+    "observed_at": "2026-11-22T10:29:43.393547+00:00"
+  },
+  {
+    "url": "https://www.longvon.com/smart-ring-sleep-respiratory",
+    "status": 200,
+    "sha256": "e10095951ff77eb6f0fcf9cade2494973d3329dac77a8ca298d4917f7e40ba4f",
+    "observed_at": "2026-11-22T10:29:43.516250+00:00"
+  },
+  {
+    "url": "https://www.longvon.com/company/longvon",
+    "status": 200,
+    "sha256": "5696b8ec2908c58529d1280f368fccb2e2102fa92a85d83a51a20fda3f94add3",
+    "observed_at": "2026-11-22T10:29:43.516160+00:00"
+  }
+]

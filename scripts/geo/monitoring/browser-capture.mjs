@@ -28,3 +28,17 @@ export async function waitForGoogleAi(readState, { timeoutMs = 30000, now = Date
   }
   return { status: 'UNKNOWN', reason: 'TIMEOUT_OR_READ_LIMIT' };
 }
+export function googleAiSnapshotState(snapshot) {
+  const panel = /heading [^\n]*AI Overview/.test(snapshot);
+  const generating = /progressbar[^\n]*Generating|heading [^\n]*(Thinking|Searching)/.test(snapshot);
+  const receipt = /Show more AI Overview|AI responses may include mistakes/.test(snapshot);
+  return { panel, generating, complete: panel && receipt && !generating };
+}
+export async function collectVisibleCitationTargets(tab, providerHosts = []) {
+  const links = await tab.playwright.getByRole('link').evaluateAll(as => as.map(a => ({label:a.innerText,url:a.href})));
+  const targets=[];
+  for (const x of links) {
+    try { const u=new URL(x.url); if(u.protocol==='https:' && !u.username && !u.password && !providerHosts.includes(u.hostname) && !targets.some(t=>t.url===x.url)) targets.push(x); } catch {}
+  }
+  return { targets, completeness:'UNKNOWN', reachability:'UNKNOWN', method:'visible DOM links only; domain labels are never expanded into guessed URLs' };
+}

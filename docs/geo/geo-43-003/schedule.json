@@ -17,10 +17,13 @@
     "2026-12-20"
   ],
   "final_due": "2026-12-20",
-  "execution_status": "PLANNED_NOT_SCHEDULED",
+  "execution_status": "SCHEDULED_LOCAL_HEARTBEAT",
   "platforms": [
     "Google",
     "ChatGPT",
     "Perplexity"
-  ]
+  ],
+  "automation_id": "geo-43-003",
+  "scheduled_days": "Monday/Thursday search; Sunday weekly review, 10:00 Asia/Shanghai through 2026-12-20",
+  "runtime_dependency": "Codex local automation runtime and platform availability; schedule is not evidence of successful monitoring"
 }

@@ -3,6 +3,12 @@ import argparse, csv, datetime, hashlib, json, pathlib, re, uuid
 ROOT = pathlib.Path(__file__).resolve().parents[3]
 DATA = ROOT / 'docs/geo/geo-43-003'
 
+def parse_timestamp(value):
+    if not isinstance(value, str):
+        raise ValueError('timestamp must be a string')
+    return datetime.datetime.fromisoformat(value[:-1] + '+00:00' if value.endswith('Z') else value)
+
+
 def validate(r, root=DATA):
     required = {'record_id','query_id','query','platform','mode','observed_at','country','language','environment','availability','longvon_present','organic_rank','ai_body_recommended','source_cited','cited_urls','competitors','evidence','previous_record_id','change_note'}
     if set(r) != required: raise ValueError('fields must match observation schema')
@@ -11,7 +17,7 @@ def validate(r, root=DATA):
         queries = {q['query_id']: q['query'] for q in csv.DictReader(f)}
     if queries.get(r['query_id']) != r['query']: raise ValueError('query must match fixed set')
     if r['platform'] not in ['Google','ChatGPT','Perplexity']: raise ValueError('platform')
-    t=datetime.datetime.fromisoformat(r['observed_at'])
+    t=parse_timestamp(r['observed_at'])
     if t.tzinfo is None or t > datetime.datetime.now(datetime.timezone.utc): raise ValueError('timestamp must be actual timezone-aware past observation')
     for k in ['mode','country','environment','change_note']:
         if not isinstance(r[k],str) or not r[k].strip(): raise ValueError(k)
@@ -41,7 +47,7 @@ def validate(r, root=DATA):
         old=json.loads((root/'observations'/f'{prev}.json').read_text())
         for k in ['query_id','platform','mode','country','language','environment']:
             if old[k]!=r[k]: raise ValueError('incomparable previous observation')
-        if datetime.datetime.fromisoformat(old['observed_at'])>=t: raise ValueError('previous must be earlier')
+        if parse_timestamp(old['observed_at'])>=t: raise ValueError('previous must be earlier')
     return r
 
 def append(r, root=DATA):

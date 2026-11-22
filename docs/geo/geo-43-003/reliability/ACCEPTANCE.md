@@ -15,3 +15,11 @@
 实际浏览器：新建未登录ChatGPT默认会话，单独发送100Hz固定Query进行工具回归，不计为第二轮观测。1440视口截图与完整DOM已经保存，字节哈希见browser-evidence；视口结束已恢复。只有默认模式实测，不宣称实时Search、Google完成适配或Perplexity完整引用端到端均已验证。
 
 Google完成判定已用首轮Q01完成与Q07生成中真实DOM回放验证；新增可见DOM引用提取入口。仍需新一轮Google/Perplexity真实页面端到端验收，不能将回放当新平台实测。新ChatGPT图横向可读，但固定输入栏局部覆盖正文，仍须补充分段截图；单张fullPage不构成全文可读的最终PASS。
+
+## 补充实际验收
+
+同一ChatGPT回答新增1600高度原始截图，与1000高度截图的完整DOM哈希完全相同，用不同高度覆盖固定输入栏遮挡；不拼接、不重绘。实际截图需双图共同复核，自动门禁保持REQUIRES_VISUAL_REVIEW。封装captureChatGptReadable提供双高度取证并finally恢复视口。
+
+新Google真实IAB页面执行googleAiSnapshotState及waitForGoogleAi返回COMPLETE，DOM与截图已存档；导航首次超时后读取已加载标签恢复，没有重新发送查询。与首轮登录Chrome环境不同，不解释为排名变化。
+
+Perplexity新的未登录IAB出现登录界面，未发送实际Query，BLOCKED_LOCAL_ENV；没有凭空提取目标。引用函数必须由调用者提供实际观察到的引用区域，否则返回UNKNOWN空目标，不能将全页隐私/导航链接误计为来源。新Google/ChatGPT已实测，Perplexity完整引用的真实端到端验收仍未完成，不宣称全闭环PASS。

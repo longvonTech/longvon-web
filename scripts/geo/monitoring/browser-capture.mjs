@@ -34,11 +34,23 @@ export function googleAiSnapshotState(snapshot) {
   const receipt = /Show more AI Overview|AI responses may include mistakes/.test(snapshot);
   return { panel, generating, complete: panel && receipt && !generating };
 }
-export async function collectVisibleCitationTargets(tab, providerHosts = []) {
-  const links = await tab.playwright.getByRole('link').evaluateAll(as => as.map(a => ({label:a.innerText,url:a.href})));
+export async function collectVisibleCitationTargets(tab, providerHosts = [], citationRoot = null) {
+  if (!citationRoot) return {targets:[],completeness:'UNKNOWN',reachability:'UNKNOWN',reason:'observed citation scope required'};
+  const links = await citationRoot.getByRole('link').evaluateAll(as => as.map(a => ({label:a.innerText,url:a.href})));
   const targets=[];
   for (const x of links) {
     try { const u=new URL(x.url); if(u.protocol==='https:' && !u.username && !u.password && !providerHosts.includes(u.hostname) && !targets.some(t=>t.url===x.url)) targets.push(x); } catch {}
   }
   return { targets, completeness:'UNKNOWN', reachability:'UNKNOWN', method:'visible DOM links only; domain labels are never expanded into guessed URLs' };
+}
+
+export async function captureChatGptReadable(tab, viewport, directory, id, options = {}) {
+  const receipts=[];
+  try {
+    for (const height of [1000,1600]) {
+      await viewport.set({width:1440,height});
+      receipts.push(await capture(tab,directory,`${id}-${height}`,{...options,platform:'ChatGPT'}));
+    }
+    return {status:'REQUIRES_VISUAL_REVIEW',receipts,reason:'compare both heights to cover fixed-composer occlusion; do not stitch or replace original screenshots'};
+  } finally { await viewport.reset(); }
 }

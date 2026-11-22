@@ -1,0 +1,6 @@
+{
+  "captured_at": "2026-11-22T10:42:37.708Z",
+  "status": "BLOCKED_LOCAL_ENV",
+  "reason": "Logged-out IAB displayed login UI; no answer query dispatched, no citation targets inferred",
+  "country": "UNKNOWN"
+}

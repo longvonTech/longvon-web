@@ -1,0 +1,50 @@
+{
+  "captured_at": "2026-11-23T01:06:19.263Z",
+  "environment": "Mac existing signed-in Chrome, pre-existing completed conversation; no new query; country UNKNOWN",
+  "conversation_url": "https://www.perplexity.ai/session/44e23b10-9e87-425e-9061-f7073e242f01",
+  "targets": [
+    {
+      "label": "sensorbio\nScience — Sensor Bio\nHow a PPG biometric sensor turns green, red and infrared light into heart rate, HRV and SpO2, and how product teams get raw multi-wavelength PPG data.",
+      "url": "https://sensorbio.com/science/"
+    },
+    {
+      "label": "longvon\nSmart Ring Technology & Development\nPartner SDK and cloud API integration — including pathways to 100Hz PPG raw data for qualified partners — are available as project-scoped capabilities. See Smart Ring SDK & Cloud API for cooperation details. ... Evaluate 100Hz raw PPG via the partner SDK ... Yes as partner capabilities. Access and integration depth are defined during OEM/ODM engagement.",
+      "url": "https://www.longvon.com/en/smart-ring-technology"
+    },
+    {
+      "label": "tuckstechs\nOEM/ODM heart rate monitoring ring Manufacturer & Supplier - Tucks\nISO9001-certified wearable factory in Shenzhen. OEM smartwatches and AI glasses from 200 pcs, 7-day samples, CE/FCC/RoHS compliant, serving B2B brands in 30+ countries.",
+      "url": "https://www.tuckstechs.com/catalog/oemodm-heart-rate-monitoring-ring-manufacturer-supplier/"
+    },
+    {
+      "label": "github\nsmart-ring/README.md at main · josearruticuanda/smart-ring\nSmart ring on a custom flex PCB. PPG sensing, on device HR/HRV/stress, nRF52832 firmware, BLE telemetry. - josearruticuanda/smart-ring",
+      "url": "https://github.com/josearruticuanda/smart-ring/blob/main/README.md"
+    },
+    {
+      "label": "nature\nHealthRing: Physiology Dataset for Health Sensing on Rings\nSmart rings enable unobtrusive monitoring of cardiovascular vital signs via photoplethysmography (PPG), yet rigorous validation is limited by the scarcity of open, multi-parameter datasets. We present HealthRing, three synchronized cohorts from 54 adults: (i) scripted physiological stimuli (Study 1), (ii) semi-free-living daily activities (Study 2), and (iii) motion-intensive treadmill running with natural arm swing that induces substantial motion artefacts (Study 3). Two custom...",
+      "url": "https://www.nature.com/articles/s41597-026-07289-x?error=cookies_not_supported&code=03576bea-ef72-4334-832f-589a91e23fd0"
+    },
+    {
+      "label": "sensorbio\nSmart ring vs smartwatch PPG: different, not better\nFinger and wrist PPG record different pulse waveforms. Research on vascular bed, amplitude, notch visibility, motion, wear, and which site suits which question.",
+      "url": "https://sensorbio.com/the-signal/smart-ring-vs-smartwatch-ppg/"
+    },
+    {
+      "label": "sensorbio\nSensor Bio V2 vs Ultrahuman Ring — Signal Comparison\nA specification-by-specification comparison of Sensor Bio V2 signal infrastructure and the Ultrahuman Ring AIR consumer smart ring.",
+      "url": "https://sensorbio.com/comparison/sensor-bio-v2-vs-ultrahuman/"
+    },
+    {
+      "label": "github\nGitHub - josearruticuanda/smart-ring: Smart ring on a custom ...\nSmart ring on a custom flex PCB. PPG sensing, on device HR/HRV/stress, nRF52832 firmware, BLE telemetry. - josearruticuanda/smart-ring",
+      "url": "https://github.com/josearruticuanda/smart-ring"
+    },
+    {
+      "label": "ar5iv.labs.arxiv\nA Dataset and Toolkit for Multiparameter Cardiovascular Physiology Sensing on Rings\nSmart rings offer a convenient way to continuously and unobtrusively monitor cardiovascular physiological signals. However, a gap remains between the ring hardware and reliable methods for estimating cardiovascular par…",
+      "url": "https://ar5iv.labs.arxiv.org/html/2505.04172"
+    },
+    {
+      "label": "github\nGitHub - Sense-Ring/Sense-Ring-1.0 · GitHub\nContribute to Sense-Ring/Sense-Ring-1.0 development by creating an account on GitHub.",
+      "url": "https://github.com/Sense-Ring/Sense-Ring-1.0"
+    }
+  ],
+  "completeness": "UNKNOWN",
+  "reachability": "UNKNOWN",
+  "method": "visible DOM links only; domain labels are never expanded into guessed URLs"
+}

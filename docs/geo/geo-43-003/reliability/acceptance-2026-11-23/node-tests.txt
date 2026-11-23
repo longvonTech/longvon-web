@@ -1,0 +1,20 @@
+executed_at=2026-11-23T01:08:22.286270+00:00
+command=['node', '--test', 'scripts/geo/monitoring/browser-capture.test.mjs']
+✔ AI final receipt required after generating state (0.885875ms)
+✔ bounded incomplete panel remains UNKNOWN (0.083625ms)
+✔ real first-round captured pending Google panel remains incomplete (3.126417ms)
+✔ real first-round final Google panel exposes completion receipt (0.946625ms)
+✔ unscoped citation extraction cannot count navigation URLs (0.813459ms)
+✔ capture IDs cannot escape evidence directory (0.36425ms)
+✔ dual-height capture restores viewport when browser fails (0.1385ms)
+✔ real original observation manifest still matches every file (48.308042ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 157.236583
+
+exit_code=0

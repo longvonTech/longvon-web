@@ -1,0 +1,53 @@
+{
+  "executed_at": "2026-11-23T01:08:22.286270+00:00",
+  "python": 13,
+  "node": 8,
+  "original_observations": 36,
+  "old_manifest_verified": 148,
+  "actual_dom_targets": 10,
+  "all_targets_in_saved_dom": true,
+  "expected_targets_present": true,
+  "query_submissions": 0,
+  "automatic_screenshot_result": "same transcript bytes and matching source hashes; cannot judge readability automatically",
+  "agent_visual_review": "PASS: both original images together cover response and controls; fixed composer occlusions occur at different heights",
+  "owner_visual_review": "PENDING_REVIEW",
+  "reachability": "UNKNOWN",
+  "evidence": [
+    {
+      "path": "reliability/acceptance-2026-11-23/node-tests.txt",
+      "sha256": "76d6b3346563ef85134c51e66dc6d883404dafa432c66a5ebd29d4dba781fa61"
+    },
+    {
+      "path": "reliability/acceptance-2026-11-23/perplexity-dom.txt",
+      "sha256": "41703c4f84a28453c5d52fda66e4e86b09416b3df05136c72b29d0a0119424d5"
+    },
+    {
+      "path": "reliability/acceptance-2026-11-23/perplexity-targets.json",
+      "sha256": "74101db3e183f7b8ba3c671f6cf039b339d1b9e4b2b186db49ec44591683299d"
+    },
+    {
+      "path": "reliability/acceptance-2026-11-23/perplexity.jpg",
+      "sha256": "2d5316947f69be9781c83793ff25e3428a3bf1dea42b0d0ac2621f509352cbf2"
+    },
+    {
+      "path": "reliability/acceptance-2026-11-23/python-tests.txt",
+      "sha256": "d4d31169afb999d4f9dde1efa50d979a181998402946a0599f2cecaed343b2bd"
+    },
+    {
+      "path": "reliability/browser-evidence/chatgpt-default-qa.txt",
+      "sha256": "82fadd7000b44cb6b525e7739f6d5ab4c818805d394e4b4ab9c2bad9e8dda425"
+    },
+    {
+      "path": "reliability/browser-evidence/chatgpt-default-qa.jpg",
+      "sha256": "ff41804546cc9b6cc3805aed694d3d451d1c6936647c45a2807fff45128b1557"
+    },
+    {
+      "path": "reliability/browser-evidence/chatgpt-default-qa-tall.txt",
+      "sha256": "82fadd7000b44cb6b525e7739f6d5ab4c818805d394e4b4ab9c2bad9e8dda425"
+    },
+    {
+      "path": "reliability/browser-evidence/chatgpt-default-qa-tall.jpg",
+      "sha256": "f78b95c99e5d73d2fd19ba65a78a8ba6e68416560a229f622e49a42885db69ac"
+    }
+  ]
+}

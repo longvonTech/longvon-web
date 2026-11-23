@@ -1,0 +1,303 @@
+- link "Skip to main content"
+- link "Accessibility help":
+  - /url: https://support.google.com/websearch/answer/181196?hl=en
+- search:
+  - link "Go to Google Home":
+    - /url: https://www.google.com/webhp?hl=en&sa=X&ved=2ahUKEwiyq82EsZuYAxV8IEQIHSFVHtwQPHoECAYQBA
+  - status
+  - alert
+  - combobox "Search": 100Hz raw PPG smart ring SDK 100Hz raw PPG smart ring SDK
+  - button "Clear":
+  - button "Search by voice":
+  - button "Search by image":
+- button "Settings":
+- button "Share":
+- button "Google apps":
+- link "Sign in":
+  - /url: https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/search%3Fq%3D100Hz%2Braw%2BPPG%2Bsmart%2Bring%2BSDK%26hl%3Den%26sei%3D4MUCa56RLbWgur8Pp8Tj2AE&ec=futura_srp_og_si_72236_p
+  - generic: Sign in
+- navigation:
+  - list:
+    - link "AI Mode":
+      - /url: /search?q=100Hz+raw+PPG+smart+ring+SDK&sca_esv=7f596c757daf7589&hl=en&sxsrf=AKL5yDg10KKKqTwzqOC3eB2vrL7CayTsGg:1795343852490&udm=50&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtI0iwmGiGVa5vPFLG4pCfoS16XiqKxayfyTZNKL-adhjrK7QjINwlrH9Paeog98CfkzRyIx6xH2elOGsdiNlva1ygRHgXR_J5Q8QULVPTiUP2FauOiFBiz4iciVCm4wEa24z_5jHx2FlnJKeyR6k_56iIfUfw&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiyq82EsZuYAxV8IEQIHSFVHtwQ2J8OegQIEhAD
+      - generic: AI Mode
+    - link "All" [disabled]:
+      - generic: All
+    - link "Shopping":
+      - /url: /search?sca_esv=7f596c757daf7589&hl=en&sxsrf=AKL5yDg10KKKqTwzqOC3eB2vrL7CayTsGg:1795343852490&udm=28&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtI0iwmGiGVa5vPFLG4pCfoS16XiqKxayfyTZNKL-adhjrK7QjINwlrH9Paeog98CfkzRyIx6xH2elOGsdiNlva1ygRHgXR_J5Q8QULVPTiUP2FauOiFBiz4iciVCm4wEa24z_5jHx2FlnJKeyR6k_56iIfUfw&q=100Hz+raw+PPG+smart+ring+SDK&ved=1t:220175&ictx=111
+      - generic: Shopping
+    - link "Images":
+      - /url: /search?sca_esv=7f596c757daf7589&hl=en&sxsrf=AKL5yDg10KKKqTwzqOC3eB2vrL7CayTsGg:1795343852490&udm=2&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtI0iwmGiGVa5vPFLG4pCfoS16XiqKxayfyTZNKL-adhjrK7QjINwlrH9Paeog98CfkzRyIx6xH2elOGsdiNlva1ygRHgXR_J5Q8QULVPTiUP2FauOiFBiz4iciVCm4wEa24z_5jHx2FlnJKeyR6k_56iIfUfw&q=100Hz+raw+PPG+smart+ring+SDK&sa=X&ved=2ahUKEwiyq82EsZuYAxV8IEQIHSFVHtwQtKgLegQIFhAB
+      - generic: Images
+    - link "Videos":
+      - /url: /search?sca_esv=7f596c757daf7589&hl=en&sxsrf=AKL5yDg10KKKqTwzqOC3eB2vrL7CayTsGg:1795343852490&udm=vids&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtI0iwmGiGVa5vPFLG4pCfoS16XiqKxayfyTZNKL-adhjrK7QjINwlrH9Paeog98CfkzRyIx6xH2elOGsdiNlva1ygRHgXR_J5Q8QULVPTiUP2FauOiFBiz4iciVCm4wEa24z_5jHx2FlnJKeyR6k_56iIfUfw&q=100Hz+raw+PPG+smart+ring+SDK&sa=X&ved=2ahUKEwiyq82EsZuYAxV8IEQIHSFVHtwQtKgLegQIFxAB
+      - generic: Videos
+    - link "Forums":
+      - /url: /search?sca_esv=7f596c757daf7589&hl=en&sxsrf=AKL5yDg10KKKqTwzqOC3eB2vrL7CayTsGg:1795343852490&udm=forums&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtI0iwmGiGVa5vPFLG4pCfoS16XiqKxayfyTZNKL-adhjrK7QjINwlrH9Paeog98CfkzRyIx6xH2elOGsdiNlva1ygRHgXR_J5Q8QULVPTiUP2FauOiFBiz4iciVCm4wEa24z_5jHx2FlnJKeyR6k_56iIfUfw&q=100Hz+raw+PPG+smart+ring+SDK&sa=X&ved=2ahUKEwiyq82EsZuYAxV8IEQIHSFVHtwQs6gLegQIGBAB
+      - generic: Forums
+    - link "Short videos":
+      - /url: /search?sca_esv=7f596c757daf7589&hl=en&sxsrf=AKL5yDg10KKKqTwzqOC3eB2vrL7CayTsGg:1795343852490&udm=short_vids&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtI0iwmGiGVa5vPFLG4pCfoS16XiqKxayfyTZNKL-adhjrK7QjINwlrH9Paeog98CfkzRyIx6xH2elOGsdiNlva1ygRHgXR_J5Q8QULVPTiUP2FauOiFBiz4iciVCm4wEa24z_5jHx2FlnJKeyR6k_56iIfUfw&q=100Hz+raw+PPG+smart+ring+SDK&sa=X&ved=2ahUKEwiyq82EsZuYAxV8IEQIHSFVHtwQs6gLegQIGhAB
+      - generic: Short videos
+    - button "More filters":
+      - generic "More filters":
+        - generic: More
+  - button "Tools":
+    - generic: Tools
+- heading "Search Results" [level=1]
+- main:
+  - heading "AI Overview" [level=2]:
+    - strong: AI Overview
+  - text: Most mainstream consumer smart rings (such as Oura) restrict SDK/API access to processed metrics or daily summaries rather than continuous 100 Hz raw photoplethysmography (PPG) streams.
+  - mark: Accessing 100 Hz raw PPG from a finger-worn device typically requires an open-source research ring, an OEM/white-label hardware SDK, or a custom BLE GATT integration
+  - text: .
+  - link "arXiv":
+    - /url: /goto?url=CAESYAHEIkXXRV2vRq542d4m8J2qrU-5t_tUUwHWHTdpHf4ZtujTKbowYTu0NN9fNYrVZnmhIXSe5NJ1gxiaRdNhe_VlAiMIcBHVMgd63MDEbdT8uw9CIkanYYvF0wpnGohKtg
+  - button "arXiv (+2) - Related results":
+    - generic: arXiv
+    - generic: "+2"
+  - heading "Options for 100 Hz Raw PPG & Ring Development" [level=3]
+  - list:
+    - strong: Open-Source Research Platforms
+    - text: ": Platforms like"
+    - link "Open Ring":
+      - /url: /goto?url=CAESUQHEIkXXQ_9x08cRLy8Oiw5qbu50hxd2SCaydjV9wPbsV3Ej27EnLmDBOO5MIdPA6cyD_yzAlLyMxS2kpzssM0gK9sCBzJcZ8wkdr6hGPzN9tg
+    - text: provide MIT-licensed hardware designs and SDKs with a MAX30101 PPG sensor and 6-D IMU, offering real-time BLE streaming, internal flash logging, and raw data ownership. Research prototypes such as
+    - strong: τ-Ring
+    - text: (nRF52840 SoC, GH3026 three-wavelength PPG, 6-axis IMU) demonstrate 100 Hz logging with BLE streaming and L2CAP offline retrieval.
+    - link:
+      - /url: /goto?url=CAESUQHEIkXXQ_9x08cRLy8Oiw5qbu50hxd2SCaydjV9wPbsV3Ej27EnLmDBOO5MIdPA6cyD_yzAlLyMxS2kpzssM0gK9sCBzJcZ8wkdr6hGPzN9tg
+    - button:
+      - generic: Open Ring
+      - generic: "+1"
+    - strong: OEM & White-Label Ring SDKs
+    - text: ": Hardware vendors and OEM suppliers—such as J-STYLE (covered in this"
+    - link:
+      - /url: /goto?url=CAESjgEBxCJF11UOAVRP72u_kN7LJ99DfYpJUDKqB5avcfM_Y9L13fV33Zknjyl9La8hwWHCwBeb3nwAxxAbksgMO4_KRZS-6jkDOqWDvmSYQrYhT4GsjAILtL5LebMLbzVyQfbWVwpOjAdia-NADfRdJZv7igGKKsx7COt5G_zO41rc9z4P8BUDUEyquOVt_kFY
+      - text: Smart Ring and Fitness Band SDK & API Developer's Guide
+    - text: )—offer mobile SDKs (Android, iOS, Flutter, React Native) and demo/dev kits that expose raw signal access (PPG, IMU) alongside device control and firmware options.
+    - link:
+      - /url: /goto?url=CAESjgEBxCJF11UOAVRP72u_kN7LJ99DfYpJUDKqB5avcfM_Y9L13fV33Zknjyl9La8hwWHCwBeb3nwAxxAbksgMO4_KRZS-6jkDOqWDvmSYQrYhT4GsjAILtL5LebMLbzVyQfbWVwpOjAdia-NADfRdJZv7igGKKsx7COt5G_zO41rc9z4P8BUDUEyquOVt_kFY
+    - button:
+      - generic: www.jointcorp.com
+    - strong: Wrist-Based Raw PPG Alternatives
+    - text: ": If a wrist form factor is acceptable for prototyping,"
+    - link:
+      - /url: /goto?url=CAESZAHEIkXX-K2iyt6EkYm956O-ieml8UVRk5ecNhjvuf4XegenaXNj9KsU5SuBzql6ok_d_h6qEa5mEhkW-lWc1iyB55YvWFPiFgPVmvhtLY_OKtB7qYA4hWSngEyZLtscWuz9Xyo
+      - text: Sensor Bio
+    - text: offers mobile SDKs (iOS and Android) with live and raw PPG streams, and research pipelines have also used the Samsung Health Sensor SDK on Wear OS to sample raw green-channel PPG at 100 Hz.
+    - link:
+      - /url: /goto?url=CAESZAHEIkXX-K2iyt6EkYm956O-ieml8UVRk5ecNhjvuf4XegenaXNj9KsU5SuBzql6ok_d_h6qEa5mEhkW-lWc1iyB55YvWFPiFgPVmvhtLY_OKtB7qYA4hWSngEyZLtscWuz9Xyo
+    - button:
+      - generic: Sensor Bio
+      - generic: "+1"
+  - heading [level=3]: Key Engineering Considerations at 100 Hz
+  - list:
+    - strong: Sampling & Bandwidth
+    - text: ": 100 Hz is a standard baseline for raw PPG research, HRV, and heart rate extraction, while ring prototypes often pair 100 Hz PPG with lower-rate IMU (e.g., 25 Hz) and temperature sampling to manage power."
+    - link:
+      - /url: /goto?url=CAESbwHEIkXXogc2Rnpb0NBF2WNwzpkaxYRo5pJH641sdH7j9hKB6dqLQEtFKjqjATkaYLT6e3bXnMX4vbtgoZq0R4GyjTCRMkteMWy5KwNkOAeq4qXI_TZSfhxGiJjfCJ6o02zw-TnFLAx9UPNrn6iCsA
+    - button:
+      - generic: National Institutes of Health (NIH) | (.gov)
+      - generic: "+1"
+    - strong: Power & Storage
+    - text: ": Continuous 100 Hz BLE streaming drains small ring batteries quickly; many setups buffer to on-board flash or batch packets over BLE/L2CAP for multi-hour capture."
+    - link:
+      - /url: /goto?url=CAESYAHEIkXXRV2vRq542d4m8J2qrU-5t_tUUwHWHTdpHf4ZtujTKbowYTu0NN9fNYrVZnmhIXSe5NJ1gxiaRdNhe_VlAiMIcBHVMgd63MDEbdT8uw9CIkanYYvF0wpnGohKtg
+    - button:
+      - generic: arXiv
+    - strong: Motion & Ring Rotation
+    - text: ": Finger PPG captures strong pulsatile signals, but finger movement and ring rotation around the finger alter optical coupling and require motion compensation and bandpass filtering."
+    - link:
+      - /url: /goto?url=CAESuwEBxCJF14FKT_sJEheIOWbMgFvAKbcoNk_Y4GlnKjkc05Wh2UHc-gZEillPzVO0-2zUi9nVbqHL3b1-QO2hhFAOLBaBiKDCdiQi6o5ESE_6jWO4BGKstIvpbN8tQBRxckzvrVWJBKZ70rxPPpY0AeftGHu0TMGBX58ArfeBA0ajcEY2DMqOH5-PYpl8Gm1XqarccmK28FGk-4tbjNohEe_4uU-ykdJoKf7hr0cX6Gl2l8rnPiAnEF_6LMzV
+    - button:
+      - generic: www.jointcorp.com
+      - generic: "+2"
+  - text: AI responses may include mistakes.
+  - link:
+    - /url: https://support.google.com/websearch?p=ai_overviews
+    - text: Learn more
+  - status
+  - button:
+  - button:
+  - button:
+  - button:
+  - button:
+  - list:
+    - 'link "𝜏-Ring: A Smart Ring Platform for Multimodal Physiological ..."':
+      - /url: /goto?url=CAESYAHEIkXXRV2vRq542d4m8J2qrU-5t_tUUwHWHTdpHf4ZtujTKbowYTu0NN9fNYrVZnmhIXSe5NJ1gxiaRdNhe_VlAiMIcBHVMgd63MDEbdT8uw9CIkanYYvF0wpnGohKtg
+    - generic: arXiv
+    - button "About this result":
+    - generic: "𝜏-Ring: A Smart Ring Platform for Multimodal Physiological ..."
+    - generic: Aug 1, 2025 — The commercial-research Empatica E4 (wrist, 2014) opened large-scale stress-monitoring studies by streaming raw PPG and motion to ...
+    - link "Development of a Rotation-Robust PPG Sensor for a Smart Ring":
+      - /url: /goto?url=CAESbwHEIkXXogc2Rnpb0NBF2WNwzpkaxYRo5pJH641sdH7j9hKB6dqLQEtFKjqjATkaYLT6e3bXnMX4vbtgoZq0R4GyjTCRMkteMWy5KwNkOAeq4qXI_TZSfhxGiJjfCJ6o02zw-TnFLAx9UPNrn6iCsA
+    - generic: National Institutes of Health (NIH) | (.gov)
+    - button "About this result":
+    - generic: Development of a Rotation-Robust PPG Sensor for a Smart Ring
+    - generic: Oct 13, 2025 — Considering non-ideal conditions, the green-light angle is adjusted to ±30°, and a symmetrical sensor design is adopted. A prototy...
+    - link:
+      - /url: /goto?url=CAESjgEBxCJF11UOAVRP72u_kN7LJ99DfYpJUDKqB5avcfM_Y9L13fV33Zknjyl9La8hwWHCwBeb3nwAxxAbksgMO4_KRZS-6jkDOqWDvmSYQrYhT4GsjAILtL5LebMLbzVyQfbWVwpOjAdia-NADfRdJZv7igGKKsx7COt5G_zO41rc9z4P8BUDUEyquOVt_kFY
+    - generic: www.jointcorp.com
+    - button:
+    - generic: "Smart Ring and Fitness Band SDK & API: A Developer's Guide"
+    - generic: "July 31, 2025 — Yet, many developers face roadblocks like: * Example: J-STYLE's smart ring SDK includes real-time access to ECG, PPG, step counter..."
+  - button:
+    - generic: Show all
+  - button "Show more AI Overview":
+    - generic: Show more
+  - heading "Web results" [level=2]
+  - link "Built an open-source non-contact rPPG heart rate tracker ... Reddit https://www.reddit.com › PythonProjects2 › comments":
+    - /url: /goto?url=CAESpgEBxCJF13UfQaYIC6LLpmz5W15nnmvCpn0FrH4BvZt9fMeXXaDv5JH7gdMwBu9AabvxHDe4agh9DUBPJqt_uo0vHmEF1swLhnXGeBtT5mcIvR5JUvymI7d4AzPDMNISHNeYD4u8bi2_53JvlRxBJf8eWi3KCbmHs5fCdtR86Cf6_E8e02f4IkujSbNp_i8o41TwLYpDT4QdY5ArciCTTdriI2YjGl-1&gsessionid=_dc6QERSGheOaSTcEgwsExe-_tZF4CDU6V5r_o2vsIcaAbsdNU-6IA
+    - heading "Built an open-source non-contact rPPG heart rate tracker ..." [level=3]
+    - generic: Reddit
+    - generic: https://www.reddit.com › PythonProjects2 › comments
+  - button "About this result":
+  - generic: Sep 26, 2026 —
+  - text: I built a lightweight Python application that measures human heart rate in real time using a standard webcam—no smartwatches or wearable ...
+  - link "Read more":
+    - /url: /goto?url=CAEShgIBxCJF12W4Cf_P4Fs3p-F0xns83baVd6aQQ7z4W-jfEUvqZ2uM8MBKcv6edg0SnI-vhYhq5U-p3AdooiqXEt0rigD4f9799Gu2LpPy3iEQv7r-2Cc7QWDuTCosa_WmMTs9A-2J9QbWVxIOQpCV1egxO9mLbuiV1JhzS2Jk07-nxTNcaERl0i-piyhqVbt35duPUXUCsUatk8ut4Y9I8wAKAgDPymBcMUUUtE2nAn5IbxKjcanty086Rec4yIoblOwmjQLmeBwtI2JZBTiS1YYbLnapf-tVv0zF3kkVDNCnZ7C1W4qNOxE9RQTMGrkj3CaNlX5ODCGIRyLlaf7lmCSBQ5Cmg1fn&gsessionid=_dc6QERSGheOaSTcEgwsExe-_tZF4CDU6V5r_o2vsIcaAbsdNU-6IA
+  - link "Real-time heart rate detection using Eulerian Video ... - Reddit":
+    - /url: /goto?url=CAESqgEBxCJF17-WLpWQwr3WGRrS8dXJ2RGPxD8h6BFXfY07iji6sZUAF1W7BVh98SYAakJPU4XmfYqlxVV-w1Ynk9xDyVWPUEHGNhxTWlv7yfgGHHbzo55YyBtbzW--3KCl2ljHwlbhfqQHo6zZUEFCtUAAoYmnhdYHfv40eDWqiMt2hpus8hwy81pxeT1Dn__8x-sbxh5p_l5ZgTJSWXvpg5ZUj1hdT1W_Y-j6ig&gsessionid=_dc6QERSGheOaSTcEgwsExe-_tZF4CDU6V5r_o2vsIcaAbsdNU-6IA
+  - generic: Jul 10, 2026
+  - link "Get ppg raw data from wearOS smartwatch - Reddit":
+    - /url: /goto?url=CAESnwEBxCJF12A_uAzRhN3BZwAQ4-jGkapdncXMbOB-Kwd7S5QDYAmAG6isBx9oVUQbZ5lbGJqTwNizyZN1BtLkW8lt--ksJUlCVvaN6uXbNF87m3_QJ9yeVYbrzavjGkggnH0UGzn77TsEPjT8zGqO6_DqwSToVsF4eS7hHhtWjPbqCOK6tIfvTfGDUVDLAhqNTBlpHrYkkw3cRo-1DJm1zEE&gsessionid=_dc6QERSGheOaSTcEgwsExe-_tZF4CDU6V5r_o2vsIcaAbsdNU-6IA
+    - text: Get
+    - emphasis: ppg raw
+    - text: data from wearOS smartwatch - Reddit
+  - generic: May 15, 2024
+  - link "More results from www.reddit.com":
+    - /url: /search?q=100Hz+raw+PPG+smart+ring+SDK+site:www.reddit.com&sca_esv=7f596c757daf7589&hl=en&sxsrf=AKL5yDg10KKKqTwzqOC3eB2vrL7CayTsGg:1795343852490&sa=X&ved=2ahUKEwiyq82EsZuYAxV8IEQIHSFVHtwQrQIoAnoECCQQAw
+  - link "How I Built a Real-Time rPPG Heart Rate Tracker in Python ... DEV Community https://dev.to › shakeelahmedneuroai › how-i-built-a-re...":
+    - /url: /goto?url=CAESwwEBxCJF11VT4OvDijb3eQMo4vwGRzu8VjtuXdaXJU1Jni4xKYXymSFaAGjF90g95AhTNdZAeTEv6M0PiPfUTh1VO5zqIrG2Iq9g95YOxN0tOg3REcLVyNh5tF7-2gAXafYyJtNt_EA6eepSfHTcFnduEBYWZxoidj05rVv_WvPC4Kn892xSnJkwOfkEEA772LptrCff4caVt5iWcV-BQmkEiwk7A71N3PZfnxPcfNZRsrbJ_dqxhL2d5QXHBgUwVu9MrXA&gsessionid=_dc6QERSGheOaSTcEgwsExe-_tZF4CDU6V5r_o2vsIcaAbsdNU-6IA
+    - heading "How I Built a Real-Time rPPG Heart Rate Tracker in Python ..." [level=3]
+    - generic: DEV Community
+    - generic: https://dev.to › shakeelahmedneuroai › how-i-built-a-re...
+  - button "About this result":
+  - generic: Sep 26, 2026 —
+  - text: The
+  - emphasis: raw
+  - text: POS signal passes through a Butterworth Bandpass Filter to eliminate high-frequency sensor noise and low-frequency motion drift before ...
+  - link "Read more":
+    - /url: /goto?url=CAESnQIBxCJF13Hwx8DSBwcLIOFPFTvKqwixNl6GTubcHfhNMc6eAEmKQeuuBfNysdHjc6C8CO0Xp7VQcoipLZmSNb4dRakeJjLOd8ZOi2mR02_b9ICs1qkCwHVJktdRBrgurowLkpbUjBZukexPlGBhx_29qLZUSlsnh-lrCwx3dgUcivtO5GtZP4B68LvyUtuKPoEqOpU8tjE6WzsPt2S6anUz4-RYtQn-vnONu4YhHqwZCfEzjYsgNT66Zowf4NFdJ2YYqu6N-MxagLUNmmfOPk23xPWM_sMaj0BhrHc2AC0fioyy44eird869LxTo7ty4IMYVXD0MJ2oUQkEkWODEYONEYvZE_-JU0omVzPduEcnpHCwkJb4wZeMwzuT9xs&gsessionid=_dc6QERSGheOaSTcEgwsExe-_tZF4CDU6V5r_o2vsIcaAbsdNU-6IA
+  - link "Extracting Heart Rate from a Webcam using AI & rPPG Commudle https://www.commudle.com › builds › zero-contact-vital...":
+    - /url: /goto?url=CAESpgEBxCJF1xYxu-nR1LhloPT6aZWAeRJ7zhmthDAOJO2FQUY9HwzCJRMT6iIlpk8EnJAsdebo8kvQjqumpofs6tf_dQyYsv4Fg2X9AWXvbC7IBsjt2RbshDNlvV6CLH_vqSMO4U2B0uOxlhUHlAcbeVnzBd-qGCawYGuh0X002pPQ-8XzPgUQ4nxGkr5_-Zr6B9hkzED0tqniFAgpXDCRrn9IH5c6EoaA&gsessionid=_dc6QERSGheOaSTcEgwsExe-_tZF4CDU6V5r_o2vsIcaAbsdNU-6IA
+    - heading "Extracting Heart Rate from a Webcam using AI & rPPG" [level=3]
+    - generic: Commudle
+    - generic: https://www.commudle.com › builds › zero-contact-vital...
+  - button "About this result":
+  - generic: Nov 10, 2026 —
+  - text: I built a zero-contact vitals tracker that uses real-time Photoplethysmography (rPPG) to measure human signals using just a laptop webcam or ...
+  - link "Read more":
+    - /url: /goto?url=CAES-wEBxCJF16Hzs8QXP_gBBu_Qg3CZGZR5sSK4Ma5CQfASEgJ3vuQy8XkocoDqQnvnagjrZpsufv8BYVqiRo3OsUKyYd-z8ALCE6fJXq_-J9y7NPuNAdrLcp8DPx77MFMKA_mqxYMd5bT0hw28WrmXkJMjoUMWAsvJKNsJ-0BgmrNgpoAA7JJo6UPV1FngatGJzdVpwpZlmRfQO5yUXI68QjRGMA3wjQ47IejKcdEzseaM463aYb5oHLmkTDPU_kKh0xVTwjoUFPIXm3kIsK4EEgwAdhIeUiG_NOYOUfmYuYczSO1WFiMj2vi6tXKC0AO-jZaQZEYz5hjW7KVLQg&gsessionid=_dc6QERSGheOaSTcEgwsExe-_tZF4CDU6V5r_o2vsIcaAbsdNU-6IA
+  - link "Contactless Fingerprint Image Streams and Heart Rate ... IEEE DataPort https://ieee-dataport.org › documents › contactless-finger...":
+    - /url: /goto?url=CAESnAEBxCJF13zSrplvv6OdJj5ZkO5Fl3Mvybn7RLpozcsRvVqaDSgv94cfukplr5mcrzQ2KNClIm6MwOi3JNFKEVKkVWdCxGrfgIK9aCXbn0dQXkHZiAFW_BRLBogWxAO4LrV1tQz-61PHgOBIJP5Xq1shh7SZh4oAw0K3Hqus3DYQT7lmCQ7NpzEQvjBu_LectcJK57Z37t1BaqGeArY&gsessionid=_dc6QERSGheOaSTcEgwsExe-_tZF4CDU6V5r_o2vsIcaAbsdNU-6IA
+    - heading "Contactless Fingerprint Image Streams and Heart Rate ..." [level=3]
+    - generic: IEEE DataPort
+    - generic: https://ieee-dataport.org › documents › contactless-finger...
+  - button "About this result":
+  - generic: Dec 31, 2024 —
+  - text: The dataset provides a continuous, high-quality, contactless fingerprint image streams of the right thumb finger captured from 46 ...
+  - heading "Sponsored result" [level=2]
+  - link "Wearable API/SDK Solution tryrook.io https://www.tryrook.io › wearables-api › integration":
+    - /url: /goto?url=CAESXQHEIkXX74sMrEzhSdclvx_F2fEiD2rZOPSAYnzaUC1R9KLTihGQLCUNtbuk6lzzZpaoCFUJJ9hT4VFPzJt1g6xNjh-AT9oo6muPPqTohjPIN7fCszU1YdImOvwVUA&gsessionid=_dc6QERSGheOaSTcEgwsExe-_tZF4CDU6V5r_o2vsIcaAbsdNU-6IA
+    - heading "Wearable API/SDK Solution" [level=3]
+    - generic: tryrook.io
+    - generic: https://www.tryrook.io › wearables-api › integration
+  - button "Why this ad?":
+  - generic: Wearable Health Data API — A single integration to your tech environment that collects data from 500+ wearables. ROOK empowers software and apps with more meaningful health metrics & recommendations.
+  - link "Our Pricing Our pricing is designed to maximize value while minimizing costs.":
+    - /url: /goto?url=CAESWwHEIkXX6uLCL9ZxkebInrXSB6I_Ps_C-xnTrB2E2oscmdonmwdYCNCCM5h5clt7wkNHGjkEXFsah03MxdI5pbtio9FcPavYteRmVfN4sR02QW1GVU_4dsLVNrY&gsessionid=_dc6QERSGheOaSTcEgwsExe-_tZF4CDU6V5r_o2vsIcaAbsdNU-6IA
+    - generic: Our Pricing
+    - generic: Our pricing is designed to maximize value while minimizing costs.
+  - button "Hide sponsored result":
+    - separator
+    - generic: Hide sponsored result
+  - link "Datasets IEEE DataPort https://ieee-dataport.org › datasets":
+    - /url: /goto?url=CAES9wEBxCJF1yh40adUsEF-paw6uY_tDRARtWpyTjb3ZRxZSkSo1IxGs8UVINbKSL2AOLD7EOInkLTGPlwR8_-aX38zGQqJ8JezZezWKnk9aUG6VA-gGNdt5OuBq__YhJSwSB_nHpJSBTW-fzgcROgmy0lH9foubyb8dAoCRW-_xuwkkRy4orhP039PIDz82C52-ePXl6bed_pGj76L4NznP1OjYCKMH_rlJOdr_Y1cmFgWuNUthAL0SEYpWswwnz0ZYaxMOmEMe-TCsmzaz0T_aaek4B1YfVdrnIunsNwtQXm2nVGXRwNq8fzbPEbDD2gayC6npEo6SQLH&gsessionid=_dc6QERSGheOaSTcEgwsExe-_tZF4CDU6V5r_o2vsIcaAbsdNU-6IA
+    - heading "Datasets" [level=3]
+    - generic: IEEE DataPort
+    - generic: https://ieee-dataport.org › datasets
+  - button "About this result":
+  - generic: Dataset; Pattern Recognition; Machine Learning; Computer Vision; Detection;
+  - link "Representative normalized rPPG signals of the three ... ResearchGate https://www.researchgate.net › figure › Representative-...":
+    - /url: /goto?url=CAESxgEBxCJF1-DhP5MWVEYmQbXmHpXoTFlvaVznde2zOcdLpwviENdV6jH1RCfciI78kKEGrhHj6ebvQ5zJSp-3uAUA0UoDG6zLt-4doA2tAqSpew9n-R43a6xzYXV9WxceyNqse_CYoVWO6aXaOpBwJFZSAb9mae2toN7wWa5PXkBIwuBjXFi2F4vq0Y8NYj-XlsZlSuXgrMfqjK3VG9FAw724_uSb7csLxFjfpSR5YR0xElwFpHn5i1oBCUUbWaETv4SZq5Wl2Zw&gsessionid=_dc6QERSGheOaSTcEgwsExe-_tZF4CDU6V5r_o2vsIcaAbsdNU-6IA
+    - heading "Representative normalized rPPG signals of the three ..." [level=3]
+    - generic: ResearchGate
+    - generic: https://www.researchgate.net › figure › Representative-...
+  - button "About this result":
+  - generic: Remote photoplethysmography (rPPG) is a promising contactless technology that uses videos of faces to extract health parameters, such as heart rate.
+  - link "Datasets IEEE DataPort https://ieee-dataport.org › datasets":
+    - /url: /goto?url=CAESxAEBxCJF1yeCbP68fxuteO4A9KlrtWlod8PkoFEzzzJF7yibMG-9LSmIkLCDVn3K_MEuBx_UYeaCQ1_T8FRvK_BScrkvqnQcmTWn8vNi5mbYYAXEJiZlJD_m_YKfgsFqFIEvbYv7HqASEANuzPAzUb6aG8dLM5s8s5Ur52-mBDjX075_Su8GJLIabD27Ryb9IaufSEaJR7s3ggBJ5kbvuE_yoMQPUTpWuydYb9bgnJxg1Ed5DJNGKSazer_w7tiaytQu5UEE&gsessionid=_dc6QERSGheOaSTcEgwsExe-_tZF4CDU6V5r_o2vsIcaAbsdNU-6IA
+    - heading "Datasets" [level=3]
+    - generic: IEEE DataPort
+    - generic: https://ieee-dataport.org › datasets
+  - button "About this result":
+  - generic: Dataset; Pattern Recognition; Machine Learning; Computer Vision; Detection;
+  - 'link "rPPG Vitals: Contact-Free Heart Rate from a Phone Camera Vercel https://dadaboev-portfolio.vercel.app › rppg-vitals"':
+    - /url: /goto?url=CAEShQEBxCJF14RMBf-9JPCteDi9ICRNyMzYs9l1ph2vUSQWnS1V0Uept5FOw4JuDgCVaka7ZRkxKcAZmbit3yqCjCC2ouGL14PBX4DNZnoAX6Z8PBuxWinBaf15e7Xef0n4BLLif-ucR4BCOnOUYYQWhfBfu0-Tku7_lS7bjIMu0F0_85EhZV_I&gsessionid=_dc6QERSGheOaSTcEgwsExe-_tZF4CDU6V5r_o2vsIcaAbsdNU-6IA
+    - 'heading "rPPG Vitals: Contact-Free Heart Rate from a Phone Camera" [level=3]'
+    - generic: Vercel
+    - generic: https://dadaboev-portfolio.vercel.app › rppg-vitals
+  - button "About this result":
+  - generic: An on-device Android app (Kotlin) and Python reference pipeline that measure heart rate and signal quality from facial skin-color changes using MediaPipe ...
+  - link "Extracting Heart Rate from a Webcam using AI & rPPG Medium https://medium.com › building-a-zero-contact-vitals-tra...":
+    - /url: /goto?url=CAESwwEBxCJF16vE3xcQ4OoJ7GuVRIKCSO9PUD2EB1ePC5VNQYDOeSEf_QWlvODHoNUP8N4huktaC0PXhUiEiIGchLmZ18Io3H8T9vUlpqIqt-zxd8wZ8wngtV-yDs7BNjXxMbCW-CA7aSGvpk3NuIxN5Cm_MrPnr1G39GNwoDhc9ccoUHOllO8eRNeofJ1yEm0NHGaTcmF2EGPazlGY_73R2_vvo-7Q7KQ0XVXnrv3CqjOPU6e_CVb-m-sXtMkU--7Eba2y9qY&gsessionid=_dc6QERSGheOaSTcEgwsExe-_tZF4CDU6V5r_o2vsIcaAbsdNU-6IA
+    - heading "Extracting Heart Rate from a Webcam using AI & rPPG" [level=3]
+    - generic: Medium
+    - generic: https://medium.com › building-a-zero-contact-vitals-tra...
+  - button "About this result":
+  - generic: Nov 10, 2026 —
+  - text: How I used Python, OpenCV, and FastAPI to measure human pulse rates without a single wearable device. The future of healthcare telemetry ...
+  - link "Read more":
+    - /url: /goto?url=CAESogIBxCJF17ZAZfzU5hGkyf5iGYE-V3E8fyMt7HGg-ksuenFZBCBBWMvAMO6zmZmx5M_0JYK_OB77KD7l2dEEH3hmDUV9fwhICqU65jlh6Xfx8Q4JnpME-PHIUpk95V_QSvlx48ciXW0aZp15tzbejUstkrKhX6FrQ1cRLyDnPJSisXTqFEPQ6P6YJhwA6bPkF-vwu1lePKrYaMO5j4YsP43w13BkjZuXnkyxls5PRYadJN0hlyWyXCkbhtyQuZOQq1RSP0sSgS8D8qoztlabbB9Lvw4sipNyfbxvGeVT0okb-u59V1l9LnG9fAoVqpY9JOIxFgqw-Iv5RFBwm-YL7nWVndHDhefNK7WX3z0aDxB0QIvrHgzODsUFXWV0rAbgYmCUeQ&gsessionid=_dc6QERSGheOaSTcEgwsExe-_tZF4CDU6V5r_o2vsIcaAbsdNU-6IA
+  - navigation:
+    - heading "Page Navigation" [level=1]
+    - text: "1"
+    - link "Page 2":
+      - /url: /search?q=100Hz+raw+PPG+smart+ring+SDK&sca_esv=7f596c757daf7589&hl=en&sxsrf=AKL5yDg10KKKqTwzqOC3eB2vrL7CayTsGg:1795343852490&ei=7MUCa7KFHPzAkPIPoar54A0&start=10&sa=N&sstk=AYl2yk8YFCq1eoYtWigyM0t56JPO2Ss5ehjOXgmJIQNAK0XpxRk7xp8IFQaBwBqMu3HbgzcINMbnkjq9K_6uKbu8gPOiejd_OlYFEw&ved=2ahUKEwiyq82EsZuYAxV8IEQIHSFVHtwQ8tMDegQILRAE
+      - text: "2"
+    - link "Page 3":
+      - /url: /search?q=100Hz+raw+PPG+smart+ring+SDK&sca_esv=7f596c757daf7589&hl=en&sxsrf=AKL5yDg10KKKqTwzqOC3eB2vrL7CayTsGg:1795343852490&ei=7MUCa7KFHPzAkPIPoar54A0&start=20&sa=N&sstk=AYl2yk8YFCq1eoYtWigyM0t56JPO2Ss5ehjOXgmJIQNAK0XpxRk7xp8IFQaBwBqMu3HbgzcINMbnkjq9K_6uKbu8gPOiejd_OlYFEw&ved=2ahUKEwiyq82EsZuYAxV8IEQIHSFVHtwQ8tMDegQILRAG
+      - text: "3"
+    - link "Page 4":
+      - /url: /search?q=100Hz+raw+PPG+smart+ring+SDK&sca_esv=7f596c757daf7589&hl=en&sxsrf=AKL5yDg10KKKqTwzqOC3eB2vrL7CayTsGg:1795343852490&ei=7MUCa7KFHPzAkPIPoar54A0&start=30&sa=N&sstk=AYl2yk8YFCq1eoYtWigyM0t56JPO2Ss5ehjOXgmJIQNAK0XpxRk7xp8IFQaBwBqMu3HbgzcINMbnkjq9K_6uKbu8gPOiejd_OlYFEw&ved=2ahUKEwiyq82EsZuYAxV8IEQIHSFVHtwQ8tMDegQILRAI
+      - text: "4"
+    - link "Page 5":
+      - /url: /search?q=100Hz+raw+PPG+smart+ring+SDK&sca_esv=7f596c757daf7589&hl=en&sxsrf=AKL5yDg10KKKqTwzqOC3eB2vrL7CayTsGg:1795343852490&ei=7MUCa7KFHPzAkPIPoar54A0&start=40&sa=N&sstk=AYl2yk8YFCq1eoYtWigyM0t56JPO2Ss5ehjOXgmJIQNAK0XpxRk7xp8IFQaBwBqMu3HbgzcINMbnkjq9K_6uKbu8gPOiejd_OlYFEw&ved=2ahUKEwiyq82EsZuYAxV8IEQIHSFVHtwQ8tMDegQILRAK
+      - text: "5"
+    - link "Page 6":
+      - /url: /search?q=100Hz+raw+PPG+smart+ring+SDK&sca_esv=7f596c757daf7589&hl=en&sxsrf=AKL5yDg10KKKqTwzqOC3eB2vrL7CayTsGg:1795343852490&ei=7MUCa7KFHPzAkPIPoar54A0&start=50&sa=N&sstk=AYl2yk8YFCq1eoYtWigyM0t56JPO2Ss5ehjOXgmJIQNAK0XpxRk7xp8IFQaBwBqMu3HbgzcINMbnkjq9K_6uKbu8gPOiejd_OlYFEw&ved=2ahUKEwiyq82EsZuYAxV8IEQIHSFVHtwQ8tMDegQILRAM
+      - text: "6"
+    - link "Page 7":
+      - /url: /search?q=100Hz+raw+PPG+smart+ring+SDK&sca_esv=7f596c757daf7589&hl=en&sxsrf=AKL5yDg10KKKqTwzqOC3eB2vrL7CayTsGg:1795343852490&ei=7MUCa7KFHPzAkPIPoar54A0&start=60&sa=N&sstk=AYl2yk8YFCq1eoYtWigyM0t56JPO2Ss5ehjOXgmJIQNAK0XpxRk7xp8IFQaBwBqMu3HbgzcINMbnkjq9K_6uKbu8gPOiejd_OlYFEw&ved=2ahUKEwiyq82EsZuYAxV8IEQIHSFVHtwQ8tMDegQILRAO
+      - text: "7"
+    - link "Page 8":
+      - /url: /search?q=100Hz+raw+PPG+smart+ring+SDK&sca_esv=7f596c757daf7589&hl=en&sxsrf=AKL5yDg10KKKqTwzqOC3eB2vrL7CayTsGg:1795343852490&ei=7MUCa7KFHPzAkPIPoar54A0&start=70&sa=N&sstk=AYl2yk8YFCq1eoYtWigyM0t56JPO2Ss5ehjOXgmJIQNAK0XpxRk7xp8IFQaBwBqMu3HbgzcINMbnkjq9K_6uKbu8gPOiejd_OlYFEw&ved=2ahUKEwiyq82EsZuYAxV8IEQIHSFVHtwQ8tMDegQILRAQ
+      - text: "8"
+    - link "Page 9":
+      - /url: /search?q=100Hz+raw+PPG+smart+ring+SDK&sca_esv=7f596c757daf7589&hl=en&sxsrf=AKL5yDg10KKKqTwzqOC3eB2vrL7CayTsGg:1795343852490&ei=7MUCa7KFHPzAkPIPoar54A0&start=80&sa=N&sstk=AYl2yk8YFCq1eoYtWigyM0t56JPO2Ss5ehjOXgmJIQNAK0XpxRk7xp8IFQaBwBqMu3HbgzcINMbnkjq9K_6uKbu8gPOiejd_OlYFEw&ved=2ahUKEwiyq82EsZuYAxV8IEQIHSFVHtwQ8tMDegQILRAS
+      - text: "9"
+    - link "Page 10":
+      - /url: /search?q=100Hz+raw+PPG+smart+ring+SDK&sca_esv=7f596c757daf7589&hl=en&sxsrf=AKL5yDg10KKKqTwzqOC3eB2vrL7CayTsGg:1795343852490&ei=7MUCa7KFHPzAkPIPoar54A0&start=90&sa=N&sstk=AYl2yk8YFCq1eoYtWigyM0t56JPO2Ss5ehjOXgmJIQNAK0XpxRk7xp8IFQaBwBqMu3HbgzcINMbnkjq9K_6uKbu8gPOiejd_OlYFEw&ved=2ahUKEwiyq82EsZuYAxV8IEQIHSFVHtwQ8tMDegQILRAU
+      - text: "10"
+    - heading "Next" [level=2]:
+      - link "Next":
+        - /url: /search?q=100Hz+raw+PPG+smart+ring+SDK&sca_esv=7f596c757daf7589&hl=en&sxsrf=AKL5yDg10KKKqTwzqOC3eB2vrL7CayTsGg:1795343852490&ei=7MUCa7KFHPzAkPIPoar54A0&start=10&sa=N&sstk=AYl2yk8YFCq1eoYtWigyM0t56JPO2Ss5ehjOXgmJIQNAK0XpxRk7xp8IFQaBwBqMu3HbgzcINMbnkjq9K_6uKbu8gPOiejd_OlYFEw&ved=2ahUKEwiyq82EsZuYAxV8IEQIHSFVHtwQ8NMDegQILRAW
+        - generic: Next
+  - navigation
+- contentinfo:
+  - heading "Footer Links" [level=1]
+  - button "Salt Lake County, Utah - From your IP address":
+    - generic: Salt Lake County, Utah
+    - text: "-"
+    - generic: From your IP address
+  - text: "-"
+  - button "Update location": Update location
+  - link "Help":
+    - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en&fg=1
+  - button "Send feedback":
+    - generic: Send feedback
+  - link "Privacy":
+    - /url: https://policies.google.com/privacy?hl=en&fg=1
+  - link "Terms":
+    - /url: https://policies.google.com/terms?hl=en&fg=1

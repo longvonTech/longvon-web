@@ -1,0 +1,10 @@
+{
+  "captured_at": "2026-11-22T10:42:34.266Z",
+  "status": "COMPLETE",
+  "state": {
+    "panel": true,
+    "generating": false,
+    "complete": true
+  },
+  "environment": "logged-out IAB; country UNKNOWN; not comparable with signed-in round1"
+}

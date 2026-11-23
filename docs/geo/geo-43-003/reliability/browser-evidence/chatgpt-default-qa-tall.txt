@@ -1,0 +1,191 @@
+- banner:
+  - button "登录"
+  - button "免费注册"
+- main:
+  - region "对话":
+    - list "对话":
+      - heading "你说：" [level=4]
+      - paragraph: 100Hz raw PPG smart ring SDK
+      - button "复制":
+      - status
+      - heading "ChatGPT 说：" [active] [level=4]
+      - region "DIL content":
+        - paragraph:
+          - text: If you're looking for a
+          - generic: smart ring SDK that provides raw PPG waveform data at 100 Hz
+          - text: ", rather than just heart rate, HRV, or SpO₂ metrics, there are a few potential options."
+        - paragraph: The critical requirement is access to the actual optical sensor samples (ADC or equivalent), ideally with synchronized accelerometer data, through BLE or a mobile SDK.
+        - heading "Potential options" [level=2]
+        - table:
+          - rowgroup:
+            - row "Platform Raw PPG 100 Hz Access":
+              - columnheader "Platform":
+                - paragraph: Platform
+              - columnheader "Raw PPG":
+                - paragraph: Raw PPG
+              - columnheader "100 Hz":
+                - paragraph: 100 Hz
+              - columnheader "Access":
+                - paragraph: Access
+            - row "Ultrahuman Ring AIR / UltraSignal Yes, partner offering Needs confirmation Partner-gated":
+              - cell "Ultrahuman Ring AIR / UltraSignal":
+                - paragraph:
+                  - button "Ultrahuman Ring AIR"
+                  - generic: Ultrahuman Ring AIR
+                  - text: / UltraSignal
+              - cell "Yes, partner offering":
+                - paragraph: Yes, partner offering
+              - cell "Needs confirmation":
+                - paragraph: Needs confirmation
+              - cell "Partner-gated":
+                - paragraph: Partner-gated
+            - row "Oura Ring No public raw waveform SDK No public access Cloud API":
+              - cell "Oura Ring":
+                - paragraph:
+                  - button "Oura Ring"
+                  - generic: Oura Ring
+              - cell "No public raw waveform SDK":
+                - paragraph: No public raw waveform SDK
+              - cell "No public access":
+                - paragraph: No public access
+              - cell "Cloud API":
+                - paragraph: Cloud API
+            - row "Samsung Galaxy Ring No verified public raw PPG SDK Unverified Consumer APIs":
+              - cell "Samsung Galaxy Ring":
+                - paragraph:
+                  - button "Samsung Galaxy Ring"
+                  - generic: Samsung Galaxy Ring
+              - cell "No verified public raw PPG SDK":
+                - paragraph: No verified public raw PPG SDK
+              - cell "Unverified":
+                - paragraph: Unverified
+              - cell "Consumer APIs":
+                - paragraph: Consumer APIs
+            - row "Custom research smart ring Yes Yes, configurable OEM / custom BLE SDK":
+              - cell "Custom research smart ring":
+                - paragraph: Custom research smart ring
+              - cell "Yes":
+                - paragraph: "Yes"
+              - cell "Yes, configurable":
+                - paragraph: Yes, configurable
+              - cell "OEM / custom BLE SDK":
+                - paragraph: OEM / custom BLE SDK
+        - paragraph:
+          - generic: "Important:"
+          - text: Ultrahuman's UltraSignal is worth investigating, but I would require written confirmation of the actual sampling rate and raw-data access before selecting it.
+          - button "APIs.io +2":
+            - generic: APIs.io
+            - generic: "+2"
+        - heading "Other relevant SDKs" [level=2]
+        - list:
+          - paragraph:
+            - button "Samsung Health Sensor SDK"
+            - generic: Samsung Health Sensor SDK
+            - text: ": Provides 100 Hz raw PPG on Galaxy Watch, but this is a smartwatch, not a ring."
+            - button "Technical specifications":
+              - link "Technical specifications":
+                - /url: https://developer.samsung.com/health/sensor/guide/data-specifications.html?utm_source=chatgpt.com
+                - generic: Technical
+                - generic: specifications
+            - text: .
+          - paragraph:
+            - button "Sensor Bio"
+            - generic: Sensor Bio
+            - text: ": Provides 100 Hz raw green, red and IR PPG through its wearable band SDK, not a smart ring."
+            - button "SDK and platform":
+              - link "SDK and platform":
+                - /url: https://sensorbio.com/platform/wearable-api/?utm_source=chatgpt.com
+                - generic: SDK and
+                - generic: platform
+            - text: .
+        - heading "What I would recommend" [level=2]
+        - paragraph: "If you're developing a physiological monitoring or research application, prioritize these specifications:"
+        - list:
+          - paragraph: Raw PPG at 100 samples/second.
+          - paragraph: Green + red + infrared channels.
+          - paragraph: Raw ADC values, not normalized heart-rate waveforms.
+          - paragraph: Raw 3-axis accelerometer at 25–100 Hz.
+          - paragraph: BLE real-time streaming.
+          - paragraph: Timestamp synchronization.
+          - paragraph: Access to firmware and SDK documentation.
+          - paragraph: iOS, Android and preferably Python SDKs.
+        - heading "One question" [level=2]
+        - paragraph: What are you looking for?
+        - paragraph:
+          - generic: 1. Your objective
+        - radiogroup "Options":
+          - radio "Existing commercial ring with raw PPG SDK" [checked]
+          - text: Existing commercial ring with raw PPG SDK
+          - radio "OEM/ODM smart ring with 100 Hz raw PPG"
+          - text: OEM/ODM smart ring with 100 Hz raw PPG
+          - radio "Research-grade ring with unrestricted sensor access"
+          - text: Research-grade ring with unrestricted sensor access
+          - radio "Build my own smart ring hardware and SDK"
+          - text: Build my own smart ring hardware and SDK
+        - paragraph:
+          - generic: 2. Development platform
+        - radiogroup "Options":
+          - radio "iOS + Android" [checked]
+          - text: iOS + Android
+          - radio "Android"
+          - text: Android
+          - radio "iOS"
+          - text: iOS
+          - radio "Python / PC via BLE"
+          - text: Python / PC via BLE
+          - radio "All platforms"
+          - text: All platforms
+        - button "Find matching SDKs and vendors":
+          - generic: Find matching SDKs and vendors
+        - paragraph: I can then narrow this down to actual manufacturers, developer kits, SDK documentation and raw PPG data availability—not just consumer smart rings that expose calculated health metrics.
+      - status
+      - group "回复操作":
+        - button "复制回复":
+        - status
+        - button "回复优秀":
+        - button "回复不佳":
+        - status
+        - button "分享":
+        - button "更多操作":
+    - paragraph:
+      - generic: ChatGPT 是 AI，可能会犯错。
+- navigation "Sidebar shortcuts":
+  - link "ChatGPT 徽标":
+    - /url: /
+    - img "ChatGPT"
+  - navigation "侧边栏":
+    - link "新聊天":
+      - /url: /?noauth_recent_chat_failed=1
+      - generic: 新聊天
+    - link "图像":
+      - /url: /images
+      - generic: 图像
+    - link "插件":
+      - /url: /plugins?plugins_landing=1
+      - generic: 插件
+    - link "查看套餐和定价":
+      - /url: https://openai.com/chatgpt/pricing/
+      - generic: 查看套餐和定价
+    - link "帮助":
+      - /url: https://help.openai.com/zh-hans-cn/collections/3742473-chatgpt
+      - generic: 帮助
+    - button "深度研究":
+      - generic: 深度研究
+    - link "设置":
+      - /url: /settings
+      - generic: 设置
+- complementary "侧边栏":
+  - button "关闭边栏":
+  - heading "获取为你量身定制的回复" [level=2]
+  - paragraph: 登录以获取基于已保存聊天的回答，并可创建图像和上传文件。
+  - button "登录":
+    - generic: 登录
+- contentinfo:
+  - generic: 与 ChatGPT 聊天
+  - textbox "与 ChatGPT 聊天":
+    - /placeholder: 询问 ChatGPT
+  - button "添加文件等":
+  - button "开始听写":
+  - button "发送消息" [disabled]:
+- alert
+- status

@@ -1,0 +1,92 @@
+- navigation "主导航":
+  - link "Perplexity":
+    - /url: /
+    - img "Perplexity"
+  - button "搜索会话":
+  - button "收起侧边栏":
+  - link "新建":
+    - /url: /
+  - generic: 新建
+  - link "自动化":
+    - /url: /automations
+  - generic: 自动化
+  - link "工件":
+    - /url: /artifacts
+  - generic: 工件
+  - link "插件":
+    - /url: /computer/plugins
+  - generic: 插件
+  - group "队友":
+    - generic: 队友
+    - button "收起队友" [expanded]:
+    - generic: 招募您的第一位队友
+    - paragraph: 为您工作的持久型智能体。
+    - button "创建新队友":
+      - generic: 创建新队友
+  - link "项目":
+    - /url: /projects
+  - generic: 项目
+  - button "创建项目":
+  - button "筛选项目":
+  - button "收起项目" [expanded]:
+  - generic: 暂无项目
+  - link "会话":
+    - /url: /library
+  - generic: 会话
+  - button "收起会话" [expanded]:
+  - generic: 暂无近期会话
+  - button "查看套餐":
+    - generic: 查看套餐
+  - button "登录":
+    - generic: 登录
+  - separator "调整侧边栏宽度"
+- main:
+  - button "使用无痕：创建匿名会话，不会保存到历史记录，并在 24 小时后过期":
+  - button "应用及更多":
+  - heading "你想了解什么？" [level=1]:
+    - generic: 你想了解什么？
+    - generic: 我们要处理什么？
+    - generic: 你想了解什么？
+  - textbox "输入 / 以选择搜索模式":
+    - paragraph
+  - generic: 输入 / 以选择搜索模式
+  - button "添加文件、插件等":
+  - button "搜索" [pressed]:
+    - generic: 搜索
+  - button "Computer":
+    - generic: Computer
+  - button "模型":
+    - generic: 模型
+  - button "语音输入":
+  - button "使用语音模式":
+  - button "搜索任何内容 从最值得信赖的来源获取快速而准确的答案。":
+    - generic: 搜索任何内容
+    - generic: 从最值得信赖的来源获取快速而准确的答案。
+  - button "用 Computer 完成工作 全新 把项目交给它，全天候获得精良、可靠的交付成果。":
+    - generic: 用 Computer 完成工作
+    - generic: 全新
+    - generic: 把项目交给它，全天候获得精良、可靠的交付成果。
+  - link "服务条款":
+    - /url: https://www.perplexity.ai/zh/hub/legal/terms-of-service
+  - generic: ·
+  - link "隐私声明":
+    - /url: https://www.perplexity.ai/zh/hub/legal/privacy-notice
+- button "关闭":
+- img "Perplexity"
+- generic: 登录或免费注册
+- generic: 保存并同步你的搜索
+- button "使用 Google 继续":
+  - generic: 使用 Google 继续
+- button "使用 Apple 继续":
+  - generic: 使用 Apple 继续
+- textbox "输入您的电子邮件"
+- button "继续使用电子邮件" [disabled]:
+  - generic: 继续使用电子邮件
+- button "单点登录（SSO）":
+  - generic: 单点登录（SSO）
+- text: 继续即表示您同意
+- link "Perplexity 服务条款":
+  - /url: https://www.perplexity.ai/zh/hub/legal/terms-of-service
+- text: 和
+- link "隐私声明":
+  - /url: https://www.perplexity.ai/zh/hub/legal/privacy-notice

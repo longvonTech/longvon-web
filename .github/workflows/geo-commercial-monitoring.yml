@@ -18,3 +18,5 @@ jobs:
           python-version: '3.11'
       - name: Observation safety and integrity tests (synthetic only)
         run: python3 -W error::ResourceWarning -m unittest discover -s scripts/geo/monitoring -p 'test_*.py' -v
+      - name: Bounded browser completion contract tests
+        run: node --test scripts/geo/monitoring/browser-capture.test.mjs

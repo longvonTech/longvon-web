@@ -29,7 +29,7 @@ jobs:
       - run: npm ci --ignore-scripts
       - name: Unit and bilingual attribution contracts
         run: |
-          node --test scripts/geo/oem-journey.test.cjs scripts/geo/raw-ppg.test.cjs scripts/rfq/client-contract.test.cjs scripts/rfq/attribution-contract.test.cjs
+          node --test scripts/geo/procurement-pages.test.cjs scripts/geo/oem-journey.test.cjs scripts/geo/raw-ppg.test.cjs scripts/rfq/client-contract.test.cjs scripts/rfq/attribution-contract.test.cjs
           node --experimental-strip-types --test apps/web/lib/i18n-routes.spec.mjs
       - name: Start read-only synthetic API fixture
         run: |
@@ -38,6 +38,8 @@ jobs:
           exit 1
       - name: Build Web without production API access
         run: npm run build --workspace=apps/web
+      - name: TypeScript candidate check
+        run: npx tsc -p apps/web/tsconfig.json --noEmit
       - name: Start built candidate
         run: |
           cp -R apps/web/public apps/web/.next/standalone/apps/web/public
@@ -54,6 +56,10 @@ jobs:
         env:
           OEM_EVIDENCE_DIR: ${{ runner.temp }}/geo-raw-ppg/oem
         run: node scripts/geo/oem-journey-browser.cjs
+      - name: Procurement page modules, metadata, internal links and synthetic attribution
+        env:
+          PROCUREMENT_EVIDENCE_DIR: ${{ runner.temp }}/geo-raw-ppg/procurement
+        run: node scripts/geo/procurement-pages-browser.cjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:

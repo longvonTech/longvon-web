@@ -11,7 +11,7 @@ export function rawPpgRfqHref(locale: GeoLocale): string {
 
 export const RAW_PPG_COPY = {
   en: {
-    title: '100Hz raw PPG for partner R&D',
+    title: '100Hz Raw PPG Data',
     intro: 'Evaluating raw signals for your wearable product, digital-health platform, algorithm team or research project? Qualified OEM/ODM partners can discuss 100Hz PPG raw-data access through LONGVON’s agreed SDK and project pathway. This is a technical evaluation, not a public SDK download or a guarantee for every ring model.',
     meaningTitle: 'What 100Hz means — and what to evaluate',
     meaning: '100Hz describes a sampling frequency of 100 samples per second. It does not by itself specify continuous recording, wireless streaming latency, buffering duration or cloud API update frequency. Start with the signal and integration requirements your R&D team needs to evaluate; confirm the actual sampling and delivery configuration in the technical SOW.',
@@ -42,7 +42,7 @@ export const RAW_PPG_COPY = {
     ],
   },
   zh: {
-    title: '面向合作伙伴研发的 100Hz PPG 原始数据',
+    title: '100Hz PPG 原始数据',
     intro: '正在为可穿戴产品、数字健康平台、算法团队或研究项目评估原始信号？符合条件的 OEM/ODM 合作伙伴可通过 LONGVON 约定的 SDK 与项目路径讨论 100Hz PPG 原始数据接入。这属于技术评估，不是公开 SDK 下载，也不是对所有戒指型号的保证。',
     meaningTitle: '100Hz 的含义与评估重点',
     meaning: '100Hz 表示每秒 100 次采样的采样频率，本身不代表连续记录、无线传输延迟、缓存时长或云端 API 更新频率。请先明确研发团队需要评估的信号与集成要求，再在技术工作说明书（SOW）中确认实际采样与交付配置。',

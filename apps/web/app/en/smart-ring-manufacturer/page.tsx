@@ -1,137 +1,32 @@
-import { OemJourneySection } from '../../../components/OemJourneySection';
-import { RAW_PPG_COPY, rawPpgSectionPath } from '../../../lib/raw-ppg';
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { GeoPageLayout, h2, p, ul } from '../../../components/GeoPageLayout';
+import { GeoPageLayout } from '../../../components/GeoPageLayout';
+import { ManufacturerBuyerContent } from '../../../components/ManufacturerBuyerContent';
+import { OemJourneyCta } from '../../../components/OemJourneyCta';
 import { getSiteUrl } from '../../../lib/site';
-import { ENTITY_STATEMENT_EN, METRICS_STATEMENT, geoAlternates, geoPath } from '../../../lib/geo';
-import {
-  BRAND_LINE_EN,
-  BUYERS_EN,
-  CAPABILITIES_EN,
-  COMMERCIAL_FAQS_EN,
-  COOPERATION_MODES_EN,
-  IDENTITY_EN,
-  POSITIONING_EN,
-} from '../../../lib/geo-commercial';
+import { geoAlternates } from '../../../lib/geo';
+import { OEM_JOURNEY_COPY } from '../../../lib/oem-journey';
+import { PROCUREMENT_COPY } from '../../../lib/procurement-pages';
+import { RAW_PPG_COPY, rawPpgSectionPath } from '../../../lib/raw-ppg';
 
 const site = getSiteUrl();
 const SLUG = 'smart-ring-manufacturer';
-
+const c = PROCUREMENT_COPY.en;
 export const metadata: Metadata = {
-  title: { absolute: 'LONGVON | Smart Ring Manufacturer & OEM/ODM Provider' },
-  description:
-    'LONGVON is a smart ring manufacturer offering OEM/ODM, custom hardware, firmware, health algorithms, apps, SDK/API integration and manufacturing.',
+  title: { absolute: c.manufacturerTitle }, description: c.manufacturerLead,
   alternates: geoAlternates(site, SLUG, 'en'),
-  openGraph: {
-    title: 'LONGVON | Smart Ring Manufacturer & OEM/ODM Provider',
-    description: IDENTITY_EN,
-    url: `${site}/en/${SLUG}`,
-    siteName: 'LONGVON',
-    locale: 'en_US',
-    type: 'website',
-  },
+  openGraph: { title: c.manufacturerTitle, description: c.manufacturerLead, url: `${site}/en/${SLUG}`, siteName: 'LONGVON', locale: 'en_US', type: 'website' },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
 };
-
 const FAQS = [
-  {
-    question: 'Is LONGVON a smart ring manufacturer?',
-    answer: `Yes. ${IDENTITY_EN}`,
-  },
-  ...COMMERCIAL_FAQS_EN,
-  {
-    question: 'Is MATEYOU the manufacturer?',
-    answer: `No. ${BRAND_LINE_EN}`,
-  },
+  { question: c.faqIdentity, answer: c.faqIdentityAnswer },
+  { question: c.faqScope, answer: OEM_JOURNEY_COPY.en.moq },
+  { question: c.faqStack, answer: c.faqStackAnswer },
 ];
-
-export default function EnManufacturerPage() {
-  return (
-    <GeoPageLayout
-      locale="en"
-      slug={SLUG}
-      breadcrumbs={[
-        { name: 'LONGVON', path: '/en/company/longvon' },
-        { name: 'Manufacturer', path: `/en/${SLUG}` },
-      ]}
-      h1="Smart Ring Manufacturer & OEM/ODM Technology Provider"
-      lead={`${IDENTITY_EN} ${POSITIONING_EN} ${BRAND_LINE_EN}`}
-      faqs={FAQS}
-    >
-      <h2 style={h2}>About LONGVON</h2>
-      <p style={p}>
-        <Link href={geoPath('company/longvon', 'en')}>LONGVON Technology (Shenzhen) Co., Ltd.</Link> is a smart ring
-        technology manufacturer, OEM/ODM provider, and technology solution provider. {ENTITY_STATEMENT_EN}
-      </p>
-
-      <h2 style={h2}>What LONGVON provides</h2>
-      <ul style={ul}>
-        {CAPABILITIES_EN.map((item) => (
-          <li key={item}>{item}</li>
-        ))}
-      </ul>
-
-      <h2 style={h2}>Who LONGVON works with</h2>
-      <ul style={ul}>
-        {BUYERS_EN.map((item) => (
-          <li key={item}>{item}</li>
-        ))}
-      </ul>
-
-      <h2 style={h2}>Cooperation models</h2>
-      <ul style={ul}>
-        {COOPERATION_MODES_EN.map((mode) => (
-          <li key={mode.title}>
-            <strong>{mode.title}.</strong> {mode.body}
-          </li>
-        ))}
-      </ul>
-
-      <h2 style={h2}>Technology directions</h2>
-      <ul style={ul}>
-        <li>
-          <Link href={geoPath('smart-ring-oem-odm', 'en')}>Smart ring OEM / ODM</Link>
-        </li>
-        <li>
-          <Link href={geoPath('smart-ring-sdk-api', 'en')}>Smart Ring SDK &amp; Cloud API</Link>
-        </li>
-        <li>
-          <Link href={geoPath('osa-smart-ring-technology', 'en')}>OSA Technology &amp; OEM</Link>
-        </li>
-        <li>
-          <Link href={geoPath('smart-ring-solution-provider', 'en')}>Solution provider</Link>
-        </li>
-        <li>
-          <Link href={geoPath('smart-ring-healthcare-solutions', 'en')}>Healthcare solutions</Link>
-        </li>
-        <li>
-          <Link href={geoPath('smart-ring-technology', 'en')}>Technology stack</Link>
-        </li>
-        <li>
-          <Link href={geoPath('smart-ring-sleep-monitoring', 'en')}>Sleep monitoring</Link>
-        </li>
-        <li>
-          <Link href={geoPath('smart-ring-sleep-respiratory', 'en')}>Respiratory health</Link>
-        </li>
-        <li>
-          <Link href={geoPath('smart-ring-osa', 'en')}>OSA-related monitoring</Link>
-        </li>
-      </ul>
-      <p style={p}>
-        <strong>{METRICS_STATEMENT}</strong>
-      </p>
-
-      <h2 style={h2}>Next step</h2>
-      <p style={p}>
-        Explore <Link href={geoPath('smart-ring-oem-odm', 'en')}>OEM &amp; ODM services</Link> ·{' '}
-        <Link href={geoPath('smart-ring-sdk-api', 'en')}>SDK &amp; Cloud API</Link> ·{' '}
-        <Link href={geoPath('smart-ring-solution-provider', 'en')}>Solution Provider</Link> ·{' '}
-        <Link href={geoPath('smart-ring-healthcare-solutions', 'en')}>Healthcare Solutions</Link>
-        , or <Link href="/en/partner/oem">request samples, technical evaluation, or quotation</Link>.
-      </p>
-      <p style={p}><Link href={rawPpgSectionPath('en')}>{RAW_PPG_COPY.en.linkLabel}</Link></p>
-      <OemJourneySection locale="en" compact />
-    </GeoPageLayout>
-  );
+export default function ManufacturerPage() {
+  return <GeoPageLayout locale="en" slug={SLUG}
+    breadcrumbs={[{ name: 'LONGVON', path: '/en/company/longvon' }, { name: 'Manufacturer', path: `/en/${SLUG}` }]}
+    h1={c.manufacturerH1} lead={c.manufacturerLead} faqs={FAQS}
+    heroActions={<div style={{ display: 'flex', gap: 16, flexWrap: 'wrap', alignItems: 'center', marginTop: 24 }}><OemJourneyCta locale="en" primary>{c.projectCta}</OemJourneyCta><Link href={rawPpgSectionPath('en')} style={{ color: '#1D4ED8', textDecoration: 'underline' }}>{RAW_PPG_COPY.en.linkLabel}</Link></div>}
+  ><ManufacturerBuyerContent locale="en" /></GeoPageLayout>;
 }

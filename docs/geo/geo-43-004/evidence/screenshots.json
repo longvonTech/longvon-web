@@ -1,0 +1,78 @@
+{
+  "manual_browser": "existing Chrome profile; loopback pages; no form submitted",
+  "baseline": "ff789513 before edits, dev mode",
+  "candidate": "33af664 standalone build",
+  "images": [
+    {
+      "file": "after-en-manufacturer.jpg",
+      "width": 1253,
+      "height": 4696,
+      "format": "JPEG",
+      "file_saved_at_utc": "2026-11-24T14:01:13.861632+00:00"
+    },
+    {
+      "file": "after-en-sdk.jpg",
+      "width": 1253,
+      "height": 6377,
+      "format": "JPEG",
+      "file_saved_at_utc": "2026-11-24T14:01:16.259077+00:00"
+    },
+    {
+      "file": "after-zh-manufacturer.jpg",
+      "width": 1253,
+      "height": 4404,
+      "format": "JPEG",
+      "file_saved_at_utc": "2026-11-24T14:01:15.061269+00:00"
+    },
+    {
+      "file": "after-zh-sdk.jpg",
+      "width": 1253,
+      "height": 5595,
+      "format": "JPEG",
+      "file_saved_at_utc": "2026-11-24T14:01:17.696401+00:00"
+    },
+    {
+      "file": "before-en-manufacturer.jpg",
+      "width": 1253,
+      "height": 6000,
+      "format": "JPEG",
+      "file_saved_at_utc": "2026-11-24T13:54:25.283379+00:00"
+    },
+    {
+      "file": "before-en-sdk.jpg",
+      "width": 1253,
+      "height": 7518,
+      "format": "JPEG",
+      "file_saved_at_utc": "2026-11-24T13:54:28.102445+00:00"
+    },
+    {
+      "file": "before-zh-manufacturer.jpg",
+      "width": 1253,
+      "height": 5923,
+      "format": "JPEG",
+      "file_saved_at_utc": "2026-11-24T13:54:26.728070+00:00"
+    },
+    {
+      "file": "before-zh-sdk.jpg",
+      "width": 1253,
+      "height": 6631,
+      "format": "JPEG",
+      "file_saved_at_utc": "2026-11-24T13:54:29.512599+00:00"
+    },
+    {
+      "file": "manual-en-sdk-rfq.jpg",
+      "width": 1253,
+      "height": 5600,
+      "format": "JPEG",
+      "file_saved_at_utc": "2026-11-24T14:01:33.235039+00:00"
+    },
+    {
+      "file": "manual-zh-manufacturer-rfq.jpg",
+      "width": 1253,
+      "height": 5548,
+      "format": "JPEG",
+      "file_saved_at_utc": "2026-11-24T14:01:44.635324+00:00"
+    }
+  ],
+  "visual_review": "English manufacturer desktop and Chinese SDK mobile manually inspected; readable; existing missing logo noted; other screenshots retained for independent review"
+}

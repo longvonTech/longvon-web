@@ -1,0 +1,28 @@
+{
+  "artifact_id": 14927606260,
+  "run_id": 45410029019,
+  "code_sha": "33af66403d5f5dfdaa308576dc133ed24f526055",
+  "downloaded_zip_sha256": "263985339cb298a8df95cd78511aea87e9aaa2e7f8e7b79f28c169346941f908",
+  "github_digest": "sha256:263985339cb298a8df95cd78511aea87e9aaa2e7f8e7b79f28c169346941f908",
+  "results": [
+    {
+      "artifact_entry": "oem/verification.json",
+      "saved_as": "linux-oem-verification.json",
+      "result": "PASS",
+      "paths": 6
+    },
+    {
+      "artifact_entry": "procurement/verification.json",
+      "saved_as": "linux-procurement-verification.json",
+      "result": "PASS",
+      "paths": 4
+    },
+    {
+      "artifact_entry": "verification.json",
+      "saved_as": "linux-verification.json",
+      "result": "PASS",
+      "paths": 2
+    }
+  ],
+  "download_url_omitted": true
+}

@@ -1,0 +1,256 @@
+- banner:
+  - navigation:
+    - link "LONGVON":
+      - /url: /
+      - img "LONGVON"
+    - list:
+      - link "产品介绍":
+        - /url: /products/ring1c
+      - link "健康评估":
+        - /url: /assessment
+      - link "龙汾科技":
+        - /url: /company/longvon
+      - link "商业合作":
+        - /url: /partner
+      - link "SDK / API":
+        - /url: /smart-ring-sdk-api
+      - link "健康知识库":
+        - /url: /knowledge
+      - link "关于我们":
+        - /url: /about
+      - link "Switch to English":
+        - /url: /en/smart-ring-sdk-api
+        - text: EN
+- navigation "面包屑导航":
+  - link "技术能力":
+    - /url: /smart-ring-technology
+  - generic: /SDK / Cloud API
+- link "英文":
+  - /url: /en/smart-ring-sdk-api
+- paragraph: LONGVON · 智能戒指制造商 · OEM/ODM
+- heading "智能戒指 SDK 与云端 API（合作伙伴）" [level=1]
+- paragraph: 龙汾科技（深圳）有限公司（LONGVON）是一家智能戒指制造商及 OEM/ODM 技术方案提供商，为品牌方和数字健康项目提供从硬件、固件、健康算法、移动 App、SDK/API 到生产制造的完整开发与交付能力。 LONGVON（龙汾科技）是技术制造商与 OEM/ODM 提供方，MATEYOU 是其智能戒指产品品牌。
+- article:
+  - heading "SDK 概览" [level=2]
+  - paragraph: LONGVON 可为品牌与数字健康团队提供智能戒指 SDK 对接能力，用于客户自有 App 或其他应用集成。开通方式为项目制合作，而非公开自助门户。
+  - region "面向合作伙伴研发的 100Hz PPG 原始数据":
+    - heading "面向合作伙伴研发的 100Hz PPG 原始数据" [level=2]
+    - paragraph: 正在为可穿戴产品、数字健康平台、算法团队或研究项目评估原始信号？符合条件的 OEM/ODM 合作伙伴可通过 LONGVON 约定的 SDK 与项目路径讨论 100Hz PPG 原始数据接入。这属于技术评估，不是公开 SDK 下载，也不是对所有戒指型号的保证。
+    - paragraph:
+      - link "咨询 100Hz PPG 原始数据项目":
+        - /url: /partner/oem?keyword=100hz-raw-ppg
+    - heading "100Hz 的含义与评估重点" [level=3]
+    - paragraph: 100Hz 表示每秒 100 次采样的采样频率，本身不代表连续记录、无线传输延迟、缓存时长或云端 API 更新频率。请先明确研发团队需要评估的信号与集成要求，再在技术工作说明书（SOW）中确认实际采样与交付配置。
+    - heading "设备数据与云端算法属于不同范围" [level=3]
+    - term: 合作伙伴 SDK / 客户自有 App
+    - definition: SDK 提供约定的设备连接与数据通路。支持按项目评估客户自有 App 集成；开始实施规划前，应确认支持的戒指型号、SDK 平台及可用数据。
+    - term: 云端算法 / Cloud API
+    - definition: 许多健康指标通过 LONGVON 云端算法服务提供。原始数据接入不代表所有算法均可离线运行、每个指标均已开放 API，或包含无限制 BLE 协议访问。设备、App 与云端的职责应分别定义。
+    - heading "实施前确认技术范围" [level=3]
+    - paragraph: 在需求沟通、保密约定与技术 SOW 中确认以下内容。这些是评估问题，不是已发布的规格或默认权益。
+    - list:
+      - strong: "硬件与采样:"
+      - text: 支持的戒指型号与硬件版本、所需信号、采样配置及运行约束。
+      - strong: "数据交付:"
+      - text: 原始数据格式、单位、时间信息、传输方式与缓存行为。本页不定义数据包格式、保留期限或传输延迟。
+      - strong: "App 与 SDK 集成:"
+      - text: 客户 App 归属、目标平台、SDK 可用性、文档与约定的集成及支持范围。
+      - strong: "权限与云端范围:"
+      - text: 数据访问和使用主体、处理要求、获授权的算法输出，以及云端/API 依赖和运行环境。
+    - heading "从明确范围的技术咨询开始" [level=3]
+    - list:
+      - listitem: 说明应用场景、目标平台、原始信号需求及客户自有 App 计划。
+      - listitem: 沟通需求与保密约定，确认支持的硬件和 SDK 路径。
+      - listitem: 实施前约定数据权限、端云职责、技术 SOW 与商务合作范围。
+    - complementary: 原始 PPG 的可用性不等于临床验证证据。Ring1C 是消费级健康监测参考产品，不是医疗器械；中国监管进展不构成海外医疗器械批准。
+    - paragraph:
+      - link "咨询 100Hz PPG 原始数据项目":
+        - /url: /partner/oem?keyword=100hz-raw-ppg
+    - paragraph: 请说明需要评估的内容。数据访问、授权及集成范围按项目约定，本页不构成公开价格或默认授权权益。
+  - heading "传感器数据接入" [level=2]
+  - paragraph: 除 PPG 外，还可按硬件代际与项目约定讨论温度、运动等相关信号。可用信号与采样率取决于硬件代际与项目协议。
+  - paragraph:
+    - strong: 71 total health monitoring parameters, including 22 sleep-related parameters.
+    - text: 公开指标仅供健康参考，不构成医学诊断。
+  - heading "健康数据集成" [level=2]
+  - paragraph: 合作伙伴可规划 App 侧与云端侧的睡眠、呼吸及其他健康监测输出集成。集成深度结合产品架构与合规需求评估。
+  - heading "SDK 与云端 API" [level=2]
+  - list:
+    - listitem: 设备 / 配套 SDK（含客户自有 App 集成评估）
+    - listitem: 云端 API 选项（数据接入与算法服务）
+    - listitem: 约定范围内的固件协作
+    - listitem: 按项目定义的技术支持窗口
+  - heading "客户自有 App 集成" [level=2]
+  - paragraph: 支持客户自有 App 集成。可行性、工作量与周期取决于技术栈、目标平台与所需指标，在技术咨询中评估。
+  - heading "算法服务与授权边界" [level=2]
+  - paragraph:
+    - text: LONGVON 为许多健康指标提供
+    - strong: 云端算法服务
+    - text: 。部分能力可能在端侧运行，另一些依赖 LONGVON 云端。算法授权与云服务费用按合作模式确定。不承诺全部算法可在客户硬件完全离线运行。
+  - list:
+    - listitem: SDK：对接与数据通路
+    - listitem: 算法授权：可用指标 / 模型范围
+    - listitem: 技术支持：约定窗口内的集成协助
+    - listitem: 云服务：云端算法与数据接口（单独约定）
+  - heading "技术合作流程" [level=2]
+  - list:
+    - listitem: 需求沟通与保密约定
+    - listitem: 范围：原始数据、端侧能力、云端能力、App 归属
+    - listitem: 算法授权与环境
+    - listitem: 集成支持窗口
+    - listitem: 商务授权 / OEM 协议
+  - heading "边界说明（请仔细阅读）" [level=2]
+  - list:
+    - listitem: 不以无限制蓝牙协议作为默认公开承诺
+    - listitem: 不保证全部算法可完全离线运行
+    - listitem: 不提供公开自助 SDK 下载
+    - listitem: Ring1C 为消费级健康监测参考产品 — 不是医疗器械
+    - listitem: Ring1 与 Ring1C 监管定位不同；不得将中国监管进展表述为海外医疗器械批准
+  - heading "申请技术咨询" [level=2]
+  - paragraph:
+    - link "提交 OEM / 技术合作咨询":
+      - /url: /partner/oem
+    - text: ·
+    - link "技术能力":
+      - /url: /smart-ring-technology
+    - text: ·
+    - link "OSA 技术与 OEM":
+      - /url: /osa-smart-ring-technology
+    - text: ·
+    - link "制造商":
+      - /url: /smart-ring-manufacturer
+    - text: ·
+    - link "OEM / ODM":
+      - /url: /smart-ring-oem-odm
+  - paragraph:
+    - link "规划样品—试产—量产 ODM 合作路径":
+      - /url: /smart-ring-oem-odm#sample-to-production
+- heading "常见问题" [level=2]
+- heading "是否提供公开自助 SDK 下载？" [level=3]
+- paragraph: 否。SDK 与云端 API 在 OEM/ODM 或技术合作项目中开通，范围按项目约定。
+- heading "是否可获取 100Hz PPG 原始数据？" [level=3]
+- paragraph: 对符合条件的 OEM/ODM 合作伙伴，可按项目评估 100Hz PPG 原始数据获取路径。
+- heading "是否承诺全部算法可在客户硬件离线独立运行？" [level=3]
+- paragraph: 否。许多健康指标通过 LONGVON 云端算法服务提供；端侧与云端分工按项目定义，不得理解为全部算法均可离线运行。
+- heading "是否提供无限制的通用蓝牙协议？" [level=3]
+- paragraph: 否。接口按项目文档提供；无限制蓝牙协议不是默认公开承诺。
+- heading "是否支持客户自有 App 集成？" [level=3]
+- paragraph: 支持。客户自有 App 通过 SDK/API 集成是可行合作模式，需在技术咨询中评估可行性与工作量。
+- heading "SDK、算法授权、技术支持与云服务如何区分？" [level=3]
+- paragraph: SDK 提供设备对接与数据通路；算法授权决定可使用的指标/模型范围；技术支持按约定窗口提供；云服务承载云端算法与数据接口，费用与开通范围按合作模式单独约定。
+- heading "100Hz PPG 原始数据是否代表连续实时 BLE 传输？" [level=3]
+- paragraph: 本页不承诺连续传输或固定延迟。100Hz 表示采样频率；符合条件的合作伙伴通过约定的 SDK 路径讨论接入，采样配置、传输与缓存行为须在技术 SOW 中确认。无限制 BLE 访问不是默认权益。
+- heading "应该使用哪种戒指型号、原始数据格式及 SDK 平台？" [level=3]
+- paragraph: 请在技术咨询中确认支持的戒指型号、硬件版本、SDK 平台、原始数据格式及交付范围。本页不发布通用型号/平台兼容清单或数据包规格。
+- heading "原始 PPG 能否替代 LONGVON 云端算法或用于确诊？" [level=3]
+- paragraph: 本页不作此类承诺。许多健康指标依赖 LONGVON 云端服务；原始数据接入与算法授权属于不同范围。Ring1C 不是医疗器械，原始信号接入也不构成诊断能力或临床验证证据。
+- heading "申请 PPG 原始数据技术咨询需准备什么？" [level=3]
+- paragraph: 请说明应用场景、目标 App 平台、原始信号要求及数据处理需求。通过需求沟通、保密约定与技术 SOW 确定支持的硬件、SDK/数据路径、权限和端云职责。SDK 按项目开通，不提供公开自助下载。
+- heading "洽谈智能戒指项目" [level=2]
+- paragraph: 与 LONGVON 洽谈 OEM、ODM 或定制智能戒指开发，适用于品牌方与医疗健康项目。
+- link "申请 OEM/ODM 咨询":
+  - /url: /partner/oem
+- link "合作中心":
+  - /url: /partner
+- heading "相关技术页面" [level=2]
+- list:
+  - link "龙汾科技 LONGVON":
+    - /url: /company/longvon
+  - link "智能戒指制造商":
+    - /url: /smart-ring-manufacturer
+  - link "智能戒指 OEM/ODM":
+    - /url: /smart-ring-oem-odm
+  - link "技术方案提供商":
+    - /url: /smart-ring-solution-provider
+  - link "医疗健康方案":
+    - /url: /smart-ring-healthcare-solutions
+  - link "技术能力":
+    - /url: /smart-ring-technology
+  - link "SDK / Cloud API":
+    - /url: /smart-ring-sdk-api
+  - link "OSA 技术与 OEM":
+    - /url: /osa-smart-ring-technology
+  - link "睡眠监测":
+    - /url: /smart-ring-sleep-monitoring
+  - link "呼吸健康":
+    - /url: /smart-ring-sleep-respiratory
+  - link "OSA 相关监测":
+    - /url: /smart-ring-osa
+  - link "MATEYOU Ring1C":
+    - /url: /products/ring1c
+  - link "关于龙汾科技":
+    - /url: /about
+- contentinfo:
+  - generic: LONGVON
+  - paragraph: LONGVON 是一家智能戒指技术制造商及 OEM/ODM 服务商，专注于智能戒指硬件、固件、移动 App、SDK、云端 API 及健康监测解决方案的定制开发与生产。MATEYOU 是其智能戒指产品品牌。公开口径：71 项健康监测参数，其中包含 22 项睡眠监测参数。
+  - paragraph:
+    - link "English":
+      - /url: /en/smart-ring-sdk-api
+  - generic: 健康服务
+  - list:
+    - link "健康评估":
+      - /url: /assessment
+    - link "睡眠风险自评":
+      - /url: /assessment
+    - link "OSA风险筛查":
+      - /url: /assessment
+    - link "健康知识库":
+      - /url: /knowledge
+    - link "产品介绍":
+      - /url: /products/ring1c
+  - generic: 合作
+  - list:
+    - link "医院合作":
+      - /url: /partner/hospital
+    - link "药房渠道":
+      - /url: /partner/pharmacy
+    - link "OEM代工":
+      - /url: /partner/oem
+    - link "区域代理":
+      - /url: /partner/distributor
+    - link "企业采购":
+      - /url: /partner/enterprise
+  - generic: 技术与合作
+  - list:
+    - link "龙汾科技 LONGVON":
+      - /url: /company/longvon
+    - link "智能戒指制造商":
+      - /url: /smart-ring-manufacturer
+    - link "智能戒指 OEM/ODM":
+      - /url: /smart-ring-oem-odm
+    - link "技术方案提供商":
+      - /url: /smart-ring-solution-provider
+    - link "医疗健康方案":
+      - /url: /smart-ring-healthcare-solutions
+    - link "智能戒指技术":
+      - /url: /smart-ring-technology
+    - link "SDK / Cloud API":
+      - /url: /smart-ring-sdk-api
+    - link "OSA 技术与 OEM":
+      - /url: /osa-smart-ring-technology
+    - link "睡眠监测技术":
+      - /url: /smart-ring-sleep-monitoring
+    - link "睡眠呼吸健康监测":
+      - /url: /smart-ring-sleep-respiratory
+    - link "OSA 相关监测":
+      - /url: /smart-ring-osa
+    - link "英文官网":
+      - /url: /en
+    - link "健康知识库":
+      - /url: /knowledge
+    - link "产品介绍":
+      - /url: /products/ring1c
+    - link "企业动态":
+      - /url: /news
+    - link "关于我们":
+      - /url: /about
+  - link "粤ICP备2022138739号-1":
+    - /url: https://beian.miit.gov.cn/
+  - generic: "|"
+  - link "粤ICP备2022138739号-4":
+    - /url: https://beian.miit.gov.cn/
+  - paragraph: www.longvon.com · www.mateyou.net
+  - generic: © 2026 LONGVON Technology (Shenzhen) Co., Ltd.
+  - generic: 本平台内容仅供健康参考，不构成医学诊断或治疗建议
+- button "Open Next.js Dev Tools":
+- alert

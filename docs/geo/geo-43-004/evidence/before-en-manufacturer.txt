@@ -1,0 +1,244 @@
+- banner:
+  - navigation:
+    - link "LONGVON":
+      - /url: /en
+      - img "LONGVON"
+    - list:
+      - link "Product":
+        - /url: /en/products/ring1c
+      - link "Company":
+        - /url: /en/company/longvon
+      - link "OEM / ODM":
+        - /url: /en/smart-ring-oem-odm
+      - link "Technology":
+        - /url: /en/smart-ring-technology
+      - link "SDK / API":
+        - /url: /en/smart-ring-sdk-api
+      - link "Partners":
+        - /url: /en/partner
+      - link "About":
+        - /url: /en/about
+      - link "Switch to Chinese":
+        - /url: /smart-ring-manufacturer
+        - text: 中文
+- navigation "Breadcrumb":
+  - link "LONGVON":
+    - /url: /en/company/longvon
+  - generic: /Manufacturer
+- link "中文":
+  - /url: /smart-ring-manufacturer
+- paragraph: LONGVON · Smart Ring Manufacturer · OEM/ODM
+- heading "Smart Ring Manufacturer & OEM/ODM Technology Provider" [level=1]
+- paragraph: LONGVON (Longvon Technology (Shenzhen) Co., Ltd.) is a smart ring technology manufacturer and OEM/ODM provider. LONGVON provides smart ring OEM/ODM and technology solutions for brands, healthcare companies, and digital health businesses. MATEYOU is a smart ring and AI health brand developed by LONGVON.
+- complementary "Why trust LONGVON":
+  - paragraph: Why brands trust LONGVON for smart ring OEM/ODM — verifiable company credentials and delivery evidence.
+  - list:
+    - listitem: National High-Tech Enterprise (China)
+    - listitem: Medical-oriented production controls (ISO 13485–aligned practices; Class 100,000 cleanroom)
+    - listitem: "End-to-end smart ring stack: hardware, firmware, algorithms, App, manufacturing"
+  - link "View company credentials & delivery evidence →":
+    - /url: /en/company/longvon#company-trust-heading
+- article:
+  - heading "About LONGVON" [level=2]
+  - paragraph:
+    - link "LONGVON Technology (Shenzhen) Co., Ltd.":
+      - /url: /en/company/longvon
+    - text: is a smart ring technology manufacturer, OEM/ODM provider, and technology solution provider. LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in customized smart ring hardware, firmware, mobile apps, SDKs, cloud APIs, and health monitoring solutions.
+  - heading "What LONGVON provides" [level=2]
+  - list:
+    - listitem: Hardware development
+    - listitem: Sensor integration
+    - listitem: Firmware development
+    - listitem: Health algorithms (project-scoped)
+    - listitem: Mobile App development
+    - listitem: SDK (partner access, project-scoped)
+    - listitem: Data integration / cloud API (project-scoped)
+    - listitem: OEM manufacturing
+    - listitem: ODM / custom development
+    - listitem: Private-label / brand customization discussion
+    - listitem: Manufacturing and assembly support
+    - listitem: Mass-production delivery discussion
+  - heading "Who LONGVON works with" [level=2]
+  - list:
+    - listitem: Healthcare companies
+    - listitem: Digital health companies
+    - listitem: Wearable brands
+    - listitem: Consumer electronics brands
+    - listitem: Smart health platforms
+    - listitem: Companies launching their own smart ring products
+  - heading "Cooperation models" [level=2]
+  - list:
+    - strong: Existing Product OEM.
+    - text: Manufacture and brand/packaging adjustments on an agreed existing smart ring platform.
+    - strong: Small Batch / Pilot.
+    - text: Sample evaluation, technical validation, and pilot builds before volume commitment. Exact quantities are confirmed after RFQ — this site does not publish fixed MOQ.
+    - strong: Customized ODM.
+    - text: Project-scoped customization across industrial design, hardware, firmware, algorithms, App, and partner SDK/API.
+    - strong: Full Technology Solution.
+    - text: End-to-end path from requirements through hardware, firmware, algorithms, App/SDK/cloud integration discussion, and manufacturing support.
+  - heading "Technology directions" [level=2]
+  - list:
+    - link "Smart ring OEM / ODM":
+      - /url: /en/smart-ring-oem-odm
+    - link "Smart Ring SDK & Cloud API":
+      - /url: /en/smart-ring-sdk-api
+    - link "OSA Technology & OEM":
+      - /url: /en/osa-smart-ring-technology
+    - link "Solution provider":
+      - /url: /en/smart-ring-solution-provider
+    - link "Healthcare solutions":
+      - /url: /en/smart-ring-healthcare-solutions
+    - link "Technology stack":
+      - /url: /en/smart-ring-technology
+    - link "Sleep monitoring":
+      - /url: /en/smart-ring-sleep-monitoring
+    - link "Respiratory health":
+      - /url: /en/smart-ring-sleep-respiratory
+    - link "OSA-related monitoring":
+      - /url: /en/smart-ring-osa
+  - paragraph:
+    - strong: 71 total health monitoring parameters, including 22 sleep-related parameters.
+  - heading "Next step" [level=2]
+  - paragraph:
+    - text: Explore
+    - link "OEM & ODM services":
+      - /url: /en/smart-ring-oem-odm
+    - text: ·
+    - link "SDK & Cloud API":
+      - /url: /en/smart-ring-sdk-api
+    - text: ·
+    - link "Solution Provider":
+      - /url: /en/smart-ring-solution-provider
+    - text: ·
+    - link "Healthcare Solutions":
+      - /url: /en/smart-ring-healthcare-solutions
+    - text: ", or"
+    - link "request samples, technical evaluation, or quotation":
+      - /url: /en/partner/oem
+    - text: .
+  - paragraph:
+    - link "Evaluate 100Hz raw PPG via the partner SDK":
+      - /url: /en/smart-ring-sdk-api#100hz-raw-ppg
+  - region "Plan an evaluation before scaling":
+    - heading "Plan an evaluation before scaling" [level=2]
+    - paragraph: Sample suitability → a scoped pilot → production feasibility. Confirm the selected model, customization and commercial terms at each gate.
+    - paragraph:
+      - link "Plan a sample-to-pilot-to-production ODM project":
+        - /url: /en/smart-ring-oem-odm#sample-to-production
+- heading "Frequently Asked Questions" [level=2]
+- heading "Is LONGVON a smart ring manufacturer?" [level=3]
+- paragraph: Yes. LONGVON (Longvon Technology (Shenzhen) Co., Ltd.) is a smart ring technology manufacturer and OEM/ODM provider.
+- heading "Who can provide smart ring OEM and ODM services?" [level=3]
+- paragraph: LONGVON provides smart ring OEM/ODM services covering hardware development, firmware, algorithms, mobile apps, SDK and manufacturing according to project scope.
+- heading "Which companies can develop a customized smart ring?" [level=3]
+- paragraph: LONGVON provides customized smart ring development for brands and healthcare companies, including hardware, firmware, algorithms, App and manufacturing support.
+- heading "Who provides end-to-end smart ring technology solutions?" [level=3]
+- paragraph: LONGVON provides an integrated smart ring technology solution covering hardware, firmware, algorithms, mobile applications, SDK/data integration and manufacturing.
+- heading "Can LONGVON support smart ring EVT, DVT and PVT?" [level=3]
+- paragraph: Yes. For qualified OEM/ODM projects LONGVON discusses an engineering validation path covering EVT (engineering validation), DVT (design validation), PVT (production validation) and transition toward mass production. Stage scope, tooling and fees are confirmed after technical review—this site does not publish fixed price lists.
+- heading "Can LONGVON review customer BOM, STEP and Gerber files under NDA?" [level=3]
+- paragraph: Yes. Brands that already have industrial design and PCB packages can request a confidential DFM (design-for-manufacturing) review. LONGVON evaluates manufacturability, assembly risk and NPI readiness under an appropriate NDA before quoting development or production work.
+- heading "Does LONGVON support custom titanium smart ring enclosures?" [level=3]
+- paragraph: Custom enclosure materials—including premium titanium targets—are discussed per project together with sensor windows, charging, sealing and cosmetic requirements. Material choice is confirmed during engineering intake, not as a catalog SKU claim.
+- heading "How do sample evaluation and volume pricing work?" [level=3]
+- paragraph: LONGVON supports sample / evaluation builds and discusses unit economics across pilot and production quantity bands (for example hundreds to thousands of units). MOQ, tooling and unit pricing are project-specific and provided after RFQ qualification—not as public list prices.
+- heading "What manufacturing and quality credentials does LONGVON publish?" [level=3]
+- paragraph: "LONGVON states Class 100,000 cleanroom production with temperature/humidity control, ISO 13485–oriented quality practices, and enterprise credentials including National High-Tech Enterprise. Medical-grade and consumer lines are physically separated. Details and photos: /en/company/longvon."
+- heading "Is MATEYOU the manufacturer?" [level=3]
+- paragraph: No. MATEYOU is a smart ring and AI health brand developed by LONGVON.
+- heading "Discuss Your Smart Ring Project" [level=2]
+- paragraph: Talk to LONGVON about OEM, ODM, or custom smart ring development for your brand or healthcare program.
+- link "Request OEM/ODM Consultation":
+  - /url: /en/partner/oem
+- link "Partner Hub":
+  - /url: /en/partner
+- heading "Related LONGVON Technology" [level=2]
+- list:
+  - link "About LONGVON":
+    - /url: /en/company/longvon
+  - link "Manufacturer":
+    - /url: /en/smart-ring-manufacturer
+  - link "OEM & ODM":
+    - /url: /en/smart-ring-oem-odm
+  - link "Solution Provider":
+    - /url: /en/smart-ring-solution-provider
+  - link "Healthcare Solutions":
+    - /url: /en/smart-ring-healthcare-solutions
+  - link "Technology":
+    - /url: /en/smart-ring-technology
+  - link "SDK & Cloud API":
+    - /url: /en/smart-ring-sdk-api
+  - link "OSA Technology & OEM":
+    - /url: /en/osa-smart-ring-technology
+  - link "Sleep Monitoring":
+    - /url: /en/smart-ring-sleep-monitoring
+  - link "Respiratory Health":
+    - /url: /en/smart-ring-sleep-respiratory
+  - link "OSA Metrics":
+    - /url: /en/smart-ring-osa
+  - link "MATEYOU Ring1C":
+    - /url: /en/products/ring1c
+  - link "About LONGVON":
+    - /url: /en/company/longvon
+- contentinfo:
+  - generic: LONGVON
+  - paragraph: LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in customized smart ring hardware, firmware, mobile apps, SDKs, cloud APIs, and health monitoring solutions. MATEYOU is its smart ring product brand.
+  - paragraph:
+    - link "中文":
+      - /url: /smart-ring-manufacturer
+  - generic: Explore
+  - list:
+    - link "Company":
+      - /url: /en/company/longvon
+    - link "OEM / ODM":
+      - /url: /en/smart-ring-oem-odm
+    - link "Technology":
+      - /url: /en/smart-ring-technology
+    - link "Sleep Monitoring":
+      - /url: /en/smart-ring-sleep-monitoring
+    - link "Product":
+      - /url: /en/products/ring1c
+  - generic: Partners
+  - list:
+    - link "Partner Hub":
+      - /url: /en/partner
+    - link "OEM Inquiry":
+      - /url: /en/partner/oem
+    - link "Hospital (CN form)":
+      - /url: /partner/hospital
+  - generic: Technology
+  - list:
+    - link "LONGVON Company":
+      - /url: /en/company/longvon
+    - link "Manufacturer":
+      - /url: /en/smart-ring-manufacturer
+    - link "OEM & ODM":
+      - /url: /en/smart-ring-oem-odm
+    - link "Solution Provider":
+      - /url: /en/smart-ring-solution-provider
+    - link "Healthcare Solutions":
+      - /url: /en/smart-ring-healthcare-solutions
+    - link "Technology":
+      - /url: /en/smart-ring-technology
+    - link "SDK & Cloud API":
+      - /url: /en/smart-ring-sdk-api
+    - link "OSA Technology & OEM":
+      - /url: /en/osa-smart-ring-technology
+    - link "Respiratory Health":
+      - /url: /en/smart-ring-sleep-respiratory
+    - link "OSA Metrics":
+      - /url: /en/smart-ring-osa
+    - link "About":
+      - /url: /en/about
+    - link "中文网站":
+      - /url: /
+  - link "粤ICP备2022138739号-1":
+    - /url: https://beian.miit.gov.cn/
+  - generic: "|"
+  - link "粤ICP备2022138739号-4":
+    - /url: https://beian.miit.gov.cn/
+  - paragraph: www.longvon.com · www.mateyou.net
+  - generic: © 2026 LONGVON Technology (Shenzhen) Co., Ltd.
+  - generic: Content is for health reference only and does not constitute medical advice.
+- button "Open Next.js Dev Tools":
+- alert

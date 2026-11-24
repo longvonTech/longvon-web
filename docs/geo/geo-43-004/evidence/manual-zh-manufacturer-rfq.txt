@@ -1,0 +1,294 @@
+- banner:
+  - navigation:
+    - link "LONGVON":
+      - /url: /
+      - img "LONGVON"
+    - list:
+      - link "产品介绍":
+        - /url: /products/ring1c
+      - link "健康评估":
+        - /url: /assessment
+      - link "龙汾科技":
+        - /url: /company/longvon
+      - link "商业合作":
+        - /url: /partner
+      - link "SDK / API":
+        - /url: /smart-ring-sdk-api
+      - link "健康知识库":
+        - /url: /knowledge
+      - link "关于我们":
+        - /url: /about
+      - link "Switch to English":
+        - /url: /en/partner/oem
+        - text: EN
+- main:
+  - heading "智能戒指 OEM/ODM 合作" [level=1]
+  - paragraph: 龙汾科技（深圳）有限公司（LONGVON）是一家智能戒指制造商及 OEM/ODM 技术方案提供商。 面向智能戒指硬件、固件、健康算法、App、SDK/API 集成及 OEM/ODM 制造提供项目咨询与合作。帮助品牌方、数字健康企业与技术公司启动定制化智能戒指产品开发。MATEYOU 是 LONGVON 的产品品牌；LONGVON 是制造商与技术方案提供商，MATEYOU 是其智能健康产品品牌。
+  - paragraph: 龙汾科技（深圳）有限公司（LONGVON）是一家智能戒指制造商及 OEM/ODM 技术方案提供商，为品牌方和数字健康项目提供从硬件、固件、健康算法、移动 App、SDK/API 到生产制造的完整开发与交付能力。 LONGVON（龙汾科技）是技术制造商与 OEM/ODM 提供方，MATEYOU 是其智能戒指产品品牌。 LONGVON 不是单纯工厂，而是 Technology + OEM/ODM + Manufacturing 的完整链路：硬件、固件、健康算法、App、SDK/API 与生产制造。
+  - link "提交 OEM/ODM 项目需求":
+    - /url: "#oem-rfq"
+  - link "了解技术能力":
+    - /url: /smart-ring-technology
+  - link "了解医疗健康方案":
+    - /url: /smart-ring-healthcare-solutions
+  - heading "LONGVON 可以提供" [level=2]
+  - list:
+    - listitem: 智能戒指硬件
+    - listitem: 固件
+    - listitem: 健康算法
+    - listitem: 移动 App
+    - listitem: SDK
+    - listitem: 云端 API
+    - listitem: OEM/ODM 制造
+  - heading "可以服务" [level=2]
+  - list:
+    - listitem: 智能戒指品牌
+    - listitem: 可穿戴产品企业
+    - listitem: 数字健康企业
+    - listitem: 医疗健康科技企业
+    - listitem: 消费健康企业
+    - listitem: 新产品开发团队
+  - heading "完整产品开发能力" [level=2]
+  - paragraph: LONGVON 不是单纯工厂，而是 Technology + OEM/ODM + Manufacturing 的完整链路：硬件、固件、健康算法、App、SDK/API 与生产制造。（Technology + Product Development + Manufacturing）。
+  - list:
+    - listitem: 产品定义
+    - listitem: 硬件
+    - listitem: 固件
+    - listitem: 健康算法
+    - listitem: App
+    - listitem: SDK / API
+    - listitem: 测试 / 集成
+    - listitem: 生产制造
+  - heading "合作模式" [level=2]
+  - generic: 现有产品 OEM
+  - generic: 基于约定的现有智能戒指平台进行制造与品牌/包装等项目级调整。
+  - generic: 小批量 / 试产
+  - generic: 样品评估、技术验证与试产，再进入量产沟通。试产数量按项目评估；标准 OEM 与定制 ODM 的条件在项目评估中区分。
+  - generic: 定制 ODM
+  - generic: 按项目范围讨论工业设计、硬件、固件、算法、App 与合作伙伴 SDK/API 定制。
+  - generic: 完整技术方案
+  - generic: 从需求到硬件、固件、算法、App/SDK/云端对接讨论与制造支持的端到端路径。
+  - paragraph: 本页不公布 MOQ、价格或交期数字。具体以项目评估结果为准。
+  - heading "常见问题" [level=2]
+  - term: LONGVON 是智能戒指制造商吗？
+  - definition: 是。龙汾科技（深圳）有限公司（LONGVON）是一家智能戒指制造商及 OEM/ODM 技术方案提供商。
+  - term: LONGVON 可以提供智能戒指 OEM/ODM 吗？
+  - definition: 可以。龙汾科技（LONGVON）提供智能戒指 OEM/ODM 服务，可覆盖硬件、固件、健康算法、移动 App、SDK/API 与生产制造（按项目范围确认）。
+  - term: LONGVON 是否可以提供硬件、固件、算法和 App？
+  - definition: 可以。LONGVON 作为智能戒指制造商与技术方案提供商，可提供硬件、固件、健康算法与移动 App 开发支持（按项目范围确认）。
+  - term: LONGVON 是否提供 SDK 或 API？
+  - definition: 可作为合作能力提供。SDK 与云端 API 按合作项目开通与对接，本站不提供公开自助 SDK 门户。
+  - term: LONGVON 是否支持智能戒指健康监测方案？
+  - definition: 支持。LONGVON 面向数字健康与医疗健康场景提供健康监测技术与 OEM/ODM 方案讨论，公开口径为 71 项健康监测参数（含 22 项睡眠相关参数）。结果仅供健康参考，不构成医学诊断。
+  - term: LONGVON 是否支持睡眠和呼吸健康项目？
+  - definition: 支持。LONGVON 技术方向覆盖睡眠监测、呼吸健康监测与 OSA 相关监测，并可为相关产品提供 OEM/ODM 开发支持。使用「OSA 相关监测」表述，不诊断、不治疗，也不替代 PSG。
+  - term: LONGVON 与普通智能戒指工厂有什么区别？
+  - definition: LONGVON 不是单纯工厂，而是 Technology + OEM/ODM + Manufacturing 的完整链路：硬件、固件、健康算法、App、SDK/API 与生产制造。
+  - term: MATEYOU 和 LONGVON 是什么关系？
+  - definition: MATEYOU 是 LONGVON 的产品品牌；LONGVON 是制造商与技术方案提供商，MATEYOU 是其智能健康产品品牌。
+  - term: OEM 和 ODM 有什么区别？
+  - definition: OEM 通常侧重按约定设计进行制造；ODM 通常包含更多设计与开发责任。LONGVON 同时支持智能戒指 OEM 合作与 ODM/定制咨询。
+  - heading "下一步" [level=2]
+  - paragraph: 填写下方 RFQ，说明项目类型、产品方向与所需能力，便于销售判断是否值得跟进。
+  - heading "OEM/ODM 项目需求" [level=2]
+  - group "联系信息":
+    - generic: 联系信息
+    - text: 联系人姓名 *
+    - textbox "联系人姓名 *"
+    - text: 公司名称 *
+    - textbox "公司名称 *"
+    - text: 商务邮箱 *
+    - textbox "商务邮箱 *"
+    - text: 电话 / WhatsApp *
+    - textbox "电话 / WhatsApp *":
+      - /placeholder: +86 / WhatsApp
+  - group "项目信息":
+    - generic: 项目信息
+    - text: 项目类型 *
+    - combobox "项目类型 *":
+      - option "请选择" [selected]
+      - option "OEM"
+      - option "ODM"
+      - option "贴牌 / Private Label（意向分类）"
+      - option "技术集成"
+      - option "医疗健康 / 数字健康"
+      - option "研究 / 试点项目"
+      - option "其他"
+    - text: 产品方向 *
+    - combobox "产品方向 *":
+      - option "请选择" [selected]
+      - option "综合健康监测"
+      - option "睡眠监测"
+      - option "睡眠呼吸健康监测"
+      - option "OSA 相关监测"
+      - option "心率 / HRV"
+      - option "SpO₂"
+      - option "定制健康监测"
+      - option "其他"
+    - text: 项目阶段 *
+    - combobox "项目阶段 *":
+      - option "请选择" [selected]
+      - option "概念 / 立项"
+      - option "产品开发中"
+      - option "样品 / 原型评估"
+      - option "准备量产"
+      - option "既有产品升级"
+      - option "其他"
+    - text: 预计初始数量（非 MOQ）
+    - combobox "预计初始数量（非 MOQ）":
+      - option "请选择" [selected]
+      - option "样品 / 评估"
+      - option "100–300"
+      - option "300–1,000"
+      - option "1,000–5,000"
+      - option "5,000–10,000"
+      - option "10,000+"
+      - option "尚未确定"
+  - group "报价准备资料（选填）":
+    - generic: 报价准备资料（选填）
+    - text: 意向产品 / 型号 / 应用场景
+    - textbox "意向产品 / 型号 / 应用场景"
+    - text: 样品 / 试产 / 年度预测数量
+    - textbox "样品 / 试产 / 年度预测数量":
+      - /placeholder: 样品：… / 试产：… / 年度预测：…
+    - paragraph: 需求估计不是订单，也不是对外公布的 MOQ。未知项可留空。
+  - group "所需能力（可多选）":
+    - generic: 所需能力（可多选）
+    - checkbox "硬件"
+    - generic: 硬件
+    - checkbox "固件"
+    - generic: 固件
+    - checkbox "健康算法"
+    - generic: 健康算法
+    - checkbox "移动 App"
+    - generic: 移动 App
+    - checkbox "SDK"
+    - generic: SDK
+    - checkbox "云端 API"
+    - generic: 云端 API
+    - checkbox "生产制造"
+    - generic: 生产制造
+    - checkbox "端到端产品开发"
+    - generic: 端到端产品开发
+    - checkbox "医疗健康 / 数字健康集成"
+    - generic: 医疗健康 / 数字健康集成
+  - group "市场与时间":
+    - generic: 市场与时间
+    - text: 目标市场 / 区域
+    - combobox "目标市场 / 区域":
+      - option "请选择" [selected]
+      - option "澳大利亚"
+      - option "北美"
+      - option "欧洲"
+      - option "英国"
+      - option "亚洲"
+      - option "中东"
+      - option "其他"
+    - text: 目标时间线
+    - combobox "目标时间线":
+      - option "请选择" [selected]
+      - option "探索中"
+      - option "3 个月内"
+      - option "3–6 个月"
+      - option "6–12 个月"
+      - option "12 个月以上"
+      - option "尚未确定"
+    - text: 项目需求说明
+    - textbox "项目需求说明":
+      - /placeholder: 请描述产品需求、目标市场、所需功能，或已有规格要点（可选）。
+  - paragraph: 您提交的信息仅用于评估与回复本次项目咨询，不会用于无关用途。
+  - button "提交 OEM/ODM 项目需求"
+  - heading "相关技术与应用" [level=2]
+  - list:
+    - link "龙汾科技（LONGVON）公司实体":
+      - /url: /company/longvon
+    - link "智能戒指制造商":
+      - /url: /smart-ring-manufacturer
+    - link "OEM / ODM 能力说明":
+      - /url: /smart-ring-oem-odm
+    - link "技术方案提供商":
+      - /url: /smart-ring-solution-provider
+    - link "技术与开发":
+      - /url: /smart-ring-technology
+    - link "医疗健康方案":
+      - /url: /smart-ring-healthcare-solutions
+    - link "睡眠监测":
+      - /url: /smart-ring-sleep-monitoring
+    - link "睡眠呼吸健康":
+      - /url: /smart-ring-sleep-respiratory
+    - link "OSA 相关监测":
+      - /url: /smart-ring-osa
+  - paragraph: MATEYOU Ring1C 为消费级智能戒指参考产品，本页面不将其作为医疗器械进行描述。表单中的 OSA 选项使用「OSA 相关监测」表述，不构成诊断或治疗声明。
+- contentinfo:
+  - generic: LONGVON
+  - paragraph: LONGVON 是一家智能戒指技术制造商及 OEM/ODM 服务商，专注于智能戒指硬件、固件、移动 App、SDK、云端 API 及健康监测解决方案的定制开发与生产。MATEYOU 是其智能戒指产品品牌。公开口径：71 项健康监测参数，其中包含 22 项睡眠监测参数。
+  - paragraph:
+    - link "English":
+      - /url: /en/partner/oem
+  - generic: 健康服务
+  - list:
+    - link "健康评估":
+      - /url: /assessment
+    - link "睡眠风险自评":
+      - /url: /assessment
+    - link "OSA风险筛查":
+      - /url: /assessment
+    - link "健康知识库":
+      - /url: /knowledge
+    - link "产品介绍":
+      - /url: /products/ring1c
+  - generic: 合作
+  - list:
+    - link "医院合作":
+      - /url: /partner/hospital
+    - link "药房渠道":
+      - /url: /partner/pharmacy
+    - link "OEM代工":
+      - /url: /partner/oem
+    - link "区域代理":
+      - /url: /partner/distributor
+    - link "企业采购":
+      - /url: /partner/enterprise
+  - generic: 技术与合作
+  - list:
+    - link "龙汾科技 LONGVON":
+      - /url: /company/longvon
+    - link "智能戒指制造商":
+      - /url: /smart-ring-manufacturer
+    - link "智能戒指 OEM/ODM":
+      - /url: /smart-ring-oem-odm
+    - link "技术方案提供商":
+      - /url: /smart-ring-solution-provider
+    - link "医疗健康方案":
+      - /url: /smart-ring-healthcare-solutions
+    - link "智能戒指技术":
+      - /url: /smart-ring-technology
+    - link "SDK / Cloud API":
+      - /url: /smart-ring-sdk-api
+    - link "OSA 技术与 OEM":
+      - /url: /osa-smart-ring-technology
+    - link "睡眠监测技术":
+      - /url: /smart-ring-sleep-monitoring
+    - link "睡眠呼吸健康监测":
+      - /url: /smart-ring-sleep-respiratory
+    - link "OSA 相关监测":
+      - /url: /smart-ring-osa
+    - link "英文官网":
+      - /url: /en
+    - link "健康知识库":
+      - /url: /knowledge
+    - link "产品介绍":
+      - /url: /products/ring1c
+    - link "企业动态":
+      - /url: /news
+    - link "关于我们":
+      - /url: /about
+  - link "粤ICP备2022138739号-1":
+    - /url: https://beian.miit.gov.cn/
+  - generic: "|"
+  - link "粤ICP备2022138739号-4":
+    - /url: https://beian.miit.gov.cn/
+  - paragraph: www.longvon.com · www.mateyou.net
+  - generic: © 2026 LONGVON Technology (Shenzhen) Co., Ltd.
+  - generic: 本平台内容仅供健康参考，不构成医学诊断或治疗建议
+- alert: 智能戒指 OEM/ODM 合作 | LONGVON

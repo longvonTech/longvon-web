@@ -1,0 +1,189 @@
+- banner:
+  - navigation:
+    - link "LONGVON":
+      - /url: /en
+      - img "LONGVON"
+    - list:
+      - link "Product":
+        - /url: /en/products/ring1c
+      - link "Company":
+        - /url: /en/company/longvon
+      - link "OEM / ODM":
+        - /url: /en/smart-ring-oem-odm
+      - link "Technology":
+        - /url: /en/smart-ring-technology
+      - link "SDK / API":
+        - /url: /en/smart-ring-sdk-api
+      - link "Partners":
+        - /url: /en/partner
+      - link "About":
+        - /url: /en/about
+      - link "Switch to Chinese":
+        - /url: /smart-ring-manufacturer
+        - text: 中文
+- navigation "Breadcrumb":
+  - link "LONGVON":
+    - /url: /en/company/longvon
+  - generic: /Manufacturer
+- link "中文":
+  - /url: /smart-ring-manufacturer
+- paragraph: LONGVON · Smart Ring Manufacturer · OEM/ODM
+- heading "Smart Ring Manufacturer in Shenzhen, China" [level=1]
+- paragraph: LONGVON develops and manufactures smart rings for brands and digital-health projects. Define your existing-platform OEM or custom ODM scope across hardware, firmware, health algorithms, App, SDK/API and manufacturing.
+- link "Discuss your OEM/ODM project":
+  - /url: /en/partner/oem?keyword=odm-sample-evaluation
+- link "Evaluate 100Hz raw PPG via the partner SDK":
+  - /url: /en/smart-ring-sdk-api#100hz-raw-ppg
+- complementary "Why trust LONGVON":
+  - paragraph: Why brands trust LONGVON for smart ring OEM/ODM — verifiable company credentials and delivery evidence.
+  - list:
+    - listitem: National High-Tech Enterprise (China)
+    - listitem: Medical-oriented production controls (ISO 13485–aligned practices; Class 100,000 cleanroom)
+    - listitem: "End-to-end smart ring stack: hardware, firmware, algorithms, App, manufacturing"
+  - link "View company credentials & delivery evidence →":
+    - /url: /en/company/longvon#company-trust-heading
+- article:
+  - region "Choose an existing platform or a custom development scope":
+    - heading "Choose an existing platform or a custom development scope" [level=2]
+    - heading "Existing-platform standard OEM" [level=3]
+    - paragraph: Discuss Ring1 or Ring1C platform suitability, the selected hardware configuration, branding and packaging.
+    - heading "Custom ODM development" [level=3]
+    - paragraph: Discuss industrial design, hardware, firmware, algorithms and App/integration changes. Engineering scope, quantities, deliverables and commercial terms are evaluated separately.
+    - paragraph: For standard OEM orders using the existing Ring1 or Ring1C platform, the minimum order quantity (MOQ) is 1,000 units. Product configuration, pricing and other commercial terms are confirmed for each project. Custom ODM projects have separately evaluated quantities and terms. Pilot feasibility is discussed case by case; inquiry-form quantity ranges reflect buyer estimates, not manufacturing offers.
+  - region "Define responsibilities across the smart ring stack":
+    - heading "Define responsibilities across the smart ring stack" [level=2]
+    - term: Hardware & sensors
+    - definition: Hardware development and sensor integration for the agreed ring configuration.
+    - term: Firmware
+    - definition: Project-scoped firmware development and device connectivity.
+    - term: Health algorithms
+    - definition: Agree authorized outputs and the split between device and cloud services.
+    - term: Customer App
+    - definition: Mobile App development or integration with your customer-owned App.
+    - term: Partner SDK
+    - definition: Agreed device connectivity and data pathways; access is project-scoped.
+    - term: Cloud API
+    - definition: Plan authorized data and algorithm-service integration.
+    - term: Manufacturing
+    - definition: Manufacturing and assembly support, with validation and production scope agreed for the project.
+  - region "Bring a project brief to the first discussion":
+    - heading "Bring a project brief to the first discussion" [level=2]
+    - paragraph: Share your target market, model or intended use, required functions, App/data integration, sample needs, forecast quantity and target timing. Unknown items can be discussed. A forecast or sample request is not an accepted order or payment.
+    - link "Discuss your OEM/ODM project":
+      - /url: /en/partner/oem?keyword=odm-sample-evaluation
+  - region "Plan an evaluation before scaling":
+    - heading "Plan an evaluation before scaling" [level=2]
+    - paragraph: Sample suitability → a scoped pilot → production feasibility. Confirm the selected model, customization and commercial terms at each gate.
+    - paragraph:
+      - link "Plan a sample-to-pilot-to-production ODM project":
+        - /url: /en/smart-ring-oem-odm#sample-to-production
+  - heading "Explore the technical and commercial paths" [level=2]
+  - list:
+    - link "Company and manufacturer identity":
+      - /url: /en/company/longvon
+    - link "OEM/ODM evaluation and production planning":
+      - /url: /en/smart-ring-oem-odm
+    - link "100Hz raw PPG, SDK and Cloud API evaluation":
+      - /url: /en/smart-ring-sdk-api#100hz-raw-ppg
+- heading "Frequently Asked Questions" [level=2]
+- heading "Where is LONGVON based, and who is the manufacturer?" [level=3]
+- paragraph: LONGVON Technology (Shenzhen) Co., Ltd. is the smart ring manufacturer and OEM/ODM technology provider in Shenzhen, China. MATEYOU is its product brand.
+- heading "Which MOQ applies to standard OEM and custom ODM?" [level=3]
+- paragraph: For standard OEM orders using the existing Ring1 or Ring1C platform, the minimum order quantity (MOQ) is 1,000 units. Product configuration, pricing and other commercial terms are confirmed for each project. Custom ODM projects have separately evaluated quantities and terms. Pilot feasibility is discussed case by case; inquiry-form quantity ranges reflect buyer estimates, not manufacturing offers.
+- heading "Can we scope hardware, firmware, algorithms, App and data integration together?" [level=3]
+- paragraph: Yes. Discuss the required hardware, firmware, health algorithms, App, partner SDK/API and manufacturing responsibilities. Deliverables, permissions and commercial terms are agreed per project; there is no default unrestricted BLE or all-offline algorithm entitlement.
+- heading "Discuss Your Smart Ring Project" [level=2]
+- paragraph: Talk to LONGVON about OEM, ODM, or custom smart ring development for your brand or healthcare program.
+- link "Request OEM/ODM Consultation":
+  - /url: /en/partner/oem
+- link "Partner Hub":
+  - /url: /en/partner
+- heading "Related LONGVON Technology" [level=2]
+- list:
+  - link "About LONGVON":
+    - /url: /en/company/longvon
+  - link "Manufacturer":
+    - /url: /en/smart-ring-manufacturer
+  - link "OEM & ODM":
+    - /url: /en/smart-ring-oem-odm
+  - link "Solution Provider":
+    - /url: /en/smart-ring-solution-provider
+  - link "Healthcare Solutions":
+    - /url: /en/smart-ring-healthcare-solutions
+  - link "Technology":
+    - /url: /en/smart-ring-technology
+  - link "SDK & Cloud API":
+    - /url: /en/smart-ring-sdk-api
+  - link "OSA Technology & OEM":
+    - /url: /en/osa-smart-ring-technology
+  - link "Sleep Monitoring":
+    - /url: /en/smart-ring-sleep-monitoring
+  - link "Respiratory Health":
+    - /url: /en/smart-ring-sleep-respiratory
+  - link "OSA Metrics":
+    - /url: /en/smart-ring-osa
+  - link "MATEYOU Ring1C":
+    - /url: /en/products/ring1c
+  - link "About LONGVON":
+    - /url: /en/company/longvon
+- contentinfo:
+  - generic: LONGVON
+  - paragraph: LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in customized smart ring hardware, firmware, mobile apps, SDKs, cloud APIs, and health monitoring solutions. MATEYOU is its smart ring product brand.
+  - paragraph:
+    - link "中文":
+      - /url: /smart-ring-manufacturer
+  - generic: Explore
+  - list:
+    - link "Company":
+      - /url: /en/company/longvon
+    - link "OEM / ODM":
+      - /url: /en/smart-ring-oem-odm
+    - link "Technology":
+      - /url: /en/smart-ring-technology
+    - link "Sleep Monitoring":
+      - /url: /en/smart-ring-sleep-monitoring
+    - link "Product":
+      - /url: /en/products/ring1c
+  - generic: Partners
+  - list:
+    - link "Partner Hub":
+      - /url: /en/partner
+    - link "OEM Inquiry":
+      - /url: /en/partner/oem
+    - link "Hospital (CN form)":
+      - /url: /partner/hospital
+  - generic: Technology
+  - list:
+    - link "LONGVON Company":
+      - /url: /en/company/longvon
+    - link "Manufacturer":
+      - /url: /en/smart-ring-manufacturer
+    - link "OEM & ODM":
+      - /url: /en/smart-ring-oem-odm
+    - link "Solution Provider":
+      - /url: /en/smart-ring-solution-provider
+    - link "Healthcare Solutions":
+      - /url: /en/smart-ring-healthcare-solutions
+    - link "Technology":
+      - /url: /en/smart-ring-technology
+    - link "SDK & Cloud API":
+      - /url: /en/smart-ring-sdk-api
+    - link "OSA Technology & OEM":
+      - /url: /en/osa-smart-ring-technology
+    - link "Respiratory Health":
+      - /url: /en/smart-ring-sleep-respiratory
+    - link "OSA Metrics":
+      - /url: /en/smart-ring-osa
+    - link "About":
+      - /url: /en/about
+    - link "中文网站":
+      - /url: /
+  - link "粤ICP备2022138739号-1":
+    - /url: https://beian.miit.gov.cn/
+  - generic: "|"
+  - link "粤ICP备2022138739号-4":
+    - /url: https://beian.miit.gov.cn/
+  - paragraph: www.longvon.com · www.mateyou.net
+  - generic: © 2026 LONGVON Technology (Shenzhen) Co., Ltd.
+  - generic: Content is for health reference only and does not constitute medical advice.
+- alert

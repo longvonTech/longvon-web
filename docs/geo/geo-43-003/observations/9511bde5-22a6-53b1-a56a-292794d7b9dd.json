@@ -1,0 +1,72 @@
+{
+  "record_id": "9511bde5-22a6-53b1-a56a-292794d7b9dd",
+  "query_id": "Q11",
+  "query": "digital health smart ring integration SDK",
+  "platform": "Google",
+  "mode": "ALL_FIRST_PAGE_AUTO_AI_OVERVIEW",
+  "observed_at": "2026-11-24T13:28:11.322Z",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "Chrome existing signed-in profile; hl=en; personalized results; country UNKNOWN; PR27 bounded AI receipt detector; collapsed overview scope",
+  "availability": "COMPLETED",
+  "longvon_present": false,
+  "organic_rank": null,
+  "ai_body_recommended": false,
+  "source_cited": false,
+  "cited_urls": [
+    "https://tryrook.io/",
+    "https://www.jointcorp.com/smart-ring-and-fitness-band-sdk-api-a-developers-guide/",
+    "https://www.spikeapi.com/blog/spike-api-now-offers-direct-integration-with-luna-smart-ring",
+    "https://github.com/topics/smart-ring",
+    "https://www.realmcu.com/en/Applications/Smart-Ring",
+    "https://appinventiv.com/blog/smart-ring-app-development/"
+  ],
+  "competitors": [
+    {
+      "name": "J-Style / Jointcorp",
+      "url": "https://www.jointcorp.com/smart-ring-and-fitness-band-sdk-api-a-developers-guide/",
+      "position": "web-result h3 #1",
+      "evidence_quote": "https://www.jointcorp.com/smart-ring-and-fitness-band-sdk-api-a-developers-guide/"
+    },
+    {
+      "name": "Geyan",
+      "url": "https://www.gysmartwatch.com/html/smart-ring-oem-sdk-api.html",
+      "position": "web-result h3 #2",
+      "evidence_quote": "- link \"Smart Ring OEM Manufacturer with SDK & API Integration Geyan Technology https://www.gysmartwatch.com › html › smart-ring-oem-...\":"
+    },
+    {
+      "name": "Appinventiv",
+      "url": "https://appinventiv.com/blog/smart-ring-app-development/",
+      "position": "web-result h3 #4",
+      "evidence_quote": "- link \"Smart Ring OEM Manufacturer with SDK & API Integration Geyan Technology https://www.gysmartwatch.com › html › smart-ring-oem-...\":"
+    },
+    {
+      "name": "STAR KING / Pineeon (as displayed)",
+      "url": "https://starkingsmartring.com/smart-ring-integration-system-integrators-guide/",
+      "position": "web-result h3 #6",
+      "evidence_quote": "- link \"digital\":"
+    },
+    {
+      "name": "Kanopy Labs",
+      "url": "https://kanopylabs.com/blog/how-to-build-a-smart-ring-health-data-app",
+      "position": "web-result h3 #8",
+      "evidence_quote": "- link \"How to Build a Smart Ring Health Data Integration App in ... Kanopy Labs https://kanopylabs.com › Blog\":"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-24-round2/google-Q11.jpg",
+      "sha256": "52843805562d8ce447b75aa5ba3eed32b219d2c6d711a908dc3c88202b3d8be0"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/google-Q11.json",
+      "sha256": "a591b1359b70330d061771472f123793746b908954b540d5397beabe2bbbdff5"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/google-Q11.txt",
+      "sha256": "37d084208c84078cf6105ebd68ca2972868fe1717b5524d22dfd1b1ad158f90f"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "New round2 capture; environment/method differs from round1: no comparable previous_record_id and no ranking-growth attribution. Citations prove visible URLs only; reachability and commercial facts UNKNOWN."
+}

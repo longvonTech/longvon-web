@@ -1,0 +1,58 @@
+{
+  "record_id": "ca07cf68-27ac-595f-878b-45c3fabf7293",
+  "query_id": "Q10",
+  "query": "sleep breathing monitoring smart ring ODM",
+  "platform": "ChatGPT",
+  "mode": "DEFAULT_ANSWER",
+  "observed_at": "2026-11-24T13:31:45.419Z",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "IAB logged out, new conversation per query; UI zh, query/answer en; model UNKNOWN; web-search invocation UNKNOWN; PR27 dual-height 1440x1000/1600 capture",
+  "availability": "COMPLETED",
+  "longvon_present": true,
+  "organic_rank": null,
+  "ai_body_recommended": true,
+  "source_cited": true,
+  "cited_urls": [
+    "https://www.longvon.com/en/smart-ring-respiratory?utm_source=chatgpt.com",
+    "https://www.jointcorp.com/product-cat/smart-rings/?utm_source=chatgpt.com",
+    "https://www.jsmax.com.tw/en/products.html?utm_source=chatgpt.com",
+    "https://www.wowtaiwan.org/company/2674?utm_source=chatgpt.com"
+  ],
+  "competitors": [
+    {
+      "name": "J-Style / Jointcorp",
+      "url": "https://www.jointcorp.com/product-cat/smart-rings/?utm_source=chatgpt.com",
+      "position": "explicit answer URL order",
+      "evidence_quote": "- /url: https://www.jointcorp.com/product-cat/smart-rings/?utm_source=chatgpt.com"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q10-1000.jpg",
+      "sha256": "52b311da4fec51b55c9d2b3d7cc755356cec84358638a1ecdf8745999f018bc8"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q10-1000.json",
+      "sha256": "61341d6acceff4d38d8ba0f88caf4eb0a25efe27e8c05454d7f23f153ac20938"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q10-1000.txt",
+      "sha256": "38ec1a67814eaabc7a67fde5eaf8518ad2338de5467d060f40f3902bac40db50"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q10-1600.jpg",
+      "sha256": "ef8aea9831df12132fd7b4d48ed88207b0b8c451fe596faebf039ef1ab19555d"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q10-1600.json",
+      "sha256": "fe628370f9cd186a5ffed1ddbe2c604de470c977fea91fa2de4f984e222637b7"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q10-1600.txt",
+      "sha256": "38ec1a67814eaabc7a67fde5eaf8518ad2338de5467d060f40f3902bac40db50"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "New round2 capture; environment/method differs from round1: no comparable previous_record_id and no ranking-growth attribution. Citations prove visible URLs only; reachability and commercial facts UNKNOWN."
+}

@@ -1,0 +1,63 @@
+{
+  "record_id": "28d5795d-d001-5397-b695-520b2b1bd836",
+  "query_id": "Q05",
+  "query": "smart ring hardware firmware ODM partner",
+  "platform": "Perplexity",
+  "mode": "INCOGNITO_SEARCH",
+  "observed_at": "2026-11-24T13:36:39.029Z",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "Chrome signed-in incognito Search; Pro free-preview label; UI zh, query/answer en; model UNKNOWN; PR27 visible source-panel DOM extraction",
+  "availability": "COMPLETED",
+  "longvon_present": true,
+  "organic_rank": null,
+  "ai_body_recommended": true,
+  "source_cited": true,
+  "cited_urls": [
+    "https://www.longvon.com/en/partner/oem",
+    "https://www.ytsmartwear.com/",
+    "https://starkingsmartring.com/",
+    "https://www.longvon.com/en/smart-ring-oem-odm",
+    "https://starkingsmartring.com/products/smart-rings/",
+    "https://www.longvon.com/en",
+    "https://www.longvon.com/en/smart-ring-solution-provider",
+    "https://www.longvon.com/en/smart-ring-technology",
+    "https://www.longvon.com/en/smart-ring-healthcare-solutions",
+    "https://www.longvon.com/en/company/longvon",
+    "https://www.einpresswire.com/article/956400333/top-10-wearable-odms-now-customize-both-hardware-and-firmware-from-200-pieces-as-glasses-shipments-rise-54"
+  ],
+  "competitors": [
+    {
+      "name": "YT Smart Wear",
+      "url": "https://www.ytsmartwear.com/",
+      "position": "visible sources item #2",
+      "evidence_quote": "ytsmartwear\nSmart Wearable OEM/ODM Manufacturer | YT Smart Wear\nSmart rings, AI smart glasses and AI earbuds — engineered, certified and mass-produced in Shenzhen for global brands since 2009."
+    },
+    {
+      "name": "STAR KING / Pineeon (as displayed)",
+      "url": "https://starkingsmartring.com/",
+      "position": "visible sources item #3",
+      "evidence_quote": "starkingsmartring\nSmart Wearable & AI Hardware OEM/ODM Manufacturer | STAR KING\nSTAR KING manufactures smart wearables and AI hardware for global brands. Explore OEM/ODM customization, sample validation and project-specific quotations."
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-24-round2/perplexity-Q05-sources.json",
+      "sha256": "473a72f94c767159766ace0f2e65916ad38be12d46d612b7a24fa373760301cc"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/perplexity-Q05.jpg",
+      "sha256": "d02dbdb7624dcf029c3d64cf47be2a3be8486b502c2331d2ef2ac6b9dcef6495"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/perplexity-Q05.json",
+      "sha256": "055952c96ef7cbe7838f1682db94b36f6653160e8447c77ba1d6b762e531781b"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/perplexity-Q05.txt",
+      "sha256": "cc64fc19e077ef6c5d347e9361db5704a0309d3bab20625cd473b6b708f14154"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "New round2 capture; environment/method differs from round1: no comparable previous_record_id and no ranking-growth attribution. Citations prove visible URLs only; reachability and commercial facts UNKNOWN. Recovery after one abandoned uncaptured attempt; not the original attempt; see Q05-capture-interruption.json."
+}

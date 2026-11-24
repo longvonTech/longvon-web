@@ -1,0 +1,477 @@
+- link "Skip to main content"
+- link "Accessibility help":
+  - /url: https://support.google.com/websearch/answer/181196?hl=en
+- search:
+  - link "Go to Google Home":
+    - /url: https://www.google.com/webhp?hl=en&sa=X&ved=2ahUKEwigvKLQ2qCYAxUEMEQIHTNcFq0QPHoECAYQBA
+  - status
+  - alert
+  - combobox "Search": sleep monitoring smart ring OEM sleep monitoring smart ring OEM
+  - button "Clear":
+  - button "Search by voice":
+  - button "Search by image":
+- button "Share":
+- button "Google apps":
+[account label omitted]
+- navigation:
+  - list:
+    - link "AI Mode":
+      - /url: /search?q=sleep+monitoring+smart+ring+OEM&sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDhIXaMC5n1TmhFfdAfCTdePQ4GYXA:1795526815693&udm=50&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtICPMVaTZk4tFdUK8k5MXv8YbrndzWnndcy0qlthrKzIZMeqPetrGbN8tHAEnN3Ipn9S7OxvM9ID9CbbE2MYA54Dzs-SRrfF6nPuk1fE8A1H1Fwa6e_8JFGXFSF4RilT8n7GzZ9BMahY0BvQZHomy7zS3W-QA&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwigvKLQ2qCYAxUEMEQIHTNcFq0Q2J8OegQIDRAD
+      - generic: AI Mode
+    - link "All" [disabled]:
+      - generic: All
+    - link "Shopping":
+      - /url: /search?sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDhIXaMC5n1TmhFfdAfCTdePQ4GYXA:1795526815693&udm=28&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtICPMVaTZk4tFdUK8k5MXv8YbrndzWnndcy0qlthrKzIZMeqPetrGbN8tHAEnN3Ipn9S7OxvM9ID9CbbE2MYA54Dzs-SRrfF6nPuk1fE8A1H1Fwa6e_8JFGXFSF4RilT8n7GzZ9BMahY0BvQZHomy7zS3W-QA&q=sleep+monitoring+smart+ring+OEM&ved=1t:220175&ictx=111
+      - generic: Shopping
+    - link "Images":
+      - /url: /search?sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDhIXaMC5n1TmhFfdAfCTdePQ4GYXA:1795526815693&udm=2&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtICPMVaTZk4tFdUK8k5MXv8YbrndzWnndcy0qlthrKzIZMeqPetrGbN8tHAEnN3Ipn9S7OxvM9ID9CbbE2MYA54Dzs-SRrfF6nPuk1fE8A1H1Fwa6e_8JFGXFSF4RilT8n7GzZ9BMahY0BvQZHomy7zS3W-QA&q=sleep+monitoring+smart+ring+OEM&sa=X&ved=2ahUKEwigvKLQ2qCYAxUEMEQIHTNcFq0QtKgLegQIHRAB
+      - generic: Images
+    - link "Short videos":
+      - /url: /search?sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDhIXaMC5n1TmhFfdAfCTdePQ4GYXA:1795526815693&udm=short_vids&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtICPMVaTZk4tFdUK8k5MXv8YbrndzWnndcy0qlthrKzIZMeqPetrGbN8tHAEnN3Ipn9S7OxvM9ID9CbbE2MYA54Dzs-SRrfF6nPuk1fE8A1H1Fwa6e_8JFGXFSF4RilT8n7GzZ9BMahY0BvQZHomy7zS3W-QA&q=sleep+monitoring+smart+ring+OEM&sa=X&ved=2ahUKEwigvKLQ2qCYAxUEMEQIHTNcFq0Qs6gLegQIGhAB
+      - generic: Short videos
+    - link "Videos":
+      - /url: /search?sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDhIXaMC5n1TmhFfdAfCTdePQ4GYXA:1795526815693&udm=vids&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtICPMVaTZk4tFdUK8k5MXv8YbrndzWnndcy0qlthrKzIZMeqPetrGbN8tHAEnN3Ipn9S7OxvM9ID9CbbE2MYA54Dzs-SRrfF6nPuk1fE8A1H1Fwa6e_8JFGXFSF4RilT8n7GzZ9BMahY0BvQZHomy7zS3W-QA&q=sleep+monitoring+smart+ring+OEM&sa=X&ved=2ahUKEwigvKLQ2qCYAxUEMEQIHTNcFq0QtKgLegQIFhAB
+      - generic: Videos
+    - link "News":
+      - /url: /search?sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDhIXaMC5n1TmhFfdAfCTdePQ4GYXA:1795526815693&q=sleep+monitoring+smart+ring+OEM&tbm=nws&source=lnms&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtICPMVaTZk4tFdUK8k5MXv8YbrndzWnndcy0qlthrKzIZMeqPetrGbN8tHAEnN3Ipn9S7OxvM9ID9CbbE2MYA54Dzs-SRrfF6nPuk1fE8A1H1Fwa6e_8JFGXFSF4RilT8n7GzZ9BMahY0BvQZHomy7zS3W-QA&sa=X&ved=2ahUKEwigvKLQ2qCYAxUEMEQIHTNcFq0Q0pQJegQIFBAB
+      - generic: News
+    - button "More filters":
+      - generic "More filters":
+        - generic: More
+  - button "Tools":
+    - generic: Tools
+- heading "Search Results" [level=1]
+- navigation
+- navigation "Refinement":
+  - list:
+    - list:
+      - button "All filters.":
+      - link "Reviews filter. Not selected.":
+        - /url: /search?q=reviews+sleep+monitoring+smart+ring+oem&hl=en&shoprs=GBIqH3NsZWVwIG1vbml0b3Jpbmcgc21hcnQgcmluZyBvZW0yCwgSEgdSZXZpZXdzYAE&sa=X&ved=2ahUKEwigvKLQ2qCYAxUEMEQIHTNcFq0Qip4GKAF6BAguEGk
+        - generic: Reviews
+      - link "On sale filter. Not selected.":
+        - /url: /search?q=sleep+monitoring+smart+ring+OEM+sale&hl=en&shoprs=EgRKAhgBGAYqH3NsZWVwIG1vbml0b3Jpbmcgc21hcnQgcmluZyBvZW0yEwgGEgdPbiBzYWxlGAIiBEoCGAFYo6ogYAE&sa=X&ved=2ahUKEwigvKLQ2qCYAxUEMEQIHTNcFq0Qip4GKAJ6BAguEGo
+        - generic: On sale
+      - link "Nearby filter. Not selected.":
+        - /url: /search?q=sleep+monitoring+smart+ring+OEM+nearby&hl=en&shoprs=GAMqH3NsZWVwIG1vbml0b3Jpbmcgc21hcnQgcmluZyBvZW0yDAgDEgZOZWFyYnkYAlijqiBgAQ&sa=X&ved=2ahUKEwigvKLQ2qCYAxUEMEQIHTNcFq0Qip4GKAN6BAguEGs
+        - generic: Nearby
+      - link "Women's filter. Not selected.":
+        - /url: /search?q=women's+sleep+monitoring+smart+ring+oem&hl=en&shoprs=GAEqH3NsZWVwIG1vbml0b3Jpbmcgc21hcnQgcmluZyBvZW0yFwgBEgdXb21lbidzOgoIgKM-EIKjPjAFWKOqIGAB&sa=X&ved=2ahUKEwigvKLQ2qCYAxUEMEQIHTNcFq0Qip4GKAR6BAguEGw
+        - generic: Women's
+      - link "Price filter. Not selected.":
+        - /url: /search?q=price+sleep+monitoring+smart+ring+oem&hl=en&shoprs=GBIqH3NsZWVwIG1vbml0b3Jpbmcgc21hcnQgcmluZyBvZW0yCQgSEgVQcmljZWAB&sa=X&ved=2ahUKEwigvKLQ2qCYAxUEMEQIHTNcFq0Qip4GKAV6BAguEG0
+        - generic: Price
+      - link "Buy filter. Not selected.":
+        - /url: /search?q=buy+sleep+monitoring+smart+ring+oem&hl=en&shoprs=GBIqH3NsZWVwIG1vbml0b3Jpbmcgc21hcnQgcmluZyBvZW0yBwgSEgNCdXlgAQ&sa=X&ved=2ahUKEwigvKLQ2qCYAxUEMEQIHTNcFq0Qip4GKAZ6BAguEG4
+        - generic: Buy
+      - link "For Sale filter. Not selected.":
+        - /url: /search?q=sleep+monitoring+smart+ring+oem+for+sale&hl=en&shoprs=GBIqH3NsZWVwIG1vbml0b3Jpbmcgc21hcnQgcmluZyBvZW0yDAgSEghGb3IgU2FsZWAB&sa=X&ved=2ahUKEwigvKLQ2qCYAxUEMEQIHTNcFq0Qip4GKAd6BAguEG8
+        - generic: For Sale
+      - link "Fitness Trackers filter. Not selected.":
+        - /url: /search?q=fitness+trackers+sleep+monitoring+smart+ring+oem&hl=en&shoprs=GAkqH3NsZWVwIG1vbml0b3Jpbmcgc21hcnQgcmluZyBvZW0yFAgJEhBGaXRuZXNzIFRyYWNrZXJzYAE&sa=X&ved=2ahUKEwigvKLQ2qCYAxUEMEQIHTNcFq0Qip4GKAh6BAguEHA
+        - generic: Fitness Trackers
+      - link "Sleep Tracker filter. Not selected.":
+        - /url: /search?q=sleep+tracker+monitoring+smart+ring+oem&hl=en&shoprs=GAEqH3NsZWVwIG1vbml0b3Jpbmcgc21hcnQgcmluZyBvZW0yHggBEg1TbGVlcCBUcmFja2VyOgsI58c7EKSu6gEwAFijqiBgAQ&sa=X&ved=2ahUKEwigvKLQ2qCYAxUEMEQIHTNcFq0Qip4GKAl6BAguEHE
+        - generic: Sleep Tracker
+      - link "Under $70 filter. Not selected.":
+        - /url: /search?q=sleep+monitoring+smart+ring+OEM+under+$70&hl=en&shoprs=Eg0SCxEAAAAAdrCQQRgBGAUqH3NsZWVwIG1vbml0b3Jpbmcgc21hcnQgcmluZyBvZW0yIggFEglVbmRlciAkNzAYAiINEgsRAAAAAHawkEEYASoCGAFYo6ogYAE&sa=X&ved=2ahUKEwigvKLQ2qCYAxUEMEQIHTNcFq0Qip4GKAp6BAguEHI
+        - generic: Under $70
+      - link "Heart Rate Monitor filter. Not selected.":
+        - /url: /search?q=heart+rate+monitor+sleep+monitoring+smart+ring+oem&hl=en&shoprs=GAEqH3NsZWVwIG1vbml0b3Jpbmcgc21hcnQgcmluZyBvZW0yIggBEhJIZWFydCBSYXRlIE1vbml0b3I6CgjnxzsQ6Mc7MABYo6ogYAE&sa=X&ved=2ahUKEwigvKLQ2qCYAxUEMEQIHTNcFq0Qip4GKAt6BAguEHM
+        - generic: Heart Rate Monitor
+      - link "iOS filter. Not selected.":
+        - /url: /search?q=ios+sleep+monitoring+smart+ring+oem&hl=en&shoprs=GAEqH3NsZWVwIG1vbml0b3Jpbmcgc21hcnQgcmluZyBvZW0yEwgBEgNpT1M6CgjZtkYQ27ZGMABYo6ogYAE&sa=X&ved=2ahUKEwigvKLQ2qCYAxUEMEQIHTNcFq0Qip4GKAx6BAguEHQ
+        - generic: iOS
+      - link "Free filter. Not selected.":
+        - /url: /search?q=free+sleep+monitoring+smart+ring+oem&hl=en&shoprs=GBIqH3NsZWVwIG1vbml0b3Jpbmcgc21hcnQgcmluZyBvZW0yCAgSEgRGcmVlYAE&sa=X&ved=2ahUKEwigvKLQ2qCYAxUEMEQIHTNcFq0Qip4GKA16BAguEHU
+        - generic: Free
+      - link "Power Adapters & Chargers filter. Not selected.":
+        - /url: /search?q=power+adapters+%26+chargers+sleep+monitoring+smart+ring+oem&hl=en&shoprs=GAkqH3NsZWVwIG1vbml0b3Jpbmcgc21hcnQgcmluZyBvZW0yHQgJEhlQb3dlciBBZGFwdGVycyAmIENoYXJnZXJzYAE&sa=X&ved=2ahUKEwigvKLQ2qCYAxUEMEQIHTNcFq0Qip4GKA56BAguEHY
+        - generic: Power Adapters & Chargers
+      - link "Walmart filter. Not selected.":
+        - /url: /search?q=walmart+sleep+monitoring+smart+ring+oem&hl=en&shoprs=GAIqH3NsZWVwIG1vbml0b3Jpbmcgc21hcnQgcmluZyBvZW0yCwgCEgdXYWxtYXJ0WKOqIGAB&sa=X&ved=2ahUKEwigvKLQ2qCYAxUEMEQIHTNcFq0Qip4GKA96BAguEHc
+        - generic: Walmart
+      - link "Blood Oxygen Saturation filter. Not selected.":
+        - /url: /search?q=blood+oxygen+saturation+sleep+monitoring+smart+ring+oem&hl=en&shoprs=GAEqH3NsZWVwIG1vbml0b3Jpbmcgc21hcnQgcmluZyBvZW0yKAgBEhdCbG9vZCBPeHlnZW4gU2F0dXJhdGlvbjoLCOfHOxD_4-0BMABYo6ogYAE&sa=X&ved=2ahUKEwigvKLQ2qCYAxUEMEQIHTNcFq0Qip4GKBB6BAguEHk
+        - generic: Blood Oxygen Saturation
+      - link "eBay filter. Not selected.":
+        - /url: /search?q=ebay+sleep+monitoring+smart+ring+oem&hl=en&shoprs=GAIqH3NsZWVwIG1vbml0b3Jpbmcgc21hcnQgcmluZyBvZW0yCAgCEgRlQmF5WKOqIGAB&sa=X&ved=2ahUKEwigvKLQ2qCYAxUEMEQIHTNcFq0Qip4GKBF6BAguEHo
+        - generic: eBay
+      - link "Online filter. Not selected.":
+        - /url: /search?q=online+sleep+monitoring+smart+ring+oem&hl=en&shoprs=GBIqH3NsZWVwIG1vbml0b3Jpbmcgc21hcnQgcmluZyBvZW0yCggSEgZPbmxpbmVgAQ&sa=X&ved=2ahUKEwigvKLQ2qCYAxUEMEQIHTNcFq0Qip4GKBJ6BAguEHw
+        - generic: Online
+      - link "Water Resistant filter. Not selected.":
+        - /url: /search?q=water+resistant+sleep+monitoring+smart+ring+oem&hl=en&shoprs=GAEqH3NsZWVwIG1vbml0b3Jpbmcgc21hcnQgcmluZyBvZW0yHwgBEg9XYXRlciBSZXNpc3RhbnQ6CgjW8DsQ1_A7MANYo6ogYAE&sa=X&ved=2ahUKEwigvKLQ2qCYAxUEMEQIHTNcFq0Qip4GKBN6BAguEH0
+        - generic: Water Resistant
+      - link "Finger Ring filter. Not selected.":
+        - /url: /search?q=finger+ring+sleep+monitoring+smart+oem&hl=en&shoprs=GAEqH3NsZWVwIG1vbml0b3Jpbmcgc21hcnQgcmluZyBvZW0yGwgBEgtGaW5nZXIgUmluZzoKCO_IOhDxyDowAlijqiBgAQ&sa=X&ved=2ahUKEwigvKLQ2qCYAxUEMEQIHTNcFq0Qip4GKBR6BAguEH4
+        - generic: Finger Ring
+      - link "Men's filter. Not selected.":
+        - /url: /search?q=men's+sleep+monitoring+smart+ring+oem&hl=en&shoprs=GAEqH3NsZWVwIG1vbml0b3Jpbmcgc21hcnQgcmluZyBvZW0yFQgBEgVNZW4nczoKCICjPhCBoz4wBVijqiBgAQ&sa=X&ved=2ahUKEwigvKLQ2qCYAxUEMEQIHTNcFq0Qip4GKBV6BAguEH8
+        - generic: Men's
+      - link "Target filter. Not selected.":
+        - /url: /search?q=target+sleep+monitoring+smart+ring+oem&hl=en&shoprs=GAIqH3NsZWVwIG1vbml0b3Jpbmcgc21hcnQgcmluZyBvZW0yCggCEgZUYXJnZXRYo6ogYAE&sa=X&ved=2ahUKEwigvKLQ2qCYAxUEMEQIHTNcFq0Qip4GKBZ6BQguEIAB
+        - generic: Target
+      - link "Android filter. Not selected.":
+        - /url: /search?q=android+sleep+monitoring+smart+ring+oem&hl=en&shoprs=GAEqH3NsZWVwIG1vbml0b3Jpbmcgc21hcnQgcmluZyBvZW0yFwgBEgdBbmRyb2lkOgoI2bZGENq2RjAAWKOqIGAB&sa=X&ved=2ahUKEwigvKLQ2qCYAxUEMEQIHTNcFq0Qip4GKBd6BQguEIIB
+        - generic: Android
+      - link "Bluetooth filter. Not selected.":
+        - /url: /search?q=bluetooth+sleep+monitoring+smart+ring+oem&hl=en&shoprs=GAEqH3NsZWVwIG1vbml0b3Jpbmcgc21hcnQgcmluZyBvZW0yGwgBEglCbHVldG9vdGg6DAifruoBEKGu6gEwAFijqiBgAQ&sa=X&ved=2ahUKEwigvKLQ2qCYAxUEMEQIHTNcFq0Qip4GKBh6BQguEIMB
+        - generic: Bluetooth
+      - link "Replacement filter. Not selected.":
+        - /url: /search?q=replacement+sleep+monitoring+smart+ring+oem&hl=en&shoprs=GBIqH3NsZWVwIG1vbml0b3Jpbmcgc21hcnQgcmluZyBvZW0yDwgSEgtSZXBsYWNlbWVudGAB&sa=X&ved=2ahUKEwigvKLQ2qCYAxUEMEQIHTNcFq0Qip4GKBl6BQguEIQB
+        - generic: Replacement
+      - link "Up to 6 – 12 days filter. Not selected.":
+        - /url: /search?q=up+to+6+days+to+12+days+sleep+monitoring+smart+ring+oem&hl=en&shoprs=EhoqGAiH1z0SEgkAAAAAAAAYQBEAAAAAAAAoQBgBKh9zbGVlcCBtb25pdG9yaW5nIHNtYXJ0IHJpbmcgb2VtMloIARITVXAgdG8gNiDigJMgMTIgZGF5cyIaKhgIh9c9EhIJAAAAAAAAGEARAAAAAAAAKEAqGwoXVXAgdG8gNiBkYXlzIHRvIDEyIGRheXMYAToICIfXPRAAMAZYo6ogYAE&sa=X&ved=2ahUKEwigvKLQ2qCYAxUEMEQIHTNcFq0Qip4GKBp6BQguEIUB
+        - generic: Up to 6 – 12 days
+  - button:
+- main:
+  - heading "Web results" [level=2]
+  - link "Smart Ring Manufacturer & Health Tracking Rings OEM/ODM jointcorp.com https://www.jointcorp.com › product-cat › smart-rings":
+    - /url: https://www.jointcorp.com/product-cat/smart-rings/
+    - heading "Smart Ring Manufacturer & Health Tracking Rings OEM/ODM" [level=3]
+    - generic: jointcorp.com
+    - generic: https://www.jointcorp.com › product-cat › smart-rings
+  - button "About this result":
+  - text: J-Style provides
+  - emphasis: OEM/ODM smart rings with advanced sensors for sleep
+  - text: ", HRV, stress, and fitness tracking. Custom designs, medical-grade accuracy, and full ..."
+  - heading "AI Overview" [level=2]:
+    - strong: AI Overview
+  - text: Sleep monitoring smart ring OEMs
+  - mark:
+    - generic: "[Highlight start]"
+    - text: supply white-label and custom-built health rings featuring PPG heart rate/SpO₂ sensors, skin temperature thermistors, and 3D accelerometers for sleep stage and recovery tracking
+    - generic: "[Highlight end]"
+  - text: ". Key manufacturing options and caveats include:"
+  - link "www.jointcorp.com":
+    - /url: https://www.jointcorp.com/product-cat/smart-rings/
+  - button "www.jointcorp.com (+2) - Related results":
+    - generic: www.jointcorp.com
+    - generic: "+2"
+  - heading "Notable OEM/ODM Suppliers & Platforms" [level=3]
+  - list:
+    - link "Goodway":
+      - /url: https://www.goodwaytechs.com/smart-ring.html
+    - text: offers IP68-rated OEM/ODM smart rings (such as the
+    - generic: R10M
+    - text: ","
+    - generic: R20
+    - text: ", and"
+    - generic: R30
+    - text: ) with CE, FCC, and RoHS certifications for heart rate, SpO₂, sleep, and temperature monitoring
+    - text: .
+    - button "Related results":
+    - link:
+      - /url: https://www.brainoxtech.com/catalog/oemodm-sleep-tracking-ring-factories-factory/
+      - text: Brainoxtech
+    - text: connects B2B buyers with factory-direct OEM/ODM sleep-tracking ring manufacturers, offering customizable options and low minimum order quantities (MOQs).
+    - button:
+    - strong: J-Style (JCRing)
+    - text: provides OEM/ODM customization (typically starting around 1,000-unit MOQs), iOS/Android SDKs, and Bluetooth APIs across models like the
+    - generic: JCRing X2
+    - text: (sleep and HRV) and
+    - generic: X3
+    - text: (SpO₂) with 7–10 days of battery life
+    - text: .
+    - link:
+      - /url: https://www.jointcorp.com/products/
+    - button:
+      - generic: www.jointcorp.com
+      - generic: "+1"
+  - heading [level=3]: What to Watch Out For
+  - list:
+    - strong: "Sensor & Algorithm Limits:"
+    - text: Most users on
+    - link:
+      - /url: https://www.reddit.com/r/SmartRings/comments/1tupugg/looking_for_a_nosubscription_smart_ring_for_sleep/
+      - text: Reddit's r/SmartRings
+    - text: agree that OEM smart rings from marketplaces like Alibaba should not be trusted for claims like body fat measurement via bioelectrical impedance (BIA), as a single finger cannot reliably measure full-body impedance.
+    - button:
+    - strong: "App & SDK Readiness:"
+    - text: Confirm whether you need a ready-made white-label companion app (such as Smart Health or JCRing) or a raw SDK/API to integrate sleep and vitals data into your own software.
+    - link:
+      - /url: https://www.jointcorp.com/product-cat/smart-rings/
+    - button:
+      - generic: www.jointcorp.com
+      - generic: "+2"
+    - strong: "Compliance & Battery Specs:"
+    - text: Verify target-market certifications (FCC, CE, RoHS) and realistic battery life (commonly 5–10 days depending on SpO₂ and continuous monitoring frequency) before placing bulk orders.
+    - link:
+      - /url: https://www.youtube.com/watch?v=Yq9zX5KDd_A&t=89
+    - button:
+      - generic: YouTube
+      - generic: ·Gadget Ten
+      - generic: "+2"
+  - generic: "To help narrow down the right OEM path, let me know:"
+  - list:
+    - strong: How you plan to use it
+    - text: (launching a private-label brand, integrating into a wellness/clinical app, or sourcing single units/samples)
+    - strong: What you need it to work with
+    - text: (custom iOS/Android app via SDK, white-label app, or Apple Health/Google Fit sync)
+    - strong: Specific preferences
+    - text: (target
+    - strong: MOQ
+    - text: ","
+    - strong: budget
+    - text: ","
+    - strong: materials
+    - text: like titanium or stainless steel, or
+    - strong: sensors
+    - text: like SpO₂ and skin temperature)
+  - status
+  - button:
+  - button:
+  - button:
+  - button:
+  - button:
+  - button "Show more AI Overview":
+    - generic: Show more
+  - heading "Web results" [level=2]
+  - link "Smart Ring Manufacturer OEM & ODM ... Goodway Techs https://www.goodwaytechs.com › Products":
+    - /url: https://www.goodwaytechs.com/smart-ring.html
+    - heading "Smart Ring Manufacturer OEM & ODM ..." [level=3]
+    - generic: Goodway Techs
+    - generic: https://www.goodwaytechs.com › Products
+  - button "About this result":
+  - emphasis: Goodway's Smart Ring line is engineered for 24/7 health monitoring
+  - text: ", combining advanced heart rate, SpO₂, sleep, and ECG tracking in a sleek, minimalist form."
+  - link "Read more":
+    - /url: https://www.goodwaytechs.com/smart-ring.html#:~:text=Goodway's%20Smart%20Ring%20line%20is,in%20a%20sleek%2C%20minimalist%20form.
+  - link "RingConn Smart Ring | 24/7 Sleep, Health & Activity Monitoring RingConn https://ringconn.com":
+    - /url: https://ringconn.com/
+    - heading "RingConn Smart Ring | 24/7 Sleep, Health & Activity Monitoring" [level=3]
+    - generic: RingConn
+    - generic: https://ringconn.com
+  - button "About this result":
+  - emphasis: RingConn Smart Ring
+  - text: integrates cutting-edge sensors and AI algorithms to monitor sleep, track health metrics, and boost your overall wellness effortlessly.
+  - link "OEM/ODM Sleep Tracking Ring Factories & Manufacturing ... Brainox Tech https://www.brainoxtech.com › catalog › oemodm-sleep-...":
+    - /url: https://www.brainoxtech.com/catalog/oemodm-sleep-tracking-ring-factories-factory/
+    - heading "OEM/ODM Sleep Tracking Ring Factories & Manufacturing ..." [level=3]
+    - generic: Brainox Tech
+    - generic: https://www.brainoxtech.com › catalog › oemodm-sleep-...
+  - button "About this result":
+  - emphasis: Source premium sleep tracking rings from a certified manufacturer
+  - text: . We provide factory-direct OEM/ODM solutions, low MOQ, and competitive wholesale pricing ...
+  - heading "Videos" [level=2]
+  - button "About this result":
+  - link "See what's possible with the world's smallest smart ring. Track ... Facebook ŌURA 1 week ago":
+    - /url: https://www.facebook.com/ouraring/videos/oura-ring-5/1105980379080759/
+    - heading "See what's possible with the world's smallest smart ring. Track ... Facebook ŌURA 1 week ago" [level=3]:
+      - generic: See what's possible with the world's smallest smart ring. Track ...
+      - text: Facebook
+      - generic: · ŌURA
+      - generic: 1 week ago
+  - text: Facebook
+  - generic: · ŌURA
+  - button "About this result":
+  - link "See what's possible with the world's smallest smart ring. Track ... by ŌURA on Facebook. Play on Facebook. 0:16":
+    - /url: https://www.facebook.com/ouraring/videos/oura-ring-5/1105980379080759/
+    - generic: 0:16
+  - link "See what's possible with the world's smallest smart ring. Track ... Facebook ŌURA 2 weeks ago":
+    - /url: https://www.facebook.com/ouraring/videos/oura-ring-5/1421582690140702/
+    - heading "See what's possible with the world's smallest smart ring. Track ... Facebook ŌURA 2 weeks ago" [level=3]:
+      - generic: See what's possible with the world's smallest smart ring. Track ...
+      - text: Facebook
+      - generic: · ŌURA
+      - generic: 2 weeks ago
+  - text: Facebook
+  - generic: · ŌURA
+  - button "About this result":
+  - link "See what's possible with the world's smallest smart ring. Track ... by ŌURA on Facebook. Play on Facebook. 0:31":
+    - /url: https://www.facebook.com/ouraring/videos/oura-ring-5/1421582690140702/
+    - generic: 0:31
+  - generic: Track 50+ health metrics like sleep, activity, and stress from your finger with the world's smallest smart ring.
+  - link "See what's possible with the world's smallest smart ring. Track ... Facebook ŌURA 2 weeks ago":
+    - /url: https://www.facebook.com/ouraring/videos/oura-ring-5/2731833737263917/
+    - heading "See what's possible with the world's smallest smart ring. Track ... Facebook ŌURA 2 weeks ago" [level=3]:
+      - generic: See what's possible with the world's smallest smart ring. Track ...
+      - text: Facebook
+      - generic: · ŌURA
+      - generic: 2 weeks ago
+  - text: Facebook
+  - generic: · ŌURA
+  - button "About this result":
+  - link "See what's possible with the world's smallest smart ring. Track ... by ŌURA on Facebook. Play on Facebook. 0:16":
+    - /url: https://www.facebook.com/ouraring/videos/oura-ring-5/2731833737263917/
+    - generic: 0:16
+  - generic: Track sleep, activity, and over 50 health metrics with the Oura Ring, the world's smallest smart ring, for useful body insights.
+  - link "View all videos":
+    - /url: /search?sca_esv=84ace98110dff800&hl=en&udm=vids&sxsrf=AKL5yDhIXaMC5n1TmhFfdAfCTdePQ4GYXA:1795526815693&q=sleep+monitoring+smart+ring+OEM&sa=X&ved=2ahUKEwigvKLQ2qCYAxUEMEQIHTNcFq0Q8ccDKAJ6BAglEAU
+    - separator
+    - generic: View all
+  - heading "Web results" [level=2]
+  - link "Sleep Monitor / Smart Rings / Wearable Technology Amazon.com https://www.amazon.com › Smart-Rings-Sleep-Monitor-...":
+    - /url: https://www.amazon.com/Smart-Rings-Sleep-Monitor-Wearable-Technology/s?keywords=Smart+Rings&rh=n%3A10048711011%2Cp_n_g-1001308966111%3A18474271011&c=ts&ts_id=10048711011
+    - heading "Sleep Monitor / Smart Rings / Wearable Technology" [level=3]
+    - generic: Amazon.com
+    - generic: https://www.amazon.com › Smart-Rings-Sleep-Monitor-...
+  - button "About this result":
+  - emphasis: Smart Ring for Women Men
+  - text: ", Fitness Tracker Ring with Free App No Subscription Fee, 7 Days Battery Life, Sleep Monitor, Heart Rate & Step Tracker, IP68 Waterproof ..."
+  - link "Read more":
+    - /url: https://www.amazon.com/Smart-Rings-Sleep-Monitor-Wearable-Technology/s?keywords=Smart+Rings&rh=n:10048711011,p_n_g-1001308966111:18474271011&c=ts&ts_id=10048711011#:~:text=Smart%20Ring%20for%20Women%20Men%2C,Waterproof%2C%20Android%2FiOS%20Compatible(Rose%20Gold%2C%208)
+  - link "Products | Screenless Smart Band ODM & OEM Factory - J-Style jointcorp.com https://www.jointcorp.com › products":
+    - /url: https://www.jointcorp.com/products/
+    - heading "Products | Screenless Smart Band ODM & OEM Factory - J-Style" [level=3]
+    - generic: jointcorp.com
+    - generic: https://www.jointcorp.com › products
+  - button "About this result":
+  - emphasis: JCRing X5 Touch Control Smart Ring
+  - text: . Touch Control; 54+ Sports Modes; Automatic Sleep Monitoring. Learn More. View Details · JCRing X2 Sleep Tracking Smart Ring.
+  - link "Read more":
+    - /url: https://www.jointcorp.com/products/#:~:text=JCRing%20X5%20Touch%20Control%20Smart,X2%20Sleep%20Tracking%20Smart%20Ring
+  - link "Best Smart Ring for Sleep? I Took Them to a Sleep Lab ... Medium · FITNESATOR 60+ likes · 1 year ago":
+    - /url: https://medium.com/@fitnesator/best-smart-ring-for-sleep-i-took-them-to-a-sleep-lab-to-find-out-c09b18255735
+    - heading "Best Smart Ring for Sleep? I Took Them to a Sleep Lab ..." [level=3]
+    - generic: Medium · FITNESATOR
+    - generic: 60+ likes · 1 year ago
+  - button "About this result":
+  - emphasis: Smart Rings Sleep
+  - text: labs use PSG to
+  - emphasis: track
+  - text: brainwaves, eye movement, heart activity, breathing… basically everything. Oura
+  - emphasis: Ring
+  - text: Gen 4 and Samsung ...
+  - heading "Popular products" [level=2]
+  - button "About this result":
+  - list:
+    - generic: Halo Ring 4 — The World's Thinnest Smart Ring Silver / 10
+    - generic: $59.00
+    - generic: $74
+    - generic: Halo Ring
+    - 'button "Halo Ring 4 — The World''s Thinnest Smart Ring Silver / 10. 20% OFF. Current Price: $59.00. Was $74. Halo Ring. Go to product viewer for this item."'
+    - generic: Oura Ring 4 Size Smart Ring
+    - generic: $249.00
+    - generic: $349
+    - generic: Walmart
+    - generic: "& more"
+    - generic: Free delivery by Sat
+    - 'button "Oura Ring 4 Size Smart Ring. 28% OFF. Current Price: $249.00. Was $349. Walmart & more. Free delivery by Sat. Rated 4.5 out of 5. 4.8K reviews. Go to product viewer for this item."'
+    - generic: Oura Ring 5 Smart Ring Ring
+    - generic: $399.00
+    - generic: $499
+    - generic: Target
+    - generic: "& more"
+    - generic: Free delivery
+    - 'button "An interactive autorotating 360 image showing the item from different angles. Use Alt or Option + right or left arrow key to rotate Oura Ring 5 Smart Ring Ring. 20% OFF. Current Price: $399.00. Was $499. Target & more. Free delivery. Rated 4.7 out of 5. 1.6K reviews. Go to product viewer for this item."'
+    - generic: Halo Ring 4 — The World's Thinnest Smart Ring Celestial Silver / 8
+    - generic: $89.00
+    - generic: $99
+    - generic: Halo Ring
+    - 'button "Halo Ring 4 — The World''s Thinnest Smart Ring Celestial Silver / 8. 10% OFF. Current Price: $89.00. Was $99. Halo Ring. Go to product viewer for this item."'
+    - generic: Adult Womens Qalo SR-2 Smart Ring
+    - generic: $159.96
+    - generic: $200
+    - generic: Best Buy
+    - generic: "& more"
+    - generic: Free delivery
+    - 'button "An interactive autorotating 360 image showing the item from different angles. Use Alt or Option + right or left arrow key to rotate Adult Womens Qalo SR-2 Smart Ring. 20% OFF. Current Price: $159.96. Was $200. Best Buy & more. Free delivery. Rated 3.5 out of 5. 643 reviews. Go to product viewer for this item."'
+    - generic: Femometer Ring Gen2 Scratch-resistant Ceremic Smart Ring for Women
+    - generic: $159.00
+    - generic: Was $200
+    - generic: femometer.com
+    - generic: Free delivery
+    - 'button "Femometer Ring Gen2 Scratch-resistant Ceremic Smart Ring for Women. 20% OFF. Current Price: $159.00. Was $200. femometer.com. Free delivery. Go to product viewer for this item."'
+    - generic: Smart Health Ring With Stress And Sleep Monitoring Functions Size 9
+    - generic: $40.00
+    - generic: eBay
+    - generic: Free delivery
+    - 'button "Smart Health Ring With Stress And Sleep Monitoring Functions Size 9. Current Price: $40.00. eBay. Free delivery. Go to product viewer for this item."'
+    - generic: Smart Ring Titan 2
+    - generic: $79.00
+    - generic: $129
+    - generic: Q Smart Ring
+    - generic: Free delivery
+    - 'button "Smart Ring Titan 2. 38% OFF. Current Price: $79.00. Was $129. Q Smart Ring. Free delivery. Go to product viewer for this item."'
+  - link "The First Smart Ring with Sleep Apnea Monitoring YouTube · Shannon Morse 4.8K+ views · 1 year ago":
+    - /url: https://www.youtube.com/watch?v=cG1x7rYxhQs
+    - heading "The First Smart Ring with Sleep Apnea Monitoring" [level=3]
+    - generic: YouTube · Shannon Morse
+    - generic: 4.8K+ views · 1 year ago
+  - button "About this result":
+  - button "The First Smart Ring with Sleep Apnea Monitoring by Shannon Morse on YouTube. Play on Google. 8:27":
+    - generic: 8:27
+  - generic: Is the RingConn Gen 2 the ultimate smart ring for sleep apnea detection, comfort, and long battery life? Let's find out!
+  - heading "People also search for" [level=2]
+  - link "Sleep monitoring smart ring oem amazon":
+    - /url: /search?sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDhIXaMC5n1TmhFfdAfCTdePQ4GYXA:1795526815693&q=Sleep+monitoring+smart+ring+oem+amazon&sa=X&ved=2ahUKEwigvKLQ2qCYAxUEMEQIHTNcFq0Q1QJ6BAg-EAE
+    - generic: Sleep monitoring smart ring oem amazon
+  - link "J Ring Smart Ring price":
+    - /url: /search?sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDhIXaMC5n1TmhFfdAfCTdePQ4GYXA:1795526815693&q=J+Ring+Smart+Ring+price&sa=X&ved=2ahUKEwigvKLQ2qCYAxUEMEQIHTNcFq0Q1QJ6BAhFEAE
+    - generic: J Ring Smart Ring price
+  - link "JCRing Smart ring":
+    - /url: /search?sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDhIXaMC5n1TmhFfdAfCTdePQ4GYXA:1795526815693&q=JCRing+Smart+ring&sa=X&ved=2ahUKEwigvKLQ2qCYAxUEMEQIHTNcFq0Q1QJ6BAhEEAE
+    - generic: JCRing Smart ring
+  - link "J-Style Health Tracker app":
+    - /url: /search?sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDhIXaMC5n1TmhFfdAfCTdePQ4GYXA:1795526815693&q=J-Style+Health+Tracker+app&sa=X&ved=2ahUKEwigvKLQ2qCYAxUEMEQIHTNcFq0Q1QJ6BAhDEAE
+    - generic: J-Style Health Tracker app
+  - link "Medical grade smart ring":
+    - /url: /search?sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDhIXaMC5n1TmhFfdAfCTdePQ4GYXA:1795526815693&q=Medical+grade+smart+ring&sa=X&ved=2ahUKEwigvKLQ2qCYAxUEMEQIHTNcFq0Q1QJ6BAhCEAE
+    - generic: Medical grade smart ring
+  - link "Best smart ring for glucose monitoring":
+    - /url: /search?sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDhIXaMC5n1TmhFfdAfCTdePQ4GYXA:1795526815693&q=Best+smart+ring+for+glucose+monitoring&sa=X&ved=2ahUKEwigvKLQ2qCYAxUEMEQIHTNcFq0Q1QJ6BAhBEAE
+    - generic: Best smart ring for glucose monitoring
+  - link "OEM smart ring":
+    - /url: /search?sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDhIXaMC5n1TmhFfdAfCTdePQ4GYXA:1795526815693&q=OEM+smart+ring&sa=X&ved=2ahUKEwigvKLQ2qCYAxUEMEQIHTNcFq0Q1QJ6BAhAEAE
+    - generic: OEM smart ring
+  - link "Smart ring manufacturers":
+    - /url: /search?sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDhIXaMC5n1TmhFfdAfCTdePQ4GYXA:1795526815693&q=Smart+ring+manufacturers&sa=X&ved=2ahUKEwigvKLQ2qCYAxUEMEQIHTNcFq0Q1QJ6BAg_EAE
+    - generic: Smart ring manufacturers
+  - navigation:
+    - heading "Page Navigation" [level=1]
+    - text: "1"
+    - link "Page 2":
+      - /url: /search?q=sleep+monitoring+smart+ring+OEM&sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDhIXaMC5n1TmhFfdAfCTdePQ4GYXA:1795526815693&ei=n5AFa-DwKYTgkPIPs7jZ6Ao&start=10&sa=N&sstk=AYl2yk-2_EZgZVIhaZflgcyeii8C_HL9tQZovljv5t7VQAOgZuN4Gaw11dqEU7scbgaRd9uXEvMHJnSzwi68omoS5N4o2t1Azwbwag&ved=2ahUKEwigvKLQ2qCYAxUEMEQIHTNcFq0Q8tMDegQIPBAE
+      - text: "2"
+    - link "Page 3":
+      - /url: /search?q=sleep+monitoring+smart+ring+OEM&sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDhIXaMC5n1TmhFfdAfCTdePQ4GYXA:1795526815693&ei=n5AFa-DwKYTgkPIPs7jZ6Ao&start=20&sa=N&sstk=AYl2yk-2_EZgZVIhaZflgcyeii8C_HL9tQZovljv5t7VQAOgZuN4Gaw11dqEU7scbgaRd9uXEvMHJnSzwi68omoS5N4o2t1Azwbwag&ved=2ahUKEwigvKLQ2qCYAxUEMEQIHTNcFq0Q8tMDegQIPBAG
+      - text: "3"
+    - link "Page 4":
+      - /url: /search?q=sleep+monitoring+smart+ring+OEM&sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDhIXaMC5n1TmhFfdAfCTdePQ4GYXA:1795526815693&ei=n5AFa-DwKYTgkPIPs7jZ6Ao&start=30&sa=N&sstk=AYl2yk-2_EZgZVIhaZflgcyeii8C_HL9tQZovljv5t7VQAOgZuN4Gaw11dqEU7scbgaRd9uXEvMHJnSzwi68omoS5N4o2t1Azwbwag&ved=2ahUKEwigvKLQ2qCYAxUEMEQIHTNcFq0Q8tMDegQIPBAI
+      - text: "4"
+    - link "Page 5":
+      - /url: /search?q=sleep+monitoring+smart+ring+OEM&sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDhIXaMC5n1TmhFfdAfCTdePQ4GYXA:1795526815693&ei=n5AFa-DwKYTgkPIPs7jZ6Ao&start=40&sa=N&sstk=AYl2yk-2_EZgZVIhaZflgcyeii8C_HL9tQZovljv5t7VQAOgZuN4Gaw11dqEU7scbgaRd9uXEvMHJnSzwi68omoS5N4o2t1Azwbwag&ved=2ahUKEwigvKLQ2qCYAxUEMEQIHTNcFq0Q8tMDegQIPBAK
+      - text: "5"
+    - link "Page 6":
+      - /url: /search?q=sleep+monitoring+smart+ring+OEM&sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDhIXaMC5n1TmhFfdAfCTdePQ4GYXA:1795526815693&ei=n5AFa-DwKYTgkPIPs7jZ6Ao&start=50&sa=N&sstk=AYl2yk-2_EZgZVIhaZflgcyeii8C_HL9tQZovljv5t7VQAOgZuN4Gaw11dqEU7scbgaRd9uXEvMHJnSzwi68omoS5N4o2t1Azwbwag&ved=2ahUKEwigvKLQ2qCYAxUEMEQIHTNcFq0Q8tMDegQIPBAM
+      - text: "6"
+    - link "Page 7":
+      - /url: /search?q=sleep+monitoring+smart+ring+OEM&sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDhIXaMC5n1TmhFfdAfCTdePQ4GYXA:1795526815693&ei=n5AFa-DwKYTgkPIPs7jZ6Ao&start=60&sa=N&sstk=AYl2yk-2_EZgZVIhaZflgcyeii8C_HL9tQZovljv5t7VQAOgZuN4Gaw11dqEU7scbgaRd9uXEvMHJnSzwi68omoS5N4o2t1Azwbwag&ved=2ahUKEwigvKLQ2qCYAxUEMEQIHTNcFq0Q8tMDegQIPBAO
+      - text: "7"
+    - link "Page 8":
+      - /url: /search?q=sleep+monitoring+smart+ring+OEM&sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDhIXaMC5n1TmhFfdAfCTdePQ4GYXA:1795526815693&ei=n5AFa-DwKYTgkPIPs7jZ6Ao&start=70&sa=N&sstk=AYl2yk-2_EZgZVIhaZflgcyeii8C_HL9tQZovljv5t7VQAOgZuN4Gaw11dqEU7scbgaRd9uXEvMHJnSzwi68omoS5N4o2t1Azwbwag&ved=2ahUKEwigvKLQ2qCYAxUEMEQIHTNcFq0Q8tMDegQIPBAQ
+      - text: "8"
+    - link "Page 9":
+      - /url: /search?q=sleep+monitoring+smart+ring+OEM&sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDhIXaMC5n1TmhFfdAfCTdePQ4GYXA:1795526815693&ei=n5AFa-DwKYTgkPIPs7jZ6Ao&start=80&sa=N&sstk=AYl2yk-2_EZgZVIhaZflgcyeii8C_HL9tQZovljv5t7VQAOgZuN4Gaw11dqEU7scbgaRd9uXEvMHJnSzwi68omoS5N4o2t1Azwbwag&ved=2ahUKEwigvKLQ2qCYAxUEMEQIHTNcFq0Q8tMDegQIPBAS
+      - text: "9"
+    - link "Page 10":
+      - /url: /search?q=sleep+monitoring+smart+ring+OEM&sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDhIXaMC5n1TmhFfdAfCTdePQ4GYXA:1795526815693&ei=n5AFa-DwKYTgkPIPs7jZ6Ao&start=90&sa=N&sstk=AYl2yk-2_EZgZVIhaZflgcyeii8C_HL9tQZovljv5t7VQAOgZuN4Gaw11dqEU7scbgaRd9uXEvMHJnSzwi68omoS5N4o2t1Azwbwag&ved=2ahUKEwigvKLQ2qCYAxUEMEQIHTNcFq0Q8tMDegQIPBAU
+      - text: "10"
+    - heading "Next" [level=2]:
+      - link "Next":
+        - /url: /search?q=sleep+monitoring+smart+ring+OEM&sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDhIXaMC5n1TmhFfdAfCTdePQ4GYXA:1795526815693&ei=n5AFa-DwKYTgkPIPs7jZ6Ao&start=10&sa=N&sstk=AYl2yk-2_EZgZVIhaZflgcyeii8C_HL9tQZovljv5t7VQAOgZuN4Gaw11dqEU7scbgaRd9uXEvMHJnSzwi68omoS5N4o2t1Azwbwag&ved=2ahUKEwigvKLQ2qCYAxUEMEQIHTNcFq0Q8NMDegQIPBAW
+        - generic: Next
+  - navigation
+- contentinfo:
+  - heading "Footer Links" [level=1]
+  - generic: Results are personalized
+  - generic: "-"
+  - link "Try without personalization":
+    - /url: https://www.google.com/search?q=sleep+monitoring+smart+ring+OEM&hl=en&peek_pws=0&sxsrf=AKL5yDhIXaMC5n1TmhFfdAfCTdePQ4GYXA:1795526815693
+    - generic: Try without personalization
+  - button "Los Angeles County, California - Based on your past activity":
+    - generic: Los Angeles County, California
+    - text: "-"
+    - generic: Based on your past activity
+  - text: "-"
+  - button "Update location": Update location
+  - link "Help":
+    - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en&fg=1
+  - button "Send feedback":
+    - generic: Send feedback
+  - link "Privacy":
+    - /url: https://policies.google.com/privacy?hl=en&fg=1
+  - link "Terms":
+    - /url: https://policies.google.com/terms?hl=en&fg=1

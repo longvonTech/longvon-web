@@ -1,0 +1,78 @@
+{
+  "record_id": "62c19c22-a6d2-5989-8919-f6b15bfb423f",
+  "query_id": "Q05",
+  "query": "smart ring hardware firmware ODM partner",
+  "platform": "ChatGPT",
+  "mode": "DEFAULT_ANSWER",
+  "observed_at": "2026-11-24T13:36:34.345Z",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "IAB logged out, new conversation per query; UI zh, query/answer en; model UNKNOWN; web-search invocation UNKNOWN; PR27 dual-height 1440x1000/1600 capture",
+  "availability": "COMPLETED",
+  "longvon_present": true,
+  "organic_rank": null,
+  "ai_body_recommended": true,
+  "source_cited": true,
+  "cited_urls": [
+    "https://www.longvon.com/en/smart-ring-oem-odm?utm_source=chatgpt.com",
+    "https://longvon.com/en/partner/oem?utm_source=chatgpt.com",
+    "https://www.bonlala.com/?utm_source=chatgpt.com",
+    "https://www.jointcorp.com/?utm_source=chatgpt.com",
+    "https://comiring.com/customized-service/?utm_source=chatgpt.com",
+    "https://engrasun.com/?utm_source=chatgpt.com"
+  ],
+  "competitors": [
+    {
+      "name": "Bonlala",
+      "url": "https://www.bonlala.com/?utm_source=chatgpt.com",
+      "position": "explicit answer URL order",
+      "evidence_quote": "- /url: https://www.bonlala.com/?utm_source=chatgpt.com"
+    },
+    {
+      "name": "J-Style / Jointcorp",
+      "url": "https://www.jointcorp.com/?utm_source=chatgpt.com",
+      "position": "explicit answer URL order",
+      "evidence_quote": "- /url: https://www.jointcorp.com/?utm_source=chatgpt.com"
+    },
+    {
+      "name": "COMI",
+      "url": "https://comiring.com/customized-service/?utm_source=chatgpt.com",
+      "position": "explicit answer URL order",
+      "evidence_quote": "- /url: https://comiring.com/customized-service/?utm_source=chatgpt.com"
+    },
+    {
+      "name": "Engrasun",
+      "url": "https://engrasun.com/?utm_source=chatgpt.com",
+      "position": "explicit answer URL order",
+      "evidence_quote": "- /url: https://engrasun.com/?utm_source=chatgpt.com"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q05-1000.jpg",
+      "sha256": "25aea44358d7c2a16b74ac03b13b130c9d735ec7136a4e1830d9f0cdafaeee65"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q05-1000.json",
+      "sha256": "a345fc6a6b1a681739291a54f04860079c736659715b6281450e70f4f0c5c23d"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q05-1000.txt",
+      "sha256": "060b6d5253cc9ce0c619c0bc4355203fd7163119ec492d0b74f5370ed5a17e90"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q05-1600.jpg",
+      "sha256": "55bdb9055caa485e47311ad3125b6368827bf88330939718fae3867c9f83b348"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q05-1600.json",
+      "sha256": "95e6c6ae73430e04d8d8078efa041cf5e26a4e41f798c134908421e7bf76ba6c"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q05-1600.txt",
+      "sha256": "060b6d5253cc9ce0c619c0bc4355203fd7163119ec492d0b74f5370ed5a17e90"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "New round2 capture; environment/method differs from round1: no comparable previous_record_id and no ranking-growth attribution. Citations prove visible URLs only; reachability and commercial facts UNKNOWN. Recovery after one abandoned uncaptured attempt; not the original attempt; see Q05-capture-interruption.json."
+}

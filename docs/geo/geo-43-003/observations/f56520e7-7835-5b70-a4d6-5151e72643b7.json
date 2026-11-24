@@ -1,0 +1,53 @@
+{
+  "record_id": "f56520e7-7835-5b70-a4d6-5151e72643b7",
+  "query_id": "Q10",
+  "query": "sleep breathing monitoring smart ring ODM",
+  "platform": "Google",
+  "mode": "ALL_FIRST_PAGE_AUTO_AI_OVERVIEW",
+  "observed_at": "2026-11-24T13:27:58.823Z",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "Chrome existing signed-in profile; hl=en; personalized results; country UNKNOWN; PR27 bounded AI receipt detector; collapsed overview scope",
+  "availability": "COMPLETED",
+  "longvon_present": true,
+  "organic_rank": 1,
+  "ai_body_recommended": null,
+  "source_cited": null,
+  "cited_urls": [],
+  "competitors": [
+    {
+      "name": "J-Style / Jointcorp",
+      "url": "https://www.jointcorp.com/product-cat/smart-rings/",
+      "position": "web-result h3 #2",
+      "evidence_quote": "- link \"Smart Ring Manufacturer & Health Tracking Rings OEM/ODM jointcorp.com https://www.jointcorp.com › product-cat › smart-rings\":"
+    },
+    {
+      "name": "Samsung",
+      "url": "https://news.samsung.com/us/samsung-upgraded-sleep-apnea-feature-now-available-u-s-galaxy-ring-regulatory-approvals-korea",
+      "position": "web-result h3 #3",
+      "evidence_quote": "- link \"Upgraded Sleep Apnea Feature Now Available in the U.S. ... samsung.com https://news.samsung.com › samsung-upgraded-sleep-a...\":"
+    },
+    {
+      "name": "Golden Weald",
+      "url": "https://www.goldenweald.com/sleeping-monitor-smart-ring/",
+      "position": "web-result h3 #4",
+      "evidence_quote": "- link \"smart ring design factory, Sleeping monitor smart ring OEM ODM goldenweald.com https://www.goldenweald.com › Blog Standard\":"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-24-round2/google-Q10.jpg",
+      "sha256": "3c0fa08e1cba3f214ff69e24f532da32f65ec32ee0eea9d2ee4cd3b0b3ba07fb"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/google-Q10.json",
+      "sha256": "d1fb2b054bdf35b77f8994f45d08f8078c5e1cd01768a9b7da11c56c73641833"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/google-Q10.txt",
+      "sha256": "bb2234a8a16f1255b14007b52c21965994615b02ebd36eeb1d9a174f196df0b4"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "New round2 capture; environment/method differs from round1: no comparable previous_record_id and no ranking-growth attribution. Citations prove visible URLs only; reachability and commercial facts UNKNOWN."
+}

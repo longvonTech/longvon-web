@@ -1,0 +1,261 @@
+- complementary:
+  - navigation "侧边栏导航":
+    - link:
+      - /url: /
+    - button "展开侧边栏"
+    - group "创建":
+      - link "新建":
+        - /url: /
+        - generic: 新建
+    - group "主导航":
+      - link "自动化":
+        - /url: /automations
+        - generic: 自动化
+      - link "工件":
+        - /url: /artifacts
+        - generic: 工件
+      - link "插件":
+        - /url: /computer/plugins
+        - generic: 插件
+      - button "更多":
+        - generic: 更多
+    - link "项目":
+      - /url: /projects
+    - link "会话":
+      - /url: /library
+    - button "升级计划":
+    - button "libing shi":
+      - generic: libing shi
+  - separator "调整侧边栏宽度"
+- main:
+  - button "返回上一页":
+  - tablist "回答模式标签页":
+    - tab "答案" [selected]:
+      - text: 答案
+    - tab "链接":
+      - text: 链接
+    - tab "图片":
+      - text: 图片
+  - button "会话选项":
+  - button "分享":
+    - generic: 分享
+  - button "下载桌面应用":
+    - generic: 下载桌面应用
+  - generic: 21:19
+  - button "编辑查询":
+  - button "复制查询":
+  - paragraph: smart ring OEM ODM manufacturer
+  - button "已完成 1秒":
+    - generic "已完成"
+    - generic: 1秒
+  - paragraph:
+    - text: Here are several smart-ring OEM/ODM manufacturers to evaluate, primarily based in Shenzhen, China. For a new brand, the key distinction is whether you need a
+    - strong: private-label OEM
+    - text: (existing platform, your branding) or a
+    - strong: custom ODM
+    - text: (custom hardware, sensors, firmware, and app).
+  - heading "Manufacturers to consider" [level=2]
+  - table:
+    - rowgroup:
+      - row "Manufacturer Positioning Typical customization":
+        - columnheader "Manufacturer"
+        - columnheader "Positioning"
+        - columnheader "Typical customization"
+    - rowgroup:
+      - row "LONGVON Smart-ring OEM/ODM and technology-solution provider for brands and digital-health businesses Hardware, firmware, algorithms, mobile apps, SDKs, cloud APIs, and manufacturing. Smart Ring OEM & ODM Services - LONGVON":
+        - cell "LONGVON":
+          - strong: LONGVON
+        - cell "Smart-ring OEM/ODM and technology-solution provider for brands and digital-health businesses"
+        - cell "Hardware, firmware, algorithms, mobile apps, SDKs, cloud APIs, and manufacturing. Smart Ring OEM & ODM Services - LONGVON":
+          - text: Hardware, firmware, algorithms, mobile apps, SDKs, cloud APIs, and manufacturing.
+          - generic "Smart Ring OEM & ODM Services - LONGVON":
+            - link "longvon":
+              - /url: https://www.longvon.com/en/smart-ring-oem-odm
+              - generic: longvon
+      - row "YT Smart Wear Wearable OEM/ODM manufacturer operating since 2009 Smart rings, AI glasses, and earbuds; engineering, certification, and mass production support. Smart Wearable OEM/ODM Manufacturer | YT Smart Wear":
+        - cell "YT Smart Wear":
+          - strong: YT Smart Wear
+        - cell "Wearable OEM/ODM manufacturer operating since 2009"
+        - cell "Smart rings, AI glasses, and earbuds; engineering, certification, and mass production support. Smart Wearable OEM/ODM Manufacturer | YT Smart Wear":
+          - text: Smart rings, AI glasses, and earbuds; engineering, certification, and mass production support.
+          - generic "Smart Wearable OEM/ODM Manufacturer | YT Smart Wear":
+            - link "ytsmartwear":
+              - /url: https://www.ytsmartwear.com/
+              - generic: ytsmartwear
+      - row "GoldenWeald Electronics manufacturer with smart-ring OEM/ODM services PCBA, molds, CNC machining, metal parts, firmware, enclosure development, testing, and assembly; also offers AI/recording/translation ring concepts. goldenweald +2":
+        - cell "GoldenWeald":
+          - strong: GoldenWeald
+        - cell "Electronics manufacturer with smart-ring OEM/ODM services"
+        - cell "PCBA, molds, CNC machining, metal parts, firmware, enclosure development, testing, and assembly; also offers AI/recording/translation ring concepts. goldenweald +2":
+          - text: PCBA, molds, CNC machining, metal parts, firmware, enclosure development, testing, and assembly; also offers AI/recording/translation ring concepts.
+          - generic: goldenweald
+          - generic: "+2"
+      - row "STAR KING Shenzhen-based wearable and AI-hardware OEM/ODM supplier Smart-ring private-label programs, sample validation, and production planning. starkingsmartring +1":
+        - cell "STAR KING":
+          - strong: STAR KING
+        - cell "Shenzhen-based wearable and AI-hardware OEM/ODM supplier"
+        - cell "Smart-ring private-label programs, sample validation, and production planning. starkingsmartring +1":
+          - text: Smart-ring private-label programs, sample validation, and production planning.
+          - generic: starkingsmartring
+          - generic: "+1"
+      - row "AISmart Technology Smart-ring and smart-glasses OEM/ODM manufacturer Custom consultation, solution design, and branded wearable development. AISmart Technology Co.,Ltd | Smart Ring & Smart Glasses ...":
+        - cell "AISmart Technology":
+          - strong: AISmart Technology
+        - cell "Smart-ring and smart-glasses OEM/ODM manufacturer"
+        - cell "Custom consultation, solution design, and branded wearable development. AISmart Technology Co.,Ltd | Smart Ring & Smart Glasses ...":
+          - text: Custom consultation, solution design, and branded wearable development.
+          - generic "AISmart Technology Co.,Ltd | Smart Ring & Smart Glasses ...":
+            - link "aismartai":
+              - /url: https://www.aismartai.com/
+              - generic: aismartai
+      - row "J-Style / Jointcorp Health-tracking smart-ring manufacturer for B2B health and wellness markets Industrial/mechanical design, firmware, algorithms, and prototype-to-mass-production programs. Smart Ring Manufacturer & Health Tracking Rings OEM/ODM - J-Style":
+        - cell "J-Style / Jointcorp":
+          - strong: J-Style / Jointcorp
+        - cell "Health-tracking smart-ring manufacturer for B2B health and wellness markets"
+        - cell "Industrial/mechanical design, firmware, algorithms, and prototype-to-mass-production programs. Smart Ring Manufacturer & Health Tracking Rings OEM/ODM - J-Style":
+          - text: Industrial/mechanical design, firmware, algorithms, and prototype-to-mass-production programs.
+          - generic "Smart Ring Manufacturer & Health Tracking Rings OEM/ODM - J-Style":
+            - link "jointcorp":
+              - /url: https://www.jointcorp.com/product-cat/smart-rings/
+              - generic: jointcorp
+  - heading "OEM vs. ODM" [level=2]
+  - list:
+    - paragraph:
+      - strong: "OEM:"
+      - text: You take an existing ring platform and customize branding, color, packaging, logo, and sometimes app localization. This is faster and lower-risk for market testing.
+      - generic "AI Smart Ring OEM/ODM Manufacturer in China | Golden Weald":
+        - link "goldenweald":
+          - /url: https://www.goldenweald.com/service/ai-smart-ring-oem-odm-manufacturer-ai-recording-translation-wearable-devices/
+          - generic: goldenweald
+    - paragraph:
+      - strong: "ODM:"
+      - text: The factory develops or substantially modifies the product—industrial design, sensor array, PCB/PCBA, firmware, algorithms, companion app, and production tooling.
+      - generic: longvon
+      - generic: "+1"
+    - paragraph:
+      - strong: "JDM (joint development):"
+      - text: A practical middle path if you provide product requirements and branding while the supplier supplies proven hardware and software modules.
+  - heading "What to request from suppliers" [level=2]
+  - paragraph: "Ask each candidate for the same RFQ package so quotes are comparable:"
+  - list:
+    - paragraph: Existing reference models, ring sizes, materials, battery capacity, charging method, and waterproof rating.
+    - paragraph: "Sensor list: PPG/heart rate, SpO2, skin temperature, accelerometer, ECG where applicable."
+    - paragraph: Firmware, app, SDK, cloud/API ownership, white-label app options, and data-privacy compliance.
+    - paragraph: "Certification experience for your target markets: CE/UKCA, FCC, RoHS, and any health-claim or medical-device requirements."
+    - paragraph: MOQ, unit price at target volumes, tooling/NRE fees, sample lead time, mass-production lead time, warranty, and defect-rate commitments.
+    - paragraph: "Factory audit evidence: business license, ISO 9001, production photos/video, references, and quality-control process."
+  - heading "Shortlist approach" [level=2]
+  - paragraph:
+    - text: For a fast private-label launch, start with
+    - strong: YT Smart Wear
+    - text: ","
+    - strong: STAR KING
+    - text: ", or"
+    - strong: AISmart
+    - text: . For a more differentiated health product, request technical proposals from
+    - strong: LONGVON
+    - text: and
+    - strong: J-Style
+    - text: ", which explicitly describe firmware, algorithm, app, SDK, and cloud capabilities."
+    - generic: longvon
+    - generic: "+4"
+  - paragraph: Before placing a deposit, order samples from at least two factories and independently validate sleep/heart-rate consistency, battery life, charging reliability, app stability, waterproofing, and packaging quality.
+  - button "复制":
+  - button "分享":
+  - button "有帮助":
+  - button "没有帮助":
+  - button "复刻":
+  - button "11 个来源" [active]:
+    - text: 11 个来源
+  - button "更多操作":
+  - 'button "Smart Ring OEM/ODM comparison: Longvon vs YT Smart Wear vs GoldenWeald vs Star King — MOQ, health sensors, and SDK support"'
+  - text: "Smart Ring OEM/ODM comparison: Longvon vs YT Smart Wear vs GoldenWeald vs Star King — MOQ, health sensors, and SDK support"
+  - text: Computer
+  - button "Build a custom smart ring private-label RFQ template and supplier sourcing checklist for Shenzhen manufacturers"
+  - text: Build a custom smart ring private-label RFQ template and supplier sourcing checklist for Shenzhen manufacturers
+  - text: Computer
+  - button "What are typical MOQ and lead times for smart ring OEMs"
+  - text: What are typical MOQ and lead times for smart ring OEMs
+  - button "How to evaluate smart ring sensor accuracy and firmware"
+  - text: How to evaluate smart ring sensor accuracy and firmware
+  - button "What are the main patent and certification hurdles for smart rings"
+  - text: What are the main patent and certification hurdles for smart rings
+  - button "隐藏详情":
+  - button "来源" [expanded]:
+    - generic: 来源
+  - link "longvon Smart Ring OEM & ODM Services - LONGVON LONGVON · Smart Ring Manufacturer · OEM/ODM LONGVON (Longvon Technology (Shenzhen) Co., Ltd.) is a smart ring technology manufacturer and OEM/ODM provider. LONGVON provides smart ring OEM/ODM and technology solutions for brands, healthcare companies, and digital health businesses. ... LONGVON Technology (Shenzhen) Co., Ltd. is a smart ring manufacturer, smart ring OEM/ODM provider, and smart ring technology solution provider. LONGVON is a smart ring technology manufacturer and OEM/ODM provider...":
+    - /url: https://www.longvon.com/en/smart-ring-oem-odm
+    - generic: longvon
+    - generic: Smart Ring OEM & ODM Services - LONGVON
+    - generic: LONGVON · Smart Ring Manufacturer · OEM/ODM LONGVON (Longvon Technology (Shenzhen) Co., Ltd.) is a smart ring technology manufacturer and OEM/ODM provider. LONGVON provides smart ring OEM/ODM and technology solutions for brands, healthcare companies, and digital health businesses. ... LONGVON Technology (Shenzhen) Co., Ltd. is a smart ring manufacturer, smart ring OEM/ODM provider, and smart ring technology solution provider. LONGVON is a smart ring technology manufacturer and OEM/ODM provider...
+  - link "ytsmartwear Smart Wearable OEM/ODM Manufacturer | YT Smart Wear Smart rings, AI smart glasses and AI earbuds — engineered, certified and mass-produced in Shenzhen for global brands since 2009.":
+    - /url: https://www.ytsmartwear.com/
+    - generic: ytsmartwear
+    - generic: Smart Wearable OEM/ODM Manufacturer | YT Smart Wear
+    - generic: Smart rings, AI smart glasses and AI earbuds — engineered, certified and mass-produced in Shenzhen for global brands since 2009.
+  - link "goldenweald Smart Ring OEM & ODM Manufacturer | Custom Smart Rings Why Choose PCB Assembly In China-Since1998,GoldenWeald,pcb assembly in china, china pcb assembly manufacturer, pcb assembly from china":
+    - /url: https://www.goldenweald.com/smart-ring-oem-odm-manufacturer-custom-smart-rings/
+    - generic: goldenweald
+    - generic: Smart Ring OEM & ODM Manufacturer | Custom Smart Rings
+    - generic: Why Choose PCB Assembly In China-Since1998,GoldenWeald,pcb assembly in china, china pcb assembly manufacturer, pcb assembly from china
+  - link "goldenweald Smart Ring OEM Manufacturer,Smart Ring Factory China Wireless Charger PCBA, Wireless Charger PCB, Wireless Charger Power bank OEM/ODM - Since19998, Golden Weald, one station service":
+    - /url: https://www.goldenweald.com/portfolio/smart-ring-oem-manufacturer/
+    - generic: goldenweald
+    - generic: Smart Ring OEM Manufacturer,Smart Ring Factory China
+    - generic: Wireless Charger PCBA, Wireless Charger PCB, Wireless Charger Power bank OEM/ODM - Since19998, Golden Weald, one station service
+  - link "goldenweald AI Smart Ring OEM/ODM Manufacturer in China | Golden Weald Since1998, Smart Ring OEM ODM factory, AI smart ring design,translate Rings wearable device factory,AI Smart Ring OEM/ODM Manufacturer AI Recording & Translation Wearable Devices":
+    - /url: https://www.goldenweald.com/service/ai-smart-ring-oem-odm-manufacturer-ai-recording-translation-wearable-devices/
+    - generic: goldenweald
+    - generic: AI Smart Ring OEM/ODM Manufacturer in China | Golden Weald
+    - generic: Since1998, Smart Ring OEM ODM factory, AI smart ring design,translate Rings wearable device factory,AI Smart Ring OEM/ODM Manufacturer AI Recording & Translation Wearable Devices
+  - link "starkingsmartring Smart Wearable & AI Hardware OEM/ODM Manufacturer | STAR KING STAR KING manufactures smart wearables and AI hardware for global brands. Explore OEM/ODM customization, sample validation and project-specific quotations.":
+    - /url: https://starkingsmartring.com/
+    - generic: starkingsmartring
+    - generic: Smart Wearable & AI Hardware OEM/ODM Manufacturer | STAR KING
+    - generic: STAR KING manufactures smart wearables and AI hardware for global brands. Explore OEM/ODM customization, sample validation and project-specific quotations.
+  - 'link "starkingsmartring Smart Rings OEM/ODM Manufacturer | STAR KING Source K100, BK20 and K20 smart rings: MOQ 100 pcs, samples in 2–5 days and 15-day production for 500–10,000 pcs. Explore OEM/ODM customization."':
+    - /url: https://starkingsmartring.com/products/smart-rings/
+    - generic: starkingsmartring
+    - generic: Smart Rings OEM/ODM Manufacturer | STAR KING
+    - generic: "Source K100, BK20 and K20 smart rings: MOQ 100 pcs, samples in 2–5 days and 15-day production for 500–10,000 pcs. Explore OEM/ODM customization."
+  - link "aismartai AISmart Technology Co.,Ltd | Smart Ring & Smart Glasses ... Professional supplier of smart rings and smart glasses. Support OEM, ODM and bulk wholesale for worldwide buyers.":
+    - /url: https://www.aismartai.com/
+    - generic: aismartai
+    - generic: AISmart Technology Co.,Ltd | Smart Ring & Smart Glasses ...
+    - generic: Professional supplier of smart rings and smart glasses. Support OEM, ODM and bulk wholesale for worldwide buyers.
+  - link "jointcorp Smart Ring Manufacturer & Health Tracking Rings OEM/ODM - J-Style J-Style provides OEM/ODM smart rings with advanced sensors for sleep, HRV, stress, and fitness tracking. Custom designs, medical-grade accuracy, and full-stack wearable solutions.":
+    - /url: https://www.jointcorp.com/product-cat/smart-rings/
+    - generic: jointcorp
+    - generic: Smart Ring Manufacturer & Health Tracking Rings OEM/ODM - J-Style
+    - generic: J-Style provides OEM/ODM smart rings with advanced sensors for sleep, HRV, stress, and fitness tracking. Custom designs, medical-grade accuracy, and full-stack wearable solutions.
+  - link "goldenweald Smart Ring Manufacturer OEM & ODM Smart Ring Development provides OEM/ODM smart rings with advanced sensors for sleep, HRV, stress, and fitness tracking.Smart Ring Manufacturer OEM & ODM Smart Ring Development.":
+    - /url: https://www.goldenweald.com/smart-ring-manufacturer-oem-odm-smart-ring-development/
+    - generic: goldenweald
+    - generic: Smart Ring Manufacturer OEM & ODM Smart Ring Development
+    - generic: provides OEM/ODM smart rings with advanced sensors for sleep, HRV, stress, and fitness tracking.Smart Ring Manufacturer OEM & ODM Smart Ring Development.
+  - 'link "indexbox Wireless Ring Light Market To 2035: Creator Economy and Hybrid Work Drive Growth - News and Statistics The wireless ring light market is set to grow through 2035, supported by the creator economy and hybrid work, with e-commerce controlling over two-thirds of volume."':
+    - /url: https://www.indexbox.io/blog/wireless-ring-light-market-forecast-to-2035-growth-driven-by-creator-economy-and-hybrid-work/
+    - generic: indexbox
+    - generic: "Wireless Ring Light Market To 2035: Creator Economy and Hybrid Work Drive Growth - News and Statistics"
+    - generic: The wireless ring light market is set to grow through 2035, supported by the creator economy and hybrid work, with e-commerce controlling over two-thirds of volume.
+  - button "Pro 已启用高级搜索免费预览。 了解更多":
+    - generic: Pro
+    - generic: 已启用高级搜索免费预览。
+    - button "了解更多":
+      - generic: 了解更多
+  - status:
+    - generic: 您正处于隐身模式。
+    - button "退出隐身模式":
+      - generic: 退出无痕模式
+  - textbox "提出后续问题":
+    - paragraph
+  - generic: 提出后续问题
+  - button "添加文件、插件等":
+  - button "搜索" [pressed]:
+    - generic: 搜索
+  - button "Computer":
+    - generic: Computer
+  - button "模型":
+    - generic: 模型
+  - button "语音输入":
+  - button "提交" [disabled]:

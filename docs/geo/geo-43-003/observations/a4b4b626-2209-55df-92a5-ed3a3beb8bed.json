@@ -1,0 +1,59 @@
+{
+  "record_id": "a4b4b626-2209-55df-92a5-ed3a3beb8bed",
+  "query_id": "Q12",
+  "query": "medical smart ring ODM manufacturer",
+  "platform": "Google",
+  "mode": "ALL_FIRST_PAGE_AUTO_AI_OVERVIEW",
+  "observed_at": "2026-11-24T13:29:04.167Z",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "Chrome existing signed-in profile; hl=en; personalized results; country UNKNOWN; PR27 bounded AI receipt detector; collapsed overview scope",
+  "availability": "COMPLETED",
+  "longvon_present": false,
+  "organic_rank": null,
+  "ai_body_recommended": null,
+  "source_cited": null,
+  "cited_urls": [],
+  "competitors": [
+    {
+      "name": "J-Style / Jointcorp",
+      "url": "https://www.jointcorp.com/product-cat/smart-rings/",
+      "position": "web-result h3 #1",
+      "evidence_quote": "- link \"Smart Ring Manufacturer & Health Tracking Rings OEM/ODM jointcorp.com https://www.jointcorp.com › product-cat › smart-rings\":"
+    },
+    {
+      "name": "STAR KING / Pineeon (as displayed)",
+      "url": "https://starkingsmartring.com/products/smart-rings/",
+      "position": "web-result h3 #2",
+      "evidence_quote": "- link \"Smart Ring OEM/ODM Manufacturer & Private Label starkingsmartring.com https://starkingsmartring.com › products › smart-rings\":"
+    },
+    {
+      "name": "Goodway",
+      "url": "https://www.goodwaytechs.com/smart-rings.html",
+      "position": "web-result h3 #3",
+      "evidence_quote": "- link \"OEM & ODM Health Smart Ring Solutions Goodway Techs https://www.goodwaytechs.com › OEM&ODM\":"
+    },
+    {
+      "name": "Golden Weald",
+      "url": "https://www.goldenweald.com/service/ai-smart-ring-oem-odm-manufacturer-ai-recording-translation-wearable-devices/",
+      "position": "web-result h3 #9",
+      "evidence_quote": "- link \"AI Smart Ring OEM/ODM Manufacturer in China | GoldenWeald goldenweald.com https://www.goldenweald.com › Services\":"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-24-round2/google-Q12.jpg",
+      "sha256": "0d1f97298cebbefb4e7bb5133f031c8181114cdec041145e626f185a6e49478c"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/google-Q12.json",
+      "sha256": "0be1e0953c6464767af871ef043f0c755b17978b3fb52207dc654613fc79eda1"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/google-Q12.txt",
+      "sha256": "b0fe307dec959d39253e278487157a72ea5e80af30930da0e2fec9e5080ebe2c"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "New round2 capture; environment/method differs from round1: no comparable previous_record_id and no ranking-growth attribution. Citations prove visible URLs only; reachability and commercial facts UNKNOWN."
+}

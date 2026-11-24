@@ -1,0 +1,233 @@
+- link "Skip to main content"
+- link "Accessibility help":
+  - /url: https://support.google.com/websearch/answer/181196?hl=en
+- search:
+  - link "Go to Google Home":
+    - /url: https://www.google.com/webhp?hl=en&sa=X&ved=2ahUKEwitqIP92aCYAxVSKEQIHdQQBbUQPHoECAYQBA
+  - status
+  - alert
+  - combobox "Search": smart ring hardware firmware ODM partner smart ring hardware firmware ODM partner
+  - button "Clear":
+  - button "Search by voice":
+  - button "Search by image":
+- button "Share":
+- button "Google apps":
+[account label omitted]
+- navigation:
+  - list:
+    - link "AI Mode":
+      - /url: /search?q=smart+ring+hardware+firmware+ODM+partner&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDiismzcGjWmSSfrrZhuIjCANyDJ2A:1795526641118&udm=50&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtICPMVaTZk4tFdUK8k5MXv8g8O0YurqYK3cSBclZ4lkqkmbfBo7ZCIEoKNtmqYteY2ppzsYrnq7EmzRtU_YzFQ-k1voEvfQWF5lhWNYHvqAODcXUC3JoqVnRRHbVQgbXM6GC_aj-4ux9vknxPhbl5XfnQnXbg&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwitqIP92aCYAxVSKEQIHdQQBbUQ2J8OegQIDBAD
+      - generic: AI Mode
+    - link "All" [disabled]:
+      - generic: All
+    - link "Shopping":
+      - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDiismzcGjWmSSfrrZhuIjCANyDJ2A:1795526641118&udm=28&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtICPMVaTZk4tFdUK8k5MXv8g8O0YurqYK3cSBclZ4lkqkmbfBo7ZCIEoKNtmqYteY2ppzsYrnq7EmzRtU_YzFQ-k1voEvfQWF5lhWNYHvqAODcXUC3JoqVnRRHbVQgbXM6GC_aj-4ux9vknxPhbl5XfnQnXbg&q=smart+ring+hardware+firmware+ODM+partner&ved=1t:220175&ictx=111
+      - generic: Shopping
+    - link "Images":
+      - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDiismzcGjWmSSfrrZhuIjCANyDJ2A:1795526641118&udm=2&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtICPMVaTZk4tFdUK8k5MXv8g8O0YurqYK3cSBclZ4lkqkmbfBo7ZCIEoKNtmqYteY2ppzsYrnq7EmzRtU_YzFQ-k1voEvfQWF5lhWNYHvqAODcXUC3JoqVnRRHbVQgbXM6GC_aj-4ux9vknxPhbl5XfnQnXbg&q=smart+ring+hardware+firmware+ODM+partner&sa=X&ved=2ahUKEwitqIP92aCYAxVSKEQIHdQQBbUQtKgLegQIGhAB
+      - generic: Images
+    - link "Short videos":
+      - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDiismzcGjWmSSfrrZhuIjCANyDJ2A:1795526641118&udm=short_vids&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtICPMVaTZk4tFdUK8k5MXv8g8O0YurqYK3cSBclZ4lkqkmbfBo7ZCIEoKNtmqYteY2ppzsYrnq7EmzRtU_YzFQ-k1voEvfQWF5lhWNYHvqAODcXUC3JoqVnRRHbVQgbXM6GC_aj-4ux9vknxPhbl5XfnQnXbg&q=smart+ring+hardware+firmware+ODM+partner&sa=X&ved=2ahUKEwitqIP92aCYAxVSKEQIHdQQBbUQs6gLegQIGBAB
+      - generic: Short videos
+    - link "Videos":
+      - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDiismzcGjWmSSfrrZhuIjCANyDJ2A:1795526641118&udm=vids&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtICPMVaTZk4tFdUK8k5MXv8g8O0YurqYK3cSBclZ4lkqkmbfBo7ZCIEoKNtmqYteY2ppzsYrnq7EmzRtU_YzFQ-k1voEvfQWF5lhWNYHvqAODcXUC3JoqVnRRHbVQgbXM6GC_aj-4ux9vknxPhbl5XfnQnXbg&q=smart+ring+hardware+firmware+ODM+partner&sa=X&ved=2ahUKEwitqIP92aCYAxVSKEQIHdQQBbUQtKgLegQIFhAB
+      - generic: Videos
+    - link "Forums":
+      - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDiismzcGjWmSSfrrZhuIjCANyDJ2A:1795526641118&udm=forums&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtICPMVaTZk4tFdUK8k5MXv8g8O0YurqYK3cSBclZ4lkqkmbfBo7ZCIEoKNtmqYteY2ppzsYrnq7EmzRtU_YzFQ-k1voEvfQWF5lhWNYHvqAODcXUC3JoqVnRRHbVQgbXM6GC_aj-4ux9vknxPhbl5XfnQnXbg&q=smart+ring+hardware+firmware+ODM+partner&sa=X&ved=2ahUKEwitqIP92aCYAxVSKEQIHdQQBbUQs6gLegQIFxAB
+      - generic: Forums
+    - button "More filters":
+      - generic "More filters":
+        - generic: More
+  - button "Tools":
+    - generic: Tools
+- heading "Search Results" [level=1]
+- main:
+  - generic: Can't generate an AI overview right now. Try again later.
+  - heading "Web results" [level=2]
+  - 'link "Wearable Firmware Customization: What OEM Brands Need ... jointcorp.com https://www.jointcorp.com › smart-band-manufacturer"':
+    - /url: https://www.jointcorp.com/blog/smart-band-manufacturer/wearable-firmware-customization-guide/
+    - 'heading "Wearable Firmware Customization: What OEM Brands Need ..." [level=3]'
+    - generic: jointcorp.com
+    - generic: https://www.jointcorp.com › smart-band-manufacturer
+  - button "About this result":
+  - emphasis: J-Style develops wearable platforms including smart rings
+  - text: and smart bands with customized firmware capabilities for different product requirements. Related ...
+  - link "Read more":
+    - /url: https://www.jointcorp.com/blog/smart-band-manufacturer/wearable-firmware-customization-guide/#:~:text=J%2DStyle%20develops%20wearable%20platforms%20including,Related%20products%3A
+  - link "A Complete Guide to Smart Ring OEM vs ODM Options Pineeon https://pineeon.com › smart-ring-oem-vs-odm":
+    - /url: https://pineeon.com/smart-ring-oem-vs-odm/
+    - heading "A Complete Guide to Smart Ring OEM vs ODM Options" [level=3]
+    - generic: Pineeon
+    - generic: https://pineeon.com › smart-ring-oem-vs-odm
+  - button "About this result":
+  - text: In the
+  - emphasis: smart ring
+  - text: world, an
+  - emphasis: ODM
+  - text: platform typically includes a proven enclosure, a tested PCBA,
+  - emphasis: firmware
+  - text: ", and a companion app. You can customize the logo, ..."
+  - link "Read more":
+    - /url: https://pineeon.com/smart-ring-oem-vs-odm/#:~:text=In%20the%20smart%20ring%20world%2C,You%20can%20customize%20the%20logo%2C
+  - 'link "smart ring integration guide: Best 7 Buyer Checks - STAR KING starkingsmartring.com https://starkingsmartring.com › smart-ring-integration-g..."':
+    - /url: https://starkingsmartring.com/smart-ring-integration-guide-system-integrators-guide/
+    - 'heading "smart ring integration guide: Best 7 Buyer Checks - STAR KING" [level=3]'
+    - generic: starkingsmartring.com
+    - generic: https://starkingsmartring.com › smart-ring-integration-g...
+  - button "About this result":
+  - generic: Sep 27, 2026 —
+  - text: A smart ring integration guide for system integrators explains
+  - emphasis: how to source, adapt, and deploy OEM/ODM smart rings
+  - text: into client platforms. ...
+  - 'link "OEM Smart Ring Guide: How to Choose the Right Partner Alibaba.com https://electronics.alibaba.com › buyingguides › oem-sm..."':
+    - /url: https://electronics.alibaba.com/buyingguides/oem-smart-ring-guide-how-to-choose-right
+    - 'heading "OEM Smart Ring Guide: How to Choose the Right Partner" [level=3]'
+    - generic: Alibaba.com
+    - generic: https://electronics.alibaba.com › buyingguides › oem-sm...
+  - button "About this result":
+  - generic: Aug 5, 2026 —
+  - text: If you need fast time-to-market with minimal firmware overhead,
+  - emphasis: choose a proven ODM partner
+  - text: —but secure contractual rights to firmware source ...
+  - link "Read more":
+    - /url: https://electronics.alibaba.com/buyingguides/oem-smart-ring-guide-how-to-choose-right#:~:text=If%20you%20need%20fast%20time%2Dto%2Dmarket,source%20code%20before%20final%20payment.
+  - link "Smart Ring OEM & ODM Manufacturer in Shenzhen, China goldenweald.com https://www.goldenweald.com › Blog Standard":
+    - /url: https://www.goldenweald.com/smart-ring-oem-odm-manufacturer-in-shenzhen-china/
+    - heading "Smart Ring OEM & ODM Manufacturer in Shenzhen, China" [level=3]
+    - generic: goldenweald.com
+    - generic: https://www.goldenweald.com › Blog Standard
+  - button "About this result":
+  - generic: Nov 12, 2026 —
+  - text: With a monthly production capacity of up to 100,000
+  - emphasis: smart rings
+  - text: ", we support OEM/"
+  - emphasis: ODM
+  - text: projects with typical MOQs from 500 to 3,000 units, making ...
+  - link "Read more":
+    - /url: https://www.goldenweald.com/smart-ring-oem-odm-manufacturer-in-shenzhen-china/#:~:text=With%20a%20monthly%20production%20capacity,emerging%20brands%20and%20established%20businesses.
+  - link "EU software company sourcing a smart ring / bracelet ODM ... Reddit · r/shenzhen 20+ comments · 7 months ago":
+    - /url: https://www.reddit.com/r/shenzhen/comments/1smonzs/eu_software_company_sourcing_a_smart_ring/
+    - heading "EU software company sourcing a smart ring / bracelet ODM ..." [level=3]
+    - generic: Reddit · r/shenzhen
+    - generic: 20+ comments · 7 months ago
+  - button "About this result":
+  - text: Looking for a serious
+  - emphasis: ODM partner
+  - text: for
+  - emphasis: smart rings
+  - text: "and / or smart bracelets. Two EU distribution channels already in place: elderly care (B2B,."
+  - link "Read more":
+    - /url: https://www.reddit.com/r/shenzhen/comments/1smonzs/eu_software_company_sourcing_a_smart_ring/#:~:text=Looking%20for%20a%20serious%20ODM,in%20place%3A%20elderly%20care%20(B2B%2C
+  - link "Looking for Shenzhen OEM/ODM smart ring supplier ...":
+    - /url: https://www.reddit.com/r/SmartRings/comments/1u9zcvm/looking_for_shenzhen_oemodm_smart_ring_supplier/
+    - text: Looking for Shenzhen OEM/
+    - emphasis: ODM smart ring
+    - text: supplier ...
+  - generic: 3 posts
+  - generic: Jun 19, 2026
+  - link "Reverse engineered s $7 Chinese smart ring from Temu ...":
+    - /url: https://www.reddit.com/r/hardwarehacking/comments/1u3wdeb/reverse_engineered_s_7_chinese_smart_ring_from/
+    - text: Reverse engineered s $7 Chinese
+    - emphasis: smart ring
+    - text: from Temu ...
+  - generic: 55 posts
+  - generic: Jun 12, 2026
+  - link "More results from www.reddit.com":
+    - /url: /search?q=smart+ring+hardware+firmware+ODM+partner+site:www.reddit.com&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDiismzcGjWmSSfrrZhuIjCANyDJ2A:1795526641118&sa=X&ved=2ahUKEwitqIP92aCYAxVSKEQIHdQQBbUQrQIoAnoECCoQAw
+  - link "How to Choose a Reliable OEM & ODM Partner - Smart Ring ... jointcorp.com https://www.jointcorp.com › smart-ring-manufacturer-h...":
+    - /url: https://www.jointcorp.com/smart-ring-manufacturer-how-to-choose-a-reliable-oem-odm-partner/
+    - heading "How to Choose a Reliable OEM & ODM Partner - Smart Ring ..." [level=3]
+    - generic: jointcorp.com
+    - generic: https://www.jointcorp.com › smart-ring-manufacturer-h...
+  - button "About this result":
+  - text: Unlike assembly-only suppliers, a professional
+  - emphasis: smart ring
+  - text: "manufacturer typically provides: In-house R&D ("
+  - emphasis: hardware
+  - text: +
+  - emphasis: firmware
+  - text: + algorithms); Sensor ...
+  - link "Read more":
+    - /url: https://www.jointcorp.com/smart-ring-manufacturer-how-to-choose-a-reliable-oem-odm-partner/#:~:text=Unlike%20assembly%2Donly%20suppliers%2C%20a%20professional,(PPG%2C%20SpO%E2%82%82%2C%20temperature%2C%20ECG%2C%20motion)
+  - 'link "Custom Smart Ring: The Ultimate Guide to OEM ... Geyan Technology https://www.gysmartwatch.com › html › custom-smart-ri..."':
+    - /url: https://www.gysmartwatch.com/html/custom-smart-ring-oem-manufacturing.html
+    - 'heading "Custom Smart Ring: The Ultimate Guide to OEM ..." [level=3]'
+    - generic: Geyan Technology
+    - generic: https://www.gysmartwatch.com › html › custom-smart-ri...
+  - button "About this result":
+  - generic: Jun 6, 2026 —
+  - text: "\"Geyan Technology has specialized in"
+  - emphasis: smart wearable OEM/ODM manufacturing
+  - text: for 15+ years, with in-house teams covering hardware engineering, ...
+  - link "Read more":
+    - /url: https://www.gysmartwatch.com/html/custom-smart-ring-oem-manufacturing.html#:~:text=%22Geyan%20Technology%20has%20specialized%20in,app%20development%2C%20and%20global%20certifications.
+  - 'link "Smart Ring OEM Vs ODM: the Best Choice for Scale & ... Goodway Techs https://www.goodwaytechs.com › Insights › News"':
+    - /url: https://www.goodwaytechs.com/news/smart-ring-oem-vs-odm-manufacturing-guide.html
+    - 'heading "Smart Ring OEM Vs ODM: the Best Choice for Scale & ..." [level=3]'
+    - generic: Goodway Techs
+    - generic: https://www.goodwaytechs.com › Insights › News
+  - button "About this result":
+  - generic: Dec 12, 2025 —
+  - emphasis: ODM (Original Design Manufacturer
+  - text: ) You adapt an existing smart ring platform. Fast to launch. Low upfront cost. Limited control. ; OEM (Original ...
+  - link "Read more":
+    - /url: https://www.goodwaytechs.com/news/smart-ring-oem-vs-odm-manufacturing-guide.html#:~:text=ODM%20(Original%20Design%20Manufacturer),Low%20upfront%20cost.%20Limited%20control.&text=OEM%20(Original%20Equipment%20Manufacturer)
+  - text: "Missing: hardware ‎| Show results with:"
+  - link "hardware":
+    - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDiismzcGjWmSSfrrZhuIjCANyDJ2A:1795526641118&q=smart+ring+%22hardware%22+firmware+ODM+partner&sa=X&ved=2ahUKEwitqIP92aCYAxVSKEQIHdQQBbUQ5t4CegQIQhAB
+  - navigation:
+    - heading "Page Navigation" [level=1]
+    - text: "1"
+    - link "Page 2":
+      - /url: /search?q=smart+ring+hardware+firmware+ODM+partner&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDiismzcGjWmSSfrrZhuIjCANyDJ2A:1795526641118&ei=8Y8Fa-3rBtLQkPIP1KGUqAs&start=10&sa=N&sstk=AYl2yk896eGqGHbXVPcVbgYikwtasFlSom82WAw6F1LX2gh6NpusvIzSVFgkU856QH_7OC8yT7pJa07psBtnZ_UXmUFPdKxA2DMmmw&ved=2ahUKEwitqIP92aCYAxVSKEQIHdQQBbUQ8tMDegQIPxAE
+      - text: "2"
+    - link "Page 3":
+      - /url: /search?q=smart+ring+hardware+firmware+ODM+partner&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDiismzcGjWmSSfrrZhuIjCANyDJ2A:1795526641118&ei=8Y8Fa-3rBtLQkPIP1KGUqAs&start=20&sa=N&sstk=AYl2yk896eGqGHbXVPcVbgYikwtasFlSom82WAw6F1LX2gh6NpusvIzSVFgkU856QH_7OC8yT7pJa07psBtnZ_UXmUFPdKxA2DMmmw&ved=2ahUKEwitqIP92aCYAxVSKEQIHdQQBbUQ8tMDegQIPxAG
+      - text: "3"
+    - link "Page 4":
+      - /url: /search?q=smart+ring+hardware+firmware+ODM+partner&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDiismzcGjWmSSfrrZhuIjCANyDJ2A:1795526641118&ei=8Y8Fa-3rBtLQkPIP1KGUqAs&start=30&sa=N&sstk=AYl2yk896eGqGHbXVPcVbgYikwtasFlSom82WAw6F1LX2gh6NpusvIzSVFgkU856QH_7OC8yT7pJa07psBtnZ_UXmUFPdKxA2DMmmw&ved=2ahUKEwitqIP92aCYAxVSKEQIHdQQBbUQ8tMDegQIPxAI
+      - text: "4"
+    - link "Page 5":
+      - /url: /search?q=smart+ring+hardware+firmware+ODM+partner&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDiismzcGjWmSSfrrZhuIjCANyDJ2A:1795526641118&ei=8Y8Fa-3rBtLQkPIP1KGUqAs&start=40&sa=N&sstk=AYl2yk896eGqGHbXVPcVbgYikwtasFlSom82WAw6F1LX2gh6NpusvIzSVFgkU856QH_7OC8yT7pJa07psBtnZ_UXmUFPdKxA2DMmmw&ved=2ahUKEwitqIP92aCYAxVSKEQIHdQQBbUQ8tMDegQIPxAK
+      - text: "5"
+    - link "Page 6":
+      - /url: /search?q=smart+ring+hardware+firmware+ODM+partner&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDiismzcGjWmSSfrrZhuIjCANyDJ2A:1795526641118&ei=8Y8Fa-3rBtLQkPIP1KGUqAs&start=50&sa=N&sstk=AYl2yk896eGqGHbXVPcVbgYikwtasFlSom82WAw6F1LX2gh6NpusvIzSVFgkU856QH_7OC8yT7pJa07psBtnZ_UXmUFPdKxA2DMmmw&ved=2ahUKEwitqIP92aCYAxVSKEQIHdQQBbUQ8tMDegQIPxAM
+      - text: "6"
+    - link "Page 7":
+      - /url: /search?q=smart+ring+hardware+firmware+ODM+partner&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDiismzcGjWmSSfrrZhuIjCANyDJ2A:1795526641118&ei=8Y8Fa-3rBtLQkPIP1KGUqAs&start=60&sa=N&sstk=AYl2yk896eGqGHbXVPcVbgYikwtasFlSom82WAw6F1LX2gh6NpusvIzSVFgkU856QH_7OC8yT7pJa07psBtnZ_UXmUFPdKxA2DMmmw&ved=2ahUKEwitqIP92aCYAxVSKEQIHdQQBbUQ8tMDegQIPxAO
+      - text: "7"
+    - link "Page 8":
+      - /url: /search?q=smart+ring+hardware+firmware+ODM+partner&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDiismzcGjWmSSfrrZhuIjCANyDJ2A:1795526641118&ei=8Y8Fa-3rBtLQkPIP1KGUqAs&start=70&sa=N&sstk=AYl2yk896eGqGHbXVPcVbgYikwtasFlSom82WAw6F1LX2gh6NpusvIzSVFgkU856QH_7OC8yT7pJa07psBtnZ_UXmUFPdKxA2DMmmw&ved=2ahUKEwitqIP92aCYAxVSKEQIHdQQBbUQ8tMDegQIPxAQ
+      - text: "8"
+    - link "Page 9":
+      - /url: /search?q=smart+ring+hardware+firmware+ODM+partner&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDiismzcGjWmSSfrrZhuIjCANyDJ2A:1795526641118&ei=8Y8Fa-3rBtLQkPIP1KGUqAs&start=80&sa=N&sstk=AYl2yk896eGqGHbXVPcVbgYikwtasFlSom82WAw6F1LX2gh6NpusvIzSVFgkU856QH_7OC8yT7pJa07psBtnZ_UXmUFPdKxA2DMmmw&ved=2ahUKEwitqIP92aCYAxVSKEQIHdQQBbUQ8tMDegQIPxAS
+      - text: "9"
+    - link "Page 10":
+      - /url: /search?q=smart+ring+hardware+firmware+ODM+partner&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDiismzcGjWmSSfrrZhuIjCANyDJ2A:1795526641118&ei=8Y8Fa-3rBtLQkPIP1KGUqAs&start=90&sa=N&sstk=AYl2yk896eGqGHbXVPcVbgYikwtasFlSom82WAw6F1LX2gh6NpusvIzSVFgkU856QH_7OC8yT7pJa07psBtnZ_UXmUFPdKxA2DMmmw&ved=2ahUKEwitqIP92aCYAxVSKEQIHdQQBbUQ8tMDegQIPxAU
+      - text: "10"
+    - heading "Next" [level=2]:
+      - link "Next":
+        - /url: /search?q=smart+ring+hardware+firmware+ODM+partner&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDiismzcGjWmSSfrrZhuIjCANyDJ2A:1795526641118&ei=8Y8Fa-3rBtLQkPIP1KGUqAs&start=10&sa=N&sstk=AYl2yk896eGqGHbXVPcVbgYikwtasFlSom82WAw6F1LX2gh6NpusvIzSVFgkU856QH_7OC8yT7pJa07psBtnZ_UXmUFPdKxA2DMmmw&ved=2ahUKEwitqIP92aCYAxVSKEQIHdQQBbUQ8NMDegQIPxAW
+        - generic: Next
+  - navigation
+- contentinfo:
+  - heading "Footer Links" [level=1]
+  - generic: Results are personalized
+  - generic: "-"
+  - link "Try without personalization":
+    - /url: https://www.google.com/search?q=smart+ring+hardware+firmware+ODM+partner&hl=en&peek_pws=0&sxsrf=AKL5yDiismzcGjWmSSfrrZhuIjCANyDJ2A:1795526641118
+    - generic: Try without personalization
+  - button "Los Angeles County, California - Based on your past activity":
+    - generic: Los Angeles County, California
+    - text: "-"
+    - generic: Based on your past activity
+  - text: "-"
+  - button "Update location": Update location
+  - link "Help":
+    - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en&fg=1
+  - button "Send feedback":
+    - generic: Send feedback
+  - link "Privacy":
+    - /url: https://policies.google.com/privacy?hl=en&fg=1
+  - link "Terms":
+    - /url: https://policies.google.com/terms?hl=en&fg=1

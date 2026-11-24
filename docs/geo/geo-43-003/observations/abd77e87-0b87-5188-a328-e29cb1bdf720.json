@@ -1,0 +1,81 @@
+{
+  "record_id": "abd77e87-0b87-5188-a328-e29cb1bdf720",
+  "query_id": "Q01",
+  "query": "smart ring OEM ODM manufacturer",
+  "platform": "Perplexity",
+  "mode": "INCOGNITO_SEARCH",
+  "observed_at": "2026-11-24T13:20:16.090Z",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "Chrome signed-in incognito Search; Pro free-preview label; UI zh, query/answer en; model UNKNOWN; PR27 visible source-panel DOM extraction",
+  "availability": "COMPLETED",
+  "longvon_present": true,
+  "organic_rank": null,
+  "ai_body_recommended": true,
+  "source_cited": true,
+  "cited_urls": [
+    "https://www.longvon.com/en/smart-ring-oem-odm",
+    "https://www.ytsmartwear.com/",
+    "https://www.goldenweald.com/smart-ring-oem-odm-manufacturer-custom-smart-rings/",
+    "https://www.goldenweald.com/portfolio/smart-ring-oem-manufacturer/",
+    "https://www.goldenweald.com/service/ai-smart-ring-oem-odm-manufacturer-ai-recording-translation-wearable-devices/",
+    "https://starkingsmartring.com/",
+    "https://starkingsmartring.com/products/smart-rings/",
+    "https://www.aismartai.com/",
+    "https://www.jointcorp.com/product-cat/smart-rings/",
+    "https://www.goldenweald.com/smart-ring-manufacturer-oem-odm-smart-ring-development/",
+    "https://www.indexbox.io/blog/wireless-ring-light-market-forecast-to-2035-growth-driven-by-creator-economy-and-hybrid-work/"
+  ],
+  "competitors": [
+    {
+      "name": "YT Smart Wear",
+      "url": "https://www.ytsmartwear.com/",
+      "position": "visible sources item #2",
+      "evidence_quote": "ytsmartwear\nSmart Wearable OEM/ODM Manufacturer | YT Smart Wear\nSmart rings, AI smart glasses and AI earbuds — engineered, certified and mass-produced in Shenzhen for global brands since 2009."
+    },
+    {
+      "name": "Golden Weald",
+      "url": "https://www.goldenweald.com/smart-ring-oem-odm-manufacturer-custom-smart-rings/",
+      "position": "visible sources item #3",
+      "evidence_quote": "goldenweald\nSmart Ring OEM & ODM Manufacturer | Custom Smart Rings\nWhy Choose PCB Assembly In China-Since1998,GoldenWeald,pcb assembly in china, china pcb assembly manufacturer, pcb assembly from china"
+    },
+    {
+      "name": "STAR KING / Pineeon (as displayed)",
+      "url": "https://starkingsmartring.com/",
+      "position": "visible sources item #6",
+      "evidence_quote": "starkingsmartring\nSmart Wearable & AI Hardware OEM/ODM Manufacturer | STAR KING\nSTAR KING manufactures smart wearables and AI hardware for global brands. Explore OEM/ODM customization, sample validation and project-specific quotations."
+    },
+    {
+      "name": "AISmart",
+      "url": "https://www.aismartai.com/",
+      "position": "visible sources item #8",
+      "evidence_quote": "aismartai\nAISmart Technology Co.,Ltd | Smart Ring & Smart Glasses ...\nProfessional supplier of smart rings and smart glasses. Support OEM, ODM and bulk wholesale for worldwide buyers."
+    },
+    {
+      "name": "J-Style / Jointcorp",
+      "url": "https://www.jointcorp.com/product-cat/smart-rings/",
+      "position": "visible sources item #9",
+      "evidence_quote": "jointcorp\nSmart Ring Manufacturer & Health Tracking Rings OEM/ODM - J-Style\nJ-Style provides OEM/ODM smart rings with advanced sensors for sleep, HRV, stress, and fitness tracking. Custom designs, medical-grade accuracy, and full-stack wearable solutions."
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-24-round2/perplexity-Q01-sources.json",
+      "sha256": "cde5f20356a3284bb913d495f1403c66635a3ea0b1a50fdbdcb37f22b00fa6e9"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/perplexity-Q01.jpg",
+      "sha256": "8683a5cf98cd1c44c7e6ee803c1bdfaaebbb2b08c3d90740a4db2d2eddc67b8b"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/perplexity-Q01.json",
+      "sha256": "9668dd4ebe691314e01139dba87080f5021d65947c00cafda0fea36a025c35a5"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/perplexity-Q01.txt",
+      "sha256": "e59a6114ed07d931a59e69dea33280831936a7e3c4ca28905c873c43db6ef5f7"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "New round2 capture; environment/method differs from round1: no comparable previous_record_id and no ranking-growth attribution. Citations prove visible URLs only; reachability and commercial facts UNKNOWN."
+}

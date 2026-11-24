@@ -1,0 +1,240 @@
+- complementary:
+  - navigation "侧边栏导航":
+    - link:
+      - /url: /
+    - button "展开侧边栏"
+    - group "创建":
+      - link "新建":
+        - /url: /
+        - generic: 新建
+    - group "主导航":
+      - link "自动化":
+        - /url: /automations
+        - generic: 自动化
+      - link "工件":
+        - /url: /artifacts
+        - generic: 工件
+      - link "插件":
+        - /url: /computer/plugins
+        - generic: 插件
+      - button "更多":
+        - generic: 更多
+    - link "项目":
+      - /url: /projects
+    - link "会话":
+      - /url: /library
+    - button "升级计划":
+    - button "libing shi":
+      - generic: libing shi
+  - separator "调整侧边栏宽度"
+- main:
+  - button "返回上一页":
+  - tablist "回答模式标签页":
+    - tab "答案" [selected]:
+      - text: 答案
+    - tab "链接":
+      - text: 链接
+    - tab "图片":
+      - text: 图片
+  - button "会话选项":
+  - button "分享":
+    - generic: 分享
+  - button "下载桌面应用":
+    - generic: 下载桌面应用
+  - generic: 21:21
+  - button "编辑查询":
+  - button "复制查询":
+  - paragraph: private label smart ring manufacturer
+  - button "已完成":
+    - generic "已完成"
+  - paragraph:
+    - text: Several manufacturers offer private-label smart rings, but the strongest candidates are those that explicitly support OEM/ODM, app white-labeling, packaging, and hardware customization. Most are based in Shenzhen, China.
+    - generic: starkingsmartring
+    - generic: "+2"
+  - heading "Manufacturers to consider" [level=2]
+  - table:
+    - rowgroup:
+      - row "Manufacturer Private-label scope Notable details":
+        - columnheader "Manufacturer"
+        - columnheader "Private-label scope"
+        - columnheader "Notable details"
+    - rowgroup:
+      - row "Pineeon / STAR KING Full OEM/ODM private-label programs, from sample to mass production Smart rings with HR, HRV, SpO2, temperature, and sleep tracking; branding, packaging, and platform selection; hardware/firmware/app changes require separate engineering review. starkingsmartring +2":
+        - cell "Pineeon / STAR KING":
+          - strong: Pineeon / STAR KING
+        - cell "Full OEM/ODM private-label programs, from sample to mass production"
+        - cell "Smart rings with HR, HRV, SpO2, temperature, and sleep tracking; branding, packaging, and platform selection; hardware/firmware/app changes require separate engineering review. starkingsmartring +2":
+          - text: Smart rings with HR, HRV, SpO2, temperature, and sleep tracking; branding, packaging, and platform selection; hardware/firmware/app changes require separate engineering review.
+          - generic: starkingsmartring
+          - generic: "+2"
+      - 'row "MagiWatch OEM/ODM, private label, app customization, wholesale Supports logo, packaging, color, and selected interface customization on existing models. MagiWatch: Smart Wearable Manufacturer | OEM & ODM"':
+        - cell "MagiWatch":
+          - strong: MagiWatch
+        - cell "OEM/ODM, private label, app customization, wholesale"
+        - 'cell "Supports logo, packaging, color, and selected interface customization on existing models. MagiWatch: Smart Wearable Manufacturer | OEM & ODM"':
+          - text: Supports logo, packaging, color, and selected interface customization on existing models.
+          - 'generic "MagiWatch: Smart Wearable Manufacturer | OEM & ODM"':
+            - link "magiwatch":
+              - /url: https://magiwatch.com/
+              - generic: magiwatch
+      - row "Geyan Technology Full-stack OEM/ODM and white-label ecosystem Offers hardware customization, firmware development, branded iOS/Android app, and packaging; positions its TK20 as a health-monitoring reference ring. gysmartwatch +1":
+        - cell "Geyan Technology":
+          - strong: Geyan Technology
+        - cell "Full-stack OEM/ODM and white-label ecosystem"
+        - cell "Offers hardware customization, firmware development, branded iOS/Android app, and packaging; positions its TK20 as a health-monitoring reference ring. gysmartwatch +1":
+          - text: Offers hardware customization, firmware development, branded iOS/Android app, and packaging; positions its TK20 as a health-monitoring reference ring.
+          - generic: gysmartwatch
+          - generic: "+1"
+      - row "BINGO Group OEM/ODM private-label customization Custom app, ring sizes, surface coating, laser-engraved logo, packaging; advertises low-MOQ trial orders. Smart Ring Manufacturer | OEM ODM Custom Private Label":
+        - cell "BINGO Group":
+          - strong: BINGO Group
+        - cell "OEM/ODM private-label customization"
+        - cell "Custom app, ring sizes, surface coating, laser-engraved logo, packaging; advertises low-MOQ trial orders. Smart Ring Manufacturer | OEM ODM Custom Private Label":
+          - text: Custom app, ring sizes, surface coating, laser-engraved logo, packaging; advertises low-MOQ trial orders.
+          - generic "Smart Ring Manufacturer | OEM ODM Custom Private Label":
+            - link "szbingogroup":
+              - /url: https://szbingogroup.com/product-category/smart-ring/
+              - generic: szbingogroup
+  - heading "What to request first" [level=2]
+  - paragraph: "Ask each factory for the same written scope so quotes are comparable:"
+  - list:
+    - paragraph:
+      - strong: "Reference model and exact sensor set:"
+      - text: PPG heart rate, HRV, SpO2, skin temperature, accelerometer, sleep, activity, battery capacity, charging method, and waterproof rating.
+    - paragraph:
+      - strong: "Customization level:"
+      - text: Logo engraving, colors, finish/material (e.g., titanium or resin), packaging, box inserts, and charging cable branding.
+    - paragraph:
+      - strong: "App and data rights:"
+      - text: Whether the companion app can be white-labeled, whether you receive raw data/API access, server hosting, subscription control, and privacy compliance support.
+    - paragraph:
+      - strong: "Compliance:"
+      - text: CE/UKCA/FCC as applicable, RoHS/REACH, battery transport documents, and—importantly—whether health claims are permitted in your target market.
+    - paragraph:
+      - strong: "Commercial terms:"
+      - text: MOQ, sample cost and lead time, unit price at 500/1,000/3,000 units, tooling cost for custom shells, warranty, defect rate, and after-sales parts.
+  - heading "Best fit by business model" [level=2]
+  - list:
+    - paragraph:
+      - strong: "Fast brand launch:"
+      - text: Pineeon/STAR KING or MagiWatch—use an existing ring platform with your logo, packaging, and app branding.
+      - generic: starkingsmartring
+      - generic: "+1"
+    - paragraph:
+      - strong: "Differentiated product:"
+      - text: Geyan Technology—more appropriate if you need firmware, app, or hardware changes rather than only cosmetic private labeling.
+      - generic: gysmartwatch
+      - generic: "+1"
+    - paragraph:
+      - strong: "Small pilot or niche market:"
+      - text: BINGO Group—its stated low-MOQ trial orders and broad customization options may suit an initial test launch.
+      - generic "Smart Ring Manufacturer | OEM ODM Custom Private Label":
+        - link "szbingogroup":
+          - /url: https://szbingogroup.com/product-category/smart-ring/
+          - generic: szbingogroup
+  - heading "Due diligence before ordering" [level=2]
+  - paragraph:
+    - text: Do not rely on marketing claims alone. Order samples from at least two factories, test accuracy against a reference device, verify real-world battery life, and confirm that the supplier will provide source files or continued app support if the relationship ends. Pineeon itself distinguishes simple private labeling from hardware, firmware, or app changes, which need a separate engineering review—an important cost and timeline boundary.
+    - generic: starkingsmartring
+    - generic: "+1"
+  - button "复制":
+  - button "分享":
+  - button "有帮助":
+  - button "没有帮助":
+  - button "复刻":
+  - button "11 个来源" [active]:
+    - text: 11 个来源
+  - button "更多操作":
+  - button "Compare Pineeon, STAR KING, and MagiWatch smart ring OEM programs — minimum order quantities, titanium shell tooling, and white-label apps compared"
+  - text: Compare Pineeon, STAR KING, and MagiWatch smart ring OEM programs — minimum order quantities, titanium shell tooling, and white-label apps compared
+  - text: Computer
+  - button "Build a private label smart ring sourcing matrix for Pineeon, STAR KING, and Bingo — sensor specs, MOQ, sizing kits, and app customization compared"
+  - text: Build a private label smart ring sourcing matrix for Pineeon, STAR KING, and Bingo — sensor specs, MOQ, sizing kits, and app customization compared
+  - text: Computer
+  - button "What are typical MOQs for private label smart rings"
+  - text: What are typical MOQs for private label smart rings
+  - button "How does app white labeling work with smart ring factories"
+  - text: How does app white labeling work with smart ring factories
+  - button "What certifications do smart rings need for US import"
+  - text: What certifications do smart rings need for US import
+  - button "隐藏详情":
+  - button "来源" [expanded]:
+    - generic: 来源
+  - link "starkingsmartring Private Label Smart Wearable Manufacturer (OEM/ODM) | Pineeon Pineeon is a Shenzhen smart ring & wearable OEM/ODM manufacturer. Private-label smart rings, watches, bands and AI hardware for global brands — from sampling to certified mass production.":
+    - /url: https://starkingsmartring.com/index.html
+    - generic: starkingsmartring
+    - generic: Private Label Smart Wearable Manufacturer (OEM/ODM) | Pineeon
+    - generic: Pineeon is a Shenzhen smart ring & wearable OEM/ODM manufacturer. Private-label smart rings, watches, bands and AI hardware for global brands — from sampling to certified mass production.
+  - 'link "starkingsmartring Smart Rings OEM/ODM Manufacturer | STAR KING Source K100, BK20 and K20 smart rings: MOQ 100 pcs, samples in 2–5 days and 15-day production for 500–10,000 pcs. Explore OEM/ODM customization."':
+    - /url: https://starkingsmartring.com/products/smart-rings/
+    - generic: starkingsmartring
+    - generic: Smart Rings OEM/ODM Manufacturer | STAR KING
+    - generic: "Source K100, BK20 and K20 smart rings: MOQ 100 pcs, samples in 2–5 days and 15-day production for 500–10,000 pcs. Explore OEM/ODM customization."
+  - 'link "gysmartwatch Private Label Smart Ring Manufacturing - Geyan Technology Private Label Smart Ring Manufacturing: Complete OEM & ODM Solutions for Global Brands，Why Private Label Smart Rings Are Gaining Popularity"':
+    - /url: https://www.gysmartwatch.com/html/private-label-smart-ring-oem.html
+    - generic: gysmartwatch
+    - generic: Private Label Smart Ring Manufacturing - Geyan Technology
+    - generic: "Private Label Smart Ring Manufacturing: Complete OEM & ODM Solutions for Global Brands，Why Private Label Smart Rings Are Gaining Popularity"
+  - link "pineeon Smart Ring OEM/ODM Manufacturer | Pineeon Explore Pineeon smart ring OEM/ODM and private label options. Review customization, sample evaluation and quotation requirements for your brand.":
+    - /url: https://pineeon.com/products/smart-wearables/smart-rings/
+    - generic: pineeon
+    - generic: Smart Ring OEM/ODM Manufacturer | Pineeon
+    - generic: Explore Pineeon smart ring OEM/ODM and private label options. Review customization, sample evaluation and quotation requirements for your brand.
+  - 'link "magiwatch MagiWatch: Smart Wearable Manufacturer | OEM & ODM Source smart watches, smart rings and smart glasses from MagiWatch for OEM, ODM, private label and wholesale programs. Request a model-specific quote."':
+    - /url: https://magiwatch.com/
+    - generic: magiwatch
+    - generic: "MagiWatch: Smart Wearable Manufacturer | OEM & ODM"
+    - generic: Source smart watches, smart rings and smart glasses from MagiWatch for OEM, ODM, private label and wholesale programs. Request a model-specific quote.
+  - link "gysmartwatch China Smart Rings OEM/ODM Manufacturer Smart Rings OEM/ODM Manufacturer,In markets like the USA, UK, Germany, Italy, and Norway, consumers and enterprises are shifting toward minimalist, medical-grade wearables that prioritize comfort, privacy, and continuous biometric monitoring.":
+    - /url: https://www.gysmartwatch.com/html/1057461929.html
+    - generic: gysmartwatch
+    - generic: China Smart Rings OEM/ODM Manufacturer
+    - generic: Smart Rings OEM/ODM Manufacturer,In markets like the USA, UK, Germany, Italy, and Norway, consumers and enterprises are shifting toward minimalist, medical-grade wearables that prioritize comfort, privacy, and continuous biometric monitoring.
+  - link "szbingogroup Smart Ring Manufacturer | OEM ODM Custom Private Label China factory of health smart rings. OEM ODM Custom logo, size & packaging. CE FCC RoHS certified, sleep & heart rate monitoring. Wholesale for global brands":
+    - /url: https://szbingogroup.com/product-category/smart-ring/
+    - generic: szbingogroup
+    - generic: Smart Ring Manufacturer | OEM ODM Custom Private Label
+    - generic: China factory of health smart rings. OEM ODM Custom logo, size & packaging. CE FCC RoHS certified, sleep & heart rate monitoring. Wholesale for global brands
+  - link "pineeon Smart Wearable Manufacturer | OEM/ODM Smart Rings, Watches ... Pineeon manufactures smart rings, smart watches and AI glasses for global brands, with full OEM, ODM and private label programs.":
+    - /url: https://pineeon.com/products/smart-wearables/
+    - generic: pineeon
+    - generic: Smart Wearable Manufacturer | OEM/ODM Smart Rings, Watches ...
+    - generic: Pineeon manufactures smart rings, smart watches and AI glasses for global brands, with full OEM, ODM and private label programs.
+  - link "trendgateproducts Smart Ring Manufacturer | OEM/ODM & Private Label Smart Rings ... Pineeon manufactures custom smart rings for global brands. OEM/ODM, private label, sample development and bulk production with health & fitness tracking modules.":
+    - /url: https://trendgateproducts.com/products/smart-wearables/smart-rings/
+    - generic: trendgateproducts
+    - generic: Smart Ring Manufacturer | OEM/ODM & Private Label Smart Rings ...
+    - generic: Pineeon manufactures custom smart rings for global brands. OEM/ODM, private label, sample development and bulk production with health & fitness tracking modules.
+  - link "starkingsmartring Smart Ring Manufacturer (OEM/ODM) | Pineeon - STAR KING OEM/ODM smart ring manufacturer in Shenzhen. Private-label biometric rings with HR, HRV, SpO₂, skin temperature and sleep tracking — titanium finishes, 5–8 day battery.":
+    - /url: https://starkingsmartring.com/smart-rings.html
+    - generic: starkingsmartring
+    - generic: Smart Ring Manufacturer (OEM/ODM) | Pineeon - STAR KING
+    - generic: OEM/ODM smart ring manufacturer in Shenzhen. Private-label biometric rings with HR, HRV, SpO₂, skin temperature and sleep tracking — titanium finishes, 5–8 day battery.
+  - 'link "indexbox Smart Light Bulbs Kit Market To 2035: Security and Automation Drive Forward Growth - News and Statistics The global smart light bulbs kit market is set to expand through 2035, driven by home security simulation and seamless smart home automation integration."':
+    - /url: https://www.indexbox.io/blog/smart-light-bulbs-kit-market-forecast-to-2035-growth-driven-by-home-security-and-automation-integration/
+    - generic: indexbox
+    - generic: "Smart Light Bulbs Kit Market To 2035: Security and Automation Drive Forward Growth - News and Statistics"
+    - generic: The global smart light bulbs kit market is set to expand through 2035, driven by home security simulation and seamless smart home automation integration.
+  - button "滚动到末尾":
+    - generic: ⠇
+  - button "Pro 已启用高级搜索免费预览。 了解更多":
+    - generic: Pro
+    - generic: 已启用高级搜索免费预览。
+    - button "了解更多":
+      - generic: 了解更多
+  - status:
+    - generic: 您正处于隐身模式。
+    - button "退出隐身模式":
+      - generic: 退出无痕模式
+  - textbox "提出后续问题":
+    - paragraph
+  - generic: 提出后续问题
+  - button "添加文件、插件等":
+  - button "搜索" [pressed]:
+    - generic: 搜索
+  - button "Computer":
+    - generic: Computer
+  - button "模型":
+    - generic: 模型
+  - button "语音输入":
+  - button "提交" [disabled]:

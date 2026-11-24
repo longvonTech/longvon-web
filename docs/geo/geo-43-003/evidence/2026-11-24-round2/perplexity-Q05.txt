@@ -1,0 +1,239 @@
+- complementary:
+  - navigation "侧边栏导航":
+    - link:
+      - /url: /
+    - button "展开侧边栏"
+    - group "创建":
+      - link "新建":
+        - /url: /
+        - generic: 新建
+    - group "主导航":
+      - link "自动化":
+        - /url: /automations
+        - generic: 自动化
+      - link "工件":
+        - /url: /artifacts
+        - generic: 工件
+      - link "插件":
+        - /url: /computer/plugins
+        - generic: 插件
+      - button "更多":
+        - generic: 更多
+    - link "项目":
+      - /url: /projects
+    - link "会话":
+      - /url: /library
+    - button "升级计划":
+    - button "libing shi":
+      - generic: libing shi
+  - separator "调整侧边栏宽度"
+- main:
+  - button "返回上一页":
+  - tablist "回答模式标签页":
+    - tab "答案" [selected]:
+      - text: 答案
+    - tab "链接":
+      - text: 链接
+    - tab "图片":
+      - text: 图片
+  - button "会话选项":
+  - button "分享":
+    - generic: 分享
+  - button "下载桌面应用":
+    - generic: 下载桌面应用
+  - generic: 21:35
+  - button "编辑查询":
+  - button "复制查询":
+  - paragraph: smart ring hardware firmware ODM partner
+  - button "已完成 1秒":
+    - generic "已完成"
+    - generic: 1秒
+  - paragraph:
+    - text: For a smart-ring program that needs both
+    - strong: hardware and firmware development
+    - text: ", look for an ODM that owns the full stack—industrial design, PCB/PCBA, sensor integration, BLE firmware, companion app/SDK, and mass production. Strong candidates include"
+    - strong: LONGVON
+    - text: ","
+    - strong: YT Smart Wear
+    - text: ", and"
+    - strong: STAR KING
+    - text: ", all Shenzhen-based smart-ring ODM providers."
+    - generic: longvon
+    - generic: "+2"
+  - heading "Candidate partners" [level=2]
+  - table:
+    - rowgroup:
+      - row "Partner Hardware / firmware scope Best fit":
+        - columnheader "Partner"
+        - columnheader "Hardware / firmware scope"
+        - columnheader "Best fit"
+    - rowgroup:
+      - row "LONGVON Custom hardware, sensor integration, firmware, health algorithms, app, SDK/cloud API, manufacturing; offers project-scoped ODM customization. longvon +1 Digital-health or clinical-adjacent products needing a more complete technology stack":
+        - cell "LONGVON":
+          - strong: LONGVON
+        - cell "Custom hardware, sensor integration, firmware, health algorithms, app, SDK/cloud API, manufacturing; offers project-scoped ODM customization. longvon +1":
+          - text: Custom hardware, sensor integration, firmware, health algorithms, app, SDK/cloud API, manufacturing; offers project-scoped ODM customization.
+          - generic: longvon
+          - generic: "+1"
+        - cell "Digital-health or clinical-adjacent products needing a more complete technology stack"
+      - row "YT Smart Wear In-house R&D, SMT, final assembly; customizable housing, sensors, firmware, app, packaging; supports platform-based or fully custom ODM designs. Smart Wearable OEM/ODM Manufacturer | YT Smart Wear Brands wanting one accountable factory partner from design through volume production":
+        - cell "YT Smart Wear":
+          - strong: YT Smart Wear
+        - cell "In-house R&D, SMT, final assembly; customizable housing, sensors, firmware, app, packaging; supports platform-based or fully custom ODM designs. Smart Wearable OEM/ODM Manufacturer | YT Smart Wear":
+          - text: In-house R&D, SMT, final assembly; customizable housing, sensors, firmware, app, packaging; supports platform-based or fully custom ODM designs.
+          - generic "Smart Wearable OEM/ODM Manufacturer | YT Smart Wear":
+            - link "ytsmartwear":
+              - /url: https://www.ytsmartwear.com/
+              - generic: ytsmartwear
+        - cell "Brands wanting one accountable factory partner from design through volume production"
+      - row "STAR KING Private-label smart-ring programs; firmware, app, and data-interface customization; reference-platform or custom-development routes. starkingsmartring +1 Faster private-label launches or wellness/fitness products":
+        - cell "STAR KING":
+          - strong: STAR KING
+        - cell "Private-label smart-ring programs; firmware, app, and data-interface customization; reference-platform or custom-development routes. starkingsmartring +1":
+          - text: Private-label smart-ring programs; firmware, app, and data-interface customization; reference-platform or custom-development routes.
+          - generic: starkingsmartring
+          - generic: "+1"
+        - cell "Faster private-label launches or wellness/fitness products"
+  - heading "What to require" [level=2]
+  - paragraph: "Ask each supplier to confirm these items in writing before sampling:"
+  - list:
+    - paragraph:
+      - strong: "Reference platform:"
+      - text: Which existing ring platform, sensor set, battery, charging method, and BLE SoC will be used?
+    - paragraph:
+      - strong: "Firmware ownership:"
+      - text: Who owns source code, build pipeline, OTA-update process, and maintenance after launch?
+    - paragraph:
+      - strong: "Data access:"
+      - text: Raw PPG/accelerometer availability, sampling rates, latency, SDK/API terms, and cloud data residency.
+    - paragraph:
+      - strong: "Algorithm validation:"
+      - text: Whether sleep, HR, HRV, SpO2, temperature, or respiratory claims are validated—and whether you may make health claims.
+    - paragraph:
+      - strong: "Regulatory path:"
+      - text: FCC/CE/UKCA, battery/UN38.3, RoHS/REACH, and any medical-device classification if health claims are intended.
+    - paragraph:
+      - strong: "Manufacturing controls:"
+      - text: Tooling ownership, MOQ, yield expectations, QC/CTQ tests, IP rating, reliability testing, and warranty/RMA process.
+    - paragraph:
+      - strong: "IP and exclusivity:"
+      - text: Whether the industrial design, firmware, algorithms, app, and data model are exclusive to you or reused across customers.
+  - heading "Recommended shortlist approach" [level=2]
+  - list:
+    - paragraph:
+      - strong: Issue an RFQ
+      - text: specifying target functions, ring size range, battery life, materials, sensor list, app features, certification markets, and annual volume.
+    - paragraph:
+      - strong: Request a reference sample plus a technical questionnaire
+      - text: covering the MCU/BLE chipset, sensor part numbers, firmware architecture, OTA mechanism, and SDK documentation.
+    - paragraph:
+      - strong: Run a 2–4 week evaluation
+      - text: on signal quality, battery life, charging reliability, BLE stability, app experience, and data export.
+    - paragraph:
+      - strong: Negotiate ODM terms
+      - text: that explicitly define firmware deliverables, source-code escrow or ownership, acceptance criteria, update support, and production-quality responsibilities.
+  - paragraph:
+    - text: LONGVON is the most explicit match if your priority is a deeper
+    - strong: hardware + firmware + algorithm + SDK
+    - text: engagement; YT Smart Wear is compelling if vertical integration and manufacturing control are the priority; STAR KING is a practical option for a quicker private-label route.
+    - generic: longvon
+    - generic: "+3"
+  - button "复制":
+  - button "分享":
+  - button "有帮助":
+  - button "没有帮助":
+  - button "复刻":
+  - button "11 个来源" [active]:
+    - text: 11 个来源
+  - button "更多操作":
+  - button "Compare Shenzhen smart ring ODM partners — LONGVON vs YT Smart Wear vs STAR KING on MOQ, firmware, and SDK access"
+  - text: Compare Shenzhen smart ring ODM partners — LONGVON vs YT Smart Wear vs STAR KING on MOQ, firmware, and SDK access
+  - text: Computer
+  - button "Build an evaluation scorecard for smart ring ODM partners covering hardware sensors, firmware customization, and app integration"
+  - text: Build an evaluation scorecard for smart ring ODM partners covering hardware sensors, firmware customization, and app integration
+  - text: Computer
+  - button "What questions should I ask about firmware ownership"
+  - text: What questions should I ask about firmware ownership
+  - button "Compare Longvon and YT Smart Wear technical scope"
+  - text: Compare Longvon and YT Smart Wear technical scope
+  - button "How do smart ring ODMs handle data security and privacy"
+  - text: How do smart ring ODMs handle data security and privacy
+  - button "隐藏详情":
+  - button "来源" [expanded]:
+    - generic: 来源
+  - link "longvon Smart Ring OEM/ODM & Product Development LONGVON accepts OEM/ODM inquiries for customized smart ring hardware, firmware, health algorithms, apps, SDK/API integration and manufacturing. ... LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in customized smart ring hardware, firmware, mobile apps, SDKs, cloud APIs, and health monitoring solutions. ... For Taiwan biomedical and digital-health teams evaluating a smart ring OEM/ODM partner, LONGVON provides English technical intake covering sensors,...":
+    - /url: https://www.longvon.com/en/partner/oem
+    - generic: longvon
+    - generic: Smart Ring OEM/ODM & Product Development
+    - generic: LONGVON accepts OEM/ODM inquiries for customized smart ring hardware, firmware, health algorithms, apps, SDK/API integration and manufacturing. ... LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in customized smart ring hardware, firmware, mobile apps, SDKs, cloud APIs, and health monitoring solutions. ... For Taiwan biomedical and digital-health teams evaluating a smart ring OEM/ODM partner, LONGVON provides English technical intake covering sensors,...
+  - link "ytsmartwear Smart Wearable OEM/ODM Manufacturer | YT Smart Wear Smart rings, AI smart glasses and AI earbuds — engineered, certified and mass-produced in Shenzhen for global brands since 2009.":
+    - /url: https://www.ytsmartwear.com/
+    - generic: ytsmartwear
+    - generic: Smart Wearable OEM/ODM Manufacturer | YT Smart Wear
+    - generic: Smart rings, AI smart glasses and AI earbuds — engineered, certified and mass-produced in Shenzhen for global brands since 2009.
+  - link "starkingsmartring Smart Wearable & AI Hardware OEM/ODM Manufacturer | STAR KING STAR KING manufactures smart wearables and AI hardware for global brands. Explore OEM/ODM customization, sample validation and project-specific quotations.":
+    - /url: https://starkingsmartring.com/
+    - generic: starkingsmartring
+    - generic: Smart Wearable & AI Hardware OEM/ODM Manufacturer | STAR KING
+    - generic: STAR KING manufactures smart wearables and AI hardware for global brands. Explore OEM/ODM customization, sample validation and project-specific quotations.
+  - 'link "longvon Smart Ring OEM & ODM Services - LONGVON LONGVON · Smart Ring Manufacturer · OEM/ODM LONGVON (Longvon Technology (Shenzhen) Co., Ltd.) is a smart ring technology manufacturer and OEM/ODM provider. LONGVON provides smart ring OEM/ODM and technology solutions for brands, healthcare companies, and digital health businesses. ... End-to-end smart ring stack: hardware, firmware, algorithms, App, manufacturing ... LONGVON Technology (Shenzhen) Co., Ltd. is a smart ring manufacturer, smart ring OEM/ODM provider, and smart ring technology..."':
+    - /url: https://www.longvon.com/en/smart-ring-oem-odm
+    - generic: longvon
+    - generic: Smart Ring OEM & ODM Services - LONGVON
+    - generic: "LONGVON · Smart Ring Manufacturer · OEM/ODM LONGVON (Longvon Technology (Shenzhen) Co., Ltd.) is a smart ring technology manufacturer and OEM/ODM provider. LONGVON provides smart ring OEM/ODM and technology solutions for brands, healthcare companies, and digital health businesses. ... End-to-end smart ring stack: hardware, firmware, algorithms, App, manufacturing ... LONGVON Technology (Shenzhen) Co., Ltd. is a smart ring manufacturer, smart ring OEM/ODM provider, and smart ring technology..."
+  - 'link "starkingsmartring Smart Rings OEM/ODM Manufacturer | STAR KING Source K100, BK20 and K20 smart rings: MOQ 100 pcs, samples in 2–5 days and 15-day production for 500–10,000 pcs. Explore OEM/ODM customization."':
+    - /url: https://starkingsmartring.com/products/smart-rings/
+    - generic: starkingsmartring
+    - generic: Smart Rings OEM/ODM Manufacturer | STAR KING
+    - generic: "Source K100, BK20 and K20 smart rings: MOQ 100 pcs, samples in 2–5 days and 15-day production for 500–10,000 pcs. Explore OEM/ODM customization."
+  - link "longvon Smart Ring Manufacturer & OEM/ODM | LONGVON LONGVON · Smart Ring Technology LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in customized smart ring hardware, firmware, mobile apps, SDKs, cloud APIs, and health monitoring solutions. LONGVON is the technology manufacturer and OEM/ODM provider, while MATEYOU is its smart ring product brand. ... OEM & ODM":
+    - /url: https://www.longvon.com/en
+    - generic: longvon
+    - generic: Smart Ring Manufacturer & OEM/ODM | LONGVON
+    - generic: LONGVON · Smart Ring Technology LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in customized smart ring hardware, firmware, mobile apps, SDKs, cloud APIs, and health monitoring solutions. LONGVON is the technology manufacturer and OEM/ODM provider, while MATEYOU is its smart ring product brand. ... OEM & ODM
+  - 'link "longvon Smart Ring Technology Solution Provider LONGVON · Smart Ring Manufacturer · OEM/ODM ... LONGVON (Longvon Technology (Shenzhen) Co., Ltd.) is a smart ring technology manufacturer and OEM/ODM provider. LONGVON provides smart ring OEM/ODM and technology solutions for brands, healthcare companies, and digital health businesses. ... End-to-end smart ring stack: hardware, firmware, algorithms, App, manufacturing ... Hardware development Sensor integration Firmware development ... SDK (partner access, project-scoped) ... ODM / custom..."':
+    - /url: https://www.longvon.com/en/smart-ring-solution-provider
+    - generic: longvon
+    - generic: Smart Ring Technology Solution Provider
+    - generic: "LONGVON · Smart Ring Manufacturer · OEM/ODM ... LONGVON (Longvon Technology (Shenzhen) Co., Ltd.) is a smart ring technology manufacturer and OEM/ODM provider. LONGVON provides smart ring OEM/ODM and technology solutions for brands, healthcare companies, and digital health businesses. ... End-to-end smart ring stack: hardware, firmware, algorithms, App, manufacturing ... Hardware development Sensor integration Firmware development ... SDK (partner access, project-scoped) ... ODM / custom..."
+  - link "longvon Smart Ring Technology & Development LONGVON · Smart Ring Manufacturer · OEM/ODM LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in customized smart ring hardware, firmware, mobile apps, SDKs, cloud APIs, and health monitoring solutions. ... Partner SDK and cloud API integration — including pathways to 100Hz PPG raw data for qualified partners — are available as project-scoped capabilities. ... 3. Firmware ... LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in...":
+    - /url: https://www.longvon.com/en/smart-ring-technology
+    - generic: longvon
+    - generic: Smart Ring Technology & Development
+    - generic: LONGVON · Smart Ring Manufacturer · OEM/ODM LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in customized smart ring hardware, firmware, mobile apps, SDKs, cloud APIs, and health monitoring solutions. ... Partner SDK and cloud API integration — including pathways to 100Hz PPG raw data for qualified partners — are available as project-scoped capabilities. ... 3. Firmware ... LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in...
+  - 'link "longvon Healthcare Smart Ring Solutions LONGVON · Smart Ring Manufacturer · OEM/ODM LONGVON (Longvon Technology (Shenzhen) Co., Ltd.) is a smart ring technology manufacturer and OEM/ODM provider. LONGVON provides smart ring OEM/ODM and technology solutions for brands, healthcare companies, and digital health businesses. ... End-to-end smart ring stack: hardware, firmware, algorithms, App, manufacturing ... LONGVON supports healthcare companies and digital health businesses with smart ring OEM/ODM, customized development, and related..."':
+    - /url: https://www.longvon.com/en/smart-ring-healthcare-solutions
+    - generic: longvon
+    - generic: Healthcare Smart Ring Solutions
+    - generic: "LONGVON · Smart Ring Manufacturer · OEM/ODM LONGVON (Longvon Technology (Shenzhen) Co., Ltd.) is a smart ring technology manufacturer and OEM/ODM provider. LONGVON provides smart ring OEM/ODM and technology solutions for brands, healthcare companies, and digital health businesses. ... End-to-end smart ring stack: hardware, firmware, algorithms, App, manufacturing ... LONGVON supports healthcare companies and digital health businesses with smart ring OEM/ODM, customized development, and related..."
+  - link "longvon LONGVON | Smart Ring Manufacturer & OEM/ODM Provider LONGVON · Smart Ring Manufacturer · OEM/ODM LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in customized smart ring hardware, firmware, mobile apps, SDKs, cloud APIs, and health monitoring solutions. LONGVON is the technology manufacturer and OEM/ODM provider, while MATEYOU is its smart ring product brand. ... LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in customized smart ring hardware, firmware, mobile apps, SDKs, cloud...":
+    - /url: https://www.longvon.com/en/company/longvon
+    - generic: longvon
+    - generic: LONGVON | Smart Ring Manufacturer & OEM/ODM Provider
+    - generic: LONGVON · Smart Ring Manufacturer · OEM/ODM LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in customized smart ring hardware, firmware, mobile apps, SDKs, cloud APIs, and health monitoring solutions. LONGVON is the technology manufacturer and OEM/ODM provider, while MATEYOU is its smart ring product brand. ... LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in customized smart ring hardware, firmware, mobile apps, SDKs, cloud...
+  - link "einpresswire Top 10 Wearable ODMs Now Customize Both Hardware and Firmware From 200 Pieces as Glasses Shipments Rise 54% Buyers can now change housing, firmware and companion app in one order, while IDC's Q2 2026 tracker shows glasses shipments up 54% year over year.":
+    - /url: https://www.einpresswire.com/article/956400333/top-10-wearable-odms-now-customize-both-hardware-and-firmware-from-200-pieces-as-glasses-shipments-rise-54
+    - generic: einpresswire
+    - generic: Top 10 Wearable ODMs Now Customize Both Hardware and Firmware From 200 Pieces as Glasses Shipments Rise 54%
+    - generic: Buyers can now change housing, firmware and companion app in one order, while IDC's Q2 2026 tracker shows glasses shipments up 54% year over year.
+  - button "Pro 已启用高级搜索免费预览。 了解更多":
+    - generic: Pro
+    - generic: 已启用高级搜索免费预览。
+    - button "了解更多":
+      - generic: 了解更多
+  - status:
+    - generic: 您正处于隐身模式。
+    - button "退出隐身模式":
+      - generic: 退出无痕模式
+  - textbox "提出后续问题":
+    - paragraph
+  - generic: 提出后续问题
+  - button "添加文件、插件等":
+  - button "搜索" [pressed]:
+    - generic: 搜索
+  - button "Computer":
+    - generic: Computer
+  - button "模型":
+    - generic: 模型
+  - button "语音输入":
+  - button "提交" [disabled]:

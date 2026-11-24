@@ -1,0 +1,53 @@
+{
+  "record_id": "81769b15-7f22-55dc-9cab-196f7967728b",
+  "query_id": "Q07",
+  "query": "100Hz raw PPG smart ring SDK",
+  "platform": "Google",
+  "mode": "ALL_FIRST_PAGE_AUTO_AI_OVERVIEW",
+  "observed_at": "2026-11-24T13:25:51.980Z",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "Chrome existing signed-in profile; hl=en; personalized results; country UNKNOWN; PR27 bounded AI receipt detector; collapsed overview scope",
+  "availability": "COMPLETED",
+  "longvon_present": false,
+  "organic_rank": null,
+  "ai_body_recommended": null,
+  "source_cited": null,
+  "cited_urls": [],
+  "competitors": [
+    {
+      "name": "J-Style / Jointcorp",
+      "url": "https://www.jointcorp.com/blog/smart-wearable-sdk/ppg-sampling-rate-explained-how-data-frequency-impacts-ai-health-algorithms/",
+      "position": "web-result h3 #2",
+      "evidence_quote": "- link \"How Data Frequency Impacts AI Health Algorithms - J-Style jointcorp.com https://www.jointcorp.com › blog › smart-wearable-sdk\":"
+    },
+    {
+      "name": "Sensor Bio",
+      "url": "https://sensorbio.com/the-signal/smart-ring-vs-smartwatch-ppg/",
+      "position": "web-result h3 #3",
+      "evidence_quote": "- link \"How Data Frequency Impacts AI Health Algorithms - J-Style jointcorp.com https://www.jointcorp.com › blog › smart-wearable-sdk\":"
+    },
+    {
+      "name": "O-Ring",
+      "url": "https://o-ring.tech/",
+      "position": "web-result h3 #6",
+      "evidence_quote": "- link \"SDK\":"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-24-round2/google-Q07.jpg",
+      "sha256": "398cfc35f59fa9a13fc95894a4050ea26c037a8861d818a59a4e12a898870483"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/google-Q07.json",
+      "sha256": "d6f15ddf9c04fb89276ee18b65dd1c64629d666c666b9b91c6275e89d6fb84fc"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/google-Q07.txt",
+      "sha256": "40b846fcb3dd6b7a3cbd060eafa69d22807b8fc8e19e34d1483c5f1705dfa33b"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "New round2 capture; environment/method differs from round1: no comparable previous_record_id and no ranking-growth attribution. Citations prove visible URLs only; reachability and commercial facts UNKNOWN."
+}

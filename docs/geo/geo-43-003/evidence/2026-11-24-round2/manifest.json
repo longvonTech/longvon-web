@@ -1,0 +1,842 @@
+[
+  {
+    "path": "evidence/2026-11-24-round2/Q05-capture-interruption.json",
+    "sha256": "ed14d279c689132b63c5d141ce6d2d0a3f6a8c0d39df0bce4f88ee3a0931d1a2",
+    "bytes": 307
+  },
+  {
+    "path": "evidence/2026-11-24-round2/capture-review.json",
+    "sha256": "859175fef71a64fa614424dda3be54bc559e28048e78d179e37838555ade97e7",
+    "bytes": 1541
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q01-1000.jpg",
+    "sha256": "ea83db752cfbea5066ff4b8b57e48beaca5fc4556b96c5ecab0d37ed0e4494e8",
+    "bytes": 386649
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q01-1000.json",
+    "sha256": "a054317782ffb3f41c80a8f3eb0beb787efad6d408690f79482543761396dae2",
+    "bytes": 619
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q01-1000.txt",
+    "sha256": "bd60de5e6476ff3e5119901841884c492235c508b71306b67a0faf59d16dbf84",
+    "bytes": 13963
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q01-1600.jpg",
+    "sha256": "ce7dea03fc063600bcc029034cc11edafd4702178ed7828aefae7e1134d5c4e1",
+    "bytes": 378885
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q01-1600.json",
+    "sha256": "179de963852620f676b8af2003994aaa1a99250f9d384da42072fc76ba7c4b67",
+    "bytes": 619
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q01-1600.txt",
+    "sha256": "bd60de5e6476ff3e5119901841884c492235c508b71306b67a0faf59d16dbf84",
+    "bytes": 13963
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q02-1000.jpg",
+    "sha256": "9a2e159c5a3399a6ee850baa2eee159cb71318120023d54016baea68a2d5e69d",
+    "bytes": 396417
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q02-1000.json",
+    "sha256": "fda5c79f2c1f9546e8ad1495728a8b206aadb7ce513ce1bfdd5b3e916cc89fd9",
+    "bytes": 738
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q02-1000.txt",
+    "sha256": "a3b08114e78c2fd695d87bc19129d9661663766457a1bd50f0a3ca97e7ae04c5",
+    "bytes": 13971
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q02-1600.jpg",
+    "sha256": "d51e4c180e2582c3f987ce21c2b1b6a561b5ef92b002a6c03da428e78a2b9e52",
+    "bytes": 383622
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q02-1600.json",
+    "sha256": "ae9a433b73fe0ceb16303df66dca79645d9392728ff92c0874a91161513e2802",
+    "bytes": 738
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q02-1600.txt",
+    "sha256": "a3b08114e78c2fd695d87bc19129d9661663766457a1bd50f0a3ca97e7ae04c5",
+    "bytes": 13971
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q03-1000.jpg",
+    "sha256": "f4e2d0c81a29a1bc519c7e26c4263243f5f2f33ccc68d7109070ce2bef5cac27",
+    "bytes": 335659
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q03-1000.json",
+    "sha256": "518914bcfff2b765346be8fa84cc367a9fde7367032b70bb588597b605e293a8",
+    "bytes": 619
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q03-1000.txt",
+    "sha256": "94964969195bb6666f69efa9efb06f230f06d205191298a8b56ab6237934f49c",
+    "bytes": 12118
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q03-1600.jpg",
+    "sha256": "d50cae5298b0059208ff92254e7396182ecdadcb4ec16cff26d68a993d5af0db",
+    "bytes": 346492
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q03-1600.json",
+    "sha256": "97effe2a20c7a6c061b92e624316f8f2849dbd4f2f14c5af2d4eae3e06816272",
+    "bytes": 619
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q03-1600.txt",
+    "sha256": "94964969195bb6666f69efa9efb06f230f06d205191298a8b56ab6237934f49c",
+    "bytes": 12118
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q04-1000.jpg",
+    "sha256": "c61987d2dc12d59b5de89ff0252a8f2d5ca2ba9c2ae23a7e557e79f799950d55",
+    "bytes": 335456
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q04-1000.json",
+    "sha256": "9e7a22ade2ffd8e901ddac5a3bf366c7a9dff3adb15c9f8553d4487f2629b908",
+    "bytes": 619
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q04-1000.txt",
+    "sha256": "b2022d712ddcf59cfdaf00e3560d6bcd19f6ef1d37924f791c5561d8a22f7d14",
+    "bytes": 11887
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q04-1600.jpg",
+    "sha256": "edaa743a1ce6a781239f7df61cebfba707a9b725a1822e5bdba0062cba9a57c4",
+    "bytes": 328188
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q04-1600.json",
+    "sha256": "228b62ea4567e6078c6730d1d5485d1fe69daa21cccaa68d6d200d67f9bb0f46",
+    "bytes": 619
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q04-1600.txt",
+    "sha256": "b2022d712ddcf59cfdaf00e3560d6bcd19f6ef1d37924f791c5561d8a22f7d14",
+    "bytes": 11887
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q05-1000.jpg",
+    "sha256": "25aea44358d7c2a16b74ac03b13b130c9d735ec7136a4e1830d9f0cdafaeee65",
+    "bytes": 389072
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q05-1000.json",
+    "sha256": "a345fc6a6b1a681739291a54f04860079c736659715b6281450e70f4f0c5c23d",
+    "bytes": 619
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q05-1000.txt",
+    "sha256": "060b6d5253cc9ce0c619c0bc4355203fd7163119ec492d0b74f5370ed5a17e90",
+    "bytes": 12847
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q05-1600.jpg",
+    "sha256": "55bdb9055caa485e47311ad3125b6368827bf88330939718fae3867c9f83b348",
+    "bytes": 393702
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q05-1600.json",
+    "sha256": "95e6c6ae73430e04d8d8078efa041cf5e26a4e41f798c134908421e7bf76ba6c",
+    "bytes": 619
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q05-1600.txt",
+    "sha256": "060b6d5253cc9ce0c619c0bc4355203fd7163119ec492d0b74f5370ed5a17e90",
+    "bytes": 12847
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q06-1000.jpg",
+    "sha256": "b6dc71ef3741f3da80f0922f727a40fad323a54a1f598b24290ce5cb1eef5d06",
+    "bytes": 378582
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q06-1000.json",
+    "sha256": "4fc58c2f258c02561fd710222bfa9f8d343b794f2c7e124b15a85e215e0196ab",
+    "bytes": 619
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q06-1000.txt",
+    "sha256": "8322607db337f621c384e10be09beab28370903ea7635d966498a9e69a65139b",
+    "bytes": 14644
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q06-1600.jpg",
+    "sha256": "b85d11d4ccfcacf68f148d15b4ee80da9f0786a8bc04fd3d97a6c32c019bff85",
+    "bytes": 380087
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q06-1600.json",
+    "sha256": "8bd8750f662f85d6744dfe704a46bf0b5332c945b3c92ac9154a0b9c5ecc61ee",
+    "bytes": 619
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q06-1600.txt",
+    "sha256": "8322607db337f621c384e10be09beab28370903ea7635d966498a9e69a65139b",
+    "bytes": 14644
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q07-1000.jpg",
+    "sha256": "0628b1b0dd680e42bd7cf70485c8c4be17cfb3769937756cfa393a7d46476429",
+    "bytes": 240553
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q07-1000.json",
+    "sha256": "8747ff0f627e04219289b7301ce9673cf1800b6b1026b37516c88771c510be57",
+    "bytes": 619
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q07-1000.txt",
+    "sha256": "5b2aea4042b1d7fbcaa3fb49a71fa6c5c0ffeffa62d4f67594fde27a15ce13dd",
+    "bytes": 7533
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q07-1600.jpg",
+    "sha256": "cd5df5ac05121d1b8570760ed4fcd7e918f2fd8d39d1aa718fa76f1a7308224e",
+    "bytes": 239673
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q07-1600.json",
+    "sha256": "b6d51550459d92eb69447bc57c7b05b1c8a1eca3f1680f7ccb9075d5ae11a70f",
+    "bytes": 619
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q07-1600.txt",
+    "sha256": "5b2aea4042b1d7fbcaa3fb49a71fa6c5c0ffeffa62d4f67594fde27a15ce13dd",
+    "bytes": 7533
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q08-1000.jpg",
+    "sha256": "f25287b9fbf3a7fc93de6fd61cd9d6ffb187a081e6e42a69d451da77bcf85865",
+    "bytes": 357767
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q08-1000.json",
+    "sha256": "a8b9348f620d3e80dab215c9b75a784a5465025b81be844ab5900959a1876228",
+    "bytes": 619
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q08-1000.txt",
+    "sha256": "55e42941fd073d7d90776e8c50a573136d1cf4b89d6d6536feefec4889ca3acb",
+    "bytes": 13143
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q08-1600.jpg",
+    "sha256": "b3bbdcce9a68fbacd9621b0da923a0520409eb02a0b4c28807bc3e84e4963d25",
+    "bytes": 363144
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q08-1600.json",
+    "sha256": "9ddb340606cf77f4465387bead695ee255e30b8e5f8068496b28f617efb41f72",
+    "bytes": 619
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q08-1600.txt",
+    "sha256": "55e42941fd073d7d90776e8c50a573136d1cf4b89d6d6536feefec4889ca3acb",
+    "bytes": 13143
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q09-1000.jpg",
+    "sha256": "ab7a7df2329319799b189b1838103edb1bf7604c5da4e56b3d62512dc322a980",
+    "bytes": 347642
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q09-1000.json",
+    "sha256": "0055abed252cc1e7e70f2376cfc01efba1fdcbdaf794559164ba7c6c67f8dbeb",
+    "bytes": 619
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q09-1000.txt",
+    "sha256": "825c4456994d5926d1639a1b4c20dfe10baa58fcc86f7479f8470c6fbb2a0f8a",
+    "bytes": 13612
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q09-1600.jpg",
+    "sha256": "ce6ac2ad1afaa7b0ebb24b976657adcb259e14575b4bdebf9d0e6139ff72b7f3",
+    "bytes": 347317
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q09-1600.json",
+    "sha256": "aada9c941fc17a05d4aafc1bb595040644c31f103003afd4b22c5f9f696d1c88",
+    "bytes": 619
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q09-1600.txt",
+    "sha256": "825c4456994d5926d1639a1b4c20dfe10baa58fcc86f7479f8470c6fbb2a0f8a",
+    "bytes": 13612
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q10-1000.jpg",
+    "sha256": "52b311da4fec51b55c9d2b3d7cc755356cec84358638a1ecdf8745999f018bc8",
+    "bytes": 413387
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q10-1000.json",
+    "sha256": "61341d6acceff4d38d8ba0f88caf4eb0a25efe27e8c05454d7f23f153ac20938",
+    "bytes": 619
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q10-1000.txt",
+    "sha256": "38ec1a67814eaabc7a67fde5eaf8518ad2338de5467d060f40f3902bac40db50",
+    "bytes": 13228
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q10-1600.jpg",
+    "sha256": "ef8aea9831df12132fd7b4d48ed88207b0b8c451fe596faebf039ef1ab19555d",
+    "bytes": 395965
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q10-1600.json",
+    "sha256": "fe628370f9cd186a5ffed1ddbe2c604de470c977fea91fa2de4f984e222637b7",
+    "bytes": 619
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q10-1600.txt",
+    "sha256": "38ec1a67814eaabc7a67fde5eaf8518ad2338de5467d060f40f3902bac40db50",
+    "bytes": 13228
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q11-1000.jpg",
+    "sha256": "01de05b228e0d7907db90813f11f627a9008a9aaa935b95861fa98cb435bfd7f",
+    "bytes": 321981
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q11-1000.json",
+    "sha256": "76c9786135cd940cd306e5e7813718a53dca0758067d090bf21775aef86e5362",
+    "bytes": 619
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q11-1000.txt",
+    "sha256": "cf0d10c2e651d3c22864c143c7e779099a2514577f13abfbdd06d2ca2a778971",
+    "bytes": 11976
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q11-1600.jpg",
+    "sha256": "aaaf472823a7b523e9967b953a6a3193192bd8279c8e3f7997b201e7ef8c986b",
+    "bytes": 319015
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q11-1600.json",
+    "sha256": "4cadef39c1061bb91009ae2578a90731ca0beca84e86d24ad1ce9fd49c1f8044",
+    "bytes": 619
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q11-1600.txt",
+    "sha256": "cf0d10c2e651d3c22864c143c7e779099a2514577f13abfbdd06d2ca2a778971",
+    "bytes": 11976
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q12-1000.jpg",
+    "sha256": "e27fb950d10a56157b45f5188cc32fe1347aa9a9c6ca826588f85219bfb358bb",
+    "bytes": 373348
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q12-1000.json",
+    "sha256": "eb893c7d0176ad0756297310ee8e2d96fa3726bf3d85932e380e05cb47930756",
+    "bytes": 619
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q12-1000.txt",
+    "sha256": "6b4548ddcdad70760dc6eedc8461ba487d3d7f4582af52c2a87feef08fbe2155",
+    "bytes": 14129
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q12-1600.jpg",
+    "sha256": "4750a4ce077c1ac80f0e31e99f22aa919212af3130c10a15e2fdcd0d6a4d4369",
+    "bytes": 409843
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q12-1600.json",
+    "sha256": "ee55cc970976e56e8d9635c72c970cb6e4f830721992937fee4094105f1641de",
+    "bytes": 619
+  },
+  {
+    "path": "evidence/2026-11-24-round2/chatgpt-Q12-1600.txt",
+    "sha256": "6b4548ddcdad70760dc6eedc8461ba487d3d7f4582af52c2a87feef08fbe2155",
+    "bytes": 14129
+  },
+  {
+    "path": "evidence/2026-11-24-round2/environment.json",
+    "sha256": "bb49afc089bf4e523d96ace87dd07b59ad6bb86318e61b6e8d79eb6faeba9e41",
+    "bytes": 933
+  },
+  {
+    "path": "evidence/2026-11-24-round2/google-Q01.jpg",
+    "sha256": "5f5872b61daf129a6a8baa468a7380fa117906c2105b7e99597d3a983e50ab7a",
+    "bytes": 212543
+  },
+  {
+    "path": "evidence/2026-11-24-round2/google-Q01.json",
+    "sha256": "d7df3028f0a65cfffe763bc61b4b144bf665be13d543189602bf128a78883f17",
+    "bytes": 153
+  },
+  {
+    "path": "evidence/2026-11-24-round2/google-Q01.txt",
+    "sha256": "ec1d3931f98127e3e4e190d50969463e902c989d017cdacc60c33bad56e1b393",
+    "bytes": 16727
+  },
+  {
+    "path": "evidence/2026-11-24-round2/google-Q02.jpg",
+    "sha256": "a9f166aa603a9942c6574fd349f1e42f0184742d3f1f2e1a5fc9a86c25269617",
+    "bytes": 212741
+  },
+  {
+    "path": "evidence/2026-11-24-round2/google-Q02.json",
+    "sha256": "609d33bf4036e092522019b837ce81dc8c5c0728d6925b8a899d27b5749e22f8",
+    "bytes": 151
+  },
+  {
+    "path": "evidence/2026-11-24-round2/google-Q02.txt",
+    "sha256": "08fba45385e75f23bc03eef24b6f789ae00c7eedf0f188d47e33494fd96558d7",
+    "bytes": 16632
+  },
+  {
+    "path": "evidence/2026-11-24-round2/google-Q03.jpg",
+    "sha256": "5bd55c719593d6031635c6f3e754d28034a89bcad78866c35754ead50c829021",
+    "bytes": 227605
+  },
+  {
+    "path": "evidence/2026-11-24-round2/google-Q03.json",
+    "sha256": "91040532313a032292a299834fdd3fd0e00f3716dcb5b1e03add5324f767437c",
+    "bytes": 159
+  },
+  {
+    "path": "evidence/2026-11-24-round2/google-Q03.txt",
+    "sha256": "5ef98ac57c83d877f609a2ad0ace867385b68de7aed6cdd6b81946107288f31c",
+    "bytes": 17727
+  },
+  {
+    "path": "evidence/2026-11-24-round2/google-Q04.jpg",
+    "sha256": "282f0aa5884e4083413021b19584024c9a11a8c2ab74b10606ddb389962333da",
+    "bytes": 307749
+  },
+  {
+    "path": "evidence/2026-11-24-round2/google-Q04.json",
+    "sha256": "d84b7c356c853b5a5216bf47a36986925c704531fb9d70b129ec4efad3204126",
+    "bytes": 159
+  },
+  {
+    "path": "evidence/2026-11-24-round2/google-Q04.txt",
+    "sha256": "ac0d25b937b11e64eeb3d6ff27a4788ade5eda41fa696def363ab775b10abee8",
+    "bytes": 22298
+  },
+  {
+    "path": "evidence/2026-11-24-round2/google-Q05.jpg",
+    "sha256": "26f813b4298bf68705c693fcc9091ee123c8d5a54c967fd7c719b6cfe520d639",
+    "bytes": 208922
+  },
+  {
+    "path": "evidence/2026-11-24-round2/google-Q05.json",
+    "sha256": "f6c0f67076f328b2c6e86efea64fc043e2c13dd737237a218599b8ed6455355e",
+    "bytes": 162
+  },
+  {
+    "path": "evidence/2026-11-24-round2/google-Q05.txt",
+    "sha256": "e16048b030ee4e11702e527a72f3baf7dda5896a68287ae8d8b7509a50a59e44",
+    "bytes": 17627
+  },
+  {
+    "path": "evidence/2026-11-24-round2/google-Q06.jpg",
+    "sha256": "976e3f3e87a89d5dffad00347104ff6262f704b808e968344f581ad24159f384",
+    "bytes": 240099
+  },
+  {
+    "path": "evidence/2026-11-24-round2/google-Q06.json",
+    "sha256": "2eaf5299e92e7ab9b34ea5ba6cf954983079e100de043e59e44376e63075208b",
+    "bytes": 205
+  },
+  {
+    "path": "evidence/2026-11-24-round2/google-Q06.txt",
+    "sha256": "48f234d656659848c77f2f35196a5380ad98474a6eba571c48d6f2679910f9c5",
+    "bytes": 17094
+  },
+  {
+    "path": "evidence/2026-11-24-round2/google-Q07.jpg",
+    "sha256": "398cfc35f59fa9a13fc95894a4050ea26c037a8861d818a59a4e12a898870483",
+    "bytes": 200074
+  },
+  {
+    "path": "evidence/2026-11-24-round2/google-Q07.json",
+    "sha256": "d6f15ddf9c04fb89276ee18b65dd1c64629d666c666b9b91c6275e89d6fb84fc",
+    "bytes": 150
+  },
+  {
+    "path": "evidence/2026-11-24-round2/google-Q07.txt",
+    "sha256": "40b846fcb3dd6b7a3cbd060eafa69d22807b8fc8e19e34d1483c5f1705dfa33b",
+    "bytes": 15990
+  },
+  {
+    "path": "evidence/2026-11-24-round2/google-Q08.jpg",
+    "sha256": "0ad4194547422ea324fc95bdb054f17e11ac7bf98b4161b7b9409c21f1312c37",
+    "bytes": 225636
+  },
+  {
+    "path": "evidence/2026-11-24-round2/google-Q08.json",
+    "sha256": "9c0d62d4b510aa1c7e0cfb0d6b132fccd359a0ead34b1bd831a57f824f6b2aed",
+    "bytes": 158
+  },
+  {
+    "path": "evidence/2026-11-24-round2/google-Q08.txt",
+    "sha256": "284f7f2484885f741aeaa4e5603ae21cd0c7b3956b6c6c4f899176df2200c0bf",
+    "bytes": 18159
+  },
+  {
+    "path": "evidence/2026-11-24-round2/google-Q09.jpg",
+    "sha256": "98a99eaae9e4b0b0c600771200473408d709a9f3409e162afca00dfc6aa2e170",
+    "bytes": 362152
+  },
+  {
+    "path": "evidence/2026-11-24-round2/google-Q09.json",
+    "sha256": "369300ccbfa21891ea76eb84472d084321aee575c47b2cbb41e999c0a4e908b3",
+    "bytes": 200
+  },
+  {
+    "path": "evidence/2026-11-24-round2/google-Q09.txt",
+    "sha256": "667f4950ae41c3e8b4656761832b2f94b2fdf90f683e753f9f2f141229c18751",
+    "bytes": 34267
+  },
+  {
+    "path": "evidence/2026-11-24-round2/google-Q10.jpg",
+    "sha256": "3c0fa08e1cba3f214ff69e24f532da32f65ec32ee0eea9d2ee4cd3b0b3ba07fb",
+    "bytes": 340487
+  },
+  {
+    "path": "evidence/2026-11-24-round2/google-Q10.json",
+    "sha256": "d1fb2b054bdf35b77f8994f45d08f8078c5e1cd01768a9b7da11c56c73641833",
+    "bytes": 163
+  },
+  {
+    "path": "evidence/2026-11-24-round2/google-Q10.txt",
+    "sha256": "bb2234a8a16f1255b14007b52c21965994615b02ebd36eeb1d9a174f196df0b4",
+    "bytes": 31144
+  },
+  {
+    "path": "evidence/2026-11-24-round2/google-Q11.jpg",
+    "sha256": "52843805562d8ce447b75aa5ba3eed32b219d2c6d711a908dc3c88202b3d8be0",
+    "bytes": 268617
+  },
+  {
+    "path": "evidence/2026-11-24-round2/google-Q11.json",
+    "sha256": "a591b1359b70330d061771472f123793746b908954b540d5397beabe2bbbdff5",
+    "bytes": 210
+  },
+  {
+    "path": "evidence/2026-11-24-round2/google-Q11.txt",
+    "sha256": "37d084208c84078cf6105ebd68ca2972868fe1717b5524d22dfd1b1ad158f90f",
+    "bytes": 21976
+  },
+  {
+    "path": "evidence/2026-11-24-round2/google-Q12.jpg",
+    "sha256": "0d1f97298cebbefb4e7bb5133f031c8181114cdec041145e626f185a6e49478c",
+    "bytes": 225693
+  },
+  {
+    "path": "evidence/2026-11-24-round2/google-Q12.json",
+    "sha256": "0be1e0953c6464767af871ef043f0c755b17978b3fb52207dc654613fc79eda1",
+    "bytes": 157
+  },
+  {
+    "path": "evidence/2026-11-24-round2/google-Q12.txt",
+    "sha256": "b0fe307dec959d39253e278487157a72ea5e80af30930da0e2fec9e5080ebe2c",
+    "bytes": 17978
+  },
+  {
+    "path": "evidence/2026-11-24-round2/node-tests.txt",
+    "sha256": "0352a601102ab4e3fe224d433a1a65faaed055354464c48d0b56d68efbb42fdd",
+    "bytes": 689
+  },
+  {
+    "path": "evidence/2026-11-24-round2/perplexity-Q01-sources.json",
+    "sha256": "cde5f20356a3284bb913d495f1403c66635a3ea0b1a50fdbdcb37f22b00fa6e9",
+    "bytes": 4182
+  },
+  {
+    "path": "evidence/2026-11-24-round2/perplexity-Q01.jpg",
+    "sha256": "8683a5cf98cd1c44c7e6ee803c1bdfaaebbb2b08c3d90740a4db2d2eddc67b8b",
+    "bytes": 131099
+  },
+  {
+    "path": "evidence/2026-11-24-round2/perplexity-Q01.json",
+    "sha256": "9668dd4ebe691314e01139dba87080f5021d65947c00cafda0fea36a025c35a5",
+    "bytes": 4638
+  },
+  {
+    "path": "evidence/2026-11-24-round2/perplexity-Q01.txt",
+    "sha256": "e59a6114ed07d931a59e69dea33280831936a7e3c4ca28905c873c43db6ef5f7",
+    "bytes": 18362
+  },
+  {
+    "path": "evidence/2026-11-24-round2/perplexity-Q02-sources.json",
+    "sha256": "04d340cd3495e9736de83d314cb48a6b40d30f2a43aa1dbfe698c2a6e2bc3d3c",
+    "bytes": 5080
+  },
+  {
+    "path": "evidence/2026-11-24-round2/perplexity-Q02.jpg",
+    "sha256": "729529c509051646f9faa675c2603039925e7beab0fb691f50dd4ae7afe9c610",
+    "bytes": 126139
+  },
+  {
+    "path": "evidence/2026-11-24-round2/perplexity-Q02.json",
+    "sha256": "382342c50164554978ee951ff9ed3be08674ed7f64f462568cd0a2ec82922da7",
+    "bytes": 5536
+  },
+  {
+    "path": "evidence/2026-11-24-round2/perplexity-Q02.txt",
+    "sha256": "da6c026343a4d566c35f32b94231d7e01596d03458e29785967673c0026f23e0",
+    "bytes": 20922
+  },
+  {
+    "path": "evidence/2026-11-24-round2/perplexity-Q03-sources.json",
+    "sha256": "8d5d5c60d1f1057a520965b26aa905bb568fd1b497a454bbf356413fc836c841",
+    "bytes": 3924
+  },
+  {
+    "path": "evidence/2026-11-24-round2/perplexity-Q03.jpg",
+    "sha256": "f03f94b790f92ed0f3eea697330f06ef0d93a9fa94ddb5d47c331e8313889da6",
+    "bytes": 142523
+  },
+  {
+    "path": "evidence/2026-11-24-round2/perplexity-Q03.json",
+    "sha256": "c0f3dc9dfb2b49bc010b63b1f5665f3fb87fa184bca947cf4bb3908485061c1a",
+    "bytes": 4380
+  },
+  {
+    "path": "evidence/2026-11-24-round2/perplexity-Q03.txt",
+    "sha256": "eea7b9f55034af8515a8a63d10ce7ad6fa839d61c3459b29c748c73abc747453",
+    "bytes": 16616
+  },
+  {
+    "path": "evidence/2026-11-24-round2/perplexity-Q04-sources.json",
+    "sha256": "37aeae627893c52e2abcc4d48f5b8e135c78ac537f2fa959bd9665d4bc6f747b",
+    "bytes": 5288
+  },
+  {
+    "path": "evidence/2026-11-24-round2/perplexity-Q04.jpg",
+    "sha256": "55c24788a84b69d06df6a15ec5ca718974eff7eb8643499d64de2f761ecf0c53",
+    "bytes": 120622
+  },
+  {
+    "path": "evidence/2026-11-24-round2/perplexity-Q04.json",
+    "sha256": "328c335002a01be2bff8e2432a04e48aa9b7391238c36d77b4d364854fae8479",
+    "bytes": 5744
+  },
+  {
+    "path": "evidence/2026-11-24-round2/perplexity-Q04.txt",
+    "sha256": "34dda642f08376ab100c6e03121a3c45150b2bc5c029b13d13356d92d5142f46",
+    "bytes": 19675
+  },
+  {
+    "path": "evidence/2026-11-24-round2/perplexity-Q05-sources.json",
+    "sha256": "473a72f94c767159766ace0f2e65916ad38be12d46d612b7a24fa373760301cc",
+    "bytes": 5886
+  },
+  {
+    "path": "evidence/2026-11-24-round2/perplexity-Q05.jpg",
+    "sha256": "d02dbdb7624dcf029c3d64cf47be2a3be8486b502c2331d2ef2ac6b9dcef6495",
+    "bytes": 152510
+  },
+  {
+    "path": "evidence/2026-11-24-round2/perplexity-Q05.json",
+    "sha256": "055952c96ef7cbe7838f1682db94b36f6653160e8447c77ba1d6b762e531781b",
+    "bytes": 6342
+  },
+  {
+    "path": "evidence/2026-11-24-round2/perplexity-Q05.txt",
+    "sha256": "cc64fc19e077ef6c5d347e9361db5704a0309d3bab20625cd473b6b708f14154",
+    "bytes": 19761
+  },
+  {
+    "path": "evidence/2026-11-24-round2/perplexity-Q06-sources.json",
+    "sha256": "f512d776f09aa85d6860fe6ea3ddd9de0834111f9af4f1cadbf35835852d3b42",
+    "bytes": 6217
+  },
+  {
+    "path": "evidence/2026-11-24-round2/perplexity-Q06.jpg",
+    "sha256": "180358642eccda736a26ad2f3e71a03d52bc18c3983e81e50e24ad6190e39b7b",
+    "bytes": 127832
+  },
+  {
+    "path": "evidence/2026-11-24-round2/perplexity-Q06.json",
+    "sha256": "eac0ed4c406a3942336096d1f725008e336cd18692fbaee0e3dceb039cbcdad5",
+    "bytes": 6673
+  },
+  {
+    "path": "evidence/2026-11-24-round2/perplexity-Q06.txt",
+    "sha256": "bf2b7929c03493da6461aed738c70a323975756ba044bf8ed8d02f07a136115c",
+    "bytes": 19785
+  },
+  {
+    "path": "evidence/2026-11-24-round2/perplexity-Q07-sources.json",
+    "sha256": "09afcdfac9c9153d0c082c9cc5113335bc75a89c8eb60e8b9bd8aae9bec7afa4",
+    "bytes": 4407
+  },
+  {
+    "path": "evidence/2026-11-24-round2/perplexity-Q07.jpg",
+    "sha256": "9c43ca65e9efb8235a3679e702787b0449945f9969f68ebd351e36f56f375eef",
+    "bytes": 122307
+  },
+  {
+    "path": "evidence/2026-11-24-round2/perplexity-Q07.json",
+    "sha256": "e2ef4941c13245cca11594798fb907e1fc25e4625654510f23fa1d8370e1c035",
+    "bytes": 4863
+  },
+  {
+    "path": "evidence/2026-11-24-round2/perplexity-Q07.txt",
+    "sha256": "14641c3d8fe9a1a10f377661223577a755d10a8f93a8f07290879ff2eeb01fc1",
+    "bytes": 17650
+  },
+  {
+    "path": "evidence/2026-11-24-round2/perplexity-Q08-sources.json",
+    "sha256": "d3b42bffee64576305d7f23bd2dc68bf1020639ae4ea7cfd64ce6bb88e057122",
+    "bytes": 6679
+  },
+  {
+    "path": "evidence/2026-11-24-round2/perplexity-Q08.jpg",
+    "sha256": "446714fc07de630685601eedf8d953f54d12aa765624d85d52af8431ec44a293",
+    "bytes": 154570
+  },
+  {
+    "path": "evidence/2026-11-24-round2/perplexity-Q08.json",
+    "sha256": "9c8f38368e681a573a9338334f42d2e236bcf7bd940f30b15a24e88541b0776e",
+    "bytes": 7135
+  },
+  {
+    "path": "evidence/2026-11-24-round2/perplexity-Q08.txt",
+    "sha256": "ad794ba786364068886beb37ed1507f204c5a16845afebfed3e4992ca61f1a23",
+    "bytes": 24037
+  },
+  {
+    "path": "evidence/2026-11-24-round2/perplexity-Q09-sources.json",
+    "sha256": "ce53c0fbcc24f10541f69fd049f2f2778efdecf48438447d86e63f4479e24e5e",
+    "bytes": 4230
+  },
+  {
+    "path": "evidence/2026-11-24-round2/perplexity-Q09.jpg",
+    "sha256": "f5df92948840436a42208a454d57c9558134639fd97df1ac027995a46701aaa9",
+    "bytes": 121178
+  },
+  {
+    "path": "evidence/2026-11-24-round2/perplexity-Q09.json",
+    "sha256": "22020abce1a80f0f1418f9bbc7984acc4c52226f8b6ba805a502fa8757e01f70",
+    "bytes": 4686
+  },
+  {
+    "path": "evidence/2026-11-24-round2/perplexity-Q09.txt",
+    "sha256": "5689d6fad703d633dabaaede68be5efdd4876139195c6e3d8c26bfaddeffbf9f",
+    "bytes": 18215
+  },
+  {
+    "path": "evidence/2026-11-24-round2/perplexity-Q10-sources.json",
+    "sha256": "7a56db24a472d12240bc39003120c93ee3c599867d97cd9314c4f10eb4673a30",
+    "bytes": 5363
+  },
+  {
+    "path": "evidence/2026-11-24-round2/perplexity-Q10.jpg",
+    "sha256": "2e7d722952ecbbfc3a80169e8cee084609280173df97d99ed41a475a64c75eaa",
+    "bytes": 121592
+  },
+  {
+    "path": "evidence/2026-11-24-round2/perplexity-Q10.json",
+    "sha256": "8defa5f7e464fdd40d33b60e84721526236da77125faa4a8eab26bdd0ac3746b",
+    "bytes": 5819
+  },
+  {
+    "path": "evidence/2026-11-24-round2/perplexity-Q10.txt",
+    "sha256": "5d711bbeb47e9edc169556baa1b76dceb17a562fd25304497260f4cd72f7612e",
+    "bytes": 20668
+  },
+  {
+    "path": "evidence/2026-11-24-round2/perplexity-Q11-sources.json",
+    "sha256": "1432b4a1cd861ff2a16505d656f9a31a7303d22c684fd8ae49a7ae7b6c6a8f3d",
+    "bytes": 5597
+  },
+  {
+    "path": "evidence/2026-11-24-round2/perplexity-Q11.jpg",
+    "sha256": "fcfd304120d2ebcce8fa550decf2070ea29a923ff4903d21359b3ddb05b9254f",
+    "bytes": 152772
+  },
+  {
+    "path": "evidence/2026-11-24-round2/perplexity-Q11.json",
+    "sha256": "dbcff945aa725bc60c0de971c55ba5ab5ffb98699aaf28c0d0132b1f62fbc4ba",
+    "bytes": 6053
+  },
+  {
+    "path": "evidence/2026-11-24-round2/perplexity-Q11.txt",
+    "sha256": "35bb9d21f8af7dfe0d9e669ed6a9ff52d11729230b047e7365e8716051d077b8",
+    "bytes": 21020
+  },
+  {
+    "path": "evidence/2026-11-24-round2/perplexity-Q12-sources.json",
+    "sha256": "874ef29e54ceb4a93aa2843c2c2140c953b4447ac8ed5a0971cd9573572d1cd3",
+    "bytes": 4932
+  },
+  {
+    "path": "evidence/2026-11-24-round2/perplexity-Q12.jpg",
+    "sha256": "88e9cc4b3661c1accd92f06b41bed06f688eb11f14bbb1daaddeff6b54c2fa97",
+    "bytes": 134345
+  },
+  {
+    "path": "evidence/2026-11-24-round2/perplexity-Q12.json",
+    "sha256": "26ba0949559c1af73e43a711f97c21ffd7b4e9d09dd94273dd8656ea40bead01",
+    "bytes": 5388
+  },
+  {
+    "path": "evidence/2026-11-24-round2/perplexity-Q12.txt",
+    "sha256": "66ad0f12fcdb45fdaa33a97efb5419b119cd894c16f02f6a0b52973c94a682c0",
+    "bytes": 20885
+  },
+  {
+    "path": "evidence/2026-11-24-round2/pr27-ci.json",
+    "sha256": "389b5b304400abffb19904016824f21a3c239f1a9d5d408f61941dd4127d3ec2",
+    "bytes": 738
+  },
+  {
+    "path": "evidence/2026-11-24-round2/production-readonly-precheck.json",
+    "sha256": "4a17123df6a5ff227c7d61ea19f7e23df725c8c9d97ad2f29ec7fd992c3db511",
+    "bytes": 2252
+  },
+  {
+    "path": "evidence/2026-11-24-round2/publication-check.json",
+    "sha256": "aeba87e0146ba07d03464a76608640588a35f8611c9e7aa5b8b7491d9f4fa0bf",
+    "bytes": 346
+  },
+  {
+    "path": "evidence/2026-11-24-round2/publication-redactions.json",
+    "sha256": "6f2e8ef5a574b6c975b9ba7e9aca9ac150ebfa1f4b05430cd0e5aaf68818cc60",
+    "bytes": 731
+  },
+  {
+    "path": "evidence/2026-11-24-round2/python-tests.txt",
+    "sha256": "222fd1edde2496f6fad1e4431a12fe30783c9e6c9ad7a5884516074a76abc20b",
+    "bytes": 895
+  },
+  {
+    "path": "evidence/2026-11-24-round2/query-platform-results.csv",
+    "sha256": "a3d578c9368d1e52082397b739141dfaf3901a82ff471a0f1bfcfeb2c844fc74",
+    "bytes": 11310
+  },
+  {
+    "path": "evidence/2026-11-24-round2/recorder-integrity.json",
+    "sha256": "3259dd41c0d4e344127e53946af4b6a71b284505246dab79eaf4b6e5c22ae63c",
+    "bytes": 247
+  },
+  {
+    "path": "evidence/2026-11-24-round2/reviewed-observations.json",
+    "sha256": "aa33846ccc11b96ce1ed32b8ee6e32ab07565c6666a677ad8ae1a17677762de7",
+    "bytes": 117060
+  }
+]

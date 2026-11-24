@@ -1,0 +1,234 @@
+- link "Skip to main content"
+- link "Accessibility help":
+  - /url: https://support.google.com/websearch/answer/181196?hl=en
+- search:
+  - link "Go to Google Home":
+    - /url: https://www.google.com/webhp?hl=en&sa=X&ved=2ahUKEwiJ_viV2qCYAxXXD0QIHXwfFvYQPHoECAYQBA
+  - status
+  - alert
+  - combobox "Search": smart ring manufacturer with SDK API smart ring manufacturer with SDK API
+  - button "Clear":
+  - button "Search by voice":
+  - button "Search by image":
+- button "Share":
+- button "Google apps":
+[account label omitted]
+- navigation:
+  - list:
+    - link "AI Mode":
+      - /url: /search?q=smart+ring+manufacturer+with+SDK+API&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDgwo5B978FmSSzF1vkh0kz1WW-cBg:1795526693378&udm=50&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtICPMVaTZk4tFdUK8k5MXv8g8O0YurqYK3cSBclZ4lkqkmbfBo7ZCIEoKNtmqYteY2ppzsYrnq7EmzRtU_YzFQ-k1voEvfQWF5lhWNYHvqAODcXUC3JoqVnRRHbVQgbXM6GC_aj-4ux9vknxPhbl5XfnQnXbg&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiJ_viV2qCYAxXXD0QIHXwfFvYQ2J8OegQIDRAD
+      - generic: AI Mode
+    - link "All" [disabled]:
+      - generic: All
+    - link "Shopping":
+      - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDgwo5B978FmSSzF1vkh0kz1WW-cBg:1795526693378&udm=28&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtICPMVaTZk4tFdUK8k5MXv8g8O0YurqYK3cSBclZ4lkqkmbfBo7ZCIEoKNtmqYteY2ppzsYrnq7EmzRtU_YzFQ-k1voEvfQWF5lhWNYHvqAODcXUC3JoqVnRRHbVQgbXM6GC_aj-4ux9vknxPhbl5XfnQnXbg&q=smart+ring+manufacturer+with+SDK+API&ved=1t:220175&ictx=111
+      - generic: Shopping
+    - link "Images":
+      - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDgwo5B978FmSSzF1vkh0kz1WW-cBg:1795526693378&udm=2&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtICPMVaTZk4tFdUK8k5MXv8g8O0YurqYK3cSBclZ4lkqkmbfBo7ZCIEoKNtmqYteY2ppzsYrnq7EmzRtU_YzFQ-k1voEvfQWF5lhWNYHvqAODcXUC3JoqVnRRHbVQgbXM6GC_aj-4ux9vknxPhbl5XfnQnXbg&q=smart+ring+manufacturer+with+SDK+API&sa=X&ved=2ahUKEwiJ_viV2qCYAxXXD0QIHXwfFvYQtKgLegQIExAB
+      - generic: Images
+    - link "Short videos":
+      - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDgwo5B978FmSSzF1vkh0kz1WW-cBg:1795526693378&udm=short_vids&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtICPMVaTZk4tFdUK8k5MXv8g8O0YurqYK3cSBclZ4lkqkmbfBo7ZCIEoKNtmqYteY2ppzsYrnq7EmzRtU_YzFQ-k1voEvfQWF5lhWNYHvqAODcXUC3JoqVnRRHbVQgbXM6GC_aj-4ux9vknxPhbl5XfnQnXbg&q=smart+ring+manufacturer+with+SDK+API&sa=X&ved=2ahUKEwiJ_viV2qCYAxXXD0QIHXwfFvYQs6gLegQIFBAB
+      - generic: Short videos
+    - link "Videos":
+      - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDgwo5B978FmSSzF1vkh0kz1WW-cBg:1795526693378&udm=vids&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtICPMVaTZk4tFdUK8k5MXv8g8O0YurqYK3cSBclZ4lkqkmbfBo7ZCIEoKNtmqYteY2ppzsYrnq7EmzRtU_YzFQ-k1voEvfQWF5lhWNYHvqAODcXUC3JoqVnRRHbVQgbXM6GC_aj-4ux9vknxPhbl5XfnQnXbg&q=smart+ring+manufacturer+with+SDK+API&sa=X&ved=2ahUKEwiJ_viV2qCYAxXXD0QIHXwfFvYQtKgLegQIFRAB
+      - generic: Videos
+    - link "Forums":
+      - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDgwo5B978FmSSzF1vkh0kz1WW-cBg:1795526693378&udm=forums&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtICPMVaTZk4tFdUK8k5MXv8g8O0YurqYK3cSBclZ4lkqkmbfBo7ZCIEoKNtmqYteY2ppzsYrnq7EmzRtU_YzFQ-k1voEvfQWF5lhWNYHvqAODcXUC3JoqVnRRHbVQgbXM6GC_aj-4ux9vknxPhbl5XfnQnXbg&q=smart+ring+manufacturer+with+SDK+API&sa=X&ved=2ahUKEwiJ_viV2qCYAxXXD0QIHXwfFvYQs6gLegQIFhAB
+      - generic: Forums
+    - button "More filters":
+      - generic "More filters":
+        - generic: More
+  - button "Tools":
+    - generic: Tools
+- heading "Search Results" [level=1]
+- main:
+  - heading "AI Overview" [level=2]:
+    - strong: AI Overview
+  - mark:
+    - generic: "[Highlight start]"
+    - text: Several OEM/ODM manufacturers and open-source platforms provide
+    - strong: smart rings with dedicated SDKs and Cloud APIs
+    - text: for custom app integration
+    - generic: "[Highlight end]"
+  - text: . The right choice depends on whether you need enterprise-scale white-label hardware, flexible low-MOQ production, or open-source hardware for research.
+  - generic: Loading...
+  - button "Show more AI Overview":
+    - generic: Show more
+  - heading "Web results" [level=2]
+  - link "SDK &API | Screenless Smart Band ODM & OEM Factory jointcorp.com https://www.jointcorp.com › sdk-api":
+    - /url: https://www.jointcorp.com/sdk-api/
+    - heading "SDK &API | Screenless Smart Band ODM & OEM Factory" [level=3]
+    - generic: jointcorp.com
+    - generic: https://www.jointcorp.com › sdk-api
+  - button "About this result":
+  - emphasis: J-STYLE provides a comprehensive SDK and API
+  - text: to help developers easily connect and manage health monitoring devices, integrating data collection, analysis.
+  - link "Smart Ring OEM Manufacturer with SDK & API Integration Geyan Technology https://www.gysmartwatch.com › html › smart-ring-oem-...":
+    - /url: https://www.gysmartwatch.com/html/smart-ring-oem-sdk-api.html
+    - heading "Smart Ring OEM Manufacturer with SDK & API Integration" [level=3]
+    - generic: Geyan Technology
+    - generic: https://www.gysmartwatch.com › html › smart-ring-oem-...
+  - button "About this result":
+  - generic: Jun 15, 2026 —
+  - text: Geyan Technology provides complete
+  - emphasis: Smart Ring OEM/ODM manufacturing
+  - text: ", SDK development, API integration, custom APP development, and wearable ..."
+  - link "Read more":
+    - /url: https://www.gysmartwatch.com/html/smart-ring-oem-sdk-api.html#:~:text=Geyan%20Technology%20provides%20complete%20Smart,brands%20and%20accelerate%20market%20entry.
+  - link "Wearable SDK & API Integration | STAR KING OEM/ODM starkingsmartring.com https://starkingsmartring.com › resources › sdk-api":
+    - /url: https://starkingsmartring.com/resources/sdk-api/
+    - heading "Wearable SDK & API Integration | STAR KING OEM/ODM" [level=3]
+    - generic: starkingsmartring.com
+    - generic: https://starkingsmartring.com › resources › sdk-api
+  - button "About this result":
+  - emphasis: SDK & API Integration for Smart Wearables and AI Hardware
+  - text: . STAR KING helps technology buyers discuss the data interfaces available for selected smart ...
+  - link "Read more":
+    - /url: https://starkingsmartring.com/resources/sdk-api/#:~:text=SDK%20%26%20API%20Integration%20for,for%20selected%20smart%20electronics%20platforms.
+  - link "Health Smart Rings | Goodway Goodway Techs https://www.goodwaytechs.com › Products › Smart Rings":
+    - /url: https://www.goodwaytechs.com/health-smart-rings.html
+    - heading "Health Smart Rings | Goodway" [level=3]
+    - generic: Goodway Techs
+    - generic: https://www.goodwaytechs.com › Products › Smart Rings
+  - button "About this result":
+  - text: Can
+  - emphasis: smart rings
+  - text: support custom wellness apps? Absolutely. Top OEM
+  - emphasis: manufacturers
+  - text: provide comprehensive Bluetooth
+  - emphasis: SDKs
+  - text: and Cloud
+  - emphasis: APIs
+  - text: ", allowing developers to ..."
+  - link "Read more":
+    - /url: https://www.goodwaytechs.com/health-smart-rings.html#:~:text=Can%20smart%20rings%20support%20custom,wellness%20apps%3F
+  - link "Wearable API and SDKs | ROOK Connect tryrook.io https://tryrook.io › wearable-api-sdk":
+    - /url: https://tryrook.io/wearable-api-sdk/
+    - heading "Wearable API and SDKs | ROOK Connect" [level=3]
+    - generic: tryrook.io
+    - generic: https://tryrook.io › wearable-api-sdk
+  - button "About this result":
+  - text: Access multiple wearables and health apps with
+  - emphasis: ROOK's API and SDK
+  - text: ", and get validated, normalized health data delivered to your apps."
+  - link "J-Style - Smart Ring Manufacturer | Screenless Smart Band ... jointcorp.com https://www.jointcorp.com":
+    - /url: https://www.jointcorp.com/
+    - heading "J-Style - Smart Ring Manufacturer | Screenless Smart Band ..." [level=3]
+    - generic: jointcorp.com
+    - generic: https://www.jointcorp.com
+  - button "About this result":
+  - text: We provide
+  - emphasis: secure SDK and flexible API
+  - text: for rapid integration of JCRing smart rings and JCVital screenless smart bands, delivering real-time biometric analysis ...
+  - link "Read more":
+    - /url: https://www.jointcorp.com/#:~:text=We%20provide%20secure%20SDK%20and,apps%20and%20enterprise%20health%20dashboards.
+  - 'link "Open Ring: Home Open Ring https://o-ring.tech"':
+    - /url: https://o-ring.tech/
+    - 'heading "Open Ring: Home" [level=3]'
+    - generic: Open Ring
+    - generic: https://o-ring.tech
+  - button "About this result":
+  - text: Open Ring is an open-source
+  - emphasis: smart ring
+  - text: with open hardware and firmware, all under the MIT license, made for developers, researchers, and
+  - emphasis: makers
+  - text: .
+  - link "AI Smart Ring OEM/ODM Manufacturer in China | GoldenWeald goldenweald.com https://www.goldenweald.com › Services":
+    - /url: https://www.goldenweald.com/service/ai-smart-ring-oem-odm-manufacturer-ai-recording-translation-wearable-devices/
+    - heading "AI Smart Ring OEM/ODM Manufacturer in China | GoldenWeald" [level=3]
+    - generic: goldenweald.com
+    - generic: https://www.goldenweald.com › Services
+  - button "About this result":
+  - emphasis: Golden Weald is a China-based AI smart ring OEM/ODM manufacturer
+  - text: . Open API and SDK, support for syncing ring data into proprietary iOS or Android APPs.
+  - 'link "Smart Ring App Development: SDKs, Compliance, Cost ... Appinventiv https://appinventiv.com › blog › smart-ring-app-develo..."':
+    - /url: https://appinventiv.com/blog/smart-ring-app-development/
+    - 'heading "Smart Ring App Development: SDKs, Compliance, Cost ..." [level=3]'
+    - generic: Appinventiv
+    - generic: https://appinventiv.com › blog › smart-ring-app-develo...
+  - button "About this result":
+  - generic: Oct 22, 2026 —
+  - text: Plan
+  - emphasis: smart ring app development
+  - text: with clarity on SDK integration, BLE pairing, AI health insights, FDA and HIPAA rules, cost, and timelines ...
+  - heading "People also search for" [level=2]
+  - link "Men smart ring manufacturer with sdk api":
+    - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDgwo5B978FmSSzF1vkh0kz1WW-cBg:1795526693378&q=Men+smart+ring+manufacturer+with+sdk+api&sa=X&ved=2ahUKEwiJ_viV2qCYAxXXD0QIHXwfFvYQ1QJ6BAhBEAE
+    - generic: Men smart ring manufacturer with sdk api
+  - link "Smart ring manufacturers":
+    - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDgwo5B978FmSSzF1vkh0kz1WW-cBg:1795526693378&q=Smart+ring+manufacturers&sa=X&ved=2ahUKEwiJ_viV2qCYAxXXD0QIHXwfFvYQ1QJ6BAhGEAE
+    - generic: Smart ring manufacturers
+  - link "JCRing Smart ring":
+    - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDgwo5B978FmSSzF1vkh0kz1WW-cBg:1795526693378&q=JCRing+Smart+ring&sa=X&ved=2ahUKEwiJ_viV2qCYAxXXD0QIHXwfFvYQ1QJ6BAhHEAE
+    - generic: JCRing Smart ring
+  - link "Jcvital sdk":
+    - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDgwo5B978FmSSzF1vkh0kz1WW-cBg:1795526693378&q=Jcvital+sdk&sa=X&ved=2ahUKEwiJ_viV2qCYAxXXD0QIHXwfFvYQ1QJ6BAhFEAE
+    - generic: Jcvital sdk
+  - link "Smart ring SDK":
+    - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDgwo5B978FmSSzF1vkh0kz1WW-cBg:1795526693378&q=Smart+ring+SDK&sa=X&ved=2ahUKEwiJ_viV2qCYAxXXD0QIHXwfFvYQ1QJ6BAhEEAE
+    - generic: Smart ring SDK
+  - link "J-Style Health Tracker app":
+    - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDgwo5B978FmSSzF1vkh0kz1WW-cBg:1795526693378&q=J-Style+Health+Tracker+app&sa=X&ved=2ahUKEwiJ_viV2qCYAxXXD0QIHXwfFvYQ1QJ6BAhAEAE
+    - generic: J-Style Health Tracker app
+  - link "JC ring Pro":
+    - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDgwo5B978FmSSzF1vkh0kz1WW-cBg:1795526693378&q=JC+ring+Pro&sa=X&ved=2ahUKEwiJ_viV2qCYAxXXD0QIHXwfFvYQ1QJ6BAhCEAE
+    - generic: JC ring Pro
+  - link "J Ring Smart Ring price":
+    - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDgwo5B978FmSSzF1vkh0kz1WW-cBg:1795526693378&q=J+Ring+Smart+Ring+price&sa=X&ved=2ahUKEwiJ_viV2qCYAxXXD0QIHXwfFvYQ1QJ6BAhDEAE
+    - generic: J Ring Smart Ring price
+  - navigation:
+    - heading "Page Navigation" [level=1]
+    - text: "1"
+    - link "Page 2":
+      - /url: /search?q=smart+ring+manufacturer+with+SDK+API&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDgwo5B978FmSSzF1vkh0kz1WW-cBg:1795526693378&ei=JZAFa8nXFtefkPIP_L7YsA8&start=10&sa=N&sstk=AYl2yk-pbvB3NLDcmlqrhIMQnWnBLtBETJOKwlav-vSeYXgeXL1GZcfQVStg5tPkzPW4LPMywXYz9NltgNdsD9ObOLbnetHT2PqSHQ&ved=2ahUKEwiJ_viV2qCYAxXXD0QIHXwfFvYQ8tMDegQIPhAE
+      - text: "2"
+    - link "Page 3":
+      - /url: /search?q=smart+ring+manufacturer+with+SDK+API&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDgwo5B978FmSSzF1vkh0kz1WW-cBg:1795526693378&ei=JZAFa8nXFtefkPIP_L7YsA8&start=20&sa=N&sstk=AYl2yk-pbvB3NLDcmlqrhIMQnWnBLtBETJOKwlav-vSeYXgeXL1GZcfQVStg5tPkzPW4LPMywXYz9NltgNdsD9ObOLbnetHT2PqSHQ&ved=2ahUKEwiJ_viV2qCYAxXXD0QIHXwfFvYQ8tMDegQIPhAG
+      - text: "3"
+    - link "Page 4":
+      - /url: /search?q=smart+ring+manufacturer+with+SDK+API&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDgwo5B978FmSSzF1vkh0kz1WW-cBg:1795526693378&ei=JZAFa8nXFtefkPIP_L7YsA8&start=30&sa=N&sstk=AYl2yk-pbvB3NLDcmlqrhIMQnWnBLtBETJOKwlav-vSeYXgeXL1GZcfQVStg5tPkzPW4LPMywXYz9NltgNdsD9ObOLbnetHT2PqSHQ&ved=2ahUKEwiJ_viV2qCYAxXXD0QIHXwfFvYQ8tMDegQIPhAI
+      - text: "4"
+    - link "Page 5":
+      - /url: /search?q=smart+ring+manufacturer+with+SDK+API&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDgwo5B978FmSSzF1vkh0kz1WW-cBg:1795526693378&ei=JZAFa8nXFtefkPIP_L7YsA8&start=40&sa=N&sstk=AYl2yk-pbvB3NLDcmlqrhIMQnWnBLtBETJOKwlav-vSeYXgeXL1GZcfQVStg5tPkzPW4LPMywXYz9NltgNdsD9ObOLbnetHT2PqSHQ&ved=2ahUKEwiJ_viV2qCYAxXXD0QIHXwfFvYQ8tMDegQIPhAK
+      - text: "5"
+    - link "Page 6":
+      - /url: /search?q=smart+ring+manufacturer+with+SDK+API&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDgwo5B978FmSSzF1vkh0kz1WW-cBg:1795526693378&ei=JZAFa8nXFtefkPIP_L7YsA8&start=50&sa=N&sstk=AYl2yk-pbvB3NLDcmlqrhIMQnWnBLtBETJOKwlav-vSeYXgeXL1GZcfQVStg5tPkzPW4LPMywXYz9NltgNdsD9ObOLbnetHT2PqSHQ&ved=2ahUKEwiJ_viV2qCYAxXXD0QIHXwfFvYQ8tMDegQIPhAM
+      - text: "6"
+    - link "Page 7":
+      - /url: /search?q=smart+ring+manufacturer+with+SDK+API&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDgwo5B978FmSSzF1vkh0kz1WW-cBg:1795526693378&ei=JZAFa8nXFtefkPIP_L7YsA8&start=60&sa=N&sstk=AYl2yk-pbvB3NLDcmlqrhIMQnWnBLtBETJOKwlav-vSeYXgeXL1GZcfQVStg5tPkzPW4LPMywXYz9NltgNdsD9ObOLbnetHT2PqSHQ&ved=2ahUKEwiJ_viV2qCYAxXXD0QIHXwfFvYQ8tMDegQIPhAO
+      - text: "7"
+    - link "Page 8":
+      - /url: /search?q=smart+ring+manufacturer+with+SDK+API&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDgwo5B978FmSSzF1vkh0kz1WW-cBg:1795526693378&ei=JZAFa8nXFtefkPIP_L7YsA8&start=70&sa=N&sstk=AYl2yk-pbvB3NLDcmlqrhIMQnWnBLtBETJOKwlav-vSeYXgeXL1GZcfQVStg5tPkzPW4LPMywXYz9NltgNdsD9ObOLbnetHT2PqSHQ&ved=2ahUKEwiJ_viV2qCYAxXXD0QIHXwfFvYQ8tMDegQIPhAQ
+      - text: "8"
+    - link "Page 9":
+      - /url: /search?q=smart+ring+manufacturer+with+SDK+API&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDgwo5B978FmSSzF1vkh0kz1WW-cBg:1795526693378&ei=JZAFa8nXFtefkPIP_L7YsA8&start=80&sa=N&sstk=AYl2yk-pbvB3NLDcmlqrhIMQnWnBLtBETJOKwlav-vSeYXgeXL1GZcfQVStg5tPkzPW4LPMywXYz9NltgNdsD9ObOLbnetHT2PqSHQ&ved=2ahUKEwiJ_viV2qCYAxXXD0QIHXwfFvYQ8tMDegQIPhAS
+      - text: "9"
+    - link "Page 10":
+      - /url: /search?q=smart+ring+manufacturer+with+SDK+API&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDgwo5B978FmSSzF1vkh0kz1WW-cBg:1795526693378&ei=JZAFa8nXFtefkPIP_L7YsA8&start=90&sa=N&sstk=AYl2yk-pbvB3NLDcmlqrhIMQnWnBLtBETJOKwlav-vSeYXgeXL1GZcfQVStg5tPkzPW4LPMywXYz9NltgNdsD9ObOLbnetHT2PqSHQ&ved=2ahUKEwiJ_viV2qCYAxXXD0QIHXwfFvYQ8tMDegQIPhAU
+      - text: "10"
+    - heading "Next" [level=2]:
+      - link "Next":
+        - /url: /search?q=smart+ring+manufacturer+with+SDK+API&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDgwo5B978FmSSzF1vkh0kz1WW-cBg:1795526693378&ei=JZAFa8nXFtefkPIP_L7YsA8&start=10&sa=N&sstk=AYl2yk-pbvB3NLDcmlqrhIMQnWnBLtBETJOKwlav-vSeYXgeXL1GZcfQVStg5tPkzPW4LPMywXYz9NltgNdsD9ObOLbnetHT2PqSHQ&ved=2ahUKEwiJ_viV2qCYAxXXD0QIHXwfFvYQ8NMDegQIPhAW
+        - generic: Next
+  - navigation
+- contentinfo:
+  - heading "Footer Links" [level=1]
+  - generic: Results are personalized
+  - generic: "-"
+  - link "Try without personalization":
+    - /url: https://www.google.com/search?q=smart+ring+manufacturer+with+SDK+API&hl=en&peek_pws=0&sxsrf=AKL5yDgwo5B978FmSSzF1vkh0kz1WW-cBg:1795526693378
+    - generic: Try without personalization
+  - button "Los Angeles County, California - Based on your past activity":
+    - generic: Los Angeles County, California
+    - text: "-"
+    - generic: Based on your past activity
+  - text: "-"
+  - button "Update location": Update location
+  - link "Help":
+    - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en&fg=1
+  - button "Send feedback":
+    - generic: Send feedback
+  - link "Privacy":
+    - /url: https://policies.google.com/privacy?hl=en&fg=1
+  - link "Terms":
+    - /url: https://policies.google.com/terms?hl=en&fg=1

@@ -1,0 +1,65 @@
+{
+  "record_id": "6c5b0e9e-6273-5f0f-99d6-0adcaf236224",
+  "query_id": "Q05",
+  "query": "smart ring hardware firmware ODM partner",
+  "platform": "Google",
+  "mode": "ALL_FIRST_PAGE_AUTO_AI_OVERVIEW",
+  "observed_at": "2026-11-24T13:24:31.500Z",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "Chrome existing signed-in profile; hl=en; personalized results; country UNKNOWN; PR27 bounded AI receipt detector; collapsed overview scope",
+  "availability": "COMPLETED",
+  "longvon_present": false,
+  "organic_rank": null,
+  "ai_body_recommended": null,
+  "source_cited": null,
+  "cited_urls": [],
+  "competitors": [
+    {
+      "name": "J-Style / Jointcorp",
+      "url": "https://www.jointcorp.com/blog/smart-band-manufacturer/wearable-firmware-customization-guide/",
+      "position": "web-result h3 #1",
+      "evidence_quote": "https://www.jointcorp.com/blog/smart-band-manufacturer/wearable-firmware-customization-guide/"
+    },
+    {
+      "name": "Pineeon",
+      "url": "https://pineeon.com/smart-ring-oem-vs-odm/",
+      "position": "web-result h3 #2",
+      "evidence_quote": "- link \"A Complete Guide to Smart Ring OEM vs ODM Options Pineeon https://pineeon.com › smart-ring-oem-vs-odm\":"
+    },
+    {
+      "name": "STAR KING / Pineeon (as displayed)",
+      "url": "https://starkingsmartring.com/smart-ring-integration-guide-system-integrators-guide/",
+      "position": "web-result h3 #3",
+      "evidence_quote": "- link \"Read more\":"
+    },
+    {
+      "name": "Golden Weald",
+      "url": "https://www.goldenweald.com/smart-ring-oem-odm-manufacturer-in-shenzhen-china/",
+      "position": "web-result h3 #5",
+      "evidence_quote": "- link \"Smart Ring OEM & ODM Manufacturer in Shenzhen, China goldenweald.com https://www.goldenweald.com › Blog Standard\":"
+    },
+    {
+      "name": "Geyan",
+      "url": "https://www.gysmartwatch.com/html/custom-smart-ring-oem-manufacturing.html",
+      "position": "web-result h3 #8",
+      "evidence_quote": "- link \"Read more\":"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-24-round2/google-Q05.jpg",
+      "sha256": "26f813b4298bf68705c693fcc9091ee123c8d5a54c967fd7c719b6cfe520d639"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/google-Q05.json",
+      "sha256": "f6c0f67076f328b2c6e86efea64fc043e2c13dd737237a218599b8ed6455355e"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/google-Q05.txt",
+      "sha256": "e16048b030ee4e11702e527a72f3baf7dda5896a68287ae8d8b7509a50a59e44"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "New round2 capture; environment/method differs from round1: no comparable previous_record_id and no ranking-growth attribution. Citations prove visible URLs only; reachability and commercial facts UNKNOWN."
+}

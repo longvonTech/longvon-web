@@ -1,0 +1,66 @@
+{
+  "captured_at": "2026-11-24T13:27:09.301Z",
+  "platform": "Perplexity",
+  "mode": "INCOGNITO_SEARCH",
+  "completion": "COMPLETE",
+  "country": "UNKNOWN",
+  "citation_targets": [
+    {
+      "label": "nextbiztech\nUltraSignal™ Developer Platform & Wearable Data SDK\nAccess medical-grade raw PPG, motion, and temperature data streams from Ultrahuman Smart Rings. Build custom algorithms for healthtech, sports science, and clinical research.",
+      "url": "https://www.nextbiztech.com/us/ultrasignal/"
+    },
+    {
+      "label": "longvon\nSmart Ring SDK & Cloud API for OEM Partners\nLONGVON · Smart Ring Manufacturer · OEM/ODM ... LONGVON enables partner SDK access so brands and digital-health teams can integrate smart ring hardware with their own applications. Access is project-scoped — not a public self-serve portal. ... Qualified OEM/ODM partners can discuss 100Hz PPG raw-data access through LONGVON’s agreed SDK and project pathway. This is a technical evaluation, not a public SDK download or a guarantee for every ring model. Discuss a 100Hz raw PPG project ... 100Hz...",
+      "url": "https://www.longvon.com/en/smart-ring-sdk-api"
+    },
+    {
+      "label": "nature\nHealthRing: Physiology Dataset for Health Sensing on Rings\nSmart rings enable unobtrusive monitoring of cardiovascular vital signs via photoplethysmography (PPG), yet rigorous validation is limited by the scarcity of open, multi-parameter datasets. We present HealthRing, three synchronized cohorts from 54 adults: (i) scripted physiological stimuli (Study 1), (ii) semi-free-living daily activities (Study 2), and (iii) motion-intensive treadmill running with natural arm swing that induces substantial motion artefacts (Study 3). Two custom...",
+      "url": "https://www.nature.com/articles/s41597-026-07289-x?error=cookies_not_supported&code=03576bea-ef72-4334-832f-589a91e23fd0"
+    },
+    {
+      "label": "longvon\nSmart Ring OSA Monitoring Technology & OEM/ODM Solutions\nPartner SDK — project-scoped device/data pathways 100Hz PPG raw data pathways for qualified OEM/ODM partners (PARTIAL evidence; scope in SOW) ... Full boundaries: Smart Ring SDK & Cloud API. ... Evaluate 100Hz raw PPG via the partner SDK ... Qualified OEM/ODM partners can discuss project-scoped SDK access, including 100Hz PPG raw data pathways, customer-owned App integration, and cloud algorithm services. There is no public self-serve SDK portal.",
+      "url": "https://www.longvon.com/en/osa-smart-ring-technology"
+    },
+    {
+      "label": "tuckstechs\nOEM/ODM heart rate monitoring ring Manufacturer & Supplier - Tucks\nISO9001-certified wearable factory in Shenzhen. OEM smartwatches and AI glasses from 200 pcs, 7-day samples, CE/FCC/RoHS compliant, serving B2B brands in 30+ countries.",
+      "url": "https://www.tuckstechs.com/catalog/oemodm-heart-rate-monitoring-ring-manufacturer-supplier/"
+    },
+    {
+      "label": "sensorbio\nScience — Sensor Bio\nHow a PPG biometric sensor turns green, red and infrared light into heart rate, HRV and SpO2, and how product teams get raw multi-wavelength PPG data.",
+      "url": "https://sensorbio.com/science/"
+    },
+    {
+      "label": "github\nsmart-ring/README.md at main · josearruticuanda/smart-ring\nSmart ring on a custom flex PCB. PPG sensing, on device HR/HRV/stress, nRF52832 firmware, BLE telemetry. - josearruticuanda/smart-ring",
+      "url": "https://github.com/josearruticuanda/smart-ring/blob/main/README.md"
+    },
+    {
+      "label": "longvon\nSmart Ring Technology & Development\nPartner SDK and cloud API integration — including pathways to 100Hz PPG raw data for qualified partners — are available as project-scoped capabilities. See Smart Ring SDK & Cloud API for cooperation details. ... Evaluate 100Hz raw PPG via the partner SDK",
+      "url": "https://www.longvon.com/en/smart-ring-technology"
+    },
+    {
+      "label": "longvon\nLONGVON | Smart Ring Manufacturer & OEM/ODM Provider\nSDK (partner access, project-scoped) ... Evaluate 100Hz raw PPG via the partner SDK",
+      "url": "https://www.longvon.com/en/smart-ring-manufacturer"
+    },
+    {
+      "label": "github\nGitHub - josearruticuanda/smart-ring: Smart ring on a custom ...\nSmart ring on a custom flex PCB. PPG sensing, on device HR/HRV/stress, nRF52832 firmware, BLE telemetry. - josearruticuanda/smart-ring",
+      "url": "https://github.com/josearruticuanda/smart-ring"
+    }
+  ],
+  "citation_reachability": "UNKNOWN",
+  "screenshot": "REQUIRES_VISUAL_REVIEW",
+  "bounds": {
+    "left": 140.5,
+    "right": 828.5,
+    "viewport": 1268
+  },
+  "files": [
+    {
+      "name": "perplexity-Q07.txt",
+      "sha256": "14641c3d8fe9a1a10f377661223577a755d10a8f93a8f07290879ff2eeb01fc1"
+    },
+    {
+      "name": "perplexity-Q07.jpg",
+      "sha256": "9c43ca65e9efb8235a3679e702787b0449945f9969f68ebd351e36f56f375eef"
+    }
+  ]
+}

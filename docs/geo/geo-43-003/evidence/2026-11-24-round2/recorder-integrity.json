@@ -1,0 +1,8 @@
+{
+  "checked_at": "2026-11-24T13:36:54.841157+00:00",
+  "round1_manifest_matches": 148,
+  "round1_observations_byte_identical": 36,
+  "round2_appended": 36,
+  "all_records_valid": 72,
+  "duplicate_append": "FileExistsError; originals unchanged"
+}

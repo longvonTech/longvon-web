@@ -1,0 +1,85 @@
+{
+  "record_id": "9a10fbf9-9acd-5a2a-a50f-dc4d26848efe",
+  "query_id": "Q11",
+  "query": "digital health smart ring integration SDK",
+  "platform": "Perplexity",
+  "mode": "INCOGNITO_SEARCH",
+  "observed_at": "2026-11-24T13:33:23.779Z",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "Chrome signed-in incognito Search; Pro free-preview label; UI zh, query/answer en; model UNKNOWN; PR27 visible source-panel DOM extraction",
+  "availability": "COMPLETED",
+  "longvon_present": true,
+  "organic_rank": null,
+  "ai_body_recommended": true,
+  "source_cited": true,
+  "cited_urls": [
+    "https://appinventiv.com/blog/smart-ring-app-development/",
+    "https://kanopylabs.com/blog/how-to-build-a-smart-ring-health-data-app",
+    "https://sahha.ai/blog/smart-ring-market-2026/",
+    "https://aifitnessapi.com/fitness-apis/smart-ring-apis",
+    "https://github.com/PetriLahdelma/ring-stats/blob/main/research/RING_PROVIDERS.md",
+    "https://appmatictech.com/insights/smart-ring-app-development/",
+    "https://smartringhq.com/blog/smart-ring-google-health-connect-integration-uk-2026/",
+    "https://www.longvon.com/en/smart-ring-sdk-api",
+    "https://pettersonapps.com/portfolio/inspiring-ring",
+    "https://myringagent.com/integrations",
+    "https://www.project-haltija.com/api",
+    "https://developers.anpheros.com/guides/ultrahuman-api",
+    "https://www.thryve.health/supported-wearable-devices/oura",
+    "https://www.thryve.health/de/unterstuetzte-wearables",
+    "https://aifitnessapi.com/fitness-apis/smart-ring-apis.md"
+  ],
+  "competitors": [
+    {
+      "name": "Appinventiv",
+      "url": "https://appinventiv.com/blog/smart-ring-app-development/",
+      "position": "visible sources item #1",
+      "evidence_quote": "appinventiv\nSmart Ring App Development: SDKs, Compliance, Cost and Process\nPlan smart ring app development with clarity on SDK integration, BLE pairing, AI health insights, FDA and HIPAA rules, cost, and timelines for US health products."
+    },
+    {
+      "name": "Kanopy Labs",
+      "url": "https://kanopylabs.com/blog/how-to-build-a-smart-ring-health-data-app",
+      "position": "visible sources item #2",
+      "evidence_quote": "kanopylabs\nHow to Build a Smart Ring Health Data Integration App in 2026\nA smart ring health data app development guide covering BLE protocols, HealthKit, Health Connect, AI insights, HIPAA compliance, and full build costs."
+    },
+    {
+      "name": "Sahha",
+      "url": "https://sahha.ai/blog/smart-ring-market-2026/",
+      "position": "visible sources item #3",
+      "evidence_quote": "sahha\nThe Smart Ring Market in 2026: Oura, Samsung, Ultrahuman\nAbout 4.3 million smart rings shipped in 2025 and Oura took three in four. The 2026 smart ring market: Oura, Samsung, Ultrahuman, RingConn and Garmin."
+    },
+    {
+      "name": "AI Fitness API",
+      "url": "https://aifitnessapi.com/fitness-apis/smart-ring-apis",
+      "position": "visible sources item #4",
+      "evidence_quote": "aifitnessapi\nSmart Ring APIs (2026): Which Rings Let Developers In\nOura, Ultrahuman, Galaxy Ring and RingConn compared for developers: cloud API or SDK, how users consent, approval gates, limits and what users must pay."
+    },
+    {
+      "name": "Thryve",
+      "url": "https://www.thryve.health/supported-wearable-devices/oura",
+      "position": "visible sources item #13",
+      "evidence_quote": "thryve\nOura Ring Integration API – Access Sleep & Recovery Data\nOura Ring Integration API – Access Sleep & Recovery Data Thryve ... API Documentation Access the full developer documentation with authentication flows, data models, endpoints, and integration guides. ... Power personalized digital health, mental wellness, and clinical research solutions. ... Thryve enables frictionless integration of data from Oura Ring (Gen 2 and Gen 3 models), offering continuous, validated metrics such as sleep stages, heart rate variability (HRV), temperature trends,..."
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-24-round2/perplexity-Q11-sources.json",
+      "sha256": "1432b4a1cd861ff2a16505d656f9a31a7303d22c684fd8ae49a7ae7b6c6a8f3d"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/perplexity-Q11.jpg",
+      "sha256": "fcfd304120d2ebcce8fa550decf2070ea29a923ff4903d21359b3ddb05b9254f"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/perplexity-Q11.json",
+      "sha256": "dbcff945aa725bc60c0de971c55ba5ab5ffb98699aaf28c0d0132b1f62fbc4ba"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/perplexity-Q11.txt",
+      "sha256": "35bb9d21f8af7dfe0d9e669ed6a9ff52d11729230b047e7365e8716051d077b8"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "New round2 capture; environment/method differs from round1: no comparable previous_record_id and no ranking-growth attribution. Citations prove visible URLs only; reachability and commercial facts UNKNOWN."
+}

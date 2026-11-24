@@ -1,0 +1,59 @@
+{
+  "record_id": "2d829c76-b312-5f58-92ed-3d58ea0a8e69",
+  "query_id": "Q04",
+  "query": "custom smart ring development company",
+  "platform": "Google",
+  "mode": "ALL_FIRST_PAGE_AUTO_AI_OVERVIEW",
+  "observed_at": "2026-11-24T13:23:39.241Z",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "Chrome existing signed-in profile; hl=en; personalized results; country UNKNOWN; PR27 bounded AI receipt detector; collapsed overview scope",
+  "availability": "COMPLETED",
+  "longvon_present": false,
+  "organic_rank": null,
+  "ai_body_recommended": null,
+  "source_cited": null,
+  "cited_urls": [],
+  "competitors": [
+    {
+      "name": "J-Style / Jointcorp",
+      "url": "https://www.jointcorp.com/",
+      "position": "web-result h3 #1",
+      "evidence_quote": "- link \"J-Style - Smart Ring Manufacturer | Screenless Smart Band ... jointcorp.com https://www.jointcorp.com\":"
+    },
+    {
+      "name": "Geyan",
+      "url": "https://www.gysmartwatch.com/html/custom-logo-smart-ring-white-label.html",
+      "position": "web-result h3 #2",
+      "evidence_quote": "- link \"Custom Logo Smart Ring Manufacturer | White Label & ... Geyan Technology https://www.gysmartwatch.com › html › custom-logo-sm...\":"
+    },
+    {
+      "name": "STAR KING / Pineeon (as displayed)",
+      "url": "https://starkingsmartring.com/products/smart-rings/",
+      "position": "web-result h3 #3",
+      "evidence_quote": "- link \"Smart Ring OEM/ODM Manufacturer & Private Label starkingsmartring.com https://starkingsmartring.com › products › smart-rings\":"
+    },
+    {
+      "name": "Golden Weald",
+      "url": "https://www.goldenweald.com/smart-ring-manufacturer-oem-odm-smart-ring-development/",
+      "position": "web-result h3 #4",
+      "evidence_quote": "- link \"Smart Ring Manufacturer OEM & ODM Smart Ring Development goldenweald.com https://www.goldenweald.com › smart-ring-manufactur...\":"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-24-round2/google-Q04.jpg",
+      "sha256": "282f0aa5884e4083413021b19584024c9a11a8c2ab74b10606ddb389962333da"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/google-Q04.json",
+      "sha256": "d84b7c356c853b5a5216bf47a36986925c704531fb9d70b129ec4efad3204126"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/google-Q04.txt",
+      "sha256": "ac0d25b937b11e64eeb3d6ff27a4788ade5eda41fa696def363ab775b10abee8"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "New round2 capture; environment/method differs from round1: no comparable previous_record_id and no ranking-growth attribution. Citations prove visible URLs only; reachability and commercial facts UNKNOWN."
+}

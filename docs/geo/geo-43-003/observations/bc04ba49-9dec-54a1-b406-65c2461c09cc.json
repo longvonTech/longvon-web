@@ -1,0 +1,68 @@
+{
+  "record_id": "bc04ba49-9dec-54a1-b406-65c2461c09cc",
+  "query_id": "Q07",
+  "query": "100Hz raw PPG smart ring SDK",
+  "platform": "Perplexity",
+  "mode": "INCOGNITO_SEARCH",
+  "observed_at": "2026-11-24T13:27:09.301Z",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "Chrome signed-in incognito Search; Pro free-preview label; UI zh, query/answer en; model UNKNOWN; PR27 visible source-panel DOM extraction",
+  "availability": "COMPLETED",
+  "longvon_present": true,
+  "organic_rank": null,
+  "ai_body_recommended": true,
+  "source_cited": true,
+  "cited_urls": [
+    "https://www.nextbiztech.com/us/ultrasignal/",
+    "https://www.longvon.com/en/smart-ring-sdk-api",
+    "https://www.nature.com/articles/s41597-026-07289-x?error=cookies_not_supported&code=03576bea-ef72-4334-832f-589a91e23fd0",
+    "https://www.longvon.com/en/osa-smart-ring-technology",
+    "https://www.tuckstechs.com/catalog/oemodm-heart-rate-monitoring-ring-manufacturer-supplier/",
+    "https://sensorbio.com/science/",
+    "https://github.com/josearruticuanda/smart-ring/blob/main/README.md",
+    "https://www.longvon.com/en/smart-ring-technology",
+    "https://www.longvon.com/en/smart-ring-manufacturer",
+    "https://github.com/josearruticuanda/smart-ring"
+  ],
+  "competitors": [
+    {
+      "name": "Nextbiztech / UltraSignal",
+      "url": "https://www.nextbiztech.com/us/ultrasignal/",
+      "position": "visible sources item #1",
+      "evidence_quote": "nextbiztech\nUltraSignal™ Developer Platform & Wearable Data SDK\nAccess medical-grade raw PPG, motion, and temperature data streams from Ultrahuman Smart Rings. Build custom algorithms for healthtech, sports science, and clinical research."
+    },
+    {
+      "name": "Tucks",
+      "url": "https://www.tuckstechs.com/catalog/oemodm-heart-rate-monitoring-ring-manufacturer-supplier/",
+      "position": "visible sources item #5",
+      "evidence_quote": "tuckstechs\nOEM/ODM heart rate monitoring ring Manufacturer & Supplier - Tucks\nISO9001-certified wearable factory in Shenzhen. OEM smartwatches and AI glasses from 200 pcs, 7-day samples, CE/FCC/RoHS compliant, serving B2B brands in 30+ countries."
+    },
+    {
+      "name": "Sensor Bio",
+      "url": "https://sensorbio.com/science/",
+      "position": "visible sources item #6",
+      "evidence_quote": "sensorbio\nScience — Sensor Bio\nHow a PPG biometric sensor turns green, red and infrared light into heart rate, HRV and SpO2, and how product teams get raw multi-wavelength PPG data."
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-24-round2/perplexity-Q07-sources.json",
+      "sha256": "09afcdfac9c9153d0c082c9cc5113335bc75a89c8eb60e8b9bd8aae9bec7afa4"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/perplexity-Q07.jpg",
+      "sha256": "9c43ca65e9efb8235a3679e702787b0449945f9969f68ebd351e36f56f375eef"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/perplexity-Q07.json",
+      "sha256": "e2ef4941c13245cca11594798fb907e1fc25e4625654510f23fa1d8370e1c035"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/perplexity-Q07.txt",
+      "sha256": "14641c3d8fe9a1a10f377661223577a755d10a8f93a8f07290879ff2eeb01fc1"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "New round2 capture; environment/method differs from round1: no comparable previous_record_id and no ranking-growth attribution. Citations prove visible URLs only; reachability and commercial facts UNKNOWN."
+}

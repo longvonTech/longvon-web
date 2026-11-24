@@ -1,0 +1,56 @@
+{
+  "record_id": "6635fb7c-dd74-58d0-9f73-98ee92b64140",
+  "query_id": "Q08",
+  "query": "smart ring raw PPG data for research",
+  "platform": "Perplexity",
+  "mode": "INCOGNITO_SEARCH",
+  "observed_at": "2026-11-24T13:28:18.921Z",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "Chrome signed-in incognito Search; Pro free-preview label; UI zh, query/answer en; model UNKNOWN; PR27 visible source-panel DOM extraction",
+  "availability": "COMPLETED",
+  "longvon_present": false,
+  "organic_rank": null,
+  "ai_body_recommended": false,
+  "source_cited": false,
+  "cited_urls": [
+    "https://arxiv.org/pdf/2508.00778.pdf",
+    "https://www.link.springer.com/article/10.1038/s41597-026-07289-x",
+    "https://arxiv.org/html/2605.17859",
+    "https://www.biopac.com/product/research-ring/",
+    "https://www.link.springer.com/article/10.1007/s10439-025-03936-3",
+    "https://arxiv.org/html/2505.04172",
+    "https://www.mdpi.com/2306-5729/11/7/155",
+    "https://www.nature.com/articles/s41597-026-07289-x?error=cookies_not_supported&code=03576bea-ef72-4334-832f-589a91e23fd0",
+    "https://arxiv.org/html/2604.01398v1",
+    "https://link.springer.com/article/10.1007/s10439-025-03936-3?error=cookies_not_supported&code=d77d78f3-3703-4b4f-b2bd-a8053bf9edc1"
+  ],
+  "competitors": [
+    {
+      "name": "BIOPAC",
+      "url": "https://www.biopac.com/product/research-ring/",
+      "position": "visible sources item #4",
+      "evidence_quote": "biopac\nResearch Ring for Wearable Physiology | RESRING-PACK\nWearable device for EDA (GSR), pulse, ECG, and temperature. Use with mobile app + cloud platform and integrate with BIOPAC AcqKnowledge software for comprehensive analysis."
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-24-round2/perplexity-Q08-sources.json",
+      "sha256": "d3b42bffee64576305d7f23bd2dc68bf1020639ae4ea7cfd64ce6bb88e057122"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/perplexity-Q08.jpg",
+      "sha256": "446714fc07de630685601eedf8d953f54d12aa765624d85d52af8431ec44a293"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/perplexity-Q08.json",
+      "sha256": "9c8f38368e681a573a9338334f42d2e236bcf7bd940f30b15a24e88541b0776e"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/perplexity-Q08.txt",
+      "sha256": "ad794ba786364068886beb37ed1507f204c5a16845afebfed3e4992ca61f1a23"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "New round2 capture; environment/method differs from round1: no comparable previous_record_id and no ranking-growth attribution. Citations prove visible URLs only; reachability and commercial facts UNKNOWN."
+}

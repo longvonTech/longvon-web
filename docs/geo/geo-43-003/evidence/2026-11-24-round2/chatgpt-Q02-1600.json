@@ -1,0 +1,26 @@
+{
+  "captured_at": "2026-11-24T13:21:31.769Z",
+  "platform": "ChatGPT",
+  "mode": "DEFAULT_ANSWER",
+  "completion": "COMPLETE",
+  "country": "UNKNOWN",
+  "citation_targets": [],
+  "citation_reachability": "UNKNOWN",
+  "screenshot": "REQUIRES_VISUAL_REVIEW",
+  "bounds": {
+    "left": 521,
+    "right": 1143,
+    "viewport": 1428
+  },
+  "files": [
+    {
+      "name": "chatgpt-Q02-1600.txt",
+      "sha256": "a3b08114e78c2fd695d87bc19129d9661663766457a1bd50f0a3ca97e7ae04c5"
+    },
+    {
+      "name": "chatgpt-Q02-1600.jpg",
+      "sha256": "d51e4c180e2582c3f987ce21c2b1b6a561b5ef92b002a6c03da428e78a2b9e52"
+    }
+  ],
+  "publication_redaction": "Map-service access_token query parameter redacted; original bytes retained outside Git."
+}

@@ -1,0 +1,226 @@
+- link "Skip to main content"
+- link "Accessibility help":
+  - /url: https://support.google.com/websearch/answer/181196?hl=en
+- search:
+  - link "Go to Google Home":
+    - /url: https://www.google.com/webhp?hl=en&sa=X&ved=2ahUKEwie6Jij2qCYAxV3CO8CHecDMm8QPHoECAYQBA
+  - status
+  - alert
+  - combobox "Search": 100Hz raw PPG smart ring SDK 100Hz raw PPG smart ring SDK
+  - button "Clear":
+  - button "Search by voice":
+  - button "Search by image":
+- button "Share":
+- button "Google apps":
+[account label omitted]
+- navigation:
+  - list:
+    - link "AI Mode":
+      - /url: /search?q=100Hz+raw+PPG+smart+ring+SDK&sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDgxrRnQzKb9dEudUxkEUWb6Tp8x3g:1795526721162&udm=50&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtI0iwmGiGVa5vPFLG4pCfoS16XiqKxayfyTZNKL-adhjrK7QjINwlrH9Paeog98CfkzRyIx6xH2elOGsdiNlva1ygRHgXR_J5Q8QULVPTiUP2FauOiFBiz4iciVCm4wEa24z_5jHx2FlnJKeyR6k_56iIfUfw&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwie6Jij2qCYAxV3CO8CHecDMm8Q2J8OegQIDRAD
+      - generic: AI Mode
+    - link "All" [disabled]:
+      - generic: All
+    - link "Shopping":
+      - /url: /search?sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDgxrRnQzKb9dEudUxkEUWb6Tp8x3g:1795526721162&udm=28&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtI0iwmGiGVa5vPFLG4pCfoS16XiqKxayfyTZNKL-adhjrK7QjINwlrH9Paeog98CfkzRyIx6xH2elOGsdiNlva1ygRHgXR_J5Q8QULVPTiUP2FauOiFBiz4iciVCm4wEa24z_5jHx2FlnJKeyR6k_56iIfUfw&q=100Hz+raw+PPG+smart+ring+SDK&ved=1t:220175&ictx=111
+      - generic: Shopping
+    - link "Images":
+      - /url: /search?sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDgxrRnQzKb9dEudUxkEUWb6Tp8x3g:1795526721162&udm=2&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtI0iwmGiGVa5vPFLG4pCfoS16XiqKxayfyTZNKL-adhjrK7QjINwlrH9Paeog98CfkzRyIx6xH2elOGsdiNlva1ygRHgXR_J5Q8QULVPTiUP2FauOiFBiz4iciVCm4wEa24z_5jHx2FlnJKeyR6k_56iIfUfw&q=100Hz+raw+PPG+smart+ring+SDK&sa=X&ved=2ahUKEwie6Jij2qCYAxV3CO8CHecDMm8QtKgLegQIERAB
+      - generic: Images
+    - link "Videos":
+      - /url: /search?sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDgxrRnQzKb9dEudUxkEUWb6Tp8x3g:1795526721162&udm=vids&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtI0iwmGiGVa5vPFLG4pCfoS16XiqKxayfyTZNKL-adhjrK7QjINwlrH9Paeog98CfkzRyIx6xH2elOGsdiNlva1ygRHgXR_J5Q8QULVPTiUP2FauOiFBiz4iciVCm4wEa24z_5jHx2FlnJKeyR6k_56iIfUfw&q=100Hz+raw+PPG+smart+ring+SDK&sa=X&ved=2ahUKEwie6Jij2qCYAxV3CO8CHecDMm8QtKgLegQIEhAB
+      - generic: Videos
+    - link "Forums":
+      - /url: /search?sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDgxrRnQzKb9dEudUxkEUWb6Tp8x3g:1795526721162&udm=forums&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtI0iwmGiGVa5vPFLG4pCfoS16XiqKxayfyTZNKL-adhjrK7QjINwlrH9Paeog98CfkzRyIx6xH2elOGsdiNlva1ygRHgXR_J5Q8QULVPTiUP2FauOiFBiz4iciVCm4wEa24z_5jHx2FlnJKeyR6k_56iIfUfw&q=100Hz+raw+PPG+smart+ring+SDK&sa=X&ved=2ahUKEwie6Jij2qCYAxV3CO8CHecDMm8Qs6gLegQIFhAB
+      - generic: Forums
+    - link "Short videos":
+      - /url: /search?sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDgxrRnQzKb9dEudUxkEUWb6Tp8x3g:1795526721162&udm=short_vids&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtI0iwmGiGVa5vPFLG4pCfoS16XiqKxayfyTZNKL-adhjrK7QjINwlrH9Paeog98CfkzRyIx6xH2elOGsdiNlva1ygRHgXR_J5Q8QULVPTiUP2FauOiFBiz4iciVCm4wEa24z_5jHx2FlnJKeyR6k_56iIfUfw&q=100Hz+raw+PPG+smart+ring+SDK&sa=X&ved=2ahUKEwie6Jij2qCYAxV3CO8CHecDMm8Qs6gLegQIGRAB
+      - generic: Short videos
+    - button "More filters":
+      - generic "More filters":
+        - generic: More
+  - button "Tools":
+    - generic: Tools
+- heading "Search Results" [level=1]
+- main:
+  - generic: Can't generate an AI overview right now. Try again later.
+  - heading "Web results" [level=2]
+  - link "Development of a Rotation-Robust PPG Sensor for a Smart Ring National Institutes of Health (NIH) | (.gov) https://pmc.ncbi.nlm.nih.gov › articles › PMC12567997":
+    - /url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12567997/
+    - heading "Development of a Rotation-Robust PPG Sensor for a Smart Ring" [level=3]
+    - generic: National Institutes of Health (NIH) | (.gov)
+    - generic: https://pmc.ncbi.nlm.nih.gov › articles › PMC12567997
+  - button "About this result":
+  - generic: by M Wang · 2025 · Cited by 8 —
+  - text: A prototype
+  - emphasis: smart ring
+  - text: is developed, capable of recording 4-channel
+  - emphasis: PPG
+  - text: ", 3-axis acceleration, and 4-channel temperature signals at 100, 25, and ..."
+  - link "Read more":
+    - /url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12567997/#:~:text=A%20prototype%20smart%20ring%20is,25%2C%20and%200.2%20Hz%2C%20respectively.
+  - text: "Missing: SDK ‎| Show results with:"
+  - link "SDK":
+    - /url: /search?sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDgxrRnQzKb9dEudUxkEUWb6Tp8x3g:1795526721162&q=100Hz+raw+PPG+smart+ring+%22SDK%22&sa=X&ved=2ahUKEwie6Jij2qCYAxV3CO8CHecDMm8Q5t4CegQIJRAB
+  - link "How Data Frequency Impacts AI Health Algorithms - J-Style jointcorp.com https://www.jointcorp.com › blog › smart-wearable-sdk":
+    - /url: https://www.jointcorp.com/blog/smart-wearable-sdk/ppg-sampling-rate-explained-how-data-frequency-impacts-ai-health-algorithms/
+    - heading "How Data Frequency Impacts AI Health Algorithms - J-Style" [level=3]
+    - generic: jointcorp.com
+    - generic: https://www.jointcorp.com › blog › smart-wearable-sdk
+  - button "About this result":
+  - emphasis: Learn how PPG sampling rate influences AI health algorithms
+  - text: ", heart rate, HRV, sleep tracking, BLE performance, and battery life in smart rings and smart ..."
+  - 'link "Smart ring vs smartwatch PPG: different, not better Sensor Bio https://sensorbio.com › the-signal › smart-ring-vs-smart..."':
+    - /url: https://sensorbio.com/the-signal/smart-ring-vs-smartwatch-ppg/
+    - 'heading "Smart ring vs smartwatch PPG: different, not better" [level=3]'
+    - generic: Sensor Bio
+    - generic: https://sensorbio.com › the-signal › smart-ring-vs-smart...
+  - button "About this result":
+  - generic: Nov 2, 2026 —
+  - text: "It is built for teams that want the waveform itself:"
+  - emphasis: raw green, red and infrared PPG at 25, 50 or 100 Hz
+  - text: ", available to partners through the SDK ..."
+  - link "Read more":
+    - /url: https://sensorbio.com/the-signal/smart-ring-vs-smartwatch-ppg/#:~:text=It%20is%20built%20for%20teams,SDK
+  - link "Raw PPG, accelerometer and IBI access by wearable chatppg.com https://chatppg.com › Research":
+    - /url: https://chatppg.com/research/raw-data-access
+    - heading "Raw PPG, accelerometer and IBI access by wearable" [level=3]
+    - generic: chatppg.com
+    - generic: https://chatppg.com › Research
+  - button "About this result":
+  - generic: Nov 4, 2026 —
+  - text: Which wearables let you export
+  - emphasis: raw PPG
+  - text: ", accelerometer and IBI data? A sourced matrix of"
+  - emphasis: SDKs
+  - text: and APIs (Oura
+  - emphasis: API
+  - text: ", WHOOP"
+  - emphasis: API
+  - text: ", Samsung Health ..."
+  - link "A Dataset and Toolkit for Multiparameter Cardiovascular ... arXiv https://arxiv.org › html":
+    - /url: https://arxiv.org/html/2505.04172v1
+    - heading "A Dataset and Toolkit for Multiparameter Cardiovascular ..." [level=3]
+    - generic: arXiv
+    - generic: https://arxiv.org › html
+  - button "About this result":
+  - generic: May 7, 2025 —
+  - text: During data collection, we activated both infrared and red light
+  - emphasis: PPG
+  - text: channels at a
+  - emphasis: 100Hz
+  - text: sampling rate. Each
+  - emphasis: ring
+  - text: contains a battery - 18 mAh ...
+  - link "Read more":
+    - /url: https://arxiv.org/html/2505.04172v1#:~:text=During%20data%20collection%2C%20we%20activated,mAh%20for%20Ring%202%20(transmissive).
+  - text: "Missing: SDK ‎| Show results with:"
+  - link "SDK":
+    - /url: /search?sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDgxrRnQzKb9dEudUxkEUWb6Tp8x3g:1795526721162&q=100Hz+raw+PPG+smart+ring+%22SDK%22&sa=X&ved=2ahUKEwie6Jij2qCYAxV3CO8CHecDMm8Q5t4CegQIJBAB
+  - 'link "Open Ring: Home Open Ring https://o-ring.tech"':
+    - /url: https://o-ring.tech/
+    - 'heading "Open Ring: Home" [level=3]'
+    - generic: Open Ring
+    - generic: https://o-ring.tech
+  - button "About this result":
+  - text: Open Ring is an open-source
+  - emphasis: smart ring
+  - text: with open hardware and firmware, all under the MIT license, made for developers, researchers, and makers.
+  - text: "Missing: 100Hz ‎| Show results with:"
+  - link "100Hz":
+    - /url: /search?sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDgxrRnQzKb9dEudUxkEUWb6Tp8x3g:1795526721162&q=%22100Hz%22+raw+PPG+smart+ring+SDK&sa=X&ved=2ahUKEwie6Jij2qCYAxV3CO8CHecDMm8Q5t4CegQIIxAB
+  - link "Wearables built around your protocol Sensor Bio https://sensorbio.com › the-signal › wearables-around-y...":
+    - /url: https://sensorbio.com/the-signal/wearables-around-your-protocol/
+    - heading "Wearables built around your protocol" [level=3]
+    - generic: Sensor Bio
+    - generic: https://sensorbio.com › the-signal › wearables-around-y...
+  - button "About this result":
+  - generic: Oct 27, 2026 —
+  - text: "Wearables configured around your protocol:"
+  - emphasis: raw PPG
+  - text: ", device profiles,"
+  - emphasis: SDK
+  - text: and
+  - emphasis: API
+  - text: in your app, remote monitoring, and Signal Studio rules.
+  - link "Read more":
+    - /url: https://sensorbio.com/the-signal/wearables-around-your-protocol/#:~:text=Wearables%20configured%20around%20your%20protocol%3A,monitoring%2C%20and%20Signal%20Studio%20rules.
+  - text: "Missing: smart ‎| Show results with:"
+  - link "smart":
+    - /url: /search?sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDgxrRnQzKb9dEudUxkEUWb6Tp8x3g:1795526721162&q=100Hz+raw+PPG+%22smart%22+ring+SDK&sa=X&ved=2ahUKEwie6Jij2qCYAxV3CO8CHecDMm8Q5t4CegQIPRAB
+  - link "Extracting and Processing Raw PPG Signals from ... CEUR-WS.org https://ceur-ws.org › Vol-4290 › icaiw_whcis_3":
+    - /url: https://ceur-ws.org/Vol-4290/icaiw_whcis_3.pdf
+    - heading "Extracting and Processing Raw PPG Signals from ..." [level=3]
+    - generic: CEUR-WS.org
+    - generic: https://ceur-ws.org › Vol-4290 › icaiw_whcis_3
+  - generic: PDF
+  - button "About this result":
+  - generic: by LA Luengas-Contreras · 2026 —
+  - emphasis: Samsung Health Sensor SDK on Wear OS
+  - text: ", which sampled the green channel at 100Hz, retrieves raw PPG data from smartwatches"
+  - 'link "thuhci/RingTool: A Toolkit to Benchmark Methods for Ring ... GitHub https://github.com › thuhci › RingTool"':
+    - /url: https://github.com/thuhci/RingTool
+    - 'heading "thuhci/RingTool: A Toolkit to Benchmark Methods for Ring ..." [level=3]'
+    - generic: GitHub
+    - generic: https://github.com › thuhci › RingTool
+  - button "About this result":
+  - emphasis: RingTool is an open platform for health sensing and data analysis with smart rings
+  - text: . It processes raw PPG and IMU signals from ring sensors to estimate ...
+  - link "Read more":
+    - /url: https://github.com/thuhci/RingTool#:~:text=RingTool%20is%20an%20open%20platform,parameters%20(HR%2C%20RR%2C%20SpO2%2C%20BP).
+  - generic: "Missing: 100Hz ‎SDK"
+  - navigation:
+    - heading "Page Navigation" [level=1]
+    - text: "1"
+    - link "Page 2":
+      - /url: /search?q=100Hz+raw+PPG+smart+ring+SDK&sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDgxrRnQzKb9dEudUxkEUWb6Tp8x3g:1795526721162&ei=QZAFa97DCfeQvMcP54fI-QY&start=10&sa=N&sstk=AYl2yk_lo6NUJGCGLn_Lka5Ms9S6XsdpR17Pmxd0oi8hHcZuBOGcg6Zc_uzzSLU559azyZlAPgE5ryYhbQ-JlM1pIGgfHfvrzoSLew&ved=2ahUKEwie6Jij2qCYAxV3CO8CHecDMm8Q8tMDegQINBAE
+      - text: "2"
+    - link "Page 3":
+      - /url: /search?q=100Hz+raw+PPG+smart+ring+SDK&sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDgxrRnQzKb9dEudUxkEUWb6Tp8x3g:1795526721162&ei=QZAFa97DCfeQvMcP54fI-QY&start=20&sa=N&sstk=AYl2yk_lo6NUJGCGLn_Lka5Ms9S6XsdpR17Pmxd0oi8hHcZuBOGcg6Zc_uzzSLU559azyZlAPgE5ryYhbQ-JlM1pIGgfHfvrzoSLew&ved=2ahUKEwie6Jij2qCYAxV3CO8CHecDMm8Q8tMDegQINBAG
+      - text: "3"
+    - link "Page 4":
+      - /url: /search?q=100Hz+raw+PPG+smart+ring+SDK&sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDgxrRnQzKb9dEudUxkEUWb6Tp8x3g:1795526721162&ei=QZAFa97DCfeQvMcP54fI-QY&start=30&sa=N&sstk=AYl2yk_lo6NUJGCGLn_Lka5Ms9S6XsdpR17Pmxd0oi8hHcZuBOGcg6Zc_uzzSLU559azyZlAPgE5ryYhbQ-JlM1pIGgfHfvrzoSLew&ved=2ahUKEwie6Jij2qCYAxV3CO8CHecDMm8Q8tMDegQINBAI
+      - text: "4"
+    - link "Page 5":
+      - /url: /search?q=100Hz+raw+PPG+smart+ring+SDK&sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDgxrRnQzKb9dEudUxkEUWb6Tp8x3g:1795526721162&ei=QZAFa97DCfeQvMcP54fI-QY&start=40&sa=N&sstk=AYl2yk_lo6NUJGCGLn_Lka5Ms9S6XsdpR17Pmxd0oi8hHcZuBOGcg6Zc_uzzSLU559azyZlAPgE5ryYhbQ-JlM1pIGgfHfvrzoSLew&ved=2ahUKEwie6Jij2qCYAxV3CO8CHecDMm8Q8tMDegQINBAK
+      - text: "5"
+    - link "Page 6":
+      - /url: /search?q=100Hz+raw+PPG+smart+ring+SDK&sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDgxrRnQzKb9dEudUxkEUWb6Tp8x3g:1795526721162&ei=QZAFa97DCfeQvMcP54fI-QY&start=50&sa=N&sstk=AYl2yk_lo6NUJGCGLn_Lka5Ms9S6XsdpR17Pmxd0oi8hHcZuBOGcg6Zc_uzzSLU559azyZlAPgE5ryYhbQ-JlM1pIGgfHfvrzoSLew&ved=2ahUKEwie6Jij2qCYAxV3CO8CHecDMm8Q8tMDegQINBAM
+      - text: "6"
+    - link "Page 7":
+      - /url: /search?q=100Hz+raw+PPG+smart+ring+SDK&sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDgxrRnQzKb9dEudUxkEUWb6Tp8x3g:1795526721162&ei=QZAFa97DCfeQvMcP54fI-QY&start=60&sa=N&sstk=AYl2yk_lo6NUJGCGLn_Lka5Ms9S6XsdpR17Pmxd0oi8hHcZuBOGcg6Zc_uzzSLU559azyZlAPgE5ryYhbQ-JlM1pIGgfHfvrzoSLew&ved=2ahUKEwie6Jij2qCYAxV3CO8CHecDMm8Q8tMDegQINBAO
+      - text: "7"
+    - link "Page 8":
+      - /url: /search?q=100Hz+raw+PPG+smart+ring+SDK&sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDgxrRnQzKb9dEudUxkEUWb6Tp8x3g:1795526721162&ei=QZAFa97DCfeQvMcP54fI-QY&start=70&sa=N&sstk=AYl2yk_lo6NUJGCGLn_Lka5Ms9S6XsdpR17Pmxd0oi8hHcZuBOGcg6Zc_uzzSLU559azyZlAPgE5ryYhbQ-JlM1pIGgfHfvrzoSLew&ved=2ahUKEwie6Jij2qCYAxV3CO8CHecDMm8Q8tMDegQINBAQ
+      - text: "8"
+    - link "Page 9":
+      - /url: /search?q=100Hz+raw+PPG+smart+ring+SDK&sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDgxrRnQzKb9dEudUxkEUWb6Tp8x3g:1795526721162&ei=QZAFa97DCfeQvMcP54fI-QY&start=80&sa=N&sstk=AYl2yk_lo6NUJGCGLn_Lka5Ms9S6XsdpR17Pmxd0oi8hHcZuBOGcg6Zc_uzzSLU559azyZlAPgE5ryYhbQ-JlM1pIGgfHfvrzoSLew&ved=2ahUKEwie6Jij2qCYAxV3CO8CHecDMm8Q8tMDegQINBAS
+      - text: "9"
+    - link "Page 10":
+      - /url: /search?q=100Hz+raw+PPG+smart+ring+SDK&sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDgxrRnQzKb9dEudUxkEUWb6Tp8x3g:1795526721162&ei=QZAFa97DCfeQvMcP54fI-QY&start=90&sa=N&sstk=AYl2yk_lo6NUJGCGLn_Lka5Ms9S6XsdpR17Pmxd0oi8hHcZuBOGcg6Zc_uzzSLU559azyZlAPgE5ryYhbQ-JlM1pIGgfHfvrzoSLew&ved=2ahUKEwie6Jij2qCYAxV3CO8CHecDMm8Q8tMDegQINBAU
+      - text: "10"
+    - heading "Next" [level=2]:
+      - link "Next":
+        - /url: /search?q=100Hz+raw+PPG+smart+ring+SDK&sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDgxrRnQzKb9dEudUxkEUWb6Tp8x3g:1795526721162&ei=QZAFa97DCfeQvMcP54fI-QY&start=10&sa=N&sstk=AYl2yk_lo6NUJGCGLn_Lka5Ms9S6XsdpR17Pmxd0oi8hHcZuBOGcg6Zc_uzzSLU559azyZlAPgE5ryYhbQ-JlM1pIGgfHfvrzoSLew&ved=2ahUKEwie6Jij2qCYAxV3CO8CHecDMm8Q8NMDegQINBAW
+        - generic: Next
+  - navigation
+- contentinfo:
+  - heading "Footer Links" [level=1]
+  - generic: Results are personalized
+  - generic: "-"
+  - link "Try without personalization":
+    - /url: https://www.google.com/search?q=100Hz+raw+PPG+smart+ring+SDK&hl=en&peek_pws=0&sxsrf=AKL5yDgxrRnQzKb9dEudUxkEUWb6Tp8x3g:1795526721162
+    - generic: Try without personalization
+  - button "Los Angeles County, California - Based on your past activity":
+    - generic: Los Angeles County, California
+    - text: "-"
+    - generic: Based on your past activity
+  - text: "-"
+  - button "Update location": Update location
+  - link "Help":
+    - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en&fg=1
+  - button "Send feedback":
+    - generic: Send feedback
+  - link "Privacy":
+    - /url: https://policies.google.com/privacy?hl=en&fg=1
+  - link "Terms":
+    - /url: https://policies.google.com/terms?hl=en&fg=1

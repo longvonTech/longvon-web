@@ -1,0 +1,72 @@
+{
+  "record_id": "a4c4c868-e333-56a9-857d-58bd8f1f2889",
+  "query_id": "Q12",
+  "query": "medical smart ring ODM manufacturer",
+  "platform": "ChatGPT",
+  "mode": "DEFAULT_ANSWER",
+  "observed_at": "2026-11-24T13:35:01.693Z",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "IAB logged out, new conversation per query; UI zh, query/answer en; model UNKNOWN; web-search invocation UNKNOWN; PR27 dual-height 1440x1000/1600 capture",
+  "availability": "COMPLETED",
+  "longvon_present": true,
+  "organic_rank": null,
+  "ai_body_recommended": true,
+  "source_cited": true,
+  "cited_urls": [
+    "https://www.longvon.com/en/smart-ring-manufacturer?utm_source=chatgpt.com",
+    "https://longvon.com/en/partner/oem?utm_source=chatgpt.com",
+    "https://xdunmedical.com/about-us/?utm_source=chatgpt.com",
+    "https://idotring.com/en/?utm_source=chatgpt.com",
+    "https://starkingsmartring.com/products/smart-rings/?utm_source=chatgpt.com",
+    "https://pineeon.com/products/smart-wearables/smart-rings/?utm_source=chatgpt.com"
+  ],
+  "competitors": [
+    {
+      "name": "IDOT",
+      "url": "https://idotring.com/en/?utm_source=chatgpt.com",
+      "position": "explicit answer URL order",
+      "evidence_quote": "- /url: https://idotring.com/en/?utm_source=chatgpt.com"
+    },
+    {
+      "name": "STAR KING / Pineeon (as displayed)",
+      "url": "https://starkingsmartring.com/products/smart-rings/?utm_source=chatgpt.com",
+      "position": "explicit answer URL order",
+      "evidence_quote": "- /url: https://starkingsmartring.com/products/smart-rings/?utm_source=chatgpt.com"
+    },
+    {
+      "name": "Pineeon",
+      "url": "https://pineeon.com/products/smart-wearables/smart-rings/?utm_source=chatgpt.com",
+      "position": "explicit answer URL order",
+      "evidence_quote": "- /url: https://pineeon.com/products/smart-wearables/smart-rings/?utm_source=chatgpt.com"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q12-1000.jpg",
+      "sha256": "e27fb950d10a56157b45f5188cc32fe1347aa9a9c6ca826588f85219bfb358bb"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q12-1000.json",
+      "sha256": "eb893c7d0176ad0756297310ee8e2d96fa3726bf3d85932e380e05cb47930756"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q12-1000.txt",
+      "sha256": "6b4548ddcdad70760dc6eedc8461ba487d3d7f4582af52c2a87feef08fbe2155"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q12-1600.jpg",
+      "sha256": "4750a4ce077c1ac80f0e31e99f22aa919212af3130c10a15e2fdcd0d6a4d4369"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q12-1600.json",
+      "sha256": "ee55cc970976e56e8d9635c72c970cb6e4f830721992937fee4094105f1641de"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q12-1600.txt",
+      "sha256": "6b4548ddcdad70760dc6eedc8461ba487d3d7f4582af52c2a87feef08fbe2155"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "New round2 capture; environment/method differs from round1: no comparable previous_record_id and no ranking-growth attribution. Citations prove visible URLs only; reachability and commercial facts UNKNOWN."
+}

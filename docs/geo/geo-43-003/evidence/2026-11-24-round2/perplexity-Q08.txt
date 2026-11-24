@@ -1,0 +1,282 @@
+- complementary:
+  - navigation "侧边栏导航":
+    - link:
+      - /url: /
+    - button "展开侧边栏"
+    - group "创建":
+      - link "新建":
+        - /url: /
+        - generic: 新建
+    - group "主导航":
+      - link "自动化":
+        - /url: /automations
+        - generic: 自动化
+      - link "工件":
+        - /url: /artifacts
+        - generic: 工件
+      - link "插件":
+        - /url: /computer/plugins
+        - generic: 插件
+      - button "更多":
+        - generic: 更多
+    - link "项目":
+      - /url: /projects
+    - link "会话":
+      - /url: /library
+    - button "升级计划":
+    - button "libing shi":
+      - generic: libing shi
+  - separator "调整侧边栏宽度"
+- main:
+  - button "返回上一页":
+  - tablist "回答模式标签页":
+    - tab "答案" [selected]:
+      - text: 答案
+    - tab "链接":
+      - text: 链接
+    - tab "图片":
+      - text: 图片
+  - button "会话选项":
+  - button "分享":
+    - generic: 分享
+  - button "下载桌面应用":
+    - generic: 下载桌面应用
+  - generic: 21:27
+  - button "编辑查询":
+  - button "复制查询":
+  - paragraph: smart ring raw PPG data for research
+  - button "已完成":
+    - generic "已完成"
+  - paragraph:
+    - text: For research-grade raw PPG from a smart ring, the best options are purpose-built open platforms or public datasets—not most consumer rings, which often expose only derived metrics. The strongest current choices are
+    - strong: τ-Ring
+    - text: for collecting your own synchronized raw signals and
+    - strong: HealthRing / Multi-site PPG
+    - text: for existing open datasets.
+    - img "可信域名":
+    - generic: link.springer
+    - generic: "+2"
+  - heading "Hardware options" [level=2]
+  - table:
+    - rowgroup:
+      - row "Option Raw PPG access Other signals Best use":
+        - columnheader "Option"
+        - columnheader "Raw PPG access"
+        - columnheader "Other signals"
+        - columnheader "Best use"
+    - rowgroup:
+      - row "τ-Ring Yes—multi-wavelength PPG streamed/logged, with open-source software IMU, temperature, EDA; internal storage and BLE streaming Primary choice for a custom study needing raw waveform control. [PDF] A Smart Ring Platform for Multimodal Physiological and Behavioral ...":
+        - cell "τ-Ring":
+          - strong: τ-Ring
+        - cell "Yes—multi-wavelength PPG streamed/logged, with open-source software"
+        - cell "IMU, temperature, EDA; internal storage and BLE streaming"
+        - cell "Primary choice for a custom study needing raw waveform control. [PDF] A Smart Ring Platform for Multimodal Physiological and Behavioral ...":
+          - text: Primary choice for a custom study needing raw waveform control.
+          - generic "[PDF] A Smart Ring Platform for Multimodal Physiological and Behavioral ...":
+            - link "可信域名 arxiv":
+              - /url: https://arxiv.org/pdf/2508.00778.pdf
+              - img "可信域名":
+              - generic: arxiv
+      - row "BIOPAC Research Ring Yes—continuous raw PPG data EDA/GSR, temperature, optional ECG Lab studies where integration with AcqKnowledge and multi-channel physiology matters. Research Ring for Wearable Physiology | RESRING-PACK":
+        - cell "BIOPAC Research Ring":
+          - strong: BIOPAC Research Ring
+        - cell "Yes—continuous raw PPG data"
+        - cell "EDA/GSR, temperature, optional ECG"
+        - cell "Lab studies where integration with AcqKnowledge and multi-channel physiology matters. Research Ring for Wearable Physiology | RESRING-PACK":
+          - text: Lab studies where integration with AcqKnowledge and multi-channel physiology matters.
+          - generic "Research Ring for Wearable Physiology | RESRING-PACK":
+            - link "可信域名 biopac":
+              - /url: https://www.biopac.com/product/research-ring/
+              - img "可信域名":
+              - generic: biopac
+      - row "Custom MAX32664-based ring Yes—sensor hub can expose raw optical data Accelerometer, depending on design Building a low-cost, fully controlled prototype. An Adjustable Smart Ring to Monitor Pulse Rate and Peripheral Blood Oxygen Saturation - Annals of Biomedical Engineering":
+        - cell "Custom MAX32664-based ring":
+          - strong: Custom MAX32664-based ring
+        - cell "Yes—sensor hub can expose raw optical data"
+        - cell "Accelerometer, depending on design"
+        - cell "Building a low-cost, fully controlled prototype. An Adjustable Smart Ring to Monitor Pulse Rate and Peripheral Blood Oxygen Saturation - Annals of Biomedical Engineering":
+          - text: Building a low-cost, fully controlled prototype.
+          - generic "An Adjustable Smart Ring to Monitor Pulse Rate and Peripheral Blood Oxygen Saturation - Annals of Biomedical Engineering":
+            - link "可信域名 link.springer":
+              - /url: https://www.link.springer.com/article/10.1007/s10439-025-03936-3
+              - img "可信域名":
+              - generic: link.springer
+      - row "Consumer smart rings Usually no; typically derived HR, HRV, SpO2, sleep metrics Varies Useful for deployed studies, but poor for waveform-level algorithm development.":
+        - cell "Consumer smart rings":
+          - strong: Consumer smart rings
+        - cell "Usually no; typically derived HR, HRV, SpO2, sleep metrics"
+        - cell "Varies"
+        - cell "Useful for deployed studies, but poor for waveform-level algorithm development."
+  - heading "Public datasets" [level=2]
+  - list:
+    - paragraph:
+      - strong: HealthRing
+      - text: ": raw PPG plus 3-axis accelerometer at 100 Hz from reflective and transmissive ring prototypes, synchronized to clinical-grade references; includes scripted activities, controlled physiological states, and treadmill running."
+      - 'generic "HealthRing: Physiology Dataset for Health Sensing on Rings - Scientific Data"':
+        - link "可信域名 link.springer":
+          - /url: https://www.link.springer.com/article/10.1038/s41597-026-07289-x
+          - img "可信域名":
+          - generic: link.springer
+    - paragraph:
+      - strong: τ-Ring dataset
+      - text: ": 28.21 hours of raw infrared/red PPG and accelerometer data from 34 participants across seven activities, with labels for BVP, respiration, HR, respiratory rate, SpO2, and blood pressure."
+      - generic "A Dataset and Toolkit for Multiparameter Cardiovascular ...":
+        - link "可信域名 arxiv":
+          - /url: https://arxiv.org/html/2505.04172
+          - img "可信域名":
+          - generic: arxiv
+    - paragraph:
+      - strong: Multi-site PPG
+      - text: ": over 350 hours of raw recordings from a ring, earring, watch, and necklace in daily life, with aligned Polar H10 reference data; raw and 8-second model-ready windows are released."
+      - 'generic "Multi-site PPG: An In-the-Wild Physiological Dataset from Emerging Multi-site Wearables"':
+        - link "可信域名 arxiv":
+          - /url: https://arxiv.org/html/2605.17859
+          - img "可信域名":
+          - generic: arxiv
+    - paragraph:
+      - strong: Finger-contact ECG/PPG dataset
+      - text: ": 444 synchronized ECG and dual-wavelength PPG recordings with raw ADC-count signals; useful for controlled algorithm development, though it is not smart-ring data."
+      - generic "A Dataset of Synchronized Raw and Preprocessed Finger ... - MDPI":
+        - link "mdpi":
+          - /url: https://www.mdpi.com/2306-5729/11/7/155
+          - generic: mdpi
+  - heading "What to check before buying" [level=2]
+  - list:
+    - paragraph:
+      - strong: "Sampling rate and channels:"
+      - text: For pulse-rate and HRV research, aim for at least 50–100 Hz; for waveform morphology, pulse-transit-time, or SpO2 work, confirm red/IR channel availability and exact timestamps. HealthRing and τ-Ring both use 100 Hz synchronized PPG/accelerometer streams.
+      - img "可信域名":
+      - generic: link.springer
+      - generic: "+1"
+    - paragraph:
+      - strong: "Motion reference:"
+      - text: Raw PPG is highly susceptible to motion artifacts, so synchronized accelerometer data is nearly essential for signal-quality labeling and artifact removal.
+      - img "可信域名":
+      - generic: link.springer
+      - generic: "+1"
+    - paragraph:
+      - strong: "Export format:"
+      - text: Favor CSV, HDF5, NPZ, or EDF with UTC timestamps; avoid platforms that only provide summaries or proprietary app exports.
+    - paragraph:
+      - strong: "LED/ADC metadata:"
+      - text: Wavelengths, LED current, gain, ambient-light handling, and ADC scaling determine whether results are reproducible across devices.
+    - paragraph:
+      - strong: "IRB and consent:"
+      - text: PPG can support physiological inference, so treat raw recordings as sensitive health-related data and plan de-identification, storage, and sharing controls accordingly.
+  - heading "Practical recommendation" [level=2]
+  - paragraph:
+    - text: If you need to
+    - strong: collect new data
+    - text: ", choose"
+    - strong: τ-Ring
+    - text: if open firmware, BLE streaming, offline logging, and raw multi-wavelength PPG are priorities; choose
+    - strong: BIOPAC’s Research Ring
+    - text: if your protocol already uses laboratory physiology equipment. If you need to
+    - strong: develop or benchmark algorithms first
+    - text: ", start with HealthRing or τ-Ring’s public dataset, then validate on Multi-site PPG’s free-living recordings."
+    - img "可信域名":
+    - generic: link.springer
+    - generic: "+4"
+  - button "复制":
+  - button "分享":
+  - button "有帮助":
+  - button "没有帮助":
+  - button "复刻":
+  - button "10 个来源" [active]:
+    - text: 10 个来源
+  - button "更多操作":
+  - button "Compare HealthRing, Multi-site PPG, and τ-Ring datasets — optical modalities, sampling rates, accelerometer sync, and file formats"
+  - text: Compare HealthRing, Multi-site PPG, and τ-Ring datasets — optical modalities, sampling rates, accelerometer sync, and file formats
+  - text: Computer
+  - 'button "Research-grade smart rings for raw data access: Sensore RESRING-PACK, MAX32664 sensor hubs, and open hardware specs compared"'
+  - text: "Research-grade smart rings for raw data access: Sensore RESRING-PACK, MAX32664 sensor hubs, and open hardware specs compared"
+  - text: Computer
+  - button "How do I access raw PPG on the τ-Ring"
+  - text: How do I access raw PPG on the τ-Ring
+  - button "Compare the BIOPAC Research Ring with τ-Ring"
+  - text: Compare the BIOPAC Research Ring with τ-Ring
+  - button "What open datasets have free-living ring PPG"
+  - text: What open datasets have free-living ring PPG
+  - button "隐藏详情":
+  - button "来源" [expanded]:
+    - generic: 来源
+  - 'link "arxiv 可信域名 [PDF] A Smart Ring Platform for Multimodal Physiological and Behavioral ... To address these challenges, we introduce 𝜏-Ring, a commercial- ready smart ring platform combining accessible hardware, adjustable firmware, and fully open-source software supporting both real-time streaming and long-term logging. ... Contributions of our work include: (1) 𝜏-Ring platform: a commercial-ready, easy-to-use smart-ring device with multi-channel PPG/IMU/TEMP sensing modal- ities and internal storage, enabling long-term continuous ... The commercial-research Empatica E4 (wrist,..."':
+    - /url: https://arxiv.org/pdf/2508.00778.pdf
+    - generic: arxiv
+    - img "可信域名":
+    - generic: "[PDF] A Smart Ring Platform for Multimodal Physiological and Behavioral ..."
+    - generic: "To address these challenges, we introduce 𝜏-Ring, a commercial- ready smart ring platform combining accessible hardware, adjustable firmware, and fully open-source software supporting both real-time streaming and long-term logging. ... Contributions of our work include: (1) 𝜏-Ring platform: a commercial-ready, easy-to-use smart-ring device with multi-channel PPG/IMU/TEMP sensing modal- ities and internal storage, enabling long-term continuous ... The commercial-research Empatica E4 (wrist,..."
+  - 'link "link.springer 可信域名 HealthRing: Physiology Dataset for Health Sensing on Rings - Scientific Data Smart rings enable unobtrusive monitoring of cardiovascular vital signs via photoplethysmography (PPG), yet rigorous validation is limited by the scarcity of open, multi-parameter datasets. We present HealthRing, three synchronized cohorts from 54 adults: (i) scripted physiological stimuli (Study 1), (ii) semi-free-living daily activities (Study 2), and (iii) motion-intensive treadmill running with natural arm swing that induces substantial motion artefacts (Study 3). Two custom..."':
+    - /url: https://www.link.springer.com/article/10.1038/s41597-026-07289-x
+    - generic: link.springer
+    - img "可信域名":
+    - generic: "HealthRing: Physiology Dataset for Health Sensing on Rings - Scientific Data"
+    - generic: "Smart rings enable unobtrusive monitoring of cardiovascular vital signs via photoplethysmography (PPG), yet rigorous validation is limited by the scarcity of open, multi-parameter datasets. We present HealthRing, three synchronized cohorts from 54 adults: (i) scripted physiological stimuli (Study 1), (ii) semi-free-living daily activities (Study 2), and (iii) motion-intensive treadmill running with natural arm swing that induces substantial motion artefacts (Study 3). Two custom..."
+  - 'link "arxiv 可信域名 Multi-site PPG: An In-the-Wild Physiological Dataset from Emerging Multi-site Wearables We present Multi-site PPG, an in-the-wild physiological dataset collected from four custom-developed unobtrusive wearables: a smart earring, ring, watch, and necklace. ... The dataset contains over 350 hours of raw data and 230–290 hours of modeling-ready 8-second windows per wearable. ... Existing smart ring PPG datasets are typically limited to short, controlled lab sessions, such as the 28-hour \\tau-Ring dataset . ... We release a 230+ hour physiological dataset collected during daily..."':
+    - /url: https://arxiv.org/html/2605.17859
+    - generic: arxiv
+    - img "可信域名":
+    - generic: "Multi-site PPG: An In-the-Wild Physiological Dataset from Emerging Multi-site Wearables"
+    - generic: "We present Multi-site PPG, an in-the-wild physiological dataset collected from four custom-developed unobtrusive wearables: a smart earring, ring, watch, and necklace. ... The dataset contains over 350 hours of raw data and 230–290 hours of modeling-ready 8-second windows per wearable. ... Existing smart ring PPG datasets are typically limited to short, controlled lab sessions, such as the 28-hour \\tau-Ring dataset . ... We release a 230+ hour physiological dataset collected during daily..."
+  - link "biopac 可信域名 Research Ring for Wearable Physiology | RESRING-PACK Wearable device for EDA (GSR), pulse, ECG, and temperature. Use with mobile app + cloud platform and integrate with BIOPAC AcqKnowledge software for comprehensive analysis.":
+    - /url: https://www.biopac.com/product/research-ring/
+    - generic: biopac
+    - img "可信域名":
+    - generic: Research Ring for Wearable Physiology | RESRING-PACK
+    - generic: Wearable device for EDA (GSR), pulse, ECG, and temperature. Use with mobile app + cloud platform and integrate with BIOPAC AcqKnowledge software for comprehensive analysis.
+  - link "link.springer 可信域名 An Adjustable Smart Ring to Monitor Pulse Rate and Peripheral Blood Oxygen Saturation - Annals of Biomedical Engineering Purpose Smart rings are emerging as a promising solution in the field of wearable devices, offering a compact and ergonomic solution for continuous physiological monitoring, yet one of their major limitations is that they are not adjustable, but rather come in different sizes. Another major gap in the literature is the lack of validation data during dynamic activities. This study presents the design, development, and validation under static and controlled-motion conditions of a research-grade...":
+    - /url: https://www.link.springer.com/article/10.1007/s10439-025-03936-3
+    - generic: link.springer
+    - img "可信域名":
+    - generic: An Adjustable Smart Ring to Monitor Pulse Rate and Peripheral Blood Oxygen Saturation - Annals of Biomedical Engineering
+    - generic: Purpose Smart rings are emerging as a promising solution in the field of wearable devices, offering a compact and ergonomic solution for continuous physiological monitoring, yet one of their major limitations is that they are not adjustable, but rather come in different sizes. Another major gap in the literature is the lack of validation data during dynamic activities. This study presents the design, development, and validation under static and controlled-motion conditions of a research-grade...
+  - link "arxiv 可信域名 A Dataset and Toolkit for Multiparameter Cardiovascular ... The dataset comprises photoplethysmography signals (infrared and red channels) and 3-axis accelerometer data collected from two rings (reflective and transmissive optical paths), with 28.21 hours of raw data from 34 subjects across seven activities. ... To address these limitations, we implemented two custom ring devices featuring reflective and transmissive PPG optical paths, designed to collect high-quality raw physiological signals alongside ground-truth labels. Each device integrates...":
+    - /url: https://arxiv.org/html/2505.04172
+    - generic: arxiv
+    - img "可信域名":
+    - generic: A Dataset and Toolkit for Multiparameter Cardiovascular ...
+    - generic: The dataset comprises photoplethysmography signals (infrared and red channels) and 3-axis accelerometer data collected from two rings (reflective and transmissive optical paths), with 28.21 hours of raw data from 34 subjects across seven activities. ... To address these limitations, we implemented two custom ring devices featuring reflective and transmissive PPG optical paths, designed to collect high-quality raw physiological signals alongside ground-truth labels. Each device integrates...
+  - link "mdpi A Dataset of Synchronized Raw and Preprocessed Finger ... - MDPI Electrocardiogram (ECG) and photoplethysmogram (PPG) signals are widely used noninvasive methods for assessing cardiovascular activity and provide complementary information about the cardiac cycle. ECG records cardiac electrical activity, whereas PPG records optically detected blood-volume changes in peripheral tissue. This paper describes a synchronized ECG-PPG dataset collected from 148 apparently healthy subjects under a controlled seated protocol at rest and during post-exercise recovery...":
+    - /url: https://www.mdpi.com/2306-5729/11/7/155
+    - generic: mdpi
+    - generic: A Dataset of Synchronized Raw and Preprocessed Finger ... - MDPI
+    - generic: Electrocardiogram (ECG) and photoplethysmogram (PPG) signals are widely used noninvasive methods for assessing cardiovascular activity and provide complementary information about the cardiac cycle. ECG records cardiac electrical activity, whereas PPG records optically detected blood-volume changes in peripheral tissue. This paper describes a synchronized ECG-PPG dataset collected from 148 apparently healthy subjects under a controlled seated protocol at rest and during post-exercise recovery...
+  - 'link "nature 可信域名 HealthRing: Physiology Dataset for Health Sensing on Rings Smart rings enable unobtrusive monitoring of cardiovascular vital signs via photoplethysmography (PPG), yet rigorous validation is limited by the scarcity of open, multi-parameter datasets. We present HealthRing, three synchronized cohorts from 54 adults: (i) scripted physiological stimuli (Study 1), (ii) semi-free-living daily activities (Study 2), and (iii) motion-intensive treadmill running with natural arm swing that induces substantial motion artefacts (Study 3). Two custom..."':
+    - /url: https://www.nature.com/articles/s41597-026-07289-x?error=cookies_not_supported&code=03576bea-ef72-4334-832f-589a91e23fd0
+    - generic: nature
+    - img "可信域名":
+    - generic: "HealthRing: Physiology Dataset for Health Sensing on Rings"
+    - generic: "Smart rings enable unobtrusive monitoring of cardiovascular vital signs via photoplethysmography (PPG), yet rigorous validation is limited by the scarcity of open, multi-parameter datasets. We present HealthRing, three synchronized cohorts from 54 adults: (i) scripted physiological stimuli (Study 1), (ii) semi-free-living daily activities (Study 2), and (iii) motion-intensive treadmill running with natural arm swing that induces substantial motion artefacts (Study 3). Two custom..."
+  - link "arxiv 可信域名 the D4 report from the QUMPHY project However, the newest type of wearables—smart rings—can record PPG signals from the finger [undefi] and may still benefit from the results obtained from fingertip PPG recordings. ... The OSASUD consists of 30 subjects, so each fold consists of nocturnal raw PPG signals and estimated features from 3 subjects. ... *OSASUD_initial* file in order to obtain *OSASUD_segments* file with 1-min raw PPG intervals and PPG feature sequences for model training/validation/calibration/testing. ......":
+    - /url: https://arxiv.org/html/2604.01398v1
+    - generic: arxiv
+    - img "可信域名":
+    - generic: the D4 report from the QUMPHY project
+    - generic: However, the newest type of wearables—smart rings—can record PPG signals from the finger [undefi] and may still benefit from the results obtained from fingertip PPG recordings. ... The OSASUD consists of 30 subjects, so each fold consists of nocturnal raw PPG signals and estimated features from 3 subjects. ... *OSASUD_initial* file in order to obtain *OSASUD_segments* file with 1-min raw PPG intervals and PPG feature sequences for model training/validation/calibration/testing. ......
+  - link "link.springer 可信域名 An Adjustable Smart Ring to Monitor Pulse Rate and ... This study presents the design, development, and validation under static and controlled-motion conditions of a research-grade adjustable smart ring for tracking pulse rate (PR) and peripheral blood oxygen saturation (SpO₂) using photoplethysmography. ... The device samples real-time SpO~2~ and PR data at 10 Hz, and raw data from the optical module are processed with the proprietary algorithms embedded in the sensor hub specifically designed for finger-based applications, and accelerometer data...":
+    - /url: https://link.springer.com/article/10.1007/s10439-025-03936-3?error=cookies_not_supported&code=d77d78f3-3703-4b4f-b2bd-a8053bf9edc1
+    - generic: link.springer
+    - img "可信域名":
+    - generic: An Adjustable Smart Ring to Monitor Pulse Rate and ...
+    - generic: This study presents the design, development, and validation under static and controlled-motion conditions of a research-grade adjustable smart ring for tracking pulse rate (PR) and peripheral blood oxygen saturation (SpO₂) using photoplethysmography. ... The device samples real-time SpO~2~ and PR data at 10 Hz, and raw data from the optical module are processed with the proprietary algorithms embedded in the sensor hub specifically designed for finger-based applications, and accelerometer data...
+  - button "Pro 已启用高级搜索免费预览。 了解更多":
+    - generic: Pro
+    - generic: 已启用高级搜索免费预览。
+    - button "了解更多":
+      - generic: 了解更多
+  - status:
+    - generic: 您正处于隐身模式。
+    - button "退出隐身模式":
+      - generic: 退出无痕模式
+  - textbox "提出后续问题":
+    - paragraph
+  - generic: 提出后续问题
+  - button "添加文件、插件等":
+  - button "搜索" [pressed]:
+    - generic: 搜索
+  - button "Computer":
+    - generic: Computer
+  - button "模型":
+    - generic: 模型
+  - button "语音输入":
+  - button "提交" [disabled]:

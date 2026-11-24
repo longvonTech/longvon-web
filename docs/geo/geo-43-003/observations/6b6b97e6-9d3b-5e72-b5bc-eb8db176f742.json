@@ -1,0 +1,63 @@
+{
+  "record_id": "6b6b97e6-9d3b-5e72-b5bc-eb8db176f742",
+  "query_id": "Q06",
+  "query": "smart ring manufacturer with SDK API",
+  "platform": "Perplexity",
+  "mode": "INCOGNITO_SEARCH",
+  "observed_at": "2026-11-24T13:26:00.618Z",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "Chrome signed-in incognito Search; Pro free-preview label; UI zh, query/answer en; model UNKNOWN; PR27 visible source-panel DOM extraction",
+  "availability": "COMPLETED",
+  "longvon_present": true,
+  "organic_rank": null,
+  "ai_body_recommended": true,
+  "source_cited": true,
+  "cited_urls": [
+    "https://www.jointcorp.com/",
+    "https://www.longvon.com/en/smart-ring-oem-odm",
+    "https://www.goodwaytechs.com/smart-rings.html",
+    "https://www.jointcorp.com/sdk-api/",
+    "https://www.longvon.com/en/smart-ring-technology",
+    "https://www.longvon.com/en/osa-smart-ring-technology",
+    "https://www.longvon.com/en",
+    "https://www.longvon.com/en/about",
+    "https://www.longvon.com/smart-ring-sdk-api",
+    "https://www.longvon.com/en/smart-ring-sleep-monitoring",
+    "https://www.manilatimes.net/2026/11/19/tmt-newswire/plentisoft/youhong-medical-j-style-highlights-smart-wearables-and-ai-powered-digital-health-solutions-at-medica-2026/2473923"
+  ],
+  "competitors": [
+    {
+      "name": "J-Style / Jointcorp",
+      "url": "https://www.jointcorp.com/",
+      "position": "visible sources item #1",
+      "evidence_quote": "jointcorp\nJ-Style - Smart Ring Manufacturer | Screenless Smart Band ODM & OEM Factory\nJ-Style is a leading smart ring manufacturer and screenless smart band OEM/ODM factory in China. We provide full-stack wearable design, BLE health monitoring solutions, and large-scale production for global brands. Custom smart rings, fitness bands, and medical-grade sensors with reliable quality and fast delivery."
+    },
+    {
+      "name": "Goodway",
+      "url": "https://www.goodwaytechs.com/smart-rings.html",
+      "position": "visible sources item #3",
+      "evidence_quote": "goodwaytechs\nOEM & ODM Health Smart Ring Solutions\nGoodway manufactures Smart Rings with health monitoring, ECG, SpO₂ and sleep tracking features. OEM, ODM and private label solutions available."
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-24-round2/perplexity-Q06-sources.json",
+      "sha256": "f512d776f09aa85d6860fe6ea3ddd9de0834111f9af4f1cadbf35835852d3b42"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/perplexity-Q06.jpg",
+      "sha256": "180358642eccda736a26ad2f3e71a03d52bc18c3983e81e50e24ad6190e39b7b"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/perplexity-Q06.json",
+      "sha256": "eac0ed4c406a3942336096d1f725008e336cd18692fbaee0e3dceb039cbcdad5"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/perplexity-Q06.txt",
+      "sha256": "bf2b7929c03493da6461aed738c70a323975756ba044bf8ed8d02f07a136115c"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "New round2 capture; environment/method differs from round1: no comparable previous_record_id and no ranking-growth attribution. Citations prove visible URLs only; reachability and commercial facts UNKNOWN."
+}

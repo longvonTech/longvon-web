@@ -1,0 +1,74 @@
+{
+  "record_id": "7340eeba-fa21-570f-88ed-5615122a237a",
+  "query_id": "Q04",
+  "query": "custom smart ring development company",
+  "platform": "Perplexity",
+  "mode": "INCOGNITO_SEARCH",
+  "observed_at": "2026-11-24T13:23:47.605Z",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "Chrome signed-in incognito Search; Pro free-preview label; UI zh, query/answer en; model UNKNOWN; PR27 visible source-panel DOM extraction",
+  "availability": "COMPLETED",
+  "longvon_present": true,
+  "organic_rank": null,
+  "ai_body_recommended": true,
+  "source_cited": true,
+  "cited_urls": [
+    "https://www.longvon.com/en/smart-ring-manufacturer",
+    "https://www.goldenweald.com/smart-ring-manufacturer-oem-odm-smart-ring-development/",
+    "https://www.gysmartwatch.com/html/health-monitoring-smart-ring-oem-1851.html",
+    "https://www.aismartai.com/",
+    "https://www.goodwaytechs.com/services.html",
+    "https://www.longvon.com/en/partner/oem",
+    "https://www.longvon.com/en/smart-ring-oem-odm",
+    "https://www.longvon.com/en/smart-ring-technology",
+    "https://www.longvon.com/en/smart-ring-healthcare-solutions",
+    "https://www.longvon.com/en/smart-ring-solution-provider"
+  ],
+  "competitors": [
+    {
+      "name": "Golden Weald",
+      "url": "https://www.goldenweald.com/smart-ring-manufacturer-oem-odm-smart-ring-development/",
+      "position": "visible sources item #2",
+      "evidence_quote": "goldenweald\nSmart Ring Manufacturer OEM & ODM Smart Ring Development\nprovides OEM/ODM smart rings with advanced sensors for sleep, HRV, stress, and fitness tracking.Smart Ring Manufacturer OEM & ODM Smart Ring Development."
+    },
+    {
+      "name": "Geyan",
+      "url": "https://www.gysmartwatch.com/html/health-monitoring-smart-ring-oem-1851.html",
+      "position": "visible sources item #3",
+      "evidence_quote": "gysmartwatch\nHealth Monitoring Smart Ring OEM\nHealth Monitoring Smart Ring OEM Manufacturer for Custom Wearable Solutions.Shenzhen Geyan Technology Co., Ltd. provides one-stop custom smart ring solutions covering industrial design, hardware development, sensor integration."
+    },
+    {
+      "name": "AISmart",
+      "url": "https://www.aismartai.com/",
+      "position": "visible sources item #4",
+      "evidence_quote": "aismartai\nAISmart Technology Co.,Ltd | Smart Ring & Smart Glasses ...\nProfessional supplier of smart rings and smart glasses. Support OEM, ODM and bulk wholesale for worldwide buyers."
+    },
+    {
+      "name": "Goodway",
+      "url": "https://www.goodwaytechs.com/services.html",
+      "position": "visible sources item #5",
+      "evidence_quote": "goodwaytechs\nServices | Goodway\nGoodway is a smart ring manufacturer for OEM, ODM, private label, NFC, health tracking, app integration, certification support, samples, and bulk production. Contact Goodway to start your project."
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-24-round2/perplexity-Q04-sources.json",
+      "sha256": "37aeae627893c52e2abcc4d48f5b8e135c78ac537f2fa959bd9665d4bc6f747b"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/perplexity-Q04.jpg",
+      "sha256": "55c24788a84b69d06df6a15ec5ca718974eff7eb8643499d64de2f761ecf0c53"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/perplexity-Q04.json",
+      "sha256": "328c335002a01be2bff8e2432a04e48aa9b7391238c36d77b4d364854fae8479"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/perplexity-Q04.txt",
+      "sha256": "34dda642f08376ab100c6e03121a3c45150b2bc5c029b13d13356d92d5142f46"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "New round2 capture; environment/method differs from round1: no comparable previous_record_id and no ranking-growth attribution. Citations prove visible URLs only; reachability and commercial facts UNKNOWN."
+}

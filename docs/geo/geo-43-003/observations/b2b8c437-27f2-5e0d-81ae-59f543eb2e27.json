@@ -1,0 +1,65 @@
+{
+  "record_id": "b2b8c437-27f2-5e0d-81ae-59f543eb2e27",
+  "query_id": "Q01",
+  "query": "smart ring OEM ODM manufacturer",
+  "platform": "Google",
+  "mode": "ALL_FIRST_PAGE_AUTO_AI_OVERVIEW",
+  "observed_at": "2026-11-24T13:19:15.448Z",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "Chrome existing signed-in profile; hl=en; personalized results; country UNKNOWN; PR27 bounded AI receipt detector; collapsed overview scope",
+  "availability": "COMPLETED",
+  "longvon_present": false,
+  "organic_rank": null,
+  "ai_body_recommended": null,
+  "source_cited": null,
+  "cited_urls": [],
+  "competitors": [
+    {
+      "name": "J-Style / Jointcorp",
+      "url": "https://www.jointcorp.com/product-cat/smart-rings/",
+      "position": "web-result h3 #1",
+      "evidence_quote": "- link \"Smart Ring Manufacturer & Health Tracking Rings OEM/ODM jointcorp.com https://www.jointcorp.com › product-cat › smart-rings\":"
+    },
+    {
+      "name": "STAR KING / Pineeon (as displayed)",
+      "url": "https://starkingsmartring.com/products/smart-rings/",
+      "position": "web-result h3 #2",
+      "evidence_quote": "- link \"Smart Ring OEM/ODM Manufacturer & Private Label starkingsmartring.com https://starkingsmartring.com › products › smart-rings\":"
+    },
+    {
+      "name": "Goodway",
+      "url": "https://www.goodwaytechs.com/smart-ring.html",
+      "position": "web-result h3 #3",
+      "evidence_quote": "- link \"Smart Ring Manufacturer OEM & ODM ... Goodway Techs https://www.goodwaytechs.com › Products\":"
+    },
+    {
+      "name": "eIoT",
+      "url": "https://www.eiot.com/",
+      "position": "web-result h3 #4",
+      "evidence_quote": "- link \"Read more\":"
+    },
+    {
+      "name": "Golden Weald",
+      "url": "https://www.goldenweald.com/how-to-choose-the-right-smart-ring-oem-manufacturer-in-china/",
+      "position": "web-result h3 #5",
+      "evidence_quote": "- link \"How to Choose the Right Smart Ring OEM Manufacturer in ... goldenweald.com https://www.goldenweald.com › Blog Standard\":"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-24-round2/google-Q01.jpg",
+      "sha256": "5f5872b61daf129a6a8baa468a7380fa117906c2105b7e99597d3a983e50ab7a"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/google-Q01.json",
+      "sha256": "d7df3028f0a65cfffe763bc61b4b144bf665be13d543189602bf128a78883f17"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/google-Q01.txt",
+      "sha256": "ec1d3931f98127e3e4e190d50969463e902c989d017cdacc60c33bad56e1b393"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "New round2 capture; environment/method differs from round1: no comparable previous_record_id and no ranking-growth attribution. Citations prove visible URLs only; reachability and commercial facts UNKNOWN."
+}

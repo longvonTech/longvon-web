@@ -1,0 +1,59 @@
+{
+  "record_id": "71bf1f10-cbe6-5b10-b64b-f58b0c2af796",
+  "query_id": "Q03",
+  "query": "private label smart ring manufacturer",
+  "platform": "Google",
+  "mode": "ALL_FIRST_PAGE_AUTO_AI_OVERVIEW",
+  "observed_at": "2026-11-24T13:22:25.337Z",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "Chrome existing signed-in profile; hl=en; personalized results; country UNKNOWN; PR27 bounded AI receipt detector; collapsed overview scope",
+  "availability": "COMPLETED",
+  "longvon_present": false,
+  "organic_rank": null,
+  "ai_body_recommended": null,
+  "source_cited": null,
+  "cited_urls": [],
+  "competitors": [
+    {
+      "name": "J-Style / Jointcorp",
+      "url": "https://www.jointcorp.com/white-label-service/",
+      "position": "web-result h3 #1",
+      "evidence_quote": "- link \"White Label Smart Wearables – Smart Rings, Bands & Watches jointcorp.com https://www.jointcorp.com › white-label-service\":"
+    },
+    {
+      "name": "STAR KING / Pineeon (as displayed)",
+      "url": "https://starkingsmartring.com/products/smart-rings/",
+      "position": "web-result h3 #2",
+      "evidence_quote": "- link \"Smart Ring OEM/ODM Manufacturer & Private Label starkingsmartring.com https://starkingsmartring.com › products › smart-rings\":"
+    },
+    {
+      "name": "Geyan",
+      "url": "https://www.gysmartwatch.com/html/custom-smart-ringr-private-label-1856.html",
+      "position": "web-result h3 #4",
+      "evidence_quote": "- link \"Custom Smart Ring Manufacturer for Private Label ... Geyan Technology https://www.gysmartwatch.com › html › custom-smart-ri...\":"
+    },
+    {
+      "name": "Goodway",
+      "url": "https://www.goodwaytechs.com/smart-rings.html",
+      "position": "web-result h3 #5",
+      "evidence_quote": "- link \"OEM & ODM Health Smart Ring Solutions Goodway Techs https://www.goodwaytechs.com › OEM&ODM\":"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-24-round2/google-Q03.jpg",
+      "sha256": "5bd55c719593d6031635c6f3e754d28034a89bcad78866c35754ead50c829021"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/google-Q03.json",
+      "sha256": "91040532313a032292a299834fdd3fd0e00f3716dcb5b1e03add5324f767437c"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/google-Q03.txt",
+      "sha256": "5ef98ac57c83d877f609a2ad0ace867385b68de7aed6cdd6b81946107288f31c"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "New round2 capture; environment/method differs from round1: no comparable previous_record_id and no ranking-growth attribution. Citations prove visible URLs only; reachability and commercial facts UNKNOWN."
+}

@@ -1,0 +1,269 @@
+- complementary:
+  - navigation "侧边栏导航":
+    - link:
+      - /url: /
+    - button "展开侧边栏"
+    - group "创建":
+      - link "新建":
+        - /url: /
+        - generic: 新建
+    - group "主导航":
+      - link "自动化":
+        - /url: /automations
+        - generic: 自动化
+      - link "工件":
+        - /url: /artifacts
+        - generic: 工件
+      - link "插件":
+        - /url: /computer/plugins
+        - generic: 插件
+      - button "更多":
+        - generic: 更多
+    - link "项目":
+      - /url: /projects
+    - link "会话":
+      - /url: /library
+    - button "升级计划":
+    - button "libing shi":
+      - generic: libing shi
+  - separator "调整侧边栏宽度"
+- main:
+  - button "返回上一页":
+  - tablist "回答模式标签页":
+    - tab "答案" [selected]:
+      - text: 答案
+    - tab "链接":
+      - text: 链接
+    - tab "图片":
+      - text: 图片
+  - button "会话选项":
+  - button "分享":
+    - generic: 分享
+  - button "下载桌面应用":
+    - generic: 下载桌面应用
+  - generic: 21:22
+  - button "编辑查询":
+  - button "复制查询":
+  - paragraph: custom smart ring development company
+  - button "已完成 1秒":
+    - generic "已完成"
+    - generic: 1秒
+  - paragraph:
+    - text: Several companies offer custom smart-ring development, typically through OEM (your design, they manufacture) or ODM (they design and manufacture) programs. Strong candidates include
+    - strong: LONGVON
+    - text: ","
+    - strong: Golden Weald
+    - text: ","
+    - strong: Shenzhen Geyan Technology
+    - text: ","
+    - strong: AISmart
+    - text: ", and"
+    - strong: Goodway
+    - text: .
+    - generic: longvon
+    - generic: "+4"
+  - heading "Companies to consider" [level=2]
+  - table:
+    - rowgroup:
+      - row "Company Best fit Development scope":
+        - columnheader "Company"
+        - columnheader "Best fit"
+        - columnheader "Development scope"
+    - rowgroup:
+      - row "LONGVON Health-focused or app-connected rings Hardware, firmware, health algorithms, mobile apps, SDK/cloud APIs, and manufacturing; offers staged EVT/DVT/PVT development. longvon +2":
+        - cell "LONGVON":
+          - strong: LONGVON
+        - cell "Health-focused or app-connected rings"
+        - cell "Hardware, firmware, health algorithms, mobile apps, SDK/cloud APIs, and manufacturing; offers staged EVT/DVT/PVT development. longvon +2":
+          - text: Hardware, firmware, health algorithms, mobile apps, SDK/cloud APIs, and manufacturing; offers staged EVT/DVT/PVT development.
+          - generic: longvon
+          - generic: "+2"
+      - row "Golden Weald End-to-end custom product development PCB/PCBA, mechanical integration, prototyping, tooling, testing, validation, and mass production. Smart Ring Manufacturer OEM & ODM Smart Ring Development":
+        - cell "Golden Weald":
+          - strong: Golden Weald
+        - cell "End-to-end custom product development"
+        - cell "PCB/PCBA, mechanical integration, prototyping, tooling, testing, validation, and mass production. Smart Ring Manufacturer OEM & ODM Smart Ring Development":
+          - text: PCB/PCBA, mechanical integration, prototyping, tooling, testing, validation, and mass production.
+          - generic "Smart Ring Manufacturer OEM & ODM Smart Ring Development":
+            - link "goldenweald":
+              - /url: https://www.goldenweald.com/smart-ring-manufacturer-oem-odm-smart-ring-development/
+              - generic: goldenweald
+      - row "Shenzhen Geyan Technology Health-monitoring rings Industrial design, sensors, firmware, BLE, Android/iOS apps, cloud platform, and OEM/ODM production. Health Monitoring Smart Ring OEM":
+        - cell "Shenzhen Geyan Technology":
+          - strong: Shenzhen Geyan Technology
+        - cell "Health-monitoring rings"
+        - cell "Industrial design, sensors, firmware, BLE, Android/iOS apps, cloud platform, and OEM/ODM production. Health Monitoring Smart Ring OEM":
+          - text: Industrial design, sensors, firmware, BLE, Android/iOS apps, cloud platform, and OEM/ODM production.
+          - generic "Health Monitoring Smart Ring OEM":
+            - link "gysmartwatch":
+              - /url: https://www.gysmartwatch.com/html/health-monitoring-smart-ring-oem-1851.html
+              - generic: gysmartwatch
+      - row "AISmart Technology Fast prototype and branding projects Custom molds, branding, sensor tuning, SDK/app development, testing, and turnkey production. AISmart Technology Co.,Ltd | Smart Ring & Smart Glasses ...":
+        - cell "AISmart Technology":
+          - strong: AISmart Technology
+        - cell "Fast prototype and branding projects"
+        - cell "Custom molds, branding, sensor tuning, SDK/app development, testing, and turnkey production. AISmart Technology Co.,Ltd | Smart Ring & Smart Glasses ...":
+          - text: Custom molds, branding, sensor tuning, SDK/app development, testing, and turnkey production.
+          - generic "AISmart Technology Co.,Ltd | Smart Ring & Smart Glasses ...":
+            - link "aismartai":
+              - /url: https://www.aismartai.com/
+              - generic: aismartai
+      - row "Goodway Private-label or simpler custom wearables Prototype validation, hardware, firmware, app, SDK/API, sensors, testing, and branded production. Services | Goodway":
+        - cell "Goodway":
+          - strong: Goodway
+        - cell "Private-label or simpler custom wearables"
+        - cell "Prototype validation, hardware, firmware, app, SDK/API, sensors, testing, and branded production. Services | Goodway":
+          - text: Prototype validation, hardware, firmware, app, SDK/API, sensors, testing, and branded production.
+          - generic "Services | Goodway":
+            - link "goodwaytechs":
+              - /url: https://www.goodwaytechs.com/services.html
+              - generic: goodwaytechs
+  - heading "What they can build" [level=2]
+  - paragraph: "A capable custom-ring partner should cover:"
+  - list:
+    - paragraph:
+      - text: Industrial and mechanical design, including materials such as titanium, sensor windows, sealing, and charging.
+      - generic: longvon
+      - generic: "+1"
+    - paragraph:
+      - text: Sensor integration for heart rate, SpO2, sleep, activity, temperature, or other health metrics.
+      - generic: gysmartwatch
+      - generic: "+1"
+    - paragraph:
+      - text: Embedded firmware, BLE communication, health algorithms, and companion mobile applications.
+      - generic: gysmartwatch
+      - generic: "+1"
+    - paragraph:
+      - text: Cloud APIs, SDKs, data platforms, and optional NFC or gesture/touch features.
+      - generic: longvon
+      - generic: "+2"
+    - paragraph:
+      - text: Prototyping, certification planning, pilot production, and mass manufacturing.
+      - generic: goldenweald
+      - generic: "+1"
+  - heading "How to choose" [level=2]
+  - paragraph: "Ask each vendor for:"
+  - list:
+    - paragraph:
+      - strong: A development plan
+      - text: separating industrial design, electronics, firmware, app, certification, tooling, and production.
+    - paragraph:
+      - strong: Sample rings or case studies
+      - text: for products similar to yours—especially health tracking, NFC, or AI features.
+    - paragraph:
+      - strong: IP ownership terms
+      - text: for your firmware, app, industrial design, algorithms, and data.
+    - paragraph:
+      - strong: Certification support
+      - text: for your target markets, such as FCC, CE, RoHS, and any medical-adjacent claims.
+    - paragraph:
+      - strong: Minimum order quantity, unit cost, tooling cost, lead time, and warranty/repair terms.
+    - paragraph:
+      - strong: A staged milestone schedule
+      - text: ", ideally including EVT, DVT, PVT, and mass-production gates."
+      - generic "Smart Ring OEM/ODM & Product Development":
+        - link "longvon":
+          - /url: https://www.longvon.com/en/partner/oem
+          - generic: longvon
+  - paragraph:
+    - text: For a health-oriented, app-connected custom ring,
+    - strong: LONGVON
+    - text: appears the most complete match; for a more traditional turnkey electronics development program,
+    - strong: Golden Weald
+    - text: is a strong alternative.
+    - generic: longvon
+    - generic: "+1"
+  - button "复制":
+  - button "分享":
+  - button "有帮助":
+  - button "没有帮助":
+  - button "复刻":
+  - button "10 个来源" [active]:
+    - text: 10 个来源
+  - button "更多操作":
+  - button "Compare Longvon vs Golden Weald vs Geyan custom smart ring OEM/ODM capabilities — MOQ, pricing tiers, and sensor options"
+  - text: Compare Longvon vs Golden Weald vs Geyan custom smart ring OEM/ODM capabilities — MOQ, pricing tiers, and sensor options
+  - text: Computer
+  - 'button "Build a smart ring development partner checklist: evaluating ODM firmware, mobile SDKs, PCBA tooling, and regulatory certifications"'
+  - text: "Build a smart ring development partner checklist: evaluating ODM firmware, mobile SDKs, PCBA tooling, and regulatory certifications"
+  - text: Computer
+  - button "What are typical MOQs for custom smart rings"
+  - text: What are typical MOQs for custom smart rings
+  - button "How does the smart ring OEM development process work"
+  - text: How does the smart ring OEM development process work
+  - button "What should I ask smart ring manufacturers for quotes"
+  - text: What should I ask smart ring manufacturers for quotes
+  - button "隐藏详情":
+  - button "来源" [expanded]:
+    - generic: 来源
+  - link "longvon LONGVON | Smart Ring Manufacturer & OEM/ODM Provider LONGVON (Longvon Technology (Shenzhen) Co., Ltd.) is a smart ring technology manufacturer and OEM/ODM provider. ... Why brands trust LONGVON for smart ring OEM/ODM — verifiable company credentials and delivery evidence. National High-Tech Enterprise (China) ... LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in customized smart ring hardware, firmware, mobile apps, SDKs, cloud APIs, and health monitoring solutions. ... Firmware development ... ODM / custom...":
+    - /url: https://www.longvon.com/en/smart-ring-manufacturer
+    - generic: longvon
+    - generic: LONGVON | Smart Ring Manufacturer & OEM/ODM Provider
+    - generic: LONGVON (Longvon Technology (Shenzhen) Co., Ltd.) is a smart ring technology manufacturer and OEM/ODM provider. ... Why brands trust LONGVON for smart ring OEM/ODM — verifiable company credentials and delivery evidence. National High-Tech Enterprise (China) ... LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in customized smart ring hardware, firmware, mobile apps, SDKs, cloud APIs, and health monitoring solutions. ... Firmware development ... ODM / custom...
+  - link "goldenweald Smart Ring Manufacturer OEM & ODM Smart Ring Development provides OEM/ODM smart rings with advanced sensors for sleep, HRV, stress, and fitness tracking.Smart Ring Manufacturer OEM & ODM Smart Ring Development.":
+    - /url: https://www.goldenweald.com/smart-ring-manufacturer-oem-odm-smart-ring-development/
+    - generic: goldenweald
+    - generic: Smart Ring Manufacturer OEM & ODM Smart Ring Development
+    - generic: provides OEM/ODM smart rings with advanced sensors for sleep, HRV, stress, and fitness tracking.Smart Ring Manufacturer OEM & ODM Smart Ring Development.
+  - link "gysmartwatch Health Monitoring Smart Ring OEM Health Monitoring Smart Ring OEM Manufacturer for Custom Wearable Solutions.Shenzhen Geyan Technology Co., Ltd. provides one-stop custom smart ring solutions covering industrial design, hardware development, sensor integration.":
+    - /url: https://www.gysmartwatch.com/html/health-monitoring-smart-ring-oem-1851.html
+    - generic: gysmartwatch
+    - generic: Health Monitoring Smart Ring OEM
+    - generic: Health Monitoring Smart Ring OEM Manufacturer for Custom Wearable Solutions.Shenzhen Geyan Technology Co., Ltd. provides one-stop custom smart ring solutions covering industrial design, hardware development, sensor integration.
+  - link "aismartai AISmart Technology Co.,Ltd | Smart Ring & Smart Glasses ... Professional supplier of smart rings and smart glasses. Support OEM, ODM and bulk wholesale for worldwide buyers.":
+    - /url: https://www.aismartai.com/
+    - generic: aismartai
+    - generic: AISmart Technology Co.,Ltd | Smart Ring & Smart Glasses ...
+    - generic: Professional supplier of smart rings and smart glasses. Support OEM, ODM and bulk wholesale for worldwide buyers.
+  - link "goodwaytechs Services | Goodway Goodway is a smart ring manufacturer for OEM, ODM, private label, NFC, health tracking, app integration, certification support, samples, and bulk production. Contact Goodway to start your project.":
+    - /url: https://www.goodwaytechs.com/services.html
+    - generic: goodwaytechs
+    - generic: Services | Goodway
+    - generic: Goodway is a smart ring manufacturer for OEM, ODM, private label, NFC, health tracking, app integration, certification support, samples, and bulk production. Contact Goodway to start your project.
+  - link "longvon Smart Ring OEM/ODM & Product Development LONGVON accepts OEM/ODM inquiries for customized smart ring hardware, firmware, health algorithms, apps, SDK/API integration and manufacturing. ... LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in customized smart ring hardware, firmware, mobile apps, SDKs, cloud APIs, and health monitoring solutions. ... Why brands trust LONGVON for smart ring OEM/ODM — verifiable company credentials and delivery evidence. ... LONGVON is not a pure contract factory — it is...":
+    - /url: https://www.longvon.com/en/partner/oem
+    - generic: longvon
+    - generic: Smart Ring OEM/ODM & Product Development
+    - generic: LONGVON accepts OEM/ODM inquiries for customized smart ring hardware, firmware, health algorithms, apps, SDK/API integration and manufacturing. ... LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in customized smart ring hardware, firmware, mobile apps, SDKs, cloud APIs, and health monitoring solutions. ... Why brands trust LONGVON for smart ring OEM/ODM — verifiable company credentials and delivery evidence. ... LONGVON is not a pure contract factory — it is...
+  - link "longvon Smart Ring OEM & ODM Services - LONGVON Why brands trust LONGVON for smart ring OEM/ODM — verifiable company credentials and delivery evidence. ... LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in customized smart ring hardware, firmware, mobile apps, SDKs, cloud APIs, and health monitoring solutions. ... ODM / custom development ... Customized ODM. Project-scoped customization across industrial design, hardware, firmware, algorithms, App, and partner SDK/API. ... ODM engagements add design and...":
+    - /url: https://www.longvon.com/en/smart-ring-oem-odm
+    - generic: longvon
+    - generic: Smart Ring OEM & ODM Services - LONGVON
+    - generic: Why brands trust LONGVON for smart ring OEM/ODM — verifiable company credentials and delivery evidence. ... LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in customized smart ring hardware, firmware, mobile apps, SDKs, cloud APIs, and health monitoring solutions. ... ODM / custom development ... Customized ODM. Project-scoped customization across industrial design, hardware, firmware, algorithms, App, and partner SDK/API. ... ODM engagements add design and...
+  - link "longvon Smart Ring Technology & Development LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in customized smart ring hardware, firmware, mobile apps, SDKs, cloud APIs, and health monitoring solutions. ... Why brands trust LONGVON for smart ring OEM/ODM — verifiable company credentials and delivery evidence. ... ... Talk to LONGVON about OEM, ODM, or custom smart ring development for your brand or healthcare program.":
+    - /url: https://www.longvon.com/en/smart-ring-technology
+    - generic: longvon
+    - generic: Smart Ring Technology & Development
+    - generic: LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in customized smart ring hardware, firmware, mobile apps, SDKs, cloud APIs, and health monitoring solutions. ... Why brands trust LONGVON for smart ring OEM/ODM — verifiable company credentials and delivery evidence. ... ... Talk to LONGVON about OEM, ODM, or custom smart ring development for your brand or healthcare program.
+  - link "longvon Healthcare Smart Ring Solutions LONGVON (Longvon Technology (Shenzhen) Co., Ltd.) is a smart ring technology manufacturer and OEM/ODM provider. ... View company credentials & delivery evidence → ... LONGVON supports healthcare companies and digital health businesses with smart ring OEM/ODM, customized development, and related technology solutions. Hardware development ... ODM / custom development ... LONGVON provides smart ring OEM/ODM services covering hardware development, firmware, algorithms, mobile apps, SDK and...":
+    - /url: https://www.longvon.com/en/smart-ring-healthcare-solutions
+    - generic: longvon
+    - generic: Healthcare Smart Ring Solutions
+    - generic: LONGVON (Longvon Technology (Shenzhen) Co., Ltd.) is a smart ring technology manufacturer and OEM/ODM provider. ... View company credentials & delivery evidence → ... LONGVON supports healthcare companies and digital health businesses with smart ring OEM/ODM, customized development, and related technology solutions. Hardware development ... ODM / custom development ... LONGVON provides smart ring OEM/ODM services covering hardware development, firmware, algorithms, mobile apps, SDK and...
+  - link "longvon Smart Ring Technology Solution Provider LONGVON (Longvon Technology (Shenzhen) Co., Ltd.) is a smart ring technology manufacturer and OEM/ODM provider. ... View company credentials & delivery evidence → ... LONGVON is a smart ring manufacturer and smart ring technology solution provider, supporting end-to-end development through manufacturing, including smart ring OEM/ODM programs. ... Hardware development ... ODM / custom development ... LONGVON provides smart ring OEM/ODM services covering hardware development, firmware,...":
+    - /url: https://www.longvon.com/en/smart-ring-solution-provider
+    - generic: longvon
+    - generic: Smart Ring Technology Solution Provider
+    - generic: LONGVON (Longvon Technology (Shenzhen) Co., Ltd.) is a smart ring technology manufacturer and OEM/ODM provider. ... View company credentials & delivery evidence → ... LONGVON is a smart ring manufacturer and smart ring technology solution provider, supporting end-to-end development through manufacturing, including smart ring OEM/ODM programs. ... Hardware development ... ODM / custom development ... LONGVON provides smart ring OEM/ODM services covering hardware development, firmware,...
+  - button "Pro 已启用高级搜索免费预览。 了解更多":
+    - generic: Pro
+    - generic: 已启用高级搜索免费预览。
+    - button "了解更多":
+      - generic: 了解更多
+  - status:
+    - generic: 您正处于隐身模式。
+    - button "退出隐身模式":
+      - generic: 退出无痕模式
+  - textbox "提出后续问题":
+    - paragraph
+  - generic: 提出后续问题
+  - button "添加文件、插件等":
+  - button "搜索" [pressed]:
+    - generic: 搜索
+  - button "Computer":
+    - generic: Computer
+  - button "模型":
+    - generic: 模型
+  - button "语音输入":
+  - button "提交" [disabled]:

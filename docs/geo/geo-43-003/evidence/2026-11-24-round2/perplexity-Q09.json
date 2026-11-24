@@ -1,0 +1,66 @@
+{
+  "captured_at": "2026-11-24T13:29:39.129Z",
+  "platform": "Perplexity",
+  "mode": "INCOGNITO_SEARCH",
+  "completion": "COMPLETE",
+  "country": "UNKNOWN",
+  "citation_targets": [
+    {
+      "label": "longvon\nSmart Ring Sleep Monitoring Technology | LONGVON\nLONGVON provides smart ring sleep monitoring technology for companies developing consumer health, digital health and sleep-related products, with OEM/ODM support covering hardware, firmware, algorithm",
+      "url": "https://www.longvon.com/en/smart-ring-sleep-monitoring"
+    },
+    {
+      "label": "longvon\nSmart Ring OEM & ODM Services - LONGVON\nLONGVON (Longvon Technology (Shenzhen) Co., Ltd.) is a smart ring technology manufacturer and OEM/ODM provider. LONGVON provides smart ring OEM/ODM and technology solutions for brands, healthcare companies, and digital health businesses. ... LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in customized smart ring hardware, firmware, mobile apps, SDKs, cloud APIs, and health monitoring solutions. ... R&D: multi-modal sensing and AI algorithms (sleep staging,...",
+      "url": "https://www.longvon.com/en/smart-ring-oem-odm"
+    },
+    {
+      "label": "longvon\nHealthcare Smart Ring Solutions\nLONGVON · Smart Ring Manufacturer · OEM/ODM ... LONGVON (Longvon Technology (Shenzhen) Co., Ltd.) is a smart ring technology manufacturer and OEM/ODM provider. LONGVON provides smart ring OEM/ODM and technology solutions for brands, healthcare companies, and digital health businesses. ... Sleep monitoring Sleep respiratory health ... LONGVON develops smart ring solutions for healthcare and digital health applications, including sleep and respiratory health monitoring, with OEM/ODM cooperation....",
+      "url": "https://www.longvon.com/en/smart-ring-healthcare-solutions"
+    },
+    {
+      "label": "jointcorp\nSmart Ring Manufacturer & Health Tracking Rings OEM/ODM - J-Style\nJ-Style provides OEM/ODM smart rings with advanced sensors for sleep, HRV, stress, and fitness tracking. Custom designs, medical-grade accuracy, and full-stack wearable solutions.",
+      "url": "https://www.jointcorp.com/product-cat/smart-rings/"
+    },
+    {
+      "label": "jointcorp\nProducts | Screenless Smart Band ODM & OEM Factory - J-Style\nThrough non-invasive glucose trend assessment and multi-dimensional health data analysis, the JCRing smart ring continuously tracks your key health indicators.",
+      "url": "https://www.jointcorp.com/products/"
+    },
+    {
+      "label": "goldenweald\nSmart Ring OEM & ODM Manufacturer | Custom Smart Rings\nWhy Choose PCB Assembly In China-Since1998,GoldenWeald,pcb assembly in china, china pcb assembly manufacturer, pcb assembly from china",
+      "url": "https://www.goldenweald.com/smart-ring-oem-odm-manufacturer-custom-smart-rings/"
+    },
+    {
+      "label": "goodwaytechs\nSmart Ring Manufacturer OEM & ODM ...\nGet advanced smart rings designed for health and control. Ideal for OEM suppliers and tech wholesalers.",
+      "url": "https://www.goodwaytechs.com/smart-ring.html"
+    },
+    {
+      "label": "smareyetech\nFashionable Smart Ring for Men and Women - Sleep Analyzer, Heart Rate, Blood Pressure Monitor, Fitness Tracker\nOEM/ODM smartwatches, smart bands, smart rings and AI smart glasses engineered and built in Shenzhen since 2010. Under 0.3% defect rate, 50+ export countries.",
+      "url": "https://www.smareyetech.com/product/smart-ring-sleep-heart-rate-fitness-tracker/"
+    },
+    {
+      "label": "longvon\nSmart Ring Sleep Respiratory Monitoring | LONGVON\nLONGVON develops smart ring technologies for sleep respiratory and health monitoring, supporting OEM/ODM product development for digital health, wearable and healthcare-related applications. Knowledge",
+      "url": "https://www.longvon.com/en/smart-ring-sleep-respiratory"
+    },
+    {
+      "label": "made-in-china\n\"Sleep Smart Ring\"\nChina Sleep Smart Ring wholesale - Select 2026 high quality Sleep Smart Ring products in best price from certified Chinese manufacturers, suppliers, wholesalers and factory on Made-in-China.com, page 2",
+      "url": "https://www.made-in-china.com/products-search/find-china-products/0b0nolimit/Sleep_Smart_Ring-2.html"
+    }
+  ],
+  "citation_reachability": "UNKNOWN",
+  "screenshot": "REQUIRES_VISUAL_REVIEW",
+  "bounds": {
+    "left": 140.5,
+    "right": 828.5,
+    "viewport": 1268
+  },
+  "files": [
+    {
+      "name": "perplexity-Q09.txt",
+      "sha256": "5689d6fad703d633dabaaede68be5efdd4876139195c6e3d8c26bfaddeffbf9f"
+    },
+    {
+      "name": "perplexity-Q09.jpg",
+      "sha256": "f5df92948840436a42208a454d57c9558134639fd97df1ac027995a46701aaa9"
+    }
+  ]
+}

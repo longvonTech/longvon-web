@@ -1,0 +1,87 @@
+{
+  "record_id": "de2c0559-cc9a-58d4-a0c6-e67538e75eb6",
+  "query_id": "Q02",
+  "query": "smart ring manufacturer China",
+  "platform": "ChatGPT",
+  "mode": "DEFAULT_ANSWER",
+  "observed_at": "2026-11-24T13:21:29.093Z",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "IAB logged out, new conversation per query; UI zh, query/answer en; model UNKNOWN; web-search invocation UNKNOWN; PR27 dual-height 1440x1000/1600 capture",
+  "availability": "COMPLETED",
+  "longvon_present": true,
+  "organic_rank": null,
+  "ai_body_recommended": true,
+  "source_cited": true,
+  "cited_urls": [
+    "https://www.yawellfit.com/p/about.html?utm_source=chatgpt.com",
+    "https://www.longvon.com/en/smart-ring-manufacturer?utm_source=chatgpt.com",
+    "https://www.eiot.com/?utm_source=chatgpt.com",
+    "https://idotring.com/en/?utm_source=chatgpt.com",
+    "https://www.made-in-china.com/showroom/f0fb48a120fe1348/?utm_source=chatgpt.com",
+    "https://starkingsmartring.com/?utm_source=chatgpt.com",
+    "https://www.gysmartwatch.com/?utm_source=chatgpt.com",
+    "https://www.openstreetmap.org/copyright/",
+    "https://monid.ai/tutorial/how-to-monid-buying-signals?utm_source=chatgpt&utm_medium=paid&utm_campaign=monid_gtm_buying_signals_us&%6Fppref=gAAAAABrBY8enZq7IzECwnBJwV3Ism6u93DIrHiYLK3EtM_AQJpz8j4Rj_B62VwhVErnvlWRjCq0jaC2dXF7E_-7IW_lgAe9b1S_sbqOVFG_OVfMTMAQBHUw&olref=gAAAAABrBY8eI4r6QPDvsA4dCr6YSa157CsYcQpK29GQfae5zCD8uRyLYSKozUF6CBhxOCy4aQJb3xFBcAss9RV7o2PLebzz8o3BKW9dhS7hik37pmNohpILDlH97HDc-i9_uyL0u-yWdXCly21p6U-yYtrGISPZfQw"
+  ],
+  "competitors": [
+    {
+      "name": "Yawell",
+      "url": "https://www.yawellfit.com/p/about.html?utm_source=chatgpt.com",
+      "position": "explicit answer URL order",
+      "evidence_quote": "- /url: https://www.yawellfit.com/p/about.html?utm_source=chatgpt.com"
+    },
+    {
+      "name": "eIoT",
+      "url": "https://www.eiot.com/?utm_source=chatgpt.com",
+      "position": "explicit answer URL order",
+      "evidence_quote": "- /url: https://www.eiot.com/?utm_source=chatgpt.com"
+    },
+    {
+      "name": "IDOT",
+      "url": "https://idotring.com/en/?utm_source=chatgpt.com",
+      "position": "explicit answer URL order",
+      "evidence_quote": "- /url: https://idotring.com/en/?utm_source=chatgpt.com"
+    },
+    {
+      "name": "STAR KING / Pineeon (as displayed)",
+      "url": "https://starkingsmartring.com/?utm_source=chatgpt.com",
+      "position": "explicit answer URL order",
+      "evidence_quote": "- /url: https://starkingsmartring.com/?utm_source=chatgpt.com"
+    },
+    {
+      "name": "Geyan",
+      "url": "https://www.gysmartwatch.com/?utm_source=chatgpt.com",
+      "position": "explicit answer URL order",
+      "evidence_quote": "- /url: https://www.gysmartwatch.com/?utm_source=chatgpt.com"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q02-1000.jpg",
+      "sha256": "9a2e159c5a3399a6ee850baa2eee159cb71318120023d54016baea68a2d5e69d"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q02-1000.json",
+      "sha256": "fda5c79f2c1f9546e8ad1495728a8b206aadb7ce513ce1bfdd5b3e916cc89fd9"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q02-1000.txt",
+      "sha256": "a3b08114e78c2fd695d87bc19129d9661663766457a1bd50f0a3ca97e7ae04c5"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q02-1600.jpg",
+      "sha256": "d51e4c180e2582c3f987ce21c2b1b6a561b5ef92b002a6c03da428e78a2b9e52"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q02-1600.json",
+      "sha256": "ae9a433b73fe0ceb16303df66dca79645d9392728ff92c0874a91161513e2802"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q02-1600.txt",
+      "sha256": "a3b08114e78c2fd695d87bc19129d9661663766457a1bd50f0a3ca97e7ae04c5"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "New round2 capture; environment/method differs from round1: no comparable previous_record_id and no ranking-growth attribution. Citations prove visible URLs only; reachability and commercial facts UNKNOWN. Before first publication, map-service URL token parameters were redacted; original DOM/metadata retained privately, redaction receipt preserved."
+}

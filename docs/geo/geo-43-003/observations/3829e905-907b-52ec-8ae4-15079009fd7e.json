@@ -1,0 +1,62 @@
+{
+  "record_id": "3829e905-907b-52ec-8ae4-15079009fd7e",
+  "query_id": "Q10",
+  "query": "sleep breathing monitoring smart ring ODM",
+  "platform": "Perplexity",
+  "mode": "INCOGNITO_SEARCH",
+  "observed_at": "2026-11-24T13:31:53.023Z",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "Chrome signed-in incognito Search; Pro free-preview label; UI zh, query/answer en; model UNKNOWN; PR27 visible source-panel DOM extraction",
+  "availability": "COMPLETED",
+  "longvon_present": true,
+  "organic_rank": null,
+  "ai_body_recommended": true,
+  "source_cited": true,
+  "cited_urls": [
+    "https://www.longvon.com/smart-ring-sleep-respiratory",
+    "https://www.jointcorp.com/product-cat/smart-rings/",
+    "https://www.longvon.com/en/smart-ring-sleep-monitoring",
+    "https://www.longvon.com/en/osa-smart-ring-technology",
+    "https://www.jointcorp.com/Products/",
+    "https://www.jointcorp.com/",
+    "https://aiasmart.com/en",
+    "https://www.longvon.com/smart-ring-oem-odm",
+    "https://www.longvon.com/smart-ring-healthcare-solutions",
+    "https://www.longvon.com/en/products/ring1c"
+  ],
+  "competitors": [
+    {
+      "name": "J-Style / Jointcorp",
+      "url": "https://www.jointcorp.com/product-cat/smart-rings/",
+      "position": "visible sources item #2",
+      "evidence_quote": "jointcorp\nSmart Ring Manufacturer & Health Tracking Rings OEM/ODM - J-Style\nJ-Style provides OEM/ODM smart rings with advanced sensors for sleep, HRV, stress, and fitness tracking. Custom designs, medical-grade accuracy, and full-stack wearable solutions."
+    },
+    {
+      "name": "Aiasmart",
+      "url": "https://aiasmart.com/en",
+      "position": "visible sources item #7",
+      "evidence_quote": "aiasmart\nAiasmart | One-stop Smart Health Products & Solutions Provider\nAiasmart specializes in smart wearables, health, personal care and companionship for 20+ years, with 30,000㎡+ smart-manufacturing bases and a 600+ team. Products se…"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-24-round2/perplexity-Q10-sources.json",
+      "sha256": "7a56db24a472d12240bc39003120c93ee3c599867d97cd9314c4f10eb4673a30"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/perplexity-Q10.jpg",
+      "sha256": "2e7d722952ecbbfc3a80169e8cee084609280173df97d99ed41a475a64c75eaa"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/perplexity-Q10.json",
+      "sha256": "8defa5f7e464fdd40d33b60e84721526236da77125faa4a8eab26bdd0ac3746b"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/perplexity-Q10.txt",
+      "sha256": "5d711bbeb47e9edc169556baa1b76dceb17a562fd25304497260f4cd72f7612e"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "New round2 capture; environment/method differs from round1: no comparable previous_record_id and no ranking-growth attribution. Citations prove visible URLs only; reachability and commercial facts UNKNOWN."
+}

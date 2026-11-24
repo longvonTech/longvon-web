@@ -1,0 +1,65 @@
+{
+  "record_id": "aa3e07fb-69c4-548a-9de2-850e6b390d8b",
+  "query_id": "Q06",
+  "query": "smart ring manufacturer with SDK API",
+  "platform": "Google",
+  "mode": "ALL_FIRST_PAGE_AUTO_AI_OVERVIEW",
+  "observed_at": "2026-11-24T13:24:56.511Z",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "Chrome existing signed-in profile; hl=en; personalized results; country UNKNOWN; PR27 bounded AI receipt detector; collapsed overview scope",
+  "availability": "COMPLETED",
+  "longvon_present": false,
+  "organic_rank": null,
+  "ai_body_recommended": false,
+  "source_cited": false,
+  "cited_urls": [],
+  "competitors": [
+    {
+      "name": "J-Style / Jointcorp",
+      "url": "https://www.jointcorp.com/sdk-api/",
+      "position": "web-result h3 #1",
+      "evidence_quote": "- link \"SDK &API | Screenless Smart Band ODM & OEM Factory jointcorp.com https://www.jointcorp.com › sdk-api\":"
+    },
+    {
+      "name": "Geyan",
+      "url": "https://www.gysmartwatch.com/html/smart-ring-oem-sdk-api.html",
+      "position": "web-result h3 #2",
+      "evidence_quote": "- link \"Smart Ring OEM Manufacturer with SDK & API Integration Geyan Technology https://www.gysmartwatch.com › html › smart-ring-oem-...\":"
+    },
+    {
+      "name": "STAR KING / Pineeon (as displayed)",
+      "url": "https://starkingsmartring.com/resources/sdk-api/",
+      "position": "web-result h3 #3",
+      "evidence_quote": "- link \"Wearable SDK & API Integration | STAR KING OEM/ODM starkingsmartring.com https://starkingsmartring.com › resources › sdk-api\":"
+    },
+    {
+      "name": "Goodway",
+      "url": "https://www.goodwaytechs.com/health-smart-rings.html",
+      "position": "web-result h3 #4",
+      "evidence_quote": "- link \"Health Smart Rings | Goodway Goodway Techs https://www.goodwaytechs.com › Products › Smart Rings\":"
+    },
+    {
+      "name": "ROOK",
+      "url": "https://tryrook.io/wearable-api-sdk/",
+      "position": "web-result h3 #5",
+      "evidence_quote": "- link \"Wearable API and SDKs | ROOK Connect tryrook.io https://tryrook.io › wearable-api-sdk\":"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-24-round2/google-Q06.jpg",
+      "sha256": "976e3f3e87a89d5dffad00347104ff6262f704b808e968344f581ad24159f384"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/google-Q06.json",
+      "sha256": "2eaf5299e92e7ab9b34ea5ba6cf954983079e100de043e59e44376e63075208b"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/google-Q06.txt",
+      "sha256": "48f234d656659848c77f2f35196a5380ad98474a6eba571c48d6f2679910f9c5"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "New round2 capture; environment/method differs from round1: no comparable previous_record_id and no ranking-growth attribution. Citations prove visible URLs only; reachability and commercial facts UNKNOWN."
+}

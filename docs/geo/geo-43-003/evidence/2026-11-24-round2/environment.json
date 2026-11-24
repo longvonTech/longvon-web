@@ -1,0 +1,21 @@
+{
+  "batch": "2026-11-24-round2",
+  "timezone": "Asia/Shanghai",
+  "capture_min_utc": "2026-11-24T13:19:15.448Z",
+  "capture_max_utc": "2026-11-24T13:36:39.029Z",
+  "country": "UNKNOWN",
+  "browser": "existing Chrome extension profile for Google/Perplexity; IAB for ChatGPT",
+  "query_language": "en",
+  "ui_language": "Google en; ChatGPT/Perplexity zh",
+  "chatgpt_mode": "DEFAULT_ANSWER",
+  "chatgpt_realtime_search": "NOT_RUN; actual auto-search invocation UNKNOWN",
+  "perplexity": "authenticated incognito Search; Pro free-preview label; model UNKNOWN",
+  "google": "signed-in personalized, hl=en; first captured result page only",
+  "tool_source_sha": "b5bf0cd60935d6b076315141f812da6f9031668b",
+  "formal_observations": 36,
+  "dispatched_query_attempts": 38,
+  "interrupted_attempts": 2,
+  "production_post_requests": 0,
+  "deployment_actions": 0,
+  "comparison": "No causal growth conclusion; methods changed since round1"
+}

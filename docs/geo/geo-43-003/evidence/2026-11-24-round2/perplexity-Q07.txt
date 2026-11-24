@@ -1,0 +1,270 @@
+- complementary:
+  - navigation "侧边栏导航":
+    - link:
+      - /url: /
+    - button "展开侧边栏"
+    - group "创建":
+      - link "新建":
+        - /url: /
+        - generic: 新建
+    - group "主导航":
+      - link "自动化":
+        - /url: /automations
+        - generic: 自动化
+      - link "工件":
+        - /url: /artifacts
+        - generic: 工件
+      - link "插件":
+        - /url: /computer/plugins
+        - generic: 插件
+      - button "更多":
+        - generic: 更多
+    - link "项目":
+      - /url: /projects
+    - link "会话":
+      - /url: /library
+    - button "升级计划":
+    - button "libing shi":
+      - generic: libing shi
+  - separator "调整侧边栏宽度"
+- main:
+  - button "返回上一页":
+  - tablist "回答模式标签页":
+    - tab "答案" [selected]:
+      - text: 答案
+    - tab "链接":
+      - text: 链接
+    - tab "图片":
+      - text: 图片
+  - button "会话选项":
+  - button "分享":
+    - generic: 分享
+  - button "下载桌面应用":
+    - generic: 下载桌面应用
+  - generic: 21:26
+  - button "编辑查询":
+  - button "复制查询":
+  - paragraph: 100Hz raw PPG smart ring SDK
+  - button "已完成 1秒":
+    - generic "已完成"
+    - generic: 1秒
+  - paragraph:
+    - text: If you need a smart-ring SDK that exposes
+    - strong: 100 Hz raw PPG
+    - text: ", the most credible options are partner/OEM SDKs rather than consumer apps:"
+    - strong: Ultrahuman UltraSignal
+    - text: ","
+    - strong: LONGVON
+    - text: ", and"
+    - strong: Tucks
+    - text: . For open research, the
+    - strong: HealthRing / RingTool
+    - text: dataset provides 100 Hz raw PPG and accelerometer data, though it is not a commercial device SDK.
+    - img "可信域名":
+    - generic: nature
+    - generic: "+2"
+  - heading "Commercial SDK options" [level=2]
+  - table:
+    - rowgroup:
+      - row "Vendor / platform 100 Hz raw PPG Channels Integration path Access model":
+        - columnheader "Vendor / platform"
+        - columnheader "100 Hz raw PPG"
+        - columnheader "Channels"
+        - columnheader "Integration path"
+        - columnheader "Access model"
+    - rowgroup:
+      - row "Ultrahuman UltraSignal Yes Green, red, IR PPG; IMU; skin temperature BLE SDK for mobile apps; encrypted REST APIs and webhooks Developer-platform / enterprise partnership UltraSignal™ Developer Platform & Wearable Data SDK":
+        - cell "Ultrahuman UltraSignal":
+          - strong: Ultrahuman UltraSignal
+        - cell "Yes"
+        - cell "Green, red, IR PPG; IMU; skin temperature"
+        - cell "BLE SDK for mobile apps; encrypted REST APIs and webhooks"
+        - cell "Developer-platform / enterprise partnership UltraSignal™ Developer Platform & Wearable Data SDK":
+          - text: Developer-platform / enterprise partnership
+          - generic "UltraSignal™ Developer Platform & Wearable Data SDK":
+            - link "nextbiztech":
+              - /url: https://www.nextbiztech.com/us/ultrasignal/
+              - generic: nextbiztech
+      - row "LONGVON Yes, for qualified projects PPG raw-data pathway; device SDK and cloud API Project-scoped OEM/ODM SDK Not public; requires partnership/SOW longvon +1":
+        - cell "LONGVON":
+          - strong: LONGVON
+        - cell "Yes, for qualified projects"
+        - cell "PPG raw-data pathway; device SDK and cloud API"
+        - cell "Project-scoped OEM/ODM SDK"
+        - cell "Not public; requires partnership/SOW longvon +1":
+          - text: Not public; requires partnership/SOW
+          - generic: longvon
+          - generic: "+1"
+      - row "Tucks Yes Uncompressed raw AC/DC PPG, 3-axis accelerometer, temperature BLE 5.3 GATT, native iOS/Android SDKs, REST API NDA-based OEM/ODM engagement OEM/ODM heart rate monitoring ring Manufacturer & Supplier - Tucks":
+        - cell "Tucks":
+          - strong: Tucks
+        - cell "Yes"
+        - cell "Uncompressed raw AC/DC PPG, 3-axis accelerometer, temperature"
+        - cell "BLE 5.3 GATT, native iOS/Android SDKs, REST API"
+        - cell "NDA-based OEM/ODM engagement OEM/ODM heart rate monitoring ring Manufacturer & Supplier - Tucks":
+          - text: NDA-based OEM/ODM engagement
+          - generic "OEM/ODM heart rate monitoring ring Manufacturer & Supplier - Tucks":
+            - link "tuckstechs":
+              - /url: https://www.tuckstechs.com/catalog/oemodm-heart-rate-monitoring-ring-manufacturer-supplier/
+              - generic: tuckstechs
+      - row "Sensor Bio V2 Yes Green, red, IR PPG iOS Swift SDK / Android Kotlin Flow SDK; BLE 5.0 Product/research team access; 25, 50, or 100 Hz selectable Science — Sensor Bio":
+        - cell "Sensor Bio V2":
+          - strong: Sensor Bio V2
+        - cell "Yes"
+        - cell "Green, red, IR PPG"
+        - cell "iOS Swift SDK / Android Kotlin Flow SDK; BLE 5.0"
+        - cell "Product/research team access; 25, 50, or 100 Hz selectable Science — Sensor Bio":
+          - text: Product/research team access; 25, 50, or 100 Hz selectable
+          - generic "Science — Sensor Bio":
+            - link "sensorbio":
+              - /url: https://sensorbio.com/science/
+              - generic: sensorbio
+  - heading "Best fit by use case" [level=2]
+  - list:
+    - paragraph:
+      - strong: "Build a clinical-research or digital-health product around an existing ring:"
+      - text: Start with
+      - strong: Ultrahuman UltraSignal
+      - text: if you need raw multi-wavelength PPG plus motion and temperature in a documented BLE/API stack.
+      - generic "UltraSignal™ Developer Platform & Wearable Data SDK":
+        - link "nextbiztech":
+          - /url: https://www.nextbiztech.com/us/ultrasignal/
+          - generic: nextbiztech
+    - paragraph:
+      - strong: "Manufacture or white-label a ring:"
+      - text: Contact
+      - strong: LONGVON
+      - text: or
+      - strong: Tucks
+      - text: ; both position 100 Hz raw PPG as an OEM/ODM capability rather than a downloadable public SDK.
+      - generic: longvon
+      - generic: "+1"
+    - paragraph:
+      - strong: "Need immediate mobile integration with selectable sampling:"
+      - strong: Sensor Bio V2
+      - text: explicitly offers a 100 Hz raw-stream setting through iOS and Android SDKs.
+      - generic "Science — Sensor Bio":
+        - link "sensorbio":
+          - /url: https://sensorbio.com/science/
+          - generic: sensorbio
+    - paragraph:
+      - strong: "Need labeled data for algorithm development:"
+      - text: Use the
+      - strong: HealthRing
+      - text: dataset and RingTool toolkit; it includes synchronized 100 Hz IR/red PPG and accelerometer streams with clinical reference labels.
+      - 'generic "HealthRing: Physiology Dataset for Health Sensing on Rings"':
+        - link "可信域名 nature":
+          - /url: https://www.nature.com/articles/s41597-026-07289-x?error=cookies_not_supported&code=03576bea-ef72-4334-832f-589a91e23fd0
+          - img "可信域名":
+          - generic: nature
+  - heading "What to verify before committing" [level=2]
+  - paragraph: "Ask each vendor these questions in writing:"
+  - list:
+    - paragraph:
+      - text: Are the 100 Hz samples
+      - strong: unfiltered/unprocessed
+      - text: or post-processed, and is timestamping hardware-synchronized?
+    - paragraph: Which PPG wavelengths are exposed—green, red, and/or IR—and are AC and DC components separately available?
+    - paragraph: What is the BLE payload format, sample alignment, packet loss/retransmission behavior, and maximum sustained streaming duration?
+    - paragraph: Is accelerometer data available at the same 100 Hz rate for motion-artifact compensation?
+    - paragraph: Are there regulatory, privacy, data-residency, and research-use restrictions—particularly if you intend to make clinical claims?
+    - paragraph: What are SDK licensing, minimum order quantities, firmware customization, and cloud-API fees?
+  - heading "Important distinction" [level=2]
+  - paragraph:
+    - text: "A “100 Hz raw PPG SDK” can mean very different things: a consumer ring may compute heart rate on-device and expose only summaries, while a research/OEM SDK may stream raw optical intensities before filtering. The examples above specifically advertise raw PPG access at 100 Hz, but commercial availability is commonly gated behind NDAs, partnership agreements, or enterprise onboarding."
+    - generic: nextbiztech
+    - generic: "+3"
+  - button "复制":
+  - button "分享":
+  - button "有帮助":
+  - button "没有帮助":
+  - button "复刻":
+  - button "10 个来源" [active]:
+    - text: 10 个来源
+  - button "更多操作":
+  - button "Notify me of new 100Hz smart ring SDKs"
+  - text: Notify me of new 100Hz smart ring SDKs
+  - text: 自动化
+  - button "Compare Ultrahuman UltraSignal and Sensor Bio V2"
+  - text: Compare Ultrahuman UltraSignal and Sensor Bio V2
+  - button "How do I apply for Ultrahuman UltraSignal access"
+  - text: How do I apply for Ultrahuman UltraSignal access
+  - button "What are the battery life impacts of 100Hz raw PPG"
+  - text: What are the battery life impacts of 100Hz raw PPG
+  - button "Show me Tucks SDK documentation details"
+  - text: Show me Tucks SDK documentation details
+  - button "隐藏详情":
+  - button "来源" [expanded]:
+    - generic: 来源
+  - link "nextbiztech UltraSignal™ Developer Platform & Wearable Data SDK Access medical-grade raw PPG, motion, and temperature data streams from Ultrahuman Smart Rings. Build custom algorithms for healthtech, sports science, and clinical research.":
+    - /url: https://www.nextbiztech.com/us/ultrasignal/
+    - generic: nextbiztech
+    - generic: UltraSignal™ Developer Platform & Wearable Data SDK
+    - generic: Access medical-grade raw PPG, motion, and temperature data streams from Ultrahuman Smart Rings. Build custom algorithms for healthtech, sports science, and clinical research.
+  - link "longvon Smart Ring SDK & Cloud API for OEM Partners LONGVON · Smart Ring Manufacturer · OEM/ODM ... LONGVON enables partner SDK access so brands and digital-health teams can integrate smart ring hardware with their own applications. Access is project-scoped — not a public self-serve portal. ... Qualified OEM/ODM partners can discuss 100Hz PPG raw-data access through LONGVON’s agreed SDK and project pathway. This is a technical evaluation, not a public SDK download or a guarantee for every ring model. Discuss a 100Hz raw PPG project ... 100Hz...":
+    - /url: https://www.longvon.com/en/smart-ring-sdk-api
+    - generic: longvon
+    - generic: Smart Ring SDK & Cloud API for OEM Partners
+    - generic: LONGVON · Smart Ring Manufacturer · OEM/ODM ... LONGVON enables partner SDK access so brands and digital-health teams can integrate smart ring hardware with their own applications. Access is project-scoped — not a public self-serve portal. ... Qualified OEM/ODM partners can discuss 100Hz PPG raw-data access through LONGVON’s agreed SDK and project pathway. This is a technical evaluation, not a public SDK download or a guarantee for every ring model. Discuss a 100Hz raw PPG project ... 100Hz...
+  - 'link "nature 可信域名 HealthRing: Physiology Dataset for Health Sensing on Rings Smart rings enable unobtrusive monitoring of cardiovascular vital signs via photoplethysmography (PPG), yet rigorous validation is limited by the scarcity of open, multi-parameter datasets. We present HealthRing, three synchronized cohorts from 54 adults: (i) scripted physiological stimuli (Study 1), (ii) semi-free-living daily activities (Study 2), and (iii) motion-intensive treadmill running with natural arm swing that induces substantial motion artefacts (Study 3). Two custom..."':
+    - /url: https://www.nature.com/articles/s41597-026-07289-x?error=cookies_not_supported&code=03576bea-ef72-4334-832f-589a91e23fd0
+    - generic: nature
+    - img "可信域名":
+    - generic: "HealthRing: Physiology Dataset for Health Sensing on Rings"
+    - generic: "Smart rings enable unobtrusive monitoring of cardiovascular vital signs via photoplethysmography (PPG), yet rigorous validation is limited by the scarcity of open, multi-parameter datasets. We present HealthRing, three synchronized cohorts from 54 adults: (i) scripted physiological stimuli (Study 1), (ii) semi-free-living daily activities (Study 2), and (iii) motion-intensive treadmill running with natural arm swing that induces substantial motion artefacts (Study 3). Two custom..."
+  - 'link "longvon Smart Ring OSA Monitoring Technology & OEM/ODM Solutions Partner SDK — project-scoped device/data pathways 100Hz PPG raw data pathways for qualified OEM/ODM partners (PARTIAL evidence; scope in SOW) ... Full boundaries: Smart Ring SDK & Cloud API. ... Evaluate 100Hz raw PPG via the partner SDK ... Qualified OEM/ODM partners can discuss project-scoped SDK access, including 100Hz PPG raw data pathways, customer-owned App integration, and cloud algorithm services. There is no public self-serve SDK portal."':
+    - /url: https://www.longvon.com/en/osa-smart-ring-technology
+    - generic: longvon
+    - generic: Smart Ring OSA Monitoring Technology & OEM/ODM Solutions
+    - generic: "Partner SDK — project-scoped device/data pathways 100Hz PPG raw data pathways for qualified OEM/ODM partners (PARTIAL evidence; scope in SOW) ... Full boundaries: Smart Ring SDK & Cloud API. ... Evaluate 100Hz raw PPG via the partner SDK ... Qualified OEM/ODM partners can discuss project-scoped SDK access, including 100Hz PPG raw data pathways, customer-owned App integration, and cloud algorithm services. There is no public self-serve SDK portal."
+  - link "tuckstechs OEM/ODM heart rate monitoring ring Manufacturer & Supplier - Tucks ISO9001-certified wearable factory in Shenzhen. OEM smartwatches and AI glasses from 200 pcs, 7-day samples, CE/FCC/RoHS compliant, serving B2B brands in 30+ countries.":
+    - /url: https://www.tuckstechs.com/catalog/oemodm-heart-rate-monitoring-ring-manufacturer-supplier/
+    - generic: tuckstechs
+    - generic: OEM/ODM heart rate monitoring ring Manufacturer & Supplier - Tucks
+    - generic: ISO9001-certified wearable factory in Shenzhen. OEM smartwatches and AI glasses from 200 pcs, 7-day samples, CE/FCC/RoHS compliant, serving B2B brands in 30+ countries.
+  - link "sensorbio Science — Sensor Bio How a PPG biometric sensor turns green, red and infrared light into heart rate, HRV and SpO2, and how product teams get raw multi-wavelength PPG data.":
+    - /url: https://sensorbio.com/science/
+    - generic: sensorbio
+    - generic: Science — Sensor Bio
+    - generic: How a PPG biometric sensor turns green, red and infrared light into heart rate, HRV and SpO2, and how product teams get raw multi-wavelength PPG data.
+  - link "github smart-ring/README.md at main · josearruticuanda/smart-ring Smart ring on a custom flex PCB. PPG sensing, on device HR/HRV/stress, nRF52832 firmware, BLE telemetry. - josearruticuanda/smart-ring":
+    - /url: https://github.com/josearruticuanda/smart-ring/blob/main/README.md
+    - generic: github
+    - generic: smart-ring/README.md at main · josearruticuanda/smart-ring
+    - generic: Smart ring on a custom flex PCB. PPG sensing, on device HR/HRV/stress, nRF52832 firmware, BLE telemetry. - josearruticuanda/smart-ring
+  - link "longvon Smart Ring Technology & Development Partner SDK and cloud API integration — including pathways to 100Hz PPG raw data for qualified partners — are available as project-scoped capabilities. See Smart Ring SDK & Cloud API for cooperation details. ... Evaluate 100Hz raw PPG via the partner SDK":
+    - /url: https://www.longvon.com/en/smart-ring-technology
+    - generic: longvon
+    - generic: Smart Ring Technology & Development
+    - generic: Partner SDK and cloud API integration — including pathways to 100Hz PPG raw data for qualified partners — are available as project-scoped capabilities. See Smart Ring SDK & Cloud API for cooperation details. ... Evaluate 100Hz raw PPG via the partner SDK
+  - link "longvon LONGVON | Smart Ring Manufacturer & OEM/ODM Provider SDK (partner access, project-scoped) ... Evaluate 100Hz raw PPG via the partner SDK":
+    - /url: https://www.longvon.com/en/smart-ring-manufacturer
+    - generic: longvon
+    - generic: LONGVON | Smart Ring Manufacturer & OEM/ODM Provider
+    - generic: SDK (partner access, project-scoped) ... Evaluate 100Hz raw PPG via the partner SDK
+  - 'link "github GitHub - josearruticuanda/smart-ring: Smart ring on a custom ... Smart ring on a custom flex PCB. PPG sensing, on device HR/HRV/stress, nRF52832 firmware, BLE telemetry. - josearruticuanda/smart-ring"':
+    - /url: https://github.com/josearruticuanda/smart-ring
+    - generic: github
+    - generic: "GitHub - josearruticuanda/smart-ring: Smart ring on a custom ..."
+    - generic: Smart ring on a custom flex PCB. PPG sensing, on device HR/HRV/stress, nRF52832 firmware, BLE telemetry. - josearruticuanda/smart-ring
+  - button "Pro 已启用高级搜索免费预览。 了解更多":
+    - generic: Pro
+    - generic: 已启用高级搜索免费预览。
+    - button "了解更多":
+      - generic: 了解更多
+  - status:
+    - generic: 您正处于隐身模式。
+    - button "退出隐身模式":
+      - generic: 退出无痕模式
+  - textbox "提出后续问题":
+    - paragraph
+  - generic: 提出后续问题
+  - button "添加文件、插件等":
+  - button "搜索" [pressed]:
+    - generic: 搜索
+  - button "Computer":
+    - generic: Computer
+  - button "模型":
+    - generic: 模型
+  - button "语音输入":
+  - button "提交" [disabled]:

@@ -1,0 +1,51 @@
+{
+  "targets": [
+    {
+      "label": "jointcorp\nJ-Style - Smart Ring Manufacturer | Screenless Smart Band ODM & OEM Factory\nJ-Style is a leading smart ring manufacturer and screenless smart band OEM/ODM factory in China. We provide full-stack wearable design, BLE health monitoring solutions, and large-scale production for global brands. Custom smart rings, fitness bands, and medical-grade sensors with reliable quality and fast delivery.",
+      "url": "https://www.jointcorp.com/"
+    },
+    {
+      "label": "longvon\nSmart Ring OEM & ODM Services - LONGVON\nLONGVON · Smart Ring Manufacturer · OEM/ODM LONGVON (Longvon Technology (Shenzhen) Co., Ltd.) is a smart ring technology manufacturer and OEM/ODM provider. ... MATEYOU is a smart ring and AI health brand developed by LONGVON. ... LONGVON Technology (Shenzhen) Co., Ltd. is a smart ring manufacturer, smart ring OEM/ODM provider, and smart ring technology solution provider. LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in customized smart ring hardware,...",
+      "url": "https://www.longvon.com/en/smart-ring-oem-odm"
+    },
+    {
+      "label": "goodwaytechs\nOEM & ODM Health Smart Ring Solutions\nGoodway manufactures Smart Rings with health monitoring, ECG, SpO₂ and sleep tracking features. OEM, ODM and private label solutions available.",
+      "url": "https://www.goodwaytechs.com/smart-rings.html"
+    },
+    {
+      "label": "jointcorp\nSDK &API | Screenless Smart Band ODM & OEM Factory\nJ-STYLE provides a comprehensive SDK and API to help developers easily connect and manage health monitoring devices, integrating data collection, analysis",
+      "url": "https://www.jointcorp.com/sdk-api/"
+    },
+    {
+      "label": "longvon\nSmart Ring Technology & Development\nLONGVON · Smart Ring Manufacturer · OEM/ODM LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in customized smart ring hardware, firmware, mobile apps, SDKs, cloud APIs, and health monitoring solutions. ... Partner SDK and cloud API integration — including pathways to 100Hz PPG raw data for qualified partners — are available as project-scoped capabilities. See Smart Ring SDK & Cloud API for cooperation details. ... Partner SDK and cloud API depth is scoped per...",
+      "url": "https://www.longvon.com/en/smart-ring-technology"
+    },
+    {
+      "label": "longvon\nSmart Ring OSA Monitoring Technology & OEM/ODM Solutions\nLONGVON · Smart Ring Manufacturer · OEM/ODM LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in customized smart ring hardware, firmware, mobile apps, SDKs, cloud APIs, and health monitoring solutions. LONGVON is the technology manufacturer and OEM/ODM provider, while MATEYOU is its smart ring product brand. ... LONGVON positions as a medical-oriented smart ring technology and manufacturing partner for sleep respiratory and OSA-related monitoring programs:...",
+      "url": "https://www.longvon.com/en/osa-smart-ring-technology"
+    },
+    {
+      "label": "longvon\nSmart Ring Manufacturer & OEM/ODM | LONGVON\nLONGVON · Smart Ring Technology LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in customized smart ring hardware, firmware, mobile apps, SDKs, cloud APIs, and health monitoring solutions. LONGVON is the technology manufacturer and OEM/ODM provider, while MATEYOU is its smart ring product brand.",
+      "url": "https://www.longvon.com/en"
+    },
+    {
+      "label": "longvon\nAbout LONGVON | Smart Ring Technology Manufacturer\nLONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in customized smart ring hardware, firmware, mobile apps, SDKs, cloud APIs, and health monitoring solutions. ... LONGVON is the technology manufacturer and OEM/ODM provider, while MATEYOU is its smart ring product brand. ... Smart ring hardware, firmware, apps, SDKs, and cloud APIs",
+      "url": "https://www.longvon.com/en/about"
+    },
+    {
+      "label": "longvon\n智能戒指 SDK 与云端 API（合作伙伴）\nLONGVON · 智能戒指制造商 · OEM/ODM 龙汾科技（深圳）有限公司（LONGVON）是一家智能戒指制造商及 OEM/ODM 技术方案提供商，为品牌方和数字健康项目提供从硬件、固件、健康算法、移动 App、SDK/API 到生产制造的完整开发与交付能力。 LONGVON（龙汾科技）是技术制造商与 OEM/ODM 提供方，MATEYOU 是其智能戒指产品品牌。 LONGVON 可为品牌与数字健康团队提供智能戒指 SDK 对接能力，用于客户自有 App 或其他应用集成。开通方式为项目制合作，而非公开自助门户。 ... 设备 / 配套 SDK（含客户自有 App 集成评估） 云端 API 选项（数据接入与算法服务） ... LONGVON 是一家智能戒指技术制造商及 OEM/ODM 服务商，专注于智能戒指硬件、固件、移动 App、SDK、云端 API 及健康监测解决方案的定制开发与生产。MATEYOU 是其智能戒指产品品牌。公开口径：71 项健康监测参数，其中包含 22 项睡眠监测参数。",
+      "url": "https://www.longvon.com/smart-ring-sdk-api"
+    },
+    {
+      "label": "longvon\nSmart Ring Sleep Monitoring Technology | LONGVON\nLONGVON provides smart ring sleep monitoring technology for companies developing consumer health, digital health and sleep-related products, with OEM/ODM support covering hardware, firmware, algorithm",
+      "url": "https://www.longvon.com/en/smart-ring-sleep-monitoring"
+    },
+    {
+      "label": "manilatimes\nYouhong Medical (J-Style) Highlights Smart Wearables and AI-Powered Digital Health Solutions at MEDICA 2026\nFrom biosensing and smart wearable devices to AI-powered health insights and connected platforms, Youhong Medical presents an integrated approach to digital health at MEDICA 2026.",
+      "url": "https://www.manilatimes.net/2026/11/19/tmt-newswire/plentisoft/youhong-medical-j-style-highlights-smart-wearables-and-ai-powered-digital-health-solutions-at-medica-2026/2473923"
+    }
+  ],
+  "completeness": "UNKNOWN",
+  "reachability": "UNKNOWN",
+  "method": "visible DOM links only; domain labels are never expanded into guessed URLs"
+}

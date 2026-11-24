@@ -1,0 +1,53 @@
+{
+  "record_id": "19cb22c7-852f-5992-8a0d-307c62b43db7",
+  "query_id": "Q08",
+  "query": "smart ring raw PPG data for research",
+  "platform": "Google",
+  "mode": "ALL_FIRST_PAGE_AUTO_AI_OVERVIEW",
+  "observed_at": "2026-11-24T13:26:46.087Z",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "Chrome existing signed-in profile; hl=en; personalized results; country UNKNOWN; PR27 bounded AI receipt detector; collapsed overview scope",
+  "availability": "COMPLETED",
+  "longvon_present": false,
+  "organic_rank": null,
+  "ai_body_recommended": null,
+  "source_cited": null,
+  "cited_urls": [],
+  "competitors": [
+    {
+      "name": "J-Style / Jointcorp",
+      "url": "https://www.jointcorp.com/blog/smart-ring-oem/how-digital-health-companies-researchers-and-wearable-brands-can-access-raw-ppg-signals-from-smart-rings/",
+      "position": "web-result h3 #2",
+      "evidence_quote": "- link \"How Digital Health Companies, Researchers, and Wearable ... jointcorp.com https://www.jointcorp.com › blog › smart-ring-oem › h...\":"
+    },
+    {
+      "name": "BIOPAC",
+      "url": "https://www.biopac.com/product/research-ring/",
+      "position": "web-result h3 #4",
+      "evidence_quote": "- link \"Research Ring for Wearable Physiology | RESRING-PACK BIOPAC https://www.biopac.com › Products\":"
+    },
+    {
+      "name": "Sensor Bio",
+      "url": "https://sensorbio.com/the-signal/smart-ring-vs-smartwatch-ppg/",
+      "position": "web-result h3 #7",
+      "evidence_quote": "- link \"Ninenovo smart ring (MAIBO study hardware) - finger PPG chatppg.com https://chatppg.com › Research › Devices\":"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-24-round2/google-Q08.jpg",
+      "sha256": "0ad4194547422ea324fc95bdb054f17e11ac7bf98b4161b7b9409c21f1312c37"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/google-Q08.json",
+      "sha256": "9c0d62d4b510aa1c7e0cfb0d6b132fccd359a0ead34b1bd831a57f824f6b2aed"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/google-Q08.txt",
+      "sha256": "284f7f2484885f741aeaa4e5603ae21cd0c7b3956b6c6c4f899176df2200c0bf"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "New round2 capture; environment/method differs from round1: no comparable previous_record_id and no ranking-growth attribution. Citations prove visible URLs only; reachability and commercial facts UNKNOWN."
+}

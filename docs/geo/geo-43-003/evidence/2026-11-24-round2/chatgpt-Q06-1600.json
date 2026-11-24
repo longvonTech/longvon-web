@@ -1,0 +1,25 @@
+{
+  "captured_at": "2026-11-24T13:25:57.206Z",
+  "platform": "ChatGPT",
+  "mode": "DEFAULT_ANSWER",
+  "completion": "COMPLETE",
+  "country": "UNKNOWN",
+  "citation_targets": [],
+  "citation_reachability": "UNKNOWN",
+  "screenshot": "REQUIRES_VISUAL_REVIEW",
+  "bounds": {
+    "left": 521,
+    "right": 1143,
+    "viewport": 1428
+  },
+  "files": [
+    {
+      "name": "chatgpt-Q06-1600.txt",
+      "sha256": "8322607db337f621c384e10be09beab28370903ea7635d966498a9e69a65139b"
+    },
+    {
+      "name": "chatgpt-Q06-1600.jpg",
+      "sha256": "b85d11d4ccfcacf68f148d15b4ee80da9f0786a8bc04fd3d97a6c32c019bff85"
+    }
+  ]
+}

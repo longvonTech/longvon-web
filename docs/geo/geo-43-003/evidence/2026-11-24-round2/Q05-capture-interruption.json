@@ -1,0 +1,7 @@
+{
+  "recorded_at": "2026-11-24T13:24:53.123Z",
+  "query": "smart ring hardware firmware ODM partner",
+  "status": "INCOMPLETE_CAPTURE",
+  "reason": "AI finish returned pending but next query navigation was dispatched; no result inferred; explicit recovery capture needed",
+  "extra_dispatched_requests": 2
+}

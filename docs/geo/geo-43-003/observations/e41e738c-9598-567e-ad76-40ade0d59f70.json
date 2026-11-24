@@ -1,0 +1,69 @@
+{
+  "record_id": "e41e738c-9598-567e-ad76-40ade0d59f70",
+  "query_id": "Q07",
+  "query": "100Hz raw PPG smart ring SDK",
+  "platform": "ChatGPT",
+  "mode": "DEFAULT_ANSWER",
+  "observed_at": "2026-11-24T13:27:03.729Z",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "IAB logged out, new conversation per query; UI zh, query/answer en; model UNKNOWN; web-search invocation UNKNOWN; PR27 dual-height 1440x1000/1600 capture",
+  "availability": "COMPLETED",
+  "longvon_present": false,
+  "organic_rank": null,
+  "ai_body_recommended": false,
+  "source_cited": false,
+  "cited_urls": [
+    "https://www.ultrahuman.com/us/ultrasignal/?affiliateCode=jadeyb_fit&utm_source=chatgpt.com",
+    "https://o-ring.tech/?utm_source=chatgpt.com",
+    "https://sensorbio.com/platform/wearable-api/?utm_source=chatgpt.com"
+  ],
+  "competitors": [
+    {
+      "name": "Ultrahuman",
+      "url": "https://www.ultrahuman.com/us/ultrasignal/?affiliateCode=jadeyb_fit&utm_source=chatgpt.com",
+      "position": "explicit answer URL order",
+      "evidence_quote": "- /url: https://www.ultrahuman.com/us/ultrasignal/?affiliateCode=jadeyb_fit&utm_source=chatgpt.com"
+    },
+    {
+      "name": "O-Ring",
+      "url": "https://o-ring.tech/?utm_source=chatgpt.com",
+      "position": "explicit answer URL order",
+      "evidence_quote": "- /url: https://o-ring.tech/?utm_source=chatgpt.com"
+    },
+    {
+      "name": "Sensor Bio",
+      "url": "https://sensorbio.com/platform/wearable-api/?utm_source=chatgpt.com",
+      "position": "explicit answer URL order",
+      "evidence_quote": "- /url: https://sensorbio.com/platform/wearable-api/?utm_source=chatgpt.com"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q07-1000.jpg",
+      "sha256": "0628b1b0dd680e42bd7cf70485c8c4be17cfb3769937756cfa393a7d46476429"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q07-1000.json",
+      "sha256": "8747ff0f627e04219289b7301ce9673cf1800b6b1026b37516c88771c510be57"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q07-1000.txt",
+      "sha256": "5b2aea4042b1d7fbcaa3fb49a71fa6c5c0ffeffa62d4f67594fde27a15ce13dd"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q07-1600.jpg",
+      "sha256": "cd5df5ac05121d1b8570760ed4fcd7e918f2fd8d39d1aa718fa76f1a7308224e"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q07-1600.json",
+      "sha256": "b6d51550459d92eb69447bc57c7b05b1c8a1eca3f1680f7ccb9075d5ae11a70f"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q07-1600.txt",
+      "sha256": "5b2aea4042b1d7fbcaa3fb49a71fa6c5c0ffeffa62d4f67594fde27a15ce13dd"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "New round2 capture; environment/method differs from round1: no comparable previous_record_id and no ranking-growth attribution. Citations prove visible URLs only; reachability and commercial facts UNKNOWN."
+}

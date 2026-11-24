@@ -1,0 +1,18 @@
+test_clipping_rejected (test_capture_contract.CaptureTests) ... ok
+test_no_guessed_citation (test_capture_contract.CaptureTests) ... ok
+test_pending_ai_is_unknown (test_capture_contract.CaptureTests) ... ok
+test_search_needs_receipt (test_capture_contract.CaptureTests) ... ok
+test_z_compatible (test_capture_contract.CaptureTests) ... ok
+test_comparison_environment (test_record.RecorderTests) ... ok
+test_contradictory_rank (test_record.RecorderTests) ... ok
+test_evidence_tamper (test_record.RecorderTests) ... ok
+test_no_overwrite (test_record.RecorderTests) ... ok
+test_path_escape (test_record.RecorderTests) ... ok
+test_query_drift (test_record.RecorderTests) ... ok
+test_unavailable_is_not_absence (test_record.RecorderTests) ... ok
+test_unknown_fields (test_record.RecorderTests) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.011s
+
+OK

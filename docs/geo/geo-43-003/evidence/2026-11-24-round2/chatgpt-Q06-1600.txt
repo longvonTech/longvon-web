@@ -1,0 +1,340 @@
+- banner:
+  - button "登录"
+  - button "免费注册"
+- main:
+  - region "对话":
+    - list "对话":
+      - heading "你说：" [level=4]
+      - paragraph: smart ring manufacturer with SDK API
+      - button "复制":
+      - status
+      - heading "ChatGPT 说：" [active] [level=4]
+      - region "DIL content":
+        - paragraph:
+          - text: If you're looking for a
+          - generic: smart ring manufacturer that provides SDK/API access
+          - text: ", there are two categories worth considering:"
+        - list:
+          - paragraph:
+            - generic: OEM/ODM manufacturers
+            - text: – manufacture rings under your own brand and provide hardware, firmware, SDK, APIs and possibly a white-label app.
+          - paragraph:
+            - generic: Established smart ring brands
+            - text: – sell finished products and provide APIs for integrating health data into your application.
+        - paragraph: If you're developing your own wearable platform or smart ring brand, I'd prioritize OEM/ODM manufacturers with direct BLE SDK and cloud API access.
+        - heading "1. Smart ring OEM/ODM manufacturers" [level=2]
+        - paragraph: These are the manufacturers I'd contact first.
+        - 'img "Smart Ring Sensors Explained: PPG, Accelerometer, Temperature | MATEYOU Health Insights"'
+        - 'button "Open Smart Ring Sensors Explained: PPG, Accelerometer, Temperature | MATEYOU Health Insights"'
+        - paragraph:
+          - text: "1."
+          - button "LONGVON Technology"
+          - generic: LONGVON Technology
+          - text: (China)
+        - generic: Strong OEM candidate
+        - list:
+          - paragraph: Custom smart ring hardware and firmware
+          - paragraph: iOS and Android SDK (partner access)
+          - paragraph: Cloud API and health algorithms
+          - paragraph: White-label app and OEM manufacturing
+        - paragraph:
+          - text: "Website:"
+          - link "LONGVON SDK & technology":
+            - /url: https://www.longvon.com/en/smart-ring-technology?utm_source=chatgpt.com
+            - generic: LONGVON SDK &
+            - generic: technology
+        - paragraph:
+          - text: SDK/API access is project-specific.
+          - button "LONGVON +1":
+            - generic: LONGVON
+            - generic: "+1"
+        - img "JCRing | Official store | Smart ring to balance health"
+        - button "Open JCRing | Official store | Smart ring to balance health"
+        - paragraph:
+          - text: "2."
+          - button "J-Style / Jointcorp"
+          - generic: J-Style / Jointcorp
+          - text: (China)
+        - generic: Strong OEM candidate
+        - list:
+          - paragraph: Smart ring OEM/ODM
+          - paragraph: SDK and cloud API integration
+          - paragraph: Biometric data access
+          - paragraph: White-label app and cloud platform
+          - paragraph: Enterprise health dashboards
+        - paragraph:
+          - text: "Website:"
+          - link "Jointcorp official website":
+            - /url: https://www.jointcorp.com/?utm_source=chatgpt.com
+            - generic: Jointcorp official
+            - generic: website
+          - text: .
+          - button "智能戒指制造商 +1":
+            - generic: 智能戒指制造商
+            - generic: "+1"
+        - img "Search Las Vegas, NV | Nellis Auction"
+        - button "Open Search Las Vegas, NV | Nellis Auction"
+        - paragraph:
+          - text: "3."
+          - button "Geyan Technology"
+          - generic: Geyan Technology
+          - text: (China)
+        - list:
+          - paragraph: OEM/ODM smart ring manufacturing
+          - paragraph: Android and iOS SDK
+          - paragraph: Cloud API and health data API
+          - paragraph: Custom application development
+          - paragraph: Private-label solutions
+        - paragraph:
+          - text: "Website:"
+          - link "Geyan SDK/API solutions":
+            - /url: https://www.gysmartwatch.com/html/smart-ring-oem-sdk-api.html?utm_source=chatgpt.com
+            - generic: Geyan SDK/API
+            - generic: solutions
+          - text: .
+          - button "Geyan +1":
+            - generic: Geyan
+            - generic: "+1"
+        - img "This $169 Smart Ring Tracks 18 Sports Better Than Your $400 Smartwatch - Yanko Design"
+        - button "Open This $169 Smart Ring Tracks 18 Sports Better Than Your $400 Smartwatch - Yanko Design"
+        - paragraph:
+          - text: "4."
+          - button "IDOT RING / AOL Health"
+          - generic: IDOT RING / AOL Health
+          - text: (China)
+        - list:
+          - paragraph: Smart ring R&D and manufacturing
+          - paragraph: Sensor and firmware development
+          - paragraph: App and SDK/API integration assessment
+          - paragraph: Hardware customization
+        - paragraph:
+          - text: "Website:"
+          - link "IDOT RING":
+            - /url: https://idotring.com/en/?utm_source=chatgpt.com
+            - generic: IDOT
+            - generic: RING
+          - text: .
+          - button "AOL Health":
+            - generic: AOL Health
+        - heading "2. Established smart ring brands with APIs" [level=2]
+        - paragraph: These are useful if you want to integrate existing smart ring products rather than manufacture your own.
+        - img "「Oura Ring 4」が日本で正式に発売 フルチタン製、高級仕上げでカラーラインナップも拡大"
+        - button "Open 「Oura Ring 4」が日本で正式に発売 フルチタン製、高級仕上げでカラーラインナップも拡大"
+        - paragraph:
+          - button "Oura"
+          - generic: Oura
+        - list:
+          - paragraph: Official REST API V2
+          - paragraph: OAuth2 authentication
+          - paragraph: Sleep, HR, HRV, activity and temperature data
+          - paragraph: Webhooks
+        - paragraph:
+          - text: "Documentation:"
+          - link "Oura API V2":
+            - /url: https://cloud.ouraring.com/v2/docs?utm_source=chatgpt.com
+            - generic: Oura API
+            - generic: V2
+          - text: .
+          - button "Oura +1":
+            - generic: Oura
+            - generic: "+1"
+        - img "Ultrahuman Ring Air Size 08 Aster Black 170152"
+        - button "Open Ultrahuman Ring Air Size 08 Aster Black 170152"
+        - paragraph:
+          - button "Ultrahuman"
+          - generic: Ultrahuman
+        - list:
+          - paragraph: UltraSignal developer platform
+          - paragraph: Health data integration
+          - paragraph: Developer/enterprise partnership opportunities
+        - paragraph:
+          - text: "Website:"
+          - link "Ultrahuman":
+            - /url: https://www.ultrahuman.com/?utm_source=chatgpt.com
+            - generic: Ultrahuman
+          - text: . Ask for current SDK and API documentation.
+        - img "Discover Galaxy Ring Size 9 Titanium Silver | Samsung AU"
+        - button "Open Discover Galaxy Ring Size 9 Titanium Silver | Samsung AU"
+        - paragraph:
+          - button "Samsung"
+          - generic: Samsung
+        - list:
+          - paragraph: Galaxy Ring
+          - paragraph: Samsung Health Data SDK
+          - paragraph: Android integration
+        - paragraph:
+          - text: "Developer portal:"
+          - link "Samsung Health Developer":
+            - /url: https://developer.samsung.com/health?utm_source=chatgpt.com
+            - generic: Samsung Health
+            - generic: Developer
+          - text: .
+          - button "AIFitnessAPI":
+            - generic: AIFitnessAPI
+        - heading "3. Technical requirements to request from manufacturers" [level=2]
+        - paragraph: "If you are building your own app or health platform, I recommend asking for these capabilities:"
+        - table:
+          - rowgroup:
+            - row "Requirement What to request":
+              - columnheader "Requirement":
+                - paragraph: Requirement
+              - columnheader "What to request":
+                - paragraph: What to request
+            - row "Mobile SDK Android SDK + iOS SDK":
+              - cell "Mobile SDK":
+                - paragraph: Mobile SDK
+              - cell "Android SDK + iOS SDK":
+                - paragraph: Android SDK + iOS SDK
+            - row "Bluetooth BLE protocol documentation":
+              - cell "Bluetooth":
+                - paragraph: Bluetooth
+              - cell "BLE protocol documentation":
+                - paragraph: BLE protocol documentation
+            - row "Cloud API REST API":
+              - cell "Cloud API":
+                - paragraph: Cloud API
+              - cell "REST API":
+                - paragraph: REST API
+            - row "Heart rate Real-time HR":
+              - cell "Heart rate":
+                - paragraph: Heart rate
+              - cell "Real-time HR":
+                - paragraph: Real-time HR
+            - row "HRV Raw or processed HRV":
+              - cell "HRV":
+                - paragraph: HRV
+              - cell "Raw or processed HRV":
+                - paragraph: Raw or processed HRV
+            - row "Sleep Sleep stages and duration":
+              - cell "Sleep":
+                - paragraph: Sleep
+              - cell "Sleep stages and duration":
+                - paragraph: Sleep stages and duration
+            - row "SpO₂ Oxygen saturation":
+              - cell "SpO₂":
+                - paragraph: SpO₂
+              - cell "Oxygen saturation":
+                - paragraph: Oxygen saturation
+            - row "Temperature Skin temperature":
+              - cell "Temperature":
+                - paragraph: Temperature
+              - cell "Skin temperature":
+                - paragraph: Skin temperature
+            - row "Motion Raw accelerometer/gyroscope":
+              - cell "Motion":
+                - paragraph: Motion
+              - cell "Raw accelerometer/gyroscope":
+                - paragraph: Raw accelerometer/gyroscope
+            - row "Data ownership Access to raw sensor data":
+              - cell "Data ownership":
+                - paragraph: Data ownership
+              - cell "Access to raw sensor data":
+                - paragraph: Access to raw sensor data
+            - row "Customization Firmware and hardware customization":
+              - cell "Customization":
+                - paragraph: Customization
+              - cell "Firmware and hardware customization":
+                - paragraph: Firmware and hardware customization
+        - paragraph:
+          - generic: "Important:"
+          - text: Don't assume that a manufacturer offering an API provides raw sensor data. Some only provide processed health metrics. Ask for an SDK sample project and API documentation before committing to an order.
+        - heading "4. Let me narrow down the right manufacturers" [level=2]
+        - paragraph: "One important question: What is your intended project?"
+        - paragraph:
+          - generic: 1. What are you looking to do?
+        - radiogroup "Options":
+          - radio "Manufacture my own smart ring brand" [checked]
+          - text: Manufacture my own smart ring brand
+          - radio "Buy existing rings and integrate their APIs"
+          - text: Buy existing rings and integrate their APIs
+          - radio "Develop a health platform connecting multiple ring brands"
+          - text: Develop a health platform connecting multiple ring brands
+          - radio "Research and development"
+          - text: Research and development
+        - paragraph:
+          - generic: 2. What data do you need?
+        - radiogroup "Options":
+          - radio "Raw sensor data + processed health data" [checked]
+          - text: Raw sensor data + processed health data
+          - radio "Processed health metrics only"
+          - text: Processed health metrics only
+          - radio "Full BLE access and firmware-level integration"
+          - text: Full BLE access and firmware-level integration
+          - radio "All available data and algorithms"
+          - text: All available data and algorithms
+        - paragraph:
+          - generic: 3. Expected initial quantity
+        - radiogroup "Options":
+          - radio "Prototype / 1–100"
+          - text: Prototype / 1–100
+          - radio "100–1,000"
+          - text: 100–1,000
+          - radio "1,000–5,000" [checked]
+          - text: 1,000–5,000
+          - radio "10,000+"
+          - text: 10,000+
+        - paragraph:
+          - generic: 4. Mobile platform
+        - radiogroup "Options":
+          - radio "Both iOS and Android" [checked]
+          - text: Both iOS and Android
+          - radio "iOS only"
+          - text: iOS only
+          - radio "Android only"
+          - text: Android only
+          - radio "Cloud API only"
+          - text: Cloud API only
+        - button "Find matching manufacturers":
+          - generic: Find matching manufacturers
+        - paragraph: I can then narrow this down to manufacturers with genuine developer integration capabilities, rather than factories that only advertise SDK/API support.
+      - status
+      - group "回复操作":
+        - button "复制回复":
+        - status
+        - button "回复优秀":
+        - button "回复不佳":
+        - status
+        - button "分享":
+        - button "更多操作":
+    - paragraph:
+      - generic: ChatGPT 是 AI，可能会犯错。
+- navigation "Sidebar shortcuts":
+  - link "ChatGPT 徽标":
+    - /url: /
+    - img "ChatGPT"
+  - navigation "侧边栏":
+    - link "新聊天":
+      - /url: /?noauth_recent_chat_failed=1
+      - generic: 新聊天
+    - link "图像":
+      - /url: /images
+      - generic: 图像
+    - link "插件":
+      - /url: /plugins?plugins_landing=1
+      - generic: 插件
+    - link "查看套餐和定价":
+      - /url: https://openai.com/chatgpt/pricing/
+      - generic: 查看套餐和定价
+    - link "帮助":
+      - /url: https://help.openai.com/zh-hans-cn/collections/3742473-chatgpt
+      - generic: 帮助
+    - button "深度研究":
+      - generic: 深度研究
+    - link "设置":
+      - /url: /settings
+      - generic: 设置
+- complementary "侧边栏":
+  - button "关闭边栏":
+  - heading "获取为你量身定制的回复" [level=2]
+  - paragraph: 登录以获取基于已保存聊天的回答，并可创建图像和上传文件。
+  - button "登录":
+    - generic: 登录
+- contentinfo:
+  - generic: 与 ChatGPT 聊天
+  - textbox "与 ChatGPT 聊天":
+    - /placeholder: 询问 ChatGPT
+  - button "添加文件等":
+  - button "开始听写":
+  - button "发送消息" [disabled]:
+- alert
+- status

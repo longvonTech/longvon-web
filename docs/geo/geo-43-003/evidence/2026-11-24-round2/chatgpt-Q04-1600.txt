@@ -1,0 +1,272 @@
+- banner:
+  - button "登录"
+  - button "免费注册"
+- main:
+  - region "对话":
+    - list "对话":
+      - heading "你说：" [level=4]
+      - paragraph: custom smart ring development company
+      - button "复制":
+      - status
+      - heading "ChatGPT 说：" [active] [level=4]
+      - region "DIL content":
+        - paragraph:
+          - text: If you're looking for a
+          - generic: company that can design, develop, and manufacture a fully customized smart ring under your own brand
+          - text: ", I would shortlist the following companies."
+        - paragraph: Most established smart ring OEM/ODM manufacturers are based in Shenzhen, Dongguan, or other manufacturing hubs in China.
+        - heading "Recommended custom smart ring development companies" [level=2]
+        - 'img "Smart Ring Sensors Explained: PPG, Accelerometer, Temperature | MATEYOU Health Insights"'
+        - 'button "Open Smart Ring Sensors Explained: PPG, Accelerometer, Temperature | MATEYOU Health Insights"'
+        - paragraph:
+          - text: "1."
+          - button "LONGVON"
+          - generic: LONGVON
+        - generic: End-to-end development
+        - list:
+          - paragraph: Custom hardware and sensor integration
+          - paragraph: Firmware and health algorithms
+          - paragraph: Mobile app, SDK and cloud API
+          - paragraph: OEM/ODM manufacturing
+        - paragraph:
+          - text: "Website:"
+          - link "LONGVON":
+            - /url: https://www.longvon.com/en/smart-ring-solution-provider?utm_source=chatgpt.com
+            - generic: LONGVON
+        - img "产品中心_奔啦啦智能科技"
+        - button "Open 产品中心_奔啦啦智能科技"
+        - paragraph:
+          - text: "2."
+          - button "Bonlala"
+          - generic: Bonlala
+        - list:
+          - paragraph: Custom industrial design
+          - paragraph: Hardware and MCU development
+          - paragraph: Sensor calibration and algorithms
+          - paragraph: Companion app development
+          - paragraph: Large-scale production
+        - paragraph:
+          - text: "Website:"
+          - link "Bonlala":
+            - /url: https://bonlala.com/?utm_source=chatgpt.com
+            - generic: Bonlala
+        - img "Titanium Steel Smart Ring with Health Monitoring, IP68 Waterproof, and Multi-sport Modes | BIG W"
+        - button "Open Titanium Steel Smart Ring with Health Monitoring, IP68 Waterproof, and Multi-sport Modes | BIG W"
+        - paragraph:
+          - text: "3."
+          - button "COMI"
+          - generic: COMI
+        - list:
+          - paragraph: Custom titanium, steel and ceramic designs
+          - paragraph: Modular sensor configurations
+          - paragraph: NFC and smart interaction features
+          - paragraph: SDK and manufacturing support
+        - paragraph:
+          - text: "Website:"
+          - link "COMI customized services":
+            - /url: https://comiring.com/customized-service/?utm_source=chatgpt.com
+            - generic: COMI customized
+            - generic: services
+        - img "新一代智能戒指搭载Nordic nRF54L15系统级芯片，实现无与伦比的处理性能与功耗表现 - 芯师爷"
+        - button "Open 新一代智能戒指搭载Nordic nRF54L15系统级芯片，实现无与伦比的处理性能与功耗表现 - 芯师爷"
+        - paragraph:
+          - text: "4."
+          - button "AOL Health / IDOT RING"
+          - generic: AOL Health / IDOT RING
+        - list:
+          - paragraph: Product definition and custom development
+          - paragraph: PCB and embedded engineering
+          - paragraph: AI algorithms and sensor integration
+          - paragraph: App, SDK and API development
+          - paragraph: Pilot production and mass manufacturing
+        - paragraph:
+          - text: "Website:"
+          - link "AOL Health":
+            - /url: https://idotring.com/en/?utm_source=chatgpt.com
+            - generic: AOL
+            - generic: Health
+        - img "EysRing | Smart Rings & Screen-Free Health Trackers"
+        - button "Open EysRing | Smart Rings & Screen-Free Health Trackers"
+        - paragraph:
+          - text: "5."
+          - button "EngraSun"
+          - generic: EngraSun
+        - list:
+          - paragraph: Industrial and mechanical design
+          - paragraph: Hardware and firmware development
+          - paragraph: Custom mobile applications
+          - paragraph: Assembly and mass production
+        - paragraph:
+          - text: "Website:"
+          - link "EngraSun":
+            - /url: https://engrasun.com/?utm_source=chatgpt.com
+            - generic: EngraSun
+        - heading "What can you customize?" [level=2]
+        - paragraph: "A professional smart ring development project can include:"
+        - img "Amazfit Helio Ring joins the fray with a focus on athletes’ well-being - Yanko Design"
+        - button "Open Amazfit Helio Ring joins the fray with a focus on athletes’ well-being - Yanko Design"
+        - 'img "Circul Ring: 24/7 Health Tracking Ring | SpO2, Sleep & Fitness Ring – CIRCUL RING"'
+        - 'button "Open Circul Ring: 24/7 Health Tracking Ring | SpO2, Sleep & Fitness Ring – CIRCUL RING"'
+        - img "RingConn Charging Dock | Effortless Magnetic Smart Ring Charger"
+        - button "Open RingConn Charging Dock | Effortless Magnetic Smart Ring Charger"
+        - generic: "15"
+        - table:
+          - rowgroup:
+            - row "Component Customization":
+              - columnheader "Component":
+                - paragraph: Component
+              - columnheader "Customization":
+                - paragraph: Customization
+            - row "Exterior Titanium, stainless steel, ceramic":
+              - cell "Exterior":
+                - paragraph: Exterior
+              - cell "Titanium, stainless steel, ceramic":
+                - paragraph: Titanium, stainless steel, ceramic
+            - row "Sensors PPG, SpO2, temperature, accelerometer":
+              - cell "Sensors":
+                - paragraph: Sensors
+              - cell "PPG, SpO2, temperature, accelerometer":
+                - paragraph: PPG, SpO2, temperature, accelerometer
+            - row "Electronics Custom PCB, chipset, battery":
+              - cell "Electronics":
+                - paragraph: Electronics
+              - cell "Custom PCB, chipset, battery":
+                - paragraph: Custom PCB, chipset, battery
+            - row "Software Firmware and algorithms":
+              - cell "Software":
+                - paragraph: Software
+              - cell "Firmware and algorithms":
+                - paragraph: Firmware and algorithms
+            - row "App iOS and Android":
+              - cell "App":
+                - paragraph: App
+              - cell "iOS and Android":
+                - paragraph: iOS and Android
+            - row "Connectivity Bluetooth, SDK, cloud API":
+              - cell "Connectivity":
+                - paragraph: Connectivity
+              - cell "Bluetooth, SDK, cloud API":
+                - paragraph: Bluetooth, SDK, cloud API
+            - row "Charging Magnetic or wireless charging":
+              - cell "Charging":
+                - paragraph: Charging
+              - cell "Magnetic or wireless charging":
+                - paragraph: Magnetic or wireless charging
+            - row "Branding Logo, packaging, colors":
+              - cell "Branding":
+                - paragraph: Branding
+              - cell "Logo, packaging, colors":
+                - paragraph: Logo, packaging, colors
+        - heading "Let me narrow down the right manufacturer" [level=2]
+        - paragraph: I have four important questions to identify the best development partner.
+        - paragraph:
+          - generic: 1. What type of development do you need?
+        - radiogroup "Options":
+          - radio "Fully custom smart ring from scratch" [checked]
+          - text: Fully custom smart ring from scratch
+          - radio "Existing ring with customized hardware"
+          - text: Existing ring with customized hardware
+          - radio "Existing ring with customized branding and app"
+          - text: Existing ring with customized branding and app
+          - radio "New technology and proprietary smart ring"
+          - text: New technology and proprietary smart ring
+        - paragraph:
+          - generic: 2. Which features do you want?
+        - paragraph: Select all that apply.
+        - checkbox "Heart rate" [checked]
+        - generic: Heart rate
+        - checkbox "Sleep tracking" [checked]
+        - generic: Sleep tracking
+        - checkbox "Blood oxygen (SpO2)" [checked]
+        - generic: Blood oxygen (SpO2)
+        - checkbox "Body temperature" [checked]
+        - generic: Body temperature
+        - checkbox "HRV and stress"
+        - generic: HRV and stress
+        - checkbox "ECG"
+        - generic: ECG
+        - checkbox "NFC payments"
+        - generic: NFC payments
+        - checkbox "Gesture control"
+        - generic: Gesture control
+        - checkbox "Other / proprietary technology"
+        - generic: Other / proprietary technology
+        - paragraph:
+          - generic: 3. Expected initial production quantity
+        - radiogroup "Options":
+          - radio "100–500 units"
+          - text: 100–500 units
+          - radio "500–1,000 units"
+          - text: 500–1,000 units
+          - radio "1,000–5,000 units" [checked]
+          - text: 1,000–5,000 units
+          - radio "5,000–20,000 units"
+          - text: 5,000–20,000 units
+          - radio "20,000+ units"
+          - text: 20,000+ units
+        - paragraph:
+          - generic: 4. Estimated development budget
+        - radiogroup "Options":
+          - radio "Under $10,000"
+          - text: Under $10,000
+          - radio "$10,000–$20,000"
+          - text: $10,000–$20,000
+          - radio "$20,000–$50,000" [checked]
+          - text: $20,000–$50,000
+          - radio "$50,000–$100,000"
+          - text: $50,000–$100,000
+          - radio "$100,000+"
+          - text: $100,000+
+        - button "Find suitable development companies":
+          - generic: Find suitable development companies
+        - paragraph: I can then narrow this down to manufacturers that can actually handle your project, rather than companies that only sell ready-made smart rings.
+      - status
+      - group "回复操作":
+        - button "复制回复":
+        - status
+        - button "回复优秀":
+        - button "回复不佳":
+        - status
+        - button "分享":
+    - paragraph:
+      - generic: ChatGPT 是 AI，可能会犯错。
+- navigation "Sidebar shortcuts":
+  - link "ChatGPT 徽标":
+    - /url: /
+    - img "ChatGPT"
+  - navigation "侧边栏":
+    - link "新聊天":
+      - /url: /?noauth_recent_chat_failed=1
+      - generic: 新聊天
+    - link "图像":
+      - /url: /images
+      - generic: 图像
+    - link "插件":
+      - /url: /plugins?plugins_landing=1
+      - generic: 插件
+    - link "查看套餐和定价":
+      - /url: https://openai.com/chatgpt/pricing/
+      - generic: 查看套餐和定价
+    - link "帮助":
+      - /url: https://help.openai.com/zh-hans-cn/collections/3742473-chatgpt
+      - generic: 帮助
+    - button "深度研究":
+      - generic: 深度研究
+    - link "设置":
+      - /url: /settings
+      - generic: 设置
+- complementary "侧边栏":
+  - button "关闭边栏":
+  - heading "获取为你量身定制的回复" [level=2]
+  - paragraph: 登录以获取基于已保存聊天的回答，并可创建图像和上传文件。
+  - button "登录":
+    - generic: 登录
+- contentinfo:
+  - generic: 与 ChatGPT 聊天
+  - textbox "与 ChatGPT 聊天":
+    - /placeholder: 询问 ChatGPT
+  - button "添加文件等":
+  - button "开始听写":
+  - button "发送消息" [disabled]:
+- alert
+- status

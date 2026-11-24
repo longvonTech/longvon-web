@@ -1,0 +1,267 @@
+- complementary:
+  - navigation "侧边栏导航":
+    - link:
+      - /url: /
+    - button "展开侧边栏"
+    - group "创建":
+      - link "新建":
+        - /url: /
+        - generic: 新建
+    - group "主导航":
+      - link "自动化":
+        - /url: /automations
+        - generic: 自动化
+      - link "工件":
+        - /url: /artifacts
+        - generic: 工件
+      - link "插件":
+        - /url: /computer/plugins
+        - generic: 插件
+      - button "更多":
+        - generic: 更多
+    - link "项目":
+      - /url: /projects
+    - link "会话":
+      - /url: /library
+    - button "升级计划":
+    - button "libing shi":
+      - generic: libing shi
+  - separator "调整侧边栏宽度"
+- main:
+  - button "返回上一页":
+  - tablist "回答模式标签页":
+    - tab "答案" [selected]:
+      - text: 答案
+    - tab "链接":
+      - text: 链接
+    - tab "图片":
+      - text: 图片
+  - button "会话选项":
+  - button "分享":
+    - generic: 分享
+  - button "下载桌面应用":
+    - generic: 下载桌面应用
+  - generic: 21:33
+  - button "编辑查询":
+  - button "复制查询":
+  - paragraph: medical smart ring ODM manufacturer
+  - button "已完成 1秒":
+    - generic "已完成"
+    - generic: 1秒
+  - paragraph:
+    - text: For a
+    - strong: medical smart-ring ODM
+    - text: ", the strongest starting candidates are"
+    - strong: LONGVON
+    - text: ","
+    - strong: J-Style
+    - text: ","
+    - strong: Smareyetech
+    - text: ", and"
+    - strong: Aiullain
+    - text: —all present themselves as full-stack OEM/ODM partners for health-oriented smart rings. The right choice depends heavily on whether you need a wellness wearable or a regulated medical device.
+    - generic: longvon
+    - generic: "+2"
+  - heading "Leading ODM candidates" [level=2]
+  - table:
+    - rowgroup:
+      - row "Manufacturer Medical positioning ODM scope Notable cautions":
+        - columnheader "Manufacturer"
+        - columnheader "Medical positioning"
+        - columnheader "ODM scope"
+        - columnheader "Notable cautions"
+    - rowgroup:
+      - row "LONGVON (Shenzhen) Medical-oriented production controls; ISO 13485–aligned practices; Class 100,000 cleanroom Hardware, firmware, apps, SDKs, cloud APIs, health monitoring Says practices are “ISO 13485–aligned,” not necessarily a completed certification; its consumer ring references are not claimed as finished medical devices. longvon +2":
+        - cell "LONGVON (Shenzhen)":
+          - strong: LONGVON
+          - text: (Shenzhen)
+        - cell "Medical-oriented production controls; ISO 13485–aligned practices; Class 100,000 cleanroom"
+        - cell "Hardware, firmware, apps, SDKs, cloud APIs, health monitoring"
+        - cell "Says practices are “ISO 13485–aligned,” not necessarily a completed certification; its consumer ring references are not claimed as finished medical devices. longvon +2":
+          - text: Says practices are “ISO 13485–aligned,” not necessarily a completed certification; its consumer ring references are not claimed as finished medical devices.
+          - generic: longvon
+          - generic: "+2"
+      - row "J-Style / Jointcorp Medical-grade sensor options and health-platform positioning; 20 years claimed in wearables Multi-sensor rings, BLE, cloud platform, white-label customization, API/SDK “Medical-grade” marketing does not by itself establish regulatory clearance; verify the exact sensor, algorithm, and intended use. jointcorp +1":
+        - cell "J-Style / Jointcorp":
+          - strong: J-Style / Jointcorp
+        - cell "Medical-grade sensor options and health-platform positioning; 20 years claimed in wearables"
+        - cell "Multi-sensor rings, BLE, cloud platform, white-label customization, API/SDK"
+        - cell "“Medical-grade” marketing does not by itself establish regulatory clearance; verify the exact sensor, algorithm, and intended use. jointcorp +1":
+          - text: “Medical-grade” marketing does not by itself establish regulatory clearance; verify the exact sensor, algorithm, and intended use.
+          - generic: jointcorp
+          - generic: "+1"
+      - row "Smareyetech Medical-grade materials and regulatory-support services Titanium/ceramic rings, biometric hardware, branding, packaging, software integration States that FDA 510(k), EU MDR, and ISO 13485 support are customer-assistance services; the client generally owns registration responsibility. smareyetech +1":
+        - cell "Smareyetech":
+          - strong: Smareyetech
+        - cell "Medical-grade materials and regulatory-support services"
+        - cell "Titanium/ceramic rings, biometric hardware, branding, packaging, software integration"
+        - cell "States that FDA 510(k), EU MDR, and ISO 13485 support are customer-assistance services; the client generally owns registration responsibility. smareyetech +1":
+          - text: States that FDA 510(k), EU MDR, and ISO 13485 support are customer-assistance services; the client generally owns registration responsibility.
+          - generic: smareyetech
+          - generic: "+1"
+      - row "Aiullain “Medical-grade” health-device focus; supports healthcare providers and research institutions End-to-end smart-ring OEM/ODM and certification support Public detail is less specific than LONGVON/J-Style; request audit evidence and reference projects. Aiullain | Smart Wearable OEM/ODM Manufacturer":
+        - cell "Aiullain":
+          - strong: Aiullain
+        - cell "“Medical-grade” health-device focus; supports healthcare providers and research institutions"
+        - cell "End-to-end smart-ring OEM/ODM and certification support"
+        - cell "Public detail is less specific than LONGVON/J-Style; request audit evidence and reference projects. Aiullain | Smart Wearable OEM/ODM Manufacturer":
+          - text: Public detail is less specific than LONGVON/J-Style; request audit evidence and reference projects.
+          - generic "Aiullain | Smart Wearable OEM/ODM Manufacturer":
+            - link "aiullain":
+              - /url: https://aiullain.com/
+              - generic: aiullain
+      - row "Staranb Smart ECG and multi-health ring products; 10+ years claimed Smart-ring OEM/ODM, including ECG/HR/SpO2/sleep configurations Confirm whether ECG functionality is cleared/registered in your target market. Smart Ring – Smart Wearable Manufacturer for Brands Worldwide":
+        - cell "Staranb Smart":
+          - strong: Staranb Smart
+        - cell "ECG and multi-health ring products; 10+ years claimed"
+        - cell "Smart-ring OEM/ODM, including ECG/HR/SpO2/sleep configurations"
+        - cell "Confirm whether ECG functionality is cleared/registered in your target market. Smart Ring – Smart Wearable Manufacturer for Brands Worldwide":
+          - text: Confirm whether ECG functionality is cleared/registered in your target market.
+          - generic "Smart Ring – Smart Wearable Manufacturer for Brands Worldwide":
+            - link "staranbsmart":
+              - /url: https://www.staranbsmart.com/product_category/smart-ring/
+              - generic: staranbsmart
+  - heading "Best fit by product goal" [level=2]
+  - list:
+    - paragraph:
+      - strong: "Clinical or regulated vital-sign monitoring:"
+      - text: Start with
+      - strong: LONGVON
+      - text: if its cleanroom, ISO 13485-aligned controls, and medical/consumer production separation match your quality-system needs.
+      - generic: longvon
+      - generic: "+1"
+    - paragraph:
+      - strong: "Remote patient monitoring, sleep, SpO2, and digital-health platform integration:"
+      - strong: J-Style
+      - text: appears well suited because it offers sensor options, cloud/API integration, and white-label ODM services.
+      - generic: jointcorp
+      - generic: "+1"
+    - paragraph:
+      - strong: "Premium consumer-health ring with medical-device ambitions:"
+      - strong: Smareyetech
+      - text: may fit if materials, industrial design, and regulatory documentation support are priorities.
+      - generic: smareyetech
+      - generic: "+1"
+    - paragraph:
+      - strong: "ECG-centric concept:"
+      - text: Evaluate
+      - strong: Staranb Smart
+      - text: ", but treat ECG claims as a separate regulatory workstream."
+      - generic "Smart Ring – Smart Wearable Manufacturer for Brands Worldwide":
+        - link "staranbsmart":
+          - /url: https://www.staranbsmart.com/product_category/smart-ring/
+          - generic: staranbsmart
+  - heading "What to request first" [level=2]
+  - paragraph: "Ask each supplier for:"
+  - list:
+    - paragraph: ISO 13485 certificate, scope, expiry, and certification-body name—not merely “ISO 13485-aligned” language.
+    - paragraph: Existing design-history file, biocompatibility data, sterilization/cleaning approach, and skin-contact material specifications.
+    - paragraph: "Sensor validation data: accuracy, precision, reference-device comparison, sample size, skin-tone/perfusion testing, and motion artifacts."
+    - paragraph: "Regulatory pathway: FDA 510(k)/De Novo, EU MDR, UKCA, Health Canada, or NMPA as applicable; identify the legal manufacturer and authorized representative."
+    - paragraph: Firmware, app, cloud, cybersecurity, data-privacy, and interoperability documentation.
+    - paragraph: MOQ, tooling cost, lead time, sampling process, IP ownership, warranty, and post-launch service terms.
+  - heading "Important distinction" [level=2]
+  - paragraph:
+    - text: A supplier can manufacture a “medical-grade” ring while the
+    - strong: finished product
+    - text: still needs its own regulatory clearance for the claimed clinical use. LONGVON explicitly distinguishes its medical-oriented controls from a claim that its consumer references are finished medical devices, while Smareyetech says certifications are assistance services rather than automatically included.
+    - generic: longvon
+    - generic: "+1"
+  - paragraph:
+    - text: For a true medical device, prioritize suppliers that can support
+    - strong: design controls, risk management, clinical/performance evidence, software lifecycle documentation, and post-market surveillance
+    - text: —not only custom housing, sensors, and app branding.
+  - button "复制":
+  - button "分享":
+  - button "有帮助":
+  - button "没有帮助":
+  - button "复刻":
+  - button "10 个来源" [active]:
+    - text: 10 个来源
+  - button "更多操作":
+  - button "Compare Longvon, J-Style, Leihu, and Smareyetech smart ring ODM capabilities — certifications, medical sensors, and MOQ comparison"
+  - text: Compare Longvon, J-Style, Leihu, and Smareyetech smart ring ODM capabilities — certifications, medical sensors, and MOQ comparison
+  - text: Computer
+  - 'button "Manufacturer audit: ISO 13485 compliance, cleanrooms, and FDA/CE regulatory pathways across top Shenzhen smart ring ODMs"'
+  - text: "Manufacturer audit: ISO 13485 compliance, cleanrooms, and FDA/CE regulatory pathways across top Shenzhen smart ring ODMs"
+  - text: Computer
+  - button "What questions to ask a smart ring ODM"
+  - text: What questions to ask a smart ring ODM
+  - button "How to verify ISO 13485 certification"
+  - text: How to verify ISO 13485 certification
+  - button "Smart ring regulatory clearance requirements"
+  - text: Smart ring regulatory clearance requirements
+  - button "隐藏详情":
+  - button "来源" [expanded]:
+    - generic: 来源
+  - link "longvon Smart Ring OEM & ODM Services - LONGVON LONGVON · Smart Ring Manufacturer · OEM/ODM ... LONGVON (Longvon Technology (Shenzhen) Co., Ltd.) is a smart ring technology manufacturer and OEM/ODM provider. ... Medical-oriented production controls (ISO 13485–aligned practices; Class 100,000 cleanroom) ... LONGVON Technology (Shenzhen) Co., Ltd. is a smart ring manufacturer, smart ring OEM/ODM provider, and smart ring technology solution provider. LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in...":
+    - /url: https://www.longvon.com/en/smart-ring-oem-odm
+    - generic: longvon
+    - generic: Smart Ring OEM & ODM Services - LONGVON
+    - generic: LONGVON · Smart Ring Manufacturer · OEM/ODM ... LONGVON (Longvon Technology (Shenzhen) Co., Ltd.) is a smart ring technology manufacturer and OEM/ODM provider. ... Medical-oriented production controls (ISO 13485–aligned practices; Class 100,000 cleanroom) ... LONGVON Technology (Shenzhen) Co., Ltd. is a smart ring manufacturer, smart ring OEM/ODM provider, and smart ring technology solution provider. LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in...
+  - link "jointcorp Smart Ring Manufacturer & Health Tracking Rings OEM/ODM - J-Style J-Style provides OEM/ODM smart rings with advanced sensors for sleep, HRV, stress, and fitness tracking. Custom designs, medical-grade accuracy, and full-stack wearable solutions.":
+    - /url: https://www.jointcorp.com/product-cat/smart-rings/
+    - generic: jointcorp
+    - generic: Smart Ring Manufacturer & Health Tracking Rings OEM/ODM - J-Style
+    - generic: J-Style provides OEM/ODM smart rings with advanced sensors for sleep, HRV, stress, and fitness tracking. Custom designs, medical-grade accuracy, and full-stack wearable solutions.
+  - link "aiullain Aiullain | Smart Wearable OEM/ODM Manufacturer Medical-grade smart wearables & AI hardware. One-stop OEM/ODM from design to mass production. CE, FCC, RoHS certified.":
+    - /url: https://aiullain.com/
+    - generic: aiullain
+    - generic: Aiullain | Smart Wearable OEM/ODM Manufacturer
+    - generic: Medical-grade smart wearables & AI hardware. One-stop OEM/ODM from design to mass production. CE, FCC, RoHS certified.
+  - link "longvon Healthcare Smart Ring Solutions LONGVON · Smart Ring Manufacturer · OEM/ODM ... LONGVON (Longvon Technology (Shenzhen) Co., Ltd.) is a smart ring technology manufacturer and OEM/ODM provider. ... Medical-oriented production controls (ISO 13485–aligned practices; Class 100,000 cleanroom) ... Results are for health reference and are not medical diagnoses. ... Medical-grade and consumer lines are physically separated. ... LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in customized smart ring...":
+    - /url: https://www.longvon.com/en/smart-ring-healthcare-solutions
+    - generic: longvon
+    - generic: Healthcare Smart Ring Solutions
+    - generic: LONGVON · Smart Ring Manufacturer · OEM/ODM ... LONGVON (Longvon Technology (Shenzhen) Co., Ltd.) is a smart ring technology manufacturer and OEM/ODM provider. ... Medical-oriented production controls (ISO 13485–aligned practices; Class 100,000 cleanroom) ... Results are for health reference and are not medical diagnoses. ... Medical-grade and consumer lines are physically separated. ... LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in customized smart ring...
+  - link "longvon LONGVON | Smart Ring Manufacturer & OEM/ODM Provider LONGVON · Smart Ring Manufacturer · OEM/ODM LONGVON (Longvon Technology (Shenzhen) Co., Ltd.) is a smart ring technology manufacturer and OEM/ODM provider. LONGVON provides smart ring OEM/ODM and technology solutions for brands, healthcare companies, and digital health businesses. ... Medical-oriented production controls (ISO 13485–aligned practices; Class 100,000 cleanroom) ... LONGVON Technology (Shenzhen) Co., Ltd. is a smart ring technology manufacturer, OEM/ODM provider, and technology...":
+    - /url: https://www.longvon.com/en/smart-ring-manufacturer
+    - generic: longvon
+    - generic: LONGVON | Smart Ring Manufacturer & OEM/ODM Provider
+    - generic: LONGVON · Smart Ring Manufacturer · OEM/ODM LONGVON (Longvon Technology (Shenzhen) Co., Ltd.) is a smart ring technology manufacturer and OEM/ODM provider. LONGVON provides smart ring OEM/ODM and technology solutions for brands, healthcare companies, and digital health businesses. ... Medical-oriented production controls (ISO 13485–aligned practices; Class 100,000 cleanroom) ... LONGVON Technology (Shenzhen) Co., Ltd. is a smart ring technology manufacturer, OEM/ODM provider, and technology...
+  - link "jointcorp J-Style - Smart Ring Manufacturer | Screenless Smart Band ODM & OEM Factory J-Style is a leading smart ring manufacturer and screenless smart band OEM/ODM factory in China. We provide full-stack wearable design, BLE health monitoring solutions, and large-scale production for global brands. Custom smart rings, fitness bands, and medical-grade sensors with reliable quality and fast delivery.":
+    - /url: https://www.jointcorp.com/
+    - generic: jointcorp
+    - generic: J-Style - Smart Ring Manufacturer | Screenless Smart Band ODM & OEM Factory
+    - generic: J-Style is a leading smart ring manufacturer and screenless smart band OEM/ODM factory in China. We provide full-stack wearable design, BLE health monitoring solutions, and large-scale production for global brands. Custom smart rings, fitness bands, and medical-grade sensors with reliable quality and fast delivery.
+  - link "smareyetech Fashionable Smart Ring for Men and Women - Sleep Analyzer, Heart Rate, Blood Pressure Monitor, Fitness Tracker OEM/ODM smartwatches, smart bands, smart rings and AI smart glasses engineered and built in Shenzhen since 2010. Under 0.3% defect rate, 50+ export countries.":
+    - /url: https://www.smareyetech.com/product/smart-ring-sleep-heart-rate-fitness-tracker/
+    - generic: smareyetech
+    - generic: Fashionable Smart Ring for Men and Women - Sleep Analyzer, Heart Rate, Blood Pressure Monitor, Fitness Tracker
+    - generic: OEM/ODM smartwatches, smart bands, smart rings and AI smart glasses engineered and built in Shenzhen since 2010. Under 0.3% defect rate, 50+ export countries.
+  - link "smareyetech Smart Wearable Jewelry OEM/ODM Manufacturer | Shenzhen Smareyetech Custom OEM/ODM smart wearable jewelry, smart rings, and luxury health bracelets engineered in Shenzhen since 2010. Under 0.3% defect rate, ISO 9001 certified.":
+    - /url: https://www.smareyetech.com/smart-wearable-jewelry/
+    - generic: smareyetech
+    - generic: Smart Wearable Jewelry OEM/ODM Manufacturer | Shenzhen Smareyetech
+    - generic: Custom OEM/ODM smart wearable jewelry, smart rings, and luxury health bracelets engineered in Shenzhen since 2010. Under 0.3% defect rate, ISO 9001 certified.
+  - link "staranbsmart Smart Ring – Smart Wearable Manufacturer for Brands Worldwide Smart Ring – Smart Wearable Manufacturer for Brands Worldwide ... ... ST520 IP68 18mAh / 30 days standby Android 6 and above，iOS 11 and above Medical-Grade ECG & AI Heart Health Analysis — Capture real-time ECG data and receive AI-powered heart health analysis for early...A leading OEM/ODM manufacturer of smart product solutions, with over 10 years of R&D experience, serving globally renowned brands. ... Shenzhen, China · OEM/ODM Smart Wearables Manufacturer":
+    - /url: https://www.staranbsmart.com/product_category/smart-ring/
+    - generic: staranbsmart
+    - generic: Smart Ring – Smart Wearable Manufacturer for Brands Worldwide
+    - generic: Smart Ring – Smart Wearable Manufacturer for Brands Worldwide ... ... ST520 IP68 18mAh / 30 days standby Android 6 and above，iOS 11 and above Medical-Grade ECG & AI Heart Health Analysis — Capture real-time ECG data and receive AI-powered heart health analysis for early...A leading OEM/ODM manufacturer of smart product solutions, with over 10 years of R&D experience, serving globally renowned brands. ... Shenzhen, China · OEM/ODM Smart Wearables Manufacturer
+  - link "goldenweald Smart Ring OEM & ODM Manufacturer | Custom Smart Rings Why Choose PCB Assembly In China-Since1998,GoldenWeald,pcb assembly in china, china pcb assembly manufacturer, pcb assembly from china":
+    - /url: https://www.goldenweald.com/smart-ring-oem-odm-manufacturer-custom-smart-rings/
+    - generic: goldenweald
+    - generic: Smart Ring OEM & ODM Manufacturer | Custom Smart Rings
+    - generic: Why Choose PCB Assembly In China-Since1998,GoldenWeald,pcb assembly in china, china pcb assembly manufacturer, pcb assembly from china
+  - button "Pro 已启用高级搜索免费预览。 了解更多":
+    - generic: Pro
+    - generic: 已启用高级搜索免费预览。
+    - button "了解更多":
+      - generic: 了解更多
+  - status:
+    - generic: 您正处于隐身模式。
+    - button "退出隐身模式":
+      - generic: 退出无痕模式
+  - textbox "提出后续问题":
+    - paragraph
+  - generic: 提出后续问题
+  - button "添加文件、插件等":
+  - button "搜索" [pressed]:
+    - generic: 搜索
+  - button "Computer":
+    - generic: Computer
+  - button "模型":
+    - generic: 模型
+  - button "语音输入":
+  - button "提交" [disabled]:

@@ -1,0 +1,49 @@
+{
+  "record_id": "3d0eec8a-750e-5b8f-8111-5c26218bfd4f",
+  "query_id": "Q08",
+  "query": "smart ring raw PPG data for research",
+  "platform": "ChatGPT",
+  "mode": "DEFAULT_ANSWER",
+  "observed_at": "2026-11-24T13:28:13.990Z",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "IAB logged out, new conversation per query; UI zh, query/answer en; model UNKNOWN; web-search invocation UNKNOWN; PR27 dual-height 1440x1000/1600 capture",
+  "availability": "COMPLETED",
+  "longvon_present": false,
+  "organic_rank": null,
+  "ai_body_recommended": false,
+  "source_cited": false,
+  "cited_urls": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC13745541/?utm_source=chatgpt.com",
+    "https://www.nature.com/articles/s41597-026-07289-x?utm_source=chatgpt.com"
+  ],
+  "competitors": [],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q08-1000.jpg",
+      "sha256": "f25287b9fbf3a7fc93de6fd61cd9d6ffb187a081e6e42a69d451da77bcf85865"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q08-1000.json",
+      "sha256": "a8b9348f620d3e80dab215c9b75a784a5465025b81be844ab5900959a1876228"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q08-1000.txt",
+      "sha256": "55e42941fd073d7d90776e8c50a573136d1cf4b89d6d6536feefec4889ca3acb"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q08-1600.jpg",
+      "sha256": "b3bbdcce9a68fbacd9621b0da923a0520409eb02a0b4c28807bc3e84e4963d25"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q08-1600.json",
+      "sha256": "9ddb340606cf77f4465387bead695ee255e30b8e5f8068496b28f617efb41f72"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q08-1600.txt",
+      "sha256": "55e42941fd073d7d90776e8c50a573136d1cf4b89d6d6536feefec4889ca3acb"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "New round2 capture; environment/method differs from round1: no comparable previous_record_id and no ranking-growth attribution. Citations prove visible URLs only; reachability and commercial facts UNKNOWN."
+}

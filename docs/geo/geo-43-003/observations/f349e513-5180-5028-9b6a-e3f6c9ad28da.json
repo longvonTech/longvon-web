@@ -1,0 +1,81 @@
+{
+  "record_id": "f349e513-5180-5028-9b6a-e3f6c9ad28da",
+  "query_id": "Q03",
+  "query": "private label smart ring manufacturer",
+  "platform": "Perplexity",
+  "mode": "INCOGNITO_SEARCH",
+  "observed_at": "2026-11-24T13:22:33.466Z",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "Chrome signed-in incognito Search; Pro free-preview label; UI zh, query/answer en; model UNKNOWN; PR27 visible source-panel DOM extraction",
+  "availability": "COMPLETED",
+  "longvon_present": false,
+  "organic_rank": null,
+  "ai_body_recommended": false,
+  "source_cited": false,
+  "cited_urls": [
+    "https://starkingsmartring.com/index.html",
+    "https://starkingsmartring.com/products/smart-rings/",
+    "https://www.gysmartwatch.com/html/private-label-smart-ring-oem.html",
+    "https://pineeon.com/products/smart-wearables/smart-rings/",
+    "https://magiwatch.com/",
+    "https://www.gysmartwatch.com/html/1057461929.html",
+    "https://szbingogroup.com/product-category/smart-ring/",
+    "https://pineeon.com/products/smart-wearables/",
+    "https://trendgateproducts.com/products/smart-wearables/smart-rings/",
+    "https://starkingsmartring.com/smart-rings.html",
+    "https://www.indexbox.io/blog/smart-light-bulbs-kit-market-forecast-to-2035-growth-driven-by-home-security-and-automation-integration/"
+  ],
+  "competitors": [
+    {
+      "name": "STAR KING / Pineeon (as displayed)",
+      "url": "https://starkingsmartring.com/index.html",
+      "position": "visible sources item #1",
+      "evidence_quote": "starkingsmartring\nPrivate Label Smart Wearable Manufacturer (OEM/ODM) | Pineeon\nPineeon is a Shenzhen smart ring & wearable OEM/ODM manufacturer. Private-label smart rings, watches, bands and AI hardware for global brands — from sampling to certified mass production."
+    },
+    {
+      "name": "Geyan",
+      "url": "https://www.gysmartwatch.com/html/private-label-smart-ring-oem.html",
+      "position": "visible sources item #3",
+      "evidence_quote": "gysmartwatch\nPrivate Label Smart Ring Manufacturing - Geyan Technology\nPrivate Label Smart Ring Manufacturing: Complete OEM & ODM Solutions for Global Brands，Why Private Label Smart Rings Are Gaining Popularity"
+    },
+    {
+      "name": "Pineeon",
+      "url": "https://pineeon.com/products/smart-wearables/smart-rings/",
+      "position": "visible sources item #4",
+      "evidence_quote": "pineeon\nSmart Ring OEM/ODM Manufacturer | Pineeon\nExplore Pineeon smart ring OEM/ODM and private label options. Review customization, sample evaluation and quotation requirements for your brand."
+    },
+    {
+      "name": "MagiWatch",
+      "url": "https://magiwatch.com/",
+      "position": "visible sources item #5",
+      "evidence_quote": "magiwatch\nMagiWatch: Smart Wearable Manufacturer | OEM & ODM\nSource smart watches, smart rings and smart glasses from MagiWatch for OEM, ODM, private label and wholesale programs. Request a model-specific quote."
+    },
+    {
+      "name": "Bingo",
+      "url": "https://szbingogroup.com/product-category/smart-ring/",
+      "position": "visible sources item #7",
+      "evidence_quote": "szbingogroup\nSmart Ring Manufacturer | OEM ODM Custom Private Label\nChina factory of health smart rings. OEM ODM Custom logo, size & packaging. CE FCC RoHS certified, sleep & heart rate monitoring. Wholesale for global brands"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-24-round2/perplexity-Q03-sources.json",
+      "sha256": "8d5d5c60d1f1057a520965b26aa905bb568fd1b497a454bbf356413fc836c841"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/perplexity-Q03.jpg",
+      "sha256": "f03f94b790f92ed0f3eea697330f06ef0d93a9fa94ddb5d47c331e8313889da6"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/perplexity-Q03.json",
+      "sha256": "c0f3dc9dfb2b49bc010b63b1f5665f3fb87fa184bca947cf4bb3908485061c1a"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/perplexity-Q03.txt",
+      "sha256": "eea7b9f55034af8515a8a63d10ce7ad6fa839d61c3459b29c748c73abc747453"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "New round2 capture; environment/method differs from round1: no comparable previous_record_id and no ranking-growth attribution. Citations prove visible URLs only; reachability and commercial facts UNKNOWN."
+}

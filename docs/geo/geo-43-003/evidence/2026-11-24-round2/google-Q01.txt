@@ -1,0 +1,217 @@
+- link "Skip to main content"
+- link "Accessibility help":
+  - /url: https://support.google.com/websearch/answer/181196?hl=en
+- search:
+  - link "Go to Google Home":
+    - /url: https://www.google.com/webhp?hl=en&sa=X&ved=2ahUKEwjEoZrY2KCYAxV7BrwBHQbYHBEQPHoECAYQBA
+  - status
+  - alert
+  - combobox "Search": smart ring OEM ODM manufacturer smart ring OEM ODM manufacturer
+  - button "Clear":
+  - button "Search by voice":
+  - button "Search by image":
+- button "Share":
+- button "Google apps":
+[account label omitted]
+- navigation:
+  - list:
+    - link "AI Mode":
+      - /url: /search?q=smart+ring+OEM+ODM+manufacturer&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDhbd4vJQVLDqS_QNSbueYU-PIJT7w:1795526295469&udm=50&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtICPMVaTZk4tFdUK8k5MXv8g8O0YurqYK3cSBclZ4lkqkmbfBo7ZCIEoKNtmqYteY2ppzsYrnq7EmzRtU_YzFQ-k1voEvfQWF5lhWNYHvqAODcXUC3JoqVnRRHbVQgbXM6GC_aj-4ux9vknxPhbl5XfnQnXbg&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjEoZrY2KCYAxV7BrwBHQbYHBEQ2J8OegQIDRAD
+      - generic: AI Mode
+    - link "All" [disabled]:
+      - generic: All
+    - link "Shopping":
+      - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDhbd4vJQVLDqS_QNSbueYU-PIJT7w:1795526295469&udm=28&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtICPMVaTZk4tFdUK8k5MXv8g8O0YurqYK3cSBclZ4lkqkmbfBo7ZCIEoKNtmqYteY2ppzsYrnq7EmzRtU_YzFQ-k1voEvfQWF5lhWNYHvqAODcXUC3JoqVnRRHbVQgbXM6GC_aj-4ux9vknxPhbl5XfnQnXbg&q=smart+ring+OEM+ODM+manufacturer&ved=1t:220175&ictx=111
+      - generic: Shopping
+    - link "Images":
+      - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDhbd4vJQVLDqS_QNSbueYU-PIJT7w:1795526295469&udm=2&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtICPMVaTZk4tFdUK8k5MXv8g8O0YurqYK3cSBclZ4lkqkmbfBo7ZCIEoKNtmqYteY2ppzsYrnq7EmzRtU_YzFQ-k1voEvfQWF5lhWNYHvqAODcXUC3JoqVnRRHbVQgbXM6GC_aj-4ux9vknxPhbl5XfnQnXbg&q=smart+ring+OEM+ODM+manufacturer&sa=X&ved=2ahUKEwjEoZrY2KCYAxV7BrwBHQbYHBEQtKgLegQIJxAB
+      - generic: Images
+    - link "Short videos":
+      - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDhbd4vJQVLDqS_QNSbueYU-PIJT7w:1795526295469&udm=short_vids&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtICPMVaTZk4tFdUK8k5MXv8g8O0YurqYK3cSBclZ4lkqkmbfBo7ZCIEoKNtmqYteY2ppzsYrnq7EmzRtU_YzFQ-k1voEvfQWF5lhWNYHvqAODcXUC3JoqVnRRHbVQgbXM6GC_aj-4ux9vknxPhbl5XfnQnXbg&q=smart+ring+OEM+ODM+manufacturer&sa=X&ved=2ahUKEwjEoZrY2KCYAxV7BrwBHQbYHBEQs6gLegQIJhAB
+      - generic: Short videos
+    - link "Videos":
+      - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDhbd4vJQVLDqS_QNSbueYU-PIJT7w:1795526295469&udm=vids&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtICPMVaTZk4tFdUK8k5MXv8g8O0YurqYK3cSBclZ4lkqkmbfBo7ZCIEoKNtmqYteY2ppzsYrnq7EmzRtU_YzFQ-k1voEvfQWF5lhWNYHvqAODcXUC3JoqVnRRHbVQgbXM6GC_aj-4ux9vknxPhbl5XfnQnXbg&q=smart+ring+OEM+ODM+manufacturer&sa=X&ved=2ahUKEwjEoZrY2KCYAxV7BrwBHQbYHBEQtKgLegQIIRAB
+      - generic: Videos
+    - link "Forums":
+      - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDhbd4vJQVLDqS_QNSbueYU-PIJT7w:1795526295469&udm=forums&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtICPMVaTZk4tFdUK8k5MXv8g8O0YurqYK3cSBclZ4lkqkmbfBo7ZCIEoKNtmqYteY2ppzsYrnq7EmzRtU_YzFQ-k1voEvfQWF5lhWNYHvqAODcXUC3JoqVnRRHbVQgbXM6GC_aj-4ux9vknxPhbl5XfnQnXbg&q=smart+ring+OEM+ODM+manufacturer&sa=X&ved=2ahUKEwjEoZrY2KCYAxV7BrwBHQbYHBEQs6gLegQIFxAB
+      - generic: Forums
+    - button "More filters":
+      - generic "More filters":
+        - generic: More
+  - button "Tools":
+    - generic: Tools
+- heading "Search Results" [level=1]
+- main:
+  - generic: Can't generate an AI overview right now. Try again later.
+  - heading "Web results" [level=2]
+  - link "Smart Ring Manufacturer & Health Tracking Rings OEM/ODM jointcorp.com https://www.jointcorp.com › product-cat › smart-rings":
+    - /url: https://www.jointcorp.com/product-cat/smart-rings/
+    - heading "Smart Ring Manufacturer & Health Tracking Rings OEM/ODM" [level=3]
+    - generic: jointcorp.com
+    - generic: https://www.jointcorp.com › product-cat › smart-rings
+  - button "About this result":
+  - text: J-Style
+  - emphasis: provides OEM/ODM smart rings
+  - text: with advanced sensors for sleep, HRV, stress, and fitness tracking. Custom designs, medical-grade accuracy, ...
+  - link "Smart Ring OEM/ODM Manufacturer & Private Label starkingsmartring.com https://starkingsmartring.com › products › smart-rings":
+    - /url: https://starkingsmartring.com/products/smart-rings/
+    - heading "Smart Ring OEM/ODM Manufacturer & Private Label" [level=3]
+    - generic: starkingsmartring.com
+    - generic: https://starkingsmartring.com › products › smart-rings
+  - button "About this result":
+  - emphasis: STAR KING smart ring OEM/ODM programs
+  - text: support private-label wearable brands, wellness businesses and digital health partners. Compare the reference model, ring ...
+  - link "Read more":
+    - /url: https://starkingsmartring.com/products/smart-rings/#:~:text=STAR%20KING%20smart%20ring%20OEM%2FODM,samples%20and%20a%20written%20quotation.
+  - link "Smart Ring Manufacturer OEM & ODM ... Goodway Techs https://www.goodwaytechs.com › Products":
+    - /url: https://www.goodwaytechs.com/smart-ring.html
+    - heading "Smart Ring Manufacturer OEM & ODM ..." [level=3]
+    - generic: Goodway Techs
+    - generic: https://www.goodwaytechs.com › Products
+  - button "About this result":
+  - text: Our catalog includes
+  - emphasis: multiple OEM/ODM options
+  - text: with private labeling support—ideal for corporate wellness, healthcare tech, or lifestyle brands seeking scalable ...
+  - link "Read more":
+    - /url: https://www.goodwaytechs.com/smart-ring.html#:~:text=Our%20catalog%20includes%20multiple%20OEM%2FODM,lifestyle%20brands%20seeking%20scalable%20differentiation.
+  - 'link "eIoT: Smart Ring Manufacturer | Smart Ring OEM ODM ... eiot.com https://www.eiot.com"':
+    - /url: https://www.eiot.com/
+    - 'heading "eIoT: Smart Ring Manufacturer | Smart Ring OEM ODM ..." [level=3]'
+    - generic: eiot.com
+    - generic: https://www.eiot.com
+  - button "About this result":
+  - emphasis: eIoT is a leading OEM and ODM manufacturer
+  - text: of AI smart ring in the world, smart ring, smart band and smart bracelet. CE FCC RoHS REACH certified factory ...
+  - link "How to Choose the Right Smart Ring OEM Manufacturer in ... goldenweald.com https://www.goldenweald.com › Blog Standard":
+    - /url: https://www.goldenweald.com/how-to-choose-the-right-smart-ring-oem-manufacturer-in-china/
+    - heading "How to Choose the Right Smart Ring OEM Manufacturer in ..." [level=3]
+    - generic: goldenweald.com
+    - generic: https://www.goldenweald.com › Blog Standard
+  - button "About this result":
+  - text: Shenzhen GoldenWeald Technology Co., Ltd. provides integrated electronics
+  - emphasis: manufacturing
+  - text: and
+  - emphasis: OEM
+  - text: /
+  - emphasis: ODM
+  - text: services, supporting
+  - emphasis: smart ring
+  - text: development
+  - 'link "Smart Ring Manufacturers Guide: How to Choose the Right ... Alibaba.com https://electronics.alibaba.com › buyingguides › smart-ri..."':
+    - /url: https://electronics.alibaba.com/buyingguides/smart-ring-manufacturers-guide-oem,-odm-top-brands
+    - 'heading "Smart Ring Manufacturers Guide: How to Choose the Right ..." [level=3]'
+    - generic: Alibaba.com
+    - generic: https://electronics.alibaba.com › buyingguides › smart-ri...
+  - button "About this result":
+  - generic: Jul 21, 2026 —
+  - text: A practical guide to selecting smart ring manufacturers—covering top brands,
+  - emphasis: OEM/ODM suppliers
+  - text: ", key specs, and real-world trade-offs"
+  - link "B2B Manufacturer TK30 ECG Smart Ring | smart Wearables aismartai.com https://www.aismartai.com › products › oem-odm-smart...":
+    - /url: https://www.aismartai.com/products/oem-odm-smart-ringsb2b-manufacturer-stainless-steel-wearable-with-ai-ecg-temperature-blood-pressure-tk30/
+    - heading "B2B Manufacturer TK30 ECG Smart Ring | smart Wearables" [level=3]
+    - generic: aismartai.com
+    - generic: https://www.aismartai.com › products › oem-odm-smart...
+  - button "About this result":
+  - emphasis: OEM ODM Smart Rings
+  - text: ｜B2B. Stainless Steel Wearable With AI ECG, Temperature & Blood Pressure … including smart glasses and smart rings.
+  - link "Looking for Shenzhen OEM/ODM smart ring supplier with ... Reddit · r/SmartRings 3 comments · 5 months ago":
+    - /url: https://www.reddit.com/r/SmartRings/comments/1u9zcvm/looking_for_shenzhen_oemodm_smart_ring_supplier/
+    - heading "Looking for Shenzhen OEM/ODM smart ring supplier with ..." [level=3]
+    - generic: Reddit · r/SmartRings
+    - generic: 3 comments · 5 months ago
+  - button "About this result":
+  - text: I'm looking for a
+  - emphasis: Shenzhen / China-based OEM, ODM, or factory supplier
+  - text: for a smart ring or small Bluetooth wearable controller. check solideast ...
+  - link "J-Style - Smart Ring Manufacturer | Screenless Smart Band ... jointcorp.com https://www.jointcorp.com":
+    - /url: https://www.jointcorp.com/
+    - heading "J-Style - Smart Ring Manufacturer | Screenless Smart Band ..." [level=3]
+    - generic: jointcorp.com
+    - generic: https://www.jointcorp.com
+  - button "About this result":
+  - emphasis: J-Style delivers full-stack OEM/ODM services
+  - text: ", open API/SDK integration, and complete white-label customization to help you launch your own smart rings, ..."
+  - link "Read more":
+    - /url: https://www.jointcorp.com/#:~:text=J%2DStyle%20delivers%20full%2Dstack%20OEM%2FODM%20services%2C,bands%2C%20and%20health%20monitoring%20devices.
+  - heading "People also search for" [level=2]
+  - link "Smart ring oem odm manufacturer usa":
+    - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDhbd4vJQVLDqS_QNSbueYU-PIJT7w:1795526295469&q=Smart+ring+oem+odm+manufacturer+usa&sa=X&ved=2ahUKEwjEoZrY2KCYAxV7BrwBHQbYHBEQ1QJ6BAg0EAE
+    - generic: Smart ring oem odm manufacturer usa
+  - link "Smart ring manufacturers":
+    - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDhbd4vJQVLDqS_QNSbueYU-PIJT7w:1795526295469&q=Smart+ring+manufacturers&sa=X&ved=2ahUKEwjEoZrY2KCYAxV7BrwBHQbYHBEQ1QJ6BAg6EAE
+    - generic: Smart ring manufacturers
+  - link "J Ring Smart Ring price":
+    - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDhbd4vJQVLDqS_QNSbueYU-PIJT7w:1795526295469&q=J+Ring+Smart+Ring+price&sa=X&ved=2ahUKEwjEoZrY2KCYAxV7BrwBHQbYHBEQ1QJ6BAg5EAE
+    - generic: J Ring Smart Ring price
+  - link "JCRing Smart ring":
+    - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDhbd4vJQVLDqS_QNSbueYU-PIJT7w:1795526295469&q=JCRing+Smart+ring&sa=X&ved=2ahUKEwjEoZrY2KCYAxV7BrwBHQbYHBEQ1QJ6BAg3EAE
+    - generic: JCRing Smart ring
+  - link "JC ring Pro":
+    - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDhbd4vJQVLDqS_QNSbueYU-PIJT7w:1795526295469&q=JC+ring+Pro&sa=X&ved=2ahUKEwjEoZrY2KCYAxV7BrwBHQbYHBEQ1QJ6BAg4EAE
+    - generic: JC ring Pro
+  - link "OEM smart ring":
+    - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDhbd4vJQVLDqS_QNSbueYU-PIJT7w:1795526295469&q=OEM+smart+ring&sa=X&ved=2ahUKEwjEoZrY2KCYAxV7BrwBHQbYHBEQ1QJ6BAg2EAE
+    - generic: OEM smart ring
+  - link "J2208a Band from Chinese Manufacturer J-Style":
+    - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDhbd4vJQVLDqS_QNSbueYU-PIJT7w:1795526295469&q=J2208a+Band+from+Chinese+Manufacturer+J-Style&sa=X&ved=2ahUKEwjEoZrY2KCYAxV7BrwBHQbYHBEQ1QJ6BAg1EAE
+    - generic: J2208a Band from Chinese Manufacturer J-Style
+  - link "RoHS Smart Ring app":
+    - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDhbd4vJQVLDqS_QNSbueYU-PIJT7w:1795526295469&q=RoHS+Smart+Ring+app&sa=X&ved=2ahUKEwjEoZrY2KCYAxV7BrwBHQbYHBEQ1QJ6BAgzEAE
+    - generic: RoHS Smart Ring app
+  - navigation:
+    - heading "Page Navigation" [level=1]
+    - text: "1"
+    - link "Page 2":
+      - /url: /search?q=smart+ring+OEM+ODM+manufacturer&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDhbd4vJQVLDqS_QNSbueYU-PIJT7w:1795526295469&ei=l44Fa4T6G_uM8L0PhrDziAE&start=10&sa=N&sstk=AYl2yk91Wu8O4Ax-YHG3FwfkABsMq4oYTcri8V30M67CmN302JN7EMRyPQZNUuF4KvroJW107r7PVbaLxRdLdJEUdzysMdf4SAMFSg&ved=2ahUKEwjEoZrY2KCYAxV7BrwBHQbYHBEQ8tMDegQIMRAE
+      - text: "2"
+    - link "Page 3":
+      - /url: /search?q=smart+ring+OEM+ODM+manufacturer&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDhbd4vJQVLDqS_QNSbueYU-PIJT7w:1795526295469&ei=l44Fa4T6G_uM8L0PhrDziAE&start=20&sa=N&sstk=AYl2yk91Wu8O4Ax-YHG3FwfkABsMq4oYTcri8V30M67CmN302JN7EMRyPQZNUuF4KvroJW107r7PVbaLxRdLdJEUdzysMdf4SAMFSg&ved=2ahUKEwjEoZrY2KCYAxV7BrwBHQbYHBEQ8tMDegQIMRAG
+      - text: "3"
+    - link "Page 4":
+      - /url: /search?q=smart+ring+OEM+ODM+manufacturer&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDhbd4vJQVLDqS_QNSbueYU-PIJT7w:1795526295469&ei=l44Fa4T6G_uM8L0PhrDziAE&start=30&sa=N&sstk=AYl2yk91Wu8O4Ax-YHG3FwfkABsMq4oYTcri8V30M67CmN302JN7EMRyPQZNUuF4KvroJW107r7PVbaLxRdLdJEUdzysMdf4SAMFSg&ved=2ahUKEwjEoZrY2KCYAxV7BrwBHQbYHBEQ8tMDegQIMRAI
+      - text: "4"
+    - link "Page 5":
+      - /url: /search?q=smart+ring+OEM+ODM+manufacturer&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDhbd4vJQVLDqS_QNSbueYU-PIJT7w:1795526295469&ei=l44Fa4T6G_uM8L0PhrDziAE&start=40&sa=N&sstk=AYl2yk91Wu8O4Ax-YHG3FwfkABsMq4oYTcri8V30M67CmN302JN7EMRyPQZNUuF4KvroJW107r7PVbaLxRdLdJEUdzysMdf4SAMFSg&ved=2ahUKEwjEoZrY2KCYAxV7BrwBHQbYHBEQ8tMDegQIMRAK
+      - text: "5"
+    - link "Page 6":
+      - /url: /search?q=smart+ring+OEM+ODM+manufacturer&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDhbd4vJQVLDqS_QNSbueYU-PIJT7w:1795526295469&ei=l44Fa4T6G_uM8L0PhrDziAE&start=50&sa=N&sstk=AYl2yk91Wu8O4Ax-YHG3FwfkABsMq4oYTcri8V30M67CmN302JN7EMRyPQZNUuF4KvroJW107r7PVbaLxRdLdJEUdzysMdf4SAMFSg&ved=2ahUKEwjEoZrY2KCYAxV7BrwBHQbYHBEQ8tMDegQIMRAM
+      - text: "6"
+    - link "Page 7":
+      - /url: /search?q=smart+ring+OEM+ODM+manufacturer&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDhbd4vJQVLDqS_QNSbueYU-PIJT7w:1795526295469&ei=l44Fa4T6G_uM8L0PhrDziAE&start=60&sa=N&sstk=AYl2yk91Wu8O4Ax-YHG3FwfkABsMq4oYTcri8V30M67CmN302JN7EMRyPQZNUuF4KvroJW107r7PVbaLxRdLdJEUdzysMdf4SAMFSg&ved=2ahUKEwjEoZrY2KCYAxV7BrwBHQbYHBEQ8tMDegQIMRAO
+      - text: "7"
+    - link "Page 8":
+      - /url: /search?q=smart+ring+OEM+ODM+manufacturer&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDhbd4vJQVLDqS_QNSbueYU-PIJT7w:1795526295469&ei=l44Fa4T6G_uM8L0PhrDziAE&start=70&sa=N&sstk=AYl2yk91Wu8O4Ax-YHG3FwfkABsMq4oYTcri8V30M67CmN302JN7EMRyPQZNUuF4KvroJW107r7PVbaLxRdLdJEUdzysMdf4SAMFSg&ved=2ahUKEwjEoZrY2KCYAxV7BrwBHQbYHBEQ8tMDegQIMRAQ
+      - text: "8"
+    - link "Page 9":
+      - /url: /search?q=smart+ring+OEM+ODM+manufacturer&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDhbd4vJQVLDqS_QNSbueYU-PIJT7w:1795526295469&ei=l44Fa4T6G_uM8L0PhrDziAE&start=80&sa=N&sstk=AYl2yk91Wu8O4Ax-YHG3FwfkABsMq4oYTcri8V30M67CmN302JN7EMRyPQZNUuF4KvroJW107r7PVbaLxRdLdJEUdzysMdf4SAMFSg&ved=2ahUKEwjEoZrY2KCYAxV7BrwBHQbYHBEQ8tMDegQIMRAS
+      - text: "9"
+    - link "Page 10":
+      - /url: /search?q=smart+ring+OEM+ODM+manufacturer&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDhbd4vJQVLDqS_QNSbueYU-PIJT7w:1795526295469&ei=l44Fa4T6G_uM8L0PhrDziAE&start=90&sa=N&sstk=AYl2yk91Wu8O4Ax-YHG3FwfkABsMq4oYTcri8V30M67CmN302JN7EMRyPQZNUuF4KvroJW107r7PVbaLxRdLdJEUdzysMdf4SAMFSg&ved=2ahUKEwjEoZrY2KCYAxV7BrwBHQbYHBEQ8tMDegQIMRAU
+      - text: "10"
+    - heading "Next" [level=2]:
+      - link "Next":
+        - /url: /search?q=smart+ring+OEM+ODM+manufacturer&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDhbd4vJQVLDqS_QNSbueYU-PIJT7w:1795526295469&ei=l44Fa4T6G_uM8L0PhrDziAE&start=10&sa=N&sstk=AYl2yk91Wu8O4Ax-YHG3FwfkABsMq4oYTcri8V30M67CmN302JN7EMRyPQZNUuF4KvroJW107r7PVbaLxRdLdJEUdzysMdf4SAMFSg&ved=2ahUKEwjEoZrY2KCYAxV7BrwBHQbYHBEQ8NMDegQIMRAW
+        - generic: Next
+  - navigation
+- contentinfo:
+  - heading "Footer Links" [level=1]
+  - generic: Results are personalized
+  - generic: "-"
+  - link "Try without personalization":
+    - /url: https://www.google.com/search?q=smart+ring+OEM+ODM+manufacturer&hl=en&peek_pws=0&sxsrf=AKL5yDhbd4vJQVLDqS_QNSbueYU-PIJT7w:1795526295469
+    - generic: Try without personalization
+  - button "Los Angeles County, California - Based on your past activity":
+    - generic: Los Angeles County, California
+    - text: "-"
+    - generic: Based on your past activity
+  - text: "-"
+  - button "Update location": Update location
+  - link "Help":
+    - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en&fg=1
+  - button "Send feedback":
+    - generic: Send feedback
+  - link "Privacy":
+    - /url: https://policies.google.com/privacy?hl=en&fg=1
+  - link "Terms":
+    - /url: https://policies.google.com/terms?hl=en&fg=1

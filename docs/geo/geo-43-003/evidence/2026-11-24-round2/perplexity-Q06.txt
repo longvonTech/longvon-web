@@ -1,0 +1,232 @@
+- complementary:
+  - navigation "侧边栏导航":
+    - link:
+      - /url: /
+    - button "展开侧边栏"
+    - group "创建":
+      - link "新建":
+        - /url: /
+        - generic: 新建
+    - group "主导航":
+      - link "自动化":
+        - /url: /automations
+        - generic: 自动化
+      - link "工件":
+        - /url: /artifacts
+        - generic: 工件
+      - link "插件":
+        - /url: /computer/plugins
+        - generic: 插件
+      - button "更多":
+        - generic: 更多
+    - link "项目":
+      - /url: /projects
+    - link "会话":
+      - /url: /library
+    - button "升级计划":
+    - button "libing shi":
+      - generic: libing shi
+  - separator "调整侧边栏宽度"
+- main:
+  - button "返回上一页":
+  - tablist "回答模式标签页":
+    - tab "答案" [selected]:
+      - text: 答案
+    - tab "链接":
+      - text: 链接
+    - tab "图片":
+      - text: 图片
+  - button "会话选项":
+  - button "分享":
+    - generic: 分享
+  - button "下载桌面应用":
+    - generic: 下载桌面应用
+  - generic: 21:24
+  - button "编辑查询":
+  - button "复制查询":
+  - paragraph: smart ring manufacturer with SDK API
+  - button "已完成 1秒":
+    - generic "已完成"
+    - generic: 1秒
+  - paragraph:
+    - text: Several smart-ring manufacturers offer SDK/API integration, typically for OEM/ODM partners building their own app or health platform. The clearest options are
+    - strong: J-Style
+    - text: ","
+    - strong: LONGVON
+    - text: ", and"
+    - strong: Goodway
+    - text: .
+    - generic: jointcorp
+    - generic: "+2"
+  - heading "Manufacturers offering SDK/API" [level=2]
+  - table:
+    - rowgroup:
+      - row "Manufacturer SDK/API offering Best fit":
+        - columnheader "Manufacturer"
+        - columnheader "SDK/API offering"
+        - columnheader "Best fit"
+    - rowgroup:
+      - row "J-Style (Jointcorp) SDK for Android, iOS, Windows, and macOS; APIs for device communication, health data, device management, and user information; cloud synchronization and real-time biometric data access. jointcorp +1 Teams wanting a broad, documented integration path across mobile and desktop platforms":
+        - cell "J-Style (Jointcorp)":
+          - strong: J-Style (Jointcorp)
+        - cell "SDK for Android, iOS, Windows, and macOS; APIs for device communication, health data, device management, and user information; cloud synchronization and real-time biometric data access. jointcorp +1":
+          - text: SDK for Android, iOS, Windows, and macOS; APIs for device communication, health data, device management, and user information; cloud synchronization and real-time biometric data access.
+          - generic: jointcorp
+          - generic: "+1"
+        - cell "Teams wanting a broad, documented integration path across mobile and desktop platforms"
+      - row "LONGVON Project-scoped partner SDK and cloud API; supports customer-app integration and, for qualified partners, pathways to 100 Hz PPG raw data. No public self-service SDK portal. longvon +2 Health-tech brands needing custom hardware, firmware, algorithms, and deeper sensor-data access":
+        - cell "LONGVON":
+          - strong: LONGVON
+        - cell "Project-scoped partner SDK and cloud API; supports customer-app integration and, for qualified partners, pathways to 100 Hz PPG raw data. No public self-service SDK portal. longvon +2":
+          - text: Project-scoped partner SDK and cloud API; supports customer-app integration and, for qualified partners, pathways to 100 Hz PPG raw data. No public self-service SDK portal.
+          - generic: longvon
+          - generic: "+2"
+        - cell "Health-tech brands needing custom hardware, firmware, algorithms, and deeper sensor-data access"
+      - row "Goodway SDK/API support for full ODM projects, enabling synchronization with a customer’s own platform; also offers white-label iOS/Android apps. OEM & ODM Health Smart Ring Solutions Brands launching a rebranded ring with their own platform or app":
+        - cell "Goodway":
+          - strong: Goodway
+        - cell "SDK/API support for full ODM projects, enabling synchronization with a customer’s own platform; also offers white-label iOS/Android apps. OEM & ODM Health Smart Ring Solutions":
+          - text: SDK/API support for full ODM projects, enabling synchronization with a customer’s own platform; also offers white-label iOS/Android apps.
+          - generic "OEM & ODM Health Smart Ring Solutions":
+            - link "goodwaytechs":
+              - /url: https://www.goodwaytechs.com/smart-rings.html
+              - generic: goodwaytechs
+        - cell "Brands launching a rebranded ring with their own platform or app"
+  - heading "Which to choose" [level=2]
+  - list:
+    - paragraph:
+      - text: Choose
+      - strong: J-Style
+      - text: if you need an SDK/API platform for a relatively standard smart-ring or wearable integration and want multi-platform support.
+      - generic: jointcorp
+      - generic: "+1"
+    - paragraph:
+      - text: Choose
+      - strong: LONGVON
+      - text: if raw physiological signals—especially high-resolution PPG—and a fully customized health-monitoring product are central to your roadmap.
+      - generic: longvon
+      - generic: "+1"
+    - paragraph:
+      - text: Choose
+      - strong: Goodway
+      - text: if your priority is a white-label consumer product with app and platform integration rather than deep raw-sensor access.
+      - generic "OEM & ODM Health Smart Ring Solutions":
+        - link "goodwaytechs":
+          - /url: https://www.goodwaytechs.com/smart-rings.html
+          - generic: goodwaytechs
+  - heading "What to ask vendors" [level=2]
+  - paragraph: "Before committing, request:"
+  - list:
+    - paragraph: "SDK platform coverage: Android, iOS, React Native/Flutter, Windows, macOS."
+    - paragraph: "Data available through the API: sleep, heart rate, HRV, SpO2, temperature, activity, raw PPG, and historical sync."
+    - paragraph: Real-time versus cloud-sync data access, plus latency and update frequency.
+    - paragraph: Authentication, rate limits, data-export formats, and privacy/PHI handling.
+    - paragraph: Whether SDK access requires an OEM/ODM minimum order, NDA, or separate commercial agreement.
+    - paragraph: Firmware OTA support, device-management APIs, and whether the ring can be rebranded.
+  - paragraph:
+    - text: For a developer-first integration,
+    - strong: J-Style
+    - text: appears to have the most explicit public SDK/API platform; for raw-signal and medical-oriented customization,
+    - strong: LONGVON
+    - text: is the stronger candidate.
+    - generic: jointcorp
+    - generic: "+1"
+  - button "复制":
+  - button "分享":
+  - button "有帮助":
+  - button "没有帮助":
+  - button "复刻":
+  - button "11 个来源" [active]:
+    - text: 11 个来源
+  - button "更多操作":
+  - button "Compare J-Style vs LONGVON smart ring SDK/API specs — partner access, raw PPG, health metrics, and OEM terms side-by-side"
+  - text: Compare J-Style vs LONGVON smart ring SDK/API specs — partner access, raw PPG, health metrics, and OEM terms side-by-side
+  - text: Computer
+  - 'button "Smart ring manufacturer integration comparison: J-Style JCRing vs LONGVON MATEYOU — SDK docs, cloud APIs, and health metrics"'
+  - text: "Smart ring manufacturer integration comparison: J-Style JCRing vs LONGVON MATEYOU — SDK docs, cloud APIs, and health metrics"
+  - text: Computer
+  - button "What data does the J-Style SDK provide"
+  - text: What data does the J-Style SDK provide
+  - button "Compare raw PPG data access between vendors"
+  - text: Compare raw PPG data access between vendors
+  - button "What are the minimum order quantities for ODM"
+  - text: What are the minimum order quantities for ODM
+  - button "隐藏详情":
+  - button "来源" [expanded]:
+    - generic: 来源
+  - link "jointcorp J-Style - Smart Ring Manufacturer | Screenless Smart Band ODM & OEM Factory J-Style is a leading smart ring manufacturer and screenless smart band OEM/ODM factory in China. We provide full-stack wearable design, BLE health monitoring solutions, and large-scale production for global brands. Custom smart rings, fitness bands, and medical-grade sensors with reliable quality and fast delivery.":
+    - /url: https://www.jointcorp.com/
+    - generic: jointcorp
+    - generic: J-Style - Smart Ring Manufacturer | Screenless Smart Band ODM & OEM Factory
+    - generic: J-Style is a leading smart ring manufacturer and screenless smart band OEM/ODM factory in China. We provide full-stack wearable design, BLE health monitoring solutions, and large-scale production for global brands. Custom smart rings, fitness bands, and medical-grade sensors with reliable quality and fast delivery.
+  - link "longvon Smart Ring OEM & ODM Services - LONGVON LONGVON · Smart Ring Manufacturer · OEM/ODM LONGVON (Longvon Technology (Shenzhen) Co., Ltd.) is a smart ring technology manufacturer and OEM/ODM provider. ... MATEYOU is a smart ring and AI health brand developed by LONGVON. ... LONGVON Technology (Shenzhen) Co., Ltd. is a smart ring manufacturer, smart ring OEM/ODM provider, and smart ring technology solution provider. LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in customized smart ring hardware,...":
+    - /url: https://www.longvon.com/en/smart-ring-oem-odm
+    - generic: longvon
+    - generic: Smart Ring OEM & ODM Services - LONGVON
+    - generic: LONGVON · Smart Ring Manufacturer · OEM/ODM LONGVON (Longvon Technology (Shenzhen) Co., Ltd.) is a smart ring technology manufacturer and OEM/ODM provider. ... MATEYOU is a smart ring and AI health brand developed by LONGVON. ... LONGVON Technology (Shenzhen) Co., Ltd. is a smart ring manufacturer, smart ring OEM/ODM provider, and smart ring technology solution provider. LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in customized smart ring hardware,...
+  - link "goodwaytechs OEM & ODM Health Smart Ring Solutions Goodway manufactures Smart Rings with health monitoring, ECG, SpO₂ and sleep tracking features. OEM, ODM and private label solutions available.":
+    - /url: https://www.goodwaytechs.com/smart-rings.html
+    - generic: goodwaytechs
+    - generic: OEM & ODM Health Smart Ring Solutions
+    - generic: Goodway manufactures Smart Rings with health monitoring, ECG, SpO₂ and sleep tracking features. OEM, ODM and private label solutions available.
+  - link "jointcorp SDK &API | Screenless Smart Band ODM & OEM Factory J-STYLE provides a comprehensive SDK and API to help developers easily connect and manage health monitoring devices, integrating data collection, analysis":
+    - /url: https://www.jointcorp.com/sdk-api/
+    - generic: jointcorp
+    - generic: SDK &API | Screenless Smart Band ODM & OEM Factory
+    - generic: J-STYLE provides a comprehensive SDK and API to help developers easily connect and manage health monitoring devices, integrating data collection, analysis
+  - link "longvon Smart Ring Technology & Development LONGVON · Smart Ring Manufacturer · OEM/ODM LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in customized smart ring hardware, firmware, mobile apps, SDKs, cloud APIs, and health monitoring solutions. ... Partner SDK and cloud API integration — including pathways to 100Hz PPG raw data for qualified partners — are available as project-scoped capabilities. See Smart Ring SDK & Cloud API for cooperation details. ... Partner SDK and cloud API depth is scoped per...":
+    - /url: https://www.longvon.com/en/smart-ring-technology
+    - generic: longvon
+    - generic: Smart Ring Technology & Development
+    - generic: LONGVON · Smart Ring Manufacturer · OEM/ODM LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in customized smart ring hardware, firmware, mobile apps, SDKs, cloud APIs, and health monitoring solutions. ... Partner SDK and cloud API integration — including pathways to 100Hz PPG raw data for qualified partners — are available as project-scoped capabilities. See Smart Ring SDK & Cloud API for cooperation details. ... Partner SDK and cloud API depth is scoped per...
+  - link "longvon Smart Ring OSA Monitoring Technology & OEM/ODM Solutions LONGVON · Smart Ring Manufacturer · OEM/ODM LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in customized smart ring hardware, firmware, mobile apps, SDKs, cloud APIs, and health monitoring solutions. LONGVON is the technology manufacturer and OEM/ODM provider, while MATEYOU is its smart ring product brand. ... LONGVON positions as a medical-oriented smart ring technology and manufacturing partner for sleep respiratory and OSA-related monitoring programs:...":
+    - /url: https://www.longvon.com/en/osa-smart-ring-technology
+    - generic: longvon
+    - generic: Smart Ring OSA Monitoring Technology & OEM/ODM Solutions
+    - generic: LONGVON · Smart Ring Manufacturer · OEM/ODM LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in customized smart ring hardware, firmware, mobile apps, SDKs, cloud APIs, and health monitoring solutions. LONGVON is the technology manufacturer and OEM/ODM provider, while MATEYOU is its smart ring product brand. ... LONGVON positions as a medical-oriented smart ring technology and manufacturing partner for sleep respiratory and OSA-related monitoring programs:...
+  - link "longvon Smart Ring Manufacturer & OEM/ODM | LONGVON LONGVON · Smart Ring Technology LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in customized smart ring hardware, firmware, mobile apps, SDKs, cloud APIs, and health monitoring solutions. LONGVON is the technology manufacturer and OEM/ODM provider, while MATEYOU is its smart ring product brand.":
+    - /url: https://www.longvon.com/en
+    - generic: longvon
+    - generic: Smart Ring Manufacturer & OEM/ODM | LONGVON
+    - generic: LONGVON · Smart Ring Technology LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in customized smart ring hardware, firmware, mobile apps, SDKs, cloud APIs, and health monitoring solutions. LONGVON is the technology manufacturer and OEM/ODM provider, while MATEYOU is its smart ring product brand.
+  - link "longvon About LONGVON | Smart Ring Technology Manufacturer LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in customized smart ring hardware, firmware, mobile apps, SDKs, cloud APIs, and health monitoring solutions. ... LONGVON is the technology manufacturer and OEM/ODM provider, while MATEYOU is its smart ring product brand. ... Smart ring hardware, firmware, apps, SDKs, and cloud APIs":
+    - /url: https://www.longvon.com/en/about
+    - generic: longvon
+    - generic: About LONGVON | Smart Ring Technology Manufacturer
+    - generic: LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in customized smart ring hardware, firmware, mobile apps, SDKs, cloud APIs, and health monitoring solutions. ... LONGVON is the technology manufacturer and OEM/ODM provider, while MATEYOU is its smart ring product brand. ... Smart ring hardware, firmware, apps, SDKs, and cloud APIs
+  - link "longvon 智能戒指 SDK 与云端 API（合作伙伴） LONGVON · 智能戒指制造商 · OEM/ODM 龙汾科技（深圳）有限公司（LONGVON）是一家智能戒指制造商及 OEM/ODM 技术方案提供商，为品牌方和数字健康项目提供从硬件、固件、健康算法、移动 App、SDK/API 到生产制造的完整开发与交付能力。 LONGVON（龙汾科技）是技术制造商与 OEM/ODM 提供方，MATEYOU 是其智能戒指产品品牌。 LONGVON 可为品牌与数字健康团队提供智能戒指 SDK 对接能力，用于客户自有 App 或其他应用集成。开通方式为项目制合作，而非公开自助门户。 ... 设备 / 配套 SDK（含客户自有 App 集成评估） 云端 API 选项（数据接入与算法服务） ... LONGVON 是一家智能戒指技术制造商及 OEM/ODM 服务商，专注于智能戒指硬件、固件、移动 App、SDK、云端 API 及健康监测解决方案的定制开发与生产。MATEYOU 是其智能戒指产品品牌。公开口径：71 项健康监测参数，其中包含 22 项睡眠监测参数。":
+    - /url: https://www.longvon.com/smart-ring-sdk-api
+    - generic: longvon
+    - generic: 智能戒指 SDK 与云端 API（合作伙伴）
+    - generic: LONGVON · 智能戒指制造商 · OEM/ODM 龙汾科技（深圳）有限公司（LONGVON）是一家智能戒指制造商及 OEM/ODM 技术方案提供商，为品牌方和数字健康项目提供从硬件、固件、健康算法、移动 App、SDK/API 到生产制造的完整开发与交付能力。 LONGVON（龙汾科技）是技术制造商与 OEM/ODM 提供方，MATEYOU 是其智能戒指产品品牌。 LONGVON 可为品牌与数字健康团队提供智能戒指 SDK 对接能力，用于客户自有 App 或其他应用集成。开通方式为项目制合作，而非公开自助门户。 ... 设备 / 配套 SDK（含客户自有 App 集成评估） 云端 API 选项（数据接入与算法服务） ... LONGVON 是一家智能戒指技术制造商及 OEM/ODM 服务商，专注于智能戒指硬件、固件、移动 App、SDK、云端 API 及健康监测解决方案的定制开发与生产。MATEYOU 是其智能戒指产品品牌。公开口径：71 项健康监测参数，其中包含 22 项睡眠监测参数。
+  - link "longvon Smart Ring Sleep Monitoring Technology | LONGVON LONGVON provides smart ring sleep monitoring technology for companies developing consumer health, digital health and sleep-related products, with OEM/ODM support covering hardware, firmware, algorithm":
+    - /url: https://www.longvon.com/en/smart-ring-sleep-monitoring
+    - generic: longvon
+    - generic: Smart Ring Sleep Monitoring Technology | LONGVON
+    - generic: LONGVON provides smart ring sleep monitoring technology for companies developing consumer health, digital health and sleep-related products, with OEM/ODM support covering hardware, firmware, algorithm
+  - link "manilatimes Youhong Medical (J-Style) Highlights Smart Wearables and AI-Powered Digital Health Solutions at MEDICA 2026 From biosensing and smart wearable devices to AI-powered health insights and connected platforms, Youhong Medical presents an integrated approach to digital health at MEDICA 2026.":
+    - /url: https://www.manilatimes.net/2026/11/19/tmt-newswire/plentisoft/youhong-medical-j-style-highlights-smart-wearables-and-ai-powered-digital-health-solutions-at-medica-2026/2473923
+    - generic: manilatimes
+    - generic: Youhong Medical (J-Style) Highlights Smart Wearables and AI-Powered Digital Health Solutions at MEDICA 2026
+    - generic: From biosensing and smart wearable devices to AI-powered health insights and connected platforms, Youhong Medical presents an integrated approach to digital health at MEDICA 2026.
+  - button "Pro 已启用高级搜索免费预览。 了解更多":
+    - generic: Pro
+    - generic: 已启用高级搜索免费预览。
+    - button "了解更多":
+      - generic: 了解更多
+  - status:
+    - generic: 您正处于隐身模式。
+    - button "退出隐身模式":
+      - generic: 退出无痕模式
+  - textbox "提出后续问题":
+    - paragraph
+  - generic: 提出后续问题
+  - button "添加文件、插件等":
+  - button "搜索" [pressed]:
+    - generic: 搜索
+  - button "Computer":
+    - generic: Computer
+  - button "模型":
+    - generic: 模型
+  - button "语音输入":
+  - button "提交" [disabled]:

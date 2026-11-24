@@ -1,0 +1,16 @@
+✔ AI final receipt required after generating state (0.845917ms)
+✔ bounded incomplete panel remains UNKNOWN (0.07975ms)
+✔ real first-round captured pending Google panel remains incomplete (3.444209ms)
+✔ real first-round final Google panel exposes completion receipt (0.690917ms)
+✔ unscoped citation extraction cannot count navigation URLs (0.824458ms)
+✔ capture IDs cannot escape evidence directory (0.386833ms)
+✔ dual-height capture restores viewport when browser fails (0.127458ms)
+✔ real original observation manifest still matches every file (39.353334ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 151.16975

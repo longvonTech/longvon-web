@@ -1,0 +1,84 @@
+{
+  "record_id": "30c90e5c-4bd6-5b40-a642-a6b8746add11",
+  "query_id": "Q03",
+  "query": "private label smart ring manufacturer",
+  "platform": "ChatGPT",
+  "mode": "DEFAULT_ANSWER",
+  "observed_at": "2026-11-24T13:22:28.187Z",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "IAB logged out, new conversation per query; UI zh, query/answer en; model UNKNOWN; web-search invocation UNKNOWN; PR27 dual-height 1440x1000/1600 capture",
+  "availability": "COMPLETED",
+  "longvon_present": true,
+  "organic_rank": null,
+  "ai_body_recommended": true,
+  "source_cited": true,
+  "cited_urls": [
+    "https://www.smartwearworks.com/?utm_source=chatgpt.com",
+    "https://pineeon.com/products/smart-wearables/smart-rings/?utm_source=chatgpt.com",
+    "https://starkingsmartring.com/products/smart-rings/?utm_source=chatgpt.com",
+    "https://www.jointcorp.com/?utm_source=chatgpt.com",
+    "https://www.longvon.com/en/smart-ring-solution-provider?utm_source=chatgpt.com",
+    "https://vositone.com/?utm_source=chatgpt.com"
+  ],
+  "competitors": [
+    {
+      "name": "Smart Wear Works",
+      "url": "https://www.smartwearworks.com/?utm_source=chatgpt.com",
+      "position": "explicit answer URL order",
+      "evidence_quote": "- /url: https://www.smartwearworks.com/?utm_source=chatgpt.com"
+    },
+    {
+      "name": "Pineeon",
+      "url": "https://pineeon.com/products/smart-wearables/smart-rings/?utm_source=chatgpt.com",
+      "position": "explicit answer URL order",
+      "evidence_quote": "- /url: https://pineeon.com/products/smart-wearables/smart-rings/?utm_source=chatgpt.com"
+    },
+    {
+      "name": "STAR KING / Pineeon (as displayed)",
+      "url": "https://starkingsmartring.com/products/smart-rings/?utm_source=chatgpt.com",
+      "position": "explicit answer URL order",
+      "evidence_quote": "- /url: https://starkingsmartring.com/products/smart-rings/?utm_source=chatgpt.com"
+    },
+    {
+      "name": "J-Style / Jointcorp",
+      "url": "https://www.jointcorp.com/?utm_source=chatgpt.com",
+      "position": "explicit answer URL order",
+      "evidence_quote": "- /url: https://www.jointcorp.com/?utm_source=chatgpt.com"
+    },
+    {
+      "name": "Vositone",
+      "url": "https://vositone.com/?utm_source=chatgpt.com",
+      "position": "explicit answer URL order",
+      "evidence_quote": "- /url: https://vositone.com/?utm_source=chatgpt.com"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q03-1000.jpg",
+      "sha256": "f4e2d0c81a29a1bc519c7e26c4263243f5f2f33ccc68d7109070ce2bef5cac27"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q03-1000.json",
+      "sha256": "518914bcfff2b765346be8fa84cc367a9fde7367032b70bb588597b605e293a8"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q03-1000.txt",
+      "sha256": "94964969195bb6666f69efa9efb06f230f06d205191298a8b56ab6237934f49c"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q03-1600.jpg",
+      "sha256": "d50cae5298b0059208ff92254e7396182ecdadcb4ec16cff26d68a993d5af0db"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q03-1600.json",
+      "sha256": "97effe2a20c7a6c061b92e624316f8f2849dbd4f2f14c5af2d4eae3e06816272"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q03-1600.txt",
+      "sha256": "94964969195bb6666f69efa9efb06f230f06d205191298a8b56ab6237934f49c"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "New round2 capture; environment/method differs from round1: no comparable previous_record_id and no ranking-growth attribution. Citations prove visible URLs only; reachability and commercial facts UNKNOWN."
+}

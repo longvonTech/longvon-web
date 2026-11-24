@@ -1,0 +1,230 @@
+- link "Skip to main content"
+- link "Accessibility help":
+  - /url: https://support.google.com/websearch/answer/181196?hl=en
+- search:
+  - link "Go to Google Home":
+    - /url: https://www.google.com/webhp?hl=en&sa=X&ved=2ahUKEwj2_IfB2aCYAxWAI0QIHcQzMFcQPHoECAYQBA
+  - status
+  - alert
+  - combobox "Search": private label smart ring manufacturer private label smart ring manufacturer
+  - button "Clear":
+  - button "Search by voice":
+  - button "Search by image":
+- button "Share":
+- button "Google apps":
+[account label omitted]
+- navigation:
+  - list:
+    - link "AI Mode":
+      - /url: /search?q=private+label+smart+ring+manufacturer&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDi_z1HhNmzTD8HuUN5s6Y3GZSRa1A:1795526515367&udm=50&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtICPMVaTZk4tFdUK8k5MXv8kFImvPBAiGNEoFpg6X1DxFeu8fxvml5uhpotDNmWaHsiD248kjwIcKibF5h8O8os6wDhUPmcht8-b_33gHD7gXiyqHogIFjpIw7umywaM9oYgQNHRJCxbytOSNSkjT16baj3dw&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwj2_IfB2aCYAxWAI0QIHcQzMFcQ2J8OegQIDRAD
+      - generic: AI Mode
+    - link "All" [disabled]:
+      - generic: All
+    - link "Shopping":
+      - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDi_z1HhNmzTD8HuUN5s6Y3GZSRa1A:1795526515367&udm=28&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtICPMVaTZk4tFdUK8k5MXv8kFImvPBAiGNEoFpg6X1DxFeu8fxvml5uhpotDNmWaHsiD248kjwIcKibF5h8O8os6wDhUPmcht8-b_33gHD7gXiyqHogIFjpIw7umywaM9oYgQNHRJCxbytOSNSkjT16baj3dw&q=private+label+smart+ring+manufacturer&ved=1t:220175&ictx=111
+      - generic: Shopping
+    - link "Images":
+      - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDi_z1HhNmzTD8HuUN5s6Y3GZSRa1A:1795526515367&udm=2&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtICPMVaTZk4tFdUK8k5MXv8kFImvPBAiGNEoFpg6X1DxFeu8fxvml5uhpotDNmWaHsiD248kjwIcKibF5h8O8os6wDhUPmcht8-b_33gHD7gXiyqHogIFjpIw7umywaM9oYgQNHRJCxbytOSNSkjT16baj3dw&q=private+label+smart+ring+manufacturer&sa=X&ved=2ahUKEwj2_IfB2aCYAxWAI0QIHcQzMFcQtKgLegQIEhAB
+      - generic: Images
+    - link "Short videos":
+      - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDi_z1HhNmzTD8HuUN5s6Y3GZSRa1A:1795526515367&udm=short_vids&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtICPMVaTZk4tFdUK8k5MXv8kFImvPBAiGNEoFpg6X1DxFeu8fxvml5uhpotDNmWaHsiD248kjwIcKibF5h8O8os6wDhUPmcht8-b_33gHD7gXiyqHogIFjpIw7umywaM9oYgQNHRJCxbytOSNSkjT16baj3dw&q=private+label+smart+ring+manufacturer&sa=X&ved=2ahUKEwj2_IfB2aCYAxWAI0QIHcQzMFcQs6gLegQIExAB
+      - generic: Short videos
+    - link "News":
+      - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDi_z1HhNmzTD8HuUN5s6Y3GZSRa1A:1795526515367&q=private+label+smart+ring+manufacturer&tbm=nws&source=lnms&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtICPMVaTZk4tFdUK8k5MXv8kFImvPBAiGNEoFpg6X1DxFeu8fxvml5uhpotDNmWaHsiD248kjwIcKibF5h8O8os6wDhUPmcht8-b_33gHD7gXiyqHogIFjpIw7umywaM9oYgQNHRJCxbytOSNSkjT16baj3dw&sa=X&ved=2ahUKEwj2_IfB2aCYAxWAI0QIHcQzMFcQ0pQJegQIFBAB
+      - generic: News
+    - link "Videos":
+      - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDi_z1HhNmzTD8HuUN5s6Y3GZSRa1A:1795526515367&udm=vids&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtICPMVaTZk4tFdUK8k5MXv8kFImvPBAiGNEoFpg6X1DxFeu8fxvml5uhpotDNmWaHsiD248kjwIcKibF5h8O8os6wDhUPmcht8-b_33gHD7gXiyqHogIFjpIw7umywaM9oYgQNHRJCxbytOSNSkjT16baj3dw&q=private+label+smart+ring+manufacturer&sa=X&ved=2ahUKEwj2_IfB2aCYAxWAI0QIHcQzMFcQtKgLegQIFhAB
+      - generic: Videos
+    - button "More filters":
+      - generic "More filters":
+        - generic: More
+  - button "Tools":
+    - generic: Tools
+- heading "Search Results" [level=1]
+- main:
+  - generic: Can't generate an AI overview right now. Try again later.
+  - heading "Web results" [level=2]
+  - link "White Label Smart Wearables – Smart Rings, Bands & Watches jointcorp.com https://www.jointcorp.com › white-label-service":
+    - /url: https://www.jointcorp.com/white-label-service/
+    - heading "White Label Smart Wearables – Smart Rings, Bands & Watches" [level=3]
+    - generic: jointcorp.com
+    - generic: https://www.jointcorp.com › white-label-service
+  - button "About this result":
+  - emphasis: J-STYLE's white label program
+  - text: lets you quickly bring proven smart rings, screenless bands and smart watches to market under your own brand.
+  - link "Read more":
+    - /url: https://www.jointcorp.com/white-label-service/#:~:text=J%2DSTYLE's%20white%20label%20program%20lets,market%20under%20your%20own%20brand.
+  - link "Smart Ring OEM/ODM Manufacturer & Private Label starkingsmartring.com https://starkingsmartring.com › products › smart-rings":
+    - /url: https://starkingsmartring.com/products/smart-rings/
+    - heading "Smart Ring OEM/ODM Manufacturer & Private Label" [level=3]
+    - generic: starkingsmartring.com
+    - generic: https://starkingsmartring.com › products › smart-rings
+  - button "About this result":
+  - emphasis: STAR KING smart ring OEM/ODM programs
+  - text: support private-label wearable brands, wellness businesses and digital health partners. Compare the reference model, ring ...
+  - link "Read more":
+    - /url: https://starkingsmartring.com/products/smart-rings/#:~:text=STAR%20KING%20smart%20ring%20OEM%2FODM,samples%20and%20a%20written%20quotation.
+  - link "Smart Ring Manufacturer & Health Tracking Rings OEM/ODM jointcorp.com https://www.jointcorp.com › product-cat › smart-rings":
+    - /url: https://www.jointcorp.com/product-cat/smart-rings/
+    - heading "Smart Ring Manufacturer & Health Tracking Rings OEM/ODM" [level=3]
+    - generic: jointcorp.com
+    - generic: https://www.jointcorp.com › product-cat › smart-rings
+  - button "About this result":
+  - emphasis: J-Style is a premier smart ring manufacturer
+  - text: with 20 years of experience, offering robust B2B solutions for healthcare, insurance, and wellness brands.
+  - text: "Missing: private ‎| Show results with:"
+  - link "private":
+    - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDi_z1HhNmzTD8HuUN5s6Y3GZSRa1A:1795526515367&q=%22private%22+label+smart+ring+manufacturer&sa=X&ved=2ahUKEwj2_IfB2aCYAxWAI0QIHcQzMFcQ5t4CegQIJBAB
+  - link "Custom Smart Ring Manufacturer for Private Label ... Geyan Technology https://www.gysmartwatch.com › html › custom-smart-ri...":
+    - /url: https://www.gysmartwatch.com/html/custom-smart-ringr-private-label-1856.html
+    - heading "Custom Smart Ring Manufacturer for Private Label ..." [level=3]
+    - generic: Geyan Technology
+    - generic: https://www.gysmartwatch.com › html › custom-smart-ri...
+  - button "About this result":
+  - generic: Jul 27, 2026 —
+  - text: Looking for a reliable custom smart ring manufacturer?
+  - emphasis: Geyan Technology provides private label smart ring OEM/ODM solutions
+  - text: ", including NFC ..."
+  - link "OEM & ODM Health Smart Ring Solutions Goodway Techs https://www.goodwaytechs.com › OEM&ODM":
+    - /url: https://www.goodwaytechs.com/smart-rings.html
+    - heading "OEM & ODM Health Smart Ring Solutions" [level=3]
+    - generic: Goodway Techs
+    - generic: https://www.goodwaytechs.com › OEM&ODM
+  - button "About this result":
+  - emphasis: Goodway manufactures Smart Rings
+  - text: with health monitoring, ECG, SpO₂ and sleep tracking features. OEM, ODM and private label solutions available.
+  - 'link "Smart Ring Private Label: 7 Steps to OEM Success 2026 starkingsmartring.com https://starkingsmartring.com › smart-ring-private-label..."':
+    - /url: https://starkingsmartring.com/smart-ring-private-label-private-label-brands-guide/
+    - 'heading "Smart Ring Private Label: 7 Steps to OEM Success 2026" [level=3]'
+    - generic: starkingsmartring.com
+    - generic: https://starkingsmartring.com › smart-ring-private-label...
+  - button "About this result":
+  - emphasis: Smart ring private label manufacturing
+  - text: gives your brand a custom-branded wearable produced by an OEM/ODM partner. You control design, packaging, app branding,
+  - 'link "Smart Ring Manufacturers Guide: How to Choose the Right ... Alibaba.com https://electronics.alibaba.com › buyingguides › smart-ri..."':
+    - /url: https://electronics.alibaba.com/buyingguides/smart-ring-manufacturers-guide-oem,-odm-top-brands
+    - 'heading "Smart Ring Manufacturers Guide: How to Choose the Right ..." [level=3]'
+    - generic: Alibaba.com
+    - generic: https://electronics.alibaba.com › buyingguides › smart-ri...
+  - button "About this result":
+  - generic: Jul 21, 2026 —
+  - text: A practical guide to selecting
+  - emphasis: smart ring manufacturers
+  - text: —covering top brands, OEM/ODM suppliers, key specs, and real-world trade-offs for ...
+  - link "Smart Ring Manufacturer Health White Label ... Made-in-China.com https://m.made-in-china.com › ... › Smart Ring":
+    - /url: https://m.made-in-china.com/product/Smart-Ring-Manufacturer-Health-White-Label-Smart-Rings-Health-with-LED-Display-Screen-for-Men-Women-2241413815.html
+    - heading "Smart Ring Manufacturer Health White Label ..." [level=3]
+    - generic: Made-in-China.com
+    - generic: https://m.made-in-china.com › ... › Smart Ring
+  - button "About this result":
+  - emphasis: White Label Smart Rings Health with LED Display Screen
+  - text: for Men Women US$20.90-29.90 2Pieces (MOQ) Supports white label services and logo printing
+  - generic: $20.90
+  - text: ·
+  - generic: In stock
+  - text: ·
+  - img "Rated 5.0 out of 5,":
+    - text: "5.0"
+  - text: ·
+  - generic: Review by MIC_BUYER
+  - text: ·
+  - generic: Free delivery
+  - text: "Missing: private ‎| Show results with:"
+  - link "private":
+    - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDi_z1HhNmzTD8HuUN5s6Y3GZSRa1A:1795526515367&q=%22private%22+label+smart+ring+manufacturer&sa=X&ved=2ahUKEwj2_IfB2aCYAxWAI0QIHcQzMFcQ5t4CegQIRBAB
+  - link "Wholesale and custom Smart ring gsrfidnfc.com https://gsrfidnfc.com › smart-ring":
+    - /url: https://gsrfidnfc.com/smart-ring/
+    - heading "Wholesale and custom Smart ring" [level=3]
+    - generic: gsrfidnfc.com
+    - generic: https://gsrfidnfc.com › smart-ring
+  - button "About this result":
+  - text: GSRFID is a leading
+  - emphasis: supplier
+  - text: specializing in the customization of NFC
+  - emphasis: smart ring
+  - text: ", showcasing exceptional capabilities and"
+  - emphasis: factory
+  - text: strength.
+  - link "Read more":
+    - /url: https://gsrfidnfc.com/smart-ring/#:~:text=GSRFID%20is%20a%20leading%20supplier,exceptional%20capabilities%20and%20factory%20strength.
+  - heading "People also search for" [level=2]
+  - link "Men private label smart ring manufacturer":
+    - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDi_z1HhNmzTD8HuUN5s6Y3GZSRa1A:1795526515367&q=Men+private+label+smart+ring+manufacturer&sa=X&ved=2ahUKEwj2_IfB2aCYAxWAI0QIHcQzMFcQ1QJ6BAg0EAE
+    - generic: Men private label smart ring manufacturer
+  - link "Best private label smart ring manufacturer":
+    - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDi_z1HhNmzTD8HuUN5s6Y3GZSRa1A:1795526515367&q=Best+private+label+smart+ring+manufacturer&sa=X&ved=2ahUKEwj2_IfB2aCYAxWAI0QIHcQzMFcQ1QJ6BAg6EAE
+    - generic: Best private label smart ring manufacturer
+  - link "Smart ring manufacturers":
+    - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDi_z1HhNmzTD8HuUN5s6Y3GZSRa1A:1795526515367&q=Smart+ring+manufacturers&sa=X&ved=2ahUKEwj2_IfB2aCYAxWAI0QIHcQzMFcQ1QJ6BAg7EAE
+    - generic: Smart ring manufacturers
+  - link "White label smart ring":
+    - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDi_z1HhNmzTD8HuUN5s6Y3GZSRa1A:1795526515367&q=White+label+smart+ring&sa=X&ved=2ahUKEwj2_IfB2aCYAxWAI0QIHcQzMFcQ1QJ6BAg5EAE
+    - generic: White label smart ring
+  - link "J Ring Smart Ring price":
+    - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDi_z1HhNmzTD8HuUN5s6Y3GZSRa1A:1795526515367&q=J+Ring+Smart+Ring+price&sa=X&ved=2ahUKEwj2_IfB2aCYAxWAI0QIHcQzMFcQ1QJ6BAg1EAE
+    - generic: J Ring Smart Ring price
+  - link "JCRing Smart ring":
+    - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDi_z1HhNmzTD8HuUN5s6Y3GZSRa1A:1795526515367&q=JCRing+Smart+ring&sa=X&ved=2ahUKEwj2_IfB2aCYAxWAI0QIHcQzMFcQ1QJ6BAg2EAE
+    - generic: JCRing Smart ring
+  - link "White Label Ring MapleStory":
+    - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDi_z1HhNmzTD8HuUN5s6Y3GZSRa1A:1795526515367&q=White+Label+Ring+MapleStory&sa=X&ved=2ahUKEwj2_IfB2aCYAxWAI0QIHcQzMFcQ1QJ6BAg3EAE
+    - generic: White Label Ring MapleStory
+  - link "White label wearables":
+    - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDi_z1HhNmzTD8HuUN5s6Y3GZSRa1A:1795526515367&q=White+label+wearables&sa=X&ved=2ahUKEwj2_IfB2aCYAxWAI0QIHcQzMFcQ1QJ6BAg4EAE
+    - generic: White label wearables
+  - navigation:
+    - heading "Page Navigation" [level=1]
+    - text: "1"
+    - link "Page 2":
+      - /url: /search?q=private+label+smart+ring+manufacturer&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDi_z1HhNmzTD8HuUN5s6Y3GZSRa1A:1795526515367&ei=c48Fa7b3FYDHkPIPxOfAuQU&start=10&sa=N&sstk=AYl2yk-QbaeknUr2oIM2qqt88aQCGzktXz7AkIfNm8cRZkf8KXpzThkzB4h4stbEZck3NmL7bSiPpSboS1zkgwi0GX2jkqfXWJP8tg&ved=2ahUKEwj2_IfB2aCYAxWAI0QIHcQzMFcQ8tMDegQIMhAE
+      - text: "2"
+    - link "Page 3":
+      - /url: /search?q=private+label+smart+ring+manufacturer&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDi_z1HhNmzTD8HuUN5s6Y3GZSRa1A:1795526515367&ei=c48Fa7b3FYDHkPIPxOfAuQU&start=20&sa=N&sstk=AYl2yk-QbaeknUr2oIM2qqt88aQCGzktXz7AkIfNm8cRZkf8KXpzThkzB4h4stbEZck3NmL7bSiPpSboS1zkgwi0GX2jkqfXWJP8tg&ved=2ahUKEwj2_IfB2aCYAxWAI0QIHcQzMFcQ8tMDegQIMhAG
+      - text: "3"
+    - link "Page 4":
+      - /url: /search?q=private+label+smart+ring+manufacturer&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDi_z1HhNmzTD8HuUN5s6Y3GZSRa1A:1795526515367&ei=c48Fa7b3FYDHkPIPxOfAuQU&start=30&sa=N&sstk=AYl2yk-QbaeknUr2oIM2qqt88aQCGzktXz7AkIfNm8cRZkf8KXpzThkzB4h4stbEZck3NmL7bSiPpSboS1zkgwi0GX2jkqfXWJP8tg&ved=2ahUKEwj2_IfB2aCYAxWAI0QIHcQzMFcQ8tMDegQIMhAI
+      - text: "4"
+    - link "Page 5":
+      - /url: /search?q=private+label+smart+ring+manufacturer&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDi_z1HhNmzTD8HuUN5s6Y3GZSRa1A:1795526515367&ei=c48Fa7b3FYDHkPIPxOfAuQU&start=40&sa=N&sstk=AYl2yk-QbaeknUr2oIM2qqt88aQCGzktXz7AkIfNm8cRZkf8KXpzThkzB4h4stbEZck3NmL7bSiPpSboS1zkgwi0GX2jkqfXWJP8tg&ved=2ahUKEwj2_IfB2aCYAxWAI0QIHcQzMFcQ8tMDegQIMhAK
+      - text: "5"
+    - link "Page 6":
+      - /url: /search?q=private+label+smart+ring+manufacturer&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDi_z1HhNmzTD8HuUN5s6Y3GZSRa1A:1795526515367&ei=c48Fa7b3FYDHkPIPxOfAuQU&start=50&sa=N&sstk=AYl2yk-QbaeknUr2oIM2qqt88aQCGzktXz7AkIfNm8cRZkf8KXpzThkzB4h4stbEZck3NmL7bSiPpSboS1zkgwi0GX2jkqfXWJP8tg&ved=2ahUKEwj2_IfB2aCYAxWAI0QIHcQzMFcQ8tMDegQIMhAM
+      - text: "6"
+    - link "Page 7":
+      - /url: /search?q=private+label+smart+ring+manufacturer&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDi_z1HhNmzTD8HuUN5s6Y3GZSRa1A:1795526515367&ei=c48Fa7b3FYDHkPIPxOfAuQU&start=60&sa=N&sstk=AYl2yk-QbaeknUr2oIM2qqt88aQCGzktXz7AkIfNm8cRZkf8KXpzThkzB4h4stbEZck3NmL7bSiPpSboS1zkgwi0GX2jkqfXWJP8tg&ved=2ahUKEwj2_IfB2aCYAxWAI0QIHcQzMFcQ8tMDegQIMhAO
+      - text: "7"
+    - link "Page 8":
+      - /url: /search?q=private+label+smart+ring+manufacturer&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDi_z1HhNmzTD8HuUN5s6Y3GZSRa1A:1795526515367&ei=c48Fa7b3FYDHkPIPxOfAuQU&start=70&sa=N&sstk=AYl2yk-QbaeknUr2oIM2qqt88aQCGzktXz7AkIfNm8cRZkf8KXpzThkzB4h4stbEZck3NmL7bSiPpSboS1zkgwi0GX2jkqfXWJP8tg&ved=2ahUKEwj2_IfB2aCYAxWAI0QIHcQzMFcQ8tMDegQIMhAQ
+      - text: "8"
+    - link "Page 9":
+      - /url: /search?q=private+label+smart+ring+manufacturer&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDi_z1HhNmzTD8HuUN5s6Y3GZSRa1A:1795526515367&ei=c48Fa7b3FYDHkPIPxOfAuQU&start=80&sa=N&sstk=AYl2yk-QbaeknUr2oIM2qqt88aQCGzktXz7AkIfNm8cRZkf8KXpzThkzB4h4stbEZck3NmL7bSiPpSboS1zkgwi0GX2jkqfXWJP8tg&ved=2ahUKEwj2_IfB2aCYAxWAI0QIHcQzMFcQ8tMDegQIMhAS
+      - text: "9"
+    - link "Page 10":
+      - /url: /search?q=private+label+smart+ring+manufacturer&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDi_z1HhNmzTD8HuUN5s6Y3GZSRa1A:1795526515367&ei=c48Fa7b3FYDHkPIPxOfAuQU&start=90&sa=N&sstk=AYl2yk-QbaeknUr2oIM2qqt88aQCGzktXz7AkIfNm8cRZkf8KXpzThkzB4h4stbEZck3NmL7bSiPpSboS1zkgwi0GX2jkqfXWJP8tg&ved=2ahUKEwj2_IfB2aCYAxWAI0QIHcQzMFcQ8tMDegQIMhAU
+      - text: "10"
+    - heading "Next" [level=2]:
+      - link "Next":
+        - /url: /search?q=private+label+smart+ring+manufacturer&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDi_z1HhNmzTD8HuUN5s6Y3GZSRa1A:1795526515367&ei=c48Fa7b3FYDHkPIPxOfAuQU&start=10&sa=N&sstk=AYl2yk-QbaeknUr2oIM2qqt88aQCGzktXz7AkIfNm8cRZkf8KXpzThkzB4h4stbEZck3NmL7bSiPpSboS1zkgwi0GX2jkqfXWJP8tg&ved=2ahUKEwj2_IfB2aCYAxWAI0QIHcQzMFcQ8NMDegQIMhAW
+        - generic: Next
+  - navigation
+- contentinfo:
+  - heading "Footer Links" [level=1]
+  - generic: Results are personalized
+  - generic: "-"
+  - link "Try without personalization":
+    - /url: https://www.google.com/search?q=private+label+smart+ring+manufacturer&hl=en&peek_pws=0&sxsrf=AKL5yDi_z1HhNmzTD8HuUN5s6Y3GZSRa1A:1795526515367
+    - generic: Try without personalization
+  - button "Los Angeles County, California - Based on your past activity":
+    - generic: Los Angeles County, California
+    - text: "-"
+    - generic: Based on your past activity
+  - text: "-"
+  - button "Update location": Update location
+  - link "Help":
+    - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en&fg=1
+  - button "Send feedback":
+    - generic: Send feedback
+  - link "Privacy":
+    - /url: https://policies.google.com/privacy?hl=en&fg=1
+  - link "Terms":
+    - /url: https://policies.google.com/terms?hl=en&fg=1

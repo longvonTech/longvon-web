@@ -1,0 +1,86 @@
+{
+  "captured_at": "2026-11-24T13:33:23.779Z",
+  "platform": "Perplexity",
+  "mode": "INCOGNITO_SEARCH",
+  "completion": "COMPLETE",
+  "country": "UNKNOWN",
+  "citation_targets": [
+    {
+      "label": "appinventiv\nSmart Ring App Development: SDKs, Compliance, Cost and Process\nPlan smart ring app development with clarity on SDK integration, BLE pairing, AI health insights, FDA and HIPAA rules, cost, and timelines for US health products.",
+      "url": "https://appinventiv.com/blog/smart-ring-app-development/"
+    },
+    {
+      "label": "kanopylabs\nHow to Build a Smart Ring Health Data Integration App in 2026\nA smart ring health data app development guide covering BLE protocols, HealthKit, Health Connect, AI insights, HIPAA compliance, and full build costs.",
+      "url": "https://kanopylabs.com/blog/how-to-build-a-smart-ring-health-data-app"
+    },
+    {
+      "label": "sahha\nThe Smart Ring Market in 2026: Oura, Samsung, Ultrahuman\nAbout 4.3 million smart rings shipped in 2025 and Oura took three in four. The 2026 smart ring market: Oura, Samsung, Ultrahuman, RingConn and Garmin.",
+      "url": "https://sahha.ai/blog/smart-ring-market-2026/"
+    },
+    {
+      "label": "aifitnessapi\nSmart Ring APIs (2026): Which Rings Let Developers In\nOura, Ultrahuman, Galaxy Ring and RingConn compared for developers: cloud API or SDK, how users consent, approval gates, limits and what users must pay.",
+      "url": "https://aifitnessapi.com/fitness-apis/smart-ring-apis"
+    },
+    {
+      "label": "github\nring-stats/research/RING_PROVIDERS.md at main\nOura ring stats in your Mac menu bar. Native, open source, no server. - PetriLahdelma/ring-stats",
+      "url": "https://github.com/PetriLahdelma/ring-stats/blob/main/research/RING_PROVIDERS.md"
+    },
+    {
+      "label": "appmatictech\nSmart Ring App Development: How to Build a Companion App for a …\nSmart ring app development guide by AppMatic Tech: ring BLE sync, battery limits, sleep and temperature data, Oura and Galaxy Ring APIs, and patent rulings.",
+      "url": "https://appmatictech.com/insights/smart-ring-app-development/"
+    },
+    {
+      "label": "smartringhq\nSmart Ring Google Health Connect Integration UK 2026\nHow smart rings sync with Android's Health Connect: which rings support it, how to set it up, what data flows, and how it differs from Google Fit.",
+      "url": "https://smartringhq.com/blog/smart-ring-google-health-connect-integration-uk-2026/"
+    },
+    {
+      "label": "longvon\nSmart Ring SDK & Cloud API for OEM Partners\nLONGVON enables partner SDK access so brands and digital-health teams can integrate smart ring hardware with their own applications. ... Evaluating raw signals for your wearable product, digital-health platform, algorithm team or research project? ... The SDK provides agreed device-connectivity and data pathways. ... Many health metrics use LONGVON cloud algorithm services. ... Partners can plan App-side and cloud-side integration for sleep, respiratory, and other health-monitoring outputs....",
+      "url": "https://www.longvon.com/en/smart-ring-sdk-api"
+    },
+    {
+      "label": "pettersonapps\nInspiring Case Study: Smart-Ring Wellness App — PettersonApps\nHow PettersonApps redesigned Inspiring, a wellness app for Norway’s first smart ring: native iOS and Android apps with readiness, sleep and heart-rate insights.",
+      "url": "https://pettersonapps.com/portfolio/inspiring-ring"
+    },
+    {
+      "label": "myringagent\nSmart Ring Integrations\nConnect your Oura Ring, Ultrahuman, Circular, or RingConn to MyRingAgent. We only integrate with devices that offer secure API access.",
+      "url": "https://myringagent.com/integrations"
+    },
+    {
+      "label": "project-haltija\nOpen Smart Ring Initiative - Project Haltija\nWe've set out to build a smart ring thats highly functional, developer friendly and open.",
+      "url": "https://www.project-haltija.com/api"
+    },
+    {
+      "label": "developers.anpheros\nUltrahuman API to FHIR: get Ultrahuman Ring data into your app\nUltrahuman OAuth API, personal tokens and MCP: read Ring AIR heart rate, HRV, sleep and steps and store them as FHIR R4 Observations, with code.",
+      "url": "https://developers.anpheros.com/guides/ultrahuman-api"
+    },
+    {
+      "label": "thryve\nOura Ring Integration API – Access Sleep & Recovery Data\nOura Ring Integration API – Access Sleep & Recovery Data Thryve ... API Documentation Access the full developer documentation with authentication flows, data models, endpoints, and integration guides. ... Power personalized digital health, mental wellness, and clinical research solutions. ... Thryve enables frictionless integration of data from Oura Ring (Gen 2 and Gen 3 models), offering continuous, validated metrics such as sleep stages, heart rate variability (HRV), temperature trends,...",
+      "url": "https://www.thryve.health/supported-wearable-devices/oura"
+    },
+    {
+      "label": "thryve\nUnterstützte Wearables\nVerbinden Sie sich mit über 500 Wearables und Gesundheits-Apps über die API von Thryve. Inklusive Apple HealthKit, Fitbit, Garmin, Oura, Whoop und mehr. Ohne Drittanbieter-Aggregatoren.",
+      "url": "https://www.thryve.health/de/unterstuetzte-wearables"
+    },
+    {
+      "label": "aifitnessapi\nsmart-ring-apis.md\nWe found no developer API for RingConn. ... Cloud API or on-device SDK. A cloud API lets your server pull data for many users; an on-device SDK means your Android or iOS app reads the data on the user's phone.",
+      "url": "https://aifitnessapi.com/fitness-apis/smart-ring-apis.md"
+    }
+  ],
+  "citation_reachability": "UNKNOWN",
+  "screenshot": "REQUIRES_VISUAL_REVIEW",
+  "bounds": {
+    "left": 140.5,
+    "right": 828.5,
+    "viewport": 1268
+  },
+  "files": [
+    {
+      "name": "perplexity-Q11.txt",
+      "sha256": "35bb9d21f8af7dfe0d9e669ed6a9ff52d11729230b047e7365e8716051d077b8"
+    },
+    {
+      "name": "perplexity-Q11.jpg",
+      "sha256": "fcfd304120d2ebcce8fa550decf2070ea29a923ff4903d21359b3ddb05b9254f"
+    }
+  ]
+}

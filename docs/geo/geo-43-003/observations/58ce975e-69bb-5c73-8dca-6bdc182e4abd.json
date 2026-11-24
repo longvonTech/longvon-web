@@ -1,0 +1,68 @@
+{
+  "record_id": "58ce975e-69bb-5c73-8dca-6bdc182e4abd",
+  "query_id": "Q12",
+  "query": "medical smart ring ODM manufacturer",
+  "platform": "Perplexity",
+  "mode": "INCOGNITO_SEARCH",
+  "observed_at": "2026-11-24T13:35:07.740Z",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "Chrome signed-in incognito Search; Pro free-preview label; UI zh, query/answer en; model UNKNOWN; PR27 visible source-panel DOM extraction",
+  "availability": "COMPLETED",
+  "longvon_present": true,
+  "organic_rank": null,
+  "ai_body_recommended": true,
+  "source_cited": true,
+  "cited_urls": [
+    "https://www.longvon.com/en/smart-ring-oem-odm",
+    "https://www.jointcorp.com/product-cat/smart-rings/",
+    "https://aiullain.com/",
+    "https://www.longvon.com/en/smart-ring-healthcare-solutions",
+    "https://www.longvon.com/en/smart-ring-manufacturer",
+    "https://www.jointcorp.com/",
+    "https://www.smareyetech.com/product/smart-ring-sleep-heart-rate-fitness-tracker/",
+    "https://www.smareyetech.com/smart-wearable-jewelry/",
+    "https://www.staranbsmart.com/product_category/smart-ring/",
+    "https://www.goldenweald.com/smart-ring-oem-odm-manufacturer-custom-smart-rings/"
+  ],
+  "competitors": [
+    {
+      "name": "J-Style / Jointcorp",
+      "url": "https://www.jointcorp.com/product-cat/smart-rings/",
+      "position": "visible sources item #2",
+      "evidence_quote": "jointcorp\nSmart Ring Manufacturer & Health Tracking Rings OEM/ODM - J-Style\nJ-Style provides OEM/ODM smart rings with advanced sensors for sleep, HRV, stress, and fitness tracking. Custom designs, medical-grade accuracy, and full-stack wearable solutions."
+    },
+    {
+      "name": "SmarEye",
+      "url": "https://www.smareyetech.com/product/smart-ring-sleep-heart-rate-fitness-tracker/",
+      "position": "visible sources item #7",
+      "evidence_quote": "smareyetech\nFashionable Smart Ring for Men and Women - Sleep Analyzer, Heart Rate, Blood Pressure Monitor, Fitness Tracker\nOEM/ODM smartwatches, smart bands, smart rings and AI smart glasses engineered and built in Shenzhen since 2010. Under 0.3% defect rate, 50+ export countries."
+    },
+    {
+      "name": "Golden Weald",
+      "url": "https://www.goldenweald.com/smart-ring-oem-odm-manufacturer-custom-smart-rings/",
+      "position": "visible sources item #10",
+      "evidence_quote": "goldenweald\nSmart Ring OEM & ODM Manufacturer | Custom Smart Rings\nWhy Choose PCB Assembly In China-Since1998,GoldenWeald,pcb assembly in china, china pcb assembly manufacturer, pcb assembly from china"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-24-round2/perplexity-Q12-sources.json",
+      "sha256": "874ef29e54ceb4a93aa2843c2c2140c953b4447ac8ed5a0971cd9573572d1cd3"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/perplexity-Q12.jpg",
+      "sha256": "88e9cc4b3661c1accd92f06b41bed06f688eb11f14bbb1daaddeff6b54c2fa97"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/perplexity-Q12.json",
+      "sha256": "26ba0949559c1af73e43a711f97c21ffd7b4e9d09dd94273dd8656ea40bead01"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/perplexity-Q12.txt",
+      "sha256": "66ad0f12fcdb45fdaa33a97efb5419b119cd894c16f02f6a0b52973c94a682c0"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "New round2 capture; environment/method differs from round1: no comparable previous_record_id and no ranking-growth attribution. Citations prove visible URLs only; reachability and commercial facts UNKNOWN."
+}

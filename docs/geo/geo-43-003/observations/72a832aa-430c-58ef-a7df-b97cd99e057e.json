@@ -1,0 +1,53 @@
+{
+  "record_id": "72a832aa-430c-58ef-a7df-b97cd99e057e",
+  "query_id": "Q02",
+  "query": "smart ring manufacturer China",
+  "platform": "Google",
+  "mode": "ALL_FIRST_PAGE_AUTO_AI_OVERVIEW",
+  "observed_at": "2026-11-24T13:21:13.234Z",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "Chrome existing signed-in profile; hl=en; personalized results; country UNKNOWN; PR27 bounded AI receipt detector; collapsed overview scope",
+  "availability": "COMPLETED",
+  "longvon_present": false,
+  "organic_rank": null,
+  "ai_body_recommended": null,
+  "source_cited": null,
+  "cited_urls": [],
+  "competitors": [
+    {
+      "name": "J-Style / Jointcorp",
+      "url": "https://www.jointcorp.com/product-cat/smart-rings/",
+      "position": "web-result h3 #1",
+      "evidence_quote": "- link \"Smart Ring Manufacturer & Health Tracking Rings OEM/ODM jointcorp.com https://www.jointcorp.com › product-cat › smart-rings\":"
+    },
+    {
+      "name": "Golden Weald",
+      "url": "https://www.goldenweald.com/service/ai-smart-ring-oem-odm-manufacturer-ai-recording-translation-wearable-devices/",
+      "position": "web-result h3 #5",
+      "evidence_quote": "- link \"AI Smart Ring OEM/ODM Manufacturer in China | GoldenWeald goldenweald.com https://www.goldenweald.com › Services\":"
+    },
+    {
+      "name": "eIoT",
+      "url": "https://www.eiot.com/",
+      "position": "web-result h3 #9",
+      "evidence_quote": "- link \"367 user reviews\":"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-24-round2/google-Q02.jpg",
+      "sha256": "a9f166aa603a9942c6574fd349f1e42f0184742d3f1f2e1a5fc9a86c25269617"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/google-Q02.json",
+      "sha256": "609d33bf4036e092522019b837ce81dc8c5c0728d6925b8a899d27b5749e22f8"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/google-Q02.txt",
+      "sha256": "08fba45385e75f23bc03eef24b6f789ae00c7eedf0f188d47e33494fd96558d7"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "New round2 capture; environment/method differs from round1: no comparable previous_record_id and no ranking-growth attribution. Citations prove visible URLs only; reachability and commercial facts UNKNOWN."
+}

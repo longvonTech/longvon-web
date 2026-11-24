@@ -1,0 +1,77 @@
+{
+  "record_id": "96b08b43-a94c-53e9-8615-a9662f0bb8ab",
+  "query_id": "Q04",
+  "query": "custom smart ring development company",
+  "platform": "ChatGPT",
+  "mode": "DEFAULT_ANSWER",
+  "observed_at": "2026-11-24T13:23:42.314Z",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "IAB logged out, new conversation per query; UI zh, query/answer en; model UNKNOWN; web-search invocation UNKNOWN; PR27 dual-height 1440x1000/1600 capture",
+  "availability": "COMPLETED",
+  "longvon_present": true,
+  "organic_rank": null,
+  "ai_body_recommended": true,
+  "source_cited": true,
+  "cited_urls": [
+    "https://www.longvon.com/en/smart-ring-solution-provider?utm_source=chatgpt.com",
+    "https://bonlala.com/?utm_source=chatgpt.com",
+    "https://comiring.com/customized-service/?utm_source=chatgpt.com",
+    "https://idotring.com/en/?utm_source=chatgpt.com",
+    "https://engrasun.com/?utm_source=chatgpt.com"
+  ],
+  "competitors": [
+    {
+      "name": "Bonlala",
+      "url": "https://bonlala.com/?utm_source=chatgpt.com",
+      "position": "explicit answer URL order",
+      "evidence_quote": "- /url: https://bonlala.com/?utm_source=chatgpt.com"
+    },
+    {
+      "name": "COMI",
+      "url": "https://comiring.com/customized-service/?utm_source=chatgpt.com",
+      "position": "explicit answer URL order",
+      "evidence_quote": "- /url: https://comiring.com/customized-service/?utm_source=chatgpt.com"
+    },
+    {
+      "name": "IDOT",
+      "url": "https://idotring.com/en/?utm_source=chatgpt.com",
+      "position": "explicit answer URL order",
+      "evidence_quote": "- /url: https://idotring.com/en/?utm_source=chatgpt.com"
+    },
+    {
+      "name": "Engrasun",
+      "url": "https://engrasun.com/?utm_source=chatgpt.com",
+      "position": "explicit answer URL order",
+      "evidence_quote": "- /url: https://engrasun.com/?utm_source=chatgpt.com"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q04-1000.jpg",
+      "sha256": "c61987d2dc12d59b5de89ff0252a8f2d5ca2ba9c2ae23a7e557e79f799950d55"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q04-1000.json",
+      "sha256": "9e7a22ade2ffd8e901ddac5a3bf366c7a9dff3adb15c9f8553d4487f2629b908"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q04-1000.txt",
+      "sha256": "b2022d712ddcf59cfdaf00e3560d6bcd19f6ef1d37924f791c5561d8a22f7d14"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q04-1600.jpg",
+      "sha256": "edaa743a1ce6a781239f7df61cebfba707a9b725a1822e5bdba0062cba9a57c4"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q04-1600.json",
+      "sha256": "228b62ea4567e6078c6730d1d5485d1fe69daa21cccaa68d6d200d67f9bb0f46"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q04-1600.txt",
+      "sha256": "b2022d712ddcf59cfdaf00e3560d6bcd19f6ef1d37924f791c5561d8a22f7d14"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "New round2 capture; environment/method differs from round1: no comparable previous_record_id and no ranking-growth attribution. Citations prove visible URLs only; reachability and commercial facts UNKNOWN."
+}

@@ -1,0 +1,280 @@
+- complementary:
+  - navigation "侧边栏导航":
+    - link:
+      - /url: /
+    - button "展开侧边栏"
+    - group "创建":
+      - link "新建":
+        - /url: /
+        - generic: 新建
+    - group "主导航":
+      - link "自动化":
+        - /url: /automations
+        - generic: 自动化
+      - link "工件":
+        - /url: /artifacts
+        - generic: 工件
+      - link "插件":
+        - /url: /computer/plugins
+        - generic: 插件
+      - button "更多":
+        - generic: 更多
+    - link "项目":
+      - /url: /projects
+    - link "会话":
+      - /url: /library
+    - button "升级计划":
+    - button "libing shi":
+      - generic: libing shi
+  - separator "调整侧边栏宽度"
+- main:
+  - button "返回上一页":
+  - tablist "回答模式标签页":
+    - tab "答案" [selected]:
+      - text: 答案
+    - tab "链接":
+      - text: 链接
+    - tab "图片":
+      - text: 图片
+  - button "会话选项":
+  - button "分享":
+    - generic: 分享
+  - button "下载桌面应用":
+    - generic: 下载桌面应用
+  - generic: 21:20
+  - button "编辑查询":
+  - button "复制查询":
+  - paragraph: smart ring manufacturer China
+  - button "已完成 1秒":
+    - generic "已完成"
+    - generic: 1秒
+  - paragraph:
+    - text: China—especially Shenzhen—has a large ecosystem of smart-ring OEM/ODM manufacturers, covering health tracking, sleep monitoring, NFC, gesture control, and custom firmware/app development. The strongest candidates for a branded product are Shenzhen-based factories that offer full design, PCBA, prototyping, testing, and assembly.
+    - img "可信域名":
+    - generic: cincinnati
+    - generic: "+1"
+  - heading "Manufacturers to shortlist" [level=2]
+  - table:
+    - rowgroup:
+      - row "Manufacturer Location Focus / positioning":
+        - columnheader "Manufacturer"
+        - columnheader "Location"
+        - columnheader "Focus / positioning"
+    - rowgroup:
+      - row "Shenzhen Golden Weald Electronic Shenzhen OEM/ODM smart-ring manufacturer and electronics manufacturing services (EMS); supports design, prototyping, engineering, testing, and final assembly. PCB Assembly Smart Ring OEM/ODM Manufacturer in China":
+        - cell "Shenzhen Golden Weald Electronic"
+        - cell "Shenzhen"
+        - cell "OEM/ODM smart-ring manufacturer and electronics manufacturing services (EMS); supports design, prototyping, engineering, testing, and final assembly. PCB Assembly Smart Ring OEM/ODM Manufacturer in China":
+          - text: OEM/ODM smart-ring manufacturer and electronics manufacturing services (EMS); supports design, prototyping, engineering, testing, and final assembly.
+          - generic "PCB Assembly Smart Ring OEM/ODM Manufacturer in China":
+            - link "goldenweald":
+              - /url: https://www.goldenweald.com/
+              - generic: goldenweald
+      - row "Shenzhen YT Technology (“YT Smart Wear”) Shenzhen Established wearable maker producing smart rings, AI glasses, and earbuds; reported capacity of roughly 300,000 units/month across eight assembly and two SMT lines. Top 10 Shenzhen Wearable Suppliers Show How APEC Outcomes Add New ...":
+        - cell "Shenzhen YT Technology (“YT Smart Wear”)"
+        - cell "Shenzhen"
+        - cell "Established wearable maker producing smart rings, AI glasses, and earbuds; reported capacity of roughly 300,000 units/month across eight assembly and two SMT lines. Top 10 Shenzhen Wearable Suppliers Show How APEC Outcomes Add New ...":
+          - text: Established wearable maker producing smart rings, AI glasses, and earbuds; reported capacity of roughly 300,000 units/month across eight assembly and two SMT lines.
+          - generic "Top 10 Shenzhen Wearable Suppliers Show How APEC Outcomes Add New ...":
+            - link "可信域名 cincinnati":
+              - /url: https://www.cincinnati.com/press-release/story/154175/top-10-shenzhen-wearable-suppliers-show-how-apec-outcomes-add-new-checks-to-sourcing/
+              - img "可信域名":
+              - generic: cincinnati
+      - 'row "Shenzhen Huahesheng Technology Shenzhen Lists smart rings and smart watches as core products; a practical option to evaluate for standard health-tracking ring models. Shenzhen Huahesheng Technology Co., Ltd.: Smart Ring Manufacturer ..."':
+        - cell "Shenzhen Huahesheng Technology"
+        - cell "Shenzhen"
+        - 'cell "Lists smart rings and smart watches as core products; a practical option to evaluate for standard health-tracking ring models. Shenzhen Huahesheng Technology Co., Ltd.: Smart Ring Manufacturer ..."':
+          - text: Lists smart rings and smart watches as core products; a practical option to evaluate for standard health-tracking ring models.
+          - 'generic "Shenzhen Huahesheng Technology Co., Ltd.: Smart Ring Manufacturer ..."':
+            - link "smartring.en.made-in-china":
+              - /url: https://smartring.en.made-in-china.com/
+              - generic: smartring.en.made-in-china
+      - row "China Xinrui Group China Wearable-device specialist with over 20 years’ experience; product range includes smart rings, bracelets, glasses, robots, and exoskeletons. Company Overview of China Smart Rings Manufacturer":
+        - cell "China Xinrui Group"
+        - cell "China"
+        - cell "Wearable-device specialist with over 20 years’ experience; product range includes smart rings, bracelets, glasses, robots, and exoskeletons. Company Overview of China Smart Rings Manufacturer":
+          - text: Wearable-device specialist with over 20 years’ experience; product range includes smart rings, bracelets, glasses, robots, and exoskeletons.
+          - generic "Company Overview of China Smart Rings Manufacturer":
+            - link "yichunxinrui.manufacturer.globalsources":
+              - /url: https://yichunxinrui.manufacturer.globalsources.com/company-profile_6008827469217.htm
+              - generic: yichunxinrui.manufacturer.globalsources
+      - row "Shenzhen Youhong Technology Shenzhen JCRing-series smart rings, including health/fitness-oriented models. Discover 2025 Smart Ring for Health & Fitness Tracking | JCRing":
+        - cell "Shenzhen Youhong Technology"
+        - cell "Shenzhen"
+        - cell "JCRing-series smart rings, including health/fitness-oriented models. Discover 2025 Smart Ring for Health & Fitness Tracking | JCRing":
+          - text: JCRing-series smart rings, including health/fitness-oriented models.
+          - generic "Discover 2025 Smart Ring for Health & Fitness Tracking | JCRing":
+            - link "alibaba":
+              - /url: https://www.alibaba.com/supplier/smart-ring.html
+              - generic: alibaba
+      - row "Shenzhen Twinkler Technology Shenzhen TKYUAN health smart-ring series. Discover 2025 Smart Ring for Health & Fitness Tracking | JCRing":
+        - cell "Shenzhen Twinkler Technology"
+        - cell "Shenzhen"
+        - cell "TKYUAN health smart-ring series. Discover 2025 Smart Ring for Health & Fitness Tracking | JCRing":
+          - text: TKYUAN health smart-ring series.
+          - generic "Discover 2025 Smart Ring for Health & Fitness Tracking | JCRing":
+            - link "alibaba":
+              - /url: https://www.alibaba.com/supplier/smart-ring.html
+              - generic: alibaba
+      - row "Shenzhen Keshengming Technology Shenzhen Ceramic NFC rings and touch-screen ring models. Discover 2025 Smart Ring for Health & Fitness Tracking | JCRing":
+        - cell "Shenzhen Keshengming Technology"
+        - cell "Shenzhen"
+        - cell "Ceramic NFC rings and touch-screen ring models. Discover 2025 Smart Ring for Health & Fitness Tracking | JCRing":
+          - text: Ceramic NFC rings and touch-screen ring models.
+          - generic "Discover 2025 Smart Ring for Health & Fitness Tracking | JCRing":
+            - link "alibaba":
+              - /url: https://www.alibaba.com/supplier/smart-ring.html
+              - generic: alibaba
+  - heading "What to request from suppliers" [level=2]
+  - paragraph: "For a credible supplier comparison, ask each factory for:"
+  - list:
+    - paragraph:
+      - strong: "Company and factory verification:"
+      - text: business license, factory address, export history, and whether it is a manufacturer rather than a trading company.
+    - paragraph:
+      - strong: "Product evidence:"
+      - text: samples, teardown/BOM, sensor accuracy test data, battery-life report, waterproof rating, and app screenshots.
+    - paragraph:
+      - strong: "Customization scope:"
+      - text: logo, housing material, color, sizing, firmware, SDK/API access, mobile app, cloud backend, packaging, and certification support.
+    - paragraph:
+      - strong: "Compliance:"
+      - text: CE, FCC, UKCA, RoHS, REACH, and medical-device rules if you market health claims; do not assume a consumer smart ring is a regulated medical device.
+    - paragraph:
+      - strong: "Commercial terms:"
+      - text: MOQ, sample cost, unit price at target volume, lead time, warranty, defect rate, payment terms, and IP ownership for custom firmware/design.
+    - paragraph:
+      - strong: "Production controls:"
+      - text: incoming QC, aging tests, water-resistance testing, calibration, serial-number traceability, and post-launch repair/RMA process.
+  - heading "Sourcing cautions" [level=2]
+  - paragraph:
+    - text: Many listings on Alibaba, Made-in-China, and Global Sources mix true factories with trading companies; Made-in-China’s directory itself identifies only 36 of the listed smart-ring suppliers as manufacturer/factory businesses. Common catalog products advertise heart rate, blood oxygen, sleep, HRV, NFC, and IP68/5ATM features, but you should validate real-world sensor performance and app quality before committing to volume.
+    - generic: made-in-china
+    - generic: "+2"
+  - heading "Practical approach" [level=2]
+  - list:
+    - paragraph: Shortlist 5–8 Shenzhen suppliers, prioritizing those offering ODM rather than only white-label catalog rings.
+    - paragraph: Order samples from at least 3, then run side-by-side tests for sleep detection, heart rate, SpO2, battery life, charging, app stability, and water exposure.
+    - paragraph:
+      - text: Ask for a
+      - strong: custom ODM quote
+      - text: with your required sensors, materials, battery capacity, app features, certifications, and annual volume.
+    - paragraph: Visit or commission a third-party factory audit before placing a first production order.
+  - paragraph:
+    - text: For a new brand,
+    - strong: Golden Weald
+    - text: is worth approaching for full OEM/ODM/PCBA support, while
+    - strong: YT Technology
+    - text: is a stronger candidate if production scale and wearable-manufacturing experience are the priority.
+    - img "可信域名":
+    - generic: cincinnati
+    - generic: "+1"
+  - button "复制":
+  - button "分享":
+  - button "有帮助":
+  - button "没有帮助":
+  - button "复刻":
+  - button "13 个来源" [active]:
+    - text: 13 个来源
+  - button "更多操作":
+  - button "Notify me of new smart ring makers in China"
+  - text: Notify me of new smart ring makers in China
+  - text: 自动化
+  - button "What are typical MOQs for smart rings"
+  - text: What are typical MOQs for smart rings
+  - button "How to verify a Chinese smart ring factory"
+  - text: How to verify a Chinese smart ring factory
+  - button "What sensors are used in smart rings"
+  - text: What sensors are used in smart rings
+  - button "How to request smart ring OEM samples"
+  - text: How to request smart ring OEM samples
+  - button "隐藏详情":
+  - button "来源" [expanded]:
+    - generic: 来源
+  - link "goldenweald PCB Assembly Smart Ring OEM/ODM Manufacturer in China provide One station service from PCB Assembly in china ,PCBA manufacturer, China PCBA board ,molds, plastic injection, CNC enclosure, metal parts to final product assembly":
+    - /url: https://www.goldenweald.com/
+    - generic: goldenweald
+    - generic: PCB Assembly Smart Ring OEM/ODM Manufacturer in China
+    - generic: provide One station service from PCB Assembly in china ,PCBA manufacturer, China PCBA board ,molds, plastic injection, CNC enclosure, metal parts to final product assembly
+  - link "cincinnati 可信域名 Top 10 Shenzhen Wearable Suppliers Show How APEC Outcomes Add New ... SHENZHEN, GUANGDONG, CHINA, November 20, 2026 /EINPresswire.com/ -- Leaders adopted a declaration covering trade,":
+    - /url: https://www.cincinnati.com/press-release/story/154175/top-10-shenzhen-wearable-suppliers-show-how-apec-outcomes-add-new-checks-to-sourcing/
+    - generic: cincinnati
+    - img "可信域名":
+    - generic: Top 10 Shenzhen Wearable Suppliers Show How APEC Outcomes Add New ...
+    - generic: SHENZHEN, GUANGDONG, CHINA, November 20, 2026 /EINPresswire.com/ -- Leaders adopted a declaration covering trade,
+  - 'link "smartring.en.made-in-china Shenzhen Huahesheng Technology Co., Ltd.: Smart Ring Manufacturer ... Smart Ring Supplier, Smart Watch, Intelligent Watch Manufacturers/ Suppliers - Shenzhen Huahesheng Technology Co., Ltd."':
+    - /url: https://smartring.en.made-in-china.com/
+    - generic: smartring.en.made-in-china
+    - generic: "Shenzhen Huahesheng Technology Co., Ltd.: Smart Ring Manufacturer ..."
+    - generic: Smart Ring Supplier, Smart Watch, Intelligent Watch Manufacturers/ Suppliers - Shenzhen Huahesheng Technology Co., Ltd.
+  - link "yichunxinrui.manufacturer.globalsources Company Overview of China Smart Rings Manufacturer Check out manufacturer China Xinrui Group Ltd. company information, registration profile, product & service offerings, production capacity, quality control, R&D capabilities and more.":
+    - /url: https://yichunxinrui.manufacturer.globalsources.com/company-profile_6008827469217.htm
+    - generic: yichunxinrui.manufacturer.globalsources
+    - generic: Company Overview of China Smart Rings Manufacturer
+    - generic: Check out manufacturer China Xinrui Group Ltd. company information, registration profile, product & service offerings, production capacity, quality control, R&D capabilities and more.
+  - link "alibaba Discover 2025 Smart Ring for Health & Fitness Tracking | JCRing Shop premium smart rings with heart rate, sleep, and blood oxygen monitoring. Waterproof, stylish designs for men and women. Order now with customization options.":
+    - /url: https://www.alibaba.com/supplier/smart-ring.html
+    - generic: alibaba
+    - generic: Discover 2025 Smart Ring for Health & Fitness Tracking | JCRing
+    - generic: Shop premium smart rings with heart rate, sleep, and blood oxygen monitoring. Waterproof, stylish designs for men and women. Order now with customization options.
+  - link "made-in-china Smart Ring Manufacturers, Suppliers & Factory Directory ... Smart Ring manufacturers & suppliers, China Smart Ring manufacturers, suppliers & factory directory, find Chinese Smart Ring manufacturers, suppliers, factories, exporters and wholesalers easily on Made-in-China.com.,page2":
+    - /url: https://www.made-in-china.com/manufacturers-directory/item3/Smart-Ring-2.html
+    - generic: made-in-china
+    - generic: Smart Ring Manufacturers, Suppliers & Factory Directory ...
+    - generic: Smart Ring manufacturers & suppliers, China Smart Ring manufacturers, suppliers & factory directory, find Chinese Smart Ring manufacturers, suppliers, factories, exporters and wholesalers easily on Made-in-China.com.,page2
+  - link "alibaba Smart ring manufacturers Smart Ring Manufacturers China Trade,Buy China Direct From Smart Ring Manufacturers Factories at Alibaba.com Yawell Manufacturer OEM ODM Gesture Smart Rings 5ATM Waterproof Thin Fitness Tracker Smart Health Ring R09 Mens Smart Ring ... (4022 products available) ...":
+    - /url: https://www.alibaba.com/countrysearch/CN/smart-ring-manufacturers.html
+    - generic: alibaba
+    - generic: Smart ring manufacturers
+    - generic: Smart Ring Manufacturers China Trade,Buy China Direct From Smart Ring Manufacturers Factories at Alibaba.com Yawell Manufacturer OEM ODM Gesture Smart Rings 5ATM Waterproof Thin Fitness Tracker Smart Health Ring R09 Mens Smart Ring ... (4022 products available) ...
+  - link "made-in-china \"Wholesale Device Ring\" Wholesale Device Ring - Select 2026 high quality Wholesale Device Ring products in best price from certified Chinese Memory Device manufacturers, Mobile Device Charger suppliers, wholesalers and factory on Made-in-China.com, page 3":
+    - /url: https://www.made-in-china.com/products-search/find-china-products/0b0nolimit/Wholesale_Device_Ring-3.html
+    - generic: made-in-china
+    - generic: "\"Wholesale Device Ring\""
+    - generic: Wholesale Device Ring - Select 2026 high quality Wholesale Device Ring products in best price from certified Chinese Memory Device manufacturers, Mobile Device Charger suppliers, wholesalers and factory on Made-in-China.com, page 3
+  - link "globalsources 400 wholesale \"Smart Ring\" suppliers & manufacturers Live smartly with connected smart ring from trusted China wholesale manufacturers. Enhance daily life through expert OEM, ODM services. Source lifestyle wearables from established factory partners offering smart jewelry, fashion tech, and lifestyle enhancement solutions.":
+    - /url: https://www.globalsources.com/china-suppliers/smart-ring.htm
+    - generic: globalsources
+    - generic: 400 wholesale "Smart Ring" suppliers & manufacturers
+    - generic: Live smartly with connected smart ring from trusted China wholesale manufacturers. Enhance daily life through expert OEM, ODM services. Source lifestyle wearables from established factory partners offering smart jewelry, fashion tech, and lifestyle enhancement solutions.
+  - link "made-in-china Smart Ring Manufacturers, Suppliers & Factory Directory ... Smart Ring manufacturers & suppliers, China Smart Ring manufacturers, suppliers & factory directory, find Chinese Smart Ring manufacturers, suppliers, factories, exporters and wholesalers easily on Made-in-China.com.,page3":
+    - /url: https://www.made-in-china.com/manufacturers-directory/item3/Smart-Ring-3.html
+    - generic: made-in-china
+    - generic: Smart Ring Manufacturers, Suppliers & Factory Directory ...
+    - generic: Smart Ring manufacturers & suppliers, China Smart Ring manufacturers, suppliers & factory directory, find Chinese Smart Ring manufacturers, suppliers, factories, exporters and wholesalers easily on Made-in-China.com.,page3
+  - link "fortunebusinessinsights Smart Ring Market Size, Share, Growth, Industry Report, 2034 The global smart ring market size is projected to grow from $518.9 million in 2026 to $3772.4 million by 2034, at a CAGR of 29.30% during the forecast period":
+    - /url: https://www.fortunebusinessinsights.com/smart-ring-market-111418
+    - generic: fortunebusinessinsights
+    - generic: Smart Ring Market Size, Share, Growth, Industry Report, 2034
+    - generic: The global smart ring market size is projected to grow from $518.9 million in 2026 to $3772.4 million by 2034, at a CAGR of 29.30% during the forecast period
+  - link "factmr Women’s Health Smart Rings Market Size, Share & Forecast 2036 The women’s health smart rings market is projected to reach USD 1,147.1 million by 2036, up from USD 384.5 million in 2026, at an 11.6% CAGR, led by Oura.":
+    - /url: https://www.factmr.com/report/womens-health-smart-rings-market
+    - generic: factmr
+    - generic: Women’s Health Smart Rings Market Size, Share & Forecast 2036
+    - generic: The women’s health smart rings market is projected to reach USD 1,147.1 million by 2036, up from USD 384.5 million in 2026, at an 11.6% CAGR, led by Oura.
+  - link "businessresearchinsights Smart Ring Market Size, Share | Report, 2035 The global Smart Ring Market was valued at $0.06 billion in 2026 and is expected to reach $0.29 billion by 2035, with a CAGR of 22%.":
+    - /url: https://www.businessresearchinsights.com/market-reports/smart-ring-market-107402
+    - generic: businessresearchinsights
+    - generic: Smart Ring Market Size, Share | Report, 2035
+    - generic: The global Smart Ring Market was valued at $0.06 billion in 2026 and is expected to reach $0.29 billion by 2035, with a CAGR of 22%.
+  - button "Pro 已启用高级搜索免费预览。 了解更多":
+    - generic: Pro
+    - generic: 已启用高级搜索免费预览。
+    - button "了解更多":
+      - generic: 了解更多
+  - status:
+    - generic: 您正处于隐身模式。
+    - button "退出隐身模式":
+      - generic: 退出无痕模式
+  - textbox "提出后续问题":
+    - paragraph
+  - generic: 提出后续问题
+  - button "添加文件、插件等":
+  - button "搜索" [pressed]:
+    - generic: 搜索
+  - button "Computer":
+    - generic: Computer
+  - button "模型":
+    - generic: 模型
+  - button "语音输入":
+  - button "提交" [disabled]:

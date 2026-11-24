@@ -1,0 +1,9 @@
+{
+  "checked_at": "2026-11-24T13:40:09.717002+00:00",
+  "secret_marker_scan": "PASS after documented map-token redaction; limited pattern scan, not proof of absence",
+  "observations_valid": 72,
+  "round1_hashes": 148,
+  "chatgpt_dom_pairs_matching": 12,
+  "evidence_hashes": "PASS",
+  "production_operations": "none; read-only public GET only"
+}

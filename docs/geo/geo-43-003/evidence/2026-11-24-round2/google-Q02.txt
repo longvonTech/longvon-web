@@ -1,0 +1,214 @@
+- link "Skip to main content"
+- link "Accessibility help":
+  - /url: https://support.google.com/websearch/answer/181196?hl=en
+- search:
+  - link "Go to Google Home":
+    - /url: https://www.google.com/webhp?hl=en&sa=X&ved=2ahUKEwiZobKe2aCYAxVeIUQIHV6rEn4QPHoECAYQBA
+  - status
+  - alert
+  - combobox "Search": smart ring manufacturer China smart ring manufacturer China
+  - button "Clear":
+  - button "Search by voice":
+  - button "Search by image":
+- button "Share":
+- button "Google apps":
+[account label omitted]
+- navigation:
+  - list:
+    - link "AI Mode":
+      - /url: /search?q=smart+ring+manufacturer+China&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDiNCK0VgklM3vxM8xCbP2Apz3ne3A:1795526442661&udm=50&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtICPMVaTZk4tFdUK8k5MXv8g8O0YurqYK3cSBclZ4lkqkmbfBo7ZCIEoKNtmqYteY2ppzsYrnq7EmzRtU_YzFQ-k1voEvfQWF5lhWNYHvqAODcXUC3JoqVnRRHbVQgbXM6GC_aj-4ux9vknxPhbl5XfnQnXbg&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiZobKe2aCYAxVeIUQIHV6rEn4Q2J8OegQIDBAD
+      - generic: AI Mode
+    - link "All" [disabled]:
+      - generic: All
+    - link "Shopping":
+      - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDiNCK0VgklM3vxM8xCbP2Apz3ne3A:1795526442661&udm=28&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtICPMVaTZk4tFdUK8k5MXv8g8O0YurqYK3cSBclZ4lkqkmbfBo7ZCIEoKNtmqYteY2ppzsYrnq7EmzRtU_YzFQ-k1voEvfQWF5lhWNYHvqAODcXUC3JoqVnRRHbVQgbXM6GC_aj-4ux9vknxPhbl5XfnQnXbg&q=smart+ring+manufacturer+China&ved=1t:220175&ictx=111
+      - generic: Shopping
+    - link "Images":
+      - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDiNCK0VgklM3vxM8xCbP2Apz3ne3A:1795526442661&udm=2&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtICPMVaTZk4tFdUK8k5MXv8g8O0YurqYK3cSBclZ4lkqkmbfBo7ZCIEoKNtmqYteY2ppzsYrnq7EmzRtU_YzFQ-k1voEvfQWF5lhWNYHvqAODcXUC3JoqVnRRHbVQgbXM6GC_aj-4ux9vknxPhbl5XfnQnXbg&q=smart+ring+manufacturer+China&sa=X&ved=2ahUKEwiZobKe2aCYAxVeIUQIHV6rEn4QtKgLegQIKhAB
+      - generic: Images
+    - link "Short videos":
+      - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDiNCK0VgklM3vxM8xCbP2Apz3ne3A:1795526442661&udm=short_vids&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtICPMVaTZk4tFdUK8k5MXv8g8O0YurqYK3cSBclZ4lkqkmbfBo7ZCIEoKNtmqYteY2ppzsYrnq7EmzRtU_YzFQ-k1voEvfQWF5lhWNYHvqAODcXUC3JoqVnRRHbVQgbXM6GC_aj-4ux9vknxPhbl5XfnQnXbg&q=smart+ring+manufacturer+China&sa=X&ved=2ahUKEwiZobKe2aCYAxVeIUQIHV6rEn4Qs6gLegQIJhAB
+      - generic: Short videos
+    - link "Videos":
+      - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDiNCK0VgklM3vxM8xCbP2Apz3ne3A:1795526442661&udm=vids&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtICPMVaTZk4tFdUK8k5MXv8g8O0YurqYK3cSBclZ4lkqkmbfBo7ZCIEoKNtmqYteY2ppzsYrnq7EmzRtU_YzFQ-k1voEvfQWF5lhWNYHvqAODcXUC3JoqVnRRHbVQgbXM6GC_aj-4ux9vknxPhbl5XfnQnXbg&q=smart+ring+manufacturer+China&sa=X&ved=2ahUKEwiZobKe2aCYAxVeIUQIHV6rEn4QtKgLegQIJBAB
+      - generic: Videos
+    - link "Forums":
+      - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDiNCK0VgklM3vxM8xCbP2Apz3ne3A:1795526442661&udm=forums&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtICPMVaTZk4tFdUK8k5MXv8g8O0YurqYK3cSBclZ4lkqkmbfBo7ZCIEoKNtmqYteY2ppzsYrnq7EmzRtU_YzFQ-k1voEvfQWF5lhWNYHvqAODcXUC3JoqVnRRHbVQgbXM6GC_aj-4ux9vknxPhbl5XfnQnXbg&q=smart+ring+manufacturer+China&sa=X&ved=2ahUKEwiZobKe2aCYAxVeIUQIHV6rEn4Qs6gLegQIHhAB
+      - generic: Forums
+    - button "More filters":
+      - generic "More filters":
+        - generic: More
+  - button "Tools":
+    - generic: Tools
+- heading "Search Results" [level=1]
+- main:
+  - generic: Can't generate an AI overview right now. Try again later.
+  - heading "Web results" [level=2]
+  - link "Smart Ring Manufacturer & Health Tracking Rings OEM/ODM jointcorp.com https://www.jointcorp.com › product-cat › smart-rings":
+    - /url: https://www.jointcorp.com/product-cat/smart-rings/
+    - heading "Smart Ring Manufacturer & Health Tracking Rings OEM/ODM" [level=3]
+    - generic: jointcorp.com
+    - generic: https://www.jointcorp.com › product-cat › smart-rings
+  - button "About this result":
+  - emphasis: J-Style is a premier smart ring manufacturer
+  - text: with 20 years of experience, offering robust B2B solutions for healthcare, insurance, and wellness brands.
+  - link "Smart ring Manufacturers & Suppliers ... Made-in-China.com https://www.made-in-china.com › manufacturers › smar...":
+    - /url: https://www.made-in-china.com/manufacturers/smart-ring.html
+    - heading "Smart ring Manufacturers & Suppliers ..." [level=3]
+    - generic: Made-in-China.com
+    - generic: https://www.made-in-china.com › manufacturers › smar...
+  - button "About this result":
+  - emphasis: Shenzhen Lanke Technology Co., Ltd
+  - text: . Smart Ring, Wireless Bluetooth Earphones, GPS Devices manufacturer / supplier in China, offering New Mx-R100 Smart Ring ...
+  - link "Read more":
+    - /url: https://www.made-in-china.com/manufacturers/smart-ring.html#:~:text=Shenzhen%20Lanke%20Technology%20Co.%2C%20Ltd.
+  - 'link "JCRing Smart Ring Review: A Professional Look at One of ... jointcorp.com https://www.jointcorp.com › jcring-smart-ring-review-a..."':
+    - /url: https://www.jointcorp.com/jcring-smart-ring-review-a-professional-look-at-one-of-chinas-most-advanced-health-tracking-rings/
+    - 'heading "JCRing Smart Ring Review: A Professional Look at One of ..." [level=3]'
+    - generic: jointcorp.com
+    - generic: https://www.jointcorp.com › jcring-smart-ring-review-a...
+  - button "About this result":
+  - emphasis: J-Style (Joint Chinese Ltd | Youhong Medical
+  - text: ) has quickly gained attention as one of the most capable smart ring manufacturers in China, offering medical-grade ...
+  - link "China Smart Ring Offered by China Manufacturer Global Sources https://iu.manufacturer.globalsources.com › ... › Products":
+    - /url: https://iu.manufacturer.globalsources.com/showroom_6003002348096/smart-ring_2114653-1.htm
+    - heading "China Smart Ring Offered by China Manufacturer" [level=3]
+    - generic: Global Sources
+    - generic: https://iu.manufacturer.globalsources.com › ... › Products
+  - button "About this result":
+  - emphasis: China smart ring
+  - text: catalog of k80 new stainless steel
+  - emphasis: smart ring
+  - text: heart rate fitness tracker sleep monitoring remote control alarm clock waterproof android ios ...
+  - link "AI Smart Ring OEM/ODM Manufacturer in China | GoldenWeald goldenweald.com https://www.goldenweald.com › Services":
+    - /url: https://www.goldenweald.com/service/ai-smart-ring-oem-odm-manufacturer-ai-recording-translation-wearable-devices/
+    - heading "AI Smart Ring OEM/ODM Manufacturer in China | GoldenWeald" [level=3]
+    - generic: goldenweald.com
+    - generic: https://www.goldenweald.com › Services
+  - button "About this result":
+  - text: Golden Weald is a
+  - emphasis: China-based AI smart ring OEM/ODM manufacturer
+  - text: providing product design, hardware development, firmware, mobile app integration, prototyping,
+  - link "China Smart Ring Manufacturer, Supplier, Wholesaler iyesido https://www.iyesido.com › All":
+    - /url: https://www.iyesido.com/products/Smart-Ring.htm
+    - heading "China Smart Ring Manufacturer, Supplier, Wholesaler" [level=3]
+    - generic: iyesido
+    - generic: https://www.iyesido.com › All
+  - button "About this result":
+  - emphasis: Yesido 3C Consumer Electronics Wholesale
+  - text: is a Professional China Manufacturer and Supplier of Smart Ring, We Provide Custom Wholeslae Smart Ring factory, ...
+  - link "Read more":
+    - /url: https://www.iyesido.com/products/Smart-Ring.htm#:~:text=Yesido%203C%20Consumer%20Electronics%20Wholesale,Custom%20Wholeslae%20Smart%20Ring%20factory%2C
+  - link "China Smart Rings Manufacturers Factory Suppliers Shenzhen Twinkler Technology Co., Ltd https://www.sztwinkler.com › Showroom":
+    - /url: https://www.sztwinkler.com/showroom/smart-rings/
+    - heading "China Smart Rings Manufacturers Factory Suppliers" [level=3]
+    - generic: Shenzhen Twinkler Technology Co., Ltd
+    - generic: https://www.sztwinkler.com › Showroom
+  - button "About this result":
+  - emphasis: TWINKLER is one of the most professional unisex smart rrings manufacturers in China
+  - text: ", specialized in providing high quality products and service."
+  - link "Smart Ring(999+) Alibaba.com https://www.alibaba.com › ... › China smart ring":
+    - /url: https://www.alibaba.com/countrysearch/CN/smart-ring.html
+    - heading "Smart Ring(999+)" [level=3]
+    - generic: Alibaba.com
+    - generic: https://www.alibaba.com › ... › China smart ring
+  - button "About this result":
+  - text: Buy
+  - emphasis: Smart Ring China
+  - text: Direct From Smart Ring Factories at Alibaba.com. Help Global Buyers Source China Easily.
+  - img "Rated 4.5 out of 5,":
+    - text: "4.5"
+  - text: store rating (
+  - link "367 user reviews":
+    - /url: https://www.google.com/storepages?q=alibaba.com&c=US&hl=en-US
+    - text: "367"
+  - text: )
+  - 'link "eIoT: Smart Ring Manufacturer | Smart Ring OEM ODM ... eiot.com https://www.eiot.com"':
+    - /url: https://www.eiot.com/
+    - 'heading "eIoT: Smart Ring Manufacturer | Smart Ring OEM ODM ..." [level=3]'
+    - generic: eiot.com
+    - generic: https://www.eiot.com
+  - button "About this result":
+  - emphasis: eIoT is a leading OEM and ODM manufacturer
+  - text: of AI smart ring in the world, smart ring, smart band and smart bracelet. CE FCC RoHS REACH certified factory serving
+  - heading "People also search for" [level=2]
+  - link "Women smart ring manufacturer china":
+    - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDiNCK0VgklM3vxM8xCbP2Apz3ne3A:1795526442661&q=Women+smart+ring+manufacturer+china&sa=X&ved=2ahUKEwiZobKe2aCYAxVeIUQIHV6rEn4Q1QJ6BAg0EAE
+    - generic: Women smart ring manufacturer china
+  - link "Best smart ring manufacturer china":
+    - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDiNCK0VgklM3vxM8xCbP2Apz3ne3A:1795526442661&q=Best+smart+ring+manufacturer+china&sa=X&ved=2ahUKEwiZobKe2aCYAxVeIUQIHV6rEn4Q1QJ6BAg6EAE
+    - generic: Best smart ring manufacturer china
+  - link "Smart ring manufacturer china price":
+    - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDiNCK0VgklM3vxM8xCbP2Apz3ne3A:1795526442661&q=Smart+ring+manufacturer+china+price&sa=X&ved=2ahUKEwiZobKe2aCYAxVeIUQIHV6rEn4Q1QJ6BAg5EAE
+    - generic: Smart ring manufacturer china price
+  - link "Men smart ring manufacturer china":
+    - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDiNCK0VgklM3vxM8xCbP2Apz3ne3A:1795526442661&q=Men+smart+ring+manufacturer+china&sa=X&ved=2ahUKEwiZobKe2aCYAxVeIUQIHV6rEn4Q1QJ6BAg4EAE
+    - generic: Men smart ring manufacturer china
+  - link "Smart ring manufacturers":
+    - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDiNCK0VgklM3vxM8xCbP2Apz3ne3A:1795526442661&q=Smart+ring+manufacturers&sa=X&ved=2ahUKEwiZobKe2aCYAxVeIUQIHV6rEn4Q1QJ6BAg3EAE
+    - generic: Smart ring manufacturers
+  - link "Best Chinese smart ring":
+    - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDiNCK0VgklM3vxM8xCbP2Apz3ne3A:1795526442661&q=Best+Chinese+smart+ring&sa=X&ved=2ahUKEwiZobKe2aCYAxVeIUQIHV6rEn4Q1QJ6BAg2EAE
+    - generic: Best Chinese smart ring
+  - link "J Ring Smart Ring price":
+    - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDiNCK0VgklM3vxM8xCbP2Apz3ne3A:1795526442661&q=J+Ring+Smart+Ring+price&sa=X&ved=2ahUKEwiZobKe2aCYAxVeIUQIHV6rEn4Q1QJ6BAg1EAE
+    - generic: J Ring Smart Ring price
+  - link "JCRing Smart ring":
+    - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDiNCK0VgklM3vxM8xCbP2Apz3ne3A:1795526442661&q=JCRing+Smart+ring&sa=X&ved=2ahUKEwiZobKe2aCYAxVeIUQIHV6rEn4Q1QJ6BAgzEAE
+    - generic: JCRing Smart ring
+  - navigation:
+    - heading "Page Navigation" [level=1]
+    - text: "1"
+    - link "Page 2":
+      - /url: /search?q=smart+ring+manufacturer+China&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDiNCK0VgklM3vxM8xCbP2Apz3ne3A:1795526442661&ei=Ko8Fa5nkJ97CkPIP3tbK8Ac&start=10&sa=N&sstk=AYl2yk9c3OtCQvwhxGFhjon3rJXYwhHssmHGZBeeUbbWERyUHHLp4lnFhykSxTnIOi6MMNcEUKQjfiKqd619WOm07mmdPeuT6CQClw&ved=2ahUKEwiZobKe2aCYAxVeIUQIHV6rEn4Q8tMDegQIMRAE
+      - text: "2"
+    - link "Page 3":
+      - /url: /search?q=smart+ring+manufacturer+China&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDiNCK0VgklM3vxM8xCbP2Apz3ne3A:1795526442661&ei=Ko8Fa5nkJ97CkPIP3tbK8Ac&start=20&sa=N&sstk=AYl2yk9c3OtCQvwhxGFhjon3rJXYwhHssmHGZBeeUbbWERyUHHLp4lnFhykSxTnIOi6MMNcEUKQjfiKqd619WOm07mmdPeuT6CQClw&ved=2ahUKEwiZobKe2aCYAxVeIUQIHV6rEn4Q8tMDegQIMRAG
+      - text: "3"
+    - link "Page 4":
+      - /url: /search?q=smart+ring+manufacturer+China&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDiNCK0VgklM3vxM8xCbP2Apz3ne3A:1795526442661&ei=Ko8Fa5nkJ97CkPIP3tbK8Ac&start=30&sa=N&sstk=AYl2yk9c3OtCQvwhxGFhjon3rJXYwhHssmHGZBeeUbbWERyUHHLp4lnFhykSxTnIOi6MMNcEUKQjfiKqd619WOm07mmdPeuT6CQClw&ved=2ahUKEwiZobKe2aCYAxVeIUQIHV6rEn4Q8tMDegQIMRAI
+      - text: "4"
+    - link "Page 5":
+      - /url: /search?q=smart+ring+manufacturer+China&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDiNCK0VgklM3vxM8xCbP2Apz3ne3A:1795526442661&ei=Ko8Fa5nkJ97CkPIP3tbK8Ac&start=40&sa=N&sstk=AYl2yk9c3OtCQvwhxGFhjon3rJXYwhHssmHGZBeeUbbWERyUHHLp4lnFhykSxTnIOi6MMNcEUKQjfiKqd619WOm07mmdPeuT6CQClw&ved=2ahUKEwiZobKe2aCYAxVeIUQIHV6rEn4Q8tMDegQIMRAK
+      - text: "5"
+    - link "Page 6":
+      - /url: /search?q=smart+ring+manufacturer+China&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDiNCK0VgklM3vxM8xCbP2Apz3ne3A:1795526442661&ei=Ko8Fa5nkJ97CkPIP3tbK8Ac&start=50&sa=N&sstk=AYl2yk9c3OtCQvwhxGFhjon3rJXYwhHssmHGZBeeUbbWERyUHHLp4lnFhykSxTnIOi6MMNcEUKQjfiKqd619WOm07mmdPeuT6CQClw&ved=2ahUKEwiZobKe2aCYAxVeIUQIHV6rEn4Q8tMDegQIMRAM
+      - text: "6"
+    - link "Page 7":
+      - /url: /search?q=smart+ring+manufacturer+China&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDiNCK0VgklM3vxM8xCbP2Apz3ne3A:1795526442661&ei=Ko8Fa5nkJ97CkPIP3tbK8Ac&start=60&sa=N&sstk=AYl2yk9c3OtCQvwhxGFhjon3rJXYwhHssmHGZBeeUbbWERyUHHLp4lnFhykSxTnIOi6MMNcEUKQjfiKqd619WOm07mmdPeuT6CQClw&ved=2ahUKEwiZobKe2aCYAxVeIUQIHV6rEn4Q8tMDegQIMRAO
+      - text: "7"
+    - link "Page 8":
+      - /url: /search?q=smart+ring+manufacturer+China&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDiNCK0VgklM3vxM8xCbP2Apz3ne3A:1795526442661&ei=Ko8Fa5nkJ97CkPIP3tbK8Ac&start=70&sa=N&sstk=AYl2yk9c3OtCQvwhxGFhjon3rJXYwhHssmHGZBeeUbbWERyUHHLp4lnFhykSxTnIOi6MMNcEUKQjfiKqd619WOm07mmdPeuT6CQClw&ved=2ahUKEwiZobKe2aCYAxVeIUQIHV6rEn4Q8tMDegQIMRAQ
+      - text: "8"
+    - link "Page 9":
+      - /url: /search?q=smart+ring+manufacturer+China&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDiNCK0VgklM3vxM8xCbP2Apz3ne3A:1795526442661&ei=Ko8Fa5nkJ97CkPIP3tbK8Ac&start=80&sa=N&sstk=AYl2yk9c3OtCQvwhxGFhjon3rJXYwhHssmHGZBeeUbbWERyUHHLp4lnFhykSxTnIOi6MMNcEUKQjfiKqd619WOm07mmdPeuT6CQClw&ved=2ahUKEwiZobKe2aCYAxVeIUQIHV6rEn4Q8tMDegQIMRAS
+      - text: "9"
+    - link "Page 10":
+      - /url: /search?q=smart+ring+manufacturer+China&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDiNCK0VgklM3vxM8xCbP2Apz3ne3A:1795526442661&ei=Ko8Fa5nkJ97CkPIP3tbK8Ac&start=90&sa=N&sstk=AYl2yk9c3OtCQvwhxGFhjon3rJXYwhHssmHGZBeeUbbWERyUHHLp4lnFhykSxTnIOi6MMNcEUKQjfiKqd619WOm07mmdPeuT6CQClw&ved=2ahUKEwiZobKe2aCYAxVeIUQIHV6rEn4Q8tMDegQIMRAU
+      - text: "10"
+    - heading "Next" [level=2]:
+      - link "Next":
+        - /url: /search?q=smart+ring+manufacturer+China&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDiNCK0VgklM3vxM8xCbP2Apz3ne3A:1795526442661&ei=Ko8Fa5nkJ97CkPIP3tbK8Ac&start=10&sa=N&sstk=AYl2yk9c3OtCQvwhxGFhjon3rJXYwhHssmHGZBeeUbbWERyUHHLp4lnFhykSxTnIOi6MMNcEUKQjfiKqd619WOm07mmdPeuT6CQClw&ved=2ahUKEwiZobKe2aCYAxVeIUQIHV6rEn4Q8NMDegQIMRAW
+        - generic: Next
+  - navigation
+- contentinfo:
+  - heading "Footer Links" [level=1]
+  - generic: Results are personalized
+  - generic: "-"
+  - link "Try without personalization":
+    - /url: https://www.google.com/search?q=smart+ring+manufacturer+China&hl=en&peek_pws=0&sxsrf=AKL5yDiNCK0VgklM3vxM8xCbP2Apz3ne3A:1795526442661
+    - generic: Try without personalization
+  - button "Los Angeles County, California - Based on your past activity":
+    - generic: Los Angeles County, California
+    - text: "-"
+    - generic: Based on your past activity
+  - text: "-"
+  - button "Update location": Update location
+  - link "Help":
+    - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en&fg=1
+  - button "Send feedback":
+    - generic: Send feedback
+  - link "Privacy":
+    - /url: https://policies.google.com/privacy?hl=en&fg=1
+  - link "Terms":
+    - /url: https://policies.google.com/terms?hl=en&fg=1

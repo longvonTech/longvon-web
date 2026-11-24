@@ -1,0 +1,243 @@
+- complementary:
+  - navigation "侧边栏导航":
+    - link:
+      - /url: /
+    - button "展开侧边栏"
+    - group "创建":
+      - link "新建":
+        - /url: /
+        - generic: 新建
+    - group "主导航":
+      - link "自动化":
+        - /url: /automations
+        - generic: 自动化
+      - link "工件":
+        - /url: /artifacts
+        - generic: 工件
+      - link "插件":
+        - /url: /computer/plugins
+        - generic: 插件
+      - button "更多":
+        - generic: 更多
+    - link "项目":
+      - /url: /projects
+    - link "会话":
+      - /url: /library
+    - button "升级计划":
+    - button "libing shi":
+      - generic: libing shi
+  - separator "调整侧边栏宽度"
+- main:
+  - button "返回上一页":
+  - tablist "回答模式标签页":
+    - tab "答案" [selected]:
+      - text: 答案
+    - tab "链接":
+      - text: 链接
+    - tab "图片":
+      - text: 图片
+  - button "会话选项":
+  - button "分享":
+    - generic: 分享
+  - button "下载桌面应用":
+    - generic: 下载桌面应用
+  - generic: 21:28
+  - button "编辑查询":
+  - button "复制查询":
+  - paragraph: sleep monitoring smart ring OEM
+  - button "已完成 1秒":
+    - generic "已完成"
+    - generic: 1秒
+  - paragraph:
+    - text: Sleep-monitoring smart ring OEMs typically offer private-label hardware plus firmware, mobile app, SDK/API, and manufacturing. For a consumer sleep product, the key differentiators are sensor quality, sleep-algorithm validation, battery life, regulatory claims, and the depth of customization—not just the ring’s feature list.
+    - generic: longvon
+    - generic: "+1"
+  - heading "OEM options" [level=2]
+  - table:
+    - rowgroup:
+      - row "Supplier Sleep capabilities highlighted OEM/ODM scope":
+        - columnheader "Supplier"
+        - columnheader "Sleep capabilities highlighted"
+        - columnheader "OEM/ODM scope"
+    - rowgroup:
+      - row "LONGVON Sleep staging, respiratory analysis, PPG-based sensing; positions itself around sleep and sleep-respiratory health Hardware, firmware, algorithms, app, SDK/API, cloud, manufacturing longvon +2":
+        - cell "LONGVON":
+          - strong: LONGVON
+        - cell "Sleep staging, respiratory analysis, PPG-based sensing; positions itself around sleep and sleep-respiratory health"
+        - cell "Hardware, firmware, algorithms, app, SDK/API, cloud, manufacturing longvon +2":
+          - text: Hardware, firmware, algorithms, app, SDK/API, cloud, manufacturing
+          - generic: longvon
+          - generic: "+2"
+      - row "J-Style / Jointcorp Automatic sleep monitoring; its JCRing X2 is marketed for blood-oxygen and respiratory monitoring, including sleep-apnea-event identification ID/MD design, materials, colors, packaging, firmware, and app UI jointcorp +1":
+        - cell "J-Style / Jointcorp":
+          - strong: J-Style / Jointcorp
+        - cell "Automatic sleep monitoring; its JCRing X2 is marketed for blood-oxygen and respiratory monitoring, including sleep-apnea-event identification"
+        - cell "ID/MD design, materials, colors, packaging, firmware, and app UI jointcorp +1":
+          - text: ID/MD design, materials, colors, packaging, firmware, and app UI
+          - generic: jointcorp
+          - generic: "+1"
+      - row "Golden Weald Sleep tracking, sleep score, sleep ratio, sleep analysis, and multi-day sleep history Custom smart rings, private label, health/fitness features, low-power BLE Smart Ring OEM & ODM Manufacturer | Custom Smart Rings":
+        - cell "Golden Weald":
+          - strong: Golden Weald
+        - cell "Sleep tracking, sleep score, sleep ratio, sleep analysis, and multi-day sleep history"
+        - cell "Custom smart rings, private label, health/fitness features, low-power BLE Smart Ring OEM & ODM Manufacturer | Custom Smart Rings":
+          - text: Custom smart rings, private label, health/fitness features, low-power BLE
+          - generic "Smart Ring OEM & ODM Manufacturer | Custom Smart Rings":
+            - link "goldenweald":
+              - /url: https://www.goldenweald.com/smart-ring-oem-odm-manufacturer-custom-smart-rings/
+              - generic: goldenweald
+      - row "Goodway Sleep tracking alongside HR, HRV, SpO2, ECG, temperature, and activity Multiple ring models, private labeling, B2B deployment support Smart Ring Manufacturer OEM & ODM ...":
+        - cell "Goodway":
+          - strong: Goodway
+        - cell "Sleep tracking alongside HR, HRV, SpO2, ECG, temperature, and activity"
+        - cell "Multiple ring models, private labeling, B2B deployment support Smart Ring Manufacturer OEM & ODM ...":
+          - text: Multiple ring models, private labeling, B2B deployment support
+          - generic "Smart Ring Manufacturer OEM & ODM ...":
+            - link "goodwaytechs":
+              - /url: https://www.goodwaytechs.com/smart-ring.html
+              - generic: goodwaytechs
+      - row "Smareyetech Sleep-stage analysis, HR, SpO2, activity, and gesture controls Logo, colorway, packaging, and software integration customization Fashionable Smart Ring for Men and Women - Sleep Analyzer, Heart Rate, Blood Pressure Monitor, Fitness Tracker":
+        - cell "Smareyetech":
+          - strong: Smareyetech
+        - cell "Sleep-stage analysis, HR, SpO2, activity, and gesture controls"
+        - cell "Logo, colorway, packaging, and software integration customization Fashionable Smart Ring for Men and Women - Sleep Analyzer, Heart Rate, Blood Pressure Monitor, Fitness Tracker":
+          - text: Logo, colorway, packaging, and software integration customization
+          - generic "Fashionable Smart Ring for Men and Women - Sleep Analyzer, Heart Rate, Blood Pressure Monitor, Fitness Tracker":
+            - link "smareyetech":
+              - /url: https://www.smareyetech.com/product/smart-ring-sleep-heart-rate-fitness-tracker/
+              - generic: smareyetech
+  - heading "What to specify" [level=2]
+  - paragraph: "Ask each factory for the same technical package so quotes are comparable:"
+  - list:
+    - paragraph:
+      - strong: "Sensors:"
+      - text: PPG for heart rate/HRV, SpO2, skin temperature, accelerometer/gyroscope, and whether ECG is included.
+    - paragraph:
+      - strong: "Sleep outputs:"
+      - text: sleep/wake detection, sleep stages, sleep duration, sleep score, respiratory rate, SpO2 trends, and any apnea-risk screening.
+    - paragraph:
+      - strong: "Algorithm ownership:"
+      - text: whether the sleep algorithm is licensed, white-labeled, or developed exclusively for you; request validation data and confusion matrices against polysomnography or a validated wearable reference.
+    - paragraph:
+      - strong: "App and data:"
+      - text: native iOS/Android app, SDK/API, cloud hosting, data export, user consent flows, and whether you can integrate the data into your own platform.
+    - paragraph:
+      - strong: "Hardware:"
+      - text: battery capacity and real-world battery life, charging case, waterproof rating, materials, sizing range, BLE version, and production-test yield.
+    - paragraph:
+      - strong: "Compliance:"
+      - text: intended use determines the pathway—general wellness claims differ substantially from medical claims such as sleep-apnea detection or diagnosis. Do not market “sleep apnea detection” without appropriate regulatory and clinical evidence.
+  - heading "Sourcing approach" [level=2]
+  - paragraph:
+    - text: For an initial product, request a reference design with your branding, then negotiate exclusivity on industrial design, app UI, algorithm configuration, and sales territory. Many factories advertise customization of logo, colors, packaging, firmware, and app interfaces, but “OEM” can mean anything from a rebranded stock ring to a fully custom sensor-and-software program.
+    - generic: longvon
+    - generic: "+2"
+  - paragraph: "A practical RFQ should ask for:"
+  - list:
+    - paragraph: MOQ, unit price at 1k/5k/10k units, tooling/NRE, and lead time.
+    - paragraph: Bill of materials, sensor supplier, battery specification, and waterproof rating.
+    - paragraph: Sample units for wear testing, including overnight sleep data and battery-life results.
+    - paragraph: SDK/API documentation, data schema, and app source-code or white-label terms.
+    - paragraph: Quality controls, warranty/repair terms, certifications already held, and regulatory responsibilities.
+    - paragraph: Clinical or algorithm validation evidence—especially if your positioning involves sleep apnea, respiratory events, or medical decision support.
+  - heading "Important caveat" [level=2]
+  - paragraph:
+    - text: Several suppliers describe “medical-grade” sensing or sleep-apnea identification, but those are marketing claims unless supported by documented validation and the relevant regulatory clearances in your target markets. For a consumer launch, position the product as a
+    - strong: sleep and wellness tracker
+    - text: first; pursue medical claims only after clinical validation, quality-system, and regulatory review.
+    - generic: jointcorp
+    - generic: "+1"
+  - button "复制":
+  - button "分享":
+  - button "有帮助":
+  - button "没有帮助":
+  - button "复刻":
+  - button "10 个来源" [active]:
+    - text: 10 个来源
+  - button "更多操作":
+  - 'button "Compare top sleep ring OEMs: Longvon vs J-Style vs Goodway — sleep stages, SpO2, MOQ, and white-label app customization"'
+  - text: "Compare top sleep ring OEMs: Longvon vs J-Style vs Goodway — sleep stages, SpO2, MOQ, and white-label app customization"
+  - text: Computer
+  - 'button "Smart ring OEM comparison: materials, battery life, and health sensors across leading manufacturers like Golden Weald and Goodway"'
+  - text: "Smart ring OEM comparison: materials, battery life, and health sensors across leading manufacturers like Golden Weald and Goodway"
+  - text: Computer
+  - button "Show me how to compare them"
+  - text: Show me how to compare them
+  - button "What are the typical MOQ requirements"
+  - text: What are the typical MOQ requirements
+  - button "How do SDK and API integration work"
+  - text: How do SDK and API integration work
+  - button "隐藏详情":
+  - button "来源" [expanded]:
+    - generic: 来源
+  - link "longvon Smart Ring Sleep Monitoring Technology | LONGVON LONGVON provides smart ring sleep monitoring technology for companies developing consumer health, digital health and sleep-related products, with OEM/ODM support covering hardware, firmware, algorithm":
+    - /url: https://www.longvon.com/en/smart-ring-sleep-monitoring
+    - generic: longvon
+    - generic: Smart Ring Sleep Monitoring Technology | LONGVON
+    - generic: LONGVON provides smart ring sleep monitoring technology for companies developing consumer health, digital health and sleep-related products, with OEM/ODM support covering hardware, firmware, algorithm
+  - 'link "longvon Smart Ring OEM & ODM Services - LONGVON LONGVON (Longvon Technology (Shenzhen) Co., Ltd.) is a smart ring technology manufacturer and OEM/ODM provider. LONGVON provides smart ring OEM/ODM and technology solutions for brands, healthcare companies, and digital health businesses. ... LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in customized smart ring hardware, firmware, mobile apps, SDKs, cloud APIs, and health monitoring solutions. ... R&D: multi-modal sensing and AI algorithms (sleep staging,..."':
+    - /url: https://www.longvon.com/en/smart-ring-oem-odm
+    - generic: longvon
+    - generic: Smart Ring OEM & ODM Services - LONGVON
+    - generic: "LONGVON (Longvon Technology (Shenzhen) Co., Ltd.) is a smart ring technology manufacturer and OEM/ODM provider. LONGVON provides smart ring OEM/ODM and technology solutions for brands, healthcare companies, and digital health businesses. ... LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in customized smart ring hardware, firmware, mobile apps, SDKs, cloud APIs, and health monitoring solutions. ... R&D: multi-modal sensing and AI algorithms (sleep staging,..."
+  - link "longvon Healthcare Smart Ring Solutions LONGVON · Smart Ring Manufacturer · OEM/ODM ... LONGVON (Longvon Technology (Shenzhen) Co., Ltd.) is a smart ring technology manufacturer and OEM/ODM provider. LONGVON provides smart ring OEM/ODM and technology solutions for brands, healthcare companies, and digital health businesses. ... Sleep monitoring Sleep respiratory health ... LONGVON develops smart ring solutions for healthcare and digital health applications, including sleep and respiratory health monitoring, with OEM/ODM cooperation....":
+    - /url: https://www.longvon.com/en/smart-ring-healthcare-solutions
+    - generic: longvon
+    - generic: Healthcare Smart Ring Solutions
+    - generic: LONGVON · Smart Ring Manufacturer · OEM/ODM ... LONGVON (Longvon Technology (Shenzhen) Co., Ltd.) is a smart ring technology manufacturer and OEM/ODM provider. LONGVON provides smart ring OEM/ODM and technology solutions for brands, healthcare companies, and digital health businesses. ... Sleep monitoring Sleep respiratory health ... LONGVON develops smart ring solutions for healthcare and digital health applications, including sleep and respiratory health monitoring, with OEM/ODM cooperation....
+  - link "jointcorp Smart Ring Manufacturer & Health Tracking Rings OEM/ODM - J-Style J-Style provides OEM/ODM smart rings with advanced sensors for sleep, HRV, stress, and fitness tracking. Custom designs, medical-grade accuracy, and full-stack wearable solutions.":
+    - /url: https://www.jointcorp.com/product-cat/smart-rings/
+    - generic: jointcorp
+    - generic: Smart Ring Manufacturer & Health Tracking Rings OEM/ODM - J-Style
+    - generic: J-Style provides OEM/ODM smart rings with advanced sensors for sleep, HRV, stress, and fitness tracking. Custom designs, medical-grade accuracy, and full-stack wearable solutions.
+  - link "jointcorp Products | Screenless Smart Band ODM & OEM Factory - J-Style Through non-invasive glucose trend assessment and multi-dimensional health data analysis, the JCRing smart ring continuously tracks your key health indicators.":
+    - /url: https://www.jointcorp.com/products/
+    - generic: jointcorp
+    - generic: Products | Screenless Smart Band ODM & OEM Factory - J-Style
+    - generic: Through non-invasive glucose trend assessment and multi-dimensional health data analysis, the JCRing smart ring continuously tracks your key health indicators.
+  - link "goldenweald Smart Ring OEM & ODM Manufacturer | Custom Smart Rings Why Choose PCB Assembly In China-Since1998,GoldenWeald,pcb assembly in china, china pcb assembly manufacturer, pcb assembly from china":
+    - /url: https://www.goldenweald.com/smart-ring-oem-odm-manufacturer-custom-smart-rings/
+    - generic: goldenweald
+    - generic: Smart Ring OEM & ODM Manufacturer | Custom Smart Rings
+    - generic: Why Choose PCB Assembly In China-Since1998,GoldenWeald,pcb assembly in china, china pcb assembly manufacturer, pcb assembly from china
+  - link "goodwaytechs Smart Ring Manufacturer OEM & ODM ... Get advanced smart rings designed for health and control. Ideal for OEM suppliers and tech wholesalers.":
+    - /url: https://www.goodwaytechs.com/smart-ring.html
+    - generic: goodwaytechs
+    - generic: Smart Ring Manufacturer OEM & ODM ...
+    - generic: Get advanced smart rings designed for health and control. Ideal for OEM suppliers and tech wholesalers.
+  - link "smareyetech Fashionable Smart Ring for Men and Women - Sleep Analyzer, Heart Rate, Blood Pressure Monitor, Fitness Tracker OEM/ODM smartwatches, smart bands, smart rings and AI smart glasses engineered and built in Shenzhen since 2010. Under 0.3% defect rate, 50+ export countries.":
+    - /url: https://www.smareyetech.com/product/smart-ring-sleep-heart-rate-fitness-tracker/
+    - generic: smareyetech
+    - generic: Fashionable Smart Ring for Men and Women - Sleep Analyzer, Heart Rate, Blood Pressure Monitor, Fitness Tracker
+    - generic: OEM/ODM smartwatches, smart bands, smart rings and AI smart glasses engineered and built in Shenzhen since 2010. Under 0.3% defect rate, 50+ export countries.
+  - link "longvon Smart Ring Sleep Respiratory Monitoring | LONGVON LONGVON develops smart ring technologies for sleep respiratory and health monitoring, supporting OEM/ODM product development for digital health, wearable and healthcare-related applications. Knowledge":
+    - /url: https://www.longvon.com/en/smart-ring-sleep-respiratory
+    - generic: longvon
+    - generic: Smart Ring Sleep Respiratory Monitoring | LONGVON
+    - generic: LONGVON develops smart ring technologies for sleep respiratory and health monitoring, supporting OEM/ODM product development for digital health, wearable and healthcare-related applications. Knowledge
+  - link "made-in-china \"Sleep Smart Ring\" China Sleep Smart Ring wholesale - Select 2026 high quality Sleep Smart Ring products in best price from certified Chinese manufacturers, suppliers, wholesalers and factory on Made-in-China.com, page 2":
+    - /url: https://www.made-in-china.com/products-search/find-china-products/0b0nolimit/Sleep_Smart_Ring-2.html
+    - generic: made-in-china
+    - generic: "\"Sleep Smart Ring\""
+    - generic: China Sleep Smart Ring wholesale - Select 2026 high quality Sleep Smart Ring products in best price from certified Chinese manufacturers, suppliers, wholesalers and factory on Made-in-China.com, page 2
+  - button "Pro 已启用高级搜索免费预览。 了解更多":
+    - generic: Pro
+    - generic: 已启用高级搜索免费预览。
+    - button "了解更多":
+      - generic: 了解更多
+  - status:
+    - generic: 您正处于隐身模式。
+    - button "退出隐身模式":
+      - generic: 退出无痕模式
+  - textbox "提出后续问题":
+    - paragraph
+  - generic: 提出后续问题
+  - button "添加文件、插件等":
+  - button "搜索" [pressed]:
+    - generic: 搜索
+  - button "Computer":
+    - generic: Computer
+  - button "模型":
+    - generic: 模型
+  - button "语音输入":
+  - button "提交" [disabled]:

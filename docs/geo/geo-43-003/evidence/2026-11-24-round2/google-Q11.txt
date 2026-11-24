@@ -1,0 +1,311 @@
+- link "Skip to main content"
+- link "Accessibility help":
+  - /url: https://support.google.com/websearch/answer/181196?hl=en
+- search:
+  - link "Go to Google Home":
+    - /url: https://www.google.com/webhp?hl=en&sa=X&ved=2ahUKEwjZ0t3y2qCYAxXlM0QIHbqQGJgQPHoECAYQBA
+  - status
+  - alert
+  - combobox "Search": digital health smart ring integration SDK digital health smart ring integration SDK
+  - button "Clear":
+  - button "Search by voice":
+  - button "Search by image":
+- button "Share":
+- button "Google apps":
+[account label omitted]
+- navigation:
+  - list:
+    - link "AI Mode":
+      - /url: /search?q=digital+health+smart+ring+integration+SDK&sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDgB-1-5tD8sFpbyb0KtougdOFx_MA:1795526887966&udm=50&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtLcyphi0shU_Hby4szCRWjASZhvj7V7UCEgRb9azH8LFFcFPdMQekLxQGSofaA2-k0SnMZ0knVmea9zvfWz3m9QqmPCUJst1iWbzh5dgNnzAHCvtjU4TQL9fgqlWHY1jPHDumM6MzKUg1tVQtYkZ1Lw87mCxQ&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjZ0t3y2qCYAxXlM0QIHbqQGJgQ2J8OegQIDRAD
+      - generic: AI Mode
+    - link "All" [disabled]:
+      - generic: All
+    - link "Shopping":
+      - /url: /search?sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDgB-1-5tD8sFpbyb0KtougdOFx_MA:1795526887966&udm=28&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtLcyphi0shU_Hby4szCRWjASZhvj7V7UCEgRb9azH8LFFcFPdMQekLxQGSofaA2-k0SnMZ0knVmea9zvfWz3m9QqmPCUJst1iWbzh5dgNnzAHCvtjU4TQL9fgqlWHY1jPHDumM6MzKUg1tVQtYkZ1Lw87mCxQ&q=digital+health+smart+ring+integration+SDK&ved=1t:220175&ictx=111
+      - generic: Shopping
+    - link "Images":
+      - /url: /search?sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDgB-1-5tD8sFpbyb0KtougdOFx_MA:1795526887966&udm=2&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtLcyphi0shU_Hby4szCRWjASZhvj7V7UCEgRb9azH8LFFcFPdMQekLxQGSofaA2-k0SnMZ0knVmea9zvfWz3m9QqmPCUJst1iWbzh5dgNnzAHCvtjU4TQL9fgqlWHY1jPHDumM6MzKUg1tVQtYkZ1Lw87mCxQ&q=digital+health+smart+ring+integration+SDK&sa=X&ved=2ahUKEwjZ0t3y2qCYAxXlM0QIHbqQGJgQtKgLegQIGBAB
+      - generic: Images
+    - link "Videos":
+      - /url: /search?sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDgB-1-5tD8sFpbyb0KtougdOFx_MA:1795526887966&udm=vids&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtLcyphi0shU_Hby4szCRWjASZhvj7V7UCEgRb9azH8LFFcFPdMQekLxQGSofaA2-k0SnMZ0knVmea9zvfWz3m9QqmPCUJst1iWbzh5dgNnzAHCvtjU4TQL9fgqlWHY1jPHDumM6MzKUg1tVQtYkZ1Lw87mCxQ&q=digital+health+smart+ring+integration+SDK&sa=X&ved=2ahUKEwjZ0t3y2qCYAxXlM0QIHbqQGJgQtKgLegQIGRAB
+      - generic: Videos
+    - link "News":
+      - /url: /search?sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDgB-1-5tD8sFpbyb0KtougdOFx_MA:1795526887966&q=digital+health+smart+ring+integration+SDK&tbm=nws&source=lnms&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtLcyphi0shU_Hby4szCRWjASZhvj7V7UCEgRb9azH8LFFcFPdMQekLxQGSofaA2-k0SnMZ0knVmea9zvfWz3m9QqmPCUJst1iWbzh5dgNnzAHCvtjU4TQL9fgqlWHY1jPHDumM6MzKUg1tVQtYkZ1Lw87mCxQ&sa=X&ved=2ahUKEwjZ0t3y2qCYAxXlM0QIHbqQGJgQ0pQJegQIGhAB
+      - generic: News
+    - link "Forums":
+      - /url: /search?sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDgB-1-5tD8sFpbyb0KtougdOFx_MA:1795526887966&udm=forums&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtLcyphi0shU_Hby4szCRWjASZhvj7V7UCEgRb9azH8LFFcFPdMQekLxQGSofaA2-k0SnMZ0knVmea9zvfWz3m9QqmPCUJst1iWbzh5dgNnzAHCvtjU4TQL9fgqlWHY1jPHDumM6MzKUg1tVQtYkZ1Lw87mCxQ&q=digital+health+smart+ring+integration+SDK&sa=X&ved=2ahUKEwjZ0t3y2qCYAxXlM0QIHbqQGJgQs6gLegQIGxAB
+      - generic: Forums
+    - button "More filters":
+      - generic "More filters":
+        - generic: More
+  - button "Tools":
+    - generic: Tools
+- heading "Search Results" [level=1]
+- main:
+  - heading "AI Overview" [level=2]:
+    - strong: AI Overview
+  - button "The Ultimate Guide to Smart Rings:All You Need to Know ...":
+    - img "The Ultimate Guide to Smart Rings:All You Need to Know ..."
+  - text: Integrating a smart ring into a digital health platform involves
+  - mark:
+    - generic: "[Highlight start]"
+    - text: connecting ring hardware or consumer wearables to your mobile app, cloud backend, and clinical/wellness systems via an SDK or health data API
+    - generic: "[Highlight end]"
+  - text: .
+  - link "tryrook.io":
+    - /url: https://tryrook.io/
+  - button "tryrook.io (+2) - Related results":
+    - generic: tryrook.io
+    - generic: "+2"
+  - heading "Common Integration Paths" [level=3]
+  - list:
+    - strong: "Hardware OEM/ODM SDKs:"
+    - text: Used when building a white-label or custom smart ring. Manufacturers (such as J-STYLE or OEM ring suppliers) provide mobile SDKs for Bluetooth Low Energy (BLE) pairing, real-time or offline sensor sync (heart rate, HRV, SpO₂, skin temperature, sleep, ECG), raw signal access, and OTA firmware updates.
+    - link "www.jointcorp.com":
+      - /url: https://www.jointcorp.com/smart-ring-and-fitness-band-sdk-api-a-developers-guide/
+    - button "www.jointcorp.com (+3) - Related results":
+      - generic: www.jointcorp.com
+      - generic: "+3"
+    - strong: "Health Data Aggregation APIs & SDKs:"
+    - text: Used to pull data from existing rings or aggregate across multiple wearables and mobile health ecosystems (Apple HealthKit, Android Health Connect) without managing raw BLE firmware. Platforms like
+    - link "ROOK":
+      - /url: https://tryrook.io/
+    - text: normalize biomarkers and deliver data via webhooks, REST APIs, or FHIR R4 for EHR/EMR workflows, while
+    - link "Spike API":
+      - /url: https://www.spikeapi.com/blog/spike-api-now-offers-direct-integration-with-luna-smart-ring
+    - text: offers direct wearable integrations such as Luna smart rings.
+    - link "Spike API":
+      - /url: https://www.spikeapi.com/blog/spike-api-now-offers-direct-integration-with-luna-smart-ring
+    - button "Spike API (+2) - Related results":
+      - generic: Spike API
+      - generic: "+2"
+    - strong: "Open-Source / Custom Hardware:"
+    - text: Developers experimenting with custom prototypes can explore
+    - link "GitHub":
+      - /url: https://github.com/topics/smart-ring
+    - text: repositories for microcontroller-based ring firmware and BLE/IMU implementations.
+    - link "GitHub":
+      - /url: https://github.com/topics/smart-ring
+    - button "GitHub - Related results":
+      - generic: GitHub
+  - heading "Key Technical & Compliance Considerations" [level=3]
+  - list:
+    - strong: "Connectivity & Power:"
+    - text: Reliable background BLE sync, reconnection handling, and low-power data buffering when the ring is disconnected from the phone.
+    - link "RealMCU":
+      - /url: https://www.realmcu.com/en/Applications/Smart-Ring
+    - button "RealMCU (+1) - Related results":
+      - generic: RealMCU
+      - generic: "+1"
+    - strong: "Data Normalization & Latency:"
+    - text: Mapping vendor-specific sleep, recovery, and readiness metrics to standard schemas (or LOINC/FHIR for clinical use).
+    - link "tryrook.io":
+      - /url: https://tryrook.io/
+    - button "tryrook.io - Related results":
+      - generic: tryrook.io
+    - strong: "Regulatory & Privacy:"
+    - text: HIPAA (including Business Associate Agreements where applicable), GDPR, user consent flows, and FDA considerations if metrics are used for diagnosis or clinical decision support.
+    - link "Appinventiv":
+      - /url: https://appinventiv.com/blog/smart-ring-app-development/
+    - button "Appinventiv (+2) - Related results":
+      - generic: Appinventiv
+      - generic: "+2"
+  - button "Show more AI Overview":
+    - generic: Show more
+  - heading "Web results" [level=2]
+  - 'link "Smart Ring and Fitness Band SDK & API: A Developer''s Guide jointcorp.com https://www.jointcorp.com › smart-ring-and-fitness-ban..."':
+    - /url: https://www.jointcorp.com/smart-ring-and-fitness-band-sdk-api-a-developers-guide/
+    - 'heading "Smart Ring and Fitness Band SDK & API: A Developer''s Guide" [level=3]'
+    - generic: jointcorp.com
+    - generic: https://www.jointcorp.com › smart-ring-and-fitness-ban...
+  - button "About this result":
+  - text: J-STYLE's
+  - emphasis: smart ring SDK
+  - text: includes real-time access to ECG, PPG, step counter, AI-driven metabolic estimators, and sleep cycle analysis.
+  - list:
+    - 'link "SDK vs API: Know the Difference"':
+      - /url: https://www.jointcorp.com/smart-ring-and-fitness-band-sdk-api-a-developers-guide/#1_SDK_vs_API_Know_the_Difference
+      - generic: "SDK vs API: Know the Difference"
+    - link "J‑STYLE Smart Wearable SDK...":
+      - /url: https://www.jointcorp.com/smart-ring-and-fitness-band-sdk-api-a-developers-guide/#2_J-STYLE_Smart_Wearable_SDKAPI_Overview
+      - generic: J‑STYLE Smart Wearable SDK...
+  - link "Smart Ring OEM Manufacturer with SDK & API Integration Geyan Technology https://www.gysmartwatch.com › html › smart-ring-oem-...":
+    - /url: https://www.gysmartwatch.com/html/smart-ring-oem-sdk-api.html
+    - heading "Smart Ring OEM Manufacturer with SDK & API Integration" [level=3]
+    - generic: Geyan Technology
+    - generic: https://www.gysmartwatch.com › html › smart-ring-oem-...
+  - button "About this result":
+  - generic: Jun 15, 2026 —
+  - text: A
+  - emphasis: Smart Ring SDK
+  - text: (Software Development Kit) enables developers to connect smart ring hardware with custom mobile applications.
+  - 'link "Smart Ring App Development: SDK, Compliance & Cost Hyperlink InfoSystem https://www.hyperlinkinfosystem.com › blog › smart-ri..."':
+    - /url: https://www.hyperlinkinfosystem.com/blog/smart-ring-app-development
+    - 'heading "Smart Ring App Development: SDK, Compliance & Cost" [level=3]'
+    - generic: Hyperlink InfoSystem
+    - generic: https://www.hyperlinkinfosystem.com › blog › smart-ri...
+  - button "About this result":
+  - generic: Nov 4, 2026 —
+  - text: Discover
+  - emphasis: smart ring app development
+  - text: ", covering SDK integration, compliance requirements, key features, development processes, and costs for ..."
+  - 'link "Smart Ring App Development: SDKs, Compliance, Cost ... Appinventiv https://appinventiv.com › blog › smart-ring-app-develo..."':
+    - /url: https://appinventiv.com/blog/smart-ring-app-development/
+    - 'heading "Smart Ring App Development: SDKs, Compliance, Cost ..." [level=3]'
+    - generic: Appinventiv
+    - generic: https://appinventiv.com › blog › smart-ring-app-develo...
+  - button "About this result":
+  - generic: Oct 22, 2026 —
+  - text: Plan smart ring app development with clarity on
+  - emphasis: SDK integration
+  - text: ", BLE pairing, AI health insights, FDA and HIPAA rules, cost, and timelines ..."
+  - link "Smart Ring Solution RealMCU https://www.realmcu.com › Applications › Smart-Ring":
+    - /url: https://www.realmcu.com/en/Applications/Smart-Ring
+    - heading "Smart Ring Solution" [level=3]
+    - generic: RealMCU
+    - generic: https://www.realmcu.com › Applications › Smart-Ring
+  - button "About this result":
+  - text: A
+  - emphasis: smart ring
+  - text: is a wearable device that
+  - emphasis: integrates
+  - text: functions such as
+  - emphasis: health
+  - text: monitoring, activity tracking, and message notifications. reference designs,
+  - emphasis: SDKs
+  - text: ", ..."
+  - text: "Missing: digital ‎| Show results with:"
+  - link "digital":
+    - /url: /search?sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDgB-1-5tD8sFpbyb0KtougdOFx_MA:1795526887966&q=%22digital%22+health+smart+ring+integration+SDK&sa=X&ved=2ahUKEwjZ0t3y2qCYAxXlM0QIHbqQGJgQ5t4CegQIHxAB
+  - 'link "Smart Ring Integration: 7 Steps for System Integrators starkingsmartring.com https://starkingsmartring.com › smart-ring-integration-s..."':
+    - /url: https://starkingsmartring.com/smart-ring-integration-system-integrators-guide/
+    - 'heading "Smart Ring Integration: 7 Steps for System Integrators" [level=3]'
+    - generic: starkingsmartring.com
+    - generic: https://starkingsmartring.com › smart-ring-integration-s...
+  - button "About this result":
+  - generic: Sep 17, 2026 —
+  - emphasis: Smart ring integration
+  - text: is the process of embedding a ring's sensors, firmware, mobile app, and cloud API into your platform so that end-user ...
+  - link "Read more":
+    - /url: https://starkingsmartring.com/smart-ring-integration-system-integrators-guide/#:~:text=Smart%20ring%20integration%20is%20the,form%20your%20software%20can%20use.
+  - link "Spike API Now Offers Direct Integration with Luna Smart Ring Spike API https://www.spikeapi.com › blog › spike-api-now-offer...":
+    - /url: https://www.spikeapi.com/blog/spike-api-now-offers-direct-integration-with-luna-smart-ring
+    - heading "Spike API Now Offers Direct Integration with Luna Smart Ring" [level=3]
+    - generic: Spike API
+    - generic: https://www.spikeapi.com › blog › spike-api-now-offer...
+  - button "About this result":
+  - generic: Nov 11, 2025 —
+  - text: Spike
+  - emphasis: API
+  - text: is the first
+  - emphasis: health
+  - text: data platform to provide direct integrations with Luna
+  - emphasis: smart rings
+  - text: ", enabling developers to tap into Luna data ..."
+  - link "Read more":
+    - /url: https://www.spikeapi.com/blog/spike-api-now-offers-direct-integration-with-luna-smart-ring#:~:text=Spike%20API%20is%20the%20first,to%20tap%20into%20Luna%20data
+  - text: "Missing: SDK ‎| Show results with:"
+  - link "SDK":
+    - /url: /search?sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDgB-1-5tD8sFpbyb0KtougdOFx_MA:1795526887966&q=digital+health+smart+ring+integration+%22SDK%22&sa=X&ved=2ahUKEwjZ0t3y2qCYAxXlM0QIHbqQGJgQ5t4CegQIUBAB
+  - link "How to Build a Smart Ring Health Data Integration App in ... Kanopy Labs https://kanopylabs.com › Blog":
+    - /url: https://kanopylabs.com/blog/how-to-build-a-smart-ring-health-data-app
+    - heading "How to Build a Smart Ring Health Data Integration App in ..." [level=3]
+    - generic: Kanopy Labs
+    - generic: https://kanopylabs.com › Blog
+  - button "About this result":
+  - generic: Aug 4, 2026 —
+  - text: A
+  - emphasis: smart ring health data app
+  - text: development guide covering BLE protocols, HealthKit, Health Connect, AI insights, HIPAA compliance, ...
+  - text: "Missing: digital ‎| Show results with:"
+  - link "digital":
+    - /url: /search?sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDgB-1-5tD8sFpbyb0KtougdOFx_MA:1795526887966&q=%22digital%22+health+smart+ring+integration+SDK&sa=X&ved=2ahUKEwjZ0t3y2qCYAxXlM0QIHbqQGJgQ5t4CegQISxAB
+  - 'link "ROOK: Health Data API for Wearables, Devices, EHR and Labs tryrook.io https://tryrook.io"':
+    - /url: https://tryrook.io/
+    - 'heading "ROOK: Health Data API for Wearables, Devices, EHR and Labs" [level=3]'
+    - generic: tryrook.io
+    - generic: https://tryrook.io
+  - button "About this result":
+  - emphasis: ROOK connects health data from wearables, medical devices, EHR/EMR and labs
+  - text: through one API, with normalized records, scores and signals.
+  - heading "People also search for" [level=2]
+  - link "Digital health smart ring integration sdk cost":
+    - /url: /search?sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDgB-1-5tD8sFpbyb0KtougdOFx_MA:1795526887966&q=Digital+health+smart+ring+integration+sdk+cost&sa=X&ved=2ahUKEwjZ0t3y2qCYAxXlM0QIHbqQGJgQ1QJ6BAg_EAE
+    - generic: Digital health smart ring integration sdk cost
+  - link "Smart ring SDK":
+    - /url: /search?sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDgB-1-5tD8sFpbyb0KtougdOFx_MA:1795526887966&q=Smart+ring+SDK&sa=X&ved=2ahUKEwjZ0t3y2qCYAxXlM0QIHbqQGJgQ1QJ6BAhGEAE
+    - generic: Smart ring SDK
+  - link "Smart ring development Kit":
+    - /url: /search?sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDgB-1-5tD8sFpbyb0KtougdOFx_MA:1795526887966&q=Smart+ring+development+Kit&sa=X&ved=2ahUKEwjZ0t3y2qCYAxXlM0QIHbqQGJgQ1QJ6BAhEEAE
+    - generic: Smart ring development Kit
+  - link "Smart ring with open API":
+    - /url: /search?sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDgB-1-5tD8sFpbyb0KtougdOFx_MA:1795526887966&q=Smart+ring+with+open+API&sa=X&ved=2ahUKEwjZ0t3y2qCYAxXlM0QIHbqQGJgQ1QJ6BAhFEAE
+    - generic: Smart ring with open API
+  - link "Open ring sdk":
+    - /url: /search?sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDgB-1-5tD8sFpbyb0KtougdOFx_MA:1795526887966&q=Open+ring+sdk&sa=X&ved=2ahUKEwjZ0t3y2qCYAxXlM0QIHbqQGJgQ1QJ6BAhDEAE
+    - generic: Open ring sdk
+  - link "J-Style Health Tracker app":
+    - /url: /search?sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDgB-1-5tD8sFpbyb0KtougdOFx_MA:1795526887966&q=J-Style+Health+Tracker+app&sa=X&ved=2ahUKEwjZ0t3y2qCYAxXlM0QIHbqQGJgQ1QJ6BAhCEAE
+    - generic: J-Style Health Tracker app
+  - link "Jointcorp":
+    - /url: /search?sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDgB-1-5tD8sFpbyb0KtougdOFx_MA:1795526887966&q=Jointcorp&sa=X&ved=2ahUKEwjZ0t3y2qCYAxXlM0QIHbqQGJgQ1QJ6BAhBEAE
+    - generic: Jointcorp
+  - link "Smart ring manufacturers":
+    - /url: /search?sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDgB-1-5tD8sFpbyb0KtougdOFx_MA:1795526887966&q=Smart+ring+manufacturers&sa=X&ved=2ahUKEwjZ0t3y2qCYAxXlM0QIHbqQGJgQ1QJ6BAhAEAE
+    - generic: Smart ring manufacturers
+  - navigation:
+    - heading "Page Navigation" [level=1]
+    - text: "1"
+    - link "Page 2":
+      - /url: /search?q=digital+health+smart+ring+integration+SDK&sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDgB-1-5tD8sFpbyb0KtougdOFx_MA:1795526887966&ei=55AFa5nDOuXnkPIPuqHiwAk&start=10&sa=N&sstk=AYl2yk-EDWEeB7GpTdKOa17yj7ZT8EsPL76uPkWrvj_zV0yIf7EkuK6h3C5uUwoceo0XFBsJ25HuY1NeIM3JDslW3-aaz8eaDdZLRw&ved=2ahUKEwjZ0t3y2qCYAxXlM0QIHbqQGJgQ8tMDegQIPRAE
+      - text: "2"
+    - link "Page 3":
+      - /url: /search?q=digital+health+smart+ring+integration+SDK&sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDgB-1-5tD8sFpbyb0KtougdOFx_MA:1795526887966&ei=55AFa5nDOuXnkPIPuqHiwAk&start=20&sa=N&sstk=AYl2yk-EDWEeB7GpTdKOa17yj7ZT8EsPL76uPkWrvj_zV0yIf7EkuK6h3C5uUwoceo0XFBsJ25HuY1NeIM3JDslW3-aaz8eaDdZLRw&ved=2ahUKEwjZ0t3y2qCYAxXlM0QIHbqQGJgQ8tMDegQIPRAG
+      - text: "3"
+    - link "Page 4":
+      - /url: /search?q=digital+health+smart+ring+integration+SDK&sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDgB-1-5tD8sFpbyb0KtougdOFx_MA:1795526887966&ei=55AFa5nDOuXnkPIPuqHiwAk&start=30&sa=N&sstk=AYl2yk-EDWEeB7GpTdKOa17yj7ZT8EsPL76uPkWrvj_zV0yIf7EkuK6h3C5uUwoceo0XFBsJ25HuY1NeIM3JDslW3-aaz8eaDdZLRw&ved=2ahUKEwjZ0t3y2qCYAxXlM0QIHbqQGJgQ8tMDegQIPRAI
+      - text: "4"
+    - link "Page 5":
+      - /url: /search?q=digital+health+smart+ring+integration+SDK&sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDgB-1-5tD8sFpbyb0KtougdOFx_MA:1795526887966&ei=55AFa5nDOuXnkPIPuqHiwAk&start=40&sa=N&sstk=AYl2yk-EDWEeB7GpTdKOa17yj7ZT8EsPL76uPkWrvj_zV0yIf7EkuK6h3C5uUwoceo0XFBsJ25HuY1NeIM3JDslW3-aaz8eaDdZLRw&ved=2ahUKEwjZ0t3y2qCYAxXlM0QIHbqQGJgQ8tMDegQIPRAK
+      - text: "5"
+    - link "Page 6":
+      - /url: /search?q=digital+health+smart+ring+integration+SDK&sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDgB-1-5tD8sFpbyb0KtougdOFx_MA:1795526887966&ei=55AFa5nDOuXnkPIPuqHiwAk&start=50&sa=N&sstk=AYl2yk-EDWEeB7GpTdKOa17yj7ZT8EsPL76uPkWrvj_zV0yIf7EkuK6h3C5uUwoceo0XFBsJ25HuY1NeIM3JDslW3-aaz8eaDdZLRw&ved=2ahUKEwjZ0t3y2qCYAxXlM0QIHbqQGJgQ8tMDegQIPRAM
+      - text: "6"
+    - link "Page 7":
+      - /url: /search?q=digital+health+smart+ring+integration+SDK&sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDgB-1-5tD8sFpbyb0KtougdOFx_MA:1795526887966&ei=55AFa5nDOuXnkPIPuqHiwAk&start=60&sa=N&sstk=AYl2yk-EDWEeB7GpTdKOa17yj7ZT8EsPL76uPkWrvj_zV0yIf7EkuK6h3C5uUwoceo0XFBsJ25HuY1NeIM3JDslW3-aaz8eaDdZLRw&ved=2ahUKEwjZ0t3y2qCYAxXlM0QIHbqQGJgQ8tMDegQIPRAO
+      - text: "7"
+    - link "Page 8":
+      - /url: /search?q=digital+health+smart+ring+integration+SDK&sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDgB-1-5tD8sFpbyb0KtougdOFx_MA:1795526887966&ei=55AFa5nDOuXnkPIPuqHiwAk&start=70&sa=N&sstk=AYl2yk-EDWEeB7GpTdKOa17yj7ZT8EsPL76uPkWrvj_zV0yIf7EkuK6h3C5uUwoceo0XFBsJ25HuY1NeIM3JDslW3-aaz8eaDdZLRw&ved=2ahUKEwjZ0t3y2qCYAxXlM0QIHbqQGJgQ8tMDegQIPRAQ
+      - text: "8"
+    - link "Page 9":
+      - /url: /search?q=digital+health+smart+ring+integration+SDK&sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDgB-1-5tD8sFpbyb0KtougdOFx_MA:1795526887966&ei=55AFa5nDOuXnkPIPuqHiwAk&start=80&sa=N&sstk=AYl2yk-EDWEeB7GpTdKOa17yj7ZT8EsPL76uPkWrvj_zV0yIf7EkuK6h3C5uUwoceo0XFBsJ25HuY1NeIM3JDslW3-aaz8eaDdZLRw&ved=2ahUKEwjZ0t3y2qCYAxXlM0QIHbqQGJgQ8tMDegQIPRAS
+      - text: "9"
+    - link "Page 10":
+      - /url: /search?q=digital+health+smart+ring+integration+SDK&sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDgB-1-5tD8sFpbyb0KtougdOFx_MA:1795526887966&ei=55AFa5nDOuXnkPIPuqHiwAk&start=90&sa=N&sstk=AYl2yk-EDWEeB7GpTdKOa17yj7ZT8EsPL76uPkWrvj_zV0yIf7EkuK6h3C5uUwoceo0XFBsJ25HuY1NeIM3JDslW3-aaz8eaDdZLRw&ved=2ahUKEwjZ0t3y2qCYAxXlM0QIHbqQGJgQ8tMDegQIPRAU
+      - text: "10"
+    - heading "Next" [level=2]:
+      - link "Next":
+        - /url: /search?q=digital+health+smart+ring+integration+SDK&sca_esv=84ace98110dff800&hl=en&sxsrf=AKL5yDgB-1-5tD8sFpbyb0KtougdOFx_MA:1795526887966&ei=55AFa5nDOuXnkPIPuqHiwAk&start=10&sa=N&sstk=AYl2yk-EDWEeB7GpTdKOa17yj7ZT8EsPL76uPkWrvj_zV0yIf7EkuK6h3C5uUwoceo0XFBsJ25HuY1NeIM3JDslW3-aaz8eaDdZLRw&ved=2ahUKEwjZ0t3y2qCYAxXlM0QIHbqQGJgQ8NMDegQIPRAW
+        - generic: Next
+  - navigation
+- contentinfo:
+  - heading "Footer Links" [level=1]
+  - generic: Results are personalized
+  - generic: "-"
+  - link "Try without personalization":
+    - /url: https://www.google.com/search?q=digital+health+smart+ring+integration+SDK&hl=en&peek_pws=0&sxsrf=AKL5yDgB-1-5tD8sFpbyb0KtougdOFx_MA:1795526887966
+    - generic: Try without personalization
+  - button "Salt Lake County, Utah - From your IP address":
+    - generic: Salt Lake County, Utah
+    - text: "-"
+    - generic: From your IP address
+  - text: "-"
+  - button "Update location": Update location
+  - link "Help":
+    - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en&fg=1
+  - button "Send feedback":
+    - generic: Send feedback
+  - link "Privacy":
+    - /url: https://policies.google.com/privacy?hl=en&fg=1
+  - link "Terms":
+    - /url: https://policies.google.com/terms?hl=en&fg=1

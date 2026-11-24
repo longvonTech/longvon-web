@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-11-24T13:39:53.205438+00:00",
+  "scope": "Q02 ChatGPT token-bearing map URL only, before initial commit; no first-round changes",
+  "private_originals_retained": true,
+  "changes": [
+    {
+      "file": "chatgpt-Q02-1000.txt",
+      "original_sha256": "17fb09a1df71885ea2166a3ad6cf91a31098455b2568a5d457be297acc5de5da",
+      "published_sha256": "a3b08114e78c2fd695d87bc19129d9661663766457a1bd50f0a3ca97e7ae04c5",
+      "redactions": 1
+    },
+    {
+      "file": "chatgpt-Q02-1600.txt",
+      "original_sha256": "17fb09a1df71885ea2166a3ad6cf91a31098455b2568a5d457be297acc5de5da",
+      "published_sha256": "a3b08114e78c2fd695d87bc19129d9661663766457a1bd50f0a3ca97e7ae04c5",
+      "redactions": 1
+    }
+  ]
+}

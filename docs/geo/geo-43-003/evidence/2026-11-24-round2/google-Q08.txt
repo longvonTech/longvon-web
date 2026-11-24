@@ -1,0 +1,242 @@
+- link "Skip to main content"
+- link "Accessibility help":
+  - /url: https://support.google.com/websearch/answer/181196?hl=en
+- search:
+  - link "Go to Google Home":
+    - /url: https://www.google.com/webhp?hl=en&sa=X&ved=2ahUKEwjvq_y82qCYAxVpJ0QIHc7qG8YQPHoECAYQBA
+  - status
+  - alert
+  - combobox "Search": smart ring raw PPG data for research smart ring raw PPG data for research
+  - button "Clear":
+  - button "Search by voice":
+  - button "Search by image":
+- button "Share":
+- button "Google apps":
+[account label omitted]
+- navigation:
+  - list:
+    - link "AI Mode":
+      - /url: /search?q=smart+ring+raw+PPG+data+for+research&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDj2Q14NjTO3jIFRudsNr5y0fTlMTw:1795526775222&udm=50&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtICPMVaTZk4tFdUK8k5MXv8g8O0YurqYK3cSBclZ4lkqkmbfBo7ZCIEoKNtmqYteY2ppzsYrnq7EmzRtU_YzFQ-k1voEvfQWF5lhWNYHvqAODcXUC3JoqVnRRHbVQgbXM6GC_aj-4ux9vknxPhbl5XfnQnXbg&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjvq_y82qCYAxVpJ0QIHc7qG8YQ2J8OegQIChAD
+      - generic: AI Mode
+    - link "All" [disabled]:
+      - generic: All
+    - link "Shopping":
+      - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDj2Q14NjTO3jIFRudsNr5y0fTlMTw:1795526775222&udm=28&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtICPMVaTZk4tFdUK8k5MXv8g8O0YurqYK3cSBclZ4lkqkmbfBo7ZCIEoKNtmqYteY2ppzsYrnq7EmzRtU_YzFQ-k1voEvfQWF5lhWNYHvqAODcXUC3JoqVnRRHbVQgbXM6GC_aj-4ux9vknxPhbl5XfnQnXbg&q=smart+ring+raw+PPG+data+for+research&ved=1t:220175&ictx=111
+      - generic: Shopping
+    - link "Images":
+      - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDj2Q14NjTO3jIFRudsNr5y0fTlMTw:1795526775222&udm=2&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtICPMVaTZk4tFdUK8k5MXv8g8O0YurqYK3cSBclZ4lkqkmbfBo7ZCIEoKNtmqYteY2ppzsYrnq7EmzRtU_YzFQ-k1voEvfQWF5lhWNYHvqAODcXUC3JoqVnRRHbVQgbXM6GC_aj-4ux9vknxPhbl5XfnQnXbg&q=smart+ring+raw+PPG+data+for+research&sa=X&ved=2ahUKEwjvq_y82qCYAxVpJ0QIHc7qG8YQtKgLegQIEhAB
+      - generic: Images
+    - link "Short videos":
+      - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDj2Q14NjTO3jIFRudsNr5y0fTlMTw:1795526775222&udm=short_vids&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtICPMVaTZk4tFdUK8k5MXv8g8O0YurqYK3cSBclZ4lkqkmbfBo7ZCIEoKNtmqYteY2ppzsYrnq7EmzRtU_YzFQ-k1voEvfQWF5lhWNYHvqAODcXUC3JoqVnRRHbVQgbXM6GC_aj-4ux9vknxPhbl5XfnQnXbg&q=smart+ring+raw+PPG+data+for+research&sa=X&ved=2ahUKEwjvq_y82qCYAxVpJ0QIHc7qG8YQs6gLegQIEBAB
+      - generic: Short videos
+    - link "Videos":
+      - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDj2Q14NjTO3jIFRudsNr5y0fTlMTw:1795526775222&udm=vids&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtICPMVaTZk4tFdUK8k5MXv8g8O0YurqYK3cSBclZ4lkqkmbfBo7ZCIEoKNtmqYteY2ppzsYrnq7EmzRtU_YzFQ-k1voEvfQWF5lhWNYHvqAODcXUC3JoqVnRRHbVQgbXM6GC_aj-4ux9vknxPhbl5XfnQnXbg&q=smart+ring+raw+PPG+data+for+research&sa=X&ved=2ahUKEwjvq_y82qCYAxVpJ0QIHc7qG8YQtKgLegQIDRAB
+      - generic: Videos
+    - link "Forums":
+      - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDj2Q14NjTO3jIFRudsNr5y0fTlMTw:1795526775222&udm=forums&fbs=ACAhTvwdifjn2dKXmjtOfBxVFl_kNo0J7LRbgf5U9cgi9kOJRhZo2b70ls_k56Dkh0A5OtICPMVaTZk4tFdUK8k5MXv8g8O0YurqYK3cSBclZ4lkqkmbfBo7ZCIEoKNtmqYteY2ppzsYrnq7EmzRtU_YzFQ-k1voEvfQWF5lhWNYHvqAODcXUC3JoqVnRRHbVQgbXM6GC_aj-4ux9vknxPhbl5XfnQnXbg&q=smart+ring+raw+PPG+data+for+research&sa=X&ved=2ahUKEwjvq_y82qCYAxVpJ0QIHc7qG8YQs6gLegQIDhAB
+      - generic: Forums
+    - button "More filters":
+      - generic "More filters":
+        - generic: More
+  - button "Tools":
+    - generic: Tools
+- heading "Search Results" [level=1]
+- main:
+  - generic: Can't generate an AI overview right now. Try again later.
+  - heading "Web results" [level=2]
+  - link "Development of a Rotation-Robust PPG Sensor for a Smart Ring National Institutes of Health (NIH) | (.gov) https://pmc.ncbi.nlm.nih.gov › articles › PMC12567997":
+    - /url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12567997/
+    - heading "Development of a Rotation-Robust PPG Sensor for a Smart Ring" [level=3]
+    - generic: National Institutes of Health (NIH) | (.gov)
+    - generic: https://pmc.ncbi.nlm.nih.gov › articles › PMC12567997
+  - button "About this result":
+  - generic: by M Wang · 2025 · Cited by 8 —
+  - text: This paper proposes a rotation-robust
+  - emphasis: PPG
+  - text: sensor for
+  - emphasis: smart rings
+  - text: . Monte Carlo simulations analyze photon transmission under different LED– ...
+  - link "Read more":
+    - /url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12567997/#:~:text=This%20paper%20proposes%20a%20rotation%2Drobust,photon%20transmission%20under%20different%20LED%E2%80%93
+  - link "How Digital Health Companies, Researchers, and Wearable ... jointcorp.com https://www.jointcorp.com › blog › smart-ring-oem › h...":
+    - /url: https://www.jointcorp.com/blog/smart-ring-oem/how-digital-health-companies-researchers-and-wearable-brands-can-access-raw-ppg-signals-from-smart-rings/
+    - heading "How Digital Health Companies, Researchers, and Wearable ..." [level=3]
+    - generic: jointcorp.com
+    - generic: https://www.jointcorp.com › blog › smart-ring-oem › h...
+  - button "About this result":
+  - text: Can all
+  - emphasis: smart rings
+  - text: provide
+  - emphasis: raw PPG data
+  - text: "? Not necessarily. Availability depends on hardware architecture, firmware design, SDK capabilities, and manufacturer ..."
+  - 'link "HealthRing: Physiology Dataset for Health Sensing on Rings Nature https://www.nature.com › scientific data › data descriptors"':
+    - /url: https://www.nature.com/articles/s41597-026-07289-x
+    - 'heading "HealthRing: Physiology Dataset for Health Sensing on Rings" [level=3]'
+    - generic: Nature
+    - generic: https://www.nature.com › scientific data › data descriptors
+  - button "About this result":
+  - generic: by J Tang · 2026 —
+  - emphasis: Researchers
+  - text: can leverage the continuous, high-frequency
+  - emphasis: raw PPG
+  - text: and accelerometer
+  - emphasis: data
+  - text: to develop algorithms that are resilient to motion ...
+  - link "Read more":
+    - /url: https://www.nature.com/articles/s41597-026-07289-x#:~:text=Researchers%20can%20leverage%20the%20continuous%2C,common%20challenge%20in%20wearable%20sensing.
+  - link "Research Ring for Wearable Physiology | RESRING-PACK BIOPAC https://www.biopac.com › Products":
+    - /url: https://www.biopac.com/product/research-ring/
+    - heading "Research Ring for Wearable Physiology | RESRING-PACK" [level=3]
+    - generic: BIOPAC
+    - generic: https://www.biopac.com › Products
+  - button "About this result":
+  - text: Stream continuous HD data from all channels, including raw data. Capture photoplethysmography (PPG) data.
+  - emphasis: Research Ring raw data
+  - text: —ECG, PPG, EDA, and Temperature ...
+  - link "PPG Sensors, Signal Quality, and Accuracy Explained Circul Ring https://circulsense.com › blogs › news › how-smart-rings...":
+    - /url: https://circulsense.com/blogs/news/how-smart-rings-measure-health-ppg-sensors-accuracy?srsltid=AYCX9vL_XInmyCUgNmQujMf8mExCtkbBB7YP8VBLZZeRfP_Tnq1l5vlD
+    - heading "PPG Sensors, Signal Quality, and Accuracy Explained" [level=3]
+    - generic: Circul Ring
+    - generic: https://circulsense.com › blogs › news › how-smart-rings...
+  - button "About this result":
+  - generic: Sep 11, 2026 —
+  - emphasis: PPG sensors in smart rings track heart rate and sleep
+  - text: ", but accuracy varies with fit and motion. Clinical validation confirms reliability for ..."
+  - link "Ninenovo smart ring (MAIBO study hardware) - finger PPG chatppg.com https://chatppg.com › Research › Devices":
+    - /url: https://chatppg.com/research/devices/ninenovo-smart-ring
+    - heading "Ninenovo smart ring (MAIBO study hardware) - finger PPG" [level=3]
+    - generic: chatppg.com
+    - generic: https://chatppg.com › Research › Devices
+  - button "About this result":
+  - generic: 5 days ago —
+  - emphasis: Ninenovo smart ring (MAIBO study hardware
+  - text: ) is a finger device recording PPG. See sampling rates, channels and sources in the raw data access ...
+  - 'link "Smart ring vs smartwatch PPG: different, not better Sensor Bio https://sensorbio.com › the-signal › smart-ring-vs-smart..."':
+    - /url: https://sensorbio.com/the-signal/smart-ring-vs-smartwatch-ppg/
+    - 'heading "Smart ring vs smartwatch PPG: different, not better" [level=3]'
+    - generic: Sensor Bio
+    - generic: https://sensorbio.com › the-signal › smart-ring-vs-smart...
+  - button "About this result":
+  - generic: Nov 2, 2026 —
+  - text: "Quick answer: A"
+  - emphasis: smart ring
+  - text: and a smartwatch are not better or worse versions of the same sensor. They read the pulse from two different vascular ...
+  - link "Read more":
+    - /url: https://sensorbio.com/the-signal/smart-ring-vs-smartwatch-ppg/#:~:text=Quick%20answer%3A%20A%20smart%20ring,(PPG)%20waveform%20itself%20looks%20different.
+  - 'link "HealthRing: Physiology Dataset for Health Sensing on Rings ResearchGate https://www.researchgate.net › publication › download"':
+    - /url: https://www.researchgate.net/publication/406849107_HealthRing_Physiology_Dataset_for_Health_Sensing_on_Rings/download
+    - 'heading "HealthRing: Physiology Dataset for Health Sensing on Rings" [level=3]'
+    - generic: ResearchGate
+    - generic: https://www.researchgate.net › publication › download
+  - button "About this result":
+  - generic: 4 days ago —
+  - emphasis: Smart rings
+  - text: enable unobtrusive monitoring of cardiovascular vital signs via photoplethysmography (
+  - emphasis: PPG
+  - text: ), extensive
+  - emphasis: raw PPG
+  - text: and accelerometer ...
+  - 'link "𝜏-Ring: A Smart Ring Platform for Multimodal Physiological ... arXiv https://arxiv.org › html"':
+    - /url: https://arxiv.org/html/2508.00778v1
+    - 'heading "𝜏-Ring: A Smart Ring Platform for Multimodal Physiological ..." [level=3]'
+    - generic: arXiv
+    - generic: https://arxiv.org › html
+  - button "About this result":
+  - generic: Aug 1, 2025 —
+  - emphasis: Smart rings
+  - text: equipped with
+  - emphasis: PPG
+  - text: and temperature sensors are commonly used for physiological monitoring. For instance, Boukhayma et al. (2021) ...
+  - link "Read more":
+    - /url: https://arxiv.org/html/2508.00778v1#:~:text=Smart%20rings%20equipped%20with%20PPG,Boukhayma%20et%20al.%20(2021)
+  - list:
+    - link "τ":
+      - /url: https://arxiv.org/html/2508.00778v1#:~:text=%CF%84,-%5Ctau%20%2DRing%3A
+      - generic: τ
+    - link "2.1. Ring-Based Technologies":
+      - /url: https://arxiv.org/html/2508.00778v1#:~:text=2.1.%20Ring%2Dbased%20Technologies
+      - generic: 2.1. Ring-Based Technologies
+    - link "3. Method":
+      - /url: https://arxiv.org/html/2508.00778v1#:~:text=3.%20Method
+      - generic: 3. Method
+  - heading "People also search for" [level=2]
+  - link "Smart ring raw ppg data for research free":
+    - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDj2Q14NjTO3jIFRudsNr5y0fTlMTw:1795526775222&q=Smart+ring+raw+ppg+data+for+research+free&sa=X&ved=2ahUKEwjvq_y82qCYAxVpJ0QIHc7qG8YQ1QJ6BAg1EAE
+    - generic: Smart ring raw ppg data for research free
+  - link "Smart ring raw ppg data for research github":
+    - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDj2Q14NjTO3jIFRudsNr5y0fTlMTw:1795526775222&q=Smart+ring+raw+ppg+data+for+research+github&sa=X&ved=2ahUKEwjvq_y82qCYAxVpJ0QIHc7qG8YQ1QJ6BAg5EAE
+    - generic: Smart ring raw ppg data for research github
+  - link "Oura Ring":
+    - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDj2Q14NjTO3jIFRudsNr5y0fTlMTw:1795526775222&q=Oura+Ring&sa=X&ved=2ahUKEwjvq_y82qCYAxVpJ0QIHc7qG8YQ1QJ6BAg6EAE
+    - generic: Oura Ring
+  - link "Actxa Core Smart Ring":
+    - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDj2Q14NjTO3jIFRudsNr5y0fTlMTw:1795526775222&q=Actxa+Core+Smart+Ring&sa=X&ved=2ahUKEwjvq_y82qCYAxVpJ0QIHc7qG8YQ1QJ6BAg4EAE
+    - generic: Actxa Core Smart Ring
+  - link "Smart ring reviews 2026":
+    - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDj2Q14NjTO3jIFRudsNr5y0fTlMTw:1795526775222&q=Smart+ring+reviews+2026&sa=X&ved=2ahUKEwjvq_y82qCYAxVpJ0QIHc7qG8YQ1QJ6BAg3EAE
+    - generic: Smart ring reviews 2026
+  - link "Mirlray smart ring review":
+    - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDj2Q14NjTO3jIFRudsNr5y0fTlMTw:1795526775222&q=Mirlray+smart+ring+review&sa=X&ved=2ahUKEwjvq_y82qCYAxVpJ0QIHc7qG8YQ1QJ6BAg2EAE
+    - generic: Mirlray smart ring review
+  - link "Health ring for weight loss reviews":
+    - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDj2Q14NjTO3jIFRudsNr5y0fTlMTw:1795526775222&q=Health+ring+for+weight+loss+reviews&sa=X&ved=2ahUKEwjvq_y82qCYAxVpJ0QIHc7qG8YQ1QJ6BAg0EAE
+    - generic: Health ring for weight loss reviews
+  - link "Does Oura Ring measure oxygen during the day":
+    - /url: /search?sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDj2Q14NjTO3jIFRudsNr5y0fTlMTw:1795526775222&q=Does+Oura+Ring+measure+oxygen+during+the+day&sa=X&ved=2ahUKEwjvq_y82qCYAxVpJ0QIHc7qG8YQ1QJ6BAgzEAE
+    - generic: Does Oura Ring measure oxygen during the day
+  - navigation:
+    - heading "Page Navigation" [level=1]
+    - text: "1"
+    - link "Page 2":
+      - /url: /search?q=smart+ring+raw+PPG+data+for+research&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDj2Q14NjTO3jIFRudsNr5y0fTlMTw:1795526775222&ei=d5AFa6-UDenOkPIPztXvsAw&start=10&sa=N&sstk=AYl2yk98cAaDE0bQFVxkWd5NcMmsS-Z9b0EYWKu7lxj0mq6-wrG3547ysyKBwbxDcivUuHHXlHfX8dSQNZ533urEnicUDMzli4P1XQ&ved=2ahUKEwjvq_y82qCYAxVpJ0QIHc7qG8YQ8tMDegQIMRAE
+      - text: "2"
+    - link "Page 3":
+      - /url: /search?q=smart+ring+raw+PPG+data+for+research&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDj2Q14NjTO3jIFRudsNr5y0fTlMTw:1795526775222&ei=d5AFa6-UDenOkPIPztXvsAw&start=20&sa=N&sstk=AYl2yk98cAaDE0bQFVxkWd5NcMmsS-Z9b0EYWKu7lxj0mq6-wrG3547ysyKBwbxDcivUuHHXlHfX8dSQNZ533urEnicUDMzli4P1XQ&ved=2ahUKEwjvq_y82qCYAxVpJ0QIHc7qG8YQ8tMDegQIMRAG
+      - text: "3"
+    - link "Page 4":
+      - /url: /search?q=smart+ring+raw+PPG+data+for+research&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDj2Q14NjTO3jIFRudsNr5y0fTlMTw:1795526775222&ei=d5AFa6-UDenOkPIPztXvsAw&start=30&sa=N&sstk=AYl2yk98cAaDE0bQFVxkWd5NcMmsS-Z9b0EYWKu7lxj0mq6-wrG3547ysyKBwbxDcivUuHHXlHfX8dSQNZ533urEnicUDMzli4P1XQ&ved=2ahUKEwjvq_y82qCYAxVpJ0QIHc7qG8YQ8tMDegQIMRAI
+      - text: "4"
+    - link "Page 5":
+      - /url: /search?q=smart+ring+raw+PPG+data+for+research&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDj2Q14NjTO3jIFRudsNr5y0fTlMTw:1795526775222&ei=d5AFa6-UDenOkPIPztXvsAw&start=40&sa=N&sstk=AYl2yk98cAaDE0bQFVxkWd5NcMmsS-Z9b0EYWKu7lxj0mq6-wrG3547ysyKBwbxDcivUuHHXlHfX8dSQNZ533urEnicUDMzli4P1XQ&ved=2ahUKEwjvq_y82qCYAxVpJ0QIHc7qG8YQ8tMDegQIMRAK
+      - text: "5"
+    - link "Page 6":
+      - /url: /search?q=smart+ring+raw+PPG+data+for+research&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDj2Q14NjTO3jIFRudsNr5y0fTlMTw:1795526775222&ei=d5AFa6-UDenOkPIPztXvsAw&start=50&sa=N&sstk=AYl2yk98cAaDE0bQFVxkWd5NcMmsS-Z9b0EYWKu7lxj0mq6-wrG3547ysyKBwbxDcivUuHHXlHfX8dSQNZ533urEnicUDMzli4P1XQ&ved=2ahUKEwjvq_y82qCYAxVpJ0QIHc7qG8YQ8tMDegQIMRAM
+      - text: "6"
+    - link "Page 7":
+      - /url: /search?q=smart+ring+raw+PPG+data+for+research&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDj2Q14NjTO3jIFRudsNr5y0fTlMTw:1795526775222&ei=d5AFa6-UDenOkPIPztXvsAw&start=60&sa=N&sstk=AYl2yk98cAaDE0bQFVxkWd5NcMmsS-Z9b0EYWKu7lxj0mq6-wrG3547ysyKBwbxDcivUuHHXlHfX8dSQNZ533urEnicUDMzli4P1XQ&ved=2ahUKEwjvq_y82qCYAxVpJ0QIHc7qG8YQ8tMDegQIMRAO
+      - text: "7"
+    - link "Page 8":
+      - /url: /search?q=smart+ring+raw+PPG+data+for+research&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDj2Q14NjTO3jIFRudsNr5y0fTlMTw:1795526775222&ei=d5AFa6-UDenOkPIPztXvsAw&start=70&sa=N&sstk=AYl2yk98cAaDE0bQFVxkWd5NcMmsS-Z9b0EYWKu7lxj0mq6-wrG3547ysyKBwbxDcivUuHHXlHfX8dSQNZ533urEnicUDMzli4P1XQ&ved=2ahUKEwjvq_y82qCYAxVpJ0QIHc7qG8YQ8tMDegQIMRAQ
+      - text: "8"
+    - link "Page 9":
+      - /url: /search?q=smart+ring+raw+PPG+data+for+research&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDj2Q14NjTO3jIFRudsNr5y0fTlMTw:1795526775222&ei=d5AFa6-UDenOkPIPztXvsAw&start=80&sa=N&sstk=AYl2yk98cAaDE0bQFVxkWd5NcMmsS-Z9b0EYWKu7lxj0mq6-wrG3547ysyKBwbxDcivUuHHXlHfX8dSQNZ533urEnicUDMzli4P1XQ&ved=2ahUKEwjvq_y82qCYAxVpJ0QIHc7qG8YQ8tMDegQIMRAS
+      - text: "9"
+    - link "Page 10":
+      - /url: /search?q=smart+ring+raw+PPG+data+for+research&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDj2Q14NjTO3jIFRudsNr5y0fTlMTw:1795526775222&ei=d5AFa6-UDenOkPIPztXvsAw&start=90&sa=N&sstk=AYl2yk98cAaDE0bQFVxkWd5NcMmsS-Z9b0EYWKu7lxj0mq6-wrG3547ysyKBwbxDcivUuHHXlHfX8dSQNZ533urEnicUDMzli4P1XQ&ved=2ahUKEwjvq_y82qCYAxVpJ0QIHc7qG8YQ8tMDegQIMRAU
+      - text: "10"
+    - heading "Next" [level=2]:
+      - link "Next":
+        - /url: /search?q=smart+ring+raw+PPG+data+for+research&sca_esv=4b9addaf37cb893e&hl=en&sxsrf=AKL5yDj2Q14NjTO3jIFRudsNr5y0fTlMTw:1795526775222&ei=d5AFa6-UDenOkPIPztXvsAw&start=10&sa=N&sstk=AYl2yk98cAaDE0bQFVxkWd5NcMmsS-Z9b0EYWKu7lxj0mq6-wrG3547ysyKBwbxDcivUuHHXlHfX8dSQNZ533urEnicUDMzli4P1XQ&ved=2ahUKEwjvq_y82qCYAxVpJ0QIHc7qG8YQ8NMDegQIMRAW
+        - generic: Next
+  - navigation
+- contentinfo:
+  - heading "Footer Links" [level=1]
+  - generic: Results are personalized
+  - generic: "-"
+  - link "Try without personalization":
+    - /url: https://www.google.com/search?q=smart+ring+raw+PPG+data+for+research&hl=en&peek_pws=0&sxsrf=AKL5yDj2Q14NjTO3jIFRudsNr5y0fTlMTw:1795526775222
+    - generic: Try without personalization
+  - button "Los Angeles County, California - Based on your past activity":
+    - generic: Los Angeles County, California
+    - text: "-"
+    - generic: Based on your past activity
+  - text: "-"
+  - button "Update location": Update location
+  - link "Help":
+    - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en&fg=1
+  - button "Send feedback":
+    - generic: Send feedback
+  - link "Privacy":
+    - /url: https://policies.google.com/privacy?hl=en&fg=1
+  - link "Terms":
+    - /url: https://policies.google.com/terms?hl=en&fg=1

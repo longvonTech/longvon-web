@@ -1,0 +1,86 @@
+{
+  "record_id": "4cbf1716-2163-5e2e-9dfa-6201c5e15051",
+  "query_id": "Q01",
+  "query": "smart ring OEM ODM manufacturer",
+  "platform": "ChatGPT",
+  "mode": "DEFAULT_ANSWER",
+  "observed_at": "2026-11-24T13:19:29.296Z",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "IAB logged out, new conversation per query; UI zh, query/answer en; model UNKNOWN; web-search invocation UNKNOWN; PR27 dual-height 1440x1000/1600 capture",
+  "availability": "COMPLETED",
+  "longvon_present": true,
+  "organic_rank": null,
+  "ai_body_recommended": true,
+  "source_cited": true,
+  "cited_urls": [
+    "https://www.longvon.com/en/company/longvon?utm_source=chatgpt.com",
+    "https://bonlala.com/?utm_source=chatgpt.com",
+    "https://www.smartwearworks.com/?utm_source=chatgpt.com",
+    "https://vositone.com/?utm_source=chatgpt.com",
+    "https://www.jointcorp.com/?utm_source=chatgpt.com",
+    "https://www.gysmartwatch.com/html/smart-ring-health-monitoring-oem-1853.html?utm_source=chatgpt.com",
+    "https://www.zumutech.com/?utm_source=chatgpt.com",
+    "https://starkingsmartring.com/?utm_source=chatgpt.com"
+  ],
+  "competitors": [
+    {
+      "name": "Bonlala",
+      "url": "https://bonlala.com/?utm_source=chatgpt.com",
+      "position": "explicit answer URL order",
+      "evidence_quote": "- /url: https://bonlala.com/?utm_source=chatgpt.com"
+    },
+    {
+      "name": "Smart Wear Works",
+      "url": "https://www.smartwearworks.com/?utm_source=chatgpt.com",
+      "position": "explicit answer URL order",
+      "evidence_quote": "- /url: https://www.smartwearworks.com/?utm_source=chatgpt.com"
+    },
+    {
+      "name": "Vositone",
+      "url": "https://vositone.com/?utm_source=chatgpt.com",
+      "position": "explicit answer URL order",
+      "evidence_quote": "- /url: https://vositone.com/?utm_source=chatgpt.com"
+    },
+    {
+      "name": "J-Style / Jointcorp",
+      "url": "https://www.jointcorp.com/?utm_source=chatgpt.com",
+      "position": "explicit answer URL order",
+      "evidence_quote": "- /url: https://www.jointcorp.com/?utm_source=chatgpt.com"
+    },
+    {
+      "name": "Geyan",
+      "url": "https://www.gysmartwatch.com/html/smart-ring-health-monitoring-oem-1853.html?utm_source=chatgpt.com",
+      "position": "explicit answer URL order",
+      "evidence_quote": "- /url: https://www.gysmartwatch.com/html/smart-ring-health-monitoring-oem-1853.html?utm_source=chatgpt.com"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q01-1000.jpg",
+      "sha256": "ea83db752cfbea5066ff4b8b57e48beaca5fc4556b96c5ecab0d37ed0e4494e8"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q01-1000.json",
+      "sha256": "a054317782ffb3f41c80a8f3eb0beb787efad6d408690f79482543761396dae2"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q01-1000.txt",
+      "sha256": "bd60de5e6476ff3e5119901841884c492235c508b71306b67a0faf59d16dbf84"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q01-1600.jpg",
+      "sha256": "ce7dea03fc063600bcc029034cc11edafd4702178ed7828aefae7e1134d5c4e1"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q01-1600.json",
+      "sha256": "179de963852620f676b8af2003994aaa1a99250f9d384da42072fc76ba7c4b67"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q01-1600.txt",
+      "sha256": "bd60de5e6476ff3e5119901841884c492235c508b71306b67a0faf59d16dbf84"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "New round2 capture; environment/method differs from round1: no comparable previous_record_id and no ranking-growth attribution. Citations prove visible URLs only; reachability and commercial facts UNKNOWN."
+}

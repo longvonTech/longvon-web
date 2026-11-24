@@ -1,0 +1,85 @@
+{
+  "record_id": "ada35c09-e8bd-5674-9afb-cd269b4b44e2",
+  "query_id": "Q06",
+  "query": "smart ring manufacturer with SDK API",
+  "platform": "ChatGPT",
+  "mode": "DEFAULT_ANSWER",
+  "observed_at": "2026-11-24T13:25:55.055Z",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "IAB logged out, new conversation per query; UI zh, query/answer en; model UNKNOWN; web-search invocation UNKNOWN; PR27 dual-height 1440x1000/1600 capture",
+  "availability": "COMPLETED",
+  "longvon_present": true,
+  "organic_rank": null,
+  "ai_body_recommended": true,
+  "source_cited": true,
+  "cited_urls": [
+    "https://www.longvon.com/en/smart-ring-technology?utm_source=chatgpt.com",
+    "https://www.jointcorp.com/?utm_source=chatgpt.com",
+    "https://www.gysmartwatch.com/html/smart-ring-oem-sdk-api.html?utm_source=chatgpt.com",
+    "https://idotring.com/en/?utm_source=chatgpt.com",
+    "https://cloud.ouraring.com/v2/docs?utm_source=chatgpt.com",
+    "https://www.ultrahuman.com/?utm_source=chatgpt.com",
+    "https://developer.samsung.com/health?utm_source=chatgpt.com"
+  ],
+  "competitors": [
+    {
+      "name": "J-Style / Jointcorp",
+      "url": "https://www.jointcorp.com/?utm_source=chatgpt.com",
+      "position": "explicit answer URL order",
+      "evidence_quote": "- /url: https://www.jointcorp.com/?utm_source=chatgpt.com"
+    },
+    {
+      "name": "Geyan",
+      "url": "https://www.gysmartwatch.com/html/smart-ring-oem-sdk-api.html?utm_source=chatgpt.com",
+      "position": "explicit answer URL order",
+      "evidence_quote": "- /url: https://www.gysmartwatch.com/html/smart-ring-oem-sdk-api.html?utm_source=chatgpt.com"
+    },
+    {
+      "name": "IDOT",
+      "url": "https://idotring.com/en/?utm_source=chatgpt.com",
+      "position": "explicit answer URL order",
+      "evidence_quote": "- /url: https://idotring.com/en/?utm_source=chatgpt.com"
+    },
+    {
+      "name": "Oura",
+      "url": "https://cloud.ouraring.com/v2/docs?utm_source=chatgpt.com",
+      "position": "explicit answer URL order",
+      "evidence_quote": "- /url: https://cloud.ouraring.com/v2/docs?utm_source=chatgpt.com"
+    },
+    {
+      "name": "Ultrahuman",
+      "url": "https://www.ultrahuman.com/?utm_source=chatgpt.com",
+      "position": "explicit answer URL order",
+      "evidence_quote": "- /url: https://www.ultrahuman.com/?utm_source=chatgpt.com"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q06-1000.jpg",
+      "sha256": "b6dc71ef3741f3da80f0922f727a40fad323a54a1f598b24290ce5cb1eef5d06"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q06-1000.json",
+      "sha256": "4fc58c2f258c02561fd710222bfa9f8d343b794f2c7e124b15a85e215e0196ab"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q06-1000.txt",
+      "sha256": "8322607db337f621c384e10be09beab28370903ea7635d966498a9e69a65139b"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q06-1600.jpg",
+      "sha256": "b85d11d4ccfcacf68f148d15b4ee80da9f0786a8bc04fd3d97a6c32c019bff85"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q06-1600.json",
+      "sha256": "8bd8750f662f85d6744dfe704a46bf0b5332c945b3c92ac9154a0b9c5ecc61ee"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/chatgpt-Q06-1600.txt",
+      "sha256": "8322607db337f621c384e10be09beab28370903ea7635d966498a9e69a65139b"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "New round2 capture; environment/method differs from round1: no comparable previous_record_id and no ranking-growth attribution. Citations prove visible URLs only; reachability and commercial facts UNKNOWN."
+}

@@ -1,0 +1,47 @@
+{
+  "targets": [
+    {
+      "label": "arxiv\n[PDF] A Smart Ring Platform for Multimodal Physiological and Behavioral ...\nTo address these challenges, we introduce 𝜏-Ring, a commercial- ready smart ring platform combining accessible hardware, adjustable firmware, and fully open-source software supporting both real-time streaming and long-term logging. ... Contributions of our work include: (1) 𝜏-Ring platform: a commercial-ready, easy-to-use smart-ring device with multi-channel PPG/IMU/TEMP sensing modal- ities and internal storage, enabling long-term continuous ... The commercial-research Empatica E4 (wrist,...",
+      "url": "https://arxiv.org/pdf/2508.00778.pdf"
+    },
+    {
+      "label": "link.springer\nHealthRing: Physiology Dataset for Health Sensing on Rings - Scientific Data\nSmart rings enable unobtrusive monitoring of cardiovascular vital signs via photoplethysmography (PPG), yet rigorous validation is limited by the scarcity of open, multi-parameter datasets. We present HealthRing, three synchronized cohorts from 54 adults: (i) scripted physiological stimuli (Study 1), (ii) semi-free-living daily activities (Study 2), and (iii) motion-intensive treadmill running with natural arm swing that induces substantial motion artefacts (Study 3). Two custom...",
+      "url": "https://www.link.springer.com/article/10.1038/s41597-026-07289-x"
+    },
+    {
+      "label": "arxiv\nMulti-site PPG: An In-the-Wild Physiological Dataset from Emerging Multi-site Wearables\nWe present Multi-site PPG, an in-the-wild physiological dataset collected from four custom-developed unobtrusive wearables: a smart earring, ring, watch, and necklace. ... The dataset contains over 350 hours of raw data and 230–290 hours of modeling-ready 8-second windows per wearable. ... Existing smart ring PPG datasets are typically limited to short, controlled lab sessions, such as the 28-hour \\tau-Ring dataset . ... We release a 230+ hour physiological dataset collected during daily...",
+      "url": "https://arxiv.org/html/2605.17859"
+    },
+    {
+      "label": "biopac\nResearch Ring for Wearable Physiology | RESRING-PACK\nWearable device for EDA (GSR), pulse, ECG, and temperature. Use with mobile app + cloud platform and integrate with BIOPAC AcqKnowledge software for comprehensive analysis.",
+      "url": "https://www.biopac.com/product/research-ring/"
+    },
+    {
+      "label": "link.springer\nAn Adjustable Smart Ring to Monitor Pulse Rate and Peripheral Blood Oxygen Saturation - Annals of Biomedical Engineering\nPurpose Smart rings are emerging as a promising solution in the field of wearable devices, offering a compact and ergonomic solution for continuous physiological monitoring, yet one of their major limitations is that they are not adjustable, but rather come in different sizes. Another major gap in the literature is the lack of validation data during dynamic activities. This study presents the design, development, and validation under static and controlled-motion conditions of a research-grade...",
+      "url": "https://www.link.springer.com/article/10.1007/s10439-025-03936-3"
+    },
+    {
+      "label": "arxiv\nA Dataset and Toolkit for Multiparameter Cardiovascular ...\nThe dataset comprises photoplethysmography signals (infrared and red channels) and 3-axis accelerometer data collected from two rings (reflective and transmissive optical paths), with 28.21 hours of raw data from 34 subjects across seven activities. ... To address these limitations, we implemented two custom ring devices featuring reflective and transmissive PPG optical paths, designed to collect high-quality raw physiological signals alongside ground-truth labels. Each device integrates...",
+      "url": "https://arxiv.org/html/2505.04172"
+    },
+    {
+      "label": "mdpi\nA Dataset of Synchronized Raw and Preprocessed Finger ... - MDPI\nElectrocardiogram (ECG) and photoplethysmogram (PPG) signals are widely used noninvasive methods for assessing cardiovascular activity and provide complementary information about the cardiac cycle. ECG records cardiac electrical activity, whereas PPG records optically detected blood-volume changes in peripheral tissue. This paper describes a synchronized ECG-PPG dataset collected from 148 apparently healthy subjects under a controlled seated protocol at rest and during post-exercise recovery...",
+      "url": "https://www.mdpi.com/2306-5729/11/7/155"
+    },
+    {
+      "label": "nature\nHealthRing: Physiology Dataset for Health Sensing on Rings\nSmart rings enable unobtrusive monitoring of cardiovascular vital signs via photoplethysmography (PPG), yet rigorous validation is limited by the scarcity of open, multi-parameter datasets. We present HealthRing, three synchronized cohorts from 54 adults: (i) scripted physiological stimuli (Study 1), (ii) semi-free-living daily activities (Study 2), and (iii) motion-intensive treadmill running with natural arm swing that induces substantial motion artefacts (Study 3). Two custom...",
+      "url": "https://www.nature.com/articles/s41597-026-07289-x?error=cookies_not_supported&code=03576bea-ef72-4334-832f-589a91e23fd0"
+    },
+    {
+      "label": "arxiv\nthe D4 report from the QUMPHY project\nHowever, the newest type of wearables—smart rings—can record PPG signals from the finger [undefi] and may still benefit from the results obtained from fingertip PPG recordings. ... The OSASUD consists of 30 subjects, so each fold consists of nocturnal raw PPG signals and estimated features from 3 subjects. ... *OSASUD_initial* file in order to obtain *OSASUD_segments* file with 1-min raw PPG intervals and PPG feature sequences for model training/validation/calibration/testing. ......",
+      "url": "https://arxiv.org/html/2604.01398v1"
+    },
+    {
+      "label": "link.springer\nAn Adjustable Smart Ring to Monitor Pulse Rate and ...\nThis study presents the design, development, and validation under static and controlled-motion conditions of a research-grade adjustable smart ring for tracking pulse rate (PR) and peripheral blood oxygen saturation (SpO₂) using photoplethysmography. ... The device samples real-time SpO~2~ and PR data at 10 Hz, and raw data from the optical module are processed with the proprietary algorithms embedded in the sensor hub specifically designed for finger-based applications, and accelerometer data...",
+      "url": "https://link.springer.com/article/10.1007/s10439-025-03936-3?error=cookies_not_supported&code=d77d78f3-3703-4b4f-b2bd-a8053bf9edc1"
+    }
+  ],
+  "completeness": "UNKNOWN",
+  "reachability": "UNKNOWN",
+  "method": "visible DOM links only; domain labels are never expanded into guessed URLs"
+}

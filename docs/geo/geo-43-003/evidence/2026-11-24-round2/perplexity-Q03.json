@@ -1,0 +1,70 @@
+{
+  "captured_at": "2026-11-24T13:22:33.466Z",
+  "platform": "Perplexity",
+  "mode": "INCOGNITO_SEARCH",
+  "completion": "COMPLETE",
+  "country": "UNKNOWN",
+  "citation_targets": [
+    {
+      "label": "starkingsmartring\nPrivate Label Smart Wearable Manufacturer (OEM/ODM) | Pineeon\nPineeon is a Shenzhen smart ring & wearable OEM/ODM manufacturer. Private-label smart rings, watches, bands and AI hardware for global brands — from sampling to certified mass production.",
+      "url": "https://starkingsmartring.com/index.html"
+    },
+    {
+      "label": "starkingsmartring\nSmart Rings OEM/ODM Manufacturer | STAR KING\nSource K100, BK20 and K20 smart rings: MOQ 100 pcs, samples in 2–5 days and 15-day production for 500–10,000 pcs. Explore OEM/ODM customization.",
+      "url": "https://starkingsmartring.com/products/smart-rings/"
+    },
+    {
+      "label": "gysmartwatch\nPrivate Label Smart Ring Manufacturing - Geyan Technology\nPrivate Label Smart Ring Manufacturing: Complete OEM & ODM Solutions for Global Brands，Why Private Label Smart Rings Are Gaining Popularity",
+      "url": "https://www.gysmartwatch.com/html/private-label-smart-ring-oem.html"
+    },
+    {
+      "label": "pineeon\nSmart Ring OEM/ODM Manufacturer | Pineeon\nExplore Pineeon smart ring OEM/ODM and private label options. Review customization, sample evaluation and quotation requirements for your brand.",
+      "url": "https://pineeon.com/products/smart-wearables/smart-rings/"
+    },
+    {
+      "label": "magiwatch\nMagiWatch: Smart Wearable Manufacturer | OEM & ODM\nSource smart watches, smart rings and smart glasses from MagiWatch for OEM, ODM, private label and wholesale programs. Request a model-specific quote.",
+      "url": "https://magiwatch.com/"
+    },
+    {
+      "label": "gysmartwatch\nChina Smart Rings OEM/ODM Manufacturer\nSmart Rings OEM/ODM Manufacturer,In markets like the USA, UK, Germany, Italy, and Norway, consumers and enterprises are shifting toward minimalist, medical-grade wearables that prioritize comfort, privacy, and continuous biometric monitoring.",
+      "url": "https://www.gysmartwatch.com/html/1057461929.html"
+    },
+    {
+      "label": "szbingogroup\nSmart Ring Manufacturer | OEM ODM Custom Private Label\nChina factory of health smart rings. OEM ODM Custom logo, size & packaging. CE FCC RoHS certified, sleep & heart rate monitoring. Wholesale for global brands",
+      "url": "https://szbingogroup.com/product-category/smart-ring/"
+    },
+    {
+      "label": "pineeon\nSmart Wearable Manufacturer | OEM/ODM Smart Rings, Watches ...\nPineeon manufactures smart rings, smart watches and AI glasses for global brands, with full OEM, ODM and private label programs.",
+      "url": "https://pineeon.com/products/smart-wearables/"
+    },
+    {
+      "label": "trendgateproducts\nSmart Ring Manufacturer | OEM/ODM & Private Label Smart Rings ...\nPineeon manufactures custom smart rings for global brands. OEM/ODM, private label, sample development and bulk production with health & fitness tracking modules.",
+      "url": "https://trendgateproducts.com/products/smart-wearables/smart-rings/"
+    },
+    {
+      "label": "starkingsmartring\nSmart Ring Manufacturer (OEM/ODM) | Pineeon - STAR KING\nOEM/ODM smart ring manufacturer in Shenzhen. Private-label biometric rings with HR, HRV, SpO₂, skin temperature and sleep tracking — titanium finishes, 5–8 day battery.",
+      "url": "https://starkingsmartring.com/smart-rings.html"
+    },
+    {
+      "label": "indexbox\nSmart Light Bulbs Kit Market To 2035: Security and Automation Drive Forward Growth - News and Statistics\nThe global smart light bulbs kit market is set to expand through 2035, driven by home security simulation and seamless smart home automation integration.",
+      "url": "https://www.indexbox.io/blog/smart-light-bulbs-kit-market-forecast-to-2035-growth-driven-by-home-security-and-automation-integration/"
+    }
+  ],
+  "citation_reachability": "UNKNOWN",
+  "screenshot": "REQUIRES_VISUAL_REVIEW",
+  "bounds": {
+    "left": 140.5,
+    "right": 828.5,
+    "viewport": 1268
+  },
+  "files": [
+    {
+      "name": "perplexity-Q03.txt",
+      "sha256": "eea7b9f55034af8515a8a63d10ce7ad6fa839d61c3459b29c748c73abc747453"
+    },
+    {
+      "name": "perplexity-Q03.jpg",
+      "sha256": "f03f94b790f92ed0f3eea697330f06ef0d93a9fa94ddb5d47c331e8313889da6"
+    }
+  ]
+}

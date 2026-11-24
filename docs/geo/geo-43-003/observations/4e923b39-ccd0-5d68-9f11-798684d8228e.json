@@ -1,0 +1,59 @@
+{
+  "record_id": "4e923b39-ccd0-5d68-9f11-798684d8228e",
+  "query_id": "Q02",
+  "query": "smart ring manufacturer China",
+  "platform": "Perplexity",
+  "mode": "INCOGNITO_SEARCH",
+  "observed_at": "2026-11-24T13:21:35.160Z",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "Chrome signed-in incognito Search; Pro free-preview label; UI zh, query/answer en; model UNKNOWN; PR27 visible source-panel DOM extraction",
+  "availability": "COMPLETED",
+  "longvon_present": false,
+  "organic_rank": null,
+  "ai_body_recommended": false,
+  "source_cited": false,
+  "cited_urls": [
+    "https://www.goldenweald.com/",
+    "https://www.cincinnati.com/press-release/story/154175/top-10-shenzhen-wearable-suppliers-show-how-apec-outcomes-add-new-checks-to-sourcing/",
+    "https://smartring.en.made-in-china.com/",
+    "https://yichunxinrui.manufacturer.globalsources.com/company-profile_6008827469217.htm",
+    "https://www.alibaba.com/supplier/smart-ring.html",
+    "https://www.made-in-china.com/manufacturers-directory/item3/Smart-Ring-2.html",
+    "https://www.alibaba.com/countrysearch/CN/smart-ring-manufacturers.html",
+    "https://www.made-in-china.com/products-search/find-china-products/0b0nolimit/Wholesale_Device_Ring-3.html",
+    "https://www.globalsources.com/china-suppliers/smart-ring.htm",
+    "https://www.made-in-china.com/manufacturers-directory/item3/Smart-Ring-3.html",
+    "https://www.fortunebusinessinsights.com/smart-ring-market-111418",
+    "https://www.factmr.com/report/womens-health-smart-rings-market",
+    "https://www.businessresearchinsights.com/market-reports/smart-ring-market-107402"
+  ],
+  "competitors": [
+    {
+      "name": "Golden Weald",
+      "url": "https://www.goldenweald.com/",
+      "position": "visible sources item #1",
+      "evidence_quote": "goldenweald\nPCB Assembly Smart Ring OEM/ODM Manufacturer in China\nprovide One station service from PCB Assembly in china ,PCBA manufacturer, China PCBA board ,molds, plastic injection, CNC enclosure, metal parts to final product assembly"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-24-round2/perplexity-Q02-sources.json",
+      "sha256": "04d340cd3495e9736de83d314cb48a6b40d30f2a43aa1dbfe698c2a6e2bc3d3c"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/perplexity-Q02.jpg",
+      "sha256": "729529c509051646f9faa675c2603039925e7beab0fb691f50dd4ae7afe9c610"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/perplexity-Q02.json",
+      "sha256": "382342c50164554978ee951ff9ed3be08674ed7f64f462568cd0a2ec82922da7"
+    },
+    {
+      "path": "evidence/2026-11-24-round2/perplexity-Q02.txt",
+      "sha256": "da6c026343a4d566c35f32b94231d7e01596d03458e29785967673c0026f23e0"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "New round2 capture; environment/method differs from round1: no comparable previous_record_id and no ranking-growth attribution. Citations prove visible URLs only; reachability and commercial facts UNKNOWN."
+}

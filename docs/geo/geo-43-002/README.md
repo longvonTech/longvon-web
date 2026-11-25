@@ -42,3 +42,7 @@ The existing GEO CI retains every PPG check and adds the OEM suite. It has no pr
 ## Self-review boundary
 
 Only the narrowly approved 1,000-unit Ring1/Ring1C standard OEM MOQ is public. No public pilot quantity, sample prices, lead times, capacity, warranties, certifications, medical claims or unrestricted SDK/BLE/offline capabilities are invented. Source uncertainty is not hidden. The scope is qualified commercial inquiry generation, not traffic claims. Do not merge or publish: main CI can trigger the existing production deployment pipeline after a merge, so independent review and separate owner publication approval remain mandatory.
+
+## Final CI repair — 2026-11-25
+
+The ff789513 CI failure came from an old test forbidding every 1,000-unit mention after the limited policy had been approved. The unit policy check and the same latent browser assertion now reuse PR29's passed fix, asserting the Ring1/Ring1C standard-OEM scope, separately evaluated custom ODM and continued prohibition of unapproved pilot/price/timing terms. Six OEM and two PPG paths are retained. No application, database, attribution, workflow or production system is changed by this repair. Full logs, current validation and PR29 compatibility are documented in [PR24-FINAL-ACCEPTANCE.md](PR24-FINAL-ACCEPTANCE.md).

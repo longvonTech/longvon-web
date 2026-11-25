@@ -1,0 +1,32 @@
+✔ sample/pilot/production stay on existing reciprocal canonical pages (4.185791ms)
+✔ EN/ZH have three equivalent qualification gates, customization scopes and buyer FAQs (1.231083ms)
+✔ approved 1000-unit MOQ stays limited to Ring1/Ring1C standard OEM; no pilot number or invented terms (12.682875ms)
+✔ stage CTA passes intent only, never fabricates acquisition UTM or order stage (15.293291ms)
+✔ analytics only emits allowlisted enums, never identity or raw keyword text (22.835583ms)
+✔ synthetic local/explicit TEST/domain markers never enter commercial analytics (75.236ms)
+✔ analytics failures cannot throw into inquiry success or focus handling (10.375417ms)
+✔ new qualification details remain optional remark content with an explicit size guard (1.774208ms)
+✔ explicit QA marker survives CTA navigation without turning into commercial events (10.1035ms)
+✔ honeypot acknowledgements are not commercial or debug submission-success events (7.906833ms)
+✔ 100Hz section reuses the bilingual SDK canonical pair without duplicate index routes (10.975125ms)
+✔ English and Chinese expose the same discovery scope, process and buyer FAQs (0.50325ms)
+✔ raw-PPG interest CTA never mints UTM/AI sources or overrides acquisition campaign (4.679792ms)
+✔ discovery questions are not fabricated packet, duration, latency, model or fee specifications (2.794708ms)
+✔ visible FAQ source is passed to existing FAQ JSON-LD once on both SDK pages (2.990792ms)
+✔ all six requested entry-page families link to the buyer section in both locales (16.496166ms)
+✔ multitouch preserves distinct first/latest content and term after plain navigation (199.231917ms)
+✔ content/term-only latest campaign replaces bundle without mixed old params (67.204083ms)
+✔ AI keyword suffix survives 200 and 1000 character input (0.450083ms)
+✔ international phone storage preserves independent expected original representations (0.596792ms)
+✔ browser with absent/blank API config uses same-origin /api (322.272167ms)
+✔ configured API removes trailing slash and preserves target (14.738583ms)
+✔ API error exposes status and known field only, not raw internal response (14.042834ms)
+✔ HTML gateway failure remains typed without exposing body (12.09075ms)
+ℹ tests 24
+ℹ suites 0
+ℹ pass 24
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 964.615

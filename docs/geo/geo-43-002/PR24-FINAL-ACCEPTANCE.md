@@ -4,7 +4,7 @@
 
 ## 根因与完整失败证据
 
-已读取失败buyer-path Job `137027686947`的完整420行解码日志，见[evidence/pr24-final-20261125/buyer-path-137027686947-full.txt](evidence/pr24-final-20261125/buyer-path-137027686947-full.txt)。原运行：[44963638003](https://github.com/longvonTech/longvon-web/actions/runs/44963638003/job/137027686947)，源头ff789513，GitHub测试用合成merge为0bfeefd；原日志时间是2026-11-21 UTC，不以本轮读取日期替换历史时间。
+已读取失败buyer-path Job `137027686947`的完整419行解码日志，见[evidence/pr24-final-20261125/buyer-path-137027686947-full.txt](evidence/pr24-final-20261125/buyer-path-137027686947-full.txt)。原运行：[44963638003](https://github.com/longvonTech/longvon-web/actions/runs/44963638003/job/137027686947)，源头ff789513，GitHub测试用合成merge为0bfeefd；原日志时间是2026-11-21 UTC，不以本轮读取日期替换历史时间。
 
 失败位于`oem-journey.test.cjs:6`：旧规则把100、500、1000、1,000一概视为未经批准数字。ff789513已经按负责人决定更新为Ring1/Ring1C现有平台标准OEM MOQ为1,000件，因此该旧断言失败，24项中23通过、1失败，命令exit1。后续构建、PPG与OEM浏览器步骤没有运行；“没有制品”是提前失败的结果，不是独立根因。npm弃用/运行器Node提示也不是此次断言失败原因。
 

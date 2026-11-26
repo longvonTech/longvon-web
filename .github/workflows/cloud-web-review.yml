@@ -32,7 +32,8 @@ jobs:
       - name: Real isolated PM2 cutover, interruption and reconciliation
         run: |
           npm install --prefix "$RUNNER_TEMP/pm2-tools" pm2@7.0.1 --no-audit --no-fund
-          PATH="$RUNNER_TEMP/pm2-tools/node_modules/.bin:$PATH" LV_REHEARSAL_OUTPUT="$RUNNER_TEMP/linux-pm2.json" node scripts/recovery/pm2-rehearsal.cjs
+          if ! test -x /usr/sbin/sshd; then sudo apt-get update && sudo apt-get install -y openssh-server; fi
+          PATH="$RUNNER_TEMP/pm2-tools/node_modules/.bin:$PATH" bash scripts/recovery/ssh-pm2-rehearsal.sh
       - uses: actions/upload-artifact@v4
         if: always()
         with:

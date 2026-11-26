@@ -6,12 +6,31 @@ import re
 import sys
 import tarfile
 import zipfile
+import os
+import shutil
 
-REPO = "longvonTech/longvon-web"
-RUN = 45741771535
-ARTIFACT = 15081915933
-COMMIT = "139ff275ac29920b1bb8d119ed2ad1d1262b3627"
-ZIP_SHA = "168f9638bf1f8da7b2c1c51ad7c6916b1b23e3893bbf9ec9d9534a7200ffdef8"
+# Policy is data, separately reviewed and pinned by the operation approval.
+def policy(path=None, key=None):
+    file = path or os.environ.get("APPROVED_RELEASE_MANIFEST")
+    if not file:
+        raise ValueError("Approved release manifest required")
+    document = json.loads(pathlib.Path(file).read_text())
+    key = key or os.environ.get("RELEASE_KEY")
+    entry = document["releases"][key]
+    require(document["version"] == 1 and entry["status"] == "APPROVED" and entry.get("approvalScope") == "ARTIFACT_VERIFICATION_ONLY", "Release not approved")
+    require(re.fullmatch(r"[a-f0-9]{40}", entry["commit"]), "Invalid commit")
+    for name in ("zipSha256", "payloadSha256"):
+        require(re.fullmatch(r"[a-f0-9]{64}", entry[name]), "Invalid policy digest")
+    require(entry["repository"] == "longvonTech/longvon-web", "Unexpected source repository")
+    require(entry["phase"] == "geo" and entry["routeCount"] in (68, 72), "Invalid approved phase/routes")
+    return entry
+
+
+def digest(handle):
+    result = hashlib.sha256()
+    for block in iter(lambda: handle.read(1024 * 1024), b""):
+        result.update(block)
+    return result.hexdigest()
 
 
 def require(condition, message):
@@ -19,39 +38,79 @@ def require(condition, message):
         raise ValueError(message)
 
 
-def verify_source(artifact, run, artifact_id, commit, expected):
-    require((artifact_id, commit, expected) == (ARTIFACT, COMMIT, ZIP_SHA),
-            "Candidate is not the pinned release")
-    require(artifact["id"] == artifact_id and artifact["name"] == "longvon-recovery"
+def verify_source(artifact, run, artifact_id, commit, expected, approved=None):
+    p = approved or policy()
+    require((artifact_id, commit, expected) == (p["artifactId"], p["commit"], p["zipSha256"]),
+            "Candidate is not the approved release")
+    require(artifact["id"] == artifact_id and artifact["name"] == p["artifactName"]
             and artifact["digest"] == "sha256:" + expected
-            and artifact["workflow_run"]["id"] == RUN
+            and artifact["workflow_run"]["id"] == p["sourceRun"]
             and artifact["workflow_run"]["head_sha"] == commit, "Wrong artifact provenance")
-    require(run["id"] == RUN and run["head_sha"] == commit and run["head_branch"] == "main"
-            and run["repository"]["full_name"] == REPO and run["head_repository"]["full_name"] == REPO
-            and run["path"] == ".github/workflows/deploy.yml" and run["event"] == "workflow_run"
+    require(run["id"] == p["sourceRun"] and run["head_sha"] == commit and run["head_branch"] == "main"
+            and run["repository"]["full_name"] == p["repository"]
+            and run["head_repository"]["full_name"] == p["repository"]
+            and run["path"] == p["workflowPath"] and run["event"] == p["sourceEvent"]
             and run["conclusion"] == "success", "Wrong source run")
 
 
-def verify_archive(archive, expected, output):
+def verify_archive(archive, expected, output, approved=None):
+    p = approved or policy()
+    require(expected == p["zipSha256"], "ZIP digest differs from approved policy")
+    require(not output.exists(), "Output must be fresh")
     with archive.open("rb") as handle:
-        require(hashlib.file_digest(handle, "sha256").hexdigest() == expected, "Wrong ZIP SHA256")
+        require(digest(handle) == expected, "Wrong ZIP SHA256")
     with zipfile.ZipFile(archive) as source:
         require(sorted(source.namelist()) == ["longvon-recovery.sha256", "longvon-recovery.tar.gz"],
                 "Unexpected ZIP layout")
         line = source.read("longvon-recovery.sha256").decode().strip()
         require(re.fullmatch(r"[a-f0-9]{64}  longvon-recovery\.tar\.gz", line), "Invalid SHA256 manifest")
         with source.open("longvon-recovery.tar.gz") as handle:
-            require(hashlib.file_digest(handle, "sha256").hexdigest() == line[:64], "Wrong payload SHA256")
+            require(digest(handle) == p["payloadSha256"] == line[:64], "Wrong payload SHA256")
         with source.open("longvon-recovery.tar.gz") as handle, tarfile.open(fileobj=handle) as payload:
             manifest = json.load(payload.extractfile("release-manifest.json"))
-            require(manifest["commit"] == COMMIT and manifest["phase"] == "geo"
-                    and manifest["routeCount"] == 72 and manifest["migrationExecutionAllowed"] is False
+            require(manifest["commit"] == p["commit"] and manifest["phase"] == p["phase"]
+                    and manifest["routeCount"] == p["routeCount"] and manifest["migrationExecutionAllowed"] is False
                     and manifest["platform"] == "linux-x64-glibc", "Invalid release manifest")
             members = [member for member in payload.getmembers() if member.name.startswith("web/")]
             require(members and all(member.isfile() or member.isdir() for member in members),
                     "Unexpected Web archive entries")
-            payload.extractall(output, members=members, filter="data")
-    print(json.dumps({"artifact": ARTIFACT, "sourceRun": RUN, "commit": COMMIT,
+            # Strict, portable Python 3.9 extraction; no symlinks/devices/traversal/duplicates.
+            names = set()
+            for member in members:
+                rel = pathlib.PurePosixPath(member.name)
+                require(not rel.is_absolute() and ".." not in rel.parts and "\\" not in member.name,
+                        "Unsafe archive path")
+                require(member.name not in names, "Duplicate archive member")
+                names.add(member.name)
+                if member.isfile():
+                    require(member.name in manifest["files"], "Unmanifested Web file")
+                    with payload.extractfile(member) as handle:
+                        require(digest(handle) == manifest["files"][member.name], "Web manifest mismatch")
+            expected_web = {name for name in manifest["files"] if name.startswith("web/")}
+            require(expected_web == {m.name for m in members if m.isfile()}, "Missing Web file")
+            try:
+                output.mkdir(parents=True)
+                for member in members:
+                    dest = output.joinpath(*pathlib.PurePosixPath(member.name).parts)
+                    if member.isdir():
+                        dest.mkdir(parents=True, exist_ok=True)
+                    else:
+                        dest.parent.mkdir(parents=True, exist_ok=True)
+                        with payload.extractfile(member) as src, dest.open("xb") as dst:
+                            shutil.copyfileobj(src, dst)
+                        dest.chmod(member.mode & 0o755)
+                wm = json.loads((output / "web/web-manifest.json").read_text())
+                for rel, sha in wm["files"].items():
+                    parts = pathlib.PurePosixPath(rel)
+                    require(not parts.is_absolute() and ".." not in parts.parts, "Unsafe manifest path")
+                    with output.joinpath("web", *parts.parts).open("rb") as handle:
+                        require(digest(handle) == sha, "Inner Web manifest mismatch")
+                require((output / "web/apps/web/.next/BUILD_ID").read_text().strip() == p["buildId"],
+                        "Wrong approved BUILD_ID")
+            except BaseException:
+                shutil.rmtree(output)
+                raise
+    print(json.dumps({"artifact": p["artifactId"], "sourceRun": p["sourceRun"], "commit": p["commit"],
                       "zipSha256": expected, "payloadSha256": line[:64]}))
 
 

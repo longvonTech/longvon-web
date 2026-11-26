@@ -24,7 +24,7 @@ function authorize({enabled, approval, approvedApproval, expectedBuild, healthy,
   }
 }
 
-async function activate({previous, target, inspect, prepare, check, switchWeb, save, record, event, verifyPrevious = true}) {
+async function activate({previous, target, inspect, prepare, check, switchWeb, save, record, event, restoreRecord = () => {}, verifyPrevious = true}) {
   const before = inspect();
   assert.equal(before.webScript, previous.webScript, 'Active Web differs from recorded Web');
   assert.equal(before.apiScript, previous.apiScript, 'Active API differs from recorded API');
@@ -32,6 +32,8 @@ async function activate({previous, target, inspect, prepare, check, switchWeb, s
     const after = inspect();
     assert.equal(after.apiPid, before.apiPid, 'API PID changed');
     assert.equal(after.apiScript, before.apiScript, 'API script changed');
+    assert.equal(after.apiUptime,before.apiUptime,'API start time changed');
+    assert.equal(after.apiRestarts,before.apiRestarts,'API restart count changed');
   };
   if (verifyPrevious) await check(previous);
   await prepare(target);
@@ -48,6 +50,7 @@ async function activate({previous, target, inspect, prepare, check, switchWeb, s
       switchWeb(previous.webScript);
       await check(previous);
       assertApi();
+      restoreRecord(previous);
       save();
     } catch {
       event('recovery-failed');
@@ -59,15 +62,30 @@ async function activate({previous, target, inspect, prepare, check, switchWeb, s
   event('committed');
 }
 
-async function host([operation, target, approval, approvedApproval, enabled, expectedBuild, healthyJson, run, attempt, approvedTarget]) {
+async function host([operation, target, approval, approvedApproval, enabled, expectedBuild, healthyJson, run, attempt, approvedTarget, candidateJson]) {
   const healthy = JSON.parse(healthyJson);
   authorize({operation, target, approval, approvedApproval, enabled, expectedBuild, healthy, approvedTarget});
   assert.match(run, /^[1-9][0-9]*$/);
   assert.match(attempt, /^[1-9][0-9]*$/);
-  const root = '/root/mateyou';
+  const isolated = process.argv.includes('--isolated');
+  const isolatedRoot = process.env.LV_ISOLATED_ROOT;
+  if (isolated) assert.ok(isolatedRoot && path.resolve(isolatedRoot).startsWith('/tmp/lv-dual-'), 'Isolated root must be a dedicated /tmp/lv-dual-* directory');
+  else assert.ok(!isolatedRoot, 'Root override forbidden in production');
+  const root = isolated ? path.resolve(isolatedRoot) : '/root/mateyou';
+  const candidatePolicy = operation === 'release' ? JSON.parse(candidateJson) : null;
+  if (candidatePolicy) {
+    assert.match(candidatePolicy.commit, /^[a-f0-9]{40}$/);
+    assert.ok([68,72].includes(candidatePolicy.routeCount));
+    assert.match(candidatePolicy.buildId, buildId);
+  }
+  const webBase = isolated ? process.env.LV_TEST_WEB_BASE : 'http://127.0.0.1:3000';
+  const proxyBase = isolated ? process.env.LV_TEST_PROXY_BASE : 'https://www.longvon.com';
+  const apiBase = isolated ? process.env.LV_TEST_API_BASE : 'http://127.0.0.1:4000';
+  const preflightPort = isolated ? process.env.LV_TEST_PREFLIGHT_PORT : '3101';
+  if (isolated) for (const base of [webBase,proxyBase,apiBase]) assert.equal(new URL(base).hostname,'127.0.0.1');
   const control = path.join(root, '_recovery');
   const releases = path.join(control, 'releases');
-  const staticRoot = '/var/www/mateyou/static';
+  const staticRoot = isolated ? path.join(root, 'public-static') : '/var/www/mateyou/static';
   const activeFile = path.join(control, 'active.json');
   const lock = path.join(control, 'deployment.lock');
   const stage = path.join(control, 'incoming', `cloud-${run}-${attempt}`);
@@ -83,15 +101,15 @@ async function host([operation, target, approval, approvedApproval, enabled, exp
     assert.equal(result.status, 0, 'PM2 operation failed: ' + args[0]);
     return result.stdout;
   };
-  const processes = () => {
+  const processes = (allowMissing = false) => {
     const rows = JSON.parse(pm2(['jlist']));
     const web = rows.filter(row => row.name === 'mateyou-web');
     const api = rows.filter(row => row.name === 'mateyou-api');
-    assert.equal(web.length, 1);
+    assert.ok(web.length === 1 || allowMissing && web.length === 0,'Expected one Web process');
     assert.equal(api.length, 1);
     assert.ok(api[0].pid > 0 && api[0].pm2_env.status === 'online', 'API baseline unavailable');
-    return {web: web[0].pm2_env, apiPid: api[0].pid, apiScript: api[0].pm2_env.pm_exec_path,
-      webScript: web[0].pm2_env.pm_exec_path};
+    return {web: web[0]?.pm2_env, apiPid: api[0].pid, apiScript: api[0].pm2_env.pm_exec_path,
+      apiUptime:api[0].pm2_env.pm_uptime,apiRestarts:api[0].pm2_env.restart_time,webScript: web[0]?.pm2_env.pm_exec_path || null};
   };
   const artifact = id => path.join(releases, id, 'web');
   const script = id => path.join(artifact(id), 'apps/web/server.js');
@@ -113,21 +131,64 @@ async function host([operation, target, approval, approvedApproval, enabled, exp
     }
   };
   const check = release => poll(async () => {
-    await checkPages(release, 'http://127.0.0.1:3000');
-    await checkPages(release, 'https://www.longvon.com');
-    const api = await fetch('http://127.0.0.1:4000/health/live',
+    if(isolated && process.env.LV_TEST_POST_SWITCH_FAIL==='1' && release.id===target && fs.existsSync(journalFile) && read(journalFile).phase==='process-switched') throw new Error('ISOLATED_POST_SWITCH_HEALTH_FAILURE');
+    await checkPages(release, webBase);
+    await checkPages(release, proxyBase);
+    const api = await fetch(apiBase+'/health/ready',
       {redirect: 'error', signal: AbortSignal.timeout(4000)});
     assert.equal(api.status, 200, 'API liveness failed');
     assert.equal((await api.json()).status, 'ok', 'Unexpected API liveness response');
     const manifest = read(path.join(artifact(release.id), 'web-manifest.json'));
     for (const [name, checksum] of Object.entries(manifest.staticFiles)) {
-      const response = await fetch('https://www.longvon.com/_next/static/' + name,
+      const response = await fetch(proxyBase+'/_next/static/' + name,
         {redirect: 'error', signal: AbortSignal.timeout(4000)});
       assert.equal(response.status, 200);
       assert.equal(createHash('sha256').update(Buffer.from(await response.arrayBuffer())).digest('hex'), checksum);
     }
-  }, {timeoutMs: 60000});
+  }, {timeoutMs: isolated?2000:60000});
+  const recover = process.argv.includes('--recover-interrupted');
+  const journalFile = path.join(control,'web-transaction.json');
+  const atomic = (file,value) => { const tmp=file+'.next'; fs.writeFileSync(tmp,JSON.stringify(value),{mode:0o600}); fs.renameSync(tmp,file); };
+  if (recover) {
+    assert.ok(fs.existsSync(lock),'No interrupted lock');
+    const owner=read(path.join(lock,'owner.json'));
+    assert.equal(owner.host,require('node:os').hostname(),'Lock belongs to another host');
+    let alive=true;try{process.kill(owner.pid,0)}catch(e){if(e.code==='ESRCH')alive=false;else throw e}
+    assert.equal(alive,false,'Lock owner still running');
+    const j=read(journalFile);
+    assert.equal(j.ownerPid,owner.pid);assert.equal(j.expectedBuild,expectedBuild);
+    assert.equal(j.previous.healthyRfqBaseline,true);assert.ok(healthy.includes(j.previous.id));
+    assert.equal(j.previous.webScript,script(j.previous.id));
+    assert.equal(getBuild(j.previous.id),expectedBuild);
+    const actual=processes(true);assert.equal(actual.apiPid,j.apiPid);assert.equal(actual.apiScript,j.previous.apiScript);
+    assert.ok([null,j.previous.webScript,script(j.target)].includes(actual.webScript),'Unrecognized active process');
+    const recorded=read(activeFile);assert.ok([j.previous.id,j.target].includes(recorded.id),'Unrecognized active record');
+    assertReady({artifact:artifact(j.previous.id),staticRoot});
+    // Serialize recovery contenders. Existing unknown/legacy locks are never silently removed.
+    const recovering=path.join(lock,'recovering');fs.mkdirSync(recovering,{mode:0o700});
+    try {
+      if (actual.webScript!==j.previous.webScript || actual.web?.status!=='online') replaceWeb(j.snapshot,j.previous.webScript);
+      await check(j.previous);
+      assert.equal(processes().apiPid,j.apiPid);
+      pm2(['save']);atomic(activeFile,j.previous);
+      atomic(journalFile,{...j,phase:'reconciled',finished:new Date().toISOString()});event('interruption-reconciled');
+    } catch(error) { event('recovery-failed');throw error; }
+    finally { fs.rmdirSync(recovering); }
+    fs.unlinkSync(path.join(lock,'owner.json'));fs.rmdirSync(lock);return;
+  }
   fs.mkdirSync(lock, {mode: 0o700});
+  fs.writeFileSync(path.join(lock,'owner.json'),JSON.stringify({pid:process.pid,host:require('node:os').hostname()}),{mode:0o600,flag:'wx'});
+  let journal;
+  function replaceWeb(snapshot, webScript) {
+    const config=path.join(stage,'pm2-private.json');
+    fs.writeFileSync(config,JSON.stringify({apps:[{name:'mateyou-web',script:webScript,cwd:root,
+      env:snapshot.env,exec_mode:'fork',instances:1,interpreter:snapshot.exec_interpreter,
+      node_args:snapshot.node_args,kill_timeout:snapshot.kill_timeout,
+      max_memory_restart:snapshot.max_memory_restart,out_file:snapshot.pm_out_log_path,
+      error_file:snapshot.pm_err_log_path,autorestart:snapshot.autorestart}]}),{mode:0o600});
+    try {if(JSON.parse(pm2(['jlist'])).some(row=>row.name==='mateyou-web'))pm2(['delete','mateyou-web']);pm2(['start',config,'--only','mateyou-web']);}
+    finally {fs.rmSync(config,{force:true});}
+  }
   try {
     event('started');
     const previous = read(activeFile);
@@ -141,9 +202,12 @@ async function host([operation, target, approval, approvedApproval, enabled, exp
     const snapshot = processes().web;
     assert.equal(snapshot.exec_mode, 'fork_mode');
     assert.equal(snapshot.pm_cwd, root);
+    journal={ownerPid:process.pid,previous,expectedBuild,target,apiPid:processes().apiPid,snapshot,phase:'prepared'};
+    atomic(journalFile,journal);
+    const journalEvent=status=>{journal.phase=status;atomic(journalFile,journal);event(status);};
     let next;
     await activate({
-      previous, target: {webScript: script(target)}, inspect: processes, event, save: () => pm2(['save']),
+      previous, target: {webScript: script(target)}, inspect: processes, event:journalEvent, restoreRecord:()=>atomic(activeFile,previous), save: () => pm2(['save']),
       verifyPrevious: operation === 'release',
       prepare: async () => {
         if (operation === 'release') {
@@ -152,7 +216,7 @@ async function host([operation, target, approval, approvedApproval, enabled, exp
           fs.renameSync(path.join(stage, 'web'), artifact(target));
           publish({artifact: artifact(target), staticRoot});
           next = {...previous, id: target, webScript: script(target), phase: 'geo',
-            commit: '139ff275ac29920b1bb8d119ed2ad1d1262b3627', routeCount: 72};
+            commit: candidatePolicy.commit, routeCount: candidatePolicy.routeCount};
         } else {
           const stored = read(path.join(releases, target, 'record.json'));
           assert.equal(stored.id, target);
@@ -161,15 +225,16 @@ async function host([operation, target, approval, approvedApproval, enabled, exp
             phase: stored.phase, routeCount: stored.routeCount, rollbackFrom: previous.id};
         }
         assertReady({artifact: artifact(target), staticRoot});
+        if(candidatePolicy) assert.equal(getBuild(target),candidatePolicy.buildId,'Candidate build differs from policy');
         const preflight = spawn(process.execPath, [next.webScript], {cwd: root,
-          env: {...snapshot.env, PORT: '3101', HOSTNAME: '127.0.0.1'}, stdio: 'ignore'});
+          env: {...snapshot.env, PORT: preflightPort, HOSTNAME: '127.0.0.1'}, stdio: 'ignore'});
         let startError;
         preflight.once('error', error => { startError = error; });
         try {
           await poll(async () => {
             assert.ok(!startError && preflight.exitCode === null && preflight.signalCode === null,
               'Preflight Web did not stay running');
-            await checkPages(next, 'http://127.0.0.1:3101');
+            await checkPages(next, 'http://127.0.0.1:'+preflightPort);
           });
         } finally {
           if (preflight.pid && preflight.exitCode === null && preflight.signalCode === null) {
@@ -182,16 +247,9 @@ async function host([operation, target, approval, approvedApproval, enabled, exp
       },
       check: release => check(release === previous ? previous : next),
       switchWeb: webScript => {
-        const config = path.join(stage, 'pm2-private.json');
-        fs.writeFileSync(config, JSON.stringify({apps: [{name: 'mateyou-web', script: webScript, cwd: root,
-          env: snapshot.env, exec_mode: 'fork', instances: 1, interpreter: snapshot.exec_interpreter,
-          node_args: snapshot.node_args, kill_timeout: snapshot.kill_timeout,
-          max_memory_restart: snapshot.max_memory_restart, out_file: snapshot.pm_out_log_path,
-          error_file: snapshot.pm_err_log_path, autorestart: snapshot.autorestart}]}), {mode: 0o600});
-        try {
-          if (JSON.parse(pm2(['jlist'])).some(row => row.name === 'mateyou-web')) pm2(['delete', 'mateyou-web']);
-          pm2(['start', config, '--only', 'mateyou-web']);
-        } finally { fs.rmSync(config, {force: true}); }
+        replaceWeb(snapshot,webScript);
+        journal.phase='process-switched';atomic(journalFile,journal);
+        if(isolated && process.env.LV_TEST_INTERRUPT==='after-switch')process.kill(process.pid,'SIGKILL');
       },
       record: () => {
         if (operation === 'release') fs.writeFileSync(path.join(releases, target, 'record.json'),
@@ -199,12 +257,17 @@ async function host([operation, target, approval, approvedApproval, enabled, exp
         const pending = path.join(stage, 'active.json');
         fs.writeFileSync(pending, JSON.stringify(next), {mode: 0o600, flag: 'wx'});
         fs.renameSync(pending, activeFile);
+        journal.phase='record-written';atomic(journalFile,journal);
+        if(isolated && process.env.LV_TEST_INTERRUPT==='after-record')process.kill(process.pid,'SIGKILL');
       }
     });
   } catch (error) {
     event('failed');
     throw error;
-  } finally { fs.rmdirSync(lock); }
+  } finally {
+    // Keep recovery-failed lock/journal for explicit reconciliation; never blindly unlock.
+    if(!journal || journal.phase!=='recovery-failed'){fs.unlinkSync(path.join(lock,'owner.json'));fs.rmdirSync(lock);}
+  }
 }
 
 module.exports = {authorize, activate};

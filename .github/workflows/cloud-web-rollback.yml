@@ -20,8 +20,21 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  approval-controls:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Require independent production approval settings
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api repos/longvonTech/longvon-web/environments/production > "$RUNNER_TEMP/production-controls.json"
+          node scripts/recovery/approval-controls.cjs "$RUNNER_TEMP/production-controls.json"
   rollback:
     if: github.repository == 'longvonTech/longvon-web' && github.ref == 'refs/heads/main'
+    needs: approval-controls
     environment: production
     runs-on: ubuntu-latest
     timeout-minutes: 30

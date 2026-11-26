@@ -53,3 +53,11 @@ Codex 云端用于审阅代码、准备审批记录和核对证据。GitHub Acti
 - `node scripts/rfq/release/static-transaction.test.cjs` 的 6 项增量、冲突和文件校验测试通过。
 - Codex 连接器可以下载原始 ZIP，云端 shell 的直连下载进入制品存储时返回 403。PR 包含无生产凭据的 GitHub runner 下载验证，生产启用须确认该检查通过。
 - 既有激活事务测试使用获准的云端回环网络权限运行，7 项通过。新入口的 Actions 审批、实际 ECS/PM2 和生产外部请求未执行。
+
+## LV-DUAL-ENV-001 follow-up
+
+The Mac verified the original ZIP against the private longvon-ops Release archive and retained its release-readiness report. Internal operations/handover/recovery documents now live in that PRIVATE repository, not duplicated here. The repository above remains PUBLIC. Candidate metadata is loaded from a separately reviewed private JSON policy and pinned by SHA256; its artifact-verification approval does not authorize production deployment. Retrieval supports the original Actions path or the pinned private Release asset plus frozen provenance, so archival retrieval survives original Actions retention.
+
+PR tests generate independent synthetic archives rather than downloading expiring historical artifacts on every run. Python3.9-compatible strict decoding and extraction verify ZIP, tar and both manifests; traversal/duplicate/non-file entries fail closed. Real PM2 rehearsals run with dedicated PM2_HOME and loopback-only endpoints in /tmp/lv-dual-*; this is not production ECS or Codex Cloud verification. Interrupted transaction reconciliation requires a dead same-host lock owner, an approved baseline, recognized actual and recorded Web versions, stable API PID and preserved static files. Live/unknown locks fail closed. The private transaction journal contains the PM2 environment and must never be exported.
+
+Production remains BLOCKED: read-only environment verification returned no required reviewers and no branch restriction. New publish/rollback workflows now check independent-review settings before the production job can obtain credentials. Do not enable HANDOFF_READY or configure new credentials without a separately approved administrator operation. An actual Codex Cloud executor/checkout is not attached to the Mac chat; a remote connector and a GitHub Linux runner are separate capabilities and cannot be labeled CLOUD READY. Keep Draft; no production operation performed.

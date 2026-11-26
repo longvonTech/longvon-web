@@ -8,7 +8,7 @@
 
 Codex 云端用于审阅代码、准备审批记录和核对证据。GitHub Actions 在 `main` 上手动执行。发布和回滚均经过既有 `production` 环境，复用 `deploy-production` 并发组、ECS SSH Secrets、固定 SSH 主机公钥和 ECS 恢复目录锁。管理员须确认环境要求独立 reviewer、禁止自审及管理员绕过，并限定 `main`。GitHub 审批记录和经批准的变更单编号均需保留。
 
-发布工作流读取固定 artifact 的 REST 元数据，验证仓库、源 run、来源工作流、成功结果、main 和提交，再下载原始 ZIP。校验外层 SHA256、内层 SHA256 和 release manifest，在 runner 解包并仅传输 Web 与经审阅的控制脚本。ECS 复用现有静态资源事务，校验文件完整性，增量增加静态资源，保留旧 chunk。候选先在本机临时端口经 GET 验收，再切换 `mateyou-web`，验收直连和公开域名双语页面、BUILD_ID 及静态文件哈希，核对 API PID 和脚本一致后保存 PM2 并更新活动记录。失败时尝试切回原 Web。工作流没有构建步骤、API 切换、数据库命令或询盘 POST。
+发布工作流读取固定 artifact 的 REST 元数据，验证仓库、源 run、来源工作流、成功结果、main 和提交，再下载原始 ZIP。校验外层 SHA256、内层 SHA256 和 release manifest，在 runner 解包并仅传输 Web 与经审阅的控制脚本。ECS 复用现有静态资源事务，校验文件完整性，增量增加静态资源，保留旧 chunk。候选先在本机临时端口经 GET 验收，再切换 `mateyou-web`，验收直连和公开域名双语页面、BUILD_ID 及静态文件哈希，核对 API PID、脚本和只读存活端点后保存 PM2 并更新活动记录。失败时尝试切回原 Web。工作流没有构建步骤、API 切换、数据库命令或询盘 POST。
 
 回滚工作流只接受环境批准的健康 release ID。目标必须同时匹配当次批准值和健康清单，在固定目录内具有历史记录、可校验的 Web 文件及已发布静态资源。预检和切换复用发布事务，回滚保留 API 进程和数据库。当前活动版本即便页面失效，也可在记录、磁盘和 API 进程检查通过后进入回滚。切换后如未通过验收，尝试恢复操作前 Web 并重新验收。如果自动恢复失败，由值班人员接管。
 
@@ -47,8 +47,8 @@ Codex 云端用于审阅代码、准备审批记录和核对证据。GitHub Acti
 
 ## 自动化测试记录
 
-- 使用云端下载的真实 ZIP 运行 archive verifier，验证 ZIP、tar.gz 和 Web manifest 来源，成功提取 Web。用 GitHub REST 实际元数据运行 source verifier，通过。
+- 使用云端下载的真实 ZIP 运行 archive verifier，验证 ZIP、tar.gz 和 release manifest，成功提取 Web。用 GitHub REST 实际元数据运行 source verifier，通过。使用仅允许回环网络的 standalone 进程核验真实制品，6 条双语页面均返回 200，并包含候选 BUILD_ID。
 - `python3 scripts/recovery/test_fixed_candidate.py` 覆盖错误 ZIP 哈希、错误源仓库/源 run 和合法来源。2 项通过。
 - `node scripts/recovery/web-switch.test.cjs` 覆盖交接未批准、批准编号不匹配、非法回滚标识、发布健康失败回切、独立回滚及 API PID 漂移阻断。5 项通过。模拟事务只注入 Web、PM2 保存和只读进程检查，未使用 API 管理命令或数据库连接。
 - `node scripts/rfq/release/static-transaction.test.cjs` 的 6 项增量、冲突和文件校验测试通过。
-- 新入口的 Actions 审批、实际 ECS/PM2 和生产外部请求未执行。
+- 既有激活事务测试使用获准的云端回环网络权限运行，7 项通过。新入口的 Actions 审批、实际 ECS/PM2 和生产外部请求未执行。

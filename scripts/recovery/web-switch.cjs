@@ -102,19 +102,23 @@ async function host([operation, target, approval, approvedApproval, enabled, exp
   };
   const checkPages = async (release, base) => {
     const build = getBuild(release.id);
-      const pages = ['/partner/oem', '/en/partner/oem'];
-      if (release.routeCount === 72) pages.push('/smart-ring-sdk-api', '/en/smart-ring-sdk-api',
-        '/osa-smart-ring-technology', '/en/osa-smart-ring-technology');
-      for (const page of pages) {
-        const response = await fetch(base + page, {redirect: 'error', signal: AbortSignal.timeout(4000),
-          headers: {'Cache-Control': 'no-cache'}});
-        assert.equal(response.status, 200);
-        assert.ok((await response.text()).includes(build), 'Unexpected Web BUILD_ID');
-      }
+    const pages = ['/partner/oem', '/en/partner/oem'];
+    if (release.routeCount === 72) pages.push('/smart-ring-sdk-api', '/en/smart-ring-sdk-api',
+      '/osa-smart-ring-technology', '/en/osa-smart-ring-technology');
+    for (const page of pages) {
+      const response = await fetch(base + page, {redirect: 'error', signal: AbortSignal.timeout(4000),
+        headers: {'Cache-Control': 'no-cache'}});
+      assert.equal(response.status, 200);
+      assert.ok((await response.text()).includes(build), 'Unexpected Web BUILD_ID');
+    }
   };
   const check = release => poll(async () => {
     await checkPages(release, 'http://127.0.0.1:3000');
     await checkPages(release, 'https://www.longvon.com');
+    const api = await fetch('http://127.0.0.1:4000/health/live',
+      {redirect: 'error', signal: AbortSignal.timeout(4000)});
+    assert.equal(api.status, 200, 'API liveness failed');
+    assert.equal((await api.json()).status, 'ok', 'Unexpected API liveness response');
     const manifest = read(path.join(artifact(release.id), 'web-manifest.json'));
     for (const [name, checksum] of Object.entries(manifest.staticFiles)) {
       const response = await fetch('https://www.longvon.com/_next/static/' + name,
@@ -132,6 +136,7 @@ async function host([operation, target, approval, approvedApproval, enabled, exp
     assert.equal(previous.healthyRfqBaseline, true);
     assert.equal(previous.webScript, script(previous.id));
     assert.equal(getBuild(previous.id), expectedBuild, 'Active build differs from approval');
+    event('active-build-verified');
     assertReady({artifact: artifact(previous.id), staticRoot});
     const snapshot = processes().web;
     assert.equal(snapshot.exec_mode, 'fork_mode');

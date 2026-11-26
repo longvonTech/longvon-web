@@ -1,0 +1,65 @@
+{
+  "record_id": "f5171a98-a0de-528f-9752-6f98df46a4c9",
+  "query_id": "Q04",
+  "query": "custom smart ring development company",
+  "platform": "Perplexity",
+  "mode": "incognito Search / free-preview label",
+  "observed_at": "2026-11-22T02:15:11.186+00:00",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "Chrome signed-in incognito session, fresh query per conversation; UI zh, query/answer en; model UNKNOWN",
+  "availability": "COMPLETED",
+  "longvon_present": true,
+  "organic_rank": null,
+  "ai_body_recommended": true,
+  "source_cited": null,
+  "cited_urls": [],
+  "competitors": [
+    {
+      "name": "goldenweald.com",
+      "url": "https://www.goldenweald.com/smart-ring-manufacturer-oem-odm-smart-ring-development/",
+      "position": "first observed relevant source-link sequence 1; not a verified recommendation rank",
+      "evidence_quote": "- link \"goldenweald\":"
+    },
+    {
+      "name": "qxtechsolutions.com",
+      "url": "https://qxtechsolutions.com/en/solutions/smart-ring-development.html",
+      "position": "first observed relevant source-link sequence 2; not a verified recommendation rank",
+      "evidence_quote": "- link \"qxtechsolutions\":"
+    },
+    {
+      "name": "aismartai.com",
+      "url": "https://www.aismartai.com/",
+      "position": "first observed relevant source-link sequence 3; not a verified recommendation rank",
+      "evidence_quote": "- link \"aismartai\":"
+    },
+    {
+      "name": "gysmartwatch.com",
+      "url": "https://www.gysmartwatch.com/html/health-monitoring-smart-ring-oem-1851.html",
+      "position": "first observed relevant source-link sequence 4; not a verified recommendation rank",
+      "evidence_quote": "- link \"gysmartwatch\":"
+    },
+    {
+      "name": "goodwaytechs.com",
+      "url": "https://www.goodwaytechs.com/services.html",
+      "position": "first observed relevant source-link sequence 5; not a verified recommendation rank",
+      "evidence_quote": "- link \"goodwaytechs\":"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-22-round1/perplexity-Q04-meta.json",
+      "sha256": "57585ce4304a01a053a078c7de267e3197c6b9afe88e15e45a30d5390fa60098"
+    },
+    {
+      "path": "evidence/2026-11-22-round1/perplexity-Q04.jpg",
+      "sha256": "fa53364667cd6f682576ad7bd00bce0927b6b6d28a4eb63a68d55f570c2883c7"
+    },
+    {
+      "path": "evidence/2026-11-22-round1/perplexity-Q04.txt",
+      "sha256": "e9c2ca32d2cbcd21d00bd1c658f571ee19cb530d5d628a3ed87b6302ceb876e9"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "First observed round; no prior comparable record. Country UNKNOWN; no growth comparison. Incognito Search; Pro free preview label shown. Exact targets for generic domain-only citation labels UNKNOWN; source drawer observed empty."
+}

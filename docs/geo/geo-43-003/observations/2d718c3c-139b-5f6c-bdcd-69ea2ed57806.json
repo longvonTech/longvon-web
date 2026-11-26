@@ -1,0 +1,61 @@
+{
+  "record_id": "2d718c3c-139b-5f6c-bdcd-69ea2ed57806",
+  "query_id": "Q01",
+  "query": "smart ring OEM ODM manufacturer",
+  "platform": "ChatGPT",
+  "mode": "logged-out default answer (web-search invocation UNKNOWN)",
+  "observed_at": "2026-11-22T02:11:50.856+00:00",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "in-app browser logged out, new conversation per query; UI zh, query/answer en; model UNKNOWN",
+  "availability": "COMPLETED",
+  "longvon_present": true,
+  "organic_rank": null,
+  "ai_body_recommended": true,
+  "source_cited": true,
+  "cited_urls": [
+    "https://www.longvon.com/en/company/longvon?utm_source=chatgpt.com"
+  ],
+  "competitors": [
+    {
+      "name": "smartwearworks.com",
+      "url": "https://www.smartwearworks.com/?utm_source=chatgpt.com",
+      "position": "first observed relevant source-link sequence 1; not a verified recommendation rank",
+      "evidence_quote": "- link \"Smart Wear Works\":"
+    },
+    {
+      "name": "starkingsmartring.com",
+      "url": "https://starkingsmartring.com/?utm_source=chatgpt.com",
+      "position": "first observed relevant source-link sequence 2; not a verified recommendation rank",
+      "evidence_quote": "- link \"STAR KING\":"
+    },
+    {
+      "name": "gysmartwatch.com",
+      "url": "https://www.gysmartwatch.com/html/smart-ring-health-monitoring-oem-1853.html?utm_source=chatgpt.com",
+      "position": "first observed relevant source-link sequence 3; not a verified recommendation rank",
+      "evidence_quote": "- link \"Geyan OEM information\":"
+    },
+    {
+      "name": "goldenweald.com",
+      "url": "https://www.goldenweald.com/?utm_source=chatgpt.com",
+      "position": "first observed relevant source-link sequence 4; not a verified recommendation rank",
+      "evidence_quote": "- link \"Golden Weald\":"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-22-round1/chatgpt-Q01-meta.json",
+      "sha256": "4cd4b0dd5e1d2972d5815103a4cf323482878116917cb3908df4508ade0e81f8"
+    },
+    {
+      "path": "evidence/2026-11-22-round1/chatgpt-Q01.jpg",
+      "sha256": "0004acb9e310dc7ea101255c8d10c08d62d3534b13fd1c132b7f2cf6fde17c28"
+    },
+    {
+      "path": "evidence/2026-11-22-round1/chatgpt-Q01.txt",
+      "sha256": "9f4a736aaf56af6b87215277960b4947de5a4660761fbb55faefe04d8da588e4"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "First observed round; no prior comparable record. Country UNKNOWN; no growth comparison. Logged-out default answer; explicit web-search invocation and model version UNKNOWN; visible linked sources are not proof of live retrieval. Original screenshot horizontally clipped (BLOCKED_LOCAL_ENV); complete DOM retained; cached UC reopen failed; no resubmission."
+}

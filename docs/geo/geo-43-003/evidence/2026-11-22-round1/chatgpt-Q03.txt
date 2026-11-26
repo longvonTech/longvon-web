@@ -1,0 +1,309 @@
+- banner:
+  - button "打开边栏":
+  - button "登录"
+- main:
+  - region "对话":
+    - list "对话":
+      - heading "你说：" [level=4]
+      - button "private label smart ring manufacturer":
+        - paragraph: private label smart ring manufacturer
+      - heading "ChatGPT 说：" [level=4]
+      - region "DIL content":
+        - paragraph:
+          - text: If you're looking to launch your own
+          - generic: private-label smart ring brand
+          - text: ", I would start with manufacturers in Shenzhen and other Chinese wearable-electronics manufacturing hubs."
+        - paragraph: I've identified several potential OEM/ODM suppliers offering custom logos, branded packaging, companion apps, and hardware customization.
+        - heading "8 private-label smart ring manufacturers" [level=2]
+        - img "OmniRing R9 – My Store"
+        - button "Open OmniRing R9 – My Store"
+        - paragraph:
+          - text: "1."
+          - button "Bonlala"
+          - generic: Bonlala
+        - generic: Lowest advertised MOQ
+        - list:
+          - paragraph: "Advertised MOQ: 100 units"
+          - paragraph: Custom logo, packaging and branded app
+          - paragraph: Custom app interface from 1,000 units
+          - paragraph: Custom ring design from 3,000 units
+        - paragraph:
+          - text: "Website:"
+          - button "Bonlala OEM":
+            - link "Bonlala OEM":
+              - /url: https://bonlala.com/?utm_source=chatgpt.com
+              - generic: Bonlala
+              - generic: OEM
+        - button "Smart Ring OEM/ODM":
+          - generic: Smart Ring OEM/ODM
+        - img "Reptronic AI Smart Health Ring- RPTK003"
+        - button "Open Reptronic AI Smart Health Ring- RPTK003"
+        - paragraph:
+          - text: "2."
+          - button "COMI"
+          - generic: COMI
+        - list:
+          - paragraph: "Advertised customization MOQ: 3,000 units"
+          - paragraph: Custom titanium, steel and ceramic
+          - paragraph: Custom charging case and packaging
+          - paragraph: SDK and custom app development
+        - paragraph:
+          - text: "Website:"
+          - button "COMI Manufacturing":
+            - link "COMI Manufacturing":
+              - /url: https://comiring.com/customized-service/?utm_source=chatgpt.com
+              - generic: COMI
+              - generic: Manufacturing
+        - button "OEM/ODM Smart Ring Manufacturer +1":
+          - generic: OEM/ODM Smart Ring Manufacturer
+          - generic: "+1"
+        - img "ODM OEM Wearable Technology and Integrated Smart Jewellery for Smart Rings - Smart Health Ring and Heart Rate Monitoring Ring price"
+        - button "Open ODM OEM Wearable Technology and Integrated Smart Jewellery for Smart Rings - Smart Health Ring and Heart Rate Monitoring Ring price"
+        - paragraph:
+          - text: "3."
+          - button "Pineeon"
+          - generic: Pineeon
+        - list:
+          - paragraph: "Advertised private-label MOQ: 500 units"
+          - paragraph: "Full custom MOQ: 1,000 units"
+          - paragraph: Branded companion app
+          - paragraph: Titanium and ceramic finishes
+        - paragraph:
+          - text: "Website:"
+          - button "Pineeon Smart Ring OEM":
+            - link "Pineeon Smart Ring OEM":
+              - /url: https://pineeon.com/products/smart-wearables/smart-rings/?utm_source=chatgpt.com
+              - generic: Pineeon Smart Ring
+              - generic: OEM
+        - button "Pineeon":
+          - generic: Pineeon
+        - img "Dongguan Huikang Intelligent Technology Co., Ltd. TK20"
+        - button "Open Dongguan Huikang Intelligent Technology Co., Ltd. TK20"
+        - paragraph:
+          - text: "4."
+          - button "Shenzhen Sww Industrial Development"
+          - generic: Shenzhen Sww Industrial Development
+        - list:
+          - paragraph: Private-label manufacturing
+          - paragraph: White-label iOS and Android applications
+          - paragraph: SDK/API integration
+          - paragraph: Custom firmware and packaging
+        - paragraph:
+          - text: "Website:"
+          - button "Smart Wear Works":
+            - link "Smart Wear Works":
+              - /url: https://www.smartwearworks.com/smart-ring-oem/?utm_source=chatgpt.com
+              - generic: Smart Wear
+              - generic: Works
+        - button "Shenzhen Sww":
+          - generic: Shenzhen Sww
+        - img "Goodway - Custom Smart Ring Supplier"
+        - button "Open Goodway - Custom Smart Ring Supplier"
+        - paragraph:
+          - text: "5."
+          - button "Goodway Technology"
+          - generic: Goodway Technology
+        - list:
+          - paragraph: "Advertised MOQ: 500–1,000 units"
+          - paragraph: Custom hardware and firmware
+          - paragraph: White-label applications
+          - paragraph: Custom sensor configurations
+        - paragraph:
+          - text: "Website:"
+          - button "Goodway Smart Rings":
+            - link "Goodway Smart Rings":
+              - /url: https://www.goodwaytechs.com/smart-rings.html?utm_source=chatgpt.com
+              - generic: Goodway Smart
+              - generic: Rings
+        - button "Goodway":
+          - generic: Goodway
+        - 'img "prxxhri Smart Ring Review: No Subscription Health Tracking | SmartRingWear"'
+        - 'button "Open prxxhri Smart Ring Review: No Subscription Health Tracking | SmartRingWear"'
+        - paragraph:
+          - text: "6."
+          - button "EngraSun"
+          - generic: EngraSun
+        - list:
+          - paragraph: OEM/ODM manufacturing
+          - paragraph: Custom branding and packaging
+          - paragraph: White-label app options
+          - paragraph: In-house assembly facility
+        - paragraph:
+          - text: "Website:"
+          - button "EngraSun Manufacturer":
+            - link "EngraSun Manufacturer":
+              - /url: https://engrasun.com/?utm_source=chatgpt.com
+              - generic: EngraSun
+              - generic: Manufacturer
+        - button "Smart Wearable Wholesale & OEM/ODM Manufacturer":
+          - generic: Smart Wearable Wholesale & OEM/ODM Manufacturer
+        - img "R01 Smart Fitness Ring User Manual"
+        - button "Open R01 Smart Fitness Ring User Manual"
+        - paragraph:
+          - text: "7."
+          - button "Star King Smart Ring"
+          - generic: Star King Smart Ring
+        - list:
+          - paragraph: "Advertised turnkey MOQ: 500 units"
+          - paragraph: White-label software
+          - paragraph: SDK and custom firmware options
+          - paragraph: NDA and IP protection arrangements
+        - paragraph:
+          - text: "Website:"
+          - button "Star King":
+            - link "Star King":
+              - /url: https://starkingsmartring.com/?utm_source=chatgpt.com
+              - generic: Star
+              - generic: King
+        - button "Star King":
+          - generic: Star King
+        - 'img "Smart Ring Sensors Explained: PPG, Accelerometer, Temperature | MATEYOU Health Insights"'
+        - 'button "Open Smart Ring Sensors Explained: PPG, Accelerometer, Temperature | MATEYOU Health Insights"'
+        - paragraph:
+          - text: "8."
+          - button "LONGVON Technology"
+          - generic: LONGVON Technology
+        - list:
+          - paragraph: Hardware and sensor development
+          - paragraph: Firmware and algorithms
+          - paragraph: Custom mobile applications
+          - paragraph: OEM/ODM manufacturing
+        - paragraph:
+          - text: "Website:"
+          - button "LONGVON":
+            - link "LONGVON":
+              - /url: https://www.longvon.com/en/smart-ring-solution-provider?utm_source=chatgpt.com
+              - generic: LONGVON
+        - button "LONGVON":
+          - generic: LONGVON
+        - heading "My recommended shortlist" [level=2]
+        - table:
+          - rowgroup:
+            - row "Manufacturer Advertised MOQ Best application":
+              - columnheader "Manufacturer":
+                - paragraph: Manufacturer
+              - columnheader "Advertised MOQ":
+                - paragraph: Advertised MOQ
+              - columnheader "Best application":
+                - paragraph: Best application
+            - row "Bonlala 100 Startup brand":
+              - cell "Bonlala":
+                - paragraph: Bonlala
+              - cell "100":
+                - paragraph: "100"
+              - cell "Startup brand":
+                - paragraph: Startup brand
+            - row "Pineeon 500 Private-label launch":
+              - cell "Pineeon":
+                - paragraph: Pineeon
+              - cell "500":
+                - paragraph: "500"
+              - cell "Private-label launch":
+                - paragraph: Private-label launch
+            - row "Star King 500 Turnkey solution":
+              - cell "Star King":
+                - paragraph: Star King
+              - cell "500":
+                - paragraph: "500"
+              - cell "Turnkey solution":
+                - paragraph: Turnkey solution
+            - row "COMI 3,000 Advanced customization":
+              - cell "COMI":
+                - paragraph: COMI
+              - cell "3,000":
+                - paragraph: 3,000
+              - cell "Advanced customization":
+                - paragraph: Advanced customization
+            - row "Goodway 500–1,000 Hardware and software":
+              - cell "Goodway":
+                - paragraph: Goodway
+              - cell "500–1,000":
+                - paragraph: 500–1,000
+              - cell "Hardware and software":
+                - paragraph: Hardware and software
+        - paragraph: These are supplier-advertised figures, not independently verified production quotes.
+        - heading "What you should request from manufacturers" [level=2]
+        - paragraph: "For a serious smart ring brand, ask for:"
+        - list:
+          - paragraph: Your own logo engraved inside and outside the ring.
+          - paragraph: Custom retail packaging and charging case.
+          - paragraph: Your own branded iOS and Android app.
+          - paragraph: Heart rate, HRV, sleep, SpO2 and temperature tracking.
+          - paragraph: Bluetooth SDK/API access.
+          - paragraph: US sizing kit (sizes 6–13).
+          - paragraph: FCC, CE, RoHS and battery shipping documentation.
+          - paragraph: Sample units before committing to bulk production.
+        - paragraph:
+          - generic: "Important:"
+          - text: Verify sensor accuracy, battery life, app ownership, data hosting, certification reports and actual factory identity before paying a deposit.
+        - heading "Let me narrow down the best manufacturers for your business" [level=2]
+        - paragraph: I have three questions that will make a big difference in which factories I recommend.
+        - paragraph:
+          - generic: 1. What is your initial order quantity?
+        - radiogroup "Options":
+          - radio "100–500 units" [checked]
+          - text: 100–500 units
+          - radio "500–1,000 units"
+          - text: 500–1,000 units
+          - radio "1,000–5,000 units"
+          - text: 1,000–5,000 units
+          - radio "5,000–10,000 units"
+          - text: 5,000–10,000 units
+          - radio "10,000+ units"
+          - text: 10,000+ units
+        - paragraph:
+          - generic: 2. What kind of app do you want?
+        - radiogroup "Options":
+          - radio "My own branded app (logo, colors, branding)" [checked]
+          - text: My own branded app (logo, colors, branding)
+          - radio "Manufacturer's existing app"
+          - text: Manufacturer's existing app
+          - radio "My own independently developed app with SDK/API"
+          - text: My own independently developed app with SDK/API
+        - paragraph:
+          - generic: 3. Which smart ring are you trying to manufacture?
+        - radiogroup "Options":
+          - radio "Oura-style health tracking ring" [checked]
+          - text: Oura-style health tracking ring
+          - radio "Premium titanium smart ring"
+          - text: Premium titanium smart ring
+          - radio "Budget fitness tracking ring"
+          - text: Budget fitness tracking ring
+          - radio "Advanced AI health monitoring ring"
+          - text: Advanced AI health monitoring ring
+        - paragraph:
+          - generic: Target manufacturing cost per ring
+        - radiogroup "Options":
+          - radio "Under $15"
+          - text: Under $15
+          - radio "$15–$30" [checked]
+          - text: $15–$30
+          - radio "$30–$50"
+          - text: $30–$50
+          - radio "$50–$80"
+          - text: $50–$80
+          - radio "$80+"
+          - text: $80+
+        - button "Find matching manufacturers":
+          - generic: Find matching manufacturers
+        - paragraph: I can then narrow this down to the best 3–5 factories, with direct contact information and realistic sourcing targets.
+      - status
+      - group "回复操作":
+        - button "复制回复":
+        - status
+        - button "回复优秀":
+        - button "回复不佳":
+        - status
+        - button "分享":
+        - button "更多操作":
+    - paragraph:
+      - generic: ChatGPT 是 AI，可能会犯错。
+- contentinfo:
+  - generic: 与 ChatGPT 聊天
+  - textbox "与 ChatGPT 聊天" [active]:
+    - /placeholder: 询问 ChatGPT
+  - button "添加文件等":
+  - button "开始听写":
+  - button "发送消息" [disabled]:
+- alert
+- status

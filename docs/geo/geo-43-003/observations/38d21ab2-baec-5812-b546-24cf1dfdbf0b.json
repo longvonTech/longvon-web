@@ -1,0 +1,43 @@
+{
+  "record_id": "38d21ab2-baec-5812-b546-24cf1dfdbf0b",
+  "query_id": "Q09",
+  "query": "sleep monitoring smart ring OEM",
+  "platform": "Google",
+  "mode": "All / first result page with auto AI Overview",
+  "observed_at": "2026-11-22T02:13:18.116+00:00",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "Chrome existing signed-in profile; hl=en; personalized results; actual country unverified",
+  "availability": "COMPLETED",
+  "longvon_present": false,
+  "organic_rank": null,
+  "ai_body_recommended": null,
+  "source_cited": null,
+  "cited_urls": [],
+  "competitors": [
+    {
+      "name": "jointcorp.com",
+      "url": "https://www.jointcorp.com/product-cat/smart-rings/",
+      "position": "first observed relevant source-link sequence 1; not a verified recommendation rank",
+      "evidence_quote": "- link \"Smart Ring Manufacturer & Health Tracking Rings OEM/ODM jointcorp.com https://www.jointcorp.com › product-cat › smart-rings\":"
+    },
+    {
+      "name": "goodwaytechs.com",
+      "url": "https://www.goodwaytechs.com/smart-ring.html",
+      "position": "first observed relevant source-link sequence 2; not a verified recommendation rank",
+      "evidence_quote": "- link \"Smart Ring Manufacturer OEM & ODM ... Goodway Techs https://www.goodwaytechs.com › Products\":"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-22-round1/google-Q09.jpg",
+      "sha256": "42d2690dd07aede9b2861e99fe6bf8e48778daea49983a8c62d0024ef8ec5b71"
+    },
+    {
+      "path": "evidence/2026-11-22-round1/google-Q09.json",
+      "sha256": "68ca4b2730a5756b035a747459c1d28a6f6615bfc2348fcb6637c21ec1ad98a5"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "First observed round; no prior comparable record. Country UNKNOWN; no growth comparison. Scope: first Google results page, signed in/personalized. Organic links and AI citation are separate; pending AI panel UNKNOWN."
+}

@@ -1,0 +1,218 @@
+- complementary:
+  - navigation "侧边栏导航":
+    - link:
+      - /url: /
+    - button "展开侧边栏"
+    - group "创建":
+      - link "新建":
+        - /url: /
+        - generic: 新建
+    - group "主导航":
+      - link "自动化":
+        - /url: /automations
+        - generic: 自动化
+      - link "工件":
+        - /url: /artifacts
+        - generic: 工件
+      - link "插件":
+        - /url: /computer/plugins
+        - generic: 插件
+      - button "更多":
+        - generic: 更多
+    - link "项目":
+      - /url: /projects
+    - link "会话":
+      - /url: /library
+    - button "升级计划":
+[profile label omitted]
+[profile label omitted]
+  - separator "调整侧边栏宽度"
+- main:
+  - button "返回上一页":
+  - tablist "回答模式标签页":
+    - tab "答案" [selected]:
+      - text: 答案
+    - tab "链接":
+      - text: 链接
+    - tab "图片":
+      - text: 图片
+  - button "会话选项":
+  - button "显示详情":
+  - button "分享":
+    - generic: 分享
+  - button "下载桌面应用":
+    - generic: 下载桌面应用
+  - generic: 10:18
+  - button "编辑查询":
+  - button "复制查询":
+  - paragraph: sleep breathing monitoring smart ring ODM
+  - button "已完成":
+    - generic "已完成"
+  - paragraph:
+    - text: If you’re sourcing an
+    - strong: ODM for a smart ring that monitors sleep and breathing
+    - text: ", two credible starting points are"
+    - strong: LONGVON (MATEYOU)
+    - text: and
+    - strong: J-Style (JCRing)
+    - text: . Both offer full-stack smart-ring ODM work—hardware, firmware, algorithms, app/SDK/API, and manufacturing—with sleep-respiration and SpO2/OSA-related features.
+    - generic: longvon
+    - generic: "+1"
+  - heading "Leading ODM options" [level=2]
+  - table:
+    - rowgroup:
+      - row "Supplier Relevant capabilities ODM scope Notable product/reference":
+        - columnheader "Supplier"
+        - columnheader "Relevant capabilities"
+        - columnheader "ODM scope"
+        - columnheader "Notable product/reference"
+    - rowgroup:
+      - row "LONGVON / MATEYOU PPG/SpO2 hardware, sleep and respiratory algorithms, AHI/ODI/SpO2-related monitoring, sleep staging, app and cloud integration Sensor selection, firmware, algorithms, app, SDK/API, hardware customization, manufacturing MATEYOU Ring1C; 71 health parameters including 22 sleep-related parameters. longvon +2":
+        - cell "LONGVON / MATEYOU":
+          - strong: LONGVON / MATEYOU
+        - cell "PPG/SpO2 hardware, sleep and respiratory algorithms, AHI/ODI/SpO2-related monitoring, sleep staging, app and cloud integration"
+        - cell "Sensor selection, firmware, algorithms, app, SDK/API, hardware customization, manufacturing"
+        - cell "MATEYOU Ring1C; 71 health parameters including 22 sleep-related parameters. longvon +2":
+          - strong: MATEYOU Ring1C
+          - text: ; 71 health parameters including 22 sleep-related parameters.
+          - generic: longvon
+          - generic: "+2"
+      - row "J-Style / JCRing SpO2, respiratory rate, sleep apnea-risk monitoring, sleep architecture, low-power BLE, multi-sensor health tracking ID/MD design, materials/colors, packaging, firmware, app UI, manufacturing JCRing X3; advertised medical-class SpO2 detection and breathing-rate/OSA-risk features. jointcorp +1":
+        - cell "J-Style / JCRing":
+          - strong: J-Style / JCRing
+        - cell "SpO2, respiratory rate, sleep apnea-risk monitoring, sleep architecture, low-power BLE, multi-sensor health tracking"
+        - cell "ID/MD design, materials/colors, packaging, firmware, app UI, manufacturing"
+        - cell "JCRing X3; advertised medical-class SpO2 detection and breathing-rate/OSA-risk features. jointcorp +1":
+          - strong: JCRing X3
+          - text: ; advertised medical-class SpO2 detection and breathing-rate/OSA-risk features.
+          - generic: jointcorp
+          - generic: "+1"
+      - row "Yawell Lower-cost customizable rings with sleep, HRV, blood-oxygen and breathing tracking; SDK customization OEM/SDK/custom-logo configurations R11, R02, R03, R04 models listed with customizable SDK and health tracking. Company Overview":
+        - cell "Yawell":
+          - strong: Yawell
+        - cell "Lower-cost customizable rings with sleep, HRV, blood-oxygen and breathing tracking; SDK customization"
+        - cell "OEM/SDK/custom-logo configurations"
+        - cell "R11, R02, R03, R04 models listed with customizable SDK and health tracking. Company Overview":
+          - text: R11, R02, R03, R04 models listed with customizable SDK and health tracking.
+          - generic "Company Overview":
+            - link "yawell.en.alibaba":
+              - /url: https://yawell.en.alibaba.com/featureproductlist.html
+              - generic: yawell.en.alibaba
+  - button "复制表格":
+  - button "下载 CSV":
+  - button "展开表格":
+  - heading "What “sleep breathing monitoring” can include" [level=2]
+  - paragraph: "A well-specified ODM program should distinguish between consumer wellness features and medical claims:"
+  - list:
+    - paragraph:
+      - strong: "Sleep quality:"
+      - text: sleep stages, duration, disturbances, movement, nighttime heart rate, HRV.
+      - generic "Sleep Management - Smart Ring Manufacturer - J-Style":
+        - link "jointcorp":
+          - /url: https://www.jointcorp.com/application-scenarios/sleep-management/
+          - generic: jointcorp
+    - paragraph:
+      - strong: "Breathing metrics:"
+      - text: respiratory rate, breathing-pattern trends, and nighttime SpO2 statistics.
+      - generic: jointcorp
+      - generic: "+1"
+    - paragraph:
+      - strong: "OSA-related indicators:"
+      - text: oxygen-desaturation events, ODI, and AHI-style scoring; LONGVON explicitly positions these as monitoring/research features rather than diagnosis.
+      - generic: longvon
+      - generic: "+1"
+    - paragraph:
+      - strong: "Alerts and reporting:"
+      - text: abnormal-pattern alerts, nightly sleep/breathing reports, and trend dashboards.
+      - generic "Smart Ring Manufacturer & Health Tracking Rings OEM/ODM":
+        - link "jointcorp":
+          - /url: https://www.jointcorp.com/product-cat/smart-rings/
+          - generic: jointcorp
+  - heading "Recommended supplier shortlist" [level=2]
+  - list:
+    - paragraph:
+      - strong: Choose LONGVON
+      - text: if you need a deeper health-algorithm and data-platform package, especially for sleep-respiration, AHI/ODI, SpO2, SDK/API, and a reference ring to accelerate development.
+      - generic: longvon
+      - generic: "+2"
+    - paragraph:
+      - strong: Choose J-Style
+      - text: if industrial design, branding flexibility, and a broad consumer smart-ring line are priorities; it advertises customizable ID/MD, materials, packaging, firmware, and app UI.
+      - generic "Smart Ring Manufacturer & Health Tracking Rings OEM/ODM":
+        - link "jointcorp":
+          - /url: https://www.jointcorp.com/product-cat/smart-rings/
+          - generic: jointcorp
+    - paragraph:
+      - strong: Choose Yawell
+      - text: for a lower-cost, more basic white-label or SDK-oriented product, but scrutinize sensor accuracy, validation data, and support before committing.
+      - generic "Company Overview":
+        - link "yawell.en.alibaba":
+          - /url: https://yawell.en.alibaba.com/featureproductlist.html
+          - generic: yawell.en.alibaba
+  - heading "RFQ questions to send" [level=2]
+  - list:
+    - paragraph: Which sensors are used for SpO2, PPG, temperature, and motion, and what is the sampling strategy overnight?
+    - paragraph: Can the vendor provide validation data for respiratory rate, SpO2, sleep staging, and OSA-related metrics?
+    - paragraph:
+      - text: Is the intended claim
+      - strong: wellness monitoring
+      - text: ","
+      - strong: screening support
+      - text: ", or"
+      - strong: medical diagnosis
+      - text: "? A ring should not be marketed as diagnostic unless it has the required regulatory clearance in each target market."
+      - generic: longvon
+      - generic: "+1"
+    - paragraph: "What is included in the ODM package: enclosure/ID, PCB, firmware, mobile app, cloud, SDK/API, certification support, and mass production?"
+    - paragraph: What are battery life, charging method, water resistance, ring sizes, materials, BLE version, and data-export options?
+    - paragraph: Who owns the algorithm, firmware, app source code, cloud data, and certification documentation after the project?
+    - paragraph: What is the minimum order quantity, unit price at target volumes, tooling/NRE cost, sample lead time, and production lead time?
+  - heading "Important compliance note" [level=2]
+  - paragraph:
+    - text: “Sleep apnea detection,” “AHI,” and “OSA screening” can move a product from a general wellness wearable into regulated territory depending on claims, market, and intended use. LONGVON itself frames its OSA-related capability as health-reference monitoring rather than medical diagnosis. For a U.S. launch, avoid diagnostic claims unless you have a clear regulatory strategy; for EU/UK, plan for applicable medical-device and data-protection requirements as well.
+    - generic: longvon
+    - generic: "+1"
+  - button "复制":
+  - button "分享":
+  - button "有帮助":
+  - button "没有帮助":
+  - button "复刻":
+  - button "10 个来源":
+    - text: 10 个来源
+  - button "更多操作":
+  - button "Compare Longvon and J-Style smart ring OEM/ODM specifications — sensors, sleep-breathing algorithms, app SDKs, and customization options"
+  - text: Compare Longvon and J-Style smart ring OEM/ODM specifications — sensors, sleep-breathing algorithms, app SDKs, and customization options
+  - text: Computer
+  - button "Build an OEM/ODM feature matrix for medical-grade sleep-monitoring smart rings — SpO₂, AHI/ODI tracking, firmware, and manufacturingMOQs"
+  - text: Build an OEM/ODM feature matrix for medical-grade sleep-monitoring smart rings — SpO₂, AHI/ODI tracking, firmware, and manufacturingMOQs
+  - text: Computer
+  - button "Compare Longvon and J-Style SpO2 accuracy"
+  - text: Compare Longvon and J-Style SpO2 accuracy
+  - button "What certifications are required for medical-grade smart rings"
+  - text: What certifications are required for medical-grade smart rings
+  - button "Show me the SDK and API documentation options"
+  - text: Show me the SDK and API documentation options
+  - button "滚动到末尾":
+    - generic: ⠏
+  - button "Pro 已启用高级搜索免费预览。 了解更多":
+    - generic: Pro
+    - generic: 已启用高级搜索免费预览。
+    - button "了解更多":
+      - generic: 了解更多
+  - status:
+    - generic: 您正处于隐身模式。
+    - button "退出隐身模式":
+      - generic: 退出无痕模式
+  - textbox "提出后续问题" [active]:
+    - paragraph
+  - generic: 提出后续问题
+  - button "添加文件、插件等":
+  - button "搜索" [pressed]:
+    - generic: 搜索
+  - button "Computer":
+    - generic: Computer
+  - button "模型":
+    - generic: 模型
+  - button "语音输入":
+  - button "提交" [disabled]:
+- listbox "Typeahead menu"

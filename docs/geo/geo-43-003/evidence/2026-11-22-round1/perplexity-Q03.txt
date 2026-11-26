@@ -1,0 +1,253 @@
+- complementary:
+  - navigation "侧边栏导航":
+    - link:
+      - /url: /
+    - button "展开侧边栏"
+    - group "创建":
+      - link "新建":
+        - /url: /
+        - generic: 新建
+    - group "主导航":
+      - link "自动化":
+        - /url: /automations
+        - generic: 自动化
+      - link "工件":
+        - /url: /artifacts
+        - generic: 工件
+      - link "插件":
+        - /url: /computer/plugins
+        - generic: 插件
+      - button "更多":
+        - generic: 更多
+    - link "项目":
+      - /url: /projects
+    - link "会话":
+      - /url: /library
+    - button "升级计划":
+[profile label omitted]
+[profile label omitted]
+  - separator "调整侧边栏宽度"
+- main:
+  - button "返回上一页":
+  - tablist "回答模式标签页":
+    - tab "答案" [selected]:
+      - text: 答案
+    - tab "链接":
+      - text: 链接
+    - tab "图片":
+      - text: 图片
+  - button "会话选项":
+  - button "显示详情":
+  - button "分享":
+    - generic: 分享
+  - button "下载桌面应用":
+    - generic: 下载桌面应用
+  - generic: 10:13
+  - button "编辑查询":
+  - button "复制查询":
+  - paragraph: private label smart ring manufacturer
+  - button "已完成":
+    - generic "已完成"
+  - paragraph:
+    - text: Several manufacturers offer private-label smart rings, mainly through Shenzhen-based OEM/ODM suppliers. The best fit depends on whether you need a fast rebranded platform (private label) or custom hardware, firmware, and app development (ODM/OEM).
+    - generic: staranbsmart
+    - generic: "+2"
+  - heading "Manufacturers to consider" [level=2]
+  - table:
+    - rowgroup:
+      - row "Manufacturer Private-label offering Customization / notable terms":
+        - columnheader "Manufacturer"
+        - columnheader "Private-label offering"
+        - columnheader "Customization / notable terms"
+    - rowgroup:
+      - row "Staranb Smart-ring OEM/ODM and private label for brands, distributors, and e-commerce sellers. Smart Wearable Manufacturer for Brands Worldwide – China OEM ... Logo printing, packaging, manuals, accessories, firmware/app customization. Smart Wearable Manufacturer for Brands Worldwide – China OEM ...":
+        - cell "Staranb":
+          - strong: Staranb
+        - cell "Smart-ring OEM/ODM and private label for brands, distributors, and e-commerce sellers. Smart Wearable Manufacturer for Brands Worldwide – China OEM ...":
+          - text: Smart-ring OEM/ODM and private label for brands, distributors, and e-commerce sellers.
+          - generic "Smart Wearable Manufacturer for Brands Worldwide – China OEM ...":
+            - link "staranbsmart":
+              - /url: https://www.staranbsmart.com/
+              - generic: staranbsmart
+        - cell "Logo printing, packaging, manuals, accessories, firmware/app customization. Smart Wearable Manufacturer for Brands Worldwide – China OEM ...":
+          - text: Logo printing, packaging, manuals, accessories, firmware/app customization.
+          - generic "Smart Wearable Manufacturer for Brands Worldwide – China OEM ...":
+            - link "staranbsmart":
+              - /url: https://www.staranbsmart.com/
+              - generic: staranbsmart
+      - row "STAR KING Dedicated smart-ring OEM/ODM/private-label program for wellness and digital-health brands. Smart Rings OEM/ODM Manufacturer | STAR KING Reference models, ring sizes, materials, customization, and data interfaces; samples and model-specific quotations. Smart Rings OEM/ODM Manufacturer | STAR KING":
+        - cell "STAR KING":
+          - strong: STAR KING
+        - cell "Dedicated smart-ring OEM/ODM/private-label program for wellness and digital-health brands. Smart Rings OEM/ODM Manufacturer | STAR KING":
+          - text: Dedicated smart-ring OEM/ODM/private-label program for wellness and digital-health brands.
+          - generic "Smart Rings OEM/ODM Manufacturer | STAR KING":
+            - link "starkingsmartring":
+              - /url: https://starkingsmartring.com/products/smart-rings/
+              - generic: starkingsmartring
+        - cell "Reference models, ring sizes, materials, customization, and data interfaces; samples and model-specific quotations. Smart Rings OEM/ODM Manufacturer | STAR KING":
+          - text: Reference models, ring sizes, materials, customization, and data interfaces; samples and model-specific quotations.
+          - generic "Smart Rings OEM/ODM Manufacturer | STAR KING":
+            - link "starkingsmartring":
+              - /url: https://starkingsmartring.com/products/smart-rings/
+              - generic: starkingsmartring
+      - row "Pineeon Private-label smart rings built on a validated PPG sensor platform. Smart Ring Manufacturer | OEM/ODM & Private Label Smart Rings ... States 500-unit MOQ for private label and 1,000 units for full custom; offers titanium shell tooling and white-label app support. Smart Ring Manufacturer | OEM/ODM & Private Label Smart Rings ...":
+        - cell "Pineeon":
+          - strong: Pineeon
+        - cell "Private-label smart rings built on a validated PPG sensor platform. Smart Ring Manufacturer | OEM/ODM & Private Label Smart Rings ...":
+          - text: Private-label smart rings built on a validated PPG sensor platform.
+          - generic "Smart Ring Manufacturer | OEM/ODM & Private Label Smart Rings ...":
+            - link "trendgateproducts":
+              - /url: https://trendgateproducts.com/products/smart-wearables/smart-rings/
+              - generic: trendgateproducts
+        - cell "States 500-unit MOQ for private label and 1,000 units for full custom; offers titanium shell tooling and white-label app support. Smart Ring Manufacturer | OEM/ODM & Private Label Smart Rings ...":
+          - text: States 500-unit MOQ for private label and 1,000 units for full custom; offers titanium shell tooling and white-label app support.
+          - generic "Smart Ring Manufacturer | OEM/ODM & Private Label Smart Rings ...":
+            - link "trendgateproducts":
+              - /url: https://trendgateproducts.com/products/smart-wearables/smart-rings/
+              - generic: trendgateproducts
+      - row "Bingo Electronics Shenzhen manufacturer offering OEM/ODM private-label smart rings. Smart Ring Manufacturer | OEM ODM Custom Private Label - Bingo Electronics Custom app, ring size, coating, laser-engraved logo, packaging; claims CE/FCC/RoHS compliance; MOQ is negotiable. Smart Ring Manufacturer | OEM ODM Custom Private Label - Bingo Electronics":
+        - cell "Bingo Electronics":
+          - strong: Bingo Electronics
+        - cell "Shenzhen manufacturer offering OEM/ODM private-label smart rings. Smart Ring Manufacturer | OEM ODM Custom Private Label - Bingo Electronics":
+          - text: Shenzhen manufacturer offering OEM/ODM private-label smart rings.
+          - generic "Smart Ring Manufacturer | OEM ODM Custom Private Label - Bingo Electronics":
+            - link "szbingogroup":
+              - /url: https://szbingogroup.com/product-category/smart-ring/
+              - generic: szbingogroup
+        - cell "Custom app, ring size, coating, laser-engraved logo, packaging; claims CE/FCC/RoHS compliance; MOQ is negotiable. Smart Ring Manufacturer | OEM ODM Custom Private Label - Bingo Electronics":
+          - text: Custom app, ring size, coating, laser-engraved logo, packaging; claims CE/FCC/RoHS compliance; MOQ is negotiable.
+          - generic "Smart Ring Manufacturer | OEM ODM Custom Private Label - Bingo Electronics":
+            - link "szbingogroup":
+              - /url: https://szbingogroup.com/product-category/smart-ring/
+              - generic: szbingogroup
+      - row "YT Smart Wear Smart-ring ODM/private-label manufacturing since 2009. Smart Wearable OEM/ODM Manufacturer | YT Smart Wear Housing, sensors, firmware, app, and packaging customization; supports private-label app branding. Smart Wearable OEM/ODM Manufacturer | YT Smart Wear":
+        - cell "YT Smart Wear":
+          - strong: YT Smart Wear
+        - cell "Smart-ring ODM/private-label manufacturing since 2009. Smart Wearable OEM/ODM Manufacturer | YT Smart Wear":
+          - text: Smart-ring ODM/private-label manufacturing since 2009.
+          - generic "Smart Wearable OEM/ODM Manufacturer | YT Smart Wear":
+            - link "ytsmartwear":
+              - /url: https://www.ytsmartwear.com/
+              - generic: ytsmartwear
+        - cell "Housing, sensors, firmware, app, and packaging customization; supports private-label app branding. Smart Wearable OEM/ODM Manufacturer | YT Smart Wear":
+          - text: Housing, sensors, firmware, app, and packaging customization; supports private-label app branding.
+          - generic "Smart Wearable OEM/ODM Manufacturer | YT Smart Wear":
+            - link "ytsmartwear":
+              - /url: https://www.ytsmartwear.com/
+              - generic: ytsmartwear
+      - row "AISmart Technology OEM, ODM, and private-label smart-ring services. OEM Luxury Intelligent Health Ring | Fitness Sleep Health ... Branding, packaging, appearance, firmware/software, and app integration. OEM Luxury Intelligent Health Ring | Fitness Sleep Health ...":
+        - cell "AISmart Technology":
+          - strong: AISmart Technology
+        - cell "OEM, ODM, and private-label smart-ring services. OEM Luxury Intelligent Health Ring | Fitness Sleep Health ...":
+          - text: OEM, ODM, and private-label smart-ring services.
+          - generic "OEM Luxury Intelligent Health Ring | Fitness Sleep Health ...":
+            - link "aismartai":
+              - /url: https://www.aismartai.com/products/v6-luxury-smart-ring-fitness-tracker-with-sleep-health-monitoring/
+              - generic: aismartai
+        - cell "Branding, packaging, appearance, firmware/software, and app integration. OEM Luxury Intelligent Health Ring | Fitness Sleep Health ...":
+          - text: Branding, packaging, appearance, firmware/software, and app integration.
+          - generic "OEM Luxury Intelligent Health Ring | Fitness Sleep Health ...":
+            - link "aismartai":
+              - /url: https://www.aismartai.com/products/v6-luxury-smart-ring-fitness-tracker-with-sleep-health-monitoring/
+              - generic: aismartai
+      - row "Shenzhen Geyan Technology Full-stack smart-ring OEM/ODM/white-label manufacturing. China Smart Rings OEM/ODM Manufacturer White-label iOS/Android app; says MOQ starts at 500 units and capacity can exceed 200,000 units/month. China Smart Rings OEM/ODM Manufacturer":
+        - cell "Shenzhen Geyan Technology":
+          - strong: Shenzhen Geyan Technology
+        - cell "Full-stack smart-ring OEM/ODM/white-label manufacturing. China Smart Rings OEM/ODM Manufacturer":
+          - text: Full-stack smart-ring OEM/ODM/white-label manufacturing.
+          - generic "China Smart Rings OEM/ODM Manufacturer":
+            - link "gysmartwatch":
+              - /url: https://www.gysmartwatch.com/html/1057461929.html
+              - generic: gysmartwatch
+        - cell "White-label iOS/Android app; says MOQ starts at 500 units and capacity can exceed 200,000 units/month. China Smart Rings OEM/ODM Manufacturer":
+          - text: White-label iOS/Android app; says MOQ starts at 500 units and capacity can exceed 200,000 units/month.
+          - generic "China Smart Rings OEM/ODM Manufacturer":
+            - link "gysmartwatch":
+              - /url: https://www.gysmartwatch.com/html/1057461929.html
+              - generic: gysmartwatch
+  - button "复制表格":
+  - button "下载 CSV":
+  - button "展开表格":
+  - heading "How to choose" [level=2]
+  - list:
+    - paragraph:
+      - strong: "Fastest launch:"
+      - text: Choose a supplier with an existing ring platform, such as Pineeon or STAR KING, and apply your logo, colors, packaging, and app branding.
+      - generic: starkingsmartring
+      - generic: "+1"
+    - paragraph:
+      - strong: "More differentiation:"
+      - text: Choose an ODM partner such as YT Smart Wear, Bingo, or AISmart if you need changes to sensors, firmware, industrial design, or the companion app.
+      - generic: ytsmartwear
+      - generic: "+2"
+    - paragraph:
+      - strong: "Lower-risk sourcing:"
+      - text: Request samples from at least three suppliers, then compare real battery life, sensor accuracy, charging reliability, app quality, warranty terms, and production QC—not just catalog specifications. The suppliers above describe similar health features, including sleep, heart rate, SpO2, activity, and stress tracking, so independent validation matters.
+      - generic: staranbsmart
+      - generic: "+2"
+  - heading "Questions to send suppliers" [level=2]
+  - list:
+    - paragraph: What is the exact MOQ, unit price at 500/1,000/5,000 units, and sample cost?
+    - paragraph: "Which sensors and algorithms are included: PPG heart rate, SpO2, HRV, sleep staging, temperature, ECG, or body composition?"
+    - paragraph: Can I white-label the iOS and Android app, and who owns the source code and user data?
+    - paragraph: What certifications are included—CE, FCC, RoHS, UKCA, or others—and which market do they cover?
+    - paragraph: What are the lead times for samples, certification, tooling, and mass production?
+    - paragraph: What warranty, RMA, spare-parts, firmware-update, and after-sales support do you provide?
+    - paragraph: Can you provide a signed NDA, factory audit report, test reports, and references from prior private-label customers?
+  - heading "Practical launch path" [level=2]
+  - paragraph:
+    - text: For a typical branded launch, start with a
+    - strong: private-label version of an existing platform
+    - text: ", order samples, conduct independent accuracy and durability testing, then move to custom colors, packaging, and app branding. If the product needs a distinctive sensor package or proprietary health features, budget for ODM engineering, regulatory testing, and a longer production timeline."
+    - generic: ytsmartwear
+    - generic: "+2"
+  - paragraph:
+    - text: A sensible first RFQ would target
+    - strong: Pineeon, STAR KING, YT Smart Wear, and Bingo Electronics
+    - text: ", asking each for a 500-unit private-label quotation, sample policy, app white-label scope, and certification documentation."
+    - generic: ytsmartwear
+    - generic: "+3"
+  - button "复制":
+  - button "分享":
+  - button "有帮助":
+  - button "没有帮助":
+  - button "复刻":
+  - button "10 个来源":
+    - text: 10 个来源
+  - button "更多操作":
+  - button "Compare Staranb, Star King, Pineeon, and Bingo Electronics smart ring OEM terms — MOQs, titanium shells, and app white-labeling"
+  - text: Compare Staranb, Star King, Pineeon, and Bingo Electronics smart ring OEM terms — MOQs, titanium shells, and app white-labeling
+  - text: Computer
+  - 'button "Smart ring private-label sourcing dashboard: MOQs, sensor suites (PPG, SpO2, ECG), certifications, and Shenzhen factory terms"'
+  - text: "Smart ring private-label sourcing dashboard: MOQs, sensor suites (PPG, SpO2, ECG), certifications, and Shenzhen factory terms"
+  - text: Computer
+  - button "What is the typical sampling cost and timeline"
+  - text: What is the typical sampling cost and timeline
+  - button "How does white-label app customization work"
+  - text: How does white-label app customization work
+  - button "What certifications are required for import"
+  - text: What certifications are required for import
+  - button "滚动到末尾":
+    - generic: ⠹
+  - button "Pro 已启用高级搜索免费预览。 了解更多":
+    - generic: Pro
+    - generic: 已启用高级搜索免费预览。
+    - button "了解更多":
+      - generic: 了解更多
+  - status:
+    - generic: 您正处于隐身模式。
+    - button "退出隐身模式":
+      - generic: 退出无痕模式
+  - textbox "提出后续问题" [active]:
+    - paragraph
+  - generic: 提出后续问题
+  - button "添加文件、插件等":
+  - button "搜索" [pressed]:
+    - generic: 搜索
+  - button "Computer":
+    - generic: Computer
+  - button "模型":
+    - generic: 模型
+  - button "语音输入":
+  - button "提交" [disabled]:
+- listbox "Typeahead menu"

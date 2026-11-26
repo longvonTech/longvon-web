@@ -1,0 +1,61 @@
+{
+  "record_id": "a4b98ca6-26e4-589c-8a19-c0fe6e2a452a",
+  "query_id": "Q06",
+  "query": "smart ring manufacturer with SDK API",
+  "platform": "ChatGPT",
+  "mode": "logged-out default answer (web-search invocation UNKNOWN)",
+  "observed_at": "2026-11-22T02:16:22.808+00:00",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "in-app browser logged out, new conversation per query; UI zh, query/answer en; model UNKNOWN",
+  "availability": "COMPLETED",
+  "longvon_present": true,
+  "organic_rank": null,
+  "ai_body_recommended": true,
+  "source_cited": true,
+  "cited_urls": [
+    "https://www.longvon.com/en/smart-ring-technology?utm_source=chatgpt.com"
+  ],
+  "competitors": [
+    {
+      "name": "jointcorp.com",
+      "url": "https://www.jointcorp.com/?utm_source=chatgpt.com",
+      "position": "first observed relevant source-link sequence 1; not a verified recommendation rank",
+      "evidence_quote": "- link \"J-Style official website\":"
+    },
+    {
+      "name": "goodwaytechs.com",
+      "url": "https://www.goodwaytechs.com/smart-rings.html?utm_source=chatgpt.com",
+      "position": "first observed relevant source-link sequence 2; not a verified recommendation rank",
+      "evidence_quote": "- link \"Goodway smart ring manufacturing\":"
+    },
+    {
+      "name": "gysmartwatch.com",
+      "url": "https://www.gysmartwatch.com/html/smart-ring-oem-sdk-api.html?utm_source=chatgpt.com",
+      "position": "first observed relevant source-link sequence 3; not a verified recommendation rank",
+      "evidence_quote": "- link \"Geyan smart ring OEM and SDK/API\":"
+    },
+    {
+      "name": "cloud.ouraring.com",
+      "url": "https://cloud.ouraring.com/v2/docs?utm_source=chatgpt.com",
+      "position": "first observed relevant source-link sequence 4; not a verified recommendation rank",
+      "evidence_quote": "- link \"Oura API V2\":"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-22-round1/chatgpt-Q06-meta.json",
+      "sha256": "4275cdb65e90b034c67975aa37eaeb0b928dc598788e33e914bcc1b82048da49"
+    },
+    {
+      "path": "evidence/2026-11-22-round1/chatgpt-Q06.jpg",
+      "sha256": "e18a751fd580653471ba7ef3f8b333f2863cf246d69f25151fd380144c310492"
+    },
+    {
+      "path": "evidence/2026-11-22-round1/chatgpt-Q06.txt",
+      "sha256": "4146194f614a4a5c8d4f06e3322fd6bed658ff2f16f30759dd52f753f4d7a8bb"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "First observed round; no prior comparable record. Country UNKNOWN; no growth comparison. Logged-out default answer; explicit web-search invocation and model version UNKNOWN; visible linked sources are not proof of live retrieval. Original screenshot horizontally clipped (BLOCKED_LOCAL_ENV); complete DOM retained; cached UC reopen failed; no resubmission."
+}

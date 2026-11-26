@@ -1,0 +1,163 @@
+- complementary:
+  - navigation "侧边栏导航":
+    - link:
+      - /url: /
+    - button "展开侧边栏"
+    - group "创建":
+      - link "新建":
+        - /url: /
+        - generic: 新建
+    - group "主导航":
+      - link "自动化":
+        - /url: /automations
+        - generic: 自动化
+      - link "工件":
+        - /url: /artifacts
+        - generic: 工件
+      - link "插件":
+        - /url: /computer/plugins
+        - generic: 插件
+      - button "更多":
+        - generic: 更多
+    - link "项目":
+      - /url: /projects
+    - link "会话":
+      - /url: /library
+    - button "升级计划":
+[profile label omitted]
+[profile label omitted]
+  - separator "调整侧边栏宽度"
+- main:
+  - button "返回上一页":
+  - tablist "回答模式标签页":
+    - tab "答案" [selected]:
+      - text: 答案
+    - tab "链接":
+      - text: 链接
+    - tab "图片":
+      - text: 图片
+  - button "会话选项":
+  - button "显示详情":
+  - button "分享":
+    - generic: 分享
+  - button "下载桌面应用":
+    - generic: 下载桌面应用
+  - generic: 10:15
+  - button "编辑查询":
+  - button "复制查询":
+  - paragraph: smart ring manufacturer with SDK API
+  - button "已完成":
+    - generic "已完成"
+  - paragraph:
+    - text: Two strong candidates are
+    - strong: J-Style (Jointcorp)
+    - text: and
+    - strong: LONGVON
+    - text: . Both are smart-ring OEM/ODM manufacturers that explicitly offer SDK/API integration, but J-Style appears more developer-oriented, while LONGVON scopes access to individual projects.
+    - generic: jointcorp
+    - generic: "+1"
+  - heading "Manufacturers with SDK/API" [level=2]
+  - table:
+    - rowgroup:
+      - row "Manufacturer SDK/API offering Best fit":
+        - columnheader "Manufacturer"
+        - columnheader "SDK/API offering"
+        - columnheader "Best fit"
+    - rowgroup:
+      - row "J-Style / Jointcorp Open SDK and API for its JCRing smart rings; SDK covers Android, iOS, Windows, and macOS; API supports device communication, health-data access, device management, and cloud synchronization. jointcorp +1 Teams building an app, wellness platform, insurance program, or enterprise health dashboard":
+        - cell "J-Style / Jointcorp":
+          - strong: J-Style / Jointcorp
+        - cell "Open SDK and API for its JCRing smart rings; SDK covers Android, iOS, Windows, and macOS; API supports device communication, health-data access, device management, and cloud synchronization. jointcorp +1":
+          - text: Open SDK and API for its JCRing smart rings; SDK covers Android, iOS, Windows, and macOS; API supports device communication, health-data access, device management, and cloud synchronization.
+          - generic: jointcorp
+          - generic: "+1"
+        - cell "Teams building an app, wellness platform, insurance program, or enterprise health dashboard"
+      - row "LONGVON Partner SDK and cloud API, including potential access to 100 Hz PPG raw data for qualified partners; access and integration depth are defined per OEM/ODM project. longvon +1 Brands needing custom hardware, firmware, health algorithms, app, and cloud integration":
+        - cell "LONGVON":
+          - strong: LONGVON
+        - cell "Partner SDK and cloud API, including potential access to 100 Hz PPG raw data for qualified partners; access and integration depth are defined per OEM/ODM project. longvon +1":
+          - text: Partner SDK and cloud API, including potential access to 100 Hz PPG raw data for qualified partners; access and integration depth are defined per OEM/ODM project.
+          - generic: longvon
+          - generic: "+1"
+        - cell "Brands needing custom hardware, firmware, health algorithms, app, and cloud integration"
+      - row "Honsys Offers SDK/API on screenless bands and selected ECG watches, enabling a health platform to pull sensor data into its own cloud; its published smart-ring SDK/API support is less clear than J-Style’s. Top 10 Shenzhen Wearable Suppliers Show How APEC Outcomes Add New Checks to Sourcing Health-platform integrations, especially if expanding beyond rings":
+        - cell "Honsys":
+          - strong: Honsys
+        - cell "Offers SDK/API on screenless bands and selected ECG watches, enabling a health platform to pull sensor data into its own cloud; its published smart-ring SDK/API support is less clear than J-Style’s. Top 10 Shenzhen Wearable Suppliers Show How APEC Outcomes Add New Checks to Sourcing":
+          - text: Offers SDK/API on screenless bands and selected ECG watches, enabling a health platform to pull sensor data into its own cloud; its published smart-ring SDK/API support is less clear than J-Style’s.
+          - generic "Top 10 Shenzhen Wearable Suppliers Show How APEC Outcomes Add New Checks to Sourcing":
+            - link "可信域名 commercialappeal":
+              - /url: https://www.commercialappeal.com/press-release/story/187734/top-10-shenzhen-wearable-suppliers-show-how-apec-outcomes-add-new-checks-to-sourcing/
+              - img "可信域名":
+              - generic: commercialappeal
+        - cell "Health-platform integrations, especially if expanding beyond rings"
+  - button "复制表格":
+  - button "下载 CSV":
+  - button "展开表格":
+  - heading "Recommended starting point" [level=2]
+  - paragraph:
+    - strong: Choose J-Style
+    - text: "if your priority is straightforward integration into your own mobile app or backend: it publicly advertises an SDK/API platform, cross-platform SDK support, and real-time biometric-data access."
+    - generic: jointcorp
+    - generic: "+1"
+  - paragraph:
+    - strong: Choose LONGVON
+    - text: if you need a more customizable ring—hardware, firmware, sensors, algorithms, companion app, SDK, cloud API, and manufacturing—though you should expect SDK/API access to be negotiated as part of the project.
+    - generic: longvon
+    - generic: "+1"
+  - heading "Questions to ask vendors" [level=2]
+  - list:
+    - paragraph: "Which data fields are exposed: heart rate, HRV, SpO2, sleep stages, temperature, activity, raw PPG?"
+    - paragraph: Is the SDK Bluetooth/BLE-only, or does it include cloud APIs and webhooks?
+    - paragraph: What are the rate limits, authentication model, data-retention policy, and GDPR/HIPAA posture?
+    - paragraph: Can you obtain raw sensor data rather than only processed health scores?
+    - paragraph: Is there a development kit, sample app, sandbox account, and documented API reference?
+    - paragraph: What are the minimum order quantity, certification support, and white-label app options?
+  - paragraph:
+    - text: For a rapid proof of concept, ask J-Style for its SDK documentation and a demo JCRing; for a differentiated product, request a LONGVON technical consultation covering raw-data access and firmware ownership.
+    - generic: jointcorp
+    - generic: "+1"
+  - button "复制":
+  - button "分享":
+  - button "有帮助":
+  - button "没有帮助":
+  - button "复刻":
+  - button "11 个来源":
+    - text: 11 个来源
+  - button "更多操作":
+  - button "Compare SDK and cloud API support across J-Style, Longvon, and other smart ring manufacturers — 100Hz raw data, partner tiers, and docs"
+  - text: Compare SDK and cloud API support across J-Style, Longvon, and other smart ring manufacturers — 100Hz raw data, partner tiers, and docs
+  - text: Computer
+  - button "Build a comparison matrix for J-Style JCRing vs Longvon MateYou smart rings — OEM MOQs, PPG raw data access, and cloud API limits"
+  - text: Build a comparison matrix for J-Style JCRing vs Longvon MateYou smart rings — OEM MOQs, PPG raw data access, and cloud API limits
+  - text: Computer
+  - button "Compare J-Style and LONGVON SDKs"
+  - text: Compare J-Style and LONGVON SDKs
+  - button "What raw PPG data do smart ring SDKs expose"
+  - text: What raw PPG data do smart ring SDKs expose
+  - button "How much do smart ring OEM MOQ requirements run"
+  - text: How much do smart ring OEM MOQ requirements run
+  - button "滚动到末尾":
+    - generic: ⠸
+  - button "Pro 已启用高级搜索免费预览。 了解更多":
+    - generic: Pro
+    - generic: 已启用高级搜索免费预览。
+    - button "了解更多":
+      - generic: 了解更多
+  - status:
+    - generic: 您正处于隐身模式。
+    - button "退出隐身模式":
+      - generic: 退出无痕模式
+  - textbox "提出后续问题" [active]:
+    - paragraph
+  - generic: 提出后续问题
+  - button "添加文件、插件等":
+  - button "搜索" [pressed]:
+    - generic: 搜索
+  - button "Computer":
+    - generic: Computer
+  - button "模型":
+    - generic: 模型
+  - button "语音输入":
+  - button "提交" [disabled]:
+- listbox "Typeahead menu"

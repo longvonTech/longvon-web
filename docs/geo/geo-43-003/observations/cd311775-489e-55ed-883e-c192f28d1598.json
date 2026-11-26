@@ -1,0 +1,61 @@
+{
+  "record_id": "cd311775-489e-55ed-883e-c192f28d1598",
+  "query_id": "Q10",
+  "query": "sleep breathing monitoring smart ring ODM",
+  "platform": "ChatGPT",
+  "mode": "logged-out default answer (web-search invocation UNKNOWN)",
+  "observed_at": "2026-11-22T02:19:25.032+00:00",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "in-app browser logged out, new conversation per query; UI zh, query/answer en; model UNKNOWN",
+  "availability": "COMPLETED",
+  "longvon_present": true,
+  "organic_rank": null,
+  "ai_body_recommended": true,
+  "source_cited": true,
+  "cited_urls": [
+    "https://www.longvon.com/en/company/longvon?utm_source=chatgpt.com"
+  ],
+  "competitors": [
+    {
+      "name": "jointcorp.com",
+      "url": "https://www.jointcorp.com/product-cat/smart-rings/?utm_source=chatgpt.com",
+      "position": "first observed relevant source-link sequence 1; not a verified recommendation rank",
+      "evidence_quote": "- link \"Smart ring product portfolio\":"
+    },
+    {
+      "name": "pineeon.com",
+      "url": "https://pineeon.com/products/smart-wearables/smart-rings/?utm_source=chatgpt.com",
+      "position": "first observed relevant source-link sequence 2; not a verified recommendation rank",
+      "evidence_quote": "- link \"Manufacturer website\":"
+    },
+    {
+      "name": "ytsmartwear.com",
+      "url": "https://www.ytsmartwear.com/smart-ring/?utm_source=chatgpt.com",
+      "position": "first observed relevant source-link sequence 3; not a verified recommendation rank",
+      "evidence_quote": "- link \"Manufacturer website\":"
+    },
+    {
+      "name": "smartwearworks.com",
+      "url": "https://www.smartwearworks.com/smart-ring-oem/?utm_source=chatgpt.com",
+      "position": "first observed relevant source-link sequence 4; not a verified recommendation rank",
+      "evidence_quote": "- link \"Manufacturer website\":"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-22-round1/chatgpt-Q10-meta.json",
+      "sha256": "24d2da3daf93d2fe1ee3598a1e9093bd4a4835acee18f80bfd677a726eed2d15"
+    },
+    {
+      "path": "evidence/2026-11-22-round1/chatgpt-Q10.jpg",
+      "sha256": "d16515d12d0ce9ea6650e11959ca8cc3f2c2b3f290a352d7f9052ad442d1a27c"
+    },
+    {
+      "path": "evidence/2026-11-22-round1/chatgpt-Q10.txt",
+      "sha256": "38726215db755703156667ffc68d277980c684226f5359428eb60e10ad8e9eea"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "First observed round; no prior comparable record. Country UNKNOWN; no growth comparison. Logged-out default answer; explicit web-search invocation and model version UNKNOWN; visible linked sources are not proof of live retrieval."
+}

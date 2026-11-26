@@ -1,0 +1,235 @@
+- complementary:
+  - navigation "侧边栏导航":
+    - link:
+      - /url: /
+    - button "展开侧边栏"
+    - group "创建":
+      - link "新建":
+        - /url: /
+        - generic: 新建
+    - group "主导航":
+      - link "自动化":
+        - /url: /automations
+        - generic: 自动化
+      - link "工件":
+        - /url: /artifacts
+        - generic: 工件
+      - link "插件":
+        - /url: /computer/plugins
+        - generic: 插件
+      - button "更多":
+        - generic: 更多
+    - link "项目":
+      - /url: /projects
+    - link "会话":
+      - /url: /library
+    - button "升级计划":
+[profile label omitted]
+[profile label omitted]
+  - separator "调整侧边栏宽度"
+- main:
+  - button "返回上一页":
+  - tablist "回答模式标签页":
+    - tab "答案" [selected]:
+      - text: 答案
+    - tab "链接":
+      - text: 链接
+    - tab "图片":
+      - text: 图片
+  - button "会话选项":
+  - button "显示详情":
+  - button "分享":
+    - generic: 分享
+  - button "下载桌面应用":
+    - generic: 下载桌面应用
+  - generic: 10:17
+  - button "编辑查询":
+  - button "复制查询":
+  - paragraph: smart ring raw PPG data for research
+  - button "已完成 1秒":
+    - generic "已完成"
+    - generic: 1秒
+  - paragraph:
+    - text: For research, the main challenge is that most commercial smart rings do
+    - strong: not
+    - text: expose raw PPG through their consumer APIs; the practical routes are open datasets, custom/open-hardware rings, or manufacturer research partnerships. Raw PPG is valuable because it enables custom signal-quality, artifact-removal, HR/HRV, respiration, SpO2, and cardiovascular-modeling work rather than reliance on vendor-derived metrics.
+    - generic "A review of Deep Learning Methods for Photoplethysmography Data":
+      - link "可信域名 arxiv":
+        - /url: https://arxiv.org/html/2401.12783v1
+        - img "可信域名":
+        - generic: arxiv
+  - heading "Best options" [level=2]
+  - table:
+    - rowgroup:
+      - row "Route Raw PPG access Best for Notes":
+        - columnheader "Route"
+        - columnheader "Raw PPG access"
+        - columnheader "Best for"
+        - columnheader "Notes"
+    - rowgroup:
+      - row "Open datasets Yes, downloadable Algorithm development, benchmarks, pilot analyses No need to build hardware; check license and participant/IRB constraints. 可信域名 link.springer +2":
+        - cell "Open datasets":
+          - strong: Open datasets
+        - cell "Yes, downloadable"
+        - cell "Algorithm development, benchmarks, pilot analyses"
+        - cell "No need to build hardware; check license and participant/IRB constraints. 可信域名 link.springer +2":
+          - text: No need to build hardware; check license and participant/IRB constraints.
+          - img "可信域名":
+          - generic: link.springer
+          - generic: "+2"
+      - 'row "Custom/open smart-ring platform Yes, real-time or logged Controlled studies, longitudinal collection, custom sensors Highest control over sampling, wavelengths, timing, and firmware. 𝜏-Ring: A Smart Ring Platform for Multimodal Physiological and ..."':
+        - cell "Custom/open smart-ring platform":
+          - strong: Custom/open smart-ring platform
+        - cell "Yes, real-time or logged"
+        - cell "Controlled studies, longitudinal collection, custom sensors"
+        - 'cell "Highest control over sampling, wavelengths, timing, and firmware. 𝜏-Ring: A Smart Ring Platform for Multimodal Physiological and ..."':
+          - text: Highest control over sampling, wavelengths, timing, and firmware.
+          - 'generic "𝜏-Ring: A Smart Ring Platform for Multimodal Physiological and ..."':
+            - link "可信域名 arxiv":
+              - /url: https://arxiv.org/html/2508.00778v1
+              - img "可信域名":
+              - generic: arxiv
+      - row "Commercial ring + research program Sometimes, under agreement Large-scale or real-world validation Usually requires a partnership, data-sharing agreement, ethics approval, and vendor-specific export format.":
+        - cell "Commercial ring + research program":
+          - strong: Commercial ring + research program
+        - cell "Sometimes, under agreement"
+        - cell "Large-scale or real-world validation"
+        - cell "Usually requires a partnership, data-sharing agreement, ethics approval, and vendor-specific export format."
+      - row "Fingertip PPG reference device Often yes Ground truth, algorithm validation Useful complement, but not finger-ring form factor; e.g., synchronized ECG–dual-wavelength finger PPG datasets provide raw ADC-count signals. A Dataset of Synchronized Raw and Preprocessed Finger ... - MDPI":
+        - cell "Fingertip PPG reference device":
+          - strong: Fingertip PPG reference device
+        - cell "Often yes"
+        - cell "Ground truth, algorithm validation"
+        - cell "Useful complement, but not finger-ring form factor; e.g., synchronized ECG–dual-wavelength finger PPG datasets provide raw ADC-count signals. A Dataset of Synchronized Raw and Preprocessed Finger ... - MDPI":
+          - text: Useful complement, but not finger-ring form factor; e.g., synchronized ECG–dual-wavelength finger PPG datasets provide raw ADC-count signals.
+          - generic "A Dataset of Synchronized Raw and Preprocessed Finger ... - MDPI":
+            - link "mdpi":
+              - /url: https://www.mdpi.com/2306-5729/11/7/155
+              - generic: mdpi
+  - heading "Datasets to consider" [level=2]
+  - list:
+    - paragraph:
+      - strong: HealthRing
+      - text: ": raw PPG and 3-axis accelerometer at 100 Hz from two custom rings—one reflective and one transmissive—with synchronized clinical-reference labels including BVP, respiration, HR, RR, SpO2, blood pressure, and ECG for treadmill sessions. It also includes a public toolkit and benchmark results."
+      - img "可信域名":
+      - generic: link.springer
+      - generic: "+1"
+    - paragraph:
+      - strong: τ-Ring dataset
+      - text: ": 28.21 hours of raw infrared/red PPG and accelerometer data from 34 participants across seven activities, with labels for BVP, respiration, HR, RR, SpO2, and blood pressure."
+      - generic "A Dataset and Toolkit for Multiparameter Cardiovascular ...":
+        - link "可信域名 arxiv":
+          - /url: https://arxiv.org/html/2505.04172v2
+          - img "可信域名":
+          - generic: arxiv
+    - paragraph:
+      - strong: Multi-site PPG
+      - text: ": more than 350 hours per wearable form factor, including ring data; it provides green and IR PPG, 3-axis acceleration at 100 Hz, temperature at 1 Hz, and aligned Polar H10 chest-strap reference data. It is released for non-commercial research and education under CC BY-NC 4.0."
+      - 'generic "Multi-site PPG: An In-the-Wild Physiological Dataset from Emerging Multi-site Wearables"':
+        - link "可信域名 ar5iv.labs.arxiv":
+          - /url: https://ar5iv.labs.arxiv.org/html/2605.17859
+          - img "可信域名":
+          - generic: ar5iv.labs.arxiv
+    - paragraph:
+      - strong: Fingertip ECG–PPG dataset
+      - text: ": 444 synchronized finger-contact ECG and dual-wavelength PPG recordings in CSV, including raw ADC-count signals; it is a controlled benchmark rather than a smart-ring dataset."
+      - generic "A Dataset of Synchronized Raw and Preprocessed Finger ... - MDPI":
+        - link "mdpi":
+          - /url: https://www.mdpi.com/2306-5729/11/7/155
+          - generic: mdpi
+  - heading "Hardware approach" [level=2]
+  - paragraph: "If you need to collect your own data, prioritize a ring that gives you:"
+  - list:
+    - paragraph: Raw multi-wavelength PPG streams, ideally red and infrared, with documented units and ADC scaling.
+    - paragraph: Synchronized 3-axis accelerometer data for motion-artifact detection and removal.
+    - paragraph:
+      - text: A known, stable sampling rate—100 Hz is common in recent ring research platforms.
+      - img "可信域名":
+      - generic: link.springer
+      - generic: "+2"
+    - paragraph:
+      - text: Timestamp alignment, preferably UTC, plus firmware/version documentation for reproducibility.
+      - img "可信域名":
+      - generic: link.springer
+      - generic: "+1"
+    - paragraph:
+      - text: Offline storage or BLE streaming, so data collection does not depend on a proprietary cloud service.
+      - img "可信域名":
+      - generic: link.springer
+      - generic: "+1"
+  - paragraph:
+    - text: The
+    - strong: τ-Ring
+    - text: "platform is explicitly designed for this: it supports synchronized PPG–IMU–temperature streams, real-time streaming or multi-day offline logging, adjustable firmware, and open-source software."
+    - 'generic "𝜏-Ring: A Smart Ring Platform for Multimodal Physiological and ..."':
+      - link "可信域名 arxiv":
+        - /url: https://arxiv.org/html/2508.00778v1
+        - img "可信域名":
+        - generic: arxiv
+  - heading "Important research safeguards" [level=2]
+  - list:
+    - paragraph: "Treat raw PPG as physiological data: use informed consent, an IRB/ethics review where applicable, de-identification, and secure storage."
+    - paragraph:
+      - text: Validate signal quality before analysis; raw PPG commonly needs denoising, baseline-drift handling, motion-artifact rejection, and exclusion of low-quality segments.
+      - generic "A review of Deep Learning Methods for Photoplethysmography Data":
+        - link "可信域名 arxiv":
+          - /url: https://arxiv.org/html/2401.12783v1
+          - img "可信域名":
+          - generic: arxiv
+    - paragraph: "Do not assume that a model trained on wrist, chest, or fingertip PPG transfers directly to a ring: finger anatomy, LED geometry, pressure, skin tone, temperature, and motion all affect the waveform."
+    - paragraph: For any health-related claim, use an independent reference such as ECG for rhythm/HR, a respiratory belt or impedance method for respiration, and a validated oximeter for SpO2.
+  - paragraph:
+    - text: If your immediate goal is to start coding without procurement, I’d begin with
+    - strong: HealthRing
+    - text: or
+    - strong: Multi-site PPG
+    - text: ; if you need participant-specific, longitudinal, or intervention data, build around an open platform such as
+    - strong: τ-Ring
+    - text: .
+    - img "可信域名":
+    - generic: link.springer
+    - generic: "+2"
+  - button "复制":
+  - button "分享":
+  - button "有帮助":
+  - button "没有帮助":
+  - button "复刻":
+  - button "10 个来源":
+    - text: 10 个来源
+  - button "更多操作":
+  - button "Compare HealthRing, Multi-site PPG, and \\tau-ring datasets — sampling rates, modalities, and clinical references"
+  - text: Compare HealthRing, Multi-site PPG, and \tau-ring datasets — sampling rates, modalities, and clinical references
+  - text: Computer
+  - 'button "Smart ring raw PPG developer audit: open-source firmware, MAX32664 sensor hubs, and raw data extraction methods"'
+  - text: "Smart ring raw PPG developer audit: open-source firmware, MAX32664 sensor hubs, and raw data extraction methods"
+  - text: Computer
+  - button "Show me how to access HealthRing or τ-Ring"
+  - text: Show me how to access HealthRing or τ-Ring
+  - button "What open-hardware rings provide raw PPG output"
+  - text: What open-hardware rings provide raw PPG output
+  - button "How do I check a commercial ring for raw data access"
+  - text: How do I check a commercial ring for raw data access
+  - button "滚动到末尾":
+    - generic: ⠹
+  - button "Pro 已启用高级搜索免费预览。 了解更多":
+    - generic: Pro
+    - generic: 已启用高级搜索免费预览。
+    - button "了解更多":
+      - generic: 了解更多
+  - status:
+    - generic: 您正处于隐身模式。
+    - button "退出隐身模式":
+      - generic: 退出无痕模式
+  - textbox "提出后续问题" [active]:
+    - paragraph
+  - generic: 提出后续问题
+  - button "添加文件、插件等":
+  - button "搜索" [pressed]:
+    - generic: 搜索
+  - button "Computer":
+    - generic: Computer
+  - button "模型":
+    - generic: 模型
+  - button "语音输入":
+  - button "提交" [disabled]:
+- listbox "Typeahead menu"

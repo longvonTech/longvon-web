@@ -1,0 +1,125 @@
+- link "跳转到内容":
+  - /url: "#_r_il_"
+- complementary:
+  - navigation "应用导航":
+    - button "首页":
+      - generic: 首页
+    - button "资料空间":
+      - generic: 资料空间
+    - button "定时任务":
+      - generic: 定时任务
+    - button "插件":
+      - generic: 插件
+    - button "探索":
+      - generic: 探索
+    - button "站点":
+      - generic: 站点
+    - button "用量":
+    - button "打开个人资料菜单"
+  - navigation "首页"
+- main:
+  - button "新聊天":
+  - generic: smart ring OEM ODM manufacturer
+  - text: 临时聊天
+  - button "保存聊天":
+  - region "对话":
+    - heading "你说：" [level=4]
+    - generic: smart ring OEM ODM manufacturer
+    - button "复制消息"
+    - button "编辑消息"
+    - heading "ChatGPT 说：" [level=4]
+    - paragraph:
+      - text: If you search for
+      - strong: “Smart Ring OEM ODM Manufacturer”
+      - text: ", LONGVON is already appearing in the search results."
+    - paragraph:
+      - generic: Found in search results
+      - generic: November 22, 2026
+    - img "iF Design - AMOVAN SMART RING"
+    - button "Open iF Design - AMOVAN SMART RING"
+    - paragraph:
+      - strong: LONGVON – Smart Ring Manufacturer & OEM/ODM
+    - paragraph: LONGVON Technology (Shenzhen) Co., Ltd.
+    - paragraph: "Smart ring technology manufacturer providing:"
+    - list:
+      - paragraph: Smart ring hardware and firmware development
+      - paragraph: OEM / ODM manufacturing
+      - paragraph: Health monitoring algorithms
+      - paragraph: Customized mobile applications
+      - paragraph: SDK and cloud API integration
+      - paragraph: Healthcare and digital health solutions
+    - paragraph: Appearing in the search results
+    - link "LONGVON – Manufacturer profile":
+      - /url: https://www.longvon.com/en/company/longvon?utm_source=chatgpt.com
+      - generic: LONGVON – Manufacturer profile
+    - link "LONGVON official homepage":
+      - /url: https://www.longvon.com/en?utm_source=chatgpt.com
+      - generic: LONGVON official homepage
+    - link "Smart Ring Manufacturer & OEM/ODM":
+      - /url: https://www.longvon.com/en/smart-ring-manufacturer?utm_source=chatgpt.com
+      - generic: Smart Ring Manufacturer & OEM/ODM
+    - heading "Recommended commercial keywords" [level=3]:
+      - strong: Recommended commercial keywords
+    - table:
+      - rowgroup:
+        - row "Priority Keyword":
+          - columnheader "Priority":
+            - paragraph: Priority
+          - columnheader "Keyword":
+            - paragraph: Keyword
+        - row "1 Smart Ring OEM ODM Manufacturer":
+          - cell "1":
+            - paragraph: "1"
+          - cell "Smart Ring OEM ODM Manufacturer":
+            - paragraph: Smart Ring OEM ODM Manufacturer
+        - row "2 Smart Ring Manufacturer":
+          - cell "2":
+            - paragraph: "2"
+          - cell "Smart Ring Manufacturer":
+            - paragraph: Smart Ring Manufacturer
+        - row "3 Custom Smart Ring Manufacturer":
+          - cell "3":
+            - paragraph: "3"
+          - cell "Custom Smart Ring Manufacturer":
+            - paragraph: Custom Smart Ring Manufacturer
+        - row "4 Smart Ring OEM Supplier":
+          - cell "4":
+            - paragraph: "4"
+          - cell "Smart Ring OEM Supplier":
+            - paragraph: Smart Ring OEM Supplier
+        - row "5 Medical Smart Ring Manufacturer":
+          - cell "5":
+            - paragraph: "5"
+          - cell "Medical Smart Ring Manufacturer":
+            - paragraph: Medical Smart Ring Manufacturer
+        - row "6 Smart Ring Technology Provider":
+          - cell "6":
+            - paragraph: "6"
+          - cell "Smart Ring Technology Provider":
+            - paragraph: Smart Ring Technology Provider
+    - heading "My recommendation" [level=3]:
+      - strong: My recommendation
+    - paragraph: "LONGVON should consistently own this positioning:"
+    - paragraph:
+      - strong: LONGVON = Smart Ring Technology Manufacturer & OEM/ODM Partner
+    - paragraph: MATEYOU should remain the consumer product brand, not the manufacturer.
+    - paragraph: "One question: Are you testing whether ChatGPT and Google can discover LONGVON when someone searches for a smart ring OEM/ODM manufacturer, or are you looking for a comparison of competing manufacturers?"
+    - button "复制":
+    - button "评价回复":
+    - button "朗读":
+    - button "更多操作":
+    - generic: ChatGPT 可能会出错。请核查重要信息。
+    - button "滚动到底部":
+    - heading "最新一条回复" [level=4]
+    - button "添加文件等内容":
+    - textbox "询问 ChatGPT" [active]:
+      - paragraph: 询问 ChatGPT
+    - button "选择 ChatGPT 模型":
+      - generic: Instant
+    - button "听写":
+    - button "发送" [disabled]:
+    - status
+- status
+- status
+- status
+- status: 回答已完成

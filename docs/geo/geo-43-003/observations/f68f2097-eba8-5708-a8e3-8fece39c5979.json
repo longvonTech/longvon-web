@@ -1,0 +1,61 @@
+{
+  "record_id": "f68f2097-eba8-5708-a8e3-8fece39c5979",
+  "query_id": "Q01",
+  "query": "smart ring OEM ODM manufacturer",
+  "platform": "Perplexity",
+  "mode": "incognito Search / free-preview label",
+  "observed_at": "2026-11-22T02:11:23.615+00:00",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "Chrome signed-in incognito session, fresh query per conversation; UI zh, query/answer en; model UNKNOWN",
+  "availability": "COMPLETED",
+  "longvon_present": true,
+  "organic_rank": null,
+  "ai_body_recommended": true,
+  "source_cited": true,
+  "cited_urls": [
+    "https://www.longvon.com/en/smart-ring-healthcare-solutions"
+  ],
+  "competitors": [
+    {
+      "name": "ytsmartwear.com",
+      "url": "https://www.ytsmartwear.com/",
+      "position": "first observed relevant source-link sequence 1; not a verified recommendation rank",
+      "evidence_quote": "- link \"ytsmartwear\":"
+    },
+    {
+      "name": "smareyetech.com",
+      "url": "https://www.smareyetech.com/",
+      "position": "first observed relevant source-link sequence 2; not a verified recommendation rank",
+      "evidence_quote": "- link \"smareyetech\":"
+    },
+    {
+      "name": "aismartai.com",
+      "url": "https://www.aismartai.com/",
+      "position": "first observed relevant source-link sequence 3; not a verified recommendation rank",
+      "evidence_quote": "- link \"aismartai\":"
+    },
+    {
+      "name": "goldenweald.com",
+      "url": "https://www.goldenweald.com/",
+      "position": "first observed relevant source-link sequence 4; not a verified recommendation rank",
+      "evidence_quote": "- link \"goldenweald\":"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-22-round1/perplexity-Q01-meta.json",
+      "sha256": "67bbcc70c2a5f8ec2254f2d1554f7c799a8f51c51bd87bf273c5886b143ce936"
+    },
+    {
+      "path": "evidence/2026-11-22-round1/perplexity-Q01.jpg",
+      "sha256": "3f53d5362ffdbd3356dbbcb5b9b2f1eaac09595a1abecd2bb6f65ce2d549c87c"
+    },
+    {
+      "path": "evidence/2026-11-22-round1/perplexity-Q01.txt",
+      "sha256": "f30909e82dec01aad7a280b5d110ebfed72fffd7b81637907dae68a1e93d3436"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "First observed round; no prior comparable record. Country UNKNOWN; no growth comparison. Incognito Search; Pro free preview label shown. Exact targets for generic domain-only citation labels UNKNOWN; source drawer observed empty."
+}

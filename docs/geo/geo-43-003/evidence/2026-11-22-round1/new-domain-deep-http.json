@@ -1,0 +1,185 @@
+{
+  "scope": "12 public GET requests, no POST, no config mutation",
+  "results": [
+    {
+      "observed_at": "2026-11-22T02:14:00.886726+00:00",
+      "url": "https://new.longvon.com/partner/oem",
+      "redirects": [
+        {
+          "status": 301,
+          "from": "https://new.longvon.com/partner/oem",
+          "to": "https://www.longvon.com/partner/oem"
+        }
+      ],
+      "final_status": 200,
+      "final_url": "https://www.longvon.com/partner/oem",
+      "body_sha256": "d4a047eb428a54609cc14b8bedec4336fa32d79f7269d93382c0315b3e875388",
+      "method": "GET"
+    },
+    {
+      "observed_at": "2026-11-22T02:14:00.887335+00:00",
+      "url": "https://new.longvon.com/en/partner/oem",
+      "redirects": [
+        {
+          "status": 301,
+          "from": "https://new.longvon.com/en/partner/oem",
+          "to": "https://www.longvon.com/en/partner/oem"
+        }
+      ],
+      "final_status": 200,
+      "final_url": "https://www.longvon.com/en/partner/oem",
+      "body_sha256": "6363e0333dce48f62c9c7560d37e949e9d758d41b79c6a2cb24c126e88bca4e8",
+      "method": "GET"
+    },
+    {
+      "observed_at": "2026-11-22T02:14:00.887544+00:00",
+      "url": "https://new.longvon.com/smart-ring-sdk-api",
+      "redirects": [
+        {
+          "status": 301,
+          "from": "https://new.longvon.com/smart-ring-sdk-api",
+          "to": "https://www.longvon.com/smart-ring-sdk-api"
+        }
+      ],
+      "final_status": 200,
+      "final_url": "https://www.longvon.com/smart-ring-sdk-api",
+      "body_sha256": "5eba805be47463762aa5af56116f34894b58e91af2e5241ce6168fbf55f3724c",
+      "method": "GET"
+    },
+    {
+      "observed_at": "2026-11-22T02:14:00.887729+00:00",
+      "url": "https://new.longvon.com/en/smart-ring-sdk-api",
+      "redirects": [
+        {
+          "status": 301,
+          "from": "https://new.longvon.com/en/smart-ring-sdk-api",
+          "to": "https://www.longvon.com/en/smart-ring-sdk-api"
+        }
+      ],
+      "final_status": 200,
+      "final_url": "https://www.longvon.com/en/smart-ring-sdk-api",
+      "body_sha256": "6727069ba19f8aa82ad0a1d87267442f3beed5b6b809a37b952a0917251290fc",
+      "method": "GET"
+    },
+    {
+      "observed_at": "2026-11-22T02:14:02.496027+00:00",
+      "url": "https://new.longvon.com/company/longvon",
+      "redirects": [
+        {
+          "status": 301,
+          "from": "https://new.longvon.com/company/longvon",
+          "to": "https://www.longvon.com/company/longvon"
+        }
+      ],
+      "final_status": 200,
+      "final_url": "https://www.longvon.com/company/longvon",
+      "body_sha256": "5696b8ec2908c58529d1280f368fccb2e2102fa92a85d83a51a20fda3f94add3",
+      "method": "GET"
+    },
+    {
+      "observed_at": "2026-11-22T02:14:02.522969+00:00",
+      "url": "https://new.longvon.com/en/company/longvon",
+      "redirects": [
+        {
+          "status": 301,
+          "from": "https://new.longvon.com/en/company/longvon",
+          "to": "https://www.longvon.com/en/company/longvon"
+        }
+      ],
+      "final_status": 200,
+      "final_url": "https://www.longvon.com/en/company/longvon",
+      "body_sha256": "c5597bccd087bbbdbc8bed91eb659ba3fb93e7a8b8de95ca16a7087b8a1204e5",
+      "method": "GET"
+    },
+    {
+      "observed_at": "2026-11-22T02:14:02.557085+00:00",
+      "url": "https://new.longvon.com/osa-smart-ring-technology",
+      "redirects": [
+        {
+          "status": 301,
+          "from": "https://new.longvon.com/osa-smart-ring-technology",
+          "to": "https://www.longvon.com/osa-smart-ring-technology"
+        }
+      ],
+      "final_status": 200,
+      "final_url": "https://www.longvon.com/osa-smart-ring-technology",
+      "body_sha256": "f988dfd423f5fb65d7746c3b685ffa146341602cea062d6f3ef1f37773119856",
+      "method": "GET"
+    },
+    {
+      "observed_at": "2026-11-22T02:14:02.559709+00:00",
+      "url": "https://new.longvon.com/en/osa-smart-ring-technology",
+      "redirects": [
+        {
+          "status": 301,
+          "from": "https://new.longvon.com/en/osa-smart-ring-technology",
+          "to": "https://www.longvon.com/en/osa-smart-ring-technology"
+        }
+      ],
+      "final_status": 200,
+      "final_url": "https://www.longvon.com/en/osa-smart-ring-technology",
+      "body_sha256": "bcc5719220966811cc77d0f4e198ef3acf465c59af6300d15d19f10e27210dca",
+      "method": "GET"
+    },
+    {
+      "observed_at": "2026-11-22T02:14:02.792773+00:00",
+      "url": "https://new.longvon.com/smart-ring-sleep-respiratory",
+      "redirects": [
+        {
+          "status": 301,
+          "from": "https://new.longvon.com/smart-ring-sleep-respiratory",
+          "to": "https://www.longvon.com/smart-ring-sleep-respiratory"
+        }
+      ],
+      "final_status": 200,
+      "final_url": "https://www.longvon.com/smart-ring-sleep-respiratory",
+      "body_sha256": "e10095951ff77eb6f0fcf9cade2494973d3329dac77a8ca298d4917f7e40ba4f",
+      "method": "GET"
+    },
+    {
+      "observed_at": "2026-11-22T02:14:02.815679+00:00",
+      "url": "https://new.longvon.com/en/smart-ring-sleep-respiratory",
+      "redirects": [
+        {
+          "status": 301,
+          "from": "https://new.longvon.com/en/smart-ring-sleep-respiratory",
+          "to": "https://www.longvon.com/en/smart-ring-sleep-respiratory"
+        }
+      ],
+      "final_status": 200,
+      "final_url": "https://www.longvon.com/en/smart-ring-sleep-respiratory",
+      "body_sha256": "4dbd319bb808e621c325f75e32375ad5e24e8a19c8b2ccd3d115ce6b09352c44",
+      "method": "GET"
+    },
+    {
+      "observed_at": "2026-11-22T02:14:02.862625+00:00",
+      "url": "https://new.longvon.com/en/smart-ring-oem-odm?utm_source=geo-43-003-test&utm_medium=readonly&ai_source=chatgpt",
+      "redirects": [
+        {
+          "status": 301,
+          "from": "https://new.longvon.com/en/smart-ring-oem-odm?utm_source=geo-43-003-test&utm_medium=readonly&ai_source=chatgpt",
+          "to": "https://www.longvon.com/en/smart-ring-oem-odm?utm_source=geo-43-003-test&utm_medium=readonly&ai_source=chatgpt"
+        }
+      ],
+      "final_status": 200,
+      "final_url": "https://www.longvon.com/en/smart-ring-oem-odm?utm_source=geo-43-003-test&utm_medium=readonly&ai_source=chatgpt",
+      "body_sha256": "bbb718d3384e9c4836613cf4b39dad120cd45da5a796983a9721a8e59ce1acd7",
+      "method": "GET"
+    },
+    {
+      "observed_at": "2026-11-22T02:14:02.885774+00:00",
+      "url": "https://new.longvon.com/smart-ring-manufacturer",
+      "redirects": [
+        {
+          "status": 301,
+          "from": "https://new.longvon.com/smart-ring-manufacturer",
+          "to": "https://www.longvon.com/smart-ring-manufacturer"
+        }
+      ],
+      "final_status": 200,
+      "final_url": "https://www.longvon.com/smart-ring-manufacturer",
+      "body_sha256": "7cd3b42142714e18193d121a605ceace0bc1e2af35a68ef97eda934568f9d3f4",
+      "method": "GET"
+    }
+  ]
+}

@@ -1,0 +1,349 @@
+- banner:
+  - button "登录"
+  - button "免费注册"
+- main:
+  - region "对话":
+    - list "对话":
+      - heading "你说：" [level=4]
+      - paragraph: medical smart ring ODM manufacturer
+      - button "复制":
+      - status
+      - heading "ChatGPT 说：" [active] [level=4]
+      - region "DIL content":
+        - paragraph:
+          - text: If you're looking for a
+          - generic: medical smart ring OEM/ODM manufacturer
+          - text: ", I would prioritize manufacturers in China with capabilities in biometric sensor integration, medical-device quality systems, firmware, algorithms, mobile apps, and mass production."
+        - paragraph: "There is an important distinction between:"
+        - list:
+          - paragraph:
+            - generic: "Consumer health smart ring:"
+            - text: HR, HRV, SpO₂, sleep, skin temperature and activity monitoring.
+          - paragraph:
+            - generic: "Medical smart ring:"
+            - text: Intended for clinical monitoring, remote patient monitoring (RPM), or medical applications, with appropriate clinical validation and regulatory certifications.
+        - heading "1. Potential smart ring ODM manufacturers" [level=2]
+        - paragraph: Here are six companies worth shortlisting based on their publicly described capabilities.
+        - 'img "Smart Ring Sensors Explained: PPG, Accelerometer, Temperature | MATEYOU Health Insights"'
+        - 'button "Open Smart Ring Sensors Explained: PPG, Accelerometer, Temperature | MATEYOU Health Insights"'
+        - paragraph:
+          - text: "1."
+          - button "LONGVON Technology"
+          - generic: LONGVON Technology
+          - text: — Shenzhen, China
+        - generic: Strong candidate
+        - list:
+          - paragraph: Complete hardware, firmware, algorithms, app, SDK and cloud API.
+          - paragraph: Sleep, respiratory health, HR and SpO₂ monitoring.
+          - paragraph: Publishes ISO 13485-oriented manufacturing controls and cleanroom capabilities.
+          - paragraph: Supports customized OEM/ODM projects.
+        - paragraph:
+          - text: "Website:"
+          - button "LONGVON":
+            - link "LONGVON":
+              - /url: https://www.longvon.com/en/partner/oem?utm_source=chatgpt.com
+              - generic: LONGVON
+        - paragraph:
+          - text: "Source:"
+          - button "LONGVON +1":
+            - generic: LONGVON
+            - generic: "+1"
+        - img "Next generation smart ring integrates Nordic’s nRF54L15 SoC delivering unparalleled processing and power consumption performance - nordicsemi.com"
+        - button "Open Next generation smart ring integrates Nordic’s nRF54L15 SoC delivering unparalleled processing and power consumption performance - nordicsemi.com"
+        - paragraph:
+          - text: "2."
+          - button "AOL Health / Shenzhen AOL Smart Health"
+          - generic: AOL Health / Shenzhen AOL Smart Health
+          - text: — Shenzhen and Dongguan, China
+        - generic: Strong candidate
+        - list:
+          - paragraph: Smart ring design and manufacturing.
+          - paragraph: Hardware, software, sensor integration and AI algorithms.
+          - paragraph: Reports ISO 9001 and ISO 13485 quality systems.
+          - paragraph: SDK/API integration can be discussed.
+        - paragraph:
+          - text: "Website:"
+          - button "IDOT Ring / AOL Health":
+            - link "IDOT Ring / AOL Health":
+              - /url: https://idotring.com/en/?utm_source=chatgpt.com
+              - generic: IDOT Ring / AOL
+              - generic: Health
+        - paragraph:
+          - text: "Source:"
+          - button "AOL Health":
+            - generic: AOL Health
+        - img "%description%"
+        - button "Open %description%"
+        - paragraph:
+          - text: "3."
+          - button "Shenzhen Geyan Technology"
+          - generic: Shenzhen Geyan Technology
+          - text: — Shenzhen, China
+        - list:
+          - paragraph: Medical wearable manufacturing background.
+          - paragraph: Smart rings and health monitoring wearables.
+          - paragraph: OEM/ODM development and mass production.
+          - paragraph: Worth investigating for medical wearable projects.
+        - paragraph:
+          - text: "Website:"
+          - button "Geyan / XDUN Medical":
+            - link "Geyan / XDUN Medical":
+              - /url: https://xdunmedical.com/about-us/?utm_source=chatgpt.com
+              - generic: Geyan / XDUN
+              - generic: Medical
+        - paragraph:
+          - text: "Source:"
+          - button "15+ Years Health Tech Experience +1":
+            - generic: 15+ Years Health Tech Experience
+            - generic: "+1"
+        - img "Medical Grade ECG/Hrv/Blood Oxygen Monitor Biometric Health Tracker Smart Ring ODM - Sports Fitness Tracker Smart Ring and Bp Hrv Health Monitoring Tracker price"
+        - button "Open Medical Grade ECG/Hrv/Blood Oxygen Monitor Biometric Health Tracker Smart Ring ODM - Sports Fitness Tracker Smart Ring and Bp Hrv Health Monitoring Tracker price"
+        - paragraph:
+          - text: "4."
+          - button "Shenzhen Smareyetech Technology"
+          - generic: Shenzhen Smareyetech Technology
+          - text: — China
+        - list:
+          - paragraph: Titanium ECG smart ring.
+          - paragraph: ECG, SpO₂ and temperature sensing.
+          - paragraph: Custom PCB, hardware, tooling and app development.
+          - paragraph: ODM engineering and customization.
+        - paragraph:
+          - text: "Website:"
+          - button "Smareyetech":
+            - link "Smareyetech":
+              - /url: https://www.smareyetech.com/ekg-smartwatch/?utm_source=chatgpt.com
+              - generic: Smareyetech
+        - paragraph:
+          - text: "Source:"
+          - button "Shenzhen Smareyetech Technology Co., Ltd.":
+            - generic: Shenzhen Smareyetech Technology Co., Ltd.
+        - img "CIRCUL Completes Japanese Medical Device Registration for Pulse Aid in – CIRCUL RING"
+        - button "Open CIRCUL Completes Japanese Medical Device Registration for Pulse Aid in – CIRCUL RING"
+        - paragraph:
+          - text: "5."
+          - button "Jabil Healthcare"
+          - generic: Jabil Healthcare
+          - text: — Global
+        - list:
+          - paragraph: Established medical manufacturing and engineering organization.
+          - paragraph: Wearable biosensor integration.
+          - paragraph: SpO₂, temperature and connected health technologies.
+          - paragraph: More appropriate to explore for sophisticated medical-device manufacturing partnerships than standard private-label sourcing.
+        - paragraph:
+          - text: "Website:"
+          - button "Jabil Healthcare":
+            - link "Jabil Healthcare":
+              - /url: https://www.jabil.com/?utm_source=chatgpt.com
+              - generic: Jabil
+              - generic: Healthcare
+        - paragraph:
+          - text: "Source:"
+          - button "HEALTHCARE":
+            - generic: HEALTHCARE
+        - img "ODM OEM Wearable Technology and Integrated Smart Jewellery for Smart Rings - Smart Health Ring and Heart Rate Monitoring Ring price"
+        - button "Open ODM OEM Wearable Technology and Integrated Smart Jewellery for Smart Rings - Smart Health Ring and Heart Rate Monitoring Ring price"
+        - paragraph:
+          - text: "6."
+          - button "Pineeon"
+          - generic: Pineeon
+          - text: — China
+        - list:
+          - paragraph: Private-label smart ring production.
+          - paragraph: PPG, heart rate, SpO₂ and sleep monitoring.
+          - paragraph: Titanium and ceramic housing.
+          - paragraph: White-label iOS/Android app.
+        - paragraph:
+          - text: "Website:"
+          - button "Pineeon Smart Ring":
+            - link "Pineeon Smart Ring":
+              - /url: https://pineeon.com/products/smart-wearables/smart-rings/?utm_source=chatgpt.com
+              - generic: Pineeon Smart
+              - generic: Ring
+        - paragraph:
+          - text: "Source:"
+          - button "Pineeon":
+            - generic: Pineeon
+        - heading "2. Technical specifications to request" [level=2]
+        - paragraph: If the goal is a genuine medical smart ring rather than a consumer fitness ring, I recommend asking manufacturers about these capabilities.
+        - table:
+          - rowgroup:
+            - row "Technology Required capability":
+              - columnheader "Technology":
+                - paragraph: Technology
+              - columnheader "Required capability":
+                - paragraph: Required capability
+            - row "ECG Single-lead ECG, if clinically needed":
+              - cell "ECG":
+                - paragraph: ECG
+              - cell "Single-lead ECG, if clinically needed":
+                - paragraph: Single-lead ECG, if clinically needed
+            - row "PPG Green, red and infrared optical sensors":
+              - cell "PPG":
+                - paragraph: PPG
+              - cell "Green, red and infrared optical sensors":
+                - paragraph: Green, red and infrared optical sensors
+            - row "SpO₂ Continuous or overnight oxygen monitoring":
+              - cell "SpO₂":
+                - paragraph: SpO₂
+              - cell "Continuous or overnight oxygen monitoring":
+                - paragraph: Continuous or overnight oxygen monitoring
+            - row "Heart rate Continuous HR monitoring":
+              - cell "Heart rate":
+                - paragraph: Heart rate
+              - cell "Continuous HR monitoring":
+                - paragraph: Continuous HR monitoring
+            - row "HRV Beat-to-beat interval analysis":
+              - cell "HRV":
+                - paragraph: HRV
+              - cell "Beat-to-beat interval analysis":
+                - paragraph: Beat-to-beat interval analysis
+            - row "Temperature Skin temperature trends":
+              - cell "Temperature":
+                - paragraph: Temperature
+              - cell "Skin temperature trends":
+                - paragraph: Skin temperature trends
+            - row "Blood pressure Only if a validated measurement method is available":
+              - cell "Blood pressure":
+                - paragraph: Blood pressure
+              - cell "Only if a validated measurement method is available":
+                - paragraph: Only if a validated measurement method is available
+            - row "Sleep Sleep stages and respiratory indicators":
+              - cell "Sleep":
+                - paragraph: Sleep
+              - cell "Sleep stages and respiratory indicators":
+                - paragraph: Sleep stages and respiratory indicators
+            - row "Connectivity BLE, SDK, API":
+              - cell "Connectivity":
+                - paragraph: Connectivity
+              - cell "BLE, SDK, API":
+                - paragraph: BLE, SDK, API
+            - row "Software Custom iOS/Android application":
+              - cell "Software":
+                - paragraph: Software
+              - cell "Custom iOS/Android application":
+                - paragraph: Custom iOS/Android application
+            - row "Manufacturing ISO 13485 quality management":
+              - cell "Manufacturing":
+                - paragraph: Manufacturing
+              - cell "ISO 13485 quality management":
+                - paragraph: ISO 13485 quality management
+        - paragraph:
+          - generic: "Important:"
+          - text: ISO 13485 certification, CE marking and FDA registration/clearance are not interchangeable. Ask for certificates and verify that their scope covers the actual ring model and intended medical use. Do not rely on claims such as medical-grade or clinical-grade without supporting validation evidence.
+        - heading "3. Questions to ask manufacturers" [level=2]
+        - paragraph: "I would send these questions before requesting a quotation:"
+        - list:
+          - paragraph: Are you the actual manufacturer or a trading company?
+          - paragraph: Do you have an existing ECG + PPG smart ring platform?
+          - paragraph: Can you customize hardware, firmware and mobile applications?
+          - paragraph: Can you provide ISO 13485 certificates and factory audit reports?
+          - paragraph: Do you have FDA 510(k) clearance or other applicable medical-device approvals for this exact product?
+          - paragraph: Can you provide clinical validation reports for HR, SpO₂ and ECG?
+          - paragraph: What are your MOQ, sample cost and mass-production lead time?
+          - paragraph: Can we own the product design, firmware modifications and app source code?
+        - heading "4. Let me narrow down the best manufacturers" [level=2]
+        - paragraph: The most important factor is what kind of medical smart ring you intend to develop.
+        - paragraph:
+          - generic: 1. What medical functions do you need?
+        - radiogroup "Options":
+          - radio "ECG + SpO₂ + HR + HRV monitoring" [checked]
+          - text: ECG + SpO₂ + HR + HRV monitoring
+          - radio "Blood pressure + ECG + SpO₂"
+          - text: Blood pressure + ECG + SpO₂
+          - radio "Sleep apnea and respiratory monitoring"
+          - text: Sleep apnea and respiratory monitoring
+          - radio "Continuous health monitoring including temperature"
+          - text: Continuous health monitoring including temperature
+          - radio "All-in-one medical smart ring"
+          - text: All-in-one medical smart ring
+        - paragraph:
+          - generic: 2. What manufacturing model?
+        - radiogroup "Options":
+          - radio "Full ODM — customized hardware and software" [checked]
+          - text: Full ODM — customized hardware and software
+          - radio "OEM — existing design with our branding"
+          - text: OEM — existing design with our branding
+          - radio "Joint development"
+          - text: Joint development
+        - paragraph:
+          - generic: 3. Which certification market?
+        - radiogroup "Options":
+          - radio "USA — FDA 510(k) / medical-device pathway" [checked]
+          - text: USA — FDA 510(k) / medical-device pathway
+          - radio "Europe — CE MDR"
+          - text: Europe — CE MDR
+          - radio "China — NMPA"
+          - text: China — NMPA
+          - radio "Consumer wellness, no medical claims"
+          - text: Consumer wellness, no medical claims
+          - radio "Multiple international markets"
+          - text: Multiple international markets
+        - paragraph:
+          - generic: 4. Estimated initial order quantity
+        - radiogroup "Options":
+          - radio "100–500 units"
+          - text: 100–500 units
+          - radio "1,000–5,000 units" [checked]
+          - text: 1,000–5,000 units
+          - radio "5,000–20,000 units"
+          - text: 5,000–20,000 units
+          - radio "20,000+ units"
+          - text: 20,000+ units
+        - button "Find matching ODM manufacturers":
+          - generic: Find matching ODM manufacturers
+        - paragraph:
+          - text: With these details, I can narrow the list to the
+          - generic: 5 most suitable manufacturers
+          - text: ", focusing on actual medical smart ring development rather than ordinary smart ring wholesalers."
+      - status
+      - group "回复操作":
+        - button "复制回复":
+        - status
+        - button "回复优秀":
+        - button "回复不佳":
+        - status
+        - button "分享":
+        - button "更多操作":
+    - paragraph:
+      - generic: ChatGPT 是 AI，可能会犯错。
+- navigation "Sidebar shortcuts":
+  - link "ChatGPT 徽标":
+    - /url: /
+    - img "ChatGPT"
+  - navigation "侧边栏":
+    - link "新聊天":
+      - /url: /?noauth_recent_chat_failed=1
+      - generic: 新聊天
+    - link "图像":
+      - /url: /images
+      - generic: 图像
+    - link "插件":
+      - /url: /plugins?plugins_landing=1
+      - generic: 插件
+    - link "查看套餐和定价":
+      - /url: https://openai.com/chatgpt/pricing/
+      - generic: 查看套餐和定价
+    - link "帮助":
+      - /url: https://help.openai.com/zh-hans-cn/collections/3742473-chatgpt
+      - generic: 帮助
+    - button "深度研究":
+      - generic: 深度研究
+    - link "设置":
+      - /url: /settings
+      - generic: 设置
+- complementary "侧边栏":
+  - button "关闭边栏":
+  - heading "获取为你量身定制的回复" [level=2]
+  - paragraph: 登录以获取基于已保存聊天的回答，并可创建图像和上传文件。
+  - button "登录":
+    - generic: 登录
+- contentinfo:
+  - generic: 与 ChatGPT 聊天
+  - textbox "与 ChatGPT 聊天":
+    - /placeholder: 询问 ChatGPT
+  - button "添加文件等":
+  - button "开始听写":
+  - button "发送消息" [disabled]:
+- alert
+- status

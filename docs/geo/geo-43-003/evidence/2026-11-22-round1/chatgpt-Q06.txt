@@ -1,0 +1,226 @@
+- banner:
+  - button "打开边栏":
+  - button "登录"
+- main:
+  - region "对话":
+    - list "对话":
+      - heading "你说：" [level=4]
+      - button "smart ring manufacturer with SDK API":
+        - paragraph: smart ring manufacturer with SDK API
+      - heading "ChatGPT 说：" [level=4]
+      - region "DIL content":
+        - paragraph:
+          - text: If you're looking for a
+          - generic: smart ring manufacturer that provides an SDK/API for integration into your own mobile app, software platform, or health-data system
+          - text: ", there are several manufacturers worth contacting, particularly in China."
+        - paragraph: Here are the most relevant options I found.
+        - heading "Smart ring manufacturers with SDK/API capabilities" [level=2]
+        - img "Sign In/Login - CJdropshipping"
+        - button "Open Sign In/Login - CJdropshipping"
+        - paragraph:
+          - text: "1."
+          - button "J-Style"
+          - generic: J-Style
+        - generic: SDK/API advertised
+        - list:
+          - paragraph: Smart ring OEM/ODM manufacturing
+          - paragraph: SDK and cloud API integration
+          - paragraph: Heart rate, HRV, sleep, SpO₂ and temperature data
+          - paragraph: White-label solutions
+        - paragraph:
+          - text: "Website:"
+          - button "J-Style official website":
+            - link "J-Style official website":
+              - /url: https://www.jointcorp.com/?utm_source=chatgpt.com
+              - generic: J-Style official
+              - generic: website
+        - paragraph:
+          - text: "SDK:"
+          - button "SDK/API platform":
+            - link "SDK/API platform":
+              - /url: https://www.jointcorp.com/sdk-api/?utm_source=chatgpt.com
+              - generic: SDK/API
+              - generic: platform
+        - 'img "Smart Ring Sensors Explained: PPG, Accelerometer, Temperature | MATEYOU Health Insights"'
+        - 'button "Open Smart Ring Sensors Explained: PPG, Accelerometer, Temperature | MATEYOU Health Insights"'
+        - paragraph:
+          - text: "2."
+          - button "LONGVON Technology"
+          - generic: LONGVON Technology
+        - generic: SDK/API partner access
+        - list:
+          - paragraph: Custom smart ring development
+          - paragraph: Hardware, firmware and algorithms
+          - paragraph: Mobile SDK and cloud API
+          - paragraph: OEM/ODM manufacturing
+          - paragraph: Healthcare-oriented applications
+        - paragraph:
+          - text: "Website:"
+          - button "LONGVON technology and development":
+            - link "LONGVON technology and development":
+              - /url: https://www.longvon.com/en/smart-ring-technology?utm_source=chatgpt.com
+              - generic: LONGVON technology and
+              - generic: development
+        - img "Goodway - Custom Smart Ring Supplier"
+        - button "Open Goodway - Custom Smart Ring Supplier"
+        - paragraph:
+          - text: "3."
+          - button "Goodway Technology"
+          - generic: Goodway Technology
+        - generic: SDK/API advertised
+        - list:
+          - paragraph: Smart ring OEM/ODM
+          - paragraph: SDK/API integration
+          - paragraph: Custom mobile applications
+          - paragraph: Firmware and OTA updates
+          - paragraph: Private-label manufacturing
+        - paragraph:
+          - text: "Website:"
+          - button "Goodway smart ring manufacturing":
+            - link "Goodway smart ring manufacturing":
+              - /url: https://www.goodwaytechs.com/smart-rings.html?utm_source=chatgpt.com
+              - generic: Goodway smart ring
+              - generic: manufacturing
+        - img "[Qoo10] Geekin スマートリング 健康管理 活動量計 睡眠"
+        - button "Open [Qoo10] Geekin スマートリング 健康管理 活動量計 睡眠"
+        - paragraph:
+          - text: "4."
+          - button "Geyan Technology"
+          - generic: Geyan Technology
+        - list:
+          - paragraph: Smart ring OEM/ODM
+          - paragraph: SDK development
+          - paragraph: API integration
+          - paragraph: Custom applications
+          - paragraph: Health-data management platform
+        - paragraph:
+          - text: "Website:"
+          - button "Geyan smart ring OEM and SDK/API":
+            - link "Geyan smart ring OEM and SDK/API":
+              - /url: https://www.gysmartwatch.com/html/smart-ring-oem-sdk-api.html?utm_source=chatgpt.com
+              - generic: Geyan smart ring OEM and
+              - generic: SDK/API
+        - heading "Established smart ring brands with developer APIs" [level=2]
+        - paragraph: "If you don't need to manufacture your own ring, consider these alternatives:"
+        - table:
+          - rowgroup:
+            - row "Brand Developer integration":
+              - columnheader "Brand":
+                - paragraph: Brand
+              - columnheader "Developer integration":
+                - paragraph: Developer integration
+            - row "Oura Official REST API V2, OAuth2 and webhooks":
+              - cell "Oura":
+                - paragraph:
+                  - button "Oura"
+                  - generic: Oura
+              - cell "Official REST API V2, OAuth2 and webhooks":
+                - paragraph: Official REST API V2, OAuth2 and webhooks
+            - row "Ultrahuman UltraSignal API":
+              - cell "Ultrahuman":
+                - paragraph:
+                  - button "Ultrahuman"
+                  - generic: Ultrahuman
+              - cell "UltraSignal API":
+                - paragraph: UltraSignal API
+            - row "Samsung Galaxy Ring Samsung Health Data SDK":
+              - cell "Samsung Galaxy Ring":
+                - paragraph:
+                  - button "Samsung Galaxy Ring"
+                  - generic: Samsung Galaxy Ring
+              - cell "Samsung Health Data SDK":
+                - paragraph: Samsung Health Data SDK
+        - paragraph:
+          - text: "Oura documentation:"
+          - button "Oura API V2":
+            - link "Oura API V2":
+              - /url: https://cloud.ouraring.com/v2/docs?utm_source=chatgpt.com
+              - generic: Oura API
+              - generic: V2
+          - text: . Note that Oura API access has membership-related restrictions for newer rings.
+          - button "Oura Member Care +1":
+            - generic: Oura Member Care
+            - generic: "+1"
+        - heading "What I recommend" [level=2]
+        - paragraph: "If you're developing your own health or wellness platform, I would initially contact:"
+        - list:
+          - paragraph: J-Style
+          - paragraph: LONGVON
+          - paragraph: Goodway
+        - paragraph: However, ask for an actual SDK package and API documentation before committing. An advertised API does not necessarily mean unrestricted raw sensor access or a publicly downloadable SDK.
+        - heading "A few questions to narrow down the right manufacturer" [level=2]
+        - paragraph:
+          - generic: 1. What is your intended use?
+        - radiogroup "Options":
+          - radio "Integrate ring data into my own app" [checked]
+          - text: Integrate ring data into my own app
+          - radio "Manufacture my own branded smart ring"
+          - text: Manufacture my own branded smart ring
+          - radio "Connect multiple ring brands to one platform"
+          - text: Connect multiple ring brands to one platform
+          - radio "Research and healthcare data collection"
+          - text: Research and healthcare data collection
+        - paragraph:
+          - generic: 2. Which data do you need?
+        - paragraph: Select all that apply.
+        - checkbox "Heart rate" [checked]
+        - generic: Heart rate
+        - checkbox "HRV" [checked]
+        - generic: HRV
+        - checkbox "Sleep" [checked]
+        - generic: Sleep
+        - checkbox "SpO₂" [checked]
+        - generic: SpO₂
+        - checkbox "Body temperature" [checked]
+        - generic: Body temperature
+        - checkbox "Steps and activity"
+        - generic: Steps and activity
+        - checkbox "ECG"
+        - generic: ECG
+        - checkbox "Raw PPG sensor data"
+        - generic: Raw PPG sensor data
+        - paragraph:
+          - generic: 3. What kind of developer access do you require?
+        - radiogroup "Options":
+          - radio "Bluetooth SDK (direct ring-to-phone)"
+          - text: Bluetooth SDK (direct ring-to-phone)
+          - radio "Cloud REST API"
+          - text: Cloud REST API
+          - radio "Both Bluetooth SDK and Cloud API" [checked]
+          - text: Both Bluetooth SDK and Cloud API
+          - radio "Raw sensor data and firmware access"
+          - text: Raw sensor data and firmware access
+        - paragraph:
+          - generic: 4. Expected manufacturing quantity
+        - radiogroup "Options":
+          - radio "Prototype / 10–100 units"
+          - text: Prototype / 10–100 units
+          - radio "100–1,000 units"
+          - text: 100–1,000 units
+          - radio "1,000–5,000 units" [checked]
+          - text: 1,000–5,000 units
+          - radio "10,000+ units"
+          - text: 10,000+ units
+        - button "Find matching manufacturers":
+          - generic: Find matching manufacturers
+        - paragraph: I can then narrow this down to manufacturers that can provide an actual developer SDK, API documentation, sample code, and access to biometric data—not just a finished smart ring with a companion app.
+      - status
+      - group "回复操作":
+        - button "复制回复":
+        - status
+        - button "回复优秀":
+        - button "回复不佳":
+        - status
+        - button "分享":
+        - button "更多操作":
+    - paragraph:
+      - generic: ChatGPT 是 AI，可能会犯错。
+- contentinfo:
+  - generic: 与 ChatGPT 聊天
+  - textbox "与 ChatGPT 聊天" [active]:
+    - /placeholder: 询问 ChatGPT
+  - button "添加文件等":
+  - button "开始听写":
+  - button "发送消息" [disabled]:
+- alert
+- status

@@ -1,0 +1,61 @@
+{
+  "record_id": "436285da-de45-5e14-9f8d-f83d38ee9622",
+  "query_id": "Q02",
+  "query": "smart ring manufacturer China",
+  "platform": "ChatGPT",
+  "mode": "logged-out default answer (web-search invocation UNKNOWN)",
+  "observed_at": "2026-11-22T02:12:45.517+00:00",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "in-app browser logged out, new conversation per query; UI zh, query/answer en; model UNKNOWN",
+  "availability": "COMPLETED",
+  "longvon_present": true,
+  "organic_rank": null,
+  "ai_body_recommended": true,
+  "source_cited": true,
+  "cited_urls": [
+    "https://www.longvon.com/en/company/longvon?utm_source=chatgpt.com"
+  ],
+  "competitors": [
+    {
+      "name": "starkingsmartring.com",
+      "url": "https://starkingsmartring.com/?utm_source=chatgpt.com",
+      "position": "first observed relevant source-link sequence 1; not a verified recommendation rank",
+      "evidence_quote": "- link \"STAR KING official website\":"
+    },
+    {
+      "name": "smartwearworks.com",
+      "url": "https://www.smartwearworks.com/?utm_source=chatgpt.com",
+      "position": "first observed relevant source-link sequence 2; not a verified recommendation rank",
+      "evidence_quote": "- link \"Smart Wear Works\":"
+    },
+    {
+      "name": "gysmartwatch.com",
+      "url": "https://www.gysmartwatch.com/html/1057461929.html?utm_source=chatgpt.com",
+      "position": "first observed relevant source-link sequence 3; not a verified recommendation rank",
+      "evidence_quote": "- link \"Geyan smart ring manufacturer\":"
+    },
+    {
+      "name": "smartring.en.made-in-china.com",
+      "url": "https://smartring.en.made-in-china.com/?comName=Shenzhen-Huahesheng-Technology-Co-Ltd-&isNewShowroomUrl=1&xcase=companyInfo&utm_source=chatgpt.com",
+      "position": "first observed relevant source-link sequence 4; not a verified recommendation rank",
+      "evidence_quote": "- link \"Manufacturer profile\":"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-22-round1/chatgpt-Q02-meta.json",
+      "sha256": "4b4e8fe27133891ff19d139d6a0663440584819206cec872784f673ca391344d"
+    },
+    {
+      "path": "evidence/2026-11-22-round1/chatgpt-Q02.jpg",
+      "sha256": "e2077d44d115c35893fcbe4cc661acb8b6884a3221e11c040547e0077a3e42da"
+    },
+    {
+      "path": "evidence/2026-11-22-round1/chatgpt-Q02.txt",
+      "sha256": "6e8d98d96969e9184b0062f1528882400a2c3366997d90ef8e1c887d9468e1d5"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "First observed round; no prior comparable record. Country UNKNOWN; no growth comparison. Logged-out default answer; explicit web-search invocation and model version UNKNOWN; visible linked sources are not proof of live retrieval. Original screenshot horizontally clipped (BLOCKED_LOCAL_ENV); complete DOM retained; cached UC reopen failed; no resubmission."
+}

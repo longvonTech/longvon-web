@@ -1,0 +1,61 @@
+{
+  "record_id": "5cd5771b-a8a5-5a33-b0e2-52c22e69f7ca",
+  "query_id": "Q01",
+  "query": "smart ring OEM ODM manufacturer",
+  "platform": "Google",
+  "mode": "All / first result page with auto AI Overview",
+  "observed_at": "2026-11-22T02:10:49.630+00:00",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "Chrome existing signed-in profile; hl=en; personalized results; actual country unverified",
+  "availability": "COMPLETED",
+  "longvon_present": false,
+  "organic_rank": null,
+  "ai_body_recommended": false,
+  "source_cited": false,
+  "cited_urls": [],
+  "competitors": [
+    {
+      "name": "jointcorp.com",
+      "url": "https://www.jointcorp.com/products/",
+      "position": "first observed relevant source-link sequence 1; not a verified recommendation rank",
+      "evidence_quote": "- link \"Smart Ring Manufacturer - Medical-Grade Smart Rings jointcorp https://www.jointcorp.com\":"
+    },
+    {
+      "name": "goodwaytechs.com",
+      "url": "https://www.goodwaytechs.com/smart-ring.html",
+      "position": "first observed relevant source-link sequence 2; not a verified recommendation rank",
+      "evidence_quote": "- link \"Goodway\":"
+    },
+    {
+      "name": "eiot.com",
+      "url": "https://www.eiot.com/",
+      "position": "first observed relevant source-link sequence 3; not a verified recommendation rank",
+      "evidence_quote": "- link \"eIoT\":"
+    },
+    {
+      "name": "goldenweald.com",
+      "url": "https://www.goldenweald.com/how-to-choose-the-right-smart-ring-oem-manufacturer-in-china/",
+      "position": "first observed relevant source-link sequence 4; not a verified recommendation rank",
+      "evidence_quote": "- link:"
+    },
+    {
+      "name": "aismartai.com",
+      "url": "https://www.aismartai.com/products/oem-odm-smart-ringsb2b-manufacturer-stainless-steel-wearable-with-ai-ecg-temperature-blood-pressure-tk30/",
+      "position": "first observed relevant source-link sequence 5; not a verified recommendation rank",
+      "evidence_quote": "- link \"B2B Manufacturer TK30 ECG Smart Ring | smart Wearables aismartai.com https://www.aismartai.com › products › oem-odm-smart...\":"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-22-round1/google-Q01.jpg",
+      "sha256": "b0aa81c4d7b8657ceacfc700fc1478bb92736624e6648ddfd3737c915da720fd"
+    },
+    {
+      "path": "evidence/2026-11-22-round1/google-Q01.json",
+      "sha256": "5b0104388bf93d8dd5a7c4c746a5df734b28029bb2a3fa82be5b455568ca9a44"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "First observed round; no prior comparable record. Country UNKNOWN; no growth comparison. Scope: first Google results page, signed in/personalized. Organic links and AI citation are separate; pending AI panel UNKNOWN."
+}

@@ -1,0 +1,43 @@
+{
+  "record_id": "d6d00163-657e-50a9-ac98-05d5ed082a64",
+  "query_id": "Q07",
+  "query": "100Hz raw PPG smart ring SDK",
+  "platform": "Perplexity",
+  "mode": "incognito Search / free-preview label",
+  "observed_at": "2026-11-22T02:17:09.321+00:00",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "Chrome signed-in incognito session, fresh query per conversation; UI zh, query/answer en; model UNKNOWN",
+  "availability": "COMPLETED",
+  "longvon_present": true,
+  "organic_rank": null,
+  "ai_body_recommended": true,
+  "source_cited": true,
+  "cited_urls": [
+    "https://www.longvon.com/en/smart-ring-technology"
+  ],
+  "competitors": [
+    {
+      "name": "tuckstechs.com",
+      "url": "https://www.tuckstechs.com/catalog/oemodm-heart-rate-monitoring-ring-manufacturer-supplier/",
+      "position": "first observed relevant source-link sequence 1; not a verified recommendation rank",
+      "evidence_quote": "- link \"tuckstechs\":"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-22-round1/perplexity-Q07-meta.json",
+      "sha256": "ce438f75c9033b528099eaf59dc5a60903e47a05cc7d10c6489527729dd585ce"
+    },
+    {
+      "path": "evidence/2026-11-22-round1/perplexity-Q07.jpg",
+      "sha256": "bfaf0bd6a946348680c4039f409f8e6b38e7cf0c881981fbefc1ee8f84601860"
+    },
+    {
+      "path": "evidence/2026-11-22-round1/perplexity-Q07.txt",
+      "sha256": "2703bc1f777036f6e0cc72ae3072c2a50f5ca0be80bcc0061a4d7ca1aedc7da8"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "First observed round; no prior comparable record. Country UNKNOWN; no growth comparison. Incognito Search; Pro free preview label shown. Exact targets for generic domain-only citation labels UNKNOWN; source drawer observed empty."
+}

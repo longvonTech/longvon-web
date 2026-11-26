@@ -1,0 +1,48 @@
+# 公开技术审查（首批，只读）
+
+观测日期2026-11-22；证据 `evidence/public-http-audit.json`，含实际UTC时间、URL、状态、canonical/hreflang/metadata、JSON-LD解析结果、正文指纹及跳转链。使用Python HTTP GET，国家UNKNOWN；不是浏览器渲染或搜索索引结果。
+
+- `https://www.longvon.com/` → 200；canonical ['https://www.longvon.com']；hreflang 3；JSON-LD ['PARSES', 'PARSES']。
+- `https://www.longvon.com/en` → 200；canonical ['https://www.longvon.com/en']；hreflang 3；JSON-LD ['PARSES', 'PARSES']。
+- `https://www.longvon.com/smart-ring-manufacturer` → 200；canonical ['https://www.longvon.com/smart-ring-manufacturer']；hreflang 3；JSON-LD ['PARSES', 'PARSES']。
+- `https://www.longvon.com/en/smart-ring-manufacturer` → 200；canonical ['https://www.longvon.com/en/smart-ring-manufacturer']；hreflang 3；JSON-LD ['PARSES', 'PARSES']。
+- `https://www.longvon.com/smart-ring-oem-odm` → 200；canonical ['https://www.longvon.com/smart-ring-oem-odm']；hreflang 3；JSON-LD ['PARSES', 'PARSES']。
+- `https://www.longvon.com/en/smart-ring-oem-odm` → 200；canonical ['https://www.longvon.com/en/smart-ring-oem-odm']；hreflang 3；JSON-LD ['PARSES', 'PARSES', 'PARSES']。
+- `https://www.longvon.com/smart-ring-sdk-api` → 200；canonical ['https://www.longvon.com/smart-ring-sdk-api']；hreflang 3；JSON-LD ['PARSES', 'PARSES']。
+- `https://www.longvon.com/en/smart-ring-sdk-api` → 200；canonical ['https://www.longvon.com/en/smart-ring-sdk-api']；hreflang 3；JSON-LD ['PARSES', 'PARSES']。
+- `https://www.longvon.com/smart-ring-sleep-respiratory` → 200；canonical ['https://www.longvon.com/smart-ring-sleep-respiratory']；hreflang 3；JSON-LD ['PARSES', 'PARSES']。
+- `https://www.longvon.com/en/smart-ring-sleep-respiratory` → 200；canonical ['https://www.longvon.com/en/smart-ring-sleep-respiratory']；hreflang 3；JSON-LD ['PARSES', 'PARSES']。
+- `https://www.longvon.com/company` → HTTP Error 404: Not Found；canonical []；hreflang 0；JSON-LD []。
+- `https://www.longvon.com/en/company` → HTTP Error 404: Not Found；canonical []；hreflang 0；JSON-LD []。
+- `https://www.longvon.com/robots.txt` → 200；canonical []；hreflang 0；JSON-LD []。
+- `https://www.longvon.com/sitemap.xml` → 200；canonical []；hreflang 0；JSON-LD []。
+- `https://new.longvon.com/` → 200；canonical ['https://www.longvon.com']；hreflang 3；JSON-LD ['PARSES', 'PARSES']。
+- `https://new.longvon.com/robots.txt` → 200；canonical []；hreflang 0；JSON-LD []。
+- `https://new.longvon.com/smart-ring-oem-odm` → 200；canonical ['https://www.longvon.com/smart-ring-oem-odm']；hreflang 3；JSON-LD ['PARSES', 'PARSES']。
+- `https://www.longvon.com/company/longvon` → 200；canonical ['https://www.longvon.com/company/longvon']；hreflang 3；JSON-LD ['PARSES', 'PARSES', 'PARSES']。
+- `https://www.longvon.com/en/company/longvon` → 200；canonical ['https://www.longvon.com/en/company/longvon']；hreflang 3；JSON-LD ['PARSES', 'PARSES', 'PARSES']。
+- `https://www.longvon.com/about` → 200；canonical ['https://www.longvon.com/about']；hreflang 3；JSON-LD []。
+- `https://www.longvon.com/en/about` → 200；canonical ['https://www.longvon.com/en/about']；hreflang 3；JSON-LD []。
+- `https://www.longvon.com/smart-ring-sleep-monitoring` → 200；canonical ['https://www.longvon.com/smart-ring-sleep-monitoring']；hreflang 3；JSON-LD ['PARSES', 'PARSES']。
+- `https://www.longvon.com/en/smart-ring-sleep-monitoring` → 200；canonical ['https://www.longvon.com/en/smart-ring-sleep-monitoring']；hreflang 3；JSON-LD ['PARSES', 'PARSES']。
+- `https://www.longvon.com/osa-smart-ring-technology` → 200；canonical ['https://www.longvon.com/osa-smart-ring-technology']；hreflang 3；JSON-LD ['PARSES', 'PARSES']。
+- `https://www.longvon.com/en/osa-smart-ring-technology` → 200；canonical ['https://www.longvon.com/en/osa-smart-ring-technology']；hreflang 3；JSON-LD ['PARSES', 'PARSES']。
+- `https://new.longvon.com/` → 200；canonical ['https://www.longvon.com']；hreflang 3；JSON-LD ['PARSES', 'PARSES']。
+- `https://new.longvon.com/en/smart-ring-oem-odm` → 200；canonical ['https://www.longvon.com/en/smart-ring-oem-odm']；hreflang 3；JSON-LD ['PARSES', 'PARSES', 'PARSES']。
+- `https://new.longvon.com/robots.txt` → 200；canonical []；hreflang 0；JSON-LD []。
+
+## 问题及限制
+
+`/company`和`/en/company`为探查路径，返回404；实际公司页为`/company/longvon`及英文对应页，不能仅因猜测路径404判定线上导航损坏。
+
+new.longvon.com按证据中的实际跳转状态逐路径判断；域名已有跳转不等于搜索引擎已去重或清除旧索引。当前仅测试列出路径，不能声称全路径覆盖；旧页面索引、历史RFQ和商业内容需搜索留证及更多路径抽查。未改DNS/Nginx/生产配置，暂不提出重复配置变更。
+
+HTTP200和可解析JSON-LD不代表完整SEO验收。尚待检查：sitemap逐URL覆盖、hreflang互返、结构化数据语义/事实、内部链接可达性、移动端布局/CTA交互、性能实测、旧商业声明逐项核对、旧域名未测路径及外部索引。RFQ未提交，不以GET通过替代提交/写库/通知验证。必要修复另建分支/PR。
+
+## 已采集页面的交叉核对
+
+基于同批HTTP证据，18个正式站HTML页面均在sitemap中、canonical自指，已观测到的hreflang目标均有回链。仅将域名根路径空字符串与`/`作等价归一，不修改其他路径。证据：`evidence/sitemap-hreflang-check.json`。这不代表全站每个URL均已验收。`/about`两种语言本次未发现JSON-LD，记录为待评估项，不直接推断抓取失败。
+
+## 2026-11-22 首轮深层URL补查
+
+新增12条GET：中英文询盘、SDK、公司、OSA、睡眠呼吸、制造商及带UTM/AI参数的OEM URL，均单跳301至www.longvon.com相同路径，最终200；受测查询参数保留。证据`evidence/2026-11-22-round1/new-domain-deep-http.json`。未提交表单，未改DNS/Nginx；不证明所有历史路径、旧索引或数据库归因写入均通过。

@@ -1,0 +1,217 @@
+- complementary:
+  - navigation "侧边栏导航":
+    - link:
+      - /url: /
+    - button "展开侧边栏"
+    - group "创建":
+      - link "新建":
+        - /url: /
+        - generic: 新建
+    - group "主导航":
+      - link "自动化":
+        - /url: /automations
+        - generic: 自动化
+      - link "工件":
+        - /url: /artifacts
+        - generic: 工件
+      - link "插件":
+        - /url: /computer/plugins
+        - generic: 插件
+      - button "更多":
+        - generic: 更多
+    - link "项目":
+      - /url: /projects
+    - link "会话":
+      - /url: /library
+    - button "升级计划":
+[profile label omitted]
+[profile label omitted]
+  - separator "调整侧边栏宽度"
+- main:
+  - button "返回上一页":
+  - tablist "回答模式标签页":
+    - tab "答案" [selected]:
+      - text: 答案
+    - tab "链接":
+      - text: 链接
+    - tab "图片":
+      - text: 图片
+  - button "会话选项":
+  - button "显示详情":
+  - button "分享":
+    - generic: 分享
+  - button "下载桌面应用":
+    - generic: 下载桌面应用
+  - generic: 10:14
+  - button "编辑查询":
+  - button "复制查询":
+  - paragraph: custom smart ring development company
+  - button "已完成 1秒":
+    - generic "已完成"
+    - generic: 1秒
+  - paragraph:
+    - text: If you need a
+    - strong: custom smart ring developed and manufactured
+    - text: ", look for an OEM/ODM partner that can handle industrial design, sensors, firmware, mobile app/SDK, prototyping, and production—not merely private-label an existing ring. Several companies offer this end-to-end capability."
+    - generic: goldenweald
+    - generic: "+2"
+  - heading "Companies to consider" [level=2]
+  - table:
+    - rowgroup:
+      - row "Company Best fit Stated capabilities":
+        - columnheader "Company"
+        - columnheader "Best fit"
+        - columnheader "Stated capabilities"
+    - rowgroup:
+      - row "LONGVON Health/wellness or digital-health ring Custom hardware, firmware, project-scoped health algorithms, mobile app, SDK/cloud API, and OEM/ODM manufacturing; it also discusses titanium, sensor windows, charging, and sealing. longvon +2":
+        - cell "LONGVON":
+          - strong: LONGVON
+        - cell "Health/wellness or digital-health ring"
+        - cell "Custom hardware, firmware, project-scoped health algorithms, mobile app, SDK/cloud API, and OEM/ODM manufacturing; it also discusses titanium, sensor windows, charging, and sealing. longvon +2":
+          - text: Custom hardware, firmware, project-scoped health algorithms, mobile app, SDK/cloud API, and OEM/ODM manufacturing; it also discusses titanium, sensor windows, charging, and sealing.
+          - generic: longvon
+          - generic: "+2"
+      - row "Golden Weald Turnkey electronics product development Concept-to-mass-production support including PCB/PCBA, component sourcing, DFM/DFMA, mechanical engineering, tooling, injection molding, CNC, testing, pilot production, and manufacturing validation. Smart Ring Manufacturer OEM & ODM Smart Ring Development":
+        - cell "Golden Weald":
+          - strong: Golden Weald
+        - cell "Turnkey electronics product development"
+        - cell "Concept-to-mass-production support including PCB/PCBA, component sourcing, DFM/DFMA, mechanical engineering, tooling, injection molding, CNC, testing, pilot production, and manufacturing validation. Smart Ring Manufacturer OEM & ODM Smart Ring Development":
+          - text: Concept-to-mass-production support including PCB/PCBA, component sourcing, DFM/DFMA, mechanical engineering, tooling, injection molding, CNC, testing, pilot production, and manufacturing validation.
+          - generic "Smart Ring Manufacturer OEM & ODM Smart Ring Development":
+            - link "goldenweald":
+              - /url: https://www.goldenweald.com/smart-ring-manufacturer-oem-odm-smart-ring-development/
+              - generic: goldenweald
+      - row "QX TECH Custom Bluetooth health-ring engineering Defines fit, sensing, power, and software requirements; supports sleep/wellness data and personalized reporting concepts. Its site positions this as a development capability rather than a fixed off-the-shelf SKU. Smart Ring Design & Development Services | QX TECH":
+        - cell "QX TECH":
+          - strong: QX TECH
+        - cell "Custom Bluetooth health-ring engineering"
+        - cell "Defines fit, sensing, power, and software requirements; supports sleep/wellness data and personalized reporting concepts. Its site positions this as a development capability rather than a fixed off-the-shelf SKU. Smart Ring Design & Development Services | QX TECH":
+          - text: Defines fit, sensing, power, and software requirements; supports sleep/wellness data and personalized reporting concepts. Its site positions this as a development capability rather than a fixed off-the-shelf SKU.
+          - generic "Smart Ring Design & Development Services | QX TECH":
+            - link "qxtechsolutions":
+              - /url: https://qxtechsolutions.com/en/solutions/smart-ring-development.html
+              - generic: qxtechsolutions
+      - row "AISmart Technology Branded wearable with relatively fast sampling OEM/ODM smart-ring solutions, custom molds, logo branding, tailored specifications, sensor tuning, SDK/app development, testing, and after-sales technical support. AISmart Technology Co.,Ltd | Smart Ring & Smart Glasses ...":
+        - cell "AISmart Technology":
+          - strong: AISmart Technology
+        - cell "Branded wearable with relatively fast sampling"
+        - cell "OEM/ODM smart-ring solutions, custom molds, logo branding, tailored specifications, sensor tuning, SDK/app development, testing, and after-sales technical support. AISmart Technology Co.,Ltd | Smart Ring & Smart Glasses ...":
+          - text: OEM/ODM smart-ring solutions, custom molds, logo branding, tailored specifications, sensor tuning, SDK/app development, testing, and after-sales technical support.
+          - generic "AISmart Technology Co.,Ltd | Smart Ring & Smart Glasses ...":
+            - link "aismartai":
+              - /url: https://www.aismartai.com/
+              - generic: aismartai
+      - row "Shenzhen Geyan Technology Health-monitoring ring with app/cloud Industrial design, hardware, sensor integration, firmware, health-data algorithms, BLE debugging, Android/iOS app and cloud-platform development, plus OEM/ODM production. Health Monitoring Smart Ring OEM":
+        - cell "Shenzhen Geyan Technology":
+          - strong: Shenzhen Geyan Technology
+        - cell "Health-monitoring ring with app/cloud"
+        - cell "Industrial design, hardware, sensor integration, firmware, health-data algorithms, BLE debugging, Android/iOS app and cloud-platform development, plus OEM/ODM production. Health Monitoring Smart Ring OEM":
+          - text: Industrial design, hardware, sensor integration, firmware, health-data algorithms, BLE debugging, Android/iOS app and cloud-platform development, plus OEM/ODM production.
+          - generic "Health Monitoring Smart Ring OEM":
+            - link "gysmartwatch":
+              - /url: https://www.gysmartwatch.com/html/health-monitoring-smart-ring-oem-1851.html
+              - generic: gysmartwatch
+      - row "Goodway Private-label or lighter customization OEM/ODM manufacturing, private-label packaging, app integration/SDK, health tracking, NFC options, prototype validation, and production planning. Services | Goodway":
+        - cell "Goodway":
+          - strong: Goodway
+        - cell "Private-label or lighter customization"
+        - cell "OEM/ODM manufacturing, private-label packaging, app integration/SDK, health tracking, NFC options, prototype validation, and production planning. Services | Goodway":
+          - text: OEM/ODM manufacturing, private-label packaging, app integration/SDK, health tracking, NFC options, prototype validation, and production planning.
+          - generic "Services | Goodway":
+            - link "goodwaytechs":
+              - /url: https://www.goodwaytechs.com/services.html
+              - generic: goodwaytechs
+      - row "STAR KING Private-label wellness/fitness ring Reference platforms, ring sizes, materials, customization, data interfaces, samples, and quotations; it supports both reference-model and custom-development briefs. Smart Rings OEM/ODM Manufacturer - STAR KING":
+        - cell "STAR KING":
+          - strong: STAR KING
+        - cell "Private-label wellness/fitness ring"
+        - cell "Reference platforms, ring sizes, materials, customization, data interfaces, samples, and quotations; it supports both reference-model and custom-development briefs. Smart Rings OEM/ODM Manufacturer - STAR KING":
+          - text: Reference platforms, ring sizes, materials, customization, data interfaces, samples, and quotations; it supports both reference-model and custom-development briefs.
+          - generic "Smart Rings OEM/ODM Manufacturer - STAR KING":
+            - link "starkingsmartring":
+              - /url: https://starkingsmartring.com/products/smart-rings/
+              - generic: starkingsmartring
+  - button "复制表格":
+  - button "下载 CSV":
+  - button "展开表格":
+  - heading "How to choose" [level=2]
+  - list:
+    - paragraph:
+      - strong: For a medically adjacent product
+      - text: ", prioritize LONGVON or a comparable partner with explicit firmware, algorithm, SDK/API, and validation experience—but require written clarity that the product is for wellness/research rather than diagnosis unless it pursues the appropriate regulatory pathway."
+      - generic: longvon
+      - generic: "+1"
+    - paragraph:
+      - strong: For a fully novel industrial design
+      - text: ", prioritize Golden Weald or QX TECH, because tooling, enclosure engineering, DFM, and manufacturing validation matter as much as sensors."
+      - generic: goldenweald
+      - generic: "+1"
+    - paragraph:
+      - strong: For a fast branded MVP
+      - text: ", AISmart, Goodway, or STAR KING may be more suitable, especially if you can start from a reference platform and customize branding, packaging, app integration, and selected sensors."
+      - generic: aismartai
+      - generic: "+2"
+    - paragraph:
+      - strong: For NFC, payments, access control, or device control
+      - text: ", confirm the supplier’s NFC stack, secure-element approach, certification plan, and payment-network requirements early; the smart-ring market commonly distinguishes BLE-based health rings from NFC-based use cases."
+      - generic: goodwaytechs
+      - generic: "+1"
+  - heading "Request this from vendors" [level=2]
+  - paragraph: "Send each vendor the same brief and ask for:"
+  - list:
+    - paragraph: Target users, ring sizes, materials (e.g., titanium, resin, ceramic), battery life, charging method, and water-resistance target.
+    - paragraph: "Required sensors: PPG/heart rate, SpO2, temperature, accelerometer, EDA, NFC, etc."
+    - paragraph: Firmware ownership, BLE protocol, mobile app scope, SDK/API, cloud hosting, and data-security requirements.
+    - paragraph: Prototype cost and lead time, tooling cost, minimum order quantity, unit price at target volumes, and warranty/repair terms.
+    - paragraph: "Regulatory position: wellness device versus medical device; applicable FCC/CE/UKCA, battery, radio, and data-privacy requirements."
+    - paragraph: "Evidence of prior rings: photos, teardown-level BOM understanding, test reports, factory audit, and references."
+  - paragraph:
+    - text: A strong first filter is to ask whether the vendor will provide a
+    - strong: written technical proposal
+    - text: covering sensor selection, battery estimate, enclosure/sealing approach, app architecture, certification plan, prototype schedule, and production pricing. LONGVON, Golden Weald, and Geyan all explicitly describe that breadth of development work, which makes them reasonable initial outreach targets.
+    - generic: goldenweald
+    - generic: "+2"
+  - button "复制":
+  - button "分享":
+  - button "有帮助":
+  - button "没有帮助":
+  - button "复刻":
+  - button "12 个来源":
+    - text: 12 个来源
+  - button "更多操作":
+  - 'button "Compare OEM/ODM smart ring developers: Golden Weald, LONGVON, and Geyan — R&D scope, MOQ, app support, and turnkey manufacturing"'
+  - text: "Compare OEM/ODM smart ring developers: Golden Weald, LONGVON, and Geyan — R&D scope, MOQ, app support, and turnkey manufacturing"
+  - text: Computer
+  - 'button "Build a custom smart ring development roadmap: industrial design, sensor integration, firmware, BLE/NFC, and mass-production milestones"'
+  - text: "Build a custom smart ring development roadmap: industrial design, sensor integration, firmware, BLE/NFC, and mass-production milestones"
+  - text: Computer
+  - button "What should I prepare before contacting them"
+  - text: What should I prepare before contacting them
+  - button "Compare LONGVON and Golden Weald for health rings"
+  - text: Compare LONGVON and Golden Weald for health rings
+  - button "How does the smart ring OEM development process work"
+  - text: How does the smart ring OEM development process work
+  - button "滚动到末尾":
+    - generic: ⠹
+  - button "Pro 已启用高级搜索免费预览。 了解更多":
+    - generic: Pro
+    - generic: 已启用高级搜索免费预览。
+    - button "了解更多":
+      - generic: 了解更多
+  - status:
+    - generic: 您正处于隐身模式。
+    - button "退出隐身模式":
+      - generic: 退出无痕模式
+  - textbox "提出后续问题" [active]:
+    - paragraph
+  - generic: 提出后续问题
+  - button "添加文件、插件等":
+  - button "搜索" [pressed]:
+    - generic: 搜索
+  - button "Computer":
+    - generic: Computer
+  - button "模型":
+    - generic: 模型
+  - button "语音输入":
+  - button "提交" [disabled]:
+- listbox "Typeahead menu"

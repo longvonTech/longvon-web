@@ -1,0 +1,228 @@
+- complementary:
+  - navigation "侧边栏导航":
+    - link:
+      - /url: /
+    - button "展开侧边栏"
+    - group "创建":
+      - link "新建":
+        - /url: /
+        - generic: 新建
+    - group "主导航":
+      - link "自动化":
+        - /url: /automations
+        - generic: 自动化
+      - link "工件":
+        - /url: /artifacts
+        - generic: 工件
+      - link "插件":
+        - /url: /computer/plugins
+        - generic: 插件
+      - button "更多":
+        - generic: 更多
+    - link "项目":
+      - /url: /projects
+    - link "会话":
+      - /url: /library
+    - button "升级计划":
+[profile label omitted]
+[profile label omitted]
+  - separator "调整侧边栏宽度"
+- main:
+  - button "返回上一页":
+  - tablist "回答模式标签页":
+    - tab "答案" [selected]:
+      - text: 答案
+    - tab "链接":
+      - text: 链接
+    - tab "图片":
+      - text: 图片
+  - button "会话选项":
+  - button "显示详情" [expanded]:
+  - button "分享":
+    - generic: 分享
+  - button "下载桌面应用":
+    - generic: 下载桌面应用
+  - generic: 10:20
+  - button "编辑查询":
+  - button "复制查询":
+  - paragraph: medical smart ring ODM manufacturer
+  - button "已完成":
+    - generic "已完成"
+  - paragraph:
+    - text: Several Shenzhen-based ODM manufacturers offer medical/health smart-ring development and production. The strongest candidates for a
+    - strong: medical-grade
+    - text: program are
+    - strong: J-Style (Joint Corp)
+    - text: ","
+    - strong: LONGVON
+    - text: ", and"
+    - strong: Xdun Medical
+    - text: ", each offering hardware, firmware, algorithms, app/SDK, and mass-production services."
+    - generic: jointcorp
+    - generic: "+2"
+  - heading "Leading ODM options" [level=2]
+  - table:
+    - rowgroup:
+      - row "Manufacturer Medical positioning Typical ODM scope Notable capabilities":
+        - columnheader "Manufacturer"
+        - columnheader "Medical positioning"
+        - columnheader "Typical ODM scope"
+        - columnheader "Notable capabilities"
+    - rowgroup:
+      - row "J-Style / Joint Corp Health, chronic-disease monitoring, insurance and hospital programs ID/MD, sensors, firmware, algorithms, app, cloud, manufacturing Full-stack OEM/ODM; JCRing platform; open API/SDK and white-label customization. jointcorp +2":
+        - cell "J-Style / Joint Corp":
+          - strong: J-Style / Joint Corp
+        - cell "Health, chronic-disease monitoring, insurance and hospital programs"
+        - cell "ID/MD, sensors, firmware, algorithms, app, cloud, manufacturing"
+        - cell "Full-stack OEM/ODM; JCRing platform; open API/SDK and white-label customization. jointcorp +2":
+          - text: Full-stack OEM/ODM; JCRing platform; open API/SDK and white-label customization.
+          - generic: jointcorp
+          - generic: "+2"
+      - row "LONGVON Healthcare and digital-health companies; sleep, respiratory, OSA-related monitoring Hardware, firmware, algorithms, mobile apps, SDK, cloud APIs, manufacturing Class 100,000 cleanroom; medical and consumer lines separated; ISO 13485-oriented quality controls and project-scoped reliability testing. longvon +2":
+        - cell "LONGVON":
+          - strong: LONGVON
+        - cell "Healthcare and digital-health companies; sleep, respiratory, OSA-related monitoring"
+        - cell "Hardware, firmware, algorithms, mobile apps, SDK, cloud APIs, manufacturing"
+        - cell "Class 100,000 cleanroom; medical and consumer lines separated; ISO 13485-oriented quality controls and project-scoped reliability testing. longvon +2":
+          - text: Class 100,000 cleanroom; medical and consumer lines separated; ISO 13485-oriented quality controls and project-scoped reliability testing.
+          - generic: longvon
+          - generic: "+2"
+      - row "Xdun Medical Medical wearables since 2010; smart rings are a flagship category Hardware design, firmware, algorithms, app provisioning, mass production PPG rings, ECG rings, multi-sensor rings; stated 50,000+ units/month capacity and CE/FCC/FDA 510(k) submission support. xdunmedical +1":
+        - cell "Xdun Medical":
+          - strong: Xdun Medical
+        - cell "Medical wearables since 2010; smart rings are a flagship category"
+        - cell "Hardware design, firmware, algorithms, app provisioning, mass production"
+        - cell "PPG rings, ECG rings, multi-sensor rings; stated 50,000+ units/month capacity and CE/FCC/FDA 510(k) submission support. xdunmedical +1":
+          - text: PPG rings, ECG rings, multi-sensor rings; stated 50,000+ units/month capacity and CE/FCC/FDA 510(k) submission support.
+          - generic: xdunmedical
+          - generic: "+1"
+      - row "Smareyetech Health-tech and premium wearable brands Industrial design, sensor configuration, firmware/app integration, production Titanium/ceramic biometric rings with dual PPG, skin temperature, BLE 5.3, and 5 ATM water resistance; explicitly supports customer regulatory filings rather than claiming to be the certificate holder. Smart Wearable Jewelry OEM/ODM Manufacturer | Shenzhen Smareyetech":
+        - cell "Smareyetech":
+          - strong: Smareyetech
+        - cell "Health-tech and premium wearable brands"
+        - cell "Industrial design, sensor configuration, firmware/app integration, production"
+        - cell "Titanium/ceramic biometric rings with dual PPG, skin temperature, BLE 5.3, and 5 ATM water resistance; explicitly supports customer regulatory filings rather than claiming to be the certificate holder. Smart Wearable Jewelry OEM/ODM Manufacturer | Shenzhen Smareyetech":
+          - text: Titanium/ceramic biometric rings with dual PPG, skin temperature, BLE 5.3, and 5 ATM water resistance; explicitly supports customer regulatory filings rather than claiming to be the certificate holder.
+          - generic "Smart Wearable Jewelry OEM/ODM Manufacturer | Shenzhen Smareyetech":
+            - link "smareyetech":
+              - /url: https://www.smareyetech.com/smart-wearable-jewelry/
+              - generic: smareyetech
+      - row "Goodway Consumer and health smart rings Hardware, ID design, software, app integration, private molds Custom sensors including HR, SpO2, GPS, and ECG; NFC payment options. Smart Ring Manufacturer | OEM & ODM Health Smart Ring ...":
+        - cell "Goodway":
+          - strong: Goodway
+        - cell "Consumer and health smart rings"
+        - cell "Hardware, ID design, software, app integration, private molds"
+        - cell "Custom sensors including HR, SpO2, GPS, and ECG; NFC payment options. Smart Ring Manufacturer | OEM & ODM Health Smart Ring ...":
+          - text: Custom sensors including HR, SpO2, GPS, and ECG; NFC payment options.
+          - generic "Smart Ring Manufacturer | OEM & ODM Health Smart Ring ...":
+            - link "goodwaytechs":
+              - /url: https://www.goodwaytechs.com/smart-rings.html
+              - generic: goodwaytechs
+  - heading "Best fit by project" [level=2]
+  - list:
+    - paragraph:
+      - strong: "Regulated medical device / clinical use:"
+      - text: Start with
+      - strong: LONGVON
+      - text: or
+      - strong: J-Style
+      - text: . LONGVON describes separated medical-grade production and ISO 13485-oriented controls; J-Style positions its platform around hospitals, insurers, chronic-disease monitoring, and digital-health programs.
+      - generic: jointcorp
+      - generic: "+2"
+    - paragraph:
+      - strong: "ECG, arrhythmia, or diagnostic-adjacent claims:"
+      - strong: Xdun Medical
+      - text: is worth an early RFQ because it explicitly lists ECG smart rings and FDA 510(k) submission support.
+      - generic "Smart Ring ODM Solutions - Xdun Medical Technology":
+        - link "xdunmedical":
+          - /url: https://xdunmedical.com/smart-ring-odm-solutions/
+          - generic: xdunmedical
+    - paragraph:
+      - strong: "Premium consumer wellness ring:"
+      - strong: Smareyetech
+      - text: may fit if titanium/ceramic aesthetics, PPG/SpO2/HRV, and waterproofing are central.
+      - generic "Smart Wearable Jewelry OEM/ODM Manufacturer | Shenzhen Smareyetech":
+        - link "smareyetech":
+          - /url: https://www.smareyetech.com/smart-wearable-jewelry/
+          - generic: smareyetech
+    - paragraph:
+      - strong: "Fast private-label launch:"
+      - strong: Goodway
+      - text: offers broader consumer wearable customization, though its materials emphasize “medical-grade” marketing rather than a detailed regulated-device pathway.
+      - generic "Smart Ring Manufacturer | OEM & ODM Health Smart Ring ...":
+        - link "goodwaytechs":
+          - /url: https://www.goodwaytechs.com/smart-rings.html
+          - generic: goodwaytechs
+  - heading "What to request in an RFQ" [level=2]
+  - paragraph: "Ask each supplier for:"
+  - list:
+    - paragraph: "Sensor BOM: PPG channels, ECG electrodes, skin temperature, accelerometer, SpO2 configuration, battery capacity, and charging method."
+    - paragraph: "Accuracy evidence: validation against reference devices, study protocol, sample size, and per-sensor performance data."
+    - paragraph: "Regulatory scope: whether they will act as legal manufacturer, support ISO 13485 documentation, and assist with FDA 510(k), CE/MDR, NMPA, or other market registrations."
+    - paragraph: "Software ownership: firmware source-code/licensing terms, SDK, cloud API, data residency, and app white-label rights."
+    - paragraph: "Production evidence: cleanroom class, QMS certificates, monthly capacity, yield/defect rate, reliability tests, and biocompatibility documentation."
+    - paragraph: "Commercial terms: NRE/tooling cost, MOQ, unit price at target volumes, lead time, IP ownership, and warranty."
+  - heading "Important distinction" [level=2]
+  - paragraph:
+    - text: “Medical smart ring” can mean either a
+    - strong: wellness ring with health sensors
+    - text: or a
+    - strong: regulated medical device
+    - text: . A supplier’s marketing claim of medical-grade sensors does not by itself establish regulatory clearance; confirm the intended indication, claims, classification, and which party will hold the regulatory authorization before signing development or supply agreements. Smareyetech, for example, states that certifications are assistance services for the customer’s own registration process.
+    - generic "Smart Wearable Jewelry OEM/ODM Manufacturer | Shenzhen Smareyetech":
+      - link "smareyetech":
+        - /url: https://www.smareyetech.com/smart-wearable-jewelry/
+        - generic: smareyetech
+  - paragraph:
+    - text: For a serious medical-device program, I would shortlist
+    - strong: LONGVON, J-Style, and Xdun Medical
+    - text: ", then request side-by-side technical, regulatory, and cost proposals before selecting a development partner."
+    - generic: jointcorp
+    - generic: "+2"
+  - button "复制":
+  - button "分享":
+  - button "有帮助":
+  - button "没有帮助":
+  - button "复刻":
+  - button "11 个来源":
+    - text: 11 个来源
+  - button "更多操作":
+  - button "Compare top medical smart ring OEM/ODM manufacturers — J-Style vs Longvon vs Xdun vs Smareyetech on sensors, materials, and SDKs"
+  - text: Compare top medical smart ring OEM/ODM manufacturers — J-Style vs Longvon vs Xdun vs Smareyetech on sensors, materials, and SDKs
+  - text: Computer
+  - 'button "Smart ring OEM/ODM sourcing checklist: 12 technical specs to require from manufacturers for sensors, titanium shells, and app APIs"'
+  - text: "Smart ring OEM/ODM sourcing checklist: 12 technical specs to require from manufacturers for sensors, titanium shells, and app APIs"
+  - text: Computer
+  - button "Compare J-Style and LONGVON capabilities"
+  - text: Compare J-Style and LONGVON capabilities
+  - button "What certifications do these ODMs support"
+  - text: What certifications do these ODMs support
+  - button "How to verify medical-grade smart ring sensors"
+  - text: How to verify medical-grade smart ring sensors
+  - button "滚动到末尾":
+    - generic: ⠴
+  - button "Pro 已启用高级搜索免费预览。 了解更多":
+    - generic: Pro
+    - generic: 已启用高级搜索免费预览。
+    - button "了解更多":
+      - generic: 了解更多
+  - status:
+    - generic: 您正处于隐身模式。
+    - button "退出隐身模式":
+      - generic: 退出无痕模式
+  - textbox "提出后续问题":
+    - paragraph
+  - generic: 提出后续问题
+  - button "添加文件、插件等":
+  - button "搜索" [pressed]:
+    - generic: 搜索
+  - button "Computer":
+    - generic: Computer
+  - button "模型":
+    - generic: 模型
+  - button "语音输入":
+  - button "提交" [disabled]:
+- dialog:
+  - button "来源" [expanded] [active]:
+    - generic: 来源
+  - generic: 搜索引用的来源将显示在此处。

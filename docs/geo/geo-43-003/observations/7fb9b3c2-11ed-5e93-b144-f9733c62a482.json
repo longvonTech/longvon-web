@@ -1,0 +1,34 @@
+{
+  "record_id": "7fb9b3c2-11ed-5e93-b144-f9733c62a482",
+  "query_id": "Q08",
+  "query": "smart ring raw PPG data for research",
+  "platform": "Perplexity",
+  "mode": "incognito Search / free-preview label",
+  "observed_at": "2026-11-22T02:18:00.717+00:00",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "Chrome signed-in incognito session, fresh query per conversation; UI zh, query/answer en; model UNKNOWN",
+  "availability": "COMPLETED",
+  "longvon_present": false,
+  "organic_rank": null,
+  "ai_body_recommended": false,
+  "source_cited": false,
+  "cited_urls": [],
+  "competitors": [],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-22-round1/perplexity-Q08-meta.json",
+      "sha256": "f44b6d3ec42ee0efcef88741f0162fda704ab3e20c6346a1c0c67a22c60c1088"
+    },
+    {
+      "path": "evidence/2026-11-22-round1/perplexity-Q08.jpg",
+      "sha256": "8522c06841e3a0ed2b23a491c21fe9bfc3352a6739e2315e7fcd332fe0453bff"
+    },
+    {
+      "path": "evidence/2026-11-22-round1/perplexity-Q08.txt",
+      "sha256": "6526693b3b3dd7f8e81f217ad2bbd99332a67decbc29511c8b1888d8d729223d"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "First observed round; no prior comparable record. Country UNKNOWN; no growth comparison. Incognito Search; Pro free preview label shown. Exact targets for generic domain-only citation labels UNKNOWN; source drawer observed empty."
+}

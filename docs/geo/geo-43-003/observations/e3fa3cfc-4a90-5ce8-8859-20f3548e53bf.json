@@ -1,0 +1,49 @@
+{
+  "record_id": "e3fa3cfc-4a90-5ce8-8859-20f3548e53bf",
+  "query_id": "Q02",
+  "query": "smart ring manufacturer China",
+  "platform": "Google",
+  "mode": "All / first result page with auto AI Overview",
+  "observed_at": "2026-11-22T02:11:24.716+00:00",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "Chrome existing signed-in profile; hl=en; personalized results; actual country unverified",
+  "availability": "COMPLETED",
+  "longvon_present": false,
+  "organic_rank": null,
+  "ai_body_recommended": false,
+  "source_cited": false,
+  "cited_urls": [],
+  "competitors": [
+    {
+      "name": "jointcorp.com",
+      "url": "https://www.jointcorp.com/product-cat/smart-rings/",
+      "position": "first observed relevant source-link sequence 1; not a verified recommendation rank",
+      "evidence_quote": "- link \"www.jointcorp.com\":"
+    },
+    {
+      "name": "eiot.com",
+      "url": "https://www.eiot.com/",
+      "position": "first observed relevant source-link sequence 2; not a verified recommendation rank",
+      "evidence_quote": "- link:"
+    },
+    {
+      "name": "goldenweald.com",
+      "url": "https://www.goldenweald.com/service/ai-smart-ring-oem-odm-manufacturer-ai-recording-translation-wearable-devices/",
+      "position": "first observed relevant source-link sequence 3; not a verified recommendation rank",
+      "evidence_quote": "- link:"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-22-round1/google-Q02.jpg",
+      "sha256": "12db96ce7de10daea44d9d63d568734084836c50e92e72e12d4fdd4eb5ea424c"
+    },
+    {
+      "path": "evidence/2026-11-22-round1/google-Q02.json",
+      "sha256": "3211fc3ea38115200b6d94063924f4eafc0b26ab67af763aa7d6fb0126152b57"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "First observed round; no prior comparable record. Country UNKNOWN; no growth comparison. Scope: first Google results page, signed in/personalized. Organic links and AI citation are separate; pending AI panel UNKNOWN."
+}

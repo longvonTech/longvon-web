@@ -1,0 +1,240 @@
+- complementary:
+  - navigation "侧边栏导航":
+    - link:
+      - /url: /
+    - button "展开侧边栏"
+    - group "创建":
+      - link "新建":
+        - /url: /
+        - generic: 新建
+    - group "主导航":
+      - link "自动化":
+        - /url: /automations
+        - generic: 自动化
+      - link "工件":
+        - /url: /artifacts
+        - generic: 工件
+      - link "插件":
+        - /url: /computer/plugins
+        - generic: 插件
+      - button "更多":
+        - generic: 更多
+    - link "项目":
+      - /url: /projects
+    - link "会话":
+      - /url: /library
+    - button "升级计划":
+[profile label omitted]
+[profile label omitted]
+  - separator "调整侧边栏宽度"
+- main:
+  - button "返回上一页":
+  - tablist "回答模式标签页":
+    - tab "答案" [selected]:
+      - text: 答案
+    - tab "链接":
+      - text: 链接
+    - tab "图片":
+      - text: 图片
+  - button "会话选项":
+  - button "显示详情":
+  - button "分享":
+    - generic: 分享
+  - button "下载桌面应用":
+    - generic: 下载桌面应用
+  - generic: 10:19
+  - button "编辑查询":
+  - button "复制查询":
+  - paragraph: digital health smart ring integration SDK
+  - button "已完成 2秒":
+    - generic "已完成"
+    - generic: 2秒
+  - paragraph:
+    - text: A
+    - strong: digital-health smart-ring integration SDK
+    - text: is the software layer that lets your app ingest ring data—sleep, HRV, heart rate, temperature, activity, and recovery—either directly from the device or through the manufacturer’s cloud API. The right approach depends on whether you are building around an existing consumer ring or bringing your own ring hardware to market.
+    - generic: appinventiv
+    - generic: "+1"
+  - heading "Integration paths" [level=2]
+  - table:
+    - rowgroup:
+      - row "Path What you get Best for Main tradeoff":
+        - columnheader "Path"
+        - columnheader "What you get"
+        - columnheader "Best for"
+        - columnheader "Main tradeoff"
+    - rowgroup:
+      - row "Manufacturer cloud API Processed metrics, OAuth user authorization, webhooks where offered Apps built around Oura, Ultrahuman, Samsung Galaxy Ring, etc. Less raw-sensor control; dependent on vendor approval and data coverage":
+        - cell "Manufacturer cloud API"
+        - cell "Processed metrics, OAuth user authorization, webhooks where offered"
+        - cell "Apps built around Oura, Ultrahuman, Samsung Galaxy Ring, etc."
+        - cell "Less raw-sensor control; dependent on vendor approval and data coverage"
+      - row "Apple HealthKit / Health Connect Standardized health records synced by the ring’s companion app Broad multi-device support with one integration May receive only the data types the ring app exports":
+        - cell "Apple HealthKit / Health Connect"
+        - cell "Standardized health records synced by the ring’s companion app"
+        - cell "Broad multi-device support with one integration"
+        - cell "May receive only the data types the ring app exports"
+      - row "Vendor mobile SDK / BLE Pairing, device control, and potentially raw or real-time sensor streams White-label products, clinical protocols, custom hardware More engineering, certification, and device-security work":
+        - cell "Vendor mobile SDK / BLE"
+        - cell "Pairing, device control, and potentially raw or real-time sensor streams"
+        - cell "White-label products, clinical protocols, custom hardware"
+        - cell "More engineering, certification, and device-security work"
+      - row "Aggregator SDK/API One integration layer across many wearables and health sources Digital-health platforms, research, care management Additional vendor dependency and data-normalization considerations":
+        - cell "Aggregator SDK/API"
+        - cell "One integration layer across many wearables and health sources"
+        - cell "Digital-health platforms, research, care management"
+        - cell "Additional vendor dependency and data-normalization considerations"
+  - paragraph:
+    - text: A cloud API generally returns processed summaries after the vendor app syncs, whereas an SDK can communicate with the ring over Bluetooth and may expose device control or raw sensor data.
+    - 'generic "Smart Ring App Development: SDKs, Compliance, Cost and Process"':
+      - link "appinventiv":
+        - /url: https://appinventiv.com/blog/smart-ring-app-development/
+        - generic: appinventiv
+  - heading "Major ring options" [level=2]
+  - list:
+    - paragraph:
+      - strong: "Oura:"
+      - text: Use Oura Cloud API v2 with OAuth 2.0 and webhooks for sleep, readiness, activity, stress, HRV, temperature trends, and related metrics; Oura also writes selected data to Apple Health and Health Connect.
+      - generic: sahha
+      - generic: "+1"
+    - paragraph:
+      - strong: "Ultrahuman:"
+      - text: Offers a Partner API (UltraSignal) for approved partners, using OAuth, with metrics including sleep, HRV, heart rate, and skin temperature; it also supports Apple Health export.
+      - generic: sahha
+      - generic: "+1"
+    - paragraph:
+      - strong: "Samsung Galaxy Ring:"
+      - text: Data flows into Samsung Health; Android products can read permitted data through the Samsung Health Data SDK, while Health Connect can provide a broader Android integration route.
+      - generic: sahha
+      - generic: "+1"
+    - paragraph:
+      - strong: "RingConn:"
+      - text: The practical route is commonly Apple Health and Health Connect; public developer API availability appears limited or evolving, so verify current partner-program terms before committing.
+      - generic: sahha
+      - generic: "+1"
+    - paragraph:
+      - strong: "White-label / OEM rings:"
+      - text: Vendors such as J-STYLE provide iOS, Android, Flutter, and web SDKs plus cloud APIs, device management, real-time biometric streaming, and health-report retrieval for companies building their own ring-based product.
+      - generic: jointcorp
+      - generic: "+2"
+  - heading "Recommended architecture" [level=2]
+  - paragraph:
+    - text: For a consumer digital-health app, use a
+    - strong: vendor API first, with HealthKit/Health Connect as a fallback
+    - text: ":"
+  - list:
+    - paragraph:
+      - strong: "User connects account:"
+      - text: Implement OAuth 2.0 with PKCE where the vendor supports it; obtain explicit, scoped consent for health-data access. Oura’s API uses OAuth 2.0, and Ultrahuman’s partner integration is OAuth-based.
+      - generic: sahha
+      - generic: "+1"
+    - paragraph:
+      - strong: "Sync data:"
+      - text: Poll supported endpoints or consume webhooks; store timestamps, source device, metric units, and data-version metadata.
+    - paragraph:
+      - strong: "Normalize metrics:"
+      - text: Map vendor-specific fields into an internal schema—for example, sleep stages, resting HR, HRV, skin-temperature deviation, SpO2 where available, activity, and readiness/recovery scores.
+    - paragraph:
+      - strong: "Handle gaps:"
+      - text: Rings differ in sensor availability, sampling frequency, and whether scores are proprietary. Do not treat a vendor “readiness” or “stress” score as a clinical diagnostic measure.
+    - paragraph:
+      - strong: "Present insights:"
+      - text: Separate raw measurements from derived scores, show data provenance, and make it clear when a metric is unavailable or stale.
+  - paragraph:
+    - text: Oura’s documented endpoints include daily sleep, readiness, activity, heart-rate series, and detailed sleep data; these are useful examples of the metric granularity a cloud integration can provide.
+    - generic "mcp-for-colmi-smartring/docs/smart_ring_industry_comparison ...":
+      - link "github":
+        - /url: https://github.com/orviwan/mcp-for-colmi-smartring/blob/master/docs/smart_ring_industry_comparison.md
+        - generic: github
+  - heading "SDK versus API" [level=2]
+  - paragraph:
+    - text: Choose an
+    - strong: SDK
+    - text: when you need device pairing, firmware/configuration control, live streaming, or custom biometric workflows. Choose an
+    - strong: API
+    - text: when your product can rely on the ring owner’s companion app for syncing and you mainly need longitudinal, processed health metrics.
+    - 'generic "Smart Ring App Development: SDKs, Compliance, Cost and Process"':
+      - link "appinventiv":
+        - /url: https://appinventiv.com/blog/smart-ring-app-development/
+        - generic: appinventiv
+  - paragraph:
+    - text: For example, a chronic-care app that displays nightly sleep and HRV trends can usually use Oura’s cloud API. A remote-monitoring program that needs real-time heart-rate streams, custom alert thresholds, and its own branded hardware is more likely to need an OEM SDK and cloud platform.
+    - generic: jointcorp
+    - generic: "+1"
+  - heading "Compliance essentials" [level=2]
+  - list:
+    - paragraph: Obtain separate, informed consent for health-data collection, sharing, and secondary research use.
+    - paragraph: Apply least-privilege OAuth scopes and encrypt data in transit and at rest.
+    - paragraph: Maintain audit trails, retention/deletion controls, and a clear data-processing agreement with the ring vendor or aggregator.
+    - paragraph:
+      - text: If the product diagnoses, treats, or makes clinical decisions, assess FDA/regulatory requirements early; HIPAA-aligned architecture is particularly relevant for U.S. healthcare and insurance deployments.
+      - generic: appinventiv
+      - generic: "+1"
+    - paragraph: Avoid presenting consumer wellness scores as diagnoses; validate any proprietary algorithm or clinical claim independently.
+  - heading "Practical starting stack" [level=2]
+  - list:
+    - paragraph:
+      - strong: "iOS:"
+      - text: HealthKit + Oura/Ultrahuman cloud API.
+    - paragraph:
+      - strong: "Android:"
+      - text: Health Connect + Samsung Health Data SDK where applicable, plus vendor cloud API.
+    - paragraph:
+      - strong: "Cross-platform:"
+      - text: Flutter or React Native UI, native HealthKit/Health Connect modules, and a backend integration service.
+    - paragraph:
+      - strong: "Multi-vendor platform:"
+      - text: Consider an aggregator such as Thryve, which provides a unified SDK/API across more than 500 wearable and health-data sources and normalizes data for digital-health and research use.
+      - img "可信域名":
+      - generic: thryve
+      - generic: "+1"
+  - paragraph:
+    - text: If you tell me whether you mean
+    - strong: integrating an existing ring
+    - text: (Oura, Ultrahuman, Galaxy Ring, RingConn) or
+    - strong: building your own smart-ring product
+    - text: ", plus your target platforms and whether you need raw real-time data, I can recommend a specific SDK/API architecture and data model."
+  - button "复制":
+  - button "分享":
+  - button "有帮助":
+  - button "没有帮助":
+  - button "复刻":
+  - button "15 个来源":
+    - text: 15 个来源
+  - button "更多操作":
+  - 'button "Oura API v2 vs Ultrahuman vs Samsung Health SDK: comparison of auth, endpoints, rate limits, and approval workflows"'
+  - text: "Oura API v2 vs Ultrahuman vs Samsung Health SDK: comparison of auth, endpoints, rate limits, and approval workflows"
+  - text: Computer
+  - 'button "Unified health data SDKs vs direct ring APIs: integration guide for Oura, Ultrahuman, RingConn, and J-STYLE"'
+  - text: "Unified health data SDKs vs direct ring APIs: integration guide for Oura, Ultrahuman, RingConn, and J-STYLE"
+  - text: Computer
+  - button "Compare Oura API and third-party aggregators like Thryve"
+  - text: Compare Oura API and third-party aggregators like Thryve
+  - button "How to handle Bluetooth LE pairing in custom ring SDKs"
+  - text: How to handle Bluetooth LE pairing in custom ring SDKs
+  - button "What data is available through Samsung Health Data SDK"
+  - text: What data is available through Samsung Health Data SDK
+  - button "滚动到末尾":
+    - generic: ⠇
+  - button "Pro 已启用高级搜索免费预览。 了解更多":
+    - generic: Pro
+    - generic: 已启用高级搜索免费预览。
+    - button "了解更多":
+      - generic: 了解更多
+  - status:
+    - generic: 您正处于隐身模式。
+    - button "退出隐身模式":
+      - generic: 退出无痕模式
+  - textbox "提出后续问题" [active]:
+    - paragraph
+  - generic: 提出后续问题
+  - button "添加文件、插件等":
+  - button "搜索" [pressed]:
+    - generic: 搜索
+  - button "Computer":
+    - generic: Computer
+  - button "模型":
+    - generic: 模型
+  - button "语音输入":
+  - button "提交" [disabled]:
+- listbox "Typeahead menu"

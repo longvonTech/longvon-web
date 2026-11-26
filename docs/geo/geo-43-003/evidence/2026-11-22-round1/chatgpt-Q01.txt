@@ -1,0 +1,273 @@
+- banner:
+  - button "打开边栏":
+  - button "登录"
+- main:
+  - region "对话":
+    - list "对话":
+      - heading "你说：" [level=4]
+      - button "smart ring OEM ODM manufacturer":
+        - paragraph: smart ring OEM ODM manufacturer
+      - heading "ChatGPT 说：" [level=4]
+      - region "DIL content":
+        - paragraph:
+          - text: If you're looking for a
+          - generic: smart ring OEM/ODM manufacturer
+          - text: to develop your own branded smart ring, I recommend focusing on manufacturers in China, particularly Shenzhen, Dongguan, and the Pearl River Delta.
+        - paragraph: "The best partners should offer more than assembly: they should provide hardware development, biometric sensor integration, firmware, mobile app development, tooling, and mass production."
+        - 'heading "Smart ring OEM/ODM manufacturers: what to look for" [level=2]'
+        - img "FOSMET RINGX RX10 – FOSMET (フォスメット) Japan公式サイト"
+        - button "Open FOSMET RINGX RX10 – FOSMET (フォスメット) Japan公式サイト"
+        - img "Senbiosys' Jewelry-Like Smart Ring Aims to Make Health Monitoring More Discreet and Affordable - Electronics-Lab"
+        - button "Open Senbiosys' Jewelry-Like Smart Ring Aims to Make Health Monitoring More Discreet and Affordable - Electronics-Lab"
+        - 'img "Smart Ring OEM Vs ODM: the Best Choice for Scale & Retention"'
+        - 'button "Open Smart Ring OEM Vs ODM: the Best Choice for Scale & Retention"'
+        - generic: "10"
+        - heading "Potential manufacturers to contact" [level=2]
+        - paragraph: Here are six companies worth shortlisting. Their capabilities below are based primarily on their published company information, not independent factory audits.
+        - 'img "Smart Ring Sensors Explained: PPG, Accelerometer, Temperature | MATEYOU Health Insights"'
+        - 'button "Open Smart Ring Sensors Explained: PPG, Accelerometer, Temperature | MATEYOU Health Insights"'
+        - paragraph:
+          - text: "1."
+          - button "LONGVON Technology"
+          - generic: LONGVON Technology
+        - generic: Full-stack development
+        - list:
+          - paragraph: Hardware, firmware, algorithms, app, SDK and cloud APIs.
+          - paragraph: Suitable for customized health-monitoring products.
+        - paragraph:
+          - text: "Website:"
+          - button "LONGVON official website":
+            - link "LONGVON official website":
+              - /url: https://www.longvon.com/en/company/longvon?utm_source=chatgpt.com
+              - generic: LONGVON official
+              - generic: website
+        - img "Dongguan Huikang Intelligent Technology Co., Ltd. TK20"
+        - button "Open Dongguan Huikang Intelligent Technology Co., Ltd. TK20"
+        - paragraph:
+          - text: "2."
+          - button "Shenzhen Sww Industrial Development"
+          - generic: Shenzhen Sww Industrial Development
+          - text: (Smart Wear Works)
+        - generic: Private label and OEM
+        - list:
+          - paragraph: TK20 smart ring platform.
+          - paragraph: White-label app and hardware customization.
+          - paragraph: Publishes approximately 30,000 units/month capacity.
+        - paragraph:
+          - text: "Website:"
+          - button "Smart Wear Works":
+            - link "Smart Wear Works":
+              - /url: https://www.smartwearworks.com/?utm_source=chatgpt.com
+              - generic: Smart Wear
+              - generic: Works
+        - img "New R04 Smart Ring with Heart Rate, Blood Oxygen, Sleep Monitoring, Remote Control, Camera, Step Counting, Calories, Exercise Ring | Daraz.com.np"
+        - button "Open New R04 Smart Ring with Heart Rate, Blood Oxygen, Sleep Monitoring, Remote Control, Camera, Step Counting, Calories, Exercise Ring | Daraz.com.np"
+        - paragraph:
+          - text: "3."
+          - button "Start Technology Shenzhen"
+          - generic: Start Technology Shenzhen
+        - list:
+          - paragraph: Smart ring and smartwatch manufacturing.
+          - paragraph: Claims substantial R&D and assembly capacity.
+          - paragraph: Listed on Made-in-China.
+        - paragraph:
+          - text: "Website:"
+          - button "Manufacturer profile":
+            - link "Manufacturer profile":
+              - /url: https://www.made-in-china.com/showroom/f0fb48a120fe1348/?utm_source=chatgpt.com
+              - generic: Manufacturer
+              - generic: profile
+        - button "Open image"
+        - paragraph:
+          - text: "4."
+          - button "STAR KING / Pineeon"
+          - generic: STAR KING / Pineeon
+        - list:
+          - paragraph: Smart ring and wearable development.
+          - paragraph: Claims vertically integrated manufacturing.
+          - paragraph: Suitable for brand and distributor projects.
+        - paragraph:
+          - text: "Website:"
+          - button "STAR KING":
+            - link "STAR KING":
+              - /url: https://starkingsmartring.com/?utm_source=chatgpt.com
+              - generic: STAR
+              - generic: KING
+        - img "Health Monitor Android Compatibility Magnetic Sleep Heart Rate Exercise Tracking Smart Ring - Smart Ring and Health Ring price"
+        - button "Open Health Monitor Android Compatibility Magnetic Sleep Heart Rate Exercise Tracking Smart Ring - Smart Ring and Health Ring price"
+        - paragraph:
+          - text: "5."
+          - button "Shenzhen Geyan Technology"
+          - generic: Shenzhen Geyan Technology
+        - list:
+          - paragraph: Smart wearable R&D and manufacturing.
+          - paragraph: OEM/ODM smart ring development.
+        - paragraph:
+          - text: "Website:"
+          - button "Geyan OEM information":
+            - link "Geyan OEM information":
+              - /url: https://www.gysmartwatch.com/html/smart-ring-health-monitoring-oem-1853.html?utm_source=chatgpt.com
+              - generic: Geyan OEM
+              - generic: information
+        - img "PCB & PCBA Success Stroies _ Beton Technology"
+        - button "Open PCB & PCBA Success Stroies _ Beton Technology"
+        - paragraph:
+          - text: "6."
+          - button "Shenzhen Golden Weald Electronic"
+          - generic: Shenzhen Golden Weald Electronic
+        - list:
+          - paragraph: PCB assembly and electronics manufacturing.
+          - paragraph: Smart ring PCBA and OEM/ODM services.
+        - paragraph:
+          - text: "Website:"
+          - button "Golden Weald":
+            - link "Golden Weald":
+              - /url: https://www.goldenweald.com/?utm_source=chatgpt.com
+              - generic: Golden
+              - generic: Weald
+        - heading "What to check before choosing a factory" [level=2]
+        - table:
+          - rowgroup:
+            - row "Requirement What to request":
+              - columnheader "Requirement":
+                - paragraph: Requirement
+              - columnheader "What to request":
+                - paragraph: What to request
+            - row "MOQ Minimum order quantity":
+              - cell "MOQ":
+                - paragraph: MOQ
+              - cell "Minimum order quantity":
+                - paragraph: Minimum order quantity
+            - row "Pricing 500 / 1,000 / 5,000 units":
+              - cell "Pricing":
+                - paragraph: Pricing
+              - cell "500 / 1,000 / 5,000 units":
+                - paragraph: 500 / 1,000 / 5,000 units
+            - row "Sensors PPG, HR, HRV, SpO2, temperature":
+              - cell "Sensors":
+                - paragraph: Sensors
+              - cell "PPG, HR, HRV, SpO2, temperature":
+                - paragraph: PPG, HR, HRV, SpO2, temperature
+            - row "Connectivity Bluetooth BLE":
+              - cell "Connectivity":
+                - paragraph: Connectivity
+              - cell "Bluetooth BLE":
+                - paragraph: Bluetooth BLE
+            - row "Battery Capacity and operating time":
+              - cell "Battery":
+                - paragraph: Battery
+              - cell "Capacity and operating time":
+                - paragraph: Capacity and operating time
+            - row "Waterproofing IP68 or 5ATM test reports":
+              - cell "Waterproofing":
+                - paragraph: Waterproofing
+              - cell "IP68 or 5ATM test reports":
+                - paragraph: IP68 or 5ATM test reports
+            - row "Software iOS/Android app and SDK":
+              - cell "Software":
+                - paragraph: Software
+              - cell "iOS/Android app and SDK":
+                - paragraph: iOS/Android app and SDK
+            - row "Customization Logo, housing, materials, packaging":
+              - cell "Customization":
+                - paragraph: Customization
+              - cell "Logo, housing, materials, packaging":
+                - paragraph: Logo, housing, materials, packaging
+            - row "Ownership Firmware, app and hardware IP rights":
+              - cell "Ownership":
+                - paragraph: Ownership
+              - cell "Firmware, app and hardware IP rights":
+                - paragraph: Firmware, app and hardware IP rights
+            - row "Certifications FCC, CE, RoHS and applicable testing":
+              - cell "Certifications":
+                - paragraph: Certifications
+              - cell "FCC, CE, RoHS and applicable testing":
+                - paragraph: FCC, CE, RoHS and applicable testing
+        - heading "Let me narrow down the best manufacturers" [level=2]
+        - paragraph: I can help identify factories that are closer to your actual product requirements rather than just suppliers selling existing smart rings.
+        - paragraph:
+          - generic: 1. What type of manufacturing do you need?
+        - radiogroup "Options":
+          - radio "Existing model with my logo (OEM)"
+          - text: Existing model with my logo (OEM)
+          - radio "Fully customized smart ring (ODM)" [checked]
+          - text: Fully customized smart ring (ODM)
+          - radio "Brand-new smart ring developed from scratch"
+          - text: Brand-new smart ring developed from scratch
+        - paragraph:
+          - generic: 2. Which features do you need?
+        - paragraph: Select all that apply.
+        - checkbox "Heart rate / HRV" [checked]
+        - generic: Heart rate / HRV
+        - checkbox "Sleep tracking" [checked]
+        - generic: Sleep tracking
+        - checkbox "Blood oxygen (SpO2)" [checked]
+        - generic: Blood oxygen (SpO2)
+        - checkbox "Body temperature"
+        - generic: Body temperature
+        - checkbox "Activity / steps"
+        - generic: Activity / steps
+        - checkbox "ECG"
+        - generic: ECG
+        - checkbox "Women’s health tracking"
+        - generic: Women’s health tracking
+        - paragraph:
+          - generic: 3. Expected first order quantity
+        - radiogroup "Options":
+          - radio "100–500 units"
+          - text: 100–500 units
+          - radio "1,000–5,000 units" [checked]
+          - text: 1,000–5,000 units
+          - radio "5,000–10,000 units"
+          - text: 5,000–10,000 units
+          - radio "10,000+ units"
+          - text: 10,000+ units
+        - paragraph:
+          - generic: 4. Target factory price per ring
+        - radiogroup "Options":
+          - radio "Under US$10"
+          - text: Under US$10
+          - radio "US$10–20" [checked]
+          - text: US$10–20
+          - radio "US$20–35"
+          - text: US$20–35
+          - radio "US$35–50"
+          - text: US$35–50
+          - radio "Flexible"
+          - text: Flexible
+        - paragraph:
+          - generic: 5. Mobile app requirements
+        - radiogroup "Options":
+          - radio "Factory existing app"
+          - text: Factory existing app
+          - radio "Custom branded iOS + Android app" [checked]
+          - text: Custom branded iOS + Android app
+          - radio "Full custom app, cloud platform and API"
+          - text: Full custom app, cloud platform and API
+        - button "Find matching OEM/ODM factories":
+          - generic: Find matching OEM/ODM factories
+        - paragraph: I can then prepare a targeted manufacturer shortlist with factory websites, sales contacts, estimated MOQs, and quotation requirements.
+      - status
+      - group "回复操作":
+        - button "复制回复":
+        - status
+        - button "回复优秀":
+        - button "回复不佳":
+        - status
+        - button "分享":
+      - paragraph: 登录即可获得更个性化的工作、项目和职业目标方面的帮助。
+      - button "登录":
+        - generic: 登录
+      - button "免费注册":
+        - generic: 免费注册
+    - paragraph:
+      - generic: ChatGPT 是 AI，可能会犯错。
+- contentinfo:
+  - generic: 与 ChatGPT 聊天
+  - textbox "与 ChatGPT 聊天" [active]:
+    - /placeholder: 询问 ChatGPT
+  - button "添加文件等":
+  - button "开始听写":
+  - button "发送消息" [disabled]:
+- alert
+- status

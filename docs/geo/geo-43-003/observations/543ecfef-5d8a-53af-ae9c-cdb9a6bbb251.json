@@ -1,0 +1,61 @@
+{
+  "record_id": "543ecfef-5d8a-53af-ae9c-cdb9a6bbb251",
+  "query_id": "Q04",
+  "query": "custom smart ring development company",
+  "platform": "ChatGPT",
+  "mode": "logged-out default answer (web-search invocation UNKNOWN)",
+  "observed_at": "2026-11-22T02:15:06.533+00:00",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "in-app browser logged out, new conversation per query; UI zh, query/answer en; model UNKNOWN",
+  "availability": "COMPLETED",
+  "longvon_present": true,
+  "organic_rank": null,
+  "ai_body_recommended": true,
+  "source_cited": true,
+  "cited_urls": [
+    "https://www.longvon.com/en/smart-ring-manufacturer?utm_source=chatgpt.com"
+  ],
+  "competitors": [
+    {
+      "name": "bonlala.com",
+      "url": "https://bonlala.com/?utm_source=chatgpt.com",
+      "position": "first observed relevant source-link sequence 1; not a verified recommendation rank",
+      "evidence_quote": "- link \"Company website\":"
+    },
+    {
+      "name": "comiring.com",
+      "url": "https://comiring.com/customized-service/?utm_source=chatgpt.com",
+      "position": "first observed relevant source-link sequence 2; not a verified recommendation rank",
+      "evidence_quote": "- link \"Company website\":"
+    },
+    {
+      "name": "idotring.com",
+      "url": "https://idotring.com/en/?utm_source=chatgpt.com",
+      "position": "first observed relevant source-link sequence 3; not a verified recommendation rank",
+      "evidence_quote": "- link \"Company website\":"
+    },
+    {
+      "name": "jointcorp.com",
+      "url": "https://www.jointcorp.com/?utm_source=chatgpt.com",
+      "position": "first observed relevant source-link sequence 4; not a verified recommendation rank",
+      "evidence_quote": "- link \"Company website\":"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-22-round1/chatgpt-Q04-meta.json",
+      "sha256": "ddc037e051f9fe3a6626309ec0958f3b546a1564fbca12fd5eb2d302396eecc2"
+    },
+    {
+      "path": "evidence/2026-11-22-round1/chatgpt-Q04.jpg",
+      "sha256": "38769958db0fe7f0ebb7f81cea3af02637da524af2d6a611b9c859d1dbe0134a"
+    },
+    {
+      "path": "evidence/2026-11-22-round1/chatgpt-Q04.txt",
+      "sha256": "502b185b195dd9fe9b00826824d6b81aa59503cdb25b2f57f0d1f2aa6b5da6b5"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "First observed round; no prior comparable record. Country UNKNOWN; no growth comparison. Logged-out default answer; explicit web-search invocation and model version UNKNOWN; visible linked sources are not proof of live retrieval. Original screenshot horizontally clipped (BLOCKED_LOCAL_ENV); complete DOM retained; cached UC reopen failed; no resubmission."
+}

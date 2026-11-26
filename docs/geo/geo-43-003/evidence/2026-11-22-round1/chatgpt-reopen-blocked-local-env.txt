@@ -1,0 +1,30 @@
+- banner:
+  - button "打开边栏":
+  - generic: ChatGPT
+  - button "登录"
+- main:
+  - region "对话":
+    - list "对话"
+- contentinfo:
+  - heading "你想做点什么？" [level=1]
+  - button "我可以在这里做些什么？"
+  - generic: 与 ChatGPT 聊天
+  - textbox "与 ChatGPT 聊天" [active]:
+    - /placeholder: 询问 ChatGPT
+  - button "添加文件等":
+  - button "开始听写":
+  - link "开启语音":
+    - /url: https://chatgpt.com/?mode=voice
+- paragraph:
+  - text: ChatGPT 是 AI。使用即表示你同意我们的
+  - link "条款":
+    - /url: https://openai.com/terms
+  - text: 和
+  - link "隐私政策":
+    - /url: https://openai.com/privacy
+  - text: 。聊天内容可能会被审核，并用于改进我们的 AI 模型。
+  - link "了解更多：了解您的数据如何用于改进 AI 模型":
+    - /url: https://help.openai.com/en/articles/5722486-how-your-data-is-used-to-improve-model-performance
+    - text: 了解更多
+- alert
+- status

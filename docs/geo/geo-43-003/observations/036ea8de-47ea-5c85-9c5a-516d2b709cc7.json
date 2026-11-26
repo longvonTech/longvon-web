@@ -1,0 +1,47 @@
+{
+  "record_id": "036ea8de-47ea-5c85-9c5a-516d2b709cc7",
+  "query_id": "Q09",
+  "query": "sleep monitoring smart ring OEM",
+  "platform": "Perplexity",
+  "mode": "incognito Search / free-preview label",
+  "observed_at": "2026-11-22T02:18:52.619+00:00",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "Chrome signed-in incognito session, fresh query per conversation; UI zh, query/answer en; model UNKNOWN",
+  "availability": "COMPLETED",
+  "longvon_present": true,
+  "organic_rank": null,
+  "ai_body_recommended": true,
+  "source_cited": null,
+  "cited_urls": [],
+  "competitors": [
+    {
+      "name": "jointcorp.com",
+      "url": "https://www.jointcorp.com/product-cat/smart-rings/",
+      "position": "first observed relevant source-link sequence 1; not a verified recommendation rank",
+      "evidence_quote": "- link \"jointcorp\":"
+    },
+    {
+      "name": "goldenweald.com",
+      "url": "https://www.goldenweald.com/smart-ring-oem-odm-manufacturer-custom-smart-rings/",
+      "position": "first observed relevant source-link sequence 2; not a verified recommendation rank",
+      "evidence_quote": "- link \"goldenweald\":"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-22-round1/perplexity-Q09-meta.json",
+      "sha256": "f2840e907e991286daff84779729f4b80c389f1ff461b04aa715800dc57d72e3"
+    },
+    {
+      "path": "evidence/2026-11-22-round1/perplexity-Q09.jpg",
+      "sha256": "2339cc136395db205b216d182ba0aeb9827e5a249049a61da72a7966d0179eb7"
+    },
+    {
+      "path": "evidence/2026-11-22-round1/perplexity-Q09.txt",
+      "sha256": "9fbbdab7bdfb1717c7c03455c1d6fb90bd4e788739c2030e9f842d16b96d4ba6"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "First observed round; no prior comparable record. Country UNKNOWN; no growth comparison. Incognito Search; Pro free preview label shown. Exact targets for generic domain-only citation labels UNKNOWN; source drawer observed empty."
+}

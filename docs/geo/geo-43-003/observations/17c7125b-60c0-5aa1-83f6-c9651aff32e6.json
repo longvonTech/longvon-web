@@ -1,0 +1,61 @@
+{
+  "record_id": "17c7125b-60c0-5aa1-83f6-c9651aff32e6",
+  "query_id": "Q05",
+  "query": "smart ring hardware firmware ODM partner",
+  "platform": "Google",
+  "mode": "All / first result page with auto AI Overview",
+  "observed_at": "2026-11-22T02:12:48.898+00:00",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "Chrome existing signed-in profile; hl=en; personalized results; actual country unverified",
+  "availability": "COMPLETED",
+  "longvon_present": false,
+  "organic_rank": null,
+  "ai_body_recommended": false,
+  "source_cited": false,
+  "cited_urls": [],
+  "competitors": [
+    {
+      "name": "jointcorp.com",
+      "url": "https://www.jointcorp.com/smart-ring-manufacturer-how-to-choose-a-reliable-oem-odm-partner/",
+      "position": "first observed relevant source-link sequence 1; not a verified recommendation rank",
+      "evidence_quote": "- link \"www.jointcorp.com\":"
+    },
+    {
+      "name": "pineeon.com",
+      "url": "https://pineeon.com/smart-ring-oem-vs-odm/",
+      "position": "first observed relevant source-link sequence 2; not a verified recommendation rank",
+      "evidence_quote": "- link \"A Complete Guide to Smart Ring OEM vs ODM Options Pineeon https://pineeon.com › smart-ring-oem-vs-odm\":"
+    },
+    {
+      "name": "goldenweald.com",
+      "url": "https://www.goldenweald.com/smart-ring-oem-odm-manufacturer-in-shenzhen-china/",
+      "position": "first observed relevant source-link sequence 3; not a verified recommendation rank",
+      "evidence_quote": "- link \"Smart Ring OEM & ODM Manufacturer in Shenzhen, China goldenweald.com https://www.goldenweald.com › Blog Standard\":"
+    },
+    {
+      "name": "goodwaytechs.com",
+      "url": "https://www.goodwaytechs.com/news/smart-ring-oem-vs-odm-manufacturing-guide.html",
+      "position": "first observed relevant source-link sequence 4; not a verified recommendation rank",
+      "evidence_quote": "- 'link \"Smart Ring OEM Vs ODM: the Best Choice for Scale & ... Goodway Techs https://www.goodwaytechs.com › Insights › News\"':"
+    },
+    {
+      "name": "gysmartwatch.com",
+      "url": "https://www.gysmartwatch.com/html/custom-smart-ring-oem-manufacturing.html",
+      "position": "first observed relevant source-link sequence 5; not a verified recommendation rank",
+      "evidence_quote": "- 'link \"Custom Smart Ring: The Ultimate Guide to OEM ... Geyan Technology https://www.gysmartwatch.com › html › custom-smart-ri...\"':"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-22-round1/google-Q05.jpg",
+      "sha256": "e6c993c53de7e65637051421d01be34ff91051efbaa34573e7cf024beb4d82eb"
+    },
+    {
+      "path": "evidence/2026-11-22-round1/google-Q05.json",
+      "sha256": "b74a9c474e2a34162aafb7dfca60b7beec300eedb125e5893d2ab93e9aa221d5"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "First observed round; no prior comparable record. Country UNKNOWN; no growth comparison. Scope: first Google results page, signed in/personalized. Organic links and AI citation are separate; pending AI panel UNKNOWN."
+}

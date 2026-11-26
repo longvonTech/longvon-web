@@ -1,0 +1,402 @@
+{
+  "method": "derived from captured public HTTP evidence, not a new request",
+  "checks": [
+    {
+      "url": "https://www.longvon.com/",
+      "in_sitemap": true,
+      "self_canonical": true,
+      "hreflang_targets_observed": [
+        {
+          "target": "https://www.longvon.com",
+          "hreflang": "zh-CN",
+          "reciprocal_if_observed": true
+        },
+        {
+          "target": "https://www.longvon.com/en",
+          "hreflang": "en",
+          "reciprocal_if_observed": true
+        },
+        {
+          "target": "https://www.longvon.com",
+          "hreflang": "x-default",
+          "reciprocal_if_observed": true
+        }
+      ]
+    },
+    {
+      "url": "https://www.longvon.com/en",
+      "in_sitemap": true,
+      "self_canonical": true,
+      "hreflang_targets_observed": [
+        {
+          "target": "https://www.longvon.com",
+          "hreflang": "zh-CN",
+          "reciprocal_if_observed": true
+        },
+        {
+          "target": "https://www.longvon.com/en",
+          "hreflang": "en",
+          "reciprocal_if_observed": true
+        },
+        {
+          "target": "https://www.longvon.com",
+          "hreflang": "x-default",
+          "reciprocal_if_observed": true
+        }
+      ]
+    },
+    {
+      "url": "https://www.longvon.com/smart-ring-manufacturer",
+      "in_sitemap": true,
+      "self_canonical": true,
+      "hreflang_targets_observed": [
+        {
+          "target": "https://www.longvon.com/smart-ring-manufacturer",
+          "hreflang": "zh-CN",
+          "reciprocal_if_observed": true
+        },
+        {
+          "target": "https://www.longvon.com/en/smart-ring-manufacturer",
+          "hreflang": "en",
+          "reciprocal_if_observed": true
+        },
+        {
+          "target": "https://www.longvon.com/smart-ring-manufacturer",
+          "hreflang": "x-default",
+          "reciprocal_if_observed": true
+        }
+      ]
+    },
+    {
+      "url": "https://www.longvon.com/en/smart-ring-manufacturer",
+      "in_sitemap": true,
+      "self_canonical": true,
+      "hreflang_targets_observed": [
+        {
+          "target": "https://www.longvon.com/smart-ring-manufacturer",
+          "hreflang": "zh-CN",
+          "reciprocal_if_observed": true
+        },
+        {
+          "target": "https://www.longvon.com/en/smart-ring-manufacturer",
+          "hreflang": "en",
+          "reciprocal_if_observed": true
+        },
+        {
+          "target": "https://www.longvon.com/smart-ring-manufacturer",
+          "hreflang": "x-default",
+          "reciprocal_if_observed": true
+        }
+      ]
+    },
+    {
+      "url": "https://www.longvon.com/smart-ring-oem-odm",
+      "in_sitemap": true,
+      "self_canonical": true,
+      "hreflang_targets_observed": [
+        {
+          "target": "https://www.longvon.com/smart-ring-oem-odm",
+          "hreflang": "zh-CN",
+          "reciprocal_if_observed": true
+        },
+        {
+          "target": "https://www.longvon.com/en/smart-ring-oem-odm",
+          "hreflang": "en",
+          "reciprocal_if_observed": true
+        },
+        {
+          "target": "https://www.longvon.com/smart-ring-oem-odm",
+          "hreflang": "x-default",
+          "reciprocal_if_observed": true
+        }
+      ]
+    },
+    {
+      "url": "https://www.longvon.com/en/smart-ring-oem-odm",
+      "in_sitemap": true,
+      "self_canonical": true,
+      "hreflang_targets_observed": [
+        {
+          "target": "https://www.longvon.com/smart-ring-oem-odm",
+          "hreflang": "zh-CN",
+          "reciprocal_if_observed": true
+        },
+        {
+          "target": "https://www.longvon.com/en/smart-ring-oem-odm",
+          "hreflang": "en",
+          "reciprocal_if_observed": true
+        },
+        {
+          "target": "https://www.longvon.com/smart-ring-oem-odm",
+          "hreflang": "x-default",
+          "reciprocal_if_observed": true
+        }
+      ]
+    },
+    {
+      "url": "https://www.longvon.com/smart-ring-sdk-api",
+      "in_sitemap": true,
+      "self_canonical": true,
+      "hreflang_targets_observed": [
+        {
+          "target": "https://www.longvon.com/smart-ring-sdk-api",
+          "hreflang": "zh-CN",
+          "reciprocal_if_observed": true
+        },
+        {
+          "target": "https://www.longvon.com/en/smart-ring-sdk-api",
+          "hreflang": "en",
+          "reciprocal_if_observed": true
+        },
+        {
+          "target": "https://www.longvon.com/smart-ring-sdk-api",
+          "hreflang": "x-default",
+          "reciprocal_if_observed": true
+        }
+      ]
+    },
+    {
+      "url": "https://www.longvon.com/en/smart-ring-sdk-api",
+      "in_sitemap": true,
+      "self_canonical": true,
+      "hreflang_targets_observed": [
+        {
+          "target": "https://www.longvon.com/smart-ring-sdk-api",
+          "hreflang": "zh-CN",
+          "reciprocal_if_observed": true
+        },
+        {
+          "target": "https://www.longvon.com/en/smart-ring-sdk-api",
+          "hreflang": "en",
+          "reciprocal_if_observed": true
+        },
+        {
+          "target": "https://www.longvon.com/smart-ring-sdk-api",
+          "hreflang": "x-default",
+          "reciprocal_if_observed": true
+        }
+      ]
+    },
+    {
+      "url": "https://www.longvon.com/smart-ring-sleep-respiratory",
+      "in_sitemap": true,
+      "self_canonical": true,
+      "hreflang_targets_observed": [
+        {
+          "target": "https://www.longvon.com/smart-ring-sleep-respiratory",
+          "hreflang": "zh-CN",
+          "reciprocal_if_observed": true
+        },
+        {
+          "target": "https://www.longvon.com/en/smart-ring-sleep-respiratory",
+          "hreflang": "en",
+          "reciprocal_if_observed": true
+        },
+        {
+          "target": "https://www.longvon.com/smart-ring-sleep-respiratory",
+          "hreflang": "x-default",
+          "reciprocal_if_observed": true
+        }
+      ]
+    },
+    {
+      "url": "https://www.longvon.com/en/smart-ring-sleep-respiratory",
+      "in_sitemap": true,
+      "self_canonical": true,
+      "hreflang_targets_observed": [
+        {
+          "target": "https://www.longvon.com/smart-ring-sleep-respiratory",
+          "hreflang": "zh-CN",
+          "reciprocal_if_observed": true
+        },
+        {
+          "target": "https://www.longvon.com/en/smart-ring-sleep-respiratory",
+          "hreflang": "en",
+          "reciprocal_if_observed": true
+        },
+        {
+          "target": "https://www.longvon.com/smart-ring-sleep-respiratory",
+          "hreflang": "x-default",
+          "reciprocal_if_observed": true
+        }
+      ]
+    },
+    {
+      "url": "https://www.longvon.com/company/longvon",
+      "in_sitemap": true,
+      "self_canonical": true,
+      "hreflang_targets_observed": [
+        {
+          "target": "https://www.longvon.com/company/longvon",
+          "hreflang": "zh-CN",
+          "reciprocal_if_observed": true
+        },
+        {
+          "target": "https://www.longvon.com/en/company/longvon",
+          "hreflang": "en",
+          "reciprocal_if_observed": true
+        },
+        {
+          "target": "https://www.longvon.com/company/longvon",
+          "hreflang": "x-default",
+          "reciprocal_if_observed": true
+        }
+      ]
+    },
+    {
+      "url": "https://www.longvon.com/en/company/longvon",
+      "in_sitemap": true,
+      "self_canonical": true,
+      "hreflang_targets_observed": [
+        {
+          "target": "https://www.longvon.com/company/longvon",
+          "hreflang": "zh-CN",
+          "reciprocal_if_observed": true
+        },
+        {
+          "target": "https://www.longvon.com/en/company/longvon",
+          "hreflang": "en",
+          "reciprocal_if_observed": true
+        },
+        {
+          "target": "https://www.longvon.com/company/longvon",
+          "hreflang": "x-default",
+          "reciprocal_if_observed": true
+        }
+      ]
+    },
+    {
+      "url": "https://www.longvon.com/about",
+      "in_sitemap": true,
+      "self_canonical": true,
+      "hreflang_targets_observed": [
+        {
+          "target": "https://www.longvon.com/about",
+          "hreflang": "zh-CN",
+          "reciprocal_if_observed": true
+        },
+        {
+          "target": "https://www.longvon.com/en/about",
+          "hreflang": "en",
+          "reciprocal_if_observed": true
+        },
+        {
+          "target": "https://www.longvon.com/about",
+          "hreflang": "x-default",
+          "reciprocal_if_observed": true
+        }
+      ]
+    },
+    {
+      "url": "https://www.longvon.com/en/about",
+      "in_sitemap": true,
+      "self_canonical": true,
+      "hreflang_targets_observed": [
+        {
+          "target": "https://www.longvon.com/about",
+          "hreflang": "zh-CN",
+          "reciprocal_if_observed": true
+        },
+        {
+          "target": "https://www.longvon.com/en/about",
+          "hreflang": "en",
+          "reciprocal_if_observed": true
+        },
+        {
+          "target": "https://www.longvon.com/about",
+          "hreflang": "x-default",
+          "reciprocal_if_observed": true
+        }
+      ]
+    },
+    {
+      "url": "https://www.longvon.com/smart-ring-sleep-monitoring",
+      "in_sitemap": true,
+      "self_canonical": true,
+      "hreflang_targets_observed": [
+        {
+          "target": "https://www.longvon.com/smart-ring-sleep-monitoring",
+          "hreflang": "zh-CN",
+          "reciprocal_if_observed": true
+        },
+        {
+          "target": "https://www.longvon.com/en/smart-ring-sleep-monitoring",
+          "hreflang": "en",
+          "reciprocal_if_observed": true
+        },
+        {
+          "target": "https://www.longvon.com/smart-ring-sleep-monitoring",
+          "hreflang": "x-default",
+          "reciprocal_if_observed": true
+        }
+      ]
+    },
+    {
+      "url": "https://www.longvon.com/en/smart-ring-sleep-monitoring",
+      "in_sitemap": true,
+      "self_canonical": true,
+      "hreflang_targets_observed": [
+        {
+          "target": "https://www.longvon.com/smart-ring-sleep-monitoring",
+          "hreflang": "zh-CN",
+          "reciprocal_if_observed": true
+        },
+        {
+          "target": "https://www.longvon.com/en/smart-ring-sleep-monitoring",
+          "hreflang": "en",
+          "reciprocal_if_observed": true
+        },
+        {
+          "target": "https://www.longvon.com/smart-ring-sleep-monitoring",
+          "hreflang": "x-default",
+          "reciprocal_if_observed": true
+        }
+      ]
+    },
+    {
+      "url": "https://www.longvon.com/osa-smart-ring-technology",
+      "in_sitemap": true,
+      "self_canonical": true,
+      "hreflang_targets_observed": [
+        {
+          "target": "https://www.longvon.com/osa-smart-ring-technology",
+          "hreflang": "zh-CN",
+          "reciprocal_if_observed": true
+        },
+        {
+          "target": "https://www.longvon.com/en/osa-smart-ring-technology",
+          "hreflang": "en",
+          "reciprocal_if_observed": true
+        },
+        {
+          "target": "https://www.longvon.com/osa-smart-ring-technology",
+          "hreflang": "x-default",
+          "reciprocal_if_observed": true
+        }
+      ]
+    },
+    {
+      "url": "https://www.longvon.com/en/osa-smart-ring-technology",
+      "in_sitemap": true,
+      "self_canonical": true,
+      "hreflang_targets_observed": [
+        {
+          "target": "https://www.longvon.com/osa-smart-ring-technology",
+          "hreflang": "zh-CN",
+          "reciprocal_if_observed": true
+        },
+        {
+          "target": "https://www.longvon.com/en/osa-smart-ring-technology",
+          "hreflang": "en",
+          "reciprocal_if_observed": true
+        },
+        {
+          "target": "https://www.longvon.com/osa-smart-ring-technology",
+          "hreflang": "x-default",
+          "reciprocal_if_observed": true
+        }
+      ]
+    }
+  ],
+  "normalization": "origin root empty path equals /; other paths unchanged"
+}

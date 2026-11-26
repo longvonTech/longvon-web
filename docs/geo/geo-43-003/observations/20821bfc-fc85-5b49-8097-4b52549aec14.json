@@ -1,0 +1,47 @@
+{
+  "record_id": "20821bfc-fc85-5b49-8097-4b52549aec14",
+  "query_id": "Q05",
+  "query": "smart ring hardware firmware ODM partner",
+  "platform": "Perplexity",
+  "mode": "incognito Search / free-preview label",
+  "observed_at": "2026-11-22T02:15:36.092+00:00",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "Chrome signed-in incognito session, fresh query per conversation; UI zh, query/answer en; model UNKNOWN",
+  "availability": "COMPLETED",
+  "longvon_present": true,
+  "organic_rank": null,
+  "ai_body_recommended": true,
+  "source_cited": null,
+  "cited_urls": [],
+  "competitors": [
+    {
+      "name": "ytsmartwear.com",
+      "url": "https://www.ytsmartwear.com/",
+      "position": "first observed relevant source-link sequence 1; not a verified recommendation rank",
+      "evidence_quote": "- link \"ytsmartwear\":"
+    },
+    {
+      "name": "newfitpro.com",
+      "url": "https://www.newfitpro.com/",
+      "position": "first observed relevant source-link sequence 2; not a verified recommendation rank",
+      "evidence_quote": "- link \"newfitpro\":"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-22-round1/perplexity-Q05-meta.json",
+      "sha256": "0bc9cb95a8f50300e16022c76d4b34de7551acdc0a6af4691cd7504d12f2b70d"
+    },
+    {
+      "path": "evidence/2026-11-22-round1/perplexity-Q05.jpg",
+      "sha256": "e48ff4396927e68d80b89abb7aa61cb314a1632505d2426f479457713a6ea27d"
+    },
+    {
+      "path": "evidence/2026-11-22-round1/perplexity-Q05.txt",
+      "sha256": "c7c2d9a60f72745ba061879c2672b9fc69ff114eb3533ec1bb4b082cefccd580"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "First observed round; no prior comparable record. Country UNKNOWN; no growth comparison. Incognito Search; Pro free preview label shown. Exact targets for generic domain-only citation labels UNKNOWN; source drawer observed empty."
+}

@@ -1,0 +1,43 @@
+{
+  "record_id": "c7cc711b-bd2b-507d-9efd-657afd7e5adf",
+  "query_id": "Q08",
+  "query": "smart ring raw PPG data for research",
+  "platform": "Google",
+  "mode": "All / first result page with auto AI Overview",
+  "observed_at": "2026-11-22T02:13:16.080+00:00",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "Chrome existing signed-in profile; hl=en; personalized results; actual country unverified",
+  "availability": "COMPLETED",
+  "longvon_present": false,
+  "organic_rank": null,
+  "ai_body_recommended": null,
+  "source_cited": null,
+  "cited_urls": [],
+  "competitors": [
+    {
+      "name": "jointcorp.com",
+      "url": "https://www.jointcorp.com/blog/smart-ring-oem/how-digital-health-companies-researchers-and-wearable-brands-can-access-raw-ppg-signals-from-smart-rings/",
+      "position": "first observed relevant source-link sequence 1; not a verified recommendation rank",
+      "evidence_quote": "- link \"How Digital Health Companies, Researchers, and Wearable ... jointcorp.com https://www.jointcorp.com › blog › smart-ring-oem › h...\":"
+    },
+    {
+      "name": "sensorbio.com",
+      "url": "https://sensorbio.com/the-signal/smart-ring-vs-smartwatch-ppg/",
+      "position": "first observed relevant source-link sequence 2; not a verified recommendation rank",
+      "evidence_quote": "- 'link \"Smart ring vs smartwatch PPG: different, not better Sensor Bio https://sensorbio.com › the-signal › smart-ring-vs-smart...\"':"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-22-round1/google-Q08.jpg",
+      "sha256": "72d9a91d80b2a6e12609ad44f8d16dbb15d3c49b66dce091fede66392283a3d4"
+    },
+    {
+      "path": "evidence/2026-11-22-round1/google-Q08.json",
+      "sha256": "00bca362e9c6f0bd36e5ee0ab70a1ff2a583c21d4803547cb84766a0f5bbe13e"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "First observed round; no prior comparable record. Country UNKNOWN; no growth comparison. Scope: first Google results page, signed in/personalized. Organic links and AI citation are separate; pending AI panel UNKNOWN."
+}

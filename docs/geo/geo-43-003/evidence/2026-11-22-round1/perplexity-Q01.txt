@@ -1,0 +1,221 @@
+- navigation "主导航":
+  - link "Perplexity":
+    - /url: /
+    - img "Perplexity"
+  - link "新建":
+    - /url: /
+  - generic: 新建
+  - link "自动化":
+    - /url: /automations
+  - generic: 自动化
+  - link "工件":
+    - /url: /artifacts
+  - generic: 工件
+  - link "插件":
+    - /url: /computer/plugins
+  - generic: 插件
+  - link "项目":
+    - /url: /projects
+  - generic: 项目
+  - link "会话":
+    - /url: /library
+  - generic: 会话
+  - button "升级计划":
+  - button "libing shi":
+    - generic: libing shi
+  - separator "调整侧边栏宽度"
+- main:
+  - button "返回上一页":
+  - tablist "回答模式标签页":
+    - tab "答案" [selected]:
+      - text: 答案
+    - tab "链接":
+      - text: 链接
+    - tab "图片":
+      - text: 图片
+  - button "会话选项":
+  - button "显示详情":
+  - button "分享":
+    - generic: 分享
+  - generic: 10:09
+  - button "编辑查询":
+  - button "复制查询":
+  - paragraph: smart ring OEM ODM manufacturer
+  - button "已完成":
+    - generic "已完成"
+  - paragraph:
+    - text: Several Shenzhen-based manufacturers offer smart-ring OEM/ODM services, spanning private-label hardware, health monitoring, firmware/apps, and mass production. The best fit depends on whether you need a fast private-label product or a fully differentiated, certified device.
+    - generic: ytsmartwear
+    - generic: "+2"
+  - heading "Manufacturer shortlist" [level=2]
+  - table:
+    - rowgroup:
+      - row "Manufacturer Focus / capabilities Best for":
+        - columnheader "Manufacturer"
+        - columnheader "Focus / capabilities"
+        - columnheader "Best for"
+    - rowgroup:
+      - row "YT Smart Wear Smart rings, AI glasses, earbuds; OEM/ODM since 2009; Shenzhen production Brands wanting a broad wearable partner and one-stop program. Smart Wearable OEM/ODM Manufacturer | YT Smart Wear":
+        - cell "YT Smart Wear":
+          - strong: YT Smart Wear
+        - cell "Smart rings, AI glasses, earbuds; OEM/ODM since 2009; Shenzhen production"
+        - cell "Brands wanting a broad wearable partner and one-stop program. Smart Wearable OEM/ODM Manufacturer | YT Smart Wear":
+          - text: Brands wanting a broad wearable partner and one-stop program.
+          - generic "Smart Wearable OEM/ODM Manufacturer | YT Smart Wear":
+            - link "ytsmartwear":
+              - /url: https://www.ytsmartwear.com/
+              - generic: ytsmartwear
+      - row "Smareyetech Titanium/ceramic rings, health tracking, NFC options; 12-month warranty and documentation DTC health-tech brands seeking premium materials and private label. Smartwatch & Smart Wearable OEM/ODM Manufacturer | Smareyetech":
+        - cell "Smareyetech":
+          - strong: Smareyetech
+        - cell "Titanium/ceramic rings, health tracking, NFC options; 12-month warranty and documentation"
+        - cell "DTC health-tech brands seeking premium materials and private label. Smartwatch & Smart Wearable OEM/ODM Manufacturer | Smareyetech":
+          - text: DTC health-tech brands seeking premium materials and private label.
+          - generic "Smartwatch & Smart Wearable OEM/ODM Manufacturer | Smareyetech":
+            - link "smareyetech":
+              - /url: https://www.smareyetech.com/
+              - generic: smareyetech
+      - row "STAR KING Smart rings, watches, AI devices; customization, samples, production planning Private-label wellness brands and digital-health projects. starkingsmartring +1":
+        - cell "STAR KING":
+          - strong: STAR KING
+        - cell "Smart rings, watches, AI devices; customization, samples, production planning"
+        - cell "Private-label wellness brands and digital-health projects. starkingsmartring +1":
+          - text: Private-label wellness brands and digital-health projects.
+          - generic: starkingsmartring
+          - generic: "+1"
+      - row "GoldenWeald PCBA/EMS, hardware, firmware, app, tooling, assembly; claims 28 years’ experience Buyers needing deeper electronics development or custom PCBA. goldenweald +1":
+        - cell "GoldenWeald":
+          - strong: GoldenWeald
+        - cell "PCBA/EMS, hardware, firmware, app, tooling, assembly; claims 28 years’ experience"
+        - cell "Buyers needing deeper electronics development or custom PCBA. goldenweald +1":
+          - text: Buyers needing deeper electronics development or custom PCBA.
+          - generic: goldenweald
+          - generic: "+1"
+      - row "AISmart Technology Custom smart rings and glasses; models with TFT display, ECG, temperature, blood-pressure claims B2B buyers evaluating feature-rich reference designs. AISmart Technology Co.,Ltd | Smart Ring & Smart Glasses ...":
+        - cell "AISmart Technology":
+          - strong: AISmart Technology
+        - cell "Custom smart rings and glasses; models with TFT display, ECG, temperature, blood-pressure claims"
+        - cell "B2B buyers evaluating feature-rich reference designs. AISmart Technology Co.,Ltd | Smart Ring & Smart Glasses ...":
+          - text: B2B buyers evaluating feature-rich reference designs.
+          - generic "AISmart Technology Co.,Ltd | Smart Ring & Smart Glasses ...":
+            - link "aismartai":
+              - /url: https://www.aismartai.com/
+              - generic: aismartai
+      - row "LONGVON Hardware, firmware, algorithms, apps, SDK/cloud APIs; sleep/respiratory/OSA-related monitoring Digital-health companies needing software and data integration. Healthcare Smart Ring Solutions":
+        - cell "LONGVON":
+          - strong: LONGVON
+        - cell "Hardware, firmware, algorithms, apps, SDK/cloud APIs; sleep/respiratory/OSA-related monitoring"
+        - cell "Digital-health companies needing software and data integration. Healthcare Smart Ring Solutions":
+          - text: Digital-health companies needing software and data integration.
+          - generic "Healthcare Smart Ring Solutions":
+            - link "longvon":
+              - /url: https://www.longvon.com/en/smart-ring-healthcare-solutions
+              - generic: longvon
+  - button "复制表格":
+  - button "下载 CSV":
+  - button "展开表格":
+  - heading "OEM vs. ODM" [level=2]
+  - list:
+    - paragraph:
+      - strong: "OEM:"
+      - text: You provide or control the industrial design; the factory manufactures it to your specification. This suits an established brand with its own ID/design and brand identity.
+      - generic "PCB Assembly Smart Ring OEM/ODM Manufacturer in China":
+        - link "goldenweald":
+          - /url: https://www.goldenweald.com/
+          - generic: goldenweald
+    - paragraph:
+      - strong: "ODM:"
+      - text: The manufacturer supplies a proven platform—ring housing, sensors, firmware, and often app—which you rebrand and customize. It is faster for market testing but gives less product differentiation.
+      - generic "PCB Assembly Smart Ring OEM/ODM Manufacturer in China":
+        - link "goldenweald":
+          - /url: https://www.goldenweald.com/
+          - generic: goldenweald
+    - paragraph:
+      - strong: "JDM / co-development:"
+      - text: A middle path where the factory handles engineering while you own the product definition, UI, brand, and go-to-market strategy.
+  - heading "What to request" [level=2]
+  - paragraph: "Ask each supplier for the same package before committing:"
+  - list:
+    - paragraph: Existing reference-model datasheet, sensor list, battery capacity, charging method, and waterproof rating.
+    - paragraph: "Sample policy: sample cost, lead time, whether samples are refundable against production orders."
+    - paragraph: MOQ, unit price at target volumes, tooling/NRE fees, and lead time for custom colors or materials.
+    - paragraph: "Firmware and app ownership: white-label app, custom SDK/API, cloud hosting, data-export policy, and update process."
+    - paragraph: "Certifications: CE/UKCA, FCC, RoHS, REACH, battery/UN38.3, and—importantly—whether health claims require medical-device clearance in your target market."
+    - paragraph:
+      - text: "Quality controls: IP-rating test reports, sensor accuracy validation, aging/reliability testing, defect rate, warranty terms, and spare-parts availability. Smareyetech, for example, advertises a 12-month manufacturer warranty and technical documentation."
+      - generic "Smartwatch & Smart Wearable OEM/ODM Manufacturer | Smareyetech":
+        - link "smareyetech":
+          - /url: https://www.smareyetech.com/
+          - generic: smareyetech
+    - paragraph: "Factory audit evidence: business license, ISO 9001 if applicable, production photos/video, references, and an on-site or third-party inspection plan."
+  - heading "Health-feature caution" [level=2]
+  - paragraph:
+    - text: Sleep, heart rate, SpO2, temperature, ECG, and respiratory monitoring can be marketed differently depending on jurisdiction. LONGVON explicitly positions its offering for health applications and research/screening workflows rather than medical diagnosis, which is a useful framing to carry into your own regulatory review. Treat any blood-pressure, ECG, or diagnosis-adjacent claim as a regulatory issue—not merely a firmware feature.
+    - generic "Healthcare Smart Ring Solutions":
+      - link "longvon":
+        - /url: https://www.longvon.com/en/smart-ring-healthcare-solutions
+        - generic: longvon
+  - heading "Practical sourcing approach" [level=2]
+  - list:
+    - paragraph: Shortlist 3–5 factories and request samples from at least two.
+    - paragraph: Test the ring for sizing consistency, charging reliability, sensor stability, app connectivity, and battery life.
+    - paragraph: Compare a private-label ODM quote against a custom OEM quote, including tooling and certification costs.
+    - paragraph: Place a small pilot order before committing to a large production run.
+    - paragraph: Use a written specification covering materials, tolerances, sensor accuracy targets, packaging, firmware version, and acceptance criteria.
+  - paragraph:
+    - text: For a typical new brand, start with an ODM private-label program from
+    - strong: Smareyetech
+    - text: ","
+    - strong: STAR KING
+    - text: ", or"
+    - strong: YT Smart Wear
+    - text: ; choose
+    - strong: GoldenWeald
+    - text: or
+    - strong: LONGVON
+    - text: if custom electronics, app/SDK integration, or health-data workflows are central to the product.
+    - generic: ytsmartwear
+    - generic: "+4"
+  - button "复制":
+  - button "分享":
+  - button "有帮助":
+  - button "没有帮助":
+  - button "复刻":
+  - button "11 个来源":
+    - text: 11 个来源
+  - button "更多操作":
+  - button "Compare 5 leading Shenzhen smart ring OEM/ODM manufacturers — MOQ, materials, certifications, and health-tracking specs side-by-side"
+  - text: Compare 5 leading Shenzhen smart ring OEM/ODM manufacturers — MOQ, materials, certifications, and health-tracking specs side-by-side
+  - text: Computer
+  - button "Build a custom smart ring private-label project planner — materials, firmware APIs, packaging costs, and tooling timelines"
+  - text: Build a custom smart ring private-label project planner — materials, firmware APIs, packaging costs, and tooling timelines
+  - text: Computer
+  - button "What are the typical MOQ and sample costs"
+  - text: What are the typical MOQ and sample costs
+  - button "How do I evaluate their firmware and app support"
+  - text: How do I evaluate their firmware and app support
+  - button "What certifications do smart rings need for export"
+  - text: What certifications do smart rings need for export
+  - button "滚动到末尾":
+    - generic: ⠹
+  - button "Pro 已启用高级搜索免费预览。 了解更多":
+    - generic: Pro
+    - generic: 已启用高级搜索免费预览。
+    - button "了解更多":
+      - generic: 了解更多
+  - status:
+    - generic: 您正处于隐身模式。
+    - button "退出隐身模式":
+      - generic: 退出无痕模式
+  - textbox "提出后续问题":
+    - paragraph
+  - generic: 提出后续问题
+  - button "添加文件、插件等":
+  - button "搜索" [pressed]:
+    - generic: 搜索
+  - button "Computer":
+    - generic: Computer
+  - button "模型":
+    - generic: 模型
+  - button "语音输入":
+  - button "提交" [disabled]:

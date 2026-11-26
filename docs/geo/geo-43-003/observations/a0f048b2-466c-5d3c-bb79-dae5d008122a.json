@@ -1,0 +1,65 @@
+{
+  "record_id": "a0f048b2-466c-5d3c-bb79-dae5d008122a",
+  "query_id": "Q03",
+  "query": "private label smart ring manufacturer",
+  "platform": "Perplexity",
+  "mode": "incognito Search / free-preview label",
+  "observed_at": "2026-11-22T02:14:17.002+00:00",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "Chrome signed-in incognito session, fresh query per conversation; UI zh, query/answer en; model UNKNOWN",
+  "availability": "COMPLETED",
+  "longvon_present": false,
+  "organic_rank": null,
+  "ai_body_recommended": false,
+  "source_cited": false,
+  "cited_urls": [],
+  "competitors": [
+    {
+      "name": "staranbsmart.com",
+      "url": "https://www.staranbsmart.com/",
+      "position": "first observed relevant source-link sequence 1; not a verified recommendation rank",
+      "evidence_quote": "- link \"staranbsmart\":"
+    },
+    {
+      "name": "starkingsmartring.com",
+      "url": "https://starkingsmartring.com/products/smart-rings/",
+      "position": "first observed relevant source-link sequence 2; not a verified recommendation rank",
+      "evidence_quote": "- link \"starkingsmartring\":"
+    },
+    {
+      "name": "trendgateproducts.com",
+      "url": "https://trendgateproducts.com/products/smart-wearables/smart-rings/",
+      "position": "first observed relevant source-link sequence 3; not a verified recommendation rank",
+      "evidence_quote": "- link \"trendgateproducts\":"
+    },
+    {
+      "name": "szbingogroup.com",
+      "url": "https://szbingogroup.com/product-category/smart-ring/",
+      "position": "first observed relevant source-link sequence 4; not a verified recommendation rank",
+      "evidence_quote": "- link \"szbingogroup\":"
+    },
+    {
+      "name": "ytsmartwear.com",
+      "url": "https://www.ytsmartwear.com/",
+      "position": "first observed relevant source-link sequence 5; not a verified recommendation rank",
+      "evidence_quote": "- link \"ytsmartwear\":"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-22-round1/perplexity-Q03-meta.json",
+      "sha256": "f00039e4dde715f03d0eee2fa216696cbe62c1c8e1c38692a97f8a263de582cd"
+    },
+    {
+      "path": "evidence/2026-11-22-round1/perplexity-Q03.jpg",
+      "sha256": "22da30f03435b9ea868287066244b625c84b1ae70a03e1fedd79884c69454a3d"
+    },
+    {
+      "path": "evidence/2026-11-22-round1/perplexity-Q03.txt",
+      "sha256": "4537479ec5790e807a32592d3e02c06554519d905882f93ae09a9c3ea832589e"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "First observed round; no prior comparable record. Country UNKNOWN; no growth comparison. Incognito Search; Pro free preview label shown. Exact targets for generic domain-only citation labels UNKNOWN; source drawer observed empty."
+}

@@ -1,0 +1,34 @@
+{
+  "record_id": "ba670408-1b66-5acb-8599-73bce85f1ea0",
+  "query_id": "Q11",
+  "query": "digital health smart ring integration SDK",
+  "platform": "Perplexity",
+  "mode": "incognito Search / free-preview label",
+  "observed_at": "2026-11-22T02:20:04.665+00:00",
+  "country": "UNKNOWN",
+  "language": "en",
+  "environment": "Chrome signed-in incognito session, fresh query per conversation; UI zh, query/answer en; model UNKNOWN",
+  "availability": "COMPLETED",
+  "longvon_present": false,
+  "organic_rank": null,
+  "ai_body_recommended": false,
+  "source_cited": false,
+  "cited_urls": [],
+  "competitors": [],
+  "evidence": [
+    {
+      "path": "evidence/2026-11-22-round1/perplexity-Q11-meta.json",
+      "sha256": "73997ce19e06cf7b00c220e40430159d4bcadfc6149eefb44544fa383d65de52"
+    },
+    {
+      "path": "evidence/2026-11-22-round1/perplexity-Q11.jpg",
+      "sha256": "9c9fa4e1fd3767dfe6f8ce89b209a5756e7f47098b21ca034b2281d0c2456b7f"
+    },
+    {
+      "path": "evidence/2026-11-22-round1/perplexity-Q11.txt",
+      "sha256": "1aed042537630030225b15190520804f9e27821f3b1a669206a6e21bdde6d6b3"
+    }
+  ],
+  "previous_record_id": null,
+  "change_note": "First observed round; no prior comparable record. Country UNKNOWN; no growth comparison. Incognito Search; Pro free preview label shown. Exact targets for generic domain-only citation labels UNKNOWN; source drawer observed empty."
+}

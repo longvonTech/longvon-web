@@ -28,6 +28,7 @@ function inspect(){const a=JSON.parse(pm2(['jlist']));return {web:a.find(x=>x.na
  let r=await run('release',next,'candidate');assert.equal(r.code,0,r.log);assert.equal(state().id,next);events.push('real PM2 release PASS');
  r=await run('rollback',original,'baseline');assert.equal(r.code,0,r.log);assert.equal(state().id,original);events.push('independent healthy rollback PASS');
  r=await run('release','actions-7-1','bad-health','health-fail');assert.notEqual(r.code,0);assert.equal(state().id,original);assert.equal(inspect().web.pm2_env.pm_exec_path,first);events.push('post-switch health failure auto-rollback PASS');
+ r=await run('release','actions-8-1','bad-record','record-fail');assert.notEqual(r.code,0);assert.equal(state().id,original);assert.equal(inspect().web.pm2_env.pm_exec_path,first);events.push('active-record write failure reconciliation PASS');
  // Use a new destination for each interrupted transaction; retained records are immutable.
  for(const [id,point]of [['actions-4-1','after-switch'],['actions-5-1','after-record']]){
   r=await run('release',id,'interrupted',point);assert.equal(r.signal,'SIGKILL',r.log);assert.ok(fs.existsSync(path.join(control,'deployment.lock')));

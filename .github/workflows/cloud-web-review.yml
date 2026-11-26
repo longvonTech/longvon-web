@@ -23,7 +23,7 @@ jobs:
         run: |
           bash -n scripts/recovery/cloud-web.sh
           bash -n scripts/recovery/fetch-fixed-web.sh
-          python3 scripts/recovery/test_fixed_candidate.py
+          python3 -m unittest discover -s scripts/recovery -p 'test_*.py' -v
           node --test scripts/recovery/web-switch.test.cjs scripts/recovery/approval-controls.test.cjs scripts/rfq/release/{activation,static}-transaction.test.cjs
 
       - uses: actions/setup-node@v4

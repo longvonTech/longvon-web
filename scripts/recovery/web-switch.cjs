@@ -260,6 +260,7 @@ async function host([operation, target, approval, approvedApproval, enabled, exp
         fs.renameSync(pending, activeFile);
         journal.phase='record-written';atomic(journalFile,journal);
         if(isolated && process.env.LV_TEST_INTERRUPT==='after-record')process.kill(process.pid,'SIGKILL');
+        if(isolated && process.env.LV_TEST_INTERRUPT==='record-fail')throw new Error('ISOLATED_RECORD_WRITE_FAILURE');
       }
     });
   } catch (error) {

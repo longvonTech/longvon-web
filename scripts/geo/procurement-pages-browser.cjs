@@ -15,7 +15,9 @@ assert.equal(new URL(base).hostname,'127.0.0.1');fs.mkdirSync(dir,{recursive:tru
   const latest='?test_run=GEO-43-004&utm_source=perplexity&utm_medium=ai_assistant&utm_campaign=SYNTHETIC-LATEST&utm_content=latest-'+kind+'&utm_term=latest-integration';
   assert.equal((await page.goto(base+pathname+first,{waitUntil:'networkidle'})).status(),200);await page.waitForFunction(()=>!!localStorage.getItem('lv_attr_v2'));
   assert.equal((await page.goto(base+pathname+latest,{waitUntil:'networkidle'})).status(),200);await page.waitForFunction(()=>JSON.parse(localStorage.getItem('lv_attr_v2')).latest.utmCampaign==='SYNTHETIC-LATEST');
-  assert.equal(await page.locator('html').getAttribute('lang'),locale==='en'?'en':'zh-CN');assert.equal(await page.locator('h1').count(),1);
+  assert.equal(await page.locator('html').getAttribute('lang'),locale==='en'?'en':'zh-CN');
+  const logo=page.locator('a.nav-logo img');await logo.waitFor({state:'visible'});await logo.evaluate(img=>img.decode());assert.ok(await logo.evaluate(img=>img.complete&&img.naturalWidth>0&&img.naturalHeight>0));await page.locator('a.nav-logo').screenshot({path:path.join(dir,locale+'-'+kind+'-nav-logo.png')});
+assert.equal(await page.locator('h1').count(),1);
   assert.equal(await page.locator('link[rel="canonical"]').getAttribute('href'),'https://www.longvon.com'+pathname);
   for(const [lang,p]of [['en','/en/'+slug],['zh-CN','/'+slug],['x-default','/'+slug]])assert.equal(await page.locator(`link[rel="alternate"][hreflang="${lang}"]`).getAttribute('href'),'https://www.longvon.com'+p);
   const schemas=await page.locator('script[type="application/ld+json"]').evaluateAll(xs=>xs.map(x=>JSON.parse(x.textContent))),faq=schemas.filter(x=>x['@type']==='FAQPage');assert.equal(faq.length,1);assert.ok(schemas.some(x=>x['@type']==='BreadcrumbList'));assert.equal(faq[0].mainEntity.length,kind==='sdk'?10:3);

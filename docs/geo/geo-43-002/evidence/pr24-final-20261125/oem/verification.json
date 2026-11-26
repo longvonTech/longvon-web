@@ -1,0 +1,90 @@
+{
+  "scope": "local standalone / synthetic API / all POST intercepted",
+  "startedAt": "2026-11-25T02:07:49.700Z",
+  "productionPosts": 0,
+  "tests": [
+    {
+      "locale": "en",
+      "stage": 0,
+      "interest": "odm-sample-evaluation",
+      "status": 200,
+      "qualifiedBriefCaptured": true,
+      "noNewDtoFields": true,
+      "firstAndLatestUtmAiPreserved": true,
+      "internationalPhoneUnchanged": true,
+      "clientErrorsAndFailureDoNotEmitSuccess": "verified",
+      "syntheticEventsExcluded": true,
+      "commercialQueueEvents": 0
+    },
+    {
+      "locale": "en",
+      "stage": 1,
+      "interest": "odm-pilot-evaluation",
+      "status": 200,
+      "qualifiedBriefCaptured": true,
+      "noNewDtoFields": true,
+      "firstAndLatestUtmAiPreserved": true,
+      "internationalPhoneUnchanged": true,
+      "clientErrorsAndFailureDoNotEmitSuccess": "covered in stage0",
+      "syntheticEventsExcluded": true,
+      "commercialQueueEvents": 0
+    },
+    {
+      "locale": "en",
+      "stage": 2,
+      "interest": "odm-production-feasibility",
+      "status": 200,
+      "qualifiedBriefCaptured": true,
+      "noNewDtoFields": true,
+      "firstAndLatestUtmAiPreserved": true,
+      "internationalPhoneUnchanged": true,
+      "clientErrorsAndFailureDoNotEmitSuccess": "covered in stage0",
+      "syntheticEventsExcluded": true,
+      "commercialQueueEvents": 0
+    },
+    {
+      "locale": "zh",
+      "stage": 0,
+      "interest": "odm-sample-evaluation",
+      "status": 200,
+      "qualifiedBriefCaptured": true,
+      "noNewDtoFields": true,
+      "firstAndLatestUtmAiPreserved": true,
+      "internationalPhoneUnchanged": true,
+      "clientErrorsAndFailureDoNotEmitSuccess": "verified",
+      "syntheticEventsExcluded": true,
+      "commercialQueueEvents": 0
+    },
+    {
+      "locale": "zh",
+      "stage": 1,
+      "interest": "odm-pilot-evaluation",
+      "status": 200,
+      "qualifiedBriefCaptured": true,
+      "noNewDtoFields": true,
+      "firstAndLatestUtmAiPreserved": true,
+      "internationalPhoneUnchanged": true,
+      "clientErrorsAndFailureDoNotEmitSuccess": "covered in stage0",
+      "syntheticEventsExcluded": true,
+      "commercialQueueEvents": 0
+    },
+    {
+      "locale": "zh",
+      "stage": 2,
+      "interest": "odm-production-feasibility",
+      "status": 200,
+      "qualifiedBriefCaptured": true,
+      "noNewDtoFields": true,
+      "firstAndLatestUtmAiPreserved": true,
+      "internationalPhoneUnchanged": true,
+      "clientErrorsAndFailureDoNotEmitSuccess": "covered in stage0",
+      "syntheticEventsExcluded": true,
+      "commercialQueueEvents": 0
+    }
+  ],
+  "errors": [],
+  "contextualLinks": 8,
+  "sitemapPairVerified": true,
+  "result": "PASS",
+  "finishedAt": "2026-11-25T02:07:58.203Z"
+}

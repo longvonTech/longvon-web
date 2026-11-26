@@ -1,0 +1,19 @@
+{
+  "retrieved_on": "2026-11-25 Asia/Shanghai",
+  "job_id": 137027686947,
+  "run_id": 44963638003,
+  "job_url": "https://github.com/longvonTech/longvon-web/actions/runs/44963638003/job/137027686947",
+  "source_sha": "ff789513e7afac9b632225c2eecde70cd5515f1e",
+  "job_test_merge_sha": "0bfeefd5105dc87dda7ef1ffeb9dcd94e9d33b3a",
+  "complete_log_lines": 419,
+  "log_scope": "full decoded job log, not --log-failed excerpt",
+  "failure": "oem-journey.test.cjs:6 stale ban on approved 1000/1,000; 23 pass 1 fail",
+  "latent_same_policy_failure": "oem-journey-browser.cjs old ban on 1,000 in stage section",
+  "next_steps_skipped": [
+    "Web build",
+    "PPG browser",
+    "OEM browser"
+  ],
+  "policy_changed_by_repair": false,
+  "source_of_fix": "PR29 4cf44ff, two test files copied exactly"
+}

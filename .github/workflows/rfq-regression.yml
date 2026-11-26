@@ -27,6 +27,8 @@ jobs:
 # uploaded to this public repository and CI must not claim to have run that suite.
 
   linux-web:
+    env:
+      RFQ_INCLUDE_APPROVED_GEO: '1'
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
@@ -36,7 +38,7 @@ jobs:
           node-version: '20'
           cache: npm
       - run: npm ci --ignore-scripts
-      - run: RFQ_INCLUDE_APPROVED_GEO=1 node scripts/rfq/build-web-candidate.cjs
+      - run: node scripts/rfq/build-web-candidate.cjs
       - run: RFQ_LINUX_NATIVE_DEPS="$PWD" RFQ_LINUX_WEB_OUTPUT="$RUNNER_TEMP/rfq-web" node scripts/rfq/package-linux-web.cjs
       - run: RFQ_LINUX_WEB_ARTIFACT="$RUNNER_TEMP/rfq-web" node --test scripts/rfq/release/platform.test.cjs
       - run: RFQ_LINUX_WEB_ARTIFACT="$RUNNER_TEMP/rfq-web" node scripts/rfq/release/standalone-linux-smoke.cjs

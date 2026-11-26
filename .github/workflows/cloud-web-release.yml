@@ -56,6 +56,23 @@ jobs:
         with:
           ref: ${{ github.sha }}
           persist-credentials: false
+      - name: Require scoped private archive App configuration
+        env:
+          APP_ID: ${{ vars.LONGVON_OPS_APP_ID }}
+          APP_PRIVATE_KEY: ${{ secrets.LONGVON_OPS_APP_PRIVATE_KEY }}
+        run: |
+          test -n "$APP_ID"
+          test -n "$APP_PRIVATE_KEY"
+      - name: Mint short-lived private archive read token
+        id: ops-token
+        uses: actions/create-github-app-token@fee1f7d63c2ff003460e3d139729b119787bc349 # v2
+        with:
+          app-id: ${{ vars.LONGVON_OPS_APP_ID }}
+          private-key: ${{ secrets.LONGVON_OPS_APP_PRIVATE_KEY }}
+          owner: longvonTech
+          repositories: longvon-ops
+          permission-contents: read
+          skip-token-revoke: false
       - name: Execute reviewed Web operation
         env:
           OPERATION: release
@@ -71,7 +88,7 @@ jobs:
           SOURCE_SHA: ${{ inputs.commit_sha }}
           EXPECTED_SHA: ${{ inputs.sha256 }}
           GH_TOKEN: ${{ github.token }}
-          OPS_READ_TOKEN: ${{ secrets.LONGVON_OPS_READ_TOKEN }}
+          OPS_READ_TOKEN: ${{ steps.ops-token.outputs.token }}
           RELEASE_KEY: ${{ inputs.release_key }}
           APPROVED_RELEASE_MANIFEST_SHA256: ${{ vars.LONGVON_WEB_MANIFEST_SHA256 }}
         run: bash scripts/recovery/cloud-web.sh

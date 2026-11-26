@@ -1,0 +1,3 @@
+const {test}=require('node:test'),assert=require('node:assert/strict'),{verify}=require('./approval-controls.cjs');
+const good={name:'production',can_admins_bypass:false,deployment_branch_policy:{protected_branches:true},protection_rules:[{type:'required_reviewers',reviewers:[{id:1}],prevent_self_review:true}]};
+test('independent protection is mandatory before credentials',()=>{assert.equal(verify(good),true);for(const p of [{...good,protection_rules:[]},{...good,can_admins_bypass:true},{...good,deployment_branch_policy:null},{...good,protection_rules:[{...good.protection_rules[0],prevent_self_review:false}]}])assert.throws(()=>verify(p))});

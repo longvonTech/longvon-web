@@ -1,0 +1,94 @@
+name: Publish fixed Web artifact
+
+on:
+  workflow_dispatch:
+    inputs:
+      release_key:
+        description: Independently reviewed private candidate manifest key
+        type: string
+        required: true
+      artifact_id:
+        description: Actions artifact ID
+        type: string
+        required: true
+      commit_sha:
+        description: Candidate source commit SHA
+        type: string
+        required: true
+      sha256:
+        description: Expected SHA256 of original Actions ZIP
+        type: string
+        required: true
+      approval:
+        description: Approved change record ID
+        type: string
+        required: true
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
+
+jobs:
+  approval-controls:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Require independent production approval settings
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api repos/longvonTech/longvon-web/environments/production > "$RUNNER_TEMP/production-controls.json"
+          node scripts/recovery/approval-controls.cjs "$RUNNER_TEMP/production-controls.json"
+  release:
+    if: github.repository == 'longvonTech/longvon-web' && github.ref == 'refs/heads/main'
+    needs: approval-controls
+    environment: production
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - name: Require scoped private archive App configuration
+        env:
+          APP_ID: ${{ vars.LONGVON_OPS_APP_ID }}
+          APP_PRIVATE_KEY: ${{ secrets.LONGVON_OPS_APP_PRIVATE_KEY }}
+        run: |
+          test -n "$APP_ID"
+          test -n "$APP_PRIVATE_KEY"
+      - name: Mint short-lived private archive read token
+        id: ops-token
+        uses: actions/create-github-app-token@fee1f7d63c2ff003460e3d139729b119787bc349 # v2
+        with:
+          app-id: ${{ vars.LONGVON_OPS_APP_ID }}
+          private-key: ${{ secrets.LONGVON_OPS_APP_PRIVATE_KEY }}
+          owner: longvonTech
+          repositories: longvon-ops
+          permission-contents: read
+          skip-token-revoke: false
+      - name: Execute reviewed Web operation
+        env:
+          OPERATION: release
+          APPROVAL: ${{ inputs.approval }}
+          REVIEWED_APPROVAL: ${{ vars.LONGVON_WEB_RELEASE_APPROVAL }}
+          HANDOFF_READY: ${{ vars.LONGVON_WEB_HANDOFF_READY }}
+          EXPECTED_BUILD: ${{ vars.LONGVON_WEB_EXPECTED_ACTIVE_BUILD }}
+          HEALTHY_RELEASES: ${{ vars.LONGVON_WEB_HEALTHY_RELEASES }}
+          ECS_SSH_KEY_B64: ${{ secrets.ECS_SSH_KEY_B64 }}
+          ECS_HOST: ${{ secrets.ECS_HOST }}
+          ECS_USER: ${{ secrets.ECS_USER }}
+          ARTIFACT_ID: ${{ inputs.artifact_id }}
+          SOURCE_SHA: ${{ inputs.commit_sha }}
+          EXPECTED_SHA: ${{ inputs.sha256 }}
+          GH_TOKEN: ${{ github.token }}
+          OPS_READ_TOKEN: ${{ steps.ops-token.outputs.token }}
+          RELEASE_KEY: ${{ inputs.release_key }}
+          APPROVED_RELEASE_MANIFEST_SHA256: ${{ vars.LONGVON_WEB_MANIFEST_SHA256 }}
+        run: bash scripts/recovery/cloud-web.sh

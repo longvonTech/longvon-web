@@ -1,0 +1,44 @@
+name: Verify fixed Web release controls
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/cloud-web-*.yml'
+      - 'scripts/recovery/**'
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  simulated-release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Simulate release, rejection and rollback
+        run: |
+          bash -n scripts/recovery/cloud-web.sh
+          bash -n scripts/recovery/fetch-fixed-web.sh
+          python3 -m unittest discover -s scripts/recovery -p 'test_*.py' -v
+          node --test scripts/recovery/web-switch.test.cjs scripts/recovery/approval-controls.test.cjs scripts/rfq/release/{activation,static}-transaction.test.cjs
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Real isolated PM2 cutover, interruption and reconciliation
+        run: |
+          npm install --prefix "$RUNNER_TEMP/pm2-tools" pm2@7.0.1 --no-audit --no-fund
+          if ! test -x /usr/sbin/sshd; then sudo apt-get update && sudo apt-get install -y openssh-server; fi
+          PATH="$RUNNER_TEMP/pm2-tools/node_modules/.bin:$PATH" bash scripts/recovery/ssh-pm2-rehearsal.sh
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: isolated-pm2-evidence
+          path: ${{ runner.temp }}/linux-pm2.json
+
+# Real fixed-archive verification is recorded in private ops evidence.
+# PR CI uses generated fixtures and must not depend on expiring Actions artifacts.

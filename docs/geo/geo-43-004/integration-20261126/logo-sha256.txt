@@ -1,0 +1,1 @@
+bd9500de4fca96f3a5bdf9b1ac99f6cff9918b413e1aa26848223889806ec311  apps/web/public/images/longvon-logo.png

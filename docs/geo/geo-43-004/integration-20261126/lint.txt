@@ -1,0 +1,168 @@
+
+> mateyou-platform@0.1.0 lint
+> npm run lint --workspace=apps/web && npm run lint --workspace=apps/api
+
+
+> @mateyou/web@0.1.0 lint
+> next lint
+
+`next lint` is deprecated and will be removed in Next.js 16.
+For new projects, use create-next-app to choose your preferred linter.
+For existing projects, migrate to the ESLint CLI:
+npx @next/codemod@canary next-lint-to-eslint-cli .
+
+
+./app/admin/growth/page.tsx
+27:6  Warning: React Hook useEffect has a missing dependency: 'router'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./app/admin/news/page.tsx
+58:6  Warning: React Hook useEffect has a missing dependency: 'loadList'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/app/api-reference/config/eslint#disabling-rules
+
+> @mateyou/api@0.1.0 lint
+> eslint "src/**/*.ts"
+
+
+/Users/libingshi/.codex/worktrees/geo-43-004/geo-43-002/apps/api/src/assessment/repositories/assessment-definition.repository.ts
+  40:58  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/libingshi/.codex/worktrees/geo-43-004/geo-43-002/apps/api/src/assessment/services/assessment-analytics.service.ts
+  44:37  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/libingshi/.codex/worktrees/geo-43-004/geo-43-002/apps/api/src/growth/controllers/growth.controller.ts
+   36:36  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   50:68  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   65:38  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   88:36  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  107:41  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  127:35  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  147:67  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  163:48  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  257:53  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/libingshi/.codex/worktrees/geo-43-004/geo-43-002/apps/api/src/growth/repositories/growth.repository.ts
+    8:35  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   11:31  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   29:36  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   45:37  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   48:33  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   68:38  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   78:35  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   81:31  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   93:36  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  103:40  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  106:37  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  121:35  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  124:34  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  127:30  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  139:70  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  148:37  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/libingshi/.codex/worktrees/geo-43-004/geo-43-002/apps/api/src/growth/services/content-factory.service.ts
+   30:41  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  107:16  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  122:14  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  129:67  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  138:19  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/libingshi/.codex/worktrees/geo-43-004/geo-43-002/apps/api/src/growth/services/content-strategy.service.ts
+   60:44  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  100:19  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  105:45  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  165:19  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  170:45  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  204:19  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/libingshi/.codex/worktrees/geo-43-004/geo-43-002/apps/api/src/growth/services/crawler.service.ts
+  28:19  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  73:19  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/libingshi/.codex/worktrees/geo-43-004/geo-43-002/apps/api/src/growth/services/executive-brief.service.ts
+   30:39  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   95:40  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  134:29  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  181:19  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/libingshi/.codex/worktrees/geo-43-004/geo-43-002/apps/api/src/growth/services/health-monitor.service.ts
+   36:73  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   39:87  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  102:74  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/libingshi/.codex/worktrees/geo-43-004/geo-43-002/apps/api/src/growth/services/image-prompt.service.ts
+  73:19  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/libingshi/.codex/worktrees/geo-43-004/geo-43-002/apps/api/src/growth/services/intelligence.service.ts
+   54:21  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   82:21  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  124:21  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  240:50  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/libingshi/.codex/worktrees/geo-43-004/geo-43-002/apps/api/src/growth/services/keyword.service.ts
+  160:21  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/libingshi/.codex/worktrees/geo-43-004/geo-43-002/apps/api/src/growth/services/publishing.service.ts
+  24:67  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  29:19  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  48:43  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  63:72  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  64:44  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  66:58  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  70:45  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  72:77  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  82:39  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/libingshi/.codex/worktrees/geo-43-004/geo-43-002/apps/api/src/growth/services/qwen.service.ts
+  13:23  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  34:19  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  60:13  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/libingshi/.codex/worktrees/geo-43-004/geo-43-002/apps/api/src/growth/services/seo-intelligence.service.ts
+   38:43  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   40:75  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   62:87  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   97:37  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  108:16  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  112:16  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  126:64  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/libingshi/.codex/worktrees/geo-43-004/geo-43-002/apps/api/src/growth/services/seo-optimizer.service.ts
+   32:43  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   66:57  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   71:21  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   84:42  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   93:12  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  101:21  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  107:40  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  136:12  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  148:40  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  150:59  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  174:51  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/libingshi/.codex/worktrees/geo-43-004/geo-43-002/apps/api/src/image-admin/image-admin.controller.ts
+  40:28  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  40:39  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  40:48  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  47:25  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  47:36  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  47:45  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  53:25  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  53:36  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  53:45  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  64:27  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/libingshi/.codex/worktrees/geo-43-004/geo-43-002/apps/api/src/image-admin/media-admin.controller.ts
+  58:73  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/libingshi/.codex/worktrees/geo-43-004/geo-43-002/apps/api/src/membership/services/membership-analytics.service.ts
+  65:37  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/libingshi/.codex/worktrees/geo-43-004/geo-43-002/apps/api/src/partner/repositories/partner.repository.ts
+  44:44  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/libingshi/.codex/worktrees/geo-43-004/geo-43-002/apps/api/src/partner/services/lead.service.ts
+  127:34  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  156:19  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+✖ 98 problems (0 errors, 98 warnings)
+

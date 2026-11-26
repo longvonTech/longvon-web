@@ -21,13 +21,13 @@ PidFile $stage/sshd.pid
 AuthorizedKeysFile $stage/authorized_keys
 PasswordAuthentication no
 KbdInteractiveAuthentication no
-UsePAM no
+UsePAM yes
 StrictModes no
 PermitRootLogin no
 AllowUsers $runner_user
-LogLevel ERROR
+LogLevel VERBOSE
 EOF
-trap 'if [[ -f "$stage/sshd.pid" ]]; then sudo kill "$(cat "$stage/sshd.pid")" || true; fi; rm -rf "$stage"' EXIT
+trap 'rc=$?; if [[ $rc -ne 0 && -f "$stage/sshd.log" ]]; then cat "$stage/sshd.log"; fi; if [[ -f "$stage/sshd.pid" ]]; then sudo kill "$(cat "$stage/sshd.pid")" || true; fi; rm -rf "$stage"' EXIT
 sudo mkdir -p /run/sshd
 sudo "$sshd_bin" -f "$stage/sshd_config" -E "$stage/sshd.log"
 # Quote only task-owned paths and explicitly forward no agent or authentication environment.

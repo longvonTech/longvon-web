@@ -79,3 +79,12 @@ test('record failure after PM2 save restores both process and active record',asy
  await assert.rejects(activate(m.options),/INJECTED_RECORD_FAILURE/);
  assert.equal(stored,previous.webScript);assert.deepEqual(m.state(),{active:previous.webScript,saved:previous.webScript});assert.ok(m.events.includes('recovered'));
 });
+
+
+test('isolated host adapter rejects default or production PM2_HOME before any process operation',()=>{
+ const fs=require('node:fs'),cp=require('node:child_process'),path=require('node:path');const root=fs.mkdtempSync('/tmp/lv-dual-guard-');
+ try{const args=[path.join(__dirname,'web-switch.cjs'),'release','actions-2-1','CHANGE-001','CHANGE-001','true','baseline',JSON.stringify(['actions-1-1']),'42','1','',JSON.stringify({commit:'b'.repeat(40),routeCount:72,buildId:'candidate'}),'--isolated'];
+ const r=cp.spawnSync(process.execPath,args,{env:{...process.env,LV_ISOLATED_ROOT:root,PM2_HOME:'/root/.pm2'},encoding:'utf8'});
+ assert.notEqual(r.status,0);assert.match(r.stderr,/Isolated PM2_HOME/);assert.equal(fs.readdirSync(root).length,0);
+ }finally{fs.rmSync(root,{recursive:true,force:true})}
+});

@@ -73,6 +73,11 @@ async function host([operation, target, approval, approvedApproval, enabled, exp
   else assert.ok(!isolatedRoot, 'Root override forbidden in production');
   const root = isolated ? path.resolve(isolatedRoot) : '/root/mateyou';
   if(isolated){assert.ok(fs.lstatSync(root).isDirectory()&&!fs.lstatSync(root).isSymbolicLink(),'Isolated root cannot be a symlink');assert.ok(fs.realpathSync(root).startsWith(fs.realpathSync('/tmp')+'/lv-dual-'));}
+  if(isolated){
+    assert.ok(process.env.PM2_HOME && path.resolve(process.env.PM2_HOME).startsWith(root+path.sep),'Isolated PM2_HOME must be inside isolated root');
+    assert.ok(fs.realpathSync(process.env.PM2_HOME).startsWith(fs.realpathSync(root)+path.sep),'Isolated PM2_HOME symlink escape');
+    for(const rel of ['_recovery','_recovery/releases','_recovery/incoming'])if(fs.existsSync(path.join(root,rel)))assert.ok(!fs.lstatSync(path.join(root,rel)).isSymbolicLink(),'Isolated control path symlink');
+  }
   const candidatePolicy = operation === 'release' ? JSON.parse(candidateJson) : null;
   if (candidatePolicy) {
     assert.match(candidatePolicy.commit, /^[a-f0-9]{40}$/);
@@ -83,7 +88,11 @@ async function host([operation, target, approval, approvedApproval, enabled, exp
   const proxyBase = isolated ? process.env.LV_TEST_PROXY_BASE : 'https://www.longvon.com';
   const apiBase = isolated ? process.env.LV_TEST_API_BASE : 'http://127.0.0.1:4000';
   const preflightPort = isolated ? process.env.LV_TEST_PREFLIGHT_PORT : '3101';
-  if (isolated) for (const base of [webBase,proxyBase,apiBase]) assert.equal(new URL(base).hostname,'127.0.0.1');
+  if (isolated) {
+    const reserved=['22','80','443','3000','3101','4000','5432','6379'];
+    for(const base of [webBase,proxyBase,apiBase]){const u=new URL(base);assert.equal(u.hostname,'127.0.0.1');assert.equal(u.protocol,'http:');assert.ok(!u.username&&!u.password&&!u.search&&!u.hash&&u.pathname==='/');assert.ok(u.port&&!reserved.includes(u.port),'Reserved production/system port forbidden in isolated test');}
+    assert.match(preflightPort,/^[0-9]+$/);assert.ok(Number(preflightPort)>1024&&Number(preflightPort)<=65535&&!reserved.includes(preflightPort));
+  }
   const control = path.join(root, '_recovery');
   const releases = path.join(control, 'releases');
   const staticRoot = isolated ? path.join(root, 'public-static') : '/var/www/mateyou/static';

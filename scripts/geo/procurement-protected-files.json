@@ -1,0 +1,57 @@
+{
+  "baseline": "ff789513e7afac9b632225c2eecde70cd5515f1e",
+  "files": [
+    {
+      "path": "apps/web/app/en/company/longvon/page.tsx",
+      "sha256": "10b635a50c31accba0a7dc8c0172a886cdaadced33c69804a5d58bf246a9a740"
+    },
+    {
+      "path": "apps/web/app/company/longvon/page.tsx",
+      "sha256": "ee0b1ac2daf973348d3cc8fa63ac85a814592506ddd9820f7bdca64c71df4beb"
+    },
+    {
+      "path": "apps/web/app/en/smart-ring-sleep-respiratory/page.tsx",
+      "sha256": "5032a6f6b82ed9e3c5c125e4044e4a5ba2d30535ede9a6ddbc0b6784eb29a43c"
+    },
+    {
+      "path": "apps/web/app/smart-ring-sleep-respiratory/page.tsx",
+      "sha256": "0c601d7bedbbb66961c2e804c685798f40973313205b3bbf84c098baa74bb75d"
+    },
+    {
+      "path": "apps/web/app/en/smart-ring-oem-odm/page.tsx",
+      "sha256": "0cf67332afbd939f87ec9a516490eba51a1d9d00c4d36724116f41055e645535"
+    },
+    {
+      "path": "apps/web/app/smart-ring-oem-odm/page.tsx",
+      "sha256": "53ea1ddd6246b3516ba3f4c29c82276942b116176f9e3106e6291cebd9d10bff"
+    },
+    {
+      "path": "apps/web/components/OemRfqForm.tsx",
+      "sha256": "386cbbbb8e415ca75c70daee06d7ee937a9a1dae1608e1cc844eccd284fe0155"
+    },
+    {
+      "path": "apps/web/lib/lead-attribution.ts",
+      "sha256": "0464963bca43d123cf356616508f3eba2e3d96de54bebe95bffbaef9d55d0008"
+    },
+    {
+      "path": "apps/web/lib/partner-api.ts",
+      "sha256": "b23464f9114f775d6b98c4991dffabe5d97e15789b110b88177e8a1d15697d18"
+    },
+    {
+      "path": "apps/web/lib/api-client.ts",
+      "sha256": "67bf5dab042fec5990055473d74b1497778bb0d57095a54ebf38b1110e8a4bd2"
+    },
+    {
+      "path": "apps/web/lib/oem-journey.ts",
+      "sha256": "8a75513d386106c42161bc1e21dbc097cd12919364bf7ee067d1baf121f6ce84"
+    },
+    {
+      "path": "apps/web/next.config.ts",
+      "sha256": "48fe0a78b857e4108ebab339433795c1a3a57e618d8955e3f467ab8d09cd8e91"
+    },
+    {
+      "path": "packages/database/prisma/schema.prisma",
+      "sha256": "a0ff235f67185e73cfb4c59eec3ff10f9ef06b22c25256c8fb844d2f49498927"
+    }
+  ]
+}

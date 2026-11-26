@@ -1,0 +1,19 @@
+HTTP/1.1 308 Permanent Redirect
+Server: nginx/1.28.3 (Ubuntu)
+Date: Tue, 24 Nov 2026 13:53:24 GMT
+Transfer-Encoding: chunked
+Connection: keep-alive
+location: /en/smart-ring-sleep-respiratory
+Refresh: 0;url=/en/smart-ring-sleep-respiratory
+
+HTTP/1.1 200 OK
+Server: nginx/1.28.3 (Ubuntu)
+Date: Tue, 24 Nov 2026 13:53:24 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
+link: </images/longvon-logo.png>; rel=preload; as="image"
+X-Powered-By: Next.js
+Cache-Control: private, no-cache, no-store, max-age=0, must-revalidate
+

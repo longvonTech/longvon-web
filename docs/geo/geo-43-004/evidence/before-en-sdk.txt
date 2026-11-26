@@ -1,0 +1,258 @@
+- banner:
+  - navigation:
+    - link "LONGVON":
+      - /url: /en
+      - img "LONGVON"
+    - list:
+      - link "Product":
+        - /url: /en/products/ring1c
+      - link "Company":
+        - /url: /en/company/longvon
+      - link "OEM / ODM":
+        - /url: /en/smart-ring-oem-odm
+      - link "Technology":
+        - /url: /en/smart-ring-technology
+      - link "SDK / API":
+        - /url: /en/smart-ring-sdk-api
+      - link "Partners":
+        - /url: /en/partner
+      - link "About":
+        - /url: /en/about
+      - link "Switch to Chinese":
+        - /url: /smart-ring-sdk-api
+        - text: 中文
+- navigation "Breadcrumb":
+  - link "Technology":
+    - /url: /en/smart-ring-technology
+  - generic: /SDK & Cloud API
+- link "中文":
+  - /url: /smart-ring-sdk-api
+- paragraph: LONGVON · Smart Ring Manufacturer · OEM/ODM
+- heading "Smart Ring SDK & Cloud API for OEM Partners" [level=1]
+- paragraph: LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in customized smart ring hardware, firmware, mobile apps, SDKs, cloud APIs, and health monitoring solutions. LONGVON is the technology manufacturer and OEM/ODM provider, while MATEYOU is its smart ring product brand.
+- complementary "Why trust LONGVON":
+  - paragraph: Why brands trust LONGVON for smart ring OEM/ODM — verifiable company credentials and delivery evidence.
+  - list:
+    - listitem: National High-Tech Enterprise (China)
+    - listitem: Medical-oriented production controls (ISO 13485–aligned practices; Class 100,000 cleanroom)
+    - listitem: "End-to-end smart ring stack: hardware, firmware, algorithms, App, manufacturing"
+  - link "View company credentials & delivery evidence →":
+    - /url: /en/company/longvon#company-trust-heading
+- article:
+  - heading "Smart Ring SDK overview" [level=2]
+  - paragraph: LONGVON enables partner SDK access so brands and digital-health teams can integrate smart ring hardware with their own applications. Access is project-scoped — not a public self-serve portal.
+  - region "100Hz raw PPG for partner R&D":
+    - heading "100Hz raw PPG for partner R&D" [level=2]
+    - paragraph: Evaluating raw signals for your wearable product, digital-health platform, algorithm team or research project? Qualified OEM/ODM partners can discuss 100Hz PPG raw-data access through LONGVON’s agreed SDK and project pathway. This is a technical evaluation, not a public SDK download or a guarantee for every ring model.
+    - paragraph:
+      - link "Discuss a 100Hz raw PPG project":
+        - /url: /en/partner/oem?keyword=100hz-raw-ppg
+    - heading "What 100Hz means — and what to evaluate" [level=3]
+    - paragraph: 100Hz describes a sampling frequency of 100 samples per second. It does not by itself specify continuous recording, wireless streaming latency, buffering duration or cloud API update frequency. Start with the signal and integration requirements your R&D team needs to evaluate; confirm the actual sampling and delivery configuration in the technical SOW.
+    - heading "Device data and cloud algorithms are different scopes" [level=3]
+    - term: Partner SDK / customer-owned App
+    - definition: The SDK provides agreed device-connectivity and data pathways. Customer-owned App integration is supported subject to project evaluation; confirm the supported ring model, SDK platforms and available data before planning implementation.
+    - term: Cloud algorithms / Cloud API
+    - definition: Many health metrics use LONGVON cloud algorithm services. Raw-data access does not mean that all algorithms run offline, that every metric is available through an API, or that unrestricted BLE protocol access is included. Define the device, App and cloud responsibilities separately.
+    - heading "Agree the technical scope before implementation" [level=3]
+    - paragraph: Use discovery, NDA and the technical statement of work to confirm the following. These are evaluation questions, not published specifications or default entitlements.
+    - list:
+      - strong: "Hardware and sampling:"
+      - text: Supported ring model and hardware revision; required signals; sampling configuration and any operating constraints.
+      - strong: "Data delivery:"
+      - text: Raw-data format, units, timing information, transfer method and buffering behavior. No packet format, retention period or latency is specified here.
+      - strong: "App and SDK integration:"
+      - text: Customer App ownership, target platforms, SDK availability, documentation and the agreed integration/support scope.
+      - strong: "Permissions and cloud scope:"
+      - text: Who may access/use the data; handling requirements; authorized algorithm outputs; any cloud/API dependencies and environments.
+    - heading "Start with a scoped technical consultation" [level=3]
+    - list:
+      - listitem: Share your use case, target platforms, raw-signal requirements and customer-owned App plan.
+      - listitem: Discuss discovery/NDA and confirm the supported hardware and SDK pathway.
+      - listitem: Agree data permissions, device/cloud responsibilities, technical SOW and commercial scope before implementation.
+    - complementary: Raw PPG availability is not evidence of clinical validation. Ring1C is a consumer health-monitoring reference product, not a medical device; Chinese regulatory progress does not establish overseas medical-device clearance.
+    - paragraph:
+      - link "Discuss a 100Hz raw PPG project":
+        - /url: /en/partner/oem?keyword=100hz-raw-ppg
+    - paragraph: Tell us what you need to evaluate. Data access, licensing and integration scope are agreed per project; no public price or licensing entitlement is implied.
+  - heading "Sensor data access" [level=2]
+  - paragraph: Beyond PPG, partner programs may include temperature and motion-related signals used in LONGVON smart ring platforms. Available signals and rates depend on the hardware generation and project agreement.
+  - paragraph:
+    - strong: 71 total health monitoring parameters, including 22 sleep-related parameters.
+    - text: Published metrics remain for health reference and are not medical diagnoses.
+  - heading "Health data integration" [level=2]
+  - paragraph: Partners can plan App-side and cloud-side integration for sleep, respiratory, and other health-monitoring outputs. Integration depth is evaluated with your product architecture and compliance needs.
+  - heading "SDK & Cloud API" [level=2]
+  - list:
+    - listitem: Device / companion SDK for partner or customer-owned Apps
+    - listitem: Cloud API options for data access and algorithm services
+    - listitem: Firmware cooperation within agreed scope
+    - listitem: Technical support windows defined per engagement
+  - heading "Customer-owned App integration" [level=2]
+  - paragraph: Customer-owned App integration is supported. Feasibility, effort, and timelines depend on your stack, target platforms, and required metrics — assessed during technical consultation.
+  - heading "Algorithm services" [level=2]
+  - paragraph:
+    - text: LONGVON provides
+    - strong: cloud algorithm services
+    - text: for many health metrics. Some features may run on-device; others require LONGVON cloud. Algorithm authorization and cloud service fees are set by the cooperation model. We do
+    - strong: not
+    - text: claim that all algorithms can run fully offline on customer hardware.
+  - heading "Technical cooperation process" [level=2]
+  - list:
+    - listitem: Discovery & NDA
+    - listitem: "Scope: raw data needs, on-device features, cloud features, App ownership"
+    - listitem: Algorithm authorization and environments
+    - listitem: Integration support windows
+    - listitem: Commercial license / OEM agreement
+  - heading "Licensing components" [level=2]
+  - list:
+    - listitem: SDK — connectivity and data pathways
+    - listitem: Algorithm licensing — authorized metrics / models
+    - listitem: Technical support — agreed integration windows
+    - listitem: Cloud services — cloud algorithms and data APIs (separately scoped)
+  - heading "Boundaries (read carefully)" [level=2]
+  - list:
+    - listitem: No unrestricted Bluetooth protocol as a default public promise
+    - listitem: No guarantee that every algorithm runs fully offline
+    - listitem: No public self-serve SDK download
+    - listitem: Ring1C remains a consumer health-monitoring product — not a medical device
+    - listitem: Ring1 and Ring1C share relevant sensor/chipset/algorithm capability only as supported by product documentation; regulatory positioning differs
+    - listitem: Chinese regulatory progress is never presented as overseas medical-device approval
+  - heading "Request technical consultation" [level=2]
+  - paragraph:
+    - text: "Start with an OEM/ODM technical inquiry:"
+    - link "Request OEM / technology consultation":
+      - /url: /en/partner/oem
+    - text: ". Related pages:"
+    - link "Technology":
+      - /url: /en/smart-ring-technology
+    - text: ·
+    - link "OSA Technology & OEM":
+      - /url: /en/osa-smart-ring-technology
+    - text: ·
+    - link "Manufacturer":
+      - /url: /en/smart-ring-manufacturer
+    - text: ·
+    - link "OEM & ODM":
+      - /url: /en/smart-ring-oem-odm
+    - text: .
+  - paragraph:
+    - link "Plan a sample-to-pilot-to-production ODM project":
+      - /url: /en/smart-ring-oem-odm#sample-to-production
+- heading "Frequently Asked Questions" [level=2]
+- heading "Does LONGVON provide a public self-serve SDK download?" [level=3]
+- paragraph: No. SDK and cloud API access are enabled under OEM/ODM or technology partnerships. Scope is defined per project.
+- heading "Can partners access 100Hz PPG raw data?" [level=3]
+- paragraph: Yes, 100Hz PPG raw data access can be discussed for qualified OEM/ODM partners as part of the technical scope.
+- heading "Do all health algorithms run fully offline on customer hardware?" [level=3]
+- paragraph: No. LONGVON does not claim that all algorithms run independently on customer devices. Many health metrics are delivered through LONGVON cloud algorithm services; the on-device vs cloud split is defined per project.
+- heading "Is an unrestricted Bluetooth protocol provided to every customer?" [level=3]
+- paragraph: No. Interfaces are provided as documented for the agreed project. Unrestricted Bluetooth protocol access is not a default public offer.
+- heading "Can we use our own App?" [level=3]
+- paragraph: Yes. Customer-owned App integration via SDK/API is a supported model and is evaluated during technical consultation.
+- heading "How are SDK, algorithm licensing, technical support, and cloud services separated?" [level=3]
+- paragraph: SDK covers device connectivity and data pathways; algorithm licensing defines which metrics/models are authorized; technical support is provided in agreed windows; cloud services host cloud algorithms and data APIs and are scoped/priced separately under the cooperation model.
+- heading "Does 100Hz raw PPG mean continuous real-time BLE streaming?" [level=3]
+- paragraph: No continuous-streaming or latency guarantee is made here. 100Hz describes sampling frequency. Qualified partners discuss the agreed SDK pathway; sampling configuration, transfer and buffering behavior must be confirmed in the technical SOW. Unrestricted BLE access is not a default offer.
+- heading "Which ring model, raw-data format and SDK platform should we use?" [level=3]
+- paragraph: Confirm the supported ring model, hardware revision, SDK platforms, raw-data format and delivery scope during technical consultation. This page does not publish a universal model/platform compatibility list or packet specification.
+- heading "Can raw PPG replace LONGVON cloud algorithms or establish a diagnosis?" [level=3]
+- paragraph: No such claim is made. Many health metrics depend on LONGVON cloud services; raw-data access and algorithm authorization are separate scopes. Ring1C is not a medical device, and raw-signal access is not evidence of diagnostic capability or clinical validation.
+- heading "What should we provide for a raw PPG technical consultation?" [level=3]
+- paragraph: Share your intended use, target App platforms, raw-signal requirements and data-handling needs. Discovery/NDA and a technical SOW establish the supported hardware, SDK/data pathway, permissions and cloud responsibilities. SDK access is project-scoped, not a public self-serve download.
+- heading "Discuss Your Smart Ring Project" [level=2]
+- paragraph: Talk to LONGVON about OEM, ODM, or custom smart ring development for your brand or healthcare program.
+- link "Request OEM/ODM Consultation":
+  - /url: /en/partner/oem
+- link "Partner Hub":
+  - /url: /en/partner
+- heading "Related LONGVON Technology" [level=2]
+- list:
+  - link "About LONGVON":
+    - /url: /en/company/longvon
+  - link "Manufacturer":
+    - /url: /en/smart-ring-manufacturer
+  - link "OEM & ODM":
+    - /url: /en/smart-ring-oem-odm
+  - link "Solution Provider":
+    - /url: /en/smart-ring-solution-provider
+  - link "Healthcare Solutions":
+    - /url: /en/smart-ring-healthcare-solutions
+  - link "Technology":
+    - /url: /en/smart-ring-technology
+  - link "SDK & Cloud API":
+    - /url: /en/smart-ring-sdk-api
+  - link "OSA Technology & OEM":
+    - /url: /en/osa-smart-ring-technology
+  - link "Sleep Monitoring":
+    - /url: /en/smart-ring-sleep-monitoring
+  - link "Respiratory Health":
+    - /url: /en/smart-ring-sleep-respiratory
+  - link "OSA Metrics":
+    - /url: /en/smart-ring-osa
+  - link "MATEYOU Ring1C":
+    - /url: /en/products/ring1c
+  - link "About LONGVON":
+    - /url: /en/company/longvon
+- contentinfo:
+  - generic: LONGVON
+  - paragraph: LONGVON is a smart ring technology manufacturer and OEM/ODM provider specializing in customized smart ring hardware, firmware, mobile apps, SDKs, cloud APIs, and health monitoring solutions. MATEYOU is its smart ring product brand.
+  - paragraph:
+    - link "中文":
+      - /url: /smart-ring-sdk-api
+  - generic: Explore
+  - list:
+    - link "Company":
+      - /url: /en/company/longvon
+    - link "OEM / ODM":
+      - /url: /en/smart-ring-oem-odm
+    - link "Technology":
+      - /url: /en/smart-ring-technology
+    - link "Sleep Monitoring":
+      - /url: /en/smart-ring-sleep-monitoring
+    - link "Product":
+      - /url: /en/products/ring1c
+  - generic: Partners
+  - list:
+    - link "Partner Hub":
+      - /url: /en/partner
+    - link "OEM Inquiry":
+      - /url: /en/partner/oem
+    - link "Hospital (CN form)":
+      - /url: /partner/hospital
+  - generic: Technology
+  - list:
+    - link "LONGVON Company":
+      - /url: /en/company/longvon
+    - link "Manufacturer":
+      - /url: /en/smart-ring-manufacturer
+    - link "OEM & ODM":
+      - /url: /en/smart-ring-oem-odm
+    - link "Solution Provider":
+      - /url: /en/smart-ring-solution-provider
+    - link "Healthcare Solutions":
+      - /url: /en/smart-ring-healthcare-solutions
+    - link "Technology":
+      - /url: /en/smart-ring-technology
+    - link "SDK & Cloud API":
+      - /url: /en/smart-ring-sdk-api
+    - link "OSA Technology & OEM":
+      - /url: /en/osa-smart-ring-technology
+    - link "Respiratory Health":
+      - /url: /en/smart-ring-sleep-respiratory
+    - link "OSA Metrics":
+      - /url: /en/smart-ring-osa
+    - link "About":
+      - /url: /en/about
+    - link "中文网站":
+      - /url: /
+  - link "粤ICP备2022138739号-1":
+    - /url: https://beian.miit.gov.cn/
+  - generic: "|"
+  - link "粤ICP备2022138739号-4":
+    - /url: https://beian.miit.gov.cn/
+  - paragraph: www.longvon.com · www.mateyou.net
+  - generic: © 2026 LONGVON Technology (Shenzhen) Co., Ltd.
+  - generic: Content is for health reference only and does not constitute medical advice.
+- button "Open Next.js Dev Tools":
+- alert

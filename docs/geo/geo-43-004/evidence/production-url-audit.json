@@ -1,0 +1,147 @@
+[
+  {
+    "requested_url": "https://www.longvon.com/en/smart-ring-respiratory",
+    "error": "HTTP Error 308: Permanent Redirect",
+    "checked_at": "2026-11-24T13:53:02.112138+00:00"
+  },
+  {
+    "requested_url": "https://www.longvon.com/en/smart-ring-sleep-respiratory",
+    "status": 200,
+    "final_url": "https://www.longvon.com/en/smart-ring-sleep-respiratory",
+    "html_lang": "en",
+    "links": [
+      {
+        "rel": "canonical",
+        "href": "https://www.longvon.com/en/smart-ring-sleep-respiratory"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "zh-CN",
+        "href": "https://www.longvon.com/smart-ring-sleep-respiratory"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://www.longvon.com/en/smart-ring-sleep-respiratory"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "x-default",
+        "href": "https://www.longvon.com/smart-ring-sleep-respiratory"
+      }
+    ],
+    "checked_at": "2026-11-24T13:53:02.118781+00:00"
+  },
+  {
+    "requested_url": "https://www.longvon.com/en/smart-ring-sdk-api",
+    "status": 200,
+    "final_url": "https://www.longvon.com/en/smart-ring-sdk-api",
+    "html_lang": "en",
+    "links": [
+      {
+        "rel": "canonical",
+        "href": "https://www.longvon.com/en/smart-ring-sdk-api"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "zh-CN",
+        "href": "https://www.longvon.com/smart-ring-sdk-api"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://www.longvon.com/en/smart-ring-sdk-api"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "x-default",
+        "href": "https://www.longvon.com/smart-ring-sdk-api"
+      }
+    ],
+    "checked_at": "2026-11-24T13:53:02.111897+00:00"
+  },
+  {
+    "requested_url": "https://www.longvon.com/smart-ring-sdk-api",
+    "status": 200,
+    "final_url": "https://www.longvon.com/smart-ring-sdk-api",
+    "html_lang": "zh-CN",
+    "links": [
+      {
+        "rel": "canonical",
+        "href": "https://www.longvon.com/smart-ring-sdk-api"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "zh-CN",
+        "href": "https://www.longvon.com/smart-ring-sdk-api"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://www.longvon.com/en/smart-ring-sdk-api"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "x-default",
+        "href": "https://www.longvon.com/smart-ring-sdk-api"
+      }
+    ],
+    "checked_at": "2026-11-24T13:53:02.140081+00:00"
+  },
+  {
+    "requested_url": "https://www.longvon.com/en/smart-ring-technology",
+    "status": 200,
+    "final_url": "https://www.longvon.com/en/smart-ring-technology",
+    "html_lang": "en",
+    "links": [
+      {
+        "rel": "canonical",
+        "href": "https://www.longvon.com/en/smart-ring-technology"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "zh-CN",
+        "href": "https://www.longvon.com/smart-ring-technology"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://www.longvon.com/en/smart-ring-technology"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "x-default",
+        "href": "https://www.longvon.com/smart-ring-technology"
+      }
+    ],
+    "checked_at": "2026-11-24T13:53:02.182419+00:00"
+  },
+  {
+    "requested_url": "https://www.longvon.com/en/osa-smart-ring-technology",
+    "status": 200,
+    "final_url": "https://www.longvon.com/en/osa-smart-ring-technology",
+    "html_lang": "en",
+    "links": [
+      {
+        "rel": "canonical",
+        "href": "https://www.longvon.com/en/osa-smart-ring-technology"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "zh-CN",
+        "href": "https://www.longvon.com/osa-smart-ring-technology"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://www.longvon.com/en/osa-smart-ring-technology"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "x-default",
+        "href": "https://www.longvon.com/osa-smart-ring-technology"
+      }
+    ],
+    "checked_at": "2026-11-24T13:53:02.164134+00:00"
+  }
+]

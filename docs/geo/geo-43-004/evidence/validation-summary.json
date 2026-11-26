@@ -1,0 +1,36 @@
+{
+  "recorded_at": "2026-11-24T14:06:37.937935+00:00",
+  "code_sha": "33af66403d5f5dfdaa308576dc133ed24f526055",
+  "baseline_sha": "ff789513e7afac9b632225c2eecde70cd5515f1e",
+  "typecheck": "PASS (command exit 0; empty output file)",
+  "web_lint": "PASS; 2 existing admin hook warnings",
+  "web_build": "PASS; standalone started on loopback",
+  "contracts": 29,
+  "i18n_tests": 5,
+  "browser_suites": {
+    "candidate": {
+      "result": "PASS",
+      "paths": 4,
+      "source": "evidence/candidate/verification.json"
+    },
+    "retained-ppg": {
+      "result": "PASS",
+      "paths": 2,
+      "source": "evidence/retained-ppg/verification.json"
+    },
+    "retained-oem": {
+      "result": "PASS",
+      "paths": 6,
+      "source": "evidence/retained-oem/verification.json"
+    }
+  },
+  "production_url_audit": {
+    "total": 26,
+    "pass": 26
+  },
+  "secret_pattern_scan": "PASS; limited scan not absolute guarantee",
+  "production_post_count": 0,
+  "database_writes": 0,
+  "merge_or_deploy": false,
+  "protected_fingerprints": 13
+}

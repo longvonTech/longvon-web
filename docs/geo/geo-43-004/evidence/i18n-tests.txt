@@ -1,0 +1,17 @@
+(node:63769) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/libingshi/.codex/worktrees/geo-43-004/geo-43-002/apps/web/lib/i18n-routes.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/libingshi/.codex/worktrees/geo-43-004/geo-43-002/apps/web/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ htmlLangFromPathname: English routes (1.119167ms)
+✔ htmlLangFromPathname: Chinese routes (0.070833ms)
+✔ oemRfqAlternates is reciprocal and x-default is English RFQ (0.814166ms)
+✔ siteAlternates default x-default remains Chinese for non-RFQ pairs (0.06375ms)
+✔ siteAlternates covers SDK commercial page pair (0.066959ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 136.961291

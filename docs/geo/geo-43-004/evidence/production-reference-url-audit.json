@@ -1,0 +1,1031 @@
+[
+  {
+    "requested_url": "https://longvon.com/en/partner/oem?utm_source=chatgpt.com",
+    "checked_at": "2026-11-24T14:03:54.902527+00:00",
+    "method": "GET",
+    "chain": [
+      {
+        "url": "https://longvon.com/en/partner/oem?utm_source=chatgpt.com",
+        "status": 301,
+        "location": "https://www.longvon.com/en/partner/oem?utm_source=chatgpt.com"
+      },
+      {
+        "url": "https://www.longvon.com/en/partner/oem?utm_source=chatgpt.com",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "status": 200,
+    "final_url": "https://www.longvon.com/en/partner/oem?utm_source=chatgpt.com",
+    "html_lang": "en",
+    "links": [
+      {
+        "rel": "canonical",
+        "href": "https://www.longvon.com/en/partner/oem"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "zh-CN",
+        "href": "https://www.longvon.com/partner/oem"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://www.longvon.com/en/partner/oem"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "x-default",
+        "href": "https://www.longvon.com/en/partner/oem"
+      }
+    ],
+    "language_matches": true,
+    "canonical_matches": true,
+    "result": "PASS"
+  },
+  {
+    "requested_url": "https://www.longvon.com/en",
+    "checked_at": "2026-11-24T14:03:54.903411+00:00",
+    "method": "GET",
+    "chain": [
+      {
+        "url": "https://www.longvon.com/en",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "status": 200,
+    "final_url": "https://www.longvon.com/en",
+    "html_lang": "en",
+    "links": [
+      {
+        "rel": "canonical",
+        "href": "https://www.longvon.com/en"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "zh-CN",
+        "href": "https://www.longvon.com"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://www.longvon.com/en"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "x-default",
+        "href": "https://www.longvon.com"
+      }
+    ],
+    "language_matches": true,
+    "canonical_matches": true,
+    "result": "PASS"
+  },
+  {
+    "requested_url": "https://www.longvon.com/en/about",
+    "checked_at": "2026-11-24T14:03:54.903650+00:00",
+    "method": "GET",
+    "chain": [
+      {
+        "url": "https://www.longvon.com/en/about",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "status": 200,
+    "final_url": "https://www.longvon.com/en/about",
+    "html_lang": "en",
+    "links": [
+      {
+        "rel": "canonical",
+        "href": "https://www.longvon.com/en/about"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "zh-CN",
+        "href": "https://www.longvon.com/about"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://www.longvon.com/en/about"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "x-default",
+        "href": "https://www.longvon.com/about"
+      }
+    ],
+    "language_matches": true,
+    "canonical_matches": true,
+    "result": "PASS"
+  },
+  {
+    "requested_url": "https://www.longvon.com/en/company/longvon",
+    "checked_at": "2026-11-24T14:03:54.904329+00:00",
+    "method": "GET",
+    "chain": [
+      {
+        "url": "https://www.longvon.com/en/company/longvon",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "status": 200,
+    "final_url": "https://www.longvon.com/en/company/longvon",
+    "html_lang": "en",
+    "links": [
+      {
+        "rel": "canonical",
+        "href": "https://www.longvon.com/en/company/longvon"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "zh-CN",
+        "href": "https://www.longvon.com/company/longvon"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://www.longvon.com/en/company/longvon"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "x-default",
+        "href": "https://www.longvon.com/company/longvon"
+      }
+    ],
+    "language_matches": true,
+    "canonical_matches": true,
+    "result": "PASS"
+  },
+  {
+    "requested_url": "https://www.longvon.com/en/company/longvon?utm_source=chatgpt.com",
+    "checked_at": "2026-11-24T14:03:54.904643+00:00",
+    "method": "GET",
+    "chain": [
+      {
+        "url": "https://www.longvon.com/en/company/longvon?utm_source=chatgpt.com",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "status": 200,
+    "final_url": "https://www.longvon.com/en/company/longvon?utm_source=chatgpt.com",
+    "html_lang": "en",
+    "links": [
+      {
+        "rel": "canonical",
+        "href": "https://www.longvon.com/en/company/longvon"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "zh-CN",
+        "href": "https://www.longvon.com/company/longvon"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://www.longvon.com/en/company/longvon"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "x-default",
+        "href": "https://www.longvon.com/company/longvon"
+      }
+    ],
+    "language_matches": true,
+    "canonical_matches": true,
+    "result": "PASS"
+  },
+  {
+    "requested_url": "https://www.longvon.com/en/osa-smart-ring-technology",
+    "checked_at": "2026-11-24T14:03:55.050471+00:00",
+    "method": "GET",
+    "chain": [
+      {
+        "url": "https://www.longvon.com/en/osa-smart-ring-technology",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "status": 200,
+    "final_url": "https://www.longvon.com/en/osa-smart-ring-technology",
+    "html_lang": "en",
+    "links": [
+      {
+        "rel": "canonical",
+        "href": "https://www.longvon.com/en/osa-smart-ring-technology"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "zh-CN",
+        "href": "https://www.longvon.com/osa-smart-ring-technology"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://www.longvon.com/en/osa-smart-ring-technology"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "x-default",
+        "href": "https://www.longvon.com/osa-smart-ring-technology"
+      }
+    ],
+    "language_matches": true,
+    "canonical_matches": true,
+    "result": "PASS"
+  },
+  {
+    "requested_url": "https://www.longvon.com/en/partner/oem",
+    "checked_at": "2026-11-24T14:03:55.079261+00:00",
+    "method": "GET",
+    "chain": [
+      {
+        "url": "https://www.longvon.com/en/partner/oem",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "status": 200,
+    "final_url": "https://www.longvon.com/en/partner/oem",
+    "html_lang": "en",
+    "links": [
+      {
+        "rel": "canonical",
+        "href": "https://www.longvon.com/en/partner/oem"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "zh-CN",
+        "href": "https://www.longvon.com/partner/oem"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://www.longvon.com/en/partner/oem"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "x-default",
+        "href": "https://www.longvon.com/en/partner/oem"
+      }
+    ],
+    "language_matches": true,
+    "canonical_matches": true,
+    "result": "PASS"
+  },
+  {
+    "requested_url": "https://www.longvon.com/en/products/ring1c",
+    "checked_at": "2026-11-24T14:03:55.095292+00:00",
+    "method": "GET",
+    "chain": [
+      {
+        "url": "https://www.longvon.com/en/products/ring1c",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "status": 200,
+    "final_url": "https://www.longvon.com/en/products/ring1c",
+    "html_lang": "en",
+    "links": [
+      {
+        "rel": "canonical",
+        "href": "https://www.longvon.com/en/products/ring1c"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "zh-CN",
+        "href": "https://www.longvon.com/products/ring1c"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://www.longvon.com/en/products/ring1c"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "x-default",
+        "href": "https://www.longvon.com/products/ring1c"
+      }
+    ],
+    "language_matches": true,
+    "canonical_matches": true,
+    "result": "PASS"
+  },
+  {
+    "requested_url": "https://www.longvon.com/en/smart-ring-healthcare-solutions",
+    "checked_at": "2026-11-24T14:03:55.113200+00:00",
+    "method": "GET",
+    "chain": [
+      {
+        "url": "https://www.longvon.com/en/smart-ring-healthcare-solutions",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "status": 200,
+    "final_url": "https://www.longvon.com/en/smart-ring-healthcare-solutions",
+    "html_lang": "en",
+    "links": [
+      {
+        "rel": "canonical",
+        "href": "https://www.longvon.com/en/smart-ring-healthcare-solutions"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "zh-CN",
+        "href": "https://www.longvon.com/smart-ring-healthcare-solutions"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://www.longvon.com/en/smart-ring-healthcare-solutions"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "x-default",
+        "href": "https://www.longvon.com/smart-ring-healthcare-solutions"
+      }
+    ],
+    "language_matches": true,
+    "canonical_matches": true,
+    "result": "PASS"
+  },
+  {
+    "requested_url": "https://www.longvon.com/en/smart-ring-manufacturer",
+    "checked_at": "2026-11-24T14:03:55.190408+00:00",
+    "method": "GET",
+    "chain": [
+      {
+        "url": "https://www.longvon.com/en/smart-ring-manufacturer",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "status": 200,
+    "final_url": "https://www.longvon.com/en/smart-ring-manufacturer",
+    "html_lang": "en",
+    "links": [
+      {
+        "rel": "canonical",
+        "href": "https://www.longvon.com/en/smart-ring-manufacturer"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "zh-CN",
+        "href": "https://www.longvon.com/smart-ring-manufacturer"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://www.longvon.com/en/smart-ring-manufacturer"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "x-default",
+        "href": "https://www.longvon.com/smart-ring-manufacturer"
+      }
+    ],
+    "language_matches": true,
+    "canonical_matches": true,
+    "result": "PASS"
+  },
+  {
+    "requested_url": "https://www.longvon.com/en/smart-ring-manufacturer?utm_source=chatgpt.com",
+    "checked_at": "2026-11-24T14:03:55.241883+00:00",
+    "method": "GET",
+    "chain": [
+      {
+        "url": "https://www.longvon.com/en/smart-ring-manufacturer?utm_source=chatgpt.com",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "status": 200,
+    "final_url": "https://www.longvon.com/en/smart-ring-manufacturer?utm_source=chatgpt.com",
+    "html_lang": "en",
+    "links": [
+      {
+        "rel": "canonical",
+        "href": "https://www.longvon.com/en/smart-ring-manufacturer"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "zh-CN",
+        "href": "https://www.longvon.com/smart-ring-manufacturer"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://www.longvon.com/en/smart-ring-manufacturer"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "x-default",
+        "href": "https://www.longvon.com/smart-ring-manufacturer"
+      }
+    ],
+    "language_matches": true,
+    "canonical_matches": true,
+    "result": "PASS"
+  },
+  {
+    "requested_url": "https://www.longvon.com/en/smart-ring-oem-odm",
+    "checked_at": "2026-11-24T14:03:55.280450+00:00",
+    "method": "GET",
+    "chain": [
+      {
+        "url": "https://www.longvon.com/en/smart-ring-oem-odm",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "status": 200,
+    "final_url": "https://www.longvon.com/en/smart-ring-oem-odm",
+    "html_lang": "en",
+    "links": [
+      {
+        "rel": "canonical",
+        "href": "https://www.longvon.com/en/smart-ring-oem-odm"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "zh-CN",
+        "href": "https://www.longvon.com/smart-ring-oem-odm"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://www.longvon.com/en/smart-ring-oem-odm"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "x-default",
+        "href": "https://www.longvon.com/smart-ring-oem-odm"
+      }
+    ],
+    "language_matches": true,
+    "canonical_matches": true,
+    "result": "PASS"
+  },
+  {
+    "requested_url": "https://www.longvon.com/en/smart-ring-oem-odm?utm_source=chatgpt.com",
+    "checked_at": "2026-11-24T14:03:55.300310+00:00",
+    "method": "GET",
+    "chain": [
+      {
+        "url": "https://www.longvon.com/en/smart-ring-oem-odm?utm_source=chatgpt.com",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "status": 200,
+    "final_url": "https://www.longvon.com/en/smart-ring-oem-odm?utm_source=chatgpt.com",
+    "html_lang": "en",
+    "links": [
+      {
+        "rel": "canonical",
+        "href": "https://www.longvon.com/en/smart-ring-oem-odm"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "zh-CN",
+        "href": "https://www.longvon.com/smart-ring-oem-odm"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://www.longvon.com/en/smart-ring-oem-odm"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "x-default",
+        "href": "https://www.longvon.com/smart-ring-oem-odm"
+      }
+    ],
+    "language_matches": true,
+    "canonical_matches": true,
+    "result": "PASS"
+  },
+  {
+    "requested_url": "https://www.longvon.com/en/smart-ring-respiratory",
+    "checked_at": "2026-11-24T14:03:55.321707+00:00",
+    "method": "GET",
+    "chain": [
+      {
+        "url": "https://www.longvon.com/en/smart-ring-respiratory",
+        "status": 308,
+        "location": "/en/smart-ring-sleep-respiratory"
+      },
+      {
+        "url": "https://www.longvon.com/en/smart-ring-sleep-respiratory",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "status": 200,
+    "final_url": "https://www.longvon.com/en/smart-ring-sleep-respiratory",
+    "html_lang": "en",
+    "links": [
+      {
+        "rel": "canonical",
+        "href": "https://www.longvon.com/en/smart-ring-sleep-respiratory"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "zh-CN",
+        "href": "https://www.longvon.com/smart-ring-sleep-respiratory"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://www.longvon.com/en/smart-ring-sleep-respiratory"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "x-default",
+        "href": "https://www.longvon.com/smart-ring-sleep-respiratory"
+      }
+    ],
+    "language_matches": true,
+    "canonical_matches": true,
+    "result": "PASS"
+  },
+  {
+    "requested_url": "https://www.longvon.com/en/smart-ring-respiratory?utm_source=chatgpt.com",
+    "checked_at": "2026-11-24T14:03:55.963766+00:00",
+    "method": "GET",
+    "chain": [
+      {
+        "url": "https://www.longvon.com/en/smart-ring-respiratory?utm_source=chatgpt.com",
+        "status": 308,
+        "location": "/en/smart-ring-sleep-respiratory?utm_source=chatgpt.com"
+      },
+      {
+        "url": "https://www.longvon.com/en/smart-ring-sleep-respiratory?utm_source=chatgpt.com",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "status": 200,
+    "final_url": "https://www.longvon.com/en/smart-ring-sleep-respiratory?utm_source=chatgpt.com",
+    "html_lang": "en",
+    "links": [
+      {
+        "rel": "canonical",
+        "href": "https://www.longvon.com/en/smart-ring-sleep-respiratory"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "zh-CN",
+        "href": "https://www.longvon.com/smart-ring-sleep-respiratory"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://www.longvon.com/en/smart-ring-sleep-respiratory"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "x-default",
+        "href": "https://www.longvon.com/smart-ring-sleep-respiratory"
+      }
+    ],
+    "language_matches": true,
+    "canonical_matches": true,
+    "result": "PASS"
+  },
+  {
+    "requested_url": "https://www.longvon.com/en/smart-ring-sdk-api",
+    "checked_at": "2026-11-24T14:03:56.268434+00:00",
+    "method": "GET",
+    "chain": [
+      {
+        "url": "https://www.longvon.com/en/smart-ring-sdk-api",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "status": 200,
+    "final_url": "https://www.longvon.com/en/smart-ring-sdk-api",
+    "html_lang": "en",
+    "links": [
+      {
+        "rel": "canonical",
+        "href": "https://www.longvon.com/en/smart-ring-sdk-api"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "zh-CN",
+        "href": "https://www.longvon.com/smart-ring-sdk-api"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://www.longvon.com/en/smart-ring-sdk-api"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "x-default",
+        "href": "https://www.longvon.com/smart-ring-sdk-api"
+      }
+    ],
+    "language_matches": true,
+    "canonical_matches": true,
+    "result": "PASS"
+  },
+  {
+    "requested_url": "https://www.longvon.com/en/smart-ring-sleep-monitoring",
+    "checked_at": "2026-11-24T14:03:56.325590+00:00",
+    "method": "GET",
+    "chain": [
+      {
+        "url": "https://www.longvon.com/en/smart-ring-sleep-monitoring",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "status": 200,
+    "final_url": "https://www.longvon.com/en/smart-ring-sleep-monitoring",
+    "html_lang": "en",
+    "links": [
+      {
+        "rel": "canonical",
+        "href": "https://www.longvon.com/en/smart-ring-sleep-monitoring"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "zh-CN",
+        "href": "https://www.longvon.com/smart-ring-sleep-monitoring"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://www.longvon.com/en/smart-ring-sleep-monitoring"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "x-default",
+        "href": "https://www.longvon.com/smart-ring-sleep-monitoring"
+      }
+    ],
+    "language_matches": true,
+    "canonical_matches": true,
+    "result": "PASS"
+  },
+  {
+    "requested_url": "https://www.longvon.com/en/smart-ring-sleep-respiratory",
+    "checked_at": "2026-11-24T14:03:56.365804+00:00",
+    "method": "GET",
+    "chain": [
+      {
+        "url": "https://www.longvon.com/en/smart-ring-sleep-respiratory",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "status": 200,
+    "final_url": "https://www.longvon.com/en/smart-ring-sleep-respiratory",
+    "html_lang": "en",
+    "links": [
+      {
+        "rel": "canonical",
+        "href": "https://www.longvon.com/en/smart-ring-sleep-respiratory"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "zh-CN",
+        "href": "https://www.longvon.com/smart-ring-sleep-respiratory"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://www.longvon.com/en/smart-ring-sleep-respiratory"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "x-default",
+        "href": "https://www.longvon.com/smart-ring-sleep-respiratory"
+      }
+    ],
+    "language_matches": true,
+    "canonical_matches": true,
+    "result": "PASS"
+  },
+  {
+    "requested_url": "https://www.longvon.com/en/smart-ring-solution-provider",
+    "checked_at": "2026-11-24T14:03:56.395380+00:00",
+    "method": "GET",
+    "chain": [
+      {
+        "url": "https://www.longvon.com/en/smart-ring-solution-provider",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "status": 200,
+    "final_url": "https://www.longvon.com/en/smart-ring-solution-provider",
+    "html_lang": "en",
+    "links": [
+      {
+        "rel": "canonical",
+        "href": "https://www.longvon.com/en/smart-ring-solution-provider"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "zh-CN",
+        "href": "https://www.longvon.com/smart-ring-solution-provider"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://www.longvon.com/en/smart-ring-solution-provider"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "x-default",
+        "href": "https://www.longvon.com/smart-ring-solution-provider"
+      }
+    ],
+    "language_matches": true,
+    "canonical_matches": true,
+    "result": "PASS"
+  },
+  {
+    "requested_url": "https://www.longvon.com/en/smart-ring-solution-provider?utm_source=chatgpt.com",
+    "checked_at": "2026-11-24T14:03:56.877012+00:00",
+    "method": "GET",
+    "chain": [
+      {
+        "url": "https://www.longvon.com/en/smart-ring-solution-provider?utm_source=chatgpt.com",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "status": 200,
+    "final_url": "https://www.longvon.com/en/smart-ring-solution-provider?utm_source=chatgpt.com",
+    "html_lang": "en",
+    "links": [
+      {
+        "rel": "canonical",
+        "href": "https://www.longvon.com/en/smart-ring-solution-provider"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "zh-CN",
+        "href": "https://www.longvon.com/smart-ring-solution-provider"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://www.longvon.com/en/smart-ring-solution-provider"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "x-default",
+        "href": "https://www.longvon.com/smart-ring-solution-provider"
+      }
+    ],
+    "language_matches": true,
+    "canonical_matches": true,
+    "result": "PASS"
+  },
+  {
+    "requested_url": "https://www.longvon.com/en/smart-ring-technology",
+    "checked_at": "2026-11-24T14:03:56.934560+00:00",
+    "method": "GET",
+    "chain": [
+      {
+        "url": "https://www.longvon.com/en/smart-ring-technology",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "status": 200,
+    "final_url": "https://www.longvon.com/en/smart-ring-technology",
+    "html_lang": "en",
+    "links": [
+      {
+        "rel": "canonical",
+        "href": "https://www.longvon.com/en/smart-ring-technology"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "zh-CN",
+        "href": "https://www.longvon.com/smart-ring-technology"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://www.longvon.com/en/smart-ring-technology"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "x-default",
+        "href": "https://www.longvon.com/smart-ring-technology"
+      }
+    ],
+    "language_matches": true,
+    "canonical_matches": true,
+    "result": "PASS"
+  },
+  {
+    "requested_url": "https://www.longvon.com/en/smart-ring-technology?utm_source=chatgpt.com",
+    "checked_at": "2026-11-24T14:03:57.000838+00:00",
+    "method": "GET",
+    "chain": [
+      {
+        "url": "https://www.longvon.com/en/smart-ring-technology?utm_source=chatgpt.com",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "status": 200,
+    "final_url": "https://www.longvon.com/en/smart-ring-technology?utm_source=chatgpt.com",
+    "html_lang": "en",
+    "links": [
+      {
+        "rel": "canonical",
+        "href": "https://www.longvon.com/en/smart-ring-technology"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "zh-CN",
+        "href": "https://www.longvon.com/smart-ring-technology"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://www.longvon.com/en/smart-ring-technology"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "x-default",
+        "href": "https://www.longvon.com/smart-ring-technology"
+      }
+    ],
+    "language_matches": true,
+    "canonical_matches": true,
+    "result": "PASS"
+  },
+  {
+    "requested_url": "https://www.longvon.com/smart-ring-healthcare-solutions",
+    "checked_at": "2026-11-24T14:03:57.326869+00:00",
+    "method": "GET",
+    "chain": [
+      {
+        "url": "https://www.longvon.com/smart-ring-healthcare-solutions",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "status": 200,
+    "final_url": "https://www.longvon.com/smart-ring-healthcare-solutions",
+    "html_lang": "zh-CN",
+    "links": [
+      {
+        "rel": "canonical",
+        "href": "https://www.longvon.com/smart-ring-healthcare-solutions"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "zh-CN",
+        "href": "https://www.longvon.com/smart-ring-healthcare-solutions"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://www.longvon.com/en/smart-ring-healthcare-solutions"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "x-default",
+        "href": "https://www.longvon.com/smart-ring-healthcare-solutions"
+      }
+    ],
+    "language_matches": true,
+    "canonical_matches": true,
+    "result": "PASS"
+  },
+  {
+    "requested_url": "https://www.longvon.com/smart-ring-oem-odm",
+    "checked_at": "2026-11-24T14:03:57.363285+00:00",
+    "method": "GET",
+    "chain": [
+      {
+        "url": "https://www.longvon.com/smart-ring-oem-odm",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "status": 200,
+    "final_url": "https://www.longvon.com/smart-ring-oem-odm",
+    "html_lang": "zh-CN",
+    "links": [
+      {
+        "rel": "canonical",
+        "href": "https://www.longvon.com/smart-ring-oem-odm"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "zh-CN",
+        "href": "https://www.longvon.com/smart-ring-oem-odm"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://www.longvon.com/en/smart-ring-oem-odm"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "x-default",
+        "href": "https://www.longvon.com/smart-ring-oem-odm"
+      }
+    ],
+    "language_matches": true,
+    "canonical_matches": true,
+    "result": "PASS"
+  },
+  {
+    "requested_url": "https://www.longvon.com/smart-ring-sdk-api",
+    "checked_at": "2026-11-24T14:03:57.377746+00:00",
+    "method": "GET",
+    "chain": [
+      {
+        "url": "https://www.longvon.com/smart-ring-sdk-api",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "status": 200,
+    "final_url": "https://www.longvon.com/smart-ring-sdk-api",
+    "html_lang": "zh-CN",
+    "links": [
+      {
+        "rel": "canonical",
+        "href": "https://www.longvon.com/smart-ring-sdk-api"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "zh-CN",
+        "href": "https://www.longvon.com/smart-ring-sdk-api"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://www.longvon.com/en/smart-ring-sdk-api"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "x-default",
+        "href": "https://www.longvon.com/smart-ring-sdk-api"
+      }
+    ],
+    "language_matches": true,
+    "canonical_matches": true,
+    "result": "PASS"
+  },
+  {
+    "requested_url": "https://www.longvon.com/smart-ring-sleep-respiratory",
+    "checked_at": "2026-11-24T14:03:57.615297+00:00",
+    "method": "GET",
+    "chain": [
+      {
+        "url": "https://www.longvon.com/smart-ring-sleep-respiratory",
+        "status": 200,
+        "location": null
+      }
+    ],
+    "status": 200,
+    "final_url": "https://www.longvon.com/smart-ring-sleep-respiratory",
+    "html_lang": "zh-CN",
+    "links": [
+      {
+        "rel": "canonical",
+        "href": "https://www.longvon.com/smart-ring-sleep-respiratory"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "zh-CN",
+        "href": "https://www.longvon.com/smart-ring-sleep-respiratory"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "en",
+        "href": "https://www.longvon.com/en/smart-ring-sleep-respiratory"
+      },
+      {
+        "rel": "alternate",
+        "hreflang": "x-default",
+        "href": "https://www.longvon.com/smart-ring-sleep-respiratory"
+      }
+    ],
+    "language_matches": true,
+    "canonical_matches": true,
+    "result": "PASS"
+  }
+]

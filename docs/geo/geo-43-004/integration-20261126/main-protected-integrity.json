@@ -1,0 +1,54 @@
+[
+  {
+    "path": "apps/web/app/en/company/longvon/page.tsx",
+    "unchangedFromMain": true
+  },
+  {
+    "path": "apps/web/app/company/longvon/page.tsx",
+    "unchangedFromMain": true
+  },
+  {
+    "path": "apps/web/app/en/smart-ring-sleep-respiratory/page.tsx",
+    "unchangedFromMain": true
+  },
+  {
+    "path": "apps/web/app/smart-ring-sleep-respiratory/page.tsx",
+    "unchangedFromMain": true
+  },
+  {
+    "path": "apps/web/app/en/smart-ring-oem-odm/page.tsx",
+    "unchangedFromMain": true
+  },
+  {
+    "path": "apps/web/app/smart-ring-oem-odm/page.tsx",
+    "unchangedFromMain": true
+  },
+  {
+    "path": "apps/web/components/OemRfqForm.tsx",
+    "unchangedFromMain": true
+  },
+  {
+    "path": "apps/web/lib/lead-attribution.ts",
+    "unchangedFromMain": true
+  },
+  {
+    "path": "apps/web/lib/partner-api.ts",
+    "unchangedFromMain": true
+  },
+  {
+    "path": "apps/web/lib/api-client.ts",
+    "unchangedFromMain": true
+  },
+  {
+    "path": "apps/web/lib/oem-journey.ts",
+    "unchangedFromMain": true
+  },
+  {
+    "path": "apps/web/next.config.ts",
+    "unchangedFromMain": true
+  },
+  {
+    "path": "packages/database/prisma/schema.prisma",
+    "unchangedFromMain": true
+  }
+]

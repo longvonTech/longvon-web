@@ -217,7 +217,7 @@ export const COOPERATION_MODES_EN = [
   },
   {
     title: 'Small Batch / Pilot',
-    body: 'Sample evaluation, technical validation, and pilot builds before volume commitment. Exact quantities are confirmed after RFQ — this site does not publish fixed MOQ.',
+    body: 'Sample evaluation, technical validation, and pilot builds before volume commitment. Pilot quantities are evaluated per project; standard OEM and custom ODM terms are distinguished during project review.',
   },
   {
     title: 'Customized ODM',
@@ -236,7 +236,7 @@ export const COOPERATION_MODES_ZH = [
   },
   {
     title: '小批量 / 试产',
-    body: '样品评估、技术验证与试产，再进入量产沟通。具体数量以 RFQ 评估为准，本站不公布固定 MOQ。',
+    body: '样品评估、技术验证与试产，再进入量产沟通。试产数量按项目评估；标准 OEM 与定制 ODM 的条件在项目评估中区分。',
   },
   {
     title: '定制 ODM',

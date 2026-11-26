@@ -29,6 +29,8 @@ interface Props {
   slug?: GeoPageSlug | string;
   /** Optional eyebrow override */
   eyebrow?: string;
+  /** Page-specific project entry; omitted on existing GEO pages. */
+  heroActions?: ReactNode;
 }
 
 export function GeoPageLayout({
@@ -40,6 +42,7 @@ export function GeoPageLayout({
   locale = 'zh',
   slug,
   eyebrow,
+  heroActions,
 }: Props) {
   const site = getSiteUrl();
   const crumbSchema = breadcrumbs.map((b) => ({
@@ -139,6 +142,7 @@ export function GeoPageLayout({
             {h1}
           </h1>
           <p style={{ fontSize: 17, color: '#4B5563', lineHeight: 1.75, maxWidth: 720 }}>{lead}</p>
+          {heroActions}
           {locale === 'en' ? (
             <div style={{ marginTop: 20, maxWidth: 720 }}>
               <EnTrustStrip />

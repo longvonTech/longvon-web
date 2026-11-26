@@ -1,0 +1,112 @@
+   ▲ Next.js 15.5.19
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 2.2s
+   Linting and checking validity of types ...
+
+./app/admin/growth/page.tsx
+27:6  Warning: React Hook useEffect has a missing dependency: 'router'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./app/admin/news/page.tsx
+58:6  Warning: React Hook useEffect has a missing dependency: 'loadList'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/app/api-reference/config/eslint#disabling-rules
+   Collecting page data ...
+   Generating static pages (0/58) ...
+   Generating static pages (14/58) 
+   Generating static pages (28/58) 
+   Generating static pages (43/58) 
+ ✓ Generating static pages (58/58)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                 Size  First Load JS
+┌ ƒ /                                    1.77 kB         108 kB
+├ ƒ /_not-found                            994 B         103 kB
+├ ƒ /about                                 206 B         106 kB
+├ ƒ /admin/growth                         3.7 kB         106 kB
+├ ƒ /admin/images                        2.65 kB         108 kB
+├ ƒ /admin/login                         1.18 kB         104 kB
+├ ƒ /admin/news                           4.2 kB         110 kB
+├ ƒ /api/admin/images                      173 B         103 kB
+├ ƒ /api/admin/images/[...path]            173 B         103 kB
+├ ƒ /api/admin/media/upload                173 B         103 kB
+├ ƒ /api/admin/news                        173 B         103 kB
+├ ƒ /api/admin/news/[...path]              173 B         103 kB
+├ ƒ /api/assessment/altitude-lead          173 B         103 kB
+├ ƒ /api/assessment/diabetes-lead          173 B         103 kB
+├ ƒ /api/assessment/osa-lead               173 B         103 kB
+├ ƒ /api/assessment/weight-loss-lead       173 B         103 kB
+├ ƒ /api/growth/[...path]                  173 B         103 kB
+├ ƒ /assessment                            206 B         106 kB
+├ ƒ /assessment/altitude                 3.86 kB         110 kB
+├ ƒ /assessment/diabetes                 4.05 kB         110 kB
+├ ƒ /assessment/osa                      3.52 kB         109 kB
+├ ƒ /assessment/sleep                    3.97 kB         110 kB
+├ ƒ /assessment/stress                   3.72 kB         110 kB
+├ ƒ /assessment/weight-loss              4.15 kB         110 kB
+├ ƒ /authors/[id]                          173 B         103 kB
+├ ƒ /company/longvon                       217 B         106 kB
+├ ƒ /dashboard                           2.18 kB         105 kB
+├ ƒ /en                                    206 B         106 kB
+├ ƒ /en/about                              206 B         106 kB
+├ ƒ /en/company/longvon                    217 B         106 kB
+├ ƒ /en/osa-smart-ring-technology          217 B         106 kB
+├ ƒ /en/partner                            206 B         106 kB
+├ ƒ /en/partner/oem                        174 B         115 kB
+├ ƒ /en/products/ring1c                    206 B         106 kB
+├ ƒ /en/smart-ring-healthcare-solutions    217 B         106 kB
+├ ƒ /en/smart-ring-manufacturer          1.08 kB         107 kB
+├ ƒ /en/smart-ring-oem-odm               1.08 kB         107 kB
+├ ƒ /en/smart-ring-osa                     217 B         106 kB
+├ ƒ /en/smart-ring-sdk-api                 217 B         106 kB
+├ ƒ /en/smart-ring-sleep-monitoring        217 B         106 kB
+├ ƒ /en/smart-ring-sleep-respiratory       217 B         106 kB
+├ ƒ /en/smart-ring-solution-provider       217 B         106 kB
+├ ƒ /en/smart-ring-technology              217 B         106 kB
+├ ƒ /knowledge                             206 B         106 kB
+├ ƒ /knowledge/[slug]                      206 B         106 kB
+├ ƒ /membership                            999 B         103 kB
+├ ƒ /metrics                               206 B         106 kB
+├ ● /metrics/[slug]                        206 B         106 kB
+├   ├ /metrics/rapid-test
+├   ├ /metrics/activity
+├   ├ /metrics/heart-rate
+├   └ [+4 more paths]
+├ ƒ /news                                  206 B         106 kB
+├ ƒ /news/[slug]                           206 B         106 kB
+├ ƒ /osa-smart-ring-technology             217 B         106 kB
+├ ƒ /partner                               206 B         106 kB
+├ ƒ /partner/articles                      217 B         106 kB
+├ ƒ /partner/articles/[slug]               483 B         106 kB
+├ ƒ /partner/distributor                 3.27 kB         106 kB
+├ ƒ /partner/enterprise                  3.27 kB         106 kB
+├ ƒ /partner/hospital                    3.27 kB         106 kB
+├ ƒ /partner/oem                           176 B         115 kB
+├ ƒ /partner/pharmacy                    3.27 kB         106 kB
+├ ƒ /products/ring1c                     3.69 kB         110 kB
+├ ○ /robots.txt                            173 B         103 kB
+├ ○ /sitemap.xml                           173 B         103 kB
+├ ƒ /smart-ring-healthcare-solutions       217 B         106 kB
+├ ƒ /smart-ring-manufacturer             1.08 kB         107 kB
+├ ƒ /smart-ring-oem-odm                  1.08 kB         107 kB
+├ ƒ /smart-ring-osa                        217 B         106 kB
+├ ƒ /smart-ring-sdk-api                    217 B         106 kB
+├ ƒ /smart-ring-sleep-monitoring           217 B         106 kB
+├ ƒ /smart-ring-sleep-respiratory          217 B         106 kB
+├ ƒ /smart-ring-solution-provider          217 B         106 kB
+├ ƒ /smart-ring-technology                 217 B         106 kB
+└ ƒ /topics/[slug]                         206 B         106 kB
++ First Load JS shared by all             102 kB
+  ├ chunks/18-a6801e2fc629b9f0.js        46.3 kB
+  ├ chunks/87c73c54-24122e7b92478d00.js  54.2 kB
+  └ other shared chunks (total)          1.92 kB
+
+
+ƒ Middleware                             34.2 kB
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand
+
+{"result":"PASS","excludedRoutes":[],"approvedGeoIncluded":true,"routeCount":72,"api":"https://www.longvon.com/api","sourceRestoredInFinally":true}

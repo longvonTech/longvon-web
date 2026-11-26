@@ -27,6 +27,8 @@ jobs:
 # uploaded to this public repository and CI must not claim to have run that suite.
 
   linux-web:
+    env:
+      RFQ_INCLUDE_APPROVED_GEO: '1'
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:

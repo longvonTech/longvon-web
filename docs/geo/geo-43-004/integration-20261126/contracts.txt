@@ -1,0 +1,37 @@
+✔ sample/pilot/production stay on existing reciprocal canonical pages (3.300084ms)
+✔ EN/ZH have three equivalent qualification gates, customization scopes and buyer FAQs (0.181417ms)
+✔ approved 1000-unit MOQ stays limited to Ring1/Ring1C standard OEM; no pilot number or invented terms (1.166708ms)
+✔ stage CTA passes intent only, never fabricates acquisition UTM or order stage (2.926625ms)
+✔ analytics only emits allowlisted enums, never identity or raw keyword text (13.525416ms)
+✔ synthetic local/explicit TEST/domain markers never enter commercial analytics (36.256125ms)
+✔ analytics failures cannot throw into inquiry success or focus handling (2.820375ms)
+✔ new qualification details remain optional remark content with an explicit size guard (0.397917ms)
+✔ explicit QA marker survives CTA navigation without turning into commercial events (2.718125ms)
+✔ honeypot acknowledgements are not commercial or debug submission-success events (4.540292ms)
+✔ technical-evaluation links preserve locale and only carry interest, not fabricated acquisition (5.502083ms)
+✔ both locales define seven capabilities and separate SDK/algorithm/support/cloud scope (0.4145ms)
+✔ no new numbers, pricing, medical approvals or firmware-source deliverables in procurement copy (0.604625ms)
+✔ existing pilot summaries do not contradict scoped public standard OEM policy (0.184958ms)
+✔ protected page, RFQ, attribution, OEM policy, URL redirects and Prisma sources match applicable baseline (31.157209ms)
+✔ 100Hz section reuses the bilingual SDK canonical pair without duplicate index routes (2.431792ms)
+✔ English and Chinese expose the same discovery scope, process and buyer FAQs (0.322291ms)
+✔ raw-PPG interest CTA never mints UTM/AI sources or overrides acquisition campaign (5.323833ms)
+✔ discovery questions are not fabricated packet, duration, latency, model or fee specifications (1.562334ms)
+✔ visible FAQ source is passed to existing FAQ JSON-LD once on both SDK pages (4.399792ms)
+✔ all six requested entry-page families link to the buyer section in both locales (20.275292ms)
+✔ multitouch preserves distinct first/latest content and term after plain navigation (105.329083ms)
+✔ content/term-only latest campaign replaces bundle without mixed old params (30.801416ms)
+✔ AI keyword suffix survives 200 and 1000 character input (0.16975ms)
+✔ international phone storage preserves independent expected original representations (0.233167ms)
+✔ browser with absent/blank API config uses same-origin /api (181.499792ms)
+✔ configured API removes trailing slash and preserves target (4.450166ms)
+✔ API error exposes status and known field only, not raw internal response (3.601875ms)
+✔ HTML gateway failure remains typed without exposing body (3.077333ms)
+ℹ tests 29
+ℹ suites 0
+ℹ pass 29
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 566.864583

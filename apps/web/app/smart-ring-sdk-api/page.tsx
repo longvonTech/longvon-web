@@ -1,3 +1,4 @@
+import { OEM_JOURNEY_COPY, oemJourneyPath } from '../../lib/oem-journey';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { GeoPageLayout, h2, p, ul } from '../../components/GeoPageLayout';
@@ -160,6 +161,7 @@ export default function ZhSmartRingSdkApiPage() {
         <Link href={geoPath('smart-ring-manufacturer')}>制造商</Link> ·{' '}
         <Link href={geoPath('smart-ring-oem-odm')}>OEM / ODM</Link>
       </p>
+      <p style={p}><Link href={oemJourneyPath('zh')} style={{color:'#1D4ED8',textDecoration:'underline'}}>{OEM_JOURNEY_COPY.zh.linkLabel}</Link></p>
     </GeoPageLayout>
   );
 }

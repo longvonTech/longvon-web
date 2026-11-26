@@ -1,3 +1,4 @@
+import { OEM_JOURNEY_COPY, oemJourneyPath } from '../../../lib/oem-journey';
 import { RAW_PPG_COPY, rawPpgSectionPath } from '../../../lib/raw-ppg';
 import type { Metadata } from 'next';
 import Link from 'next/link';
@@ -113,6 +114,7 @@ export default function EnHealthcareSolutionsPage() {
         <Link href="/en/partner/oem">OEM inquiry</Link>
       </p>
       <p style={p}><Link href={rawPpgSectionPath('en')}>{RAW_PPG_COPY.en.linkLabel}</Link></p>
+      <p style={p}><Link href={oemJourneyPath('en')} style={{color:'#1D4ED8',textDecoration:'underline'}}>{OEM_JOURNEY_COPY.en.linkLabel}</Link></p>
     </GeoPageLayout>
   );
 }

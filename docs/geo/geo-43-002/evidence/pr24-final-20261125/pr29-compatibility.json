@@ -1,0 +1,22 @@
+{
+  "checked_at": "2026-11-25T02:10:43.109588+00:00",
+  "method": "git merge-tree --write-tree; local object simulation only, no worktree/ref/PR merge",
+  "pr24_base": "ff789513e7afac9b632225c2eecde70cd5515f1e",
+  "pr29_head": "4cf44ff47e90cbf241114cddfa4ac747addcc32b",
+  "synthetic_pr24_candidate": "88c9ffb3d1c8f8db9dd132bd219de1bfd70c932f",
+  "integration_tree": "ee69d440f3bbacf44558cdac42843f499852b456",
+  "merge_exit_code": 0,
+  "conflicts": false,
+  "integration_code_identical_to_pr29": [
+    "apps",
+    "packages",
+    "scripts",
+    ".github",
+    "package.json",
+    "package-lock.json"
+  ],
+  "reused_test_files_identical": true,
+  "pr24_application_policy_api_database_workflows_unchanged": true,
+  "runtime_scope": "PR24 six OEM/two PPG locally rerun; PR29 existing passed code reused, not a new merged runtime run",
+  "result": "PASS"
+}

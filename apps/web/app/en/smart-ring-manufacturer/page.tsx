@@ -1,3 +1,4 @@
+import { OemJourneySection } from '../../../components/OemJourneySection';
 import { RAW_PPG_COPY, rawPpgSectionPath } from '../../../lib/raw-ppg';
 import type { Metadata } from 'next';
 import Link from 'next/link';
@@ -130,6 +131,7 @@ export default function EnManufacturerPage() {
         , or <Link href="/en/partner/oem">request samples, technical evaluation, or quotation</Link>.
       </p>
       <p style={p}><Link href={rawPpgSectionPath('en')}>{RAW_PPG_COPY.en.linkLabel}</Link></p>
+      <OemJourneySection locale="en" compact />
     </GeoPageLayout>
   );
 }

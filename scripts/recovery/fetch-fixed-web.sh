@@ -40,7 +40,7 @@ if hashlib.sha256(raw).hexdigest()!=sys.argv[2]:raise ValueError('Archived prove
 p=json.loads(raw)
 for key in ('artifact','run'):(s/(key+'.json')).write_text(json.dumps(p[key]))
 PY
-  GH_TOKEN="$OPS_READ_TOKEN" gh api -H 'Accept: application/octet-stream' "repos/longvonTech/longvon-ops/releases/assets/$asset" > "$stage/candidate.zip"
+  python3 scripts/recovery/download-private-asset.py "$asset" "$expected" "$stage/candidate.zip"
 else
   echo 'Unknown retrieval source' >&2; exit 1
 fi

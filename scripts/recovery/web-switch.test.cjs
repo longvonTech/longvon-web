@@ -71,3 +71,11 @@ test('unexpected API PID blocks cutover', async () => {
   await assert.rejects(activate(m.options), /API PID changed/);
   assert.deepEqual(m.commands, ['prepare Web']);
 });
+
+test('record failure after PM2 save restores both process and active record',async()=>{
+ const m=mock(previous,target);const originalRecord=m.options.record;let stored=previous.webScript;
+ m.options.record=release=>{stored=release.webScript;throw new Error('INJECTED_RECORD_FAILURE')};
+ m.options.restoreRecord=release=>{stored=release.webScript;originalRecord(release)};
+ await assert.rejects(activate(m.options),/INJECTED_RECORD_FAILURE/);
+ assert.equal(stored,previous.webScript);assert.deepEqual(m.state(),{active:previous.webScript,saved:previous.webScript});assert.ok(m.events.includes('recovered'));
+});

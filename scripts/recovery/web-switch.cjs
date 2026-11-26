@@ -72,6 +72,7 @@ async function host([operation, target, approval, approvedApproval, enabled, exp
   if (isolated) assert.ok(isolatedRoot && path.resolve(isolatedRoot).startsWith('/tmp/lv-dual-'), 'Isolated root must be a dedicated /tmp/lv-dual-* directory');
   else assert.ok(!isolatedRoot, 'Root override forbidden in production');
   const root = isolated ? path.resolve(isolatedRoot) : '/root/mateyou';
+  if(isolated){assert.ok(fs.lstatSync(root).isDirectory()&&!fs.lstatSync(root).isSymbolicLink(),'Isolated root cannot be a symlink');assert.ok(fs.realpathSync(root).startsWith(fs.realpathSync('/tmp')+'/lv-dual-'));}
   const candidatePolicy = operation === 'release' ? JSON.parse(candidateJson) : null;
   if (candidatePolicy) {
     assert.match(candidatePolicy.commit, /^[a-f0-9]{40}$/);

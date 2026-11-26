@@ -34,7 +34,7 @@ Codex 云端用于审阅代码、准备审批记录和核对证据。GitHub Acti
 - [ ] 对照同层级的 ZIP 或 tar.gz 哈希，确认原 Mac 验收制品和云端字节完全一致。如不一致，保持 BLOCKED，保留证据并复核来源。
 - [ ] 持久归档固定 ZIP、已验证健康 Web 制品与验收记录，并演练取回。
 - [ ] 由生产管理员确认环境审批和 SSH 账号权限、主机公钥、PM2 运行方式、预检端口，以及当前 BUILD_ID 对应的已验收 recovery release ID。若当前版本未纳入恢复目录，保持 BLOCKED，另行审批基线登记。
-- [ ] 确认工作流运行账号可读原始 Actions ZIP，回滚清单中的记录真实对应已验收且仍可用的 Web。确认本机和外部路由验收、API PID 和只读健康检查、告警与值班恢复流程。
+- [ ] 确认 PR 的无生产凭据 GitHub runner 核验可读原始 Actions ZIP，回滚清单中的记录真实对应已验收且仍可用的 Web。确认本机和外部路由验收、API PID 和只读健康检查、告警与值班恢复流程。
 - [ ] 在代表性非生产 ECS/PM2 环境演练完整 SSH、静态发布、Web 切换、超时/强制终止后锁处理与人工恢复。运行中断或主机崩溃可能需要管理员核对实际 PM2 状态与活动记录。
 - [ ] 经独立评审后在 `production` 环境填入 `LONGVON_WEB_EXPECTED_ACTIVE_BUILD`、`LONGVON_WEB_HEALTHY_RELEASES`（JSON ID 数组）。每次变更前设置对应的 `LONGVON_WEB_RELEASE_APPROVAL` 或 `LONGVON_WEB_ROLLBACK_APPROVAL`，回滚同时设置 `LONGVON_WEB_ROLLBACK_TARGET`。以上完成后单独批准启用 `LONGVON_WEB_HANDOFF_READY=true`。
 
@@ -51,4 +51,5 @@ Codex 云端用于审阅代码、准备审批记录和核对证据。GitHub Acti
 - `python3 scripts/recovery/test_fixed_candidate.py` 覆盖错误 ZIP 哈希、错误源仓库/源 run 和合法来源。2 项通过。
 - `node scripts/recovery/web-switch.test.cjs` 覆盖交接未批准、批准编号不匹配、非法回滚标识、发布健康失败回切、独立回滚及 API PID 漂移阻断。5 项通过。模拟事务只注入 Web、PM2 保存和只读进程检查，未使用 API 管理命令或数据库连接。
 - `node scripts/rfq/release/static-transaction.test.cjs` 的 6 项增量、冲突和文件校验测试通过。
+- Codex 连接器可以下载原始 ZIP，云端 shell 的直连下载进入制品存储时返回 403。PR 包含无生产凭据的 GitHub runner 下载验证，生产启用须确认该检查通过。
 - 既有激活事务测试使用获准的云端回环网络权限运行，7 项通过。新入口的 Actions 审批、实际 ECS/PM2 和生产外部请求未执行。

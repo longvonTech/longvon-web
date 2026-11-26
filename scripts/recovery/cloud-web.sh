@@ -22,13 +22,7 @@ JS
 printf 'operation=%s target=%s approval=%s actor=%s triggering_actor=%s workflow_sha=%s expected_active_build=%s\n' \
   "$OPERATION" "$target" "$APPROVAL" "$GITHUB_ACTOR" "$GITHUB_TRIGGERING_ACTOR" "$GITHUB_SHA" "$EXPECTED_BUILD"
 if [[ "$OPERATION" == release ]]; then
-  [[ "$ARTIFACT_ID" == 15081915933 ]]
-  gh api "repos/$GITHUB_REPOSITORY/actions/artifacts/$ARTIFACT_ID" > "$stage/artifact.json"
-  gh api "repos/$GITHUB_REPOSITORY/actions/runs/45741771535" > "$stage/run.json"
-  python3 scripts/recovery/fixed-candidate.py source "$stage/artifact.json" "$stage/run.json" \
-    "$ARTIFACT_ID" "$SOURCE_SHA" "$EXPECTED_SHA"
-  gh api "repos/$GITHUB_REPOSITORY/actions/artifacts/$ARTIFACT_ID/zip" > "$stage/candidate.zip"
-  python3 scripts/recovery/fixed-candidate.py archive "$stage/candidate.zip" "$EXPECTED_SHA" "$stage/payload"
+  bash scripts/recovery/fetch-fixed-web.sh "$stage"
 fi
 
 mkdir -p "$stage/payload/scripts/recovery" "$stage/payload/scripts/rfq/release"

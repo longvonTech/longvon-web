@@ -1,0 +1,38 @@
+name: Verify fixed Web release controls
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/cloud-web-*.yml'
+      - 'scripts/recovery/**'
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  simulated-release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Simulate release, rejection and rollback
+        run: |
+          bash -n scripts/recovery/cloud-web.sh
+          bash -n scripts/recovery/fetch-fixed-web.sh
+          python3 scripts/recovery/test_fixed_candidate.py
+          node --test scripts/recovery/web-switch.test.cjs scripts/rfq/release/{activation,static}-transaction.test.cjs
+      - name: Verify raw download on GitHub runner
+        if: github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'codex/lv-cloud-deploy-001'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ARTIFACT_ID: '15081915933'
+          SOURCE_SHA: '139ff275ac29920b1bb8d119ed2ad1d1262b3627'
+          EXPECTED_SHA: '168f9638bf1f8da7b2c1c51ad7c6916b1b23e3893bbf9ec9d9534a7200ffdef8'
+        run: |
+          stage=$(mktemp -d "$RUNNER_TEMP/longvon-review.XXXXXX")
+          trap 'rm -rf "$stage"' EXIT
+          bash scripts/recovery/fetch-fixed-web.sh "$stage"

@@ -1,0 +1,57 @@
+name: Publish fixed Web artifact
+
+on:
+  workflow_dispatch:
+    inputs:
+      artifact_id:
+        description: Actions artifact ID
+        type: string
+        required: true
+      commit_sha:
+        description: Candidate source commit SHA
+        type: string
+        required: true
+      sha256:
+        description: Expected SHA256 of original Actions ZIP
+        type: string
+        required: true
+      approval:
+        description: Approved change record ID
+        type: string
+        required: true
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
+
+jobs:
+  release:
+    if: github.repository == 'longvonTech/longvon-web' && github.ref == 'refs/heads/main'
+    environment: production
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - name: Execute reviewed Web operation
+        env:
+          OPERATION: release
+          APPROVAL: ${{ inputs.approval }}
+          REVIEWED_APPROVAL: ${{ vars.LONGVON_WEB_RELEASE_APPROVAL }}
+          HANDOFF_READY: ${{ vars.LONGVON_WEB_HANDOFF_READY }}
+          EXPECTED_BUILD: ${{ vars.LONGVON_WEB_EXPECTED_ACTIVE_BUILD }}
+          HEALTHY_RELEASES: ${{ vars.LONGVON_WEB_HEALTHY_RELEASES }}
+          ECS_SSH_KEY_B64: ${{ secrets.ECS_SSH_KEY_B64 }}
+          ECS_HOST: ${{ secrets.ECS_HOST }}
+          ECS_USER: ${{ secrets.ECS_USER }}
+          ARTIFACT_ID: ${{ inputs.artifact_id }}
+          SOURCE_SHA: ${{ inputs.commit_sha }}
+          EXPECTED_SHA: ${{ inputs.sha256 }}
+          GH_TOKEN: ${{ github.token }}
+        run: bash scripts/recovery/cloud-web.sh
